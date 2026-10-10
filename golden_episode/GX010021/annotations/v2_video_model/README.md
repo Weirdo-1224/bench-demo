@@ -1,10 +1,10 @@
 # V2 Video-model Annotation（GX010021）
 
-**状态：尚未实施（占位目录，当前无任何标注产物）**
+**状态：Session 1 最小流水线与两个真实短窗口的 Qwen API Smoke Test 均已通过；已生成 13 条未融合的 CANDIDATE 观察，尚未完成人工复核。**
 
 ## 用途
 
-存放下一阶段由**视频理解模型**对原始视频 `source/GX010021.MP4` 独立理解后生成的结构化时序标注（事件、对象状态、依赖关系等），服务于 Benchmark 三个 Track（T1 Streaming QA / T2 Agentic Online Assistant / T3 State-dependent Procedure，见 `docs/` 总体设计 V1.0）。
+存放由**视频理解模型**对原始视频 `source/GX010021.MP4` 独立理解后生成的结构化候选时序标注。三个 Track 以总体设计 V1.0 为准：T1 过程状态理解、T2 长程过程依赖推理、T3 持续监测与及时干预。Session 1 只实现 L0 来源和 L2 观察事件契约，不生成状态整合、依赖图或 Track 任务。
 
 ## 与 V1 的关系
 
@@ -14,8 +14,9 @@
 ## 当前状态
 
 - [x] 目录建立
-- [ ] V2 Schema 设计
-- [ ] 视频模型接入与标注生成
+- [x] Session 1 L0/L2 Schema、可替换 Provider 和 Qwen API 适配实现
+- [x] 两个真实短窗口抽帧、源 PTS 独立核对、Dry-run、单元测试
+- [x] Qwen 真实认证调用与候选观察生成（两个窗口、2 次调用、4 + 9 条候选）
 - [ ] 与 V1 候选标注的交叉整合
 
-> 注意：本轮重构不生成任何新的事件、状态、依赖关系或评测题目。
+运行中间产物位于本目录下 `runs/`（已忽略，不入库）。成功运行 ID 为 `session1-6d141472d332d26a2a86`。运行指令见项目级 `annotation_pipeline/README.md`，最新结果见 `annotation_pipeline/SESSION1_SMOKE_RETRY_REPORT.md`，初次缺密钥记录仍保留。候选中存在意图用语、材料身份和读数待复核问题；没有合成事件混入此目录。

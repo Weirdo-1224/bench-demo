@@ -34,3 +34,6 @@ desktop.ini
 .venv/
 venv/
 .env
+
+# V2 model runs include raw responses, frame samples, and local usage records
+golden_episode/*/annotations/v2_video_model/runs/

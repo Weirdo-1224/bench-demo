@@ -1,0 +1,140 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:bench-demo:v2:segment-observation:0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "episode_id", "annotation_status", "media", "segment", "input_manifest_ref", "provenance", "events", "unknowns", "deferred_layers"],
+  "properties": {
+    "schema_version": {"const": "0.1"},
+    "episode_id": {"$ref": "#/$defs/text"},
+    "annotation_status": {"const": "CANDIDATE"},
+    "media": {
+      "type": "object", "additionalProperties": false,
+      "required": ["path", "sha256", "duration_sec", "width", "height", "fps", "time_base", "stream_start_sec", "has_audio"],
+      "properties": {
+        "path": {"$ref": "#/$defs/text"}, "sha256": {"$ref": "#/$defs/hash"},
+        "duration_sec": {"type": "number", "exclusiveMinimum": 0},
+        "width": {"type": "integer", "minimum": 1}, "height": {"type": "integer", "minimum": 1},
+        "fps": {"type": "number", "exclusiveMinimum": 0}, "time_base": {"$ref": "#/$defs/text"},
+        "stream_start_sec": {"type": "number"}, "has_audio": {"type": "boolean"}
+      }
+    },
+    "segment": {
+      "type": "object", "additionalProperties": false,
+      "required": ["segment_id", "start_sec", "end_sec", "sample_fps", "planned_frames"],
+      "properties": {
+        "segment_id": {"$ref": "#/$defs/text"}, "start_sec": {"$ref": "#/$defs/time"},
+        "end_sec": {"$ref": "#/$defs/time"}, "sample_fps": {"type": "number", "exclusiveMinimum": 0},
+        "planned_frames": {"type": "integer", "minimum": 1}
+      }
+    },
+    "input_manifest_ref": {"$ref": "#/$defs/text"},
+    "provenance": {"$ref": "#/$defs/provenance"},
+    "events": {"type": "array", "items": {"$ref": "#/$defs/candidate_event"}},
+    "unknowns": {"type": "array", "items": {"$ref": "#/$defs/text"}},
+    "deferred_layers": {
+      "type": "object", "additionalProperties": false,
+      "required": ["L1", "L3", "L4", "L5"],
+      "properties": {"L1": {"type": "null"}, "L3": {"type": "null"}, "L4": {"type": "null"}, "L5": {"type": "null"}}
+    }
+  },
+  "$defs": {
+    "text": {"type": "string", "minLength": 1, "pattern": "\\S"},
+    "hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "time": {"type": "number", "minimum": 0},
+    "visual_change": {
+      "oneOf": [{"type": "null"}, {
+        "type": "object", "additionalProperties": false, "required": ["before", "after"],
+        "properties": {
+          "before": {"oneOf": [{"$ref": "#/$defs/text"}, {"type": "null"}]},
+          "after": {"oneOf": [{"$ref": "#/$defs/text"}, {"type": "null"}]}
+        }
+      }]
+    },
+    "object_ref": {
+      "type": "object", "additionalProperties": false,
+      "required": ["local_track_id", "label", "role", "identity_uncertainty"],
+      "properties": {
+        "local_track_id": {"$ref": "#/$defs/text"}, "label": {"$ref": "#/$defs/text"},
+        "role": {"enum": ["object", "tool", "source_container", "target_container", "unknown"]},
+        "identity_uncertainty": {"type": "array", "items": {"$ref": "#/$defs/text"}}
+      }
+    },
+    "evidence": {
+      "type": "object", "additionalProperties": false, "required": ["start_sec", "end_sec", "frame_ids"],
+      "properties": {
+        "start_sec": {"$ref": "#/$defs/time"}, "end_sec": {"$ref": "#/$defs/time"},
+        "frame_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"$ref": "#/$defs/text"}}
+      }
+    },
+    "model_event": {
+      "type": "object", "additionalProperties": false,
+      "required": ["local_event_id", "start_sec", "end_sec", "actor", "action", "objects", "visual_change", "evidence", "observability", "uncertainties", "annotation_status"],
+      "properties": {
+        "local_event_id": {"$ref": "#/$defs/text"}, "start_sec": {"$ref": "#/$defs/time"}, "end_sec": {"$ref": "#/$defs/time"},
+        "actor": {"$ref": "#/$defs/text"}, "action": {"$ref": "#/$defs/text"},
+        "objects": {"type": "array", "items": {"$ref": "#/$defs/object_ref"}},
+        "visual_change": {"$ref": "#/$defs/visual_change"}, "evidence": {"$ref": "#/$defs/evidence"},
+        "observability": {"enum": ["direct", "partial", "unobservable"]},
+        "uncertainties": {"type": "array", "items": {"$ref": "#/$defs/text"}},
+        "annotation_status": {"const": "CANDIDATE"}
+      }
+    },
+    "model_response": {
+      "type": "object", "additionalProperties": false, "required": ["time_basis", "events", "unknowns"],
+      "properties": {
+        "time_basis": {"const": "clip_local_seconds"},
+        "events": {"type": "array", "items": {"$ref": "#/$defs/model_event"}},
+        "unknowns": {"type": "array", "items": {"$ref": "#/$defs/text"}}
+      }
+    },
+    "provenance": {
+      "type": "object", "additionalProperties": false,
+      "required": ["run_id", "provider", "model_id", "model_version", "returned_model", "endpoint", "prompt_version", "prompt_sha256", "schema_sha256", "config_sha256", "request_sha256", "raw_response_ref", "raw_response_sha256", "input_mode"],
+      "properties": {
+        "run_id": {"$ref": "#/$defs/text"}, "provider": {"$ref": "#/$defs/text"},
+        "model_id": {"$ref": "#/$defs/text"}, "model_version": {"$ref": "#/$defs/text"},
+        "returned_model": {"oneOf": [{"$ref": "#/$defs/text"}, {"type": "null"}]},
+        "endpoint": {"$ref": "#/$defs/text"}, "prompt_version": {"$ref": "#/$defs/text"},
+        "prompt_sha256": {"$ref": "#/$defs/hash"}, "schema_sha256": {"$ref": "#/$defs/hash"},
+        "config_sha256": {"$ref": "#/$defs/hash"}, "request_sha256": {"$ref": "#/$defs/hash"},
+        "raw_response_ref": {"$ref": "#/$defs/text"}, "raw_response_sha256": {"$ref": "#/$defs/hash"},
+        "input_mode": {"const": "sampled_video_frames"}
+      }
+    },
+    "candidate_event": {
+      "type": "object", "additionalProperties": false,
+      "required": ["event_id", "local_event_id", "start_sec", "end_sec", "clip_local_start_sec", "clip_local_end_sec", "time_precision", "actor", "action", "objects", "visual_change", "evidence", "observability", "uncertainties", "annotation_status", "provenance"],
+      "properties": {
+        "event_id": {"$ref": "#/$defs/text"}, "local_event_id": {"$ref": "#/$defs/text"},
+        "start_sec": {"$ref": "#/$defs/time"}, "end_sec": {"$ref": "#/$defs/time"},
+        "clip_local_start_sec": {"$ref": "#/$defs/time"}, "clip_local_end_sec": {"$ref": "#/$defs/time"},
+        "time_precision": {"const": "APPROXIMATE_SAMPLED"},
+        "actor": {"$ref": "#/$defs/text"}, "action": {"$ref": "#/$defs/text"},
+        "objects": {"type": "array", "items": {"$ref": "#/$defs/object_ref"}},
+        "visual_change": {"$ref": "#/$defs/visual_change"},
+        "evidence": {
+          "type": "object", "additionalProperties": false,
+          "required": ["start_sec", "end_sec", "clip_local_start_sec", "clip_local_end_sec", "frame_ids", "frame_refs"],
+          "properties": {
+            "start_sec": {"$ref": "#/$defs/time"}, "end_sec": {"$ref": "#/$defs/time"},
+            "clip_local_start_sec": {"$ref": "#/$defs/time"}, "clip_local_end_sec": {"$ref": "#/$defs/time"},
+            "frame_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"$ref": "#/$defs/text"}},
+            "frame_refs": {"type": "array", "minItems": 1, "items": {
+              "type": "object", "additionalProperties": false,
+              "required": ["frame_id", "path", "source_pts", "source_sec", "clip_local_sec", "sha256"],
+              "properties": {
+                "frame_id": {"$ref": "#/$defs/text"}, "path": {"$ref": "#/$defs/text"},
+                "source_pts": {"type": "integer"}, "source_sec": {"$ref": "#/$defs/time"},
+                "clip_local_sec": {"$ref": "#/$defs/time"}, "sha256": {"$ref": "#/$defs/hash"}
+              }
+            }}
+          }
+        },
+        "observability": {"enum": ["direct", "partial", "unobservable"]},
+        "uncertainties": {"type": "array", "items": {"$ref": "#/$defs/text"}},
+        "annotation_status": {"const": "CANDIDATE"}, "provenance": {"$ref": "#/$defs/provenance"}
+      }
+    }
+  }
+}

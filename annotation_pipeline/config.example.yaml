@@ -1,0 +1,33 @@
+episode_id: GX010021
+video_path: golden_episode/GX010021/source/GX010021.MP4
+output_dir: golden_episode/GX010021/annotations/v2_video_model/runs
+provider: qwen
+model: qwen3-vl-plus
+# A mutable alias is recorded as such; set a snapshot ID for reproducibility.
+model_version: alias-unpinned
+endpoint: https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions
+api_key_env: DASHSCOPE_API_KEY
+window_sec: 60
+overlap_sec: 10
+sample_fps: 1
+smoke_segments: 2
+smoke_start_sec: 0
+timeout_sec: 120
+max_retries: 2
+retry_backoff_sec: 2
+temperature: 0
+max_output_tokens: 4096
+max_frames_per_segment: 120
+max_request_bytes: 15000000
+max_api_calls: 4
+# Hard local budget: each attempt reserves this amount before sending.
+# This is a USER-SET conservative allowance, NOT an official price estimate.
+max_cost: 1.0
+cost_reserve_per_call: 0.25
+currency: CNY
+# Optional local estimate from returned usage; null means unknown.
+input_cost_per_million: null
+output_cost_per_million: null
+ffmpeg: ffmpeg
+ffprobe: ffprobe
+media_timeout_sec: 180
