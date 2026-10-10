@@ -1,0 +1,3816 @@
+{
+  "candidate_format_version": "0.1",
+  "benchmark_design_version": "V1.0",
+  "episode_id": "GX010021",
+  "artifact": "pilot_task_candidates",
+  "data_status": "CANDIDATE",
+  "human_review": "NOT_REVIEWED",
+  "created_date": "2026-10-09",
+  "timezone": "Asia/Shanghai",
+  "sources": [
+    {
+      "path": "docs/Long_Horizon_Streaming_Agent_Benchmark_Overall_Design_v1.0 (1).md",
+      "sha256": "260908d8bab250d53bc27b13da48e74ffa22f9d7aa24f88470396f0361007cb0",
+      "role": "READ_EXISTING_SOURCE"
+    },
+    {
+      "path": "golden_episode/GX010021/annotations/events.json",
+      "sha256": "9b614e7188f21f72fca37c08bc58208a655f4169a2fc60bed747df71f3af4632",
+      "role": "READ_EXISTING_SOURCE"
+    },
+    {
+      "path": "golden_episode/GX010021/annotations/objects.json",
+      "sha256": "27dafe0574b50af461404402b0b4a5ab807df3b61f56b120575c38bab0ed9c1c",
+      "role": "READ_EXISTING_SOURCE"
+    },
+    {
+      "path": "golden_episode/GX010021/annotations/review_queue.json",
+      "sha256": "749bc8c26349e48b6cadbd10678277865eba07a0a7d86751a5f55bfd7a24436a",
+      "role": "READ_EXISTING_SOURCE"
+    },
+    {
+      "path": "golden_episode/GX010021/annotations/schema.json",
+      "sha256": "764d613e676007016d3e267b436cb0c6ae2a99742b6bf8630e34b25d80a14802",
+      "role": "READ_EXISTING_SOURCE"
+    },
+    {
+      "path": "golden_episode/GX010021/reports/merge_report.md",
+      "sha256": "91573bb13b7eb33fdaef4436f5a639142208373e29733501cb62f3601fc54a8f",
+      "role": "READ_EXISTING_SOURCE"
+    },
+    {
+      "path": "golden_episode/GX010021/reports/validation_results.json",
+      "sha256": "4cbd67918d4b98a34a60d75a7f304e141c52a863430e6079595af69fa152d17d",
+      "role": "READ_EXISTING_SOURCE"
+    },
+    {
+      "path": "source/annotations.json",
+      "sha256": "88183e371dac0948378b723aa4c2ca102a2597770ed518805d52f180cd780527",
+      "role": "READ_EXISTING_SOURCE"
+    },
+    {
+      "path": "annotation_reports/candidate_events_v1.md",
+      "sha256": "d902836c5f22515682189559348f052853a7fa5c6aac2f8ebd779e41b88a43c4",
+      "role": "READ_EXISTING_SOURCE"
+    },
+    {
+      "path": "annotation_reports/verification_report.md",
+      "sha256": "76128353fc3168eac4f358a0d29067c3f614bbe3640caac8c040f51eae4a63d5",
+      "role": "READ_EXISTING_SOURCE"
+    },
+    {
+      "path": "annotation_reports/consistency_revision.md",
+      "sha256": "4d37d9b5d40374b1a32cb95cbacdccc5b26766b82eb00cf81451ad7228a0e2e7",
+      "role": "READ_EXISTING_SOURCE"
+    },
+    {
+      "path": "annotation_reports/crosscheck_report.md",
+      "sha256": "5d0cab2dcf558cbd0ce92061a9bd91f9fdef7aa55c935a447208be9452d58026",
+      "role": "READ_EXISTING_SOURCE"
+    },
+    {
+      "path": "annotation_reports/README.md",
+      "sha256": "72b76996ea365a5fbee780b396f45efa8340d2567e7c4aec999a3f27b2fc89c1",
+      "role": "READ_EXISTING_SOURCE"
+    },
+    {
+      "path": "source/GX010021.MP4",
+      "sha256": "fe4a11550bf2aea09a39ce1e72dba4633adc8c8b6a540e9894696e8b2ed1c8f9",
+      "role": "VIDEO_METADATA_AND_HASH_ONLY"
+    }
+  ],
+  "design_source": "docs/Long_Horizon_Streaming_Agent_Benchmark_Overall_Design_v1.0 (1).md",
+  "evidence_registry": "events.json#/evidence",
+  "object_registry": "objects.json#/objects",
+  "review_registry": "review_queue.json#/review_items",
+  "format_note": "沿用时间、ID、fact/state/evidence结构与V1.0字段语义。现有schema.json仅覆盖原三类数据，未宣称本任务包满足已冻结执行Schema。",
+  "reference_access": "EVALUATOR_PRIVATE_ONLY; 不能把整个文件、参考事实、答案、源标注或事件图挂载给参评Agent",
+  "runtime_contract": {
+    "single_persistent_episode": true,
+    "reset_between_tracks": false,
+    "replay_mode": "Causal Replay（V1必做；本轮未执行）",
+    "time_unit": "media_seconds",
+    "availability_time_manifest": null,
+    "wall_clock_logs": null,
+    "guidance": "G1；原音视频按时公开，转写需核验整段结束后送达",
+    "no_future_access": true,
+    "t2_isolated_branch_required": true,
+    "t3_no_per_event_queries": true
+  },
+  "field_notes": {
+    "gold_answer": "全部null，参考仅candidate_answer；独立核验后另版晋升",
+    "earliest_answerable_time": "候选包络区间，不是已核实首次可回答时刻",
+    "observation_cutoff": "T1/T2固定截止；T3为离线引用审计的窗口终点，在线仍逐时受限",
+    "unknown": "待审核合法观察的不可判定性；数据缺口/未复核不自动等于unknown真值",
+    "point_text_timestamps": "Rxx给单点标签时间，没有话段终点/送达时间；不能直接作为公开/生效时刻",
+    "dependency_span": "按最早必需证据start至query_time；未证明最近窗口不够"
+  },
+  "tasks": [
+    {
+      "task_id": "GX010021-T1-001",
+      "episode_id": "GX010021",
+      "track": "T1",
+      "task_type": "T1.1",
+      "title": "第一轮电动搅拌已结束并放置打蛋器",
+      "data_status": "CANDIDATE",
+      "human_review": "NOT_REVIEWED",
+      "hard_scoring_eligible": false,
+      "execution_ready": false,
+      "design_refs": [
+        "4.1",
+        "5.1",
+        "6.3"
+      ],
+      "trigger": {
+        "mode": "state_snapshot",
+        "media_time": 239.3,
+        "scheduling_status": "CANDIDATE_CHECKPOINT"
+      },
+      "observation_cutoff": 239.3,
+      "reference_event_ids": [
+        "E027",
+        "E028"
+      ],
+      "reference_object_ids": [
+        "O01",
+        "O07",
+        "O15"
+      ],
+      "reference_facts": [
+        {
+          "artifact": "objects",
+          "object_id": "O07",
+          "state_id": "O07.S02",
+          "source_ref": "objects.json#/objects/6/state_history/1",
+          "event_id": "E027",
+          "time": {
+            "start_sec": 199,
+            "end_sec": 235,
+            "start_hms": "00:03:19.000",
+            "end_hms": "00:03:55.000"
+          },
+          "kind": "observation",
+          "field": "mixing_round",
+          "before": null,
+          "after": 1,
+          "status": "REPORTED_SUPPORTED",
+          "evidence_ids": [
+            "V-E027-01",
+            "V-E027-02",
+            "V-E027-03"
+          ],
+          "use": "CANDIDATE_REFERENCE_ONLY"
+        },
+        {
+          "artifact": "objects",
+          "object_id": "O07",
+          "state_id": "O07.S05",
+          "source_ref": "objects.json#/objects/6/state_history/2",
+          "event_id": "E028",
+          "time": {
+            "start_sec": 234.0,
+            "end_sec": 239.0,
+            "start_hms": "00:03:54.000",
+            "end_hms": "00:03:59.000"
+          },
+          "kind": "transition",
+          "field": "location",
+          "before": null,
+          "after": "提离混合容器并置左台面",
+          "status": "REPORTED_SUPPORTED",
+          "evidence_ids": [
+            "V-E028-01"
+          ],
+          "use": "CANDIDATE_REFERENCE_ONLY"
+        },
+        {
+          "artifact": "objects",
+          "object_id": "O01",
+          "state_id": "O01.S06",
+          "source_ref": "objects.json#/objects/0/state_history/5",
+          "event_id": "E027",
+          "time": {
+            "start_sec": 199,
+            "end_sec": 235,
+            "start_hms": "00:03:19.000",
+            "end_hms": "00:03:55.000"
+          },
+          "kind": "transition",
+          "field": "contents",
+          "before": "蛋/糖/奶分层",
+          "after": "淡黄均匀液",
+          "status": "REPORTED_SUPPORTED",
+          "evidence_ids": [
+            "V-E027-01",
+            "V-E027-02",
+            "V-E027-03"
+          ],
+          "use": "CANDIDATE_REFERENCE_ONLY"
+        }
+      ],
+      "evidence_refs": [
+        {
+          "evidence_id": "V-E027-01",
+          "registry_ref": "events.json#/evidence/34",
+          "source": {
+            "path": "annotation_reports/verification_report.md",
+            "line": 56,
+            "section": "B"
+          },
+          "time": {
+            "start_sec": 199.2,
+            "end_sec": 199.2,
+            "start_hms": "00:03:19.200",
+            "end_hms": "00:03:19.200"
+          },
+          "kind": "reported_visual_observation",
+          "grade": "V1",
+          "description": "搅拌棒进入液面",
+          "role": "首次搅拌开始",
+          "media_ref": {
+            "path": "../../source/GX010021.MP4",
+            "time": {
+              "start_sec": 199.2,
+              "end_sec": 199.2,
+              "start_hms": "00:03:19.200",
+              "end_hms": "00:03:19.200"
+            }
+          },
+          "availability_time": null,
+          "human_review": "NOT_REVIEWED"
+        },
+        {
+          "evidence_id": "V-E027-02",
+          "registry_ref": "events.json#/evidence/35",
+          "source": {
+            "path": "annotation_reports/verification_report.md",
+            "line": 56,
+            "section": "B"
+          },
+          "time": {
+            "start_sec": 200.2,
+            "end_sec": 234.2,
+            "start_hms": "00:03:20.200",
+            "end_hms": "00:03:54.200"
+          },
+          "kind": "reported_visual_observation",
+          "grade": "V1",
+          "description": "搅拌、混合液渐均匀",
+          "role": "搅拌过程",
+          "media_ref": {
+            "path": "../../source/GX010021.MP4",
+            "time": {
+              "start_sec": 200.2,
+              "end_sec": 234.2,
+              "start_hms": "00:03:20.200",
+              "end_hms": "00:03:54.200"
+            }
+          },
+          "availability_time": null,
+          "human_review": "NOT_REVIEWED"
+        },
+        {
+          "evidence_id": "V-E027-03",
+          "registry_ref": "events.json#/evidence/36",
+          "source": {
+            "path": "annotation_reports/verification_report.md",
+            "line": 56,
+            "section": "B"
+          },
+          "time": {
+            "start_sec": 235.2,
+            "end_sec": 235.2,
+            "start_hms": "00:03:55.200",
+            "end_hms": "00:03:55.200"
+          },
+          "kind": "reported_visual_observation",
+          "grade": "V1",
+          "description": "搅拌棒提离",
+          "role": "搅拌棒提离",
+          "media_ref": {
+            "path": "../../source/GX010021.MP4",
+            "time": {
+              "start_sec": 235.2,
+              "end_sec": 235.2,
+              "start_hms": "00:03:55.200",
+              "end_hms": "00:03:55.200"
+            }
+          },
+          "availability_time": null,
+          "human_review": "NOT_REVIEWED"
+        },
+        {
+          "evidence_id": "V-E028-01",
+          "registry_ref": "events.json#/evidence/37",
+          "source": {
+            "path": "annotation_reports/verification_report.md",
+            "line": 57,
+            "section": "B"
+          },
+          "time": {
+            "start_sec": 236.2,
+            "end_sec": 238.2,
+            "start_hms": "00:03:56.200",
+            "end_hms": "00:03:58.200"
+          },
+          "kind": "reported_visual_observation",
+          "grade": "V1",
+          "description": "打蛋器置左侧台面",
+          "role": "置于左侧台面",
+          "media_ref": {
+            "path": "../../source/GX010021.MP4",
+            "time": {
+              "start_sec": 236.2,
+              "end_sec": 238.2,
+              "start_hms": "00:03:56.200",
+              "end_hms": "00:03:58.200"
+            }
+          },
+          "availability_time": null,
+          "human_review": "NOT_REVIEWED"
+        }
+      ],
+      "normative_rules": [],
+      "candidate_answer": {
+        "step": "第一轮电动搅拌",
+        "factual_progress": "completed",
+        "mixer_location": "左侧台面",
+        "completion_basis": "已发生搅拌、搅拌棒提离并放置；仅动作段完成，不等于全部食材/规范完成"
+      },
+      "gold_answer": null,
+      "scorable_conditions": [
+        "独立核验搅拌和提离/放置，按固定检查点读状态。",
+        "动作段completed、器具位置可分别评分；不把R25 Success或后续食材加入当完成证据。",
+        "Update Delay需首次可观察完成时刻；当前不能算精确延迟。"
+      ],
+      "pending_verification": [
+        "核验199.2–238.2s动作及O01/O07连续身份。",
+        "确认用于T1.1的动作段边界/完成条件，不把Ego-MC步骤清单擅自变为固定SOP。"
+      ],
+      "existing_review_queue_ids": [],
+      "evidence_quality": {
+        "status": "NOT_INDEPENDENTLY_VERIFIED",
+        "directly_observed_in_this_round": false,
+        "visual_source": "ARCHIVED_AI_REPORTS_ONLY",
+        "numeric_confidence": null,
+        "annotation_disagreements": "继承字段不确定性与历史修订；未做人类一致性测量。"
+      },
+      "visibility_regime": "G1",
+      "causal_constraints": {
+        "max_media_time": 239.3,
+        "require_availability_time_check": true,
+        "evaluator_reference_visible_to_agent": false,
+        "event_id_link_is_not_full_record_access": true,
+        "unknown_requires_observability_adjudication": true
+      },
+      "protocol_tbd": [
+        "输入窗口/采样与实际availability_time",
+        "运行预算/超时",
+        "最终输出Schema/证据匹配阈值",
+        "T1状态类别映射、Checkpoint间隔、δ_state"
+      ],
+      "agent_facing_input": {
+        "kind": "read_only_state_snapshot",
+        "media_time": 239.3,
+        "note": "不把候选状态/事件ID/题面提示写入主Agent；只按统一接口读取状态。"
+      },
+      "output_contract": {
+        "output_types": [
+          "state_update",
+          "state_snapshot"
+        ],
+        "allow_states": [
+          "completed",
+          "ongoing",
+          "unknown",
+          "uncertain"
+        ],
+        "required_clock_fields": [
+          "media_time",
+          "emission_wall_time",
+          "request_observation_cutoff"
+        ]
+      }
+    },
+    {
+      "task_id": "GX010021-T1-002",
+      "episode_id": "GX010021",
+      "track": "T1",
+      "task_type": "T1.2",
+      "title": "第二次取出后黄油仍见固态块",
+      "data_status": "CANDIDATE",
+      "human_review": "NOT_REVIEWED",
+      "hard_scoring_eligible": false,
+      "execution_ready": false,
+      "design_refs": [
+        "4.1",
+        "5.1",
+        "6.3"
+      ],
+      "trigger": {
+        "mode": "state_snapshot",
+        "media_time": 433.3,
+        "scheduling_status": "CANDIDATE_CHECKPOINT"
+      },
+      "observation_cutoff": 433.3,
+      "reference_event_ids": [
+        "E042"
+      ],
+      "reference_object_ids": [
+        "O09",
+        "O10"
+      ],
+      "reference_facts": [
+        {
+          "artifact": "events",
+          "event_id": "E042",
+          "source_ref": "events.json#/events/41/facts/1",
+          "field": "butter_phase",
+          "value": "以液体为主、仍见固态块",
+          "status": "REPORTED_SUPPORTED",
+          "evidence_ids": [
+            "V-E042-01",
+            "V-E042-02"
+          ],
+          "reason": "否定原完全融化主张；修正观察本身未被否定。",
+          "use": "CANDIDATE_REFERENCE_ONLY"
+        },
+        {
+          "artifact": "events",
+          "event_id": "E042",
+          "source_ref": "events.json#/events/41/facts/2",
+          "field": "solid_fraction",
+          "value": null,
+          "status": "UNCERTAIN",
+          "evidence_ids": [
+            "V-E042-01",
+            "V-E042-02",
+            "I-E042-02",
+            "T-R32"
+          ],
+          "reason": "抽样帧仅证有固块，质量/体积比例未知。",
+          "use": "CANDIDATE_REFERENCE_ONLY"
+        },
+        {
+          "artifact": "objects",
+          "object_id": "O09",
+          "state_id": "O09.S06",
+          "source_ref": "objects.json#/objects/8/state_history/5",
+          "event_id": "E042",
+          "time": {
+            "start_sec": 426.0,
+            "end_sec": 433.0,
+            "start_hms": "00:07:06.000",
+            "end_hms": "00:07:13.000"
+          },
+          "kind": "transition",
+          "field": "butter_phase",
+          "before": "部分融化",
+          "after": "以液体为主、仍见固态块",
+          "status": "REPORTED_SUPPORTED",
+          "evidence_ids": [
+            "V-E042-01",
+            "V-E042-02"
+          ],
+          "use": "CANDIDATE_REFERENCE_ONLY"
+        }
+      ],
+      "evidence_refs": [
+        {
+          "evidence_id": "V-E042-01",
+          "registry_ref": "events.json#/evidence/54",
+          "source": {
+            "path": "annotation_reports/verification_report.md",
+            "line": 71,
+            "section": "B"
+          },
+          "time": {
+            "start_sec": 429.2,
+            "end_sec": 429.2,
+            "start_hms": "00:07:09.200",
+            "end_hms": "00:07:09.200"
+          },
+          "kind": "reported_visual_observation",
+          "grade": "V1",
+          "description": "第二次取出时液体为主、见浅色块影",
+          "role": "第二次取出时外观",
+          "media_ref": {
+            "path": "../../source/GX010021.MP4",
+            "time": {
+              "start_sec": 429.2,
+              "end_sec": 429.2,
+              "start_hms": "00:07:09.200",
+              "end_hms": "00:07:09.200"
+            }
+          },
+          "availability_time": null,
+          "human_review": "NOT_REVIEWED"
+        },
+        {
+          "evidence_id": "V-E042-02",
+          "registry_ref": "events.json#/evidence/55",
+          "source": {
+            "path": "annotation_reports/verification_report.md",
+            "line": 71,
+            "section": "B"
+          },
+          "time": {
+            "start_sec": 431.2,
+            "end_sec": 432.2,
+            "start_hms": "00:07:11.200",
+            "end_hms": "00:07:12.200"
+          },
+          "kind": "reported_visual_observation",
+          "grade": "V1",
+          "description": "黄液中仍明确可见浅色固态块",
+          "role": "固态块仍可见",
+          "media_ref": {
+            "path": "../../source/GX010021.MP4",
+            "time": {
+              "start_sec": 431.2,
+              "end_sec": 432.2,
+              "start_hms": "00:07:11.200",
+              "end_hms": "00:07:12.200"
+            }
+          },
+          "availability_time": null,
+          "human_review": "NOT_REVIEWED"
+        }
+      ],
+      "normative_rules": [],
+      "candidate_answer": {
+        "butter_phase": "以液体为主、仍见固态块",
+        "fully_melted": false,
+        "solid_fraction": "unknown",
+        "applies_at": "第二次取出后的可见状态，不延伸到后续倾倒"
+      },
+      "gold_answer": null,
+      "scorable_conditions": [
+        "独立确认浅色固态块，方可评分phase/fully_melted。",
+        "固块比例未定量；只有裁定当时合法观察确实不能确定，才以unknown单列评分。",
+        "R32 Success不能覆盖视觉候选固块，也不能复用原E042完全融化主张。"
+      ],
+      "pending_verification": [
+        "复核429.2–432.2s固块与取出操作；不要求为本题臆造固块质量比例。"
+      ],
+      "existing_review_queue_ids": [
+        "RQ01"
+      ],
+      "evidence_quality": {
+        "status": "NOT_INDEPENDENTLY_VERIFIED",
+        "directly_observed_in_this_round": false,
+        "visual_source": "ARCHIVED_AI_REPORTS_ONLY",
+        "numeric_confidence": null,
+        "annotation_disagreements": "继承字段不确定性与历史修订；未做人类一致性测量。"
+      },
+      "visibility_regime": "G1",
+      "causal_constraints": {
+        "max_media_time": 433.3,
+        "require_availability_time_check": true,
+        "evaluator_reference_visible_to_agent": false,
+        "event_id_link_is_not_full_record_access": true,
+        "unknown_requires_observability_adjudication": true
+      },
+      "protocol_tbd": [
+        "输入窗口/采样与实际availability_time",
+        "运行预算/超时",
+        "最终输出Schema/证据匹配阈值"
+      ],
+      "agent_facing_input": {
+        "kind": "read_only_state_snapshot",
+        "media_time": 433.3,
+        "note": "不把候选状态/事件ID/题面提示写入主Agent；只按统一接口读取状态。"
+      },
+      "output_contract": {
+        "output_types": [
+          "state_update",
+          "state_snapshot"
+        ],
+        "allow_unknown": true,
+        "required_clock_fields": [
+          "media_time",
+          "emission_wall_time",
+          "request_observation_cutoff"
+        ]
+      }
+    },
+    {
+      "task_id": "GX010021-T1-003",
+      "episode_id": "GX010021",
+      "track": "T1",
+      "task_type": "T1.3",
+      "title": "补粉后的干粉表层转为光滑面糊",
+      "data_status": "CANDIDATE",
+      "human_review": "NOT_REVIEWED",
+      "hard_scoring_eligible": false,
+      "execution_ready": false,
+      "design_refs": [
+        "4.1",
+        "5.1",
+        "6.3"
+      ],
+      "trigger": {
+        "mode": "state_snapshot",
+        "media_time": 631.3,
+        "scheduling_status": "CANDIDATE_CHECKPOINT"
+      },
+      "observation_cutoff": 631.3,
+      "reference_event_ids": [
+        "E051",
+        "E052"
+      ],
+      "reference_object_ids": [
+        "O01",
+        "O07",
+        "O15"
+      ],
+      "reference_facts": [
+        {
+          "artifact": "objects",
+          "object_id": "O01",
+          "state_id": "O01.S10",
+          "source_ref": "objects.json#/objects/0/state_history/9",
+          "event_id": "E051",
+          "time": {
+            "start_sec": 595,
+            "end_sec": 604,
+            "start_hms": "00:09:55.000",
+            "end_hms": "00:10:04.000"
+          },
+          "kind": "transition",
+          "field": "contents",
+          "before": null,
+          "after": "面糊表面新增干粉",
+          "status": "REPORTED_SUPPORTED",
+          "evidence_ids": [
+            "V-E051-01",
+            "V-E051-02"
+          ],
+          "use": "CANDIDATE_REFERENCE_ONLY"
+        },
+        {
+          "artifact": "objects",
+          "object_id": "O01",
+          "state_id": "O01.S11",
+          "source_ref": "objects.json#/objects/0/state_history/10",
+          "event_id": "E052",
+          "time": {
+            "start_sec": 605.0,
+            "end_sec": 631.0,
+            "start_hms": "00:10:05.000",
+            "end_hms": "00:10:31.000"
+          },
+          "kind": "transition",
+          "field": "contents",
+          "before": "表面带干粉",
+          "after": "光滑均匀淡黄面糊",
+          "status": "REPORTED_SUPPORTED",
+          "evidence_ids": [
+            "V-E052-01",
+            "V-E052-02"
+          ],
+          "use": "CANDIDATE_REFERENCE_ONLY"
+        },
+        {
+          "artifact": "objects",
+          "object_id": "O15",
+          "state_id": "O15.S09",
+          "source_ref": "objects.json#/objects/14/state_history/8",
+          "event_id": "E051",
+          "time": {
+            "start_sec": 595,
+            "end_sec": 604,
+            "start_hms": "00:09:55.000",
+            "end_hms": "00:10:04.000"
+          },
+          "kind": "transition",
+          "field": "mixture_state",
+          "before": null,
+          "after": "表面补加干粉",
+          "status": "REPORTED_SUPPORTED",
+          "evidence_ids": [
+            "V-E051-01",
+            "V-E051-02"
+          ],
+          "use": "CANDIDATE_REFERENCE_ONLY"
+        },
+        {
+          "artifact": "objects",
+          "object_id": "O15",
+          "state_id": "O15.S10",
+          "source_ref": "objects.json#/objects/14/state_history/9",
+          "event_id": "E052",
+          "time": {
+            "start_sec": 605.0,
+            "end_sec": 631.0,
+            "start_hms": "00:10:05.000",
+            "end_hms": "00:10:31.000"
+          },
+          "kind": "transition",
+          "field": "mixture_state",
+          "before": null,
+          "after": "光滑均匀面糊",
+          "status": "REPORTED_SUPPORTED",
+          "evidence_ids": [
+            "V-E052-01",
+            "V-E052-02"
+          ],
+          "use": "CANDIDATE_REFERENCE_ONLY"
+        }
+      ],
+      "evidence_refs": [
+        {
+          "evidence_id": "V-E051-02",
+          "registry_ref": "events.json#/evidence/68",
+          "source": {
+            "path": "annotation_reports/verification_report.md",
+            "line": 80,
+            "section": "B"
+          },
+          "time": {
+            "start_sec": 603.2,
+            "end_sec": 603.2,
+            "start_hms": "00:10:03.200",
+            "end_hms": "00:10:03.200"
+          },
+          "kind": "reported_visual_observation",
+          "grade": "V1",
+          "description": "表面新增白粉堆",
+          "role": "搅拌前新增干粉堆",
+          "media_ref": {
+            "path": "../../source/GX010021.MP4",
+            "time": {
+              "start_sec": 603.2,
+              "end_sec": 603.2,
+              "start_hms": "00:10:03.200",
+              "end_hms": "00:10:03.200"
+            }
+          },
+          "availability_time": null,
+          "human_review": "NOT_REVIEWED"
+        },
+        {
+          "evidence_id": "V-E052-01",
+          "registry_ref": "events.json#/evidence/69",
+          "source": {
+            "path": "annotation_reports/verification_report.md",
+            "line": 81,
+            "section": "B"
+          },
+          "time": {
+            "start_sec": 605.2,
+            "end_sec": 629.2,
+            "start_hms": "00:10:05.200",
+            "end_hms": "00:10:29.200"
+          },
+          "kind": "reported_visual_observation",
+          "grade": "V1",
+          "description": "第三次电动搅拌",
+          "role": "第三轮搅拌",
+          "media_ref": {
+            "path": "../../source/GX010021.MP4",
+            "time": {
+              "start_sec": 605.2,
+              "end_sec": 629.2,
+              "start_hms": "00:10:05.200",
+              "end_hms": "00:10:29.200"
+            }
+          },
+          "availability_time": null,
+          "human_review": "NOT_REVIEWED"
+        },
+        {
+          "evidence_id": "V-E052-02",
+          "registry_ref": "events.json#/evidence/70",
+          "source": {
+            "path": "annotation_reports/verification_report.md",
+            "line": 81,
+            "section": "B"
+          },
+          "time": {
+            "start_sec": 630.2,
+            "end_sec": 630.2,
+            "start_hms": "00:10:30.200",
+            "end_hms": "00:10:30.200"
+          },
+          "kind": "reported_visual_observation",
+          "grade": "V1",
+          "description": "面糊表面光滑",
+          "role": "末态表面光滑",
+          "media_ref": {
+            "path": "../../source/GX010021.MP4",
+            "time": {
+              "start_sec": 630.2,
+              "end_sec": 630.2,
+              "start_hms": "00:10:30.200",
+              "end_hms": "00:10:30.200"
+            }
+          },
+          "availability_time": null,
+          "human_review": "NOT_REVIEWED"
+        }
+      ],
+      "normative_rules": [],
+      "candidate_answer": {
+        "object_id": "O15",
+        "field": "mixture_state",
+        "before": "表面带干粉",
+        "after": "光滑均匀淡黄面糊",
+        "transition_time": {
+          "start_sec": 605.0,
+          "end_sec": 631.0,
+          "start_hms": "00:10:05.000",
+          "end_hms": "00:10:31.000"
+        },
+        "first_observable_smooth_time": null,
+        "boundary_status": "APPROXIMATE_FROM_STATE_HISTORY"
+      },
+      "gold_answer": null,
+      "scorable_conditions": [
+        "前态、后态及同一混合物连续性独立核验后，进行转移类型的一对一匹配。",
+        "605–631s是原状态链近似过程区间，不是首次变光滑的精确时刻。",
+        "Transition F1需δ_state冻结；Update Delay需首次可观察真值，当前均不硬计时分。"
+      ],
+      "pending_verification": [
+        "复核603.2s前态及605.2–630.2s变化、实际首次足够判断光滑的时间。",
+        "裁定颜色/均匀/光滑等状态词与分歧。"
+      ],
+      "existing_review_queue_ids": [
+        "RQ12"
+      ],
+      "evidence_quality": {
+        "status": "NOT_INDEPENDENTLY_VERIFIED",
+        "directly_observed_in_this_round": false,
+        "visual_source": "ARCHIVED_AI_REPORTS_ONLY",
+        "numeric_confidence": null,
+        "annotation_disagreements": "继承字段不确定性与历史修订；未做人类一致性测量。"
+      },
+      "visibility_regime": "G1",
+      "causal_constraints": {
+        "max_media_time": 631.3,
+        "require_availability_time_check": true,
+        "evaluator_reference_visible_to_agent": false,
+        "event_id_link_is_not_full_record_access": true,
+        "unknown_requires_observability_adjudication": true
+      },
+      "protocol_tbd": [
+        "输入窗口/采样与实际availability_time",
+        "运行预算/超时",
+        "最终输出Schema/证据匹配阈值",
+        "δ_state、首次可观察时间与区间延迟边界约定"
+      ],
+      "agent_facing_input": {
+        "kind": "read_only_state_snapshot",
+        "media_time": 631.3,
+        "note": "不把候选状态/事件ID/题面提示写入主Agent；只按统一接口读取状态。"
+      },
+      "output_contract": {
+        "output_types": [
+          "state_update",
+          "state_snapshot"
+        ],
+        "allow_unknown": true,
+        "required_clock_fields": [
+          "media_time",
+          "emission_wall_time",
+          "request_observation_cutoff"
+        ]
+      }
+    },
+    {
+      "task_id": "GX010021-T1-004",
+      "episode_id": "GX010021",
+      "track": "T1",
+      "task_type": "T1.2",
+      "title": "烤模已入烤箱而预热完成状态未知",
+      "data_status": "CANDIDATE",
+      "human_review": "NOT_REVIEWED",
+      "hard_scoring_eligible": false,
+      "execution_ready": false,
+      "design_refs": [
+        "4.1",
+        "5.1",
+        "6.3"
+      ],
+      "trigger": {
+        "mode": "state_snapshot",
+        "media_time": 692.3,
+        "scheduling_status": "CANDIDATE_CHECKPOINT"
+      },
+      "observation_cutoff": 692.3,
+      "reference_event_ids": [
+        "E055"
+      ],
+      "reference_object_ids": [
+        "O12",
+        "O14",
+        "O15"
+      ],
+      "reference_facts": [
+        {
+          "artifact": "objects",
+          "object_id": "O12",
+          "state_id": "O12.S04",
+          "source_ref": "objects.json#/objects/11/state_history/3",
+          "event_id": "E055",
+          "time": {
+            "start_sec": 687,
+            "end_sec": 692,
+            "start_hms": "00:11:27.000",
+            "end_hms": "00:11:32.000"
+          },
+          "kind": "transition",
+          "field": "location",
+          "before": null,
+          "after": "烤箱烤架内",
+          "status": "REPORTED_SUPPORTED",
+          "evidence_ids": [
+            "V-E055-01"
+          ],
+          "use": "CANDIDATE_REFERENCE_ONLY"
+        },
+        {
+          "artifact": "objects",
+          "object_id": "O14",
+          "state_id": "O14.S04",
+          "source_ref": "objects.json#/objects/13/state_history/3",
+          "event_id": "E055",
+          "time": {
+            "start_sec": 687,
+            "end_sec": 692,
+            "start_hms": "00:11:27.000",
+            "end_hms": "00:11:32.000"
+          },
+          "kind": "transition",
+          "field": "door_and_contents",
+          "before": null,
+          "after": "门打开、置入盛面糊烤模、关门",
+          "status": "REPORTED_SUPPORTED",
+          "evidence_ids": [
+            "V-E055-01"
+          ],
+          "use": "CANDIDATE_REFERENCE_ONLY"
+        },
+        {
+          "artifact": "events",
+          "event_id": "E055",
+          "source_ref": "events.json#/events/54/facts/1",
+          "field": "oven_preheat_complete",
+          "value": null,
+          "status": "UNCERTAIN",
+          "evidence_ids": [
+            "V-E055-01",
+            "H-E055-01",
+            "T-R01",
+            "T-R02"
+          ],
+          "reason": "实际温度与预热完成无视觉证据；R01/R02仅指令/自述。",
+          "use": "CANDIDATE_REFERENCE_ONLY"
+        }
+      ],
+      "evidence_refs": [
+        {
+          "evidence_id": "V-E055-01",
+          "registry_ref": "events.json#/evidence/75",
+          "source": {
+            "path": "annotation_reports/verification_report.md",
+            "line": 84,
+            "section": "B"
+          },
+          "time": {
+            "start_sec": 687.2,
+            "end_sec": 691.2,
+            "start_hms": "00:11:27.200",
+            "end_hms": "00:11:31.200"
+          },
+          "kind": "reported_visual_observation",
+          "grade": "V1",
+          "description": "开烤箱门、放模入架、关门",
+          "role": "放模入烤架并关门",
+          "media_ref": {
+            "path": "../../source/GX010021.MP4",
+            "time": {
+              "start_sec": 687.2,
+              "end_sec": 691.2,
+              "start_hms": "00:11:27.200",
+              "end_hms": "00:11:31.200"
+            }
+          },
+          "availability_time": null,
+          "human_review": "NOT_REVIEWED"
+        },
+        {
+          "evidence_id": "T-R01",
+          "registry_ref": "events.json#/evidence/77",
+          "source": {
+            "path": "source/annotations.json",
+            "section": "texts[0]"
+          },
+          "time": {
+            "start_sec": 4.418,
+            "end_sec": 4.418,
+            "start_hms": "00:00:04.418",
+            "end_hms": "00:00:04.418"
+          },
+          "kind": "ego_mc_text",
+          "grade": "TEXT",
+          "description": "原始Ego-MC线索，非视觉事实。",
+          "role": "早期350°F指令不是温度测量",
+          "media_ref": {
+            "path": "../../source/GX010021.MP4",
+            "time": {
+              "start_sec": 4.418,
+              "end_sec": 4.418,
+              "start_hms": "00:00:04.418",
+              "end_hms": "00:00:04.418"
+            }
+          },
+          "availability_time": null,
+          "human_review": "NOT_REVIEWED"
+        },
+        {
+          "evidence_id": "T-R02",
+          "registry_ref": "events.json#/evidence/78",
+          "source": {
+            "path": "source/annotations.json",
+            "section": "texts[1]"
+          },
+          "time": {
+            "start_sec": 9.608,
+            "end_sec": 9.608,
+            "start_hms": "00:00:09.608",
+            "end_hms": "00:00:09.608"
+          },
+          "kind": "ego_mc_text",
+          "grade": "TEXT",
+          "description": "原始Ego-MC线索，非视觉事实。",
+          "role": "操作者设温自述不是预热完成证据",
+          "media_ref": {
+            "path": "../../source/GX010021.MP4",
+            "time": {
+              "start_sec": 9.608,
+              "end_sec": 9.608,
+              "start_hms": "00:00:09.608",
+              "end_hms": "00:00:09.608"
+            }
+          },
+          "availability_time": null,
+          "human_review": "NOT_REVIEWED"
+        }
+      ],
+      "normative_rules": [],
+      "candidate_answer": {
+        "pan_location": "烤箱烤架内",
+        "oven_door": "closed",
+        "oven_preheat_complete": "unknown",
+        "actual_temperature": "unknown"
+      },
+      "gold_answer": null,
+      "scorable_conditions": [
+        "独立核验入架和关门，可分别评分位置/门态。",
+        "预热完成及温度需审定合法观察的可判定性；不能把缺标注直接变成unknown Gold。",
+        "不能从早期显示100、设温自述或未来R55 Success推断350°F已达到。"
+      ],
+      "pending_verification": [
+        "复核687.2–691.2s入架/门态与当时是否有可读温度、完成提示。",
+        "核验RQ08；当前参考事实未证明实际温度，若人工可读则候选答案应修订。"
+      ],
+      "existing_review_queue_ids": [
+        "RQ08"
+      ],
+      "evidence_quality": {
+        "status": "NOT_INDEPENDENTLY_VERIFIED",
+        "directly_observed_in_this_round": false,
+        "visual_source": "ARCHIVED_AI_REPORTS_ONLY",
+        "numeric_confidence": null,
+        "annotation_disagreements": "继承字段不确定性与历史修订；未做人类一致性测量。"
+      },
+      "visibility_regime": "G1",
+      "causal_constraints": {
+        "max_media_time": 692.3,
+        "require_availability_time_check": true,
+        "evaluator_reference_visible_to_agent": false,
+        "event_id_link_is_not_full_record_access": true,
+        "unknown_requires_observability_adjudication": true
+      },
+      "protocol_tbd": [
+        "输入窗口/采样与实际availability_time",
+        "运行预算/超时",
+        "最终输出Schema/证据匹配阈值"
+      ],
+      "agent_facing_input": {
+        "kind": "read_only_state_snapshot",
+        "media_time": 692.3,
+        "note": "不把候选状态/事件ID/题面提示写入主Agent；只按统一接口读取状态。"
+      },
+      "output_contract": {
+        "output_types": [
+          "state_update",
+          "state_snapshot"
+        ],
+        "allow_unknown": true,
+        "required_clock_fields": [
+          "media_time",
+          "emission_wall_time",
+          "request_observation_cutoff"
+        ]
+      }
+    },
+    {
+      "task_id": "GX010021-T2-001",
+      "episode_id": "GX010021",
+      "track": "T2",
+      "task_type": "T2.1",
+      "title": "首次搅拌开始时加奶事实与半杯前置条件的区分",
+      "data_status": "CANDIDATE",
+      "human_review": "NOT_REVIEWED",
+      "hard_scoring_eligible": false,
+      "execution_ready": false,
+      "design_refs": [
+        "4.2",
+        "5.4",
+        "6.2"
+      ],
+      "trigger": {
+        "mode": "query_snapshot",
+        "media_time": 200.3,
+        "scheduling_status": "CANDIDATE_CHECKPOINT"
+      },
+      "observation_cutoff": 200.3,
+      "reference_event_ids": [
+        "E020",
+        "E022",
+        "E023",
+        "E027"
+      ],
+      "reference_object_ids": [
+        "O01",
+        "O05",
+        "O06",
+        "O07"
+      ],
+      "reference_facts": [
+        {
+          "artifact": "events",
+          "event_id": "E020",
+          "source_ref": "events.json#/events/19/facts/1",
+          "field": "cup_label",
+          "value": "1/4 CUP",
+          "status": "REPORTED_SUPPORTED",
+          "evidence_ids": [
+            "V-E020-02"
+          ],
+          "reason": "144.2s杯柄标签，不等于牛奶实测量值。",
+          "use": "CANDIDATE_REFERENCE_ONLY"
+        },
+        {
+          "artifact": "events",
+          "event_id": "E020",
+          "source_ref": "events.json#/events/19/facts/2",
+          "field": "same_cup_as_E015",
+          "value": null,
+          "status": "UNCERTAIN",
+          "evidence_ids": [
+            "V-E020-01",
+            "V-E020-02",
+            "I-E020-02"
+          ],
+          "reason": "无连续跟踪，无法判断同杯或另一只。",
+          "use": "CANDIDATE_REFERENCE_ONLY"
+        },
+        {
+          "artifact": "events",
+          "event_id": "E022",
+          "source_ref": "events.json#/events/21/facts/1",
+          "field": "milk_volume_cup",
+          "value": null,
+          "status": "UNCERTAIN",
+          "evidence_ids": [
+            "V-E022-01",
+            "T-R18",
+            "T-R19"
+          ],
+          "reason": "R18半杯指令与早先1/4 CUP标签不能确认实际使用杯及量值；半杯来自Ego-MC。",
+          "use": "CANDIDATE_REFERENCE_ONLY"
+        },
+        {
+          "artifact": "events",
+          "event_id": "E023",
+          "source_ref": "events.json#/events/22/facts/1",
+          "field": "milk_volume_cup",
+          "value": null,
+          "status": "UNCERTAIN",
+          "evidence_ids": [
+            "V-E023-01",
+            "T-R18",
+            "T-R19"
+          ],
+          "reason": "R18半杯指令与早先1/4 CUP标签不能确认实际使用杯及量值；半杯来自Ego-MC。",
+          "use": "CANDIDATE_REFERENCE_ONLY"
+        },
+        {
+          "artifact": "objects",
+          "object_id": "O01",
+          "state_id": "O01.S05",
+          "source_ref": "objects.json#/objects/0/state_history/4",
+          "event_id": "E023",
+          "time": {
+            "start_sec": 158.0,
+            "end_sec": 165.0,
+            "start_hms": "00:02:38.000",
+            "end_hms": "00:02:45.000"
+          },
+          "kind": "transition",
+          "field": "contents",
+          "before": null,
+          "after": "新增牛奶",
+          "status": "REPORTED_SUPPORTED",
+          "evidence_ids": [
+            "V-E023-01"
+          ],
+          "use": "CANDIDATE_REFERENCE_ONLY"
+        },
+        {
+          "artifact": "annotations",
+          "record_id": "R18",
+          "source_ref": "../../annotations.json#/texts/17",
+          "source_index": 17,
+          "text": "Now add half cup of milk and whisk the mixture.",
+          "text_type": "Instruction",
+          "time": {
+            "start_sec": 134.748,
+            "end_sec": 134.748,
+            "start_hms": "00:02:14.748",
+            "end_hms": "00:02:14.748"
+          },
+          "evidence_ids": [
+            "T-R18"
+          ],
+          "use": "NORMATIVE_OR_DIALOGUE_CANDIDATE; NOT_PROOF_OF_EXECUTED_ACTION"
+        }
+      ],
+      "evidence_refs": [
+        {
+          "evidence_id": "T-R18",
+          "registry_ref": "events.json#/evidence/94",
+          "source": {
+            "path": "source/annotations.json",
+            "section": "texts[17]"
+          },
+          "time": {
+            "start_sec": 134.748,
+            "end_sec": 134.748,
+            "start_hms": "00:02:14.748",
+            "end_hms": "00:02:14.748"
+          },
+          "kind": "ego_mc_text",
+          "grade": "TEXT",
+          "description": "原始Ego-MC线索，非视觉事实。",
+          "role": "半杯牛奶及搅拌要求",
+          "media_ref": {
+            "path": "../../source/GX010021.MP4",
+            "time": {
+              "start_sec": 134.748,
+              "end_sec": 134.748,
+              "start_hms": "00:02:14.748",
+              "end_hms": "00:02:14.748"
+            }
+          },
+          "availability_time": null,
+          "human_review": "NOT_REVIEWED"
+        },
+        {
+          "evidence_id": "V-E020-02",
+          "registry_ref": "events.json#/evidence/26",
+          "source": {
+            "path": "annotation_reports/verification_report.md",
+            "line": 49,
+            "section": "B"
+          },
+          "time": {
+            "start_sec": 144.2,
+            "end_sec": 144.2,
+            "start_hms": "00:02:24.200",
+            "end_hms": "00:02:24.200"
+          },
+          "kind": "reported_visual_observation",
+          "grade": "V1",
+          "description": "杯柄标签 \"1/4 CUP\"",
+          "role": "早期一只量杯的标签",
+          "media_ref": {
+            "path": "../../source/GX010021.MP4",
+            "time": {
+              "start_sec": 144.2,
+              "end_sec": 144.2,
+              "start_hms": "00:02:24.200",
+              "end_hms": "00:02:24.200"
+            }
+          },
+          "availability_time": null,
+          "human_review": "NOT_REVIEWED"
+        },
+        {
+          "evidence_id": "V-E022-01",
+          "registry_ref": "events.json#/evidence/28",
+          "source": {
+            "path": "annotation_reports/verification_report.md",
+            "line": 51,
+            "section": "B"
+          },
+          "time": {
+            "start_sec": 153.2,
+            "end_sec": 156.2,
+            "start_hms": "00:02:33.200",
+            "end_hms": "00:02:36.200"
+          },
+          "kind": "reported_visual_observation",
+          "grade": "V1",
+          "description": "牛奶盒倒奶入杯，一次可见量取",
+          "role": "牛奶从盒量入杯",
+          "media_ref": {
+            "path": "../../source/GX010021.MP4",
+            "time": {
+              "start_sec": 153.2,
+              "end_sec": 156.2,
+              "start_hms": "00:02:33.200",
+              "end_hms": "00:02:36.200"
+            }
+          },
+          "availability_time": null,
+          "human_review": "NOT_REVIEWED"
+        },
+        {
+          "evidence_id": "V-E023-01",
+          "registry_ref": "events.json#/evidence/29",
+          "source": {
+            "path": "annotation_reports/verification_report.md",
+            "line": 52,
+            "section": "B"
+          },
+          "time": {
+            "start_sec": 159.2,
+            "end_sec": 161.2,
+            "start_hms": "00:02:39.200",
+            "end_hms": "00:02:41.200"
+          },
+          "kind": "reported_visual_observation",
+          "grade": "V1",
+          "description": "杯中奶倾入容器，台面见白色液滴",
+          "role": "牛奶从杯加入混合容器",
+          "media_ref": {
+            "path": "../../source/GX010021.MP4",
+            "time": {
+              "start_sec": 159.2,
+              "end_sec": 161.2,
+              "start_hms": "00:02:39.200",
+              "end_hms": "00:02:41.200"
+            }
+          },
+          "availability_time": null,
+          "human_review": "NOT_REVIEWED"
+        },
+        {
+          "evidence_id": "V-E027-01",
+          "registry_ref": "events.json#/evidence/34",
+          "source": {
+            "path": "annotation_reports/verification_report.md",
+            "line": 56,
+            "section": "B"
+          },
+          "time": {
+            "start_sec": 199.2,
+            "end_sec": 199.2,
+            "start_hms": "00:03:19.200",
+            "end_hms": "00:03:19.200"
+          },
+          "kind": "reported_visual_observation",
+          "grade": "V1",
+          "description": "搅拌棒进入液面",
+          "role": "当前搅拌棒已进入液面；仅199.2s锚点",
+          "media_ref": {
+            "path": "../../source/GX010021.MP4",
+            "time": {
+              "start_sec": 199.2,
+              "end_sec": 199.2,
+              "start_hms": "00:03:19.200",
+              "end_hms": "00:03:19.200"
+            }
+          },
+          "availability_time": null,
+          "human_review": "NOT_REVIEWED"
+        }
+      ],
+      "normative_rules": [
+        {
+          "rule_id": "GX010021-RULE-CAND-R18",
+          "status": "CANDIDATE",
+          "record_id": "R18",
+          "evidence_ids": [
+            "T-R18"
+          ],
+          "statement": "Now add half cup of milk and whisk the mixture.",
+          "issued_at": 134.748,
+          "effective_from": null,
+          "candidate_effective_not_before": 134.748,
+          "scope": "本次加奶与首次搅拌",
+          "condition": "原句要求half cup；前置关系待上下文核验",
+          "supersedes": null,
+          "supersedes_status": "NOT_ASSERTED",
+          "release_note": "点时间戳不是整段话结束/Runner公开时间；effective_from需独立核验，当前不可执行。"
+        }
+      ],
+      "candidate_answer": {
+        "decision": "unknown",
+        "milk_added": true,
+        "half_cup_satisfied": "unknown",
+        "rationale": "盒→杯→混合容器加奶链有候选可见证据；早期1/4 CUP标签与倒奶杯缺连续身份/规格证据，半杯指令不是实测量值。"
+      },
+      "gold_answer": null,
+      "scorable_conditions": [
+        "先核验R18语义/公开时刻及盒→杯→容器连续链，前置只限该原指令的加奶要求。",
+        "decision允许satisfied/unsatisfied/unknown；不能由标签1/4 CUP直接判unsatisfied。",
+        "若独立复核证明当时可读实际规格或量值，更新答案；仅标注者不知道不能得到unknown真值。",
+        "证据需同时区分要求、实际加奶和杯身份歧义，避免题目退化为单个标签回忆。"
+      ],
+      "pending_verification": [
+        "人工裁定R18是否构成当前搅拌前置要求；不额外添加严格SOP次序。",
+        "核验139–165s杯身份/量值及199.2s当前锚点；只能引用200.3s前输入。",
+        "以冻结近期窗口和合法当前指令做B0/No-video审核；该题可能只适合作短跨度状态推理诊断。"
+      ],
+      "existing_review_queue_ids": [
+        "RQ05"
+      ],
+      "evidence_quality": {
+        "status": "NOT_INDEPENDENTLY_VERIFIED",
+        "directly_observed_in_this_round": false,
+        "visual_source": "ARCHIVED_AI_REPORTS_ONLY",
+        "numeric_confidence": null,
+        "annotation_disagreements": "继承字段不确定性与历史修订；未做人类一致性测量。"
+      },
+      "visibility_regime": "G1",
+      "causal_constraints": {
+        "max_media_time": 200.3,
+        "require_availability_time_check": true,
+        "evaluator_reference_visible_to_agent": false,
+        "event_id_link_is_not_full_record_access": true,
+        "unknown_requires_observability_adjudication": true
+      },
+      "protocol_tbd": [
+        "输入窗口/采样与实际availability_time",
+        "运行预算/超时",
+        "最终输出Schema/证据匹配阈值",
+        "近期窗口长度/B0成本控制",
+        "Evidence Score容差/无关片段惩罚/最小集裁决"
+      ],
+      "earliest_answerable_time": {
+        "start_sec": 199.0,
+        "end_sec": 199.2,
+        "start_hms": "00:03:19.000",
+        "end_hms": "00:03:19.200"
+      },
+      "earliest_answerable_time_status": "CANDIDATE_ENVELOPE_NOT_VERIFIED_FIRST_TIME",
+      "question": "当前第一轮搅拌已经开始。按此前加奶与搅拌指令，加奶这个前置要求是否可以确认已满足？请分别判断牛奶是否已进入混合容器、半杯用量是否可确定，并解释此前量杯观察能否用于判定实际用量。",
+      "answer_type": {
+        "decision": [
+          "satisfied",
+          "unsatisfied",
+          "unknown"
+        ],
+        "supporting_fields": [
+          "milk_added",
+          "half_cup_satisfied",
+          "evidence_refs",
+          "uncertainty"
+        ]
+      },
+      "required_evidence_sets": [
+        [
+          {
+            "evidence_id": "T-R18",
+            "registry_ref": "events.json#/evidence/94",
+            "source": {
+              "path": "source/annotations.json",
+              "section": "texts[17]"
+            },
+            "time": {
+              "start_sec": 134.748,
+              "end_sec": 134.748,
+              "start_hms": "00:02:14.748",
+              "end_hms": "00:02:14.748"
+            },
+            "kind": "ego_mc_text",
+            "grade": "TEXT",
+            "description": "原始Ego-MC线索，非视觉事实。",
+            "role": "前置要求",
+            "media_ref": {
+              "path": "../../source/GX010021.MP4",
+              "time": {
+                "start_sec": 134.748,
+                "end_sec": 134.748,
+                "start_hms": "00:02:14.748",
+                "end_hms": "00:02:14.748"
+              }
+            },
+            "availability_time": null,
+            "human_review": "NOT_REVIEWED"
+          },
+          {
+            "evidence_id": "V-E020-02",
+            "registry_ref": "events.json#/evidence/26",
+            "source": {
+              "path": "annotation_reports/verification_report.md",
+              "line": 49,
+              "section": "B"
+            },
+            "time": {
+              "start_sec": 144.2,
+              "end_sec": 144.2,
+              "start_hms": "00:02:24.200",
+              "end_hms": "00:02:24.200"
+            },
+            "kind": "reported_visual_observation",
+            "grade": "V1",
+            "description": "杯柄标签 \"1/4 CUP\"",
+            "role": "早期标签不足以定当前杯身份",
+            "media_ref": {
+              "path": "../../source/GX010021.MP4",
+              "time": {
+                "start_sec": 144.2,
+                "end_sec": 144.2,
+                "start_hms": "00:02:24.200",
+                "end_hms": "00:02:24.200"
+              }
+            },
+            "availability_time": null,
+            "human_review": "NOT_REVIEWED"
+          },
+          {
+            "evidence_id": "V-E022-01",
+            "registry_ref": "events.json#/evidence/28",
+            "source": {
+              "path": "annotation_reports/verification_report.md",
+              "line": 51,
+              "section": "B"
+            },
+            "time": {
+              "start_sec": 153.2,
+              "end_sec": 156.2,
+              "start_hms": "00:02:33.200",
+              "end_hms": "00:02:36.200"
+            },
+            "kind": "reported_visual_observation",
+            "grade": "V1",
+            "description": "牛奶盒倒奶入杯，一次可见量取",
+            "role": "盒→杯",
+            "media_ref": {
+              "path": "../../source/GX010021.MP4",
+              "time": {
+                "start_sec": 153.2,
+                "end_sec": 156.2,
+                "start_hms": "00:02:33.200",
+                "end_hms": "00:02:36.200"
+              }
+            },
+            "availability_time": null,
+            "human_review": "NOT_REVIEWED"
+          },
+          {
+            "evidence_id": "V-E023-01",
+            "registry_ref": "events.json#/evidence/29",
+            "source": {
+              "path": "annotation_reports/verification_report.md",
+              "line": 52,
+              "section": "B"
+            },
+            "time": {
+              "start_sec": 159.2,
+              "end_sec": 161.2,
+              "start_hms": "00:02:39.200",
+              "end_hms": "00:02:41.200"
+            },
+            "kind": "reported_visual_observation",
+            "grade": "V1",
+            "description": "杯中奶倾入容器，台面见白色液滴",
+            "role": "杯→混合容器",
+            "media_ref": {
+              "path": "../../source/GX010021.MP4",
+              "time": {
+                "start_sec": 159.2,
+                "end_sec": 161.2,
+                "start_hms": "00:02:39.200",
+                "end_hms": "00:02:41.200"
+              }
+            },
+            "availability_time": null,
+            "human_review": "NOT_REVIEWED"
+          }
+        ]
+      ],
+      "reasoning_relation": [
+        "requires_object_state（加奶要求，待核验）",
+        "对象传递",
+        "量杯身份与实测量值不可直接继承"
+      ],
+      "history_necessity": {
+        "status": "PENDING_RECENT_ONLY_AND_NO_VIDEO_AUDIT",
+        "long_horizon_claim": "NOT_ESTABLISHED",
+        "recall_only": false,
+        "nonredundant_evidence": "要求、早期标签与两段实际转移作用不同；不以时间跨度证明长程。",
+        "shortcut_risk": "合法当前指令可能直接给出半杯；仍需历史才能区分要求与事实。"
+      },
+      "current_process_evidence_ids": [
+        "V-E027-01"
+      ],
+      "query_time": 200.3,
+      "dependency_span": 65.552,
+      "dependency_span_unit": "seconds",
+      "dependency_span_basis": {
+        "earliest_required_evidence_start": 134.748,
+        "note": "仅描述候选证据跨度，不等于通过长程必要性门禁。"
+      },
+      "required_evidence_sets_status": "PROPOSED_MINIMAL_SUFFICIENT; 独立审核与片段删除实验前不声明已最小充分",
+      "probe_isolation": {
+        "required": true,
+        "write_back_to_main_agent": false,
+        "method": "冻结t_q主执行状态，复制到只读分支，回答后丢弃分支；主状态继续",
+        "fallback": "预先声明并验证等价隔离策略及额外成本",
+        "verified": false
+      },
+      "agent_facing_input": {
+        "interface": "query_snapshot(query, at_media_time, isolated=true)",
+        "expose_only_at_query_time": [
+          "question",
+          "answer_type"
+        ],
+        "private_fields": "其余均为Evaluator私有，不作为Agent输入",
+        "answer_evidence_refs": "Agent引用已公开observation/指令；私有V-/T-证据ID仅由Evaluator映射"
+      }
+    },
+    {
+      "task_id": "GX010021-T2-002",
+      "episode_id": "GX010021",
+      "track": "T2",
+      "task_type": "T2.2",
+      "title": "倒糊入模时材料替代许可与实际处理状态",
+      "data_status": "CANDIDATE",
+      "human_review": "NOT_REVIEWED",
+      "hard_scoring_eligible": false,
+      "execution_ready": false,
+      "design_refs": [
+        "4.2",
+        "5.4",
+        "6.2"
+      ],
+      "trigger": {
+        "mode": "query_snapshot",
+        "media_time": 641.3,
+        "scheduling_status": "CANDIDATE_CHECKPOINT"
+      },
+      "observation_cutoff": 641.3,
+      "reference_event_ids": [
+        "E049",
+        "E053"
+      ],
+      "reference_object_ids": [
+        "O12",
+        "O13",
+        "O15"
+      ],
+      "reference_facts": [
+        {
+          "artifact": "annotations",
+          "record_id": "R39",
+          "source_ref": "../../annotations.json#/texts/38",
+          "source_index": 38,
+          "text": "Use a parchment paper to line the baking tray.",
+          "text_type": "Instruction-Clarification",
+          "time": {
+            "start_sec": 538.698,
+            "end_sec": 538.698,
+            "start_hms": "00:08:58.698",
+            "end_hms": "00:08:58.698"
+          },
+          "evidence_ids": [
+            "T-R39"
+          ],
+          "use": "NORMATIVE_OR_DIALOGUE_CANDIDATE; NOT_PROOF_OF_EXECUTED_ACTION"
+        },
+        {
+          "artifact": "annotations",
+          "record_id": "R40",
+          "source_ref": "../../annotations.json#/texts/39",
+          "source_index": 39,
+          "text": "I don't have a parchment paper.",
+          "text_type": "User-Comment",
+          "time": {
+            "start_sec": 544.398,
+            "end_sec": 544.398,
+            "start_hms": "00:09:04.398",
+            "end_hms": "00:09:04.398"
+          },
+          "evidence_ids": [
+            "T-R40"
+          ],
+          "use": "NORMATIVE_OR_DIALOGUE_CANDIDATE; NOT_PROOF_OF_EXECUTED_ACTION"
+        },
+        {
+          "artifact": "annotations",
+          "record_id": "R41",
+          "source_ref": "../../annotations.json#/texts/40",
+          "source_index": 40,
+          "text": "You can then use some of the leftover butter from the melt to line up the tray.",
+          "text_type": "Instruction-Clarification",
+          "time": {
+            "start_sec": 546.378,
+            "end_sec": 546.378,
+            "start_hms": "00:09:06.378",
+            "end_hms": "00:09:06.378"
+          },
+          "evidence_ids": [
+            "T-R41"
+          ],
+          "use": "NORMATIVE_OR_DIALOGUE_CANDIDATE; NOT_PROOF_OF_EXECUTED_ACTION"
+        },
+        {
+          "artifact": "annotations",
+          "record_id": "R42",
+          "source_ref": "../../annotations.json#/texts/41",
+          "source_index": 41,
+          "text": "I don't have any leftover butter, should I use oil instead?",
+          "text_type": "User-Question",
+          "time": {
+            "start_sec": 552.478,
+            "end_sec": 552.478,
+            "start_hms": "00:09:12.478",
+            "end_hms": "00:09:12.478"
+          },
+          "evidence_ids": [
+            "T-R42"
+          ],
+          "use": "NORMATIVE_OR_DIALOGUE_CANDIDATE; NOT_PROOF_OF_EXECUTED_ACTION"
+        },
+        {
+          "artifact": "annotations",
+          "record_id": "R43",
+          "source_ref": "../../annotations.json#/texts/42",
+          "source_index": 42,
+          "text": "Yes, you can use oil.",
+          "text_type": "Instruction-Clarification",
+          "time": {
+            "start_sec": 556.368,
+            "end_sec": 556.368,
+            "start_hms": "00:09:16.368",
+            "end_hms": "00:09:16.368"
+          },
+          "evidence_ids": [
+            "T-R43"
+          ],
+          "use": "NORMATIVE_OR_DIALOGUE_CANDIDATE; NOT_PROOF_OF_EXECUTED_ACTION"
+        },
+        {
+          "artifact": "events",
+          "event_id": "E049",
+          "source_ref": "events.json#/events/48/facts/1",
+          "field": "inner_wall_oil_film",
+          "value": null,
+          "status": "UNCERTAIN",
+          "evidence_ids": [
+            "V-E049-01",
+            "V-E049-02",
+            "I-E049-01",
+            "T-R43",
+            "T-R45"
+          ],
+          "reason": "模底见油、倾斜旋转不证明内壁油膜或覆盖程度；R45评价不升级事实。",
+          "use": "CANDIDATE_REFERENCE_ONLY"
+        },
+        {
+          "artifact": "objects",
+          "object_id": "O12",
+          "state_id": "O12.S01",
+          "source_ref": "objects.json#/objects/11/state_history/0",
+          "event_id": "E049",
+          "time": {
+            "start_sec": 560,
+            "end_sec": 581,
+            "start_hms": "00:09:20.000",
+            "end_hms": "00:09:41.000"
+          },
+          "kind": "transition",
+          "field": "oil_at_bottom",
+          "before": null,
+          "after": "模底见少量油；烤模被倾斜旋转",
+          "status": "REPORTED_SUPPORTED",
+          "evidence_ids": [
+            "V-E049-01",
+            "V-E049-02"
+          ],
+          "use": "CANDIDATE_REFERENCE_ONLY"
+        },
+        {
+          "artifact": "objects",
+          "object_id": "O12",
+          "state_id": "O12.S02",
+          "source_ref": "objects.json#/objects/11/state_history/1",
+          "event_id": "E049",
+          "time": {
+            "start_sec": 560,
+            "end_sec": 581,
+            "start_hms": "00:09:20.000",
+            "end_hms": "00:09:41.000"
+          },
+          "kind": "transition",
+          "field": "inner_wall_oil_film",
+          "before": null,
+          "after": null,
+          "status": "UNCERTAIN",
+          "evidence_ids": [
+            "V-E049-01",
+            "V-E049-02",
+            "I-E049-01",
+            "T-R43",
+            "T-R45"
+          ],
+          "use": "CANDIDATE_REFERENCE_ONLY"
+        }
+      ],
+      "evidence_refs": [
+        {
+          "evidence_id": "T-R39",
+          "registry_ref": "events.json#/evidence/115",
+          "source": {
+            "path": "source/annotations.json",
+            "section": "texts[38]"
+          },
+          "time": {
+            "start_sec": 538.698,
+            "end_sec": 538.698,
+            "start_hms": "00:08:58.698",
+            "end_hms": "00:08:58.698"
+          },
+          "kind": "ego_mc_text",
+          "grade": "TEXT",
+          "description": "原始Ego-MC线索，非视觉事实。",
+          "role": "最初烤模处理建议",
+          "media_ref": {
+            "path": "../../source/GX010021.MP4",
+            "time": {
+              "start_sec": 538.698,
+              "end_sec": 538.698,
+              "start_hms": "00:08:58.698",
+              "end_hms": "00:08:58.698"
+            }
+          },
+          "availability_time": null,
+          "human_review": "NOT_REVIEWED"
+        },
+        {
+          "evidence_id": "T-R40",
+          "registry_ref": "events.json#/evidence/116",
+          "source": {
+            "path": "source/annotations.json",
+            "section": "texts[39]"
+          },
+          "time": {
+            "start_sec": 544.398,
+            "end_sec": 544.398,
+            "start_hms": "00:09:04.398",
+            "end_hms": "00:09:04.398"
+          },
+          "kind": "ego_mc_text",
+          "grade": "TEXT",
+          "description": "原始Ego-MC线索，非视觉事实。",
+          "role": "没有烘焙纸的自述条件",
+          "media_ref": {
+            "path": "../../source/GX010021.MP4",
+            "time": {
+              "start_sec": 544.398,
+              "end_sec": 544.398,
+              "start_hms": "00:09:04.398",
+              "end_hms": "00:09:04.398"
+            }
+          },
+          "availability_time": null,
+          "human_review": "NOT_REVIEWED"
+        },
+        {
+          "evidence_id": "T-R41",
+          "registry_ref": "events.json#/evidence/117",
+          "source": {
+            "path": "source/annotations.json",
+            "section": "texts[40]"
+          },
+          "time": {
+            "start_sec": 546.378,
+            "end_sec": 546.378,
+            "start_hms": "00:09:06.378",
+            "end_hms": "00:09:06.378"
+          },
+          "kind": "ego_mc_text",
+          "grade": "TEXT",
+          "description": "原始Ego-MC线索，非视觉事实。",
+          "role": "剩余黄油替代建议及作用范围",
+          "media_ref": {
+            "path": "../../source/GX010021.MP4",
+            "time": {
+              "start_sec": 546.378,
+              "end_sec": 546.378,
+              "start_hms": "00:09:06.378",
+              "end_hms": "00:09:06.378"
+            }
+          },
+          "availability_time": null,
+          "human_review": "NOT_REVIEWED"
+        },
+        {
+          "evidence_id": "T-R42",
+          "registry_ref": "events.json#/evidence/118",
+          "source": {
+            "path": "source/annotations.json",
+            "section": "texts[41]"
+          },
+          "time": {
+            "start_sec": 552.478,
+            "end_sec": 552.478,
+            "start_hms": "00:09:12.478",
+            "end_hms": "00:09:12.478"
+          },
+          "kind": "ego_mc_text",
+          "grade": "TEXT",
+          "description": "原始Ego-MC线索，非视觉事实。",
+          "role": "没有剩余黄油并提议用油的自述条件",
+          "media_ref": {
+            "path": "../../source/GX010021.MP4",
+            "time": {
+              "start_sec": 552.478,
+              "end_sec": 552.478,
+              "start_hms": "00:09:12.478",
+              "end_hms": "00:09:12.478"
+            }
+          },
+          "availability_time": null,
+          "human_review": "NOT_REVIEWED"
+        },
+        {
+          "evidence_id": "T-R43",
+          "registry_ref": "events.json#/evidence/119",
+          "source": {
+            "path": "source/annotations.json",
+            "section": "texts[42]"
+          },
+          "time": {
+            "start_sec": 556.368,
+            "end_sec": 556.368,
+            "start_hms": "00:09:16.368",
+            "end_hms": "00:09:16.368"
+          },
+          "kind": "ego_mc_text",
+          "grade": "TEXT",
+          "description": "原始Ego-MC线索，非视觉事实。",
+          "role": "指导者许可",
+          "media_ref": {
+            "path": "../../source/GX010021.MP4",
+            "time": {
+              "start_sec": 556.368,
+              "end_sec": 556.368,
+              "start_hms": "00:09:16.368",
+              "end_hms": "00:09:16.368"
+            }
+          },
+          "availability_time": null,
+          "human_review": "NOT_REVIEWED"
+        },
+        {
+          "evidence_id": "V-E049-01",
+          "registry_ref": "events.json#/evidence/64",
+          "source": {
+            "path": "annotation_reports/verification_report.md",
+            "line": 78,
+            "section": "B"
+          },
+          "time": {
+            "start_sec": 560.2,
+            "end_sec": 562.2,
+            "start_hms": "00:09:20.200",
+            "end_hms": "00:09:22.200"
+          },
+          "kind": "reported_visual_observation",
+          "grade": "V1",
+          "description": "油流/油滴进入模底",
+          "role": "模底实际见油",
+          "media_ref": {
+            "path": "../../source/GX010021.MP4",
+            "time": {
+              "start_sec": 560.2,
+              "end_sec": 562.2,
+              "start_hms": "00:09:20.200",
+              "end_hms": "00:09:22.200"
+            }
+          },
+          "availability_time": null,
+          "human_review": "NOT_REVIEWED"
+        },
+        {
+          "evidence_id": "V-E049-02",
+          "registry_ref": "events.json#/evidence/65",
+          "source": {
+            "path": "annotation_reports/verification_report.md",
+            "line": 78,
+            "section": "B"
+          },
+          "time": {
+            "start_sec": 567.2,
+            "end_sec": 579.2,
+            "start_hms": "00:09:27.200",
+            "end_hms": "00:09:39.200"
+          },
+          "kind": "reported_visual_observation",
+          "grade": "V1",
+          "description": "持模倾斜旋转，内壁油膜不可辨",
+          "role": "烤模倾斜旋转；内壁油膜不可辨",
+          "media_ref": {
+            "path": "../../source/GX010021.MP4",
+            "time": {
+              "start_sec": 567.2,
+              "end_sec": 579.2,
+              "start_hms": "00:09:27.200",
+              "end_hms": "00:09:39.200"
+            }
+          },
+          "availability_time": null,
+          "human_review": "NOT_REVIEWED"
+        },
+        {
+          "evidence_id": "V-E053-01",
+          "registry_ref": "events.json#/evidence/71",
+          "source": {
+            "path": "annotation_reports/verification_report.md",
+            "line": 82,
+            "section": "B"
+          },
+          "time": {
+            "start_sec": 633.2,
+            "end_sec": 641.2,
+            "start_hms": "00:10:33.200",
+            "end_hms": "00:10:41.200"
+          },
+          "kind": "reported_visual_observation",
+          "grade": "V1",
+          "description": "混合容器面糊倾入烤模",
+          "role": "当前倒糊入模锚点；不含后续刮净",
+          "media_ref": {
+            "path": "../../source/GX010021.MP4",
+            "time": {
+              "start_sec": 633.2,
+              "end_sec": 641.2,
+              "start_hms": "00:10:33.200",
+              "end_hms": "00:10:41.200"
+            }
+          },
+          "availability_time": null,
+          "human_review": "NOT_REVIEWED"
+        }
+      ],
+      "normative_rules": [
+        {
+          "rule_id": "GX010021-RULE-CAND-R39",
+          "status": "CANDIDATE",
+          "record_id": "R39",
+          "evidence_ids": [
+            "T-R39"
+          ],
+          "statement": "Use a parchment paper to line the baking tray.",
+          "issued_at": 538.698,
+          "effective_from": null,
+          "candidate_effective_not_before": 538.698,
+          "scope": "本次烤模处理",
+          "condition": "先提出烘焙纸",
+          "supersedes": null,
+          "supersedes_status": "NOT_ASSERTED",
+          "release_note": "点时间戳不是整段话结束/Runner公开时间；effective_from需独立核验，当前不可执行。"
+        },
+        {
+          "rule_id": "GX010021-RULE-CAND-R41",
+          "status": "CANDIDATE",
+          "record_id": "R41",
+          "evidence_ids": [
+            "T-R41"
+          ],
+          "statement": "You can then use some of the leftover butter from the melt to line up the tray.",
+          "issued_at": 546.378,
+          "effective_from": null,
+          "candidate_effective_not_before": 546.378,
+          "scope": "本次烤模处理",
+          "condition": "R40称没有烘焙纸后，建议用融化剩余黄油",
+          "supersedes": "GX010021-RULE-CAND-R39",
+          "supersedes_status": "PENDING_CONTEXT_REVIEW",
+          "release_note": "点时间戳不是整段话结束/Runner公开时间；effective_from需独立核验，当前不可执行。"
+        },
+        {
+          "rule_id": "GX010021-RULE-CAND-R43",
+          "status": "CANDIDATE",
+          "record_id": "R43",
+          "evidence_ids": [
+            "T-R43"
+          ],
+          "statement": "Yes, you can use oil.",
+          "issued_at": 556.368,
+          "effective_from": null,
+          "candidate_effective_not_before": 556.368,
+          "scope": "本次烤模处理",
+          "condition": "R42称无剩余黄油并提议用油；yes的对象与作用须依赖上下文",
+          "supersedes": "GX010021-RULE-CAND-R41",
+          "supersedes_status": "PENDING_CONTEXT_REVIEW",
+          "release_note": "点时间戳不是整段话结束/Runner公开时间；effective_from需独立核验，当前不可执行。"
+        }
+      ],
+      "candidate_answer": {
+        "effective_choice": "oil_permitted_for_this_pan_preparation",
+        "applicable_scope": "本次烤模处理；不等于可用油替代面糊内黄油",
+        "context_conditions": [
+          "没有烘焙纸：操作者自述",
+          "没有剩余黄油：操作者自述"
+        ],
+        "candidate_revision_chain": [
+          "R39",
+          "R41",
+          "R43"
+        ],
+        "factual_state": "模底见油且已倾斜旋转",
+        "inner_wall_coverage": "unknown",
+        "rationale": "R43的yes需用R41/R42消解对象与用途；许可不等于内壁涂覆完成。"
+      },
+      "gold_answer": null,
+      "scorable_conditions": [
+        "上下文独立核验后评分当前允许用油与用途范围，不能只匹配R43的yes。",
+        "R40/R42是对话条件自述，不作为物资库存定量事实；局部替代不扩展为全菜谱规则。",
+        "证据覆盖原方案、条件、替代/许可和烤模实际观察；内壁状态按可判定性裁决。",
+        "Revision Consistency仍缺修订前配对Probe，此单题不能算整组修订一致率。"
+      ],
+      "pending_verification": [
+        "核验R39→R41→R43是否为该烤模的局部替代、条件和生效/公开时刻。",
+        "核验560.2–579.2s倒油/旋转与633.2–641.2s同一烤模开始接收面糊。",
+        "R43独句存在语言省略，仍须做Current-only/Instruction-only审核；若当前有效指令已经整理出全链，则可能没有历史增益。"
+      ],
+      "existing_review_queue_ids": [
+        "RQ03"
+      ],
+      "evidence_quality": {
+        "status": "NOT_INDEPENDENTLY_VERIFIED",
+        "directly_observed_in_this_round": false,
+        "visual_source": "ARCHIVED_AI_REPORTS_ONLY",
+        "numeric_confidence": null,
+        "annotation_disagreements": "继承字段不确定性与历史修订；未做人类一致性测量。"
+      },
+      "visibility_regime": "G1",
+      "causal_constraints": {
+        "max_media_time": 641.3,
+        "require_availability_time_check": true,
+        "evaluator_reference_visible_to_agent": false,
+        "event_id_link_is_not_full_record_access": true,
+        "unknown_requires_observability_adjudication": true
+      },
+      "protocol_tbd": [
+        "输入窗口/采样与实际availability_time",
+        "运行预算/超时",
+        "最终输出Schema/证据匹配阈值",
+        "近期窗口长度/B0成本控制",
+        "Evidence Score容差/无关片段惩罚/最小集裁决"
+      ],
+      "earliest_answerable_time": {
+        "start_sec": 633.2,
+        "end_sec": 641.2,
+        "start_hms": "00:10:33.200",
+        "end_hms": "00:10:41.200"
+      },
+      "earliest_answerable_time_status": "CANDIDATE_ENVELOPE_NOT_VERIFIED_FIRST_TIME",
+      "question": "面糊正在倒入此前准备的烤模。结合此前指导者与操作者关于处理烤模的问答，此时采用食用油是否得到允许，许可适用于什么对象和用途、依赖哪些对话条件？请同时区分已观察到的烤模处理动作与仍无法确认的处理结果。",
+      "answer_type": {
+        "fields": [
+          "effective_choice",
+          "applicable_scope",
+          "context_conditions",
+          "factual_state",
+          "inner_wall_coverage",
+          "evidence_refs",
+          "uncertainty"
+        ],
+        "allow_unknown": true
+      },
+      "required_evidence_sets": [
+        [
+          {
+            "evidence_id": "T-R39",
+            "registry_ref": "events.json#/evidence/115",
+            "source": {
+              "path": "source/annotations.json",
+              "section": "texts[38]"
+            },
+            "time": {
+              "start_sec": 538.698,
+              "end_sec": 538.698,
+              "start_hms": "00:08:58.698",
+              "end_hms": "00:08:58.698"
+            },
+            "kind": "ego_mc_text",
+            "grade": "TEXT",
+            "description": "原始Ego-MC线索，非视觉事实。",
+            "role": "最初烤模处理建议",
+            "media_ref": {
+              "path": "../../source/GX010021.MP4",
+              "time": {
+                "start_sec": 538.698,
+                "end_sec": 538.698,
+                "start_hms": "00:08:58.698",
+                "end_hms": "00:08:58.698"
+              }
+            },
+            "availability_time": null,
+            "human_review": "NOT_REVIEWED"
+          },
+          {
+            "evidence_id": "T-R40",
+            "registry_ref": "events.json#/evidence/116",
+            "source": {
+              "path": "source/annotations.json",
+              "section": "texts[39]"
+            },
+            "time": {
+              "start_sec": 544.398,
+              "end_sec": 544.398,
+              "start_hms": "00:09:04.398",
+              "end_hms": "00:09:04.398"
+            },
+            "kind": "ego_mc_text",
+            "grade": "TEXT",
+            "description": "原始Ego-MC线索，非视觉事实。",
+            "role": "没有烘焙纸的自述条件",
+            "media_ref": {
+              "path": "../../source/GX010021.MP4",
+              "time": {
+                "start_sec": 544.398,
+                "end_sec": 544.398,
+                "start_hms": "00:09:04.398",
+                "end_hms": "00:09:04.398"
+              }
+            },
+            "availability_time": null,
+            "human_review": "NOT_REVIEWED"
+          },
+          {
+            "evidence_id": "T-R41",
+            "registry_ref": "events.json#/evidence/117",
+            "source": {
+              "path": "source/annotations.json",
+              "section": "texts[40]"
+            },
+            "time": {
+              "start_sec": 546.378,
+              "end_sec": 546.378,
+              "start_hms": "00:09:06.378",
+              "end_hms": "00:09:06.378"
+            },
+            "kind": "ego_mc_text",
+            "grade": "TEXT",
+            "description": "原始Ego-MC线索，非视觉事实。",
+            "role": "剩余黄油替代建议及作用范围",
+            "media_ref": {
+              "path": "../../source/GX010021.MP4",
+              "time": {
+                "start_sec": 546.378,
+                "end_sec": 546.378,
+                "start_hms": "00:09:06.378",
+                "end_hms": "00:09:06.378"
+              }
+            },
+            "availability_time": null,
+            "human_review": "NOT_REVIEWED"
+          },
+          {
+            "evidence_id": "T-R42",
+            "registry_ref": "events.json#/evidence/118",
+            "source": {
+              "path": "source/annotations.json",
+              "section": "texts[41]"
+            },
+            "time": {
+              "start_sec": 552.478,
+              "end_sec": 552.478,
+              "start_hms": "00:09:12.478",
+              "end_hms": "00:09:12.478"
+            },
+            "kind": "ego_mc_text",
+            "grade": "TEXT",
+            "description": "原始Ego-MC线索，非视觉事实。",
+            "role": "没有剩余黄油并提议用油的自述条件",
+            "media_ref": {
+              "path": "../../source/GX010021.MP4",
+              "time": {
+                "start_sec": 552.478,
+                "end_sec": 552.478,
+                "start_hms": "00:09:12.478",
+                "end_hms": "00:09:12.478"
+              }
+            },
+            "availability_time": null,
+            "human_review": "NOT_REVIEWED"
+          },
+          {
+            "evidence_id": "T-R43",
+            "registry_ref": "events.json#/evidence/119",
+            "source": {
+              "path": "source/annotations.json",
+              "section": "texts[42]"
+            },
+            "time": {
+              "start_sec": 556.368,
+              "end_sec": 556.368,
+              "start_hms": "00:09:16.368",
+              "end_hms": "00:09:16.368"
+            },
+            "kind": "ego_mc_text",
+            "grade": "TEXT",
+            "description": "原始Ego-MC线索，非视觉事实。",
+            "role": "指导者许可",
+            "media_ref": {
+              "path": "../../source/GX010021.MP4",
+              "time": {
+                "start_sec": 556.368,
+                "end_sec": 556.368,
+                "start_hms": "00:09:16.368",
+                "end_hms": "00:09:16.368"
+              }
+            },
+            "availability_time": null,
+            "human_review": "NOT_REVIEWED"
+          },
+          {
+            "evidence_id": "V-E049-01",
+            "registry_ref": "events.json#/evidence/64",
+            "source": {
+              "path": "annotation_reports/verification_report.md",
+              "line": 78,
+              "section": "B"
+            },
+            "time": {
+              "start_sec": 560.2,
+              "end_sec": 562.2,
+              "start_hms": "00:09:20.200",
+              "end_hms": "00:09:22.200"
+            },
+            "kind": "reported_visual_observation",
+            "grade": "V1",
+            "description": "油流/油滴进入模底",
+            "role": "模底实际见油",
+            "media_ref": {
+              "path": "../../source/GX010021.MP4",
+              "time": {
+                "start_sec": 560.2,
+                "end_sec": 562.2,
+                "start_hms": "00:09:20.200",
+                "end_hms": "00:09:22.200"
+              }
+            },
+            "availability_time": null,
+            "human_review": "NOT_REVIEWED"
+          },
+          {
+            "evidence_id": "V-E049-02",
+            "registry_ref": "events.json#/evidence/65",
+            "source": {
+              "path": "annotation_reports/verification_report.md",
+              "line": 78,
+              "section": "B"
+            },
+            "time": {
+              "start_sec": 567.2,
+              "end_sec": 579.2,
+              "start_hms": "00:09:27.200",
+              "end_hms": "00:09:39.200"
+            },
+            "kind": "reported_visual_observation",
+            "grade": "V1",
+            "description": "持模倾斜旋转，内壁油膜不可辨",
+            "role": "烤模倾斜旋转；内壁油膜不可辨",
+            "media_ref": {
+              "path": "../../source/GX010021.MP4",
+              "time": {
+                "start_sec": 567.2,
+                "end_sec": 579.2,
+                "start_hms": "00:09:27.200",
+                "end_hms": "00:09:39.200"
+              }
+            },
+            "availability_time": null,
+            "human_review": "NOT_REVIEWED"
+          }
+        ]
+      ],
+      "reasoning_relation": [
+        "局部规则替代（待核验）",
+        "条件适用",
+        "省略许可的作用范围消解",
+        "许可与事实状态分离"
+      ],
+      "history_necessity": {
+        "status": "PENDING_RECENT_ONLY_AND_NO_VIDEO_AUDIT",
+        "long_horizon_claim": "NOT_ESTABLISHED",
+        "recall_only": false,
+        "nonredundant_evidence": "原建议/自述条件/替代/许可/实际处理状态；最小性仍须删除片段审核。",
+        "shortcut_risk": "如果合法当前指令完整复述替代链，须降级或剔除。"
+      },
+      "current_process_evidence_ids": [
+        "V-E053-01"
+      ],
+      "query_time": 641.3,
+      "dependency_span": 102.602,
+      "dependency_span_unit": "seconds",
+      "dependency_span_basis": {
+        "earliest_required_evidence_start": 538.698,
+        "note": "仅描述候选证据跨度，不等于通过长程必要性门禁。"
+      },
+      "required_evidence_sets_status": "PROPOSED_MINIMAL_SUFFICIENT; 独立审核与片段删除实验前不声明已最小充分",
+      "probe_isolation": {
+        "required": true,
+        "write_back_to_main_agent": false,
+        "method": "冻结t_q主执行状态，复制到只读分支，回答后丢弃分支；主状态继续",
+        "fallback": "预先声明并验证等价隔离策略及额外成本",
+        "verified": false
+      },
+      "agent_facing_input": {
+        "interface": "query_snapshot(query, at_media_time, isolated=true)",
+        "expose_only_at_query_time": [
+          "question",
+          "answer_type"
+        ],
+        "private_fields": "其余均为Evaluator私有，不作为Agent输入",
+        "answer_evidence_refs": "Agent引用已公开observation/指令；私有V-/T-证据ID仅由Evaluator映射"
+      }
+    },
+    {
+      "task_id": "GX010021-T2-003",
+      "episode_id": "GX010021",
+      "track": "T2",
+      "task_type": "T2.3",
+      "title": "已入烤箱面糊的牛奶与两种加粉路径",
+      "data_status": "CANDIDATE",
+      "human_review": "NOT_REVIEWED",
+      "hard_scoring_eligible": false,
+      "execution_ready": false,
+      "design_refs": [
+        "4.2",
+        "5.4",
+        "6.2"
+      ],
+      "trigger": {
+        "mode": "query_snapshot",
+        "media_time": 692.3,
+        "scheduling_status": "CANDIDATE_CHECKPOINT"
+      },
+      "observation_cutoff": 692.3,
+      "reference_event_ids": [
+        "E022",
+        "E023",
+        "E031",
+        "E032",
+        "E051",
+        "E053",
+        "E055"
+      ],
+      "reference_object_ids": [
+        "O01",
+        "O05",
+        "O06",
+        "O08",
+        "O12",
+        "O14",
+        "O15"
+      ],
+      "reference_facts": [
+        {
+          "artifact": "events",
+          "event_id": "E022",
+          "source_ref": "events.json#/events/21/facts/0",
+          "field": "core_action",
+          "value": "倾倒量取（牛奶）",
+          "status": "REPORTED_SUPPORTED",
+          "evidence_ids": [
+            "V-E022-01"
+          ],
+          "reason": "仅依据历史报告所述抽样帧的核心动作；未人工确认。",
+          "use": "CANDIDATE_REFERENCE_ONLY"
+        },
+        {
+          "artifact": "events",
+          "event_id": "E023",
+          "source_ref": "events.json#/events/22/facts/0",
+          "field": "core_action",
+          "value": "倒入（牛奶）",
+          "status": "REPORTED_SUPPORTED",
+          "evidence_ids": [
+            "V-E023-01"
+          ],
+          "reason": "仅依据历史报告所述抽样帧的核心动作；未人工确认。",
+          "use": "CANDIDATE_REFERENCE_ONLY"
+        },
+        {
+          "artifact": "events",
+          "event_id": "E031",
+          "source_ref": "events.json#/events/30/facts/0",
+          "field": "core_action",
+          "value": "开袋并量取（面粉）",
+          "status": "REPORTED_SUPPORTED",
+          "evidence_ids": [
+            "V-E031-01"
+          ],
+          "reason": "仅依据历史报告所述抽样帧的核心动作；未人工确认。",
+          "use": "CANDIDATE_REFERENCE_ONLY"
+        },
+        {
+          "artifact": "events",
+          "event_id": "E032",
+          "source_ref": "events.json#/events/31/facts/0",
+          "field": "core_action",
+          "value": "倒入（面粉）",
+          "status": "REPORTED_SUPPORTED",
+          "evidence_ids": [
+            "V-E032-01"
+          ],
+          "reason": "仅依据历史报告所述抽样帧的核心动作；未人工确认。",
+          "use": "CANDIDATE_REFERENCE_ONLY"
+        },
+        {
+          "artifact": "events",
+          "event_id": "E051",
+          "source_ref": "events.json#/events/50/facts/0",
+          "field": "core_action",
+          "value": "直接补加面粉",
+          "status": "REPORTED_SUPPORTED",
+          "evidence_ids": [
+            "V-E051-01",
+            "V-E051-02"
+          ],
+          "reason": "仅依据历史报告所述抽样帧的核心动作；未人工确认。",
+          "use": "CANDIDATE_REFERENCE_ONLY"
+        },
+        {
+          "artifact": "objects",
+          "object_id": "O15",
+          "state_id": "O15.S11",
+          "source_ref": "objects.json#/objects/14/state_history/10",
+          "event_id": "E053",
+          "time": {
+            "start_sec": 633,
+            "end_sec": 679,
+            "start_hms": "00:10:33.000",
+            "end_hms": "00:11:19.000"
+          },
+          "kind": "transition",
+          "field": "mixture_state",
+          "before": null,
+          "after": "转入烤模",
+          "status": "REPORTED_SUPPORTED",
+          "evidence_ids": [
+            "V-E053-01",
+            "V-E053-02"
+          ],
+          "use": "CANDIDATE_REFERENCE_ONLY"
+        },
+        {
+          "artifact": "objects",
+          "object_id": "O15",
+          "state_id": "O15.S12",
+          "source_ref": "objects.json#/objects/14/state_history/11",
+          "event_id": "E055",
+          "time": {
+            "start_sec": 687,
+            "end_sec": 692,
+            "start_hms": "00:11:27.000",
+            "end_hms": "00:11:32.000"
+          },
+          "kind": "transition",
+          "field": "mixture_state",
+          "before": null,
+          "after": "随烤模入烤箱",
+          "status": "REPORTED_SUPPORTED",
+          "evidence_ids": [
+            "V-E055-01"
+          ],
+          "use": "CANDIDATE_REFERENCE_ONLY"
+        }
+      ],
+      "evidence_refs": [
+        {
+          "evidence_id": "V-E022-01",
+          "registry_ref": "events.json#/evidence/28",
+          "source": {
+            "path": "annotation_reports/verification_report.md",
+            "line": 51,
+            "section": "B"
+          },
+          "time": {
+            "start_sec": 153.2,
+            "end_sec": 156.2,
+            "start_hms": "00:02:33.200",
+            "end_hms": "00:02:36.200"
+          },
+          "kind": "reported_visual_observation",
+          "grade": "V1",
+          "description": "牛奶盒倒奶入杯，一次可见量取",
+          "role": "牛奶盒→量杯",
+          "media_ref": {
+            "path": "../../source/GX010021.MP4",
+            "time": {
+              "start_sec": 153.2,
+              "end_sec": 156.2,
+              "start_hms": "00:02:33.200",
+              "end_hms": "00:02:36.200"
+            }
+          },
+          "availability_time": null,
+          "human_review": "NOT_REVIEWED"
+        },
+        {
+          "evidence_id": "V-E023-01",
+          "registry_ref": "events.json#/evidence/29",
+          "source": {
+            "path": "annotation_reports/verification_report.md",
+            "line": 52,
+            "section": "B"
+          },
+          "time": {
+            "start_sec": 159.2,
+            "end_sec": 161.2,
+            "start_hms": "00:02:39.200",
+            "end_hms": "00:02:41.200"
+          },
+          "kind": "reported_visual_observation",
+          "grade": "V1",
+          "description": "杯中奶倾入容器，台面见白色液滴",
+          "role": "量杯→混合容器",
+          "media_ref": {
+            "path": "../../source/GX010021.MP4",
+            "time": {
+              "start_sec": 159.2,
+              "end_sec": 161.2,
+              "start_hms": "00:02:39.200",
+              "end_hms": "00:02:41.200"
+            }
+          },
+          "availability_time": null,
+          "human_review": "NOT_REVIEWED"
+        },
+        {
+          "evidence_id": "V-E031-01",
+          "registry_ref": "events.json#/evidence/41",
+          "source": {
+            "path": "annotation_reports/verification_report.md",
+            "line": 60,
+            "section": "B"
+          },
+          "time": {
+            "start_sec": 270.2,
+            "end_sec": 281.2,
+            "start_hms": "00:04:30.200",
+            "end_hms": "00:04:41.200"
+          },
+          "kind": "reported_visual_observation",
+          "grade": "V1",
+          "description": "开袋并向杯倒粉",
+          "role": "面粉袋→量杯",
+          "media_ref": {
+            "path": "../../source/GX010021.MP4",
+            "time": {
+              "start_sec": 270.2,
+              "end_sec": 281.2,
+              "start_hms": "00:04:30.200",
+              "end_hms": "00:04:41.200"
+            }
+          },
+          "availability_time": null,
+          "human_review": "NOT_REVIEWED"
+        },
+        {
+          "evidence_id": "V-E032-01",
+          "registry_ref": "events.json#/evidence/42",
+          "source": {
+            "path": "annotation_reports/verification_report.md",
+            "line": 61,
+            "section": "B"
+          },
+          "time": {
+            "start_sec": 287.2,
+            "end_sec": 291.2,
+            "start_hms": "00:04:47.200",
+            "end_hms": "00:04:51.200"
+          },
+          "kind": "reported_visual_observation",
+          "grade": "V1",
+          "description": "量杯倒粉入混合容器，出现白色粉堆",
+          "role": "量杯→混合容器",
+          "media_ref": {
+            "path": "../../source/GX010021.MP4",
+            "time": {
+              "start_sec": 287.2,
+              "end_sec": 291.2,
+              "start_hms": "00:04:47.200",
+              "end_hms": "00:04:51.200"
+            }
+          },
+          "availability_time": null,
+          "human_review": "NOT_REVIEWED"
+        },
+        {
+          "evidence_id": "V-E051-01",
+          "registry_ref": "events.json#/evidence/67",
+          "source": {
+            "path": "annotation_reports/verification_report.md",
+            "line": 80,
+            "section": "B"
+          },
+          "time": {
+            "start_sec": 595.2,
+            "end_sec": 602.2,
+            "start_hms": "00:09:55.200",
+            "end_hms": "00:10:02.200"
+          },
+          "kind": "reported_visual_observation",
+          "grade": "V1",
+          "description": "袋直接向混合容器倒粉",
+          "role": "面粉袋→同一混合容器的补粉",
+          "media_ref": {
+            "path": "../../source/GX010021.MP4",
+            "time": {
+              "start_sec": 595.2,
+              "end_sec": 602.2,
+              "start_hms": "00:09:55.200",
+              "end_hms": "00:10:02.200"
+            }
+          },
+          "availability_time": null,
+          "human_review": "NOT_REVIEWED"
+        },
+        {
+          "evidence_id": "V-E053-01",
+          "registry_ref": "events.json#/evidence/71",
+          "source": {
+            "path": "annotation_reports/verification_report.md",
+            "line": 82,
+            "section": "B"
+          },
+          "time": {
+            "start_sec": 633.2,
+            "end_sec": 641.2,
+            "start_hms": "00:10:33.200",
+            "end_hms": "00:10:41.200"
+          },
+          "kind": "reported_visual_observation",
+          "grade": "V1",
+          "description": "混合容器面糊倾入烤模",
+          "role": "混合容器面糊→烤模",
+          "media_ref": {
+            "path": "../../source/GX010021.MP4",
+            "time": {
+              "start_sec": 633.2,
+              "end_sec": 641.2,
+              "start_hms": "00:10:33.200",
+              "end_hms": "00:10:41.200"
+            }
+          },
+          "availability_time": null,
+          "human_review": "NOT_REVIEWED"
+        },
+        {
+          "evidence_id": "V-E055-01",
+          "registry_ref": "events.json#/evidence/75",
+          "source": {
+            "path": "annotation_reports/verification_report.md",
+            "line": 84,
+            "section": "B"
+          },
+          "time": {
+            "start_sec": 687.2,
+            "end_sec": 691.2,
+            "start_hms": "00:11:27.200",
+            "end_hms": "00:11:31.200"
+          },
+          "kind": "reported_visual_observation",
+          "grade": "V1",
+          "description": "开烤箱门、放模入架、关门",
+          "role": "同一盛糊烤模→烤箱",
+          "media_ref": {
+            "path": "../../source/GX010021.MP4",
+            "time": {
+              "start_sec": 687.2,
+              "end_sec": 691.2,
+              "start_hms": "00:11:27.200",
+              "end_hms": "00:11:31.200"
+            }
+          },
+          "availability_time": null,
+          "human_review": "NOT_REVIEWED"
+        }
+      ],
+      "normative_rules": [],
+      "candidate_answer": {
+        "milk_path": [
+          "O06",
+          "O05（组内具体杯未确认）",
+          "O01"
+        ],
+        "flour_paths": [
+          [
+            "O08",
+            "O05（组内具体杯未确认）",
+            "O01"
+          ],
+          [
+            "O08",
+            "O01"
+          ]
+        ],
+        "downstream_path": [
+          "O01内O15",
+          "O12内O15",
+          "O14中O12内O15"
+        ],
+        "visible_flour_addition_event_ids": [
+          "E032",
+          "E051"
+        ],
+        "visible_flour_additions": 2,
+        "excluded_from_addition_count": [
+          "E031：只量取到杯"
+        ],
+        "total_hidden_additions": "unknown",
+        "actual_volumes": "unknown",
+        "lineage_status": "CANDIDATE_CONTINUITY; 不声称质量守恒、全量转移或器具物理同一"
+      },
+      "gold_answer": null,
+      "scorable_conditions": [
+        "独立确认牛奶、面粉、混合容器、烤模的连续链后，分别评分两段加奶路径、两种供粉路径与下游去向。",
+        "至少需盒→杯→容器、袋→杯→容器、袋→容器与容器→烤模→烤箱等非冗余证据；不能仅回答次数2。",
+        "仅计两处已报告可见入混合容器事件；E031不能算第三次，不能排除隐藏加入。",
+        "不评分实际杯数/半杯或一杯体积，不强行给O05组内单杯身份。"
+      ],
+      "pending_verification": [
+        "复核153.2–161.2s、270.2–291.2s、595.2–602.2s、633.2–641.2s、687.2–691.2s对象连续性。",
+        "间隙内是否换容器、替换面糊或有额外加入，需独立核验；完整连续性尚非Gold。",
+        "做必要证据片段删除、Current-only/No-video审核，确认路径不能由当前烤模/常识直接恢复。"
+      ],
+      "existing_review_queue_ids": [
+        "RQ05",
+        "RQ06",
+        "RQ12"
+      ],
+      "evidence_quality": {
+        "status": "NOT_INDEPENDENTLY_VERIFIED",
+        "directly_observed_in_this_round": false,
+        "visual_source": "ARCHIVED_AI_REPORTS_ONLY",
+        "numeric_confidence": null,
+        "annotation_disagreements": "继承字段不确定性与历史修订；未做人类一致性测量。"
+      },
+      "visibility_regime": "G1",
+      "causal_constraints": {
+        "max_media_time": 692.3,
+        "require_availability_time_check": true,
+        "evaluator_reference_visible_to_agent": false,
+        "event_id_link_is_not_full_record_access": true,
+        "unknown_requires_observability_adjudication": true
+      },
+      "protocol_tbd": [
+        "输入窗口/采样与实际availability_time",
+        "运行预算/超时",
+        "最终输出Schema/证据匹配阈值",
+        "近期窗口长度/B0成本控制",
+        "Evidence Score容差/无关片段惩罚/最小集裁决"
+      ],
+      "earliest_answerable_time": {
+        "start_sec": 687.2,
+        "end_sec": 692.0,
+        "start_hms": "00:11:27.200",
+        "end_hms": "00:11:32.000"
+      },
+      "earliest_answerable_time_status": "CANDIDATE_ENVELOPE_NOT_VERIFIED_FIRST_TIME",
+      "question": "烤模中的面糊刚被放入烤箱。请用此前分散操作证据说明：这份面糊中的牛奶经哪些容器进入混合物，面粉有哪些不同的入料路径，这些入料与现在烤模内的面糊如何相连？请区分向量杯量取与真正向混合容器加入，并说明哪些数量或身份仍不能确定。",
+      "answer_type": {
+        "fields": [
+          "milk_path",
+          "flour_paths",
+          "downstream_path",
+          "visible_flour_addition_event_ids",
+          "unknowns",
+          "evidence_refs"
+        ],
+        "allow_unknown": true
+      },
+      "required_evidence_sets": [
+        [
+          {
+            "evidence_id": "V-E022-01",
+            "registry_ref": "events.json#/evidence/28",
+            "source": {
+              "path": "annotation_reports/verification_report.md",
+              "line": 51,
+              "section": "B"
+            },
+            "time": {
+              "start_sec": 153.2,
+              "end_sec": 156.2,
+              "start_hms": "00:02:33.200",
+              "end_hms": "00:02:36.200"
+            },
+            "kind": "reported_visual_observation",
+            "grade": "V1",
+            "description": "牛奶盒倒奶入杯，一次可见量取",
+            "role": "牛奶盒→量杯",
+            "media_ref": {
+              "path": "../../source/GX010021.MP4",
+              "time": {
+                "start_sec": 153.2,
+                "end_sec": 156.2,
+                "start_hms": "00:02:33.200",
+                "end_hms": "00:02:36.200"
+              }
+            },
+            "availability_time": null,
+            "human_review": "NOT_REVIEWED"
+          },
+          {
+            "evidence_id": "V-E023-01",
+            "registry_ref": "events.json#/evidence/29",
+            "source": {
+              "path": "annotation_reports/verification_report.md",
+              "line": 52,
+              "section": "B"
+            },
+            "time": {
+              "start_sec": 159.2,
+              "end_sec": 161.2,
+              "start_hms": "00:02:39.200",
+              "end_hms": "00:02:41.200"
+            },
+            "kind": "reported_visual_observation",
+            "grade": "V1",
+            "description": "杯中奶倾入容器，台面见白色液滴",
+            "role": "量杯→混合容器",
+            "media_ref": {
+              "path": "../../source/GX010021.MP4",
+              "time": {
+                "start_sec": 159.2,
+                "end_sec": 161.2,
+                "start_hms": "00:02:39.200",
+                "end_hms": "00:02:41.200"
+              }
+            },
+            "availability_time": null,
+            "human_review": "NOT_REVIEWED"
+          },
+          {
+            "evidence_id": "V-E031-01",
+            "registry_ref": "events.json#/evidence/41",
+            "source": {
+              "path": "annotation_reports/verification_report.md",
+              "line": 60,
+              "section": "B"
+            },
+            "time": {
+              "start_sec": 270.2,
+              "end_sec": 281.2,
+              "start_hms": "00:04:30.200",
+              "end_hms": "00:04:41.200"
+            },
+            "kind": "reported_visual_observation",
+            "grade": "V1",
+            "description": "开袋并向杯倒粉",
+            "role": "面粉袋→量杯",
+            "media_ref": {
+              "path": "../../source/GX010021.MP4",
+              "time": {
+                "start_sec": 270.2,
+                "end_sec": 281.2,
+                "start_hms": "00:04:30.200",
+                "end_hms": "00:04:41.200"
+              }
+            },
+            "availability_time": null,
+            "human_review": "NOT_REVIEWED"
+          },
+          {
+            "evidence_id": "V-E032-01",
+            "registry_ref": "events.json#/evidence/42",
+            "source": {
+              "path": "annotation_reports/verification_report.md",
+              "line": 61,
+              "section": "B"
+            },
+            "time": {
+              "start_sec": 287.2,
+              "end_sec": 291.2,
+              "start_hms": "00:04:47.200",
+              "end_hms": "00:04:51.200"
+            },
+            "kind": "reported_visual_observation",
+            "grade": "V1",
+            "description": "量杯倒粉入混合容器，出现白色粉堆",
+            "role": "量杯→混合容器",
+            "media_ref": {
+              "path": "../../source/GX010021.MP4",
+              "time": {
+                "start_sec": 287.2,
+                "end_sec": 291.2,
+                "start_hms": "00:04:47.200",
+                "end_hms": "00:04:51.200"
+              }
+            },
+            "availability_time": null,
+            "human_review": "NOT_REVIEWED"
+          },
+          {
+            "evidence_id": "V-E051-01",
+            "registry_ref": "events.json#/evidence/67",
+            "source": {
+              "path": "annotation_reports/verification_report.md",
+              "line": 80,
+              "section": "B"
+            },
+            "time": {
+              "start_sec": 595.2,
+              "end_sec": 602.2,
+              "start_hms": "00:09:55.200",
+              "end_hms": "00:10:02.200"
+            },
+            "kind": "reported_visual_observation",
+            "grade": "V1",
+            "description": "袋直接向混合容器倒粉",
+            "role": "面粉袋→同一混合容器的补粉",
+            "media_ref": {
+              "path": "../../source/GX010021.MP4",
+              "time": {
+                "start_sec": 595.2,
+                "end_sec": 602.2,
+                "start_hms": "00:09:55.200",
+                "end_hms": "00:10:02.200"
+              }
+            },
+            "availability_time": null,
+            "human_review": "NOT_REVIEWED"
+          },
+          {
+            "evidence_id": "V-E053-01",
+            "registry_ref": "events.json#/evidence/71",
+            "source": {
+              "path": "annotation_reports/verification_report.md",
+              "line": 82,
+              "section": "B"
+            },
+            "time": {
+              "start_sec": 633.2,
+              "end_sec": 641.2,
+              "start_hms": "00:10:33.200",
+              "end_hms": "00:10:41.200"
+            },
+            "kind": "reported_visual_observation",
+            "grade": "V1",
+            "description": "混合容器面糊倾入烤模",
+            "role": "混合容器面糊→烤模",
+            "media_ref": {
+              "path": "../../source/GX010021.MP4",
+              "time": {
+                "start_sec": 633.2,
+                "end_sec": 641.2,
+                "start_hms": "00:10:33.200",
+                "end_hms": "00:10:41.200"
+              }
+            },
+            "availability_time": null,
+            "human_review": "NOT_REVIEWED"
+          },
+          {
+            "evidence_id": "V-E055-01",
+            "registry_ref": "events.json#/evidence/75",
+            "source": {
+              "path": "annotation_reports/verification_report.md",
+              "line": 84,
+              "section": "B"
+            },
+            "time": {
+              "start_sec": 687.2,
+              "end_sec": 691.2,
+              "start_hms": "00:11:27.200",
+              "end_hms": "00:11:31.200"
+            },
+            "kind": "reported_visual_observation",
+            "grade": "V1",
+            "description": "开烤箱门、放模入架、关门",
+            "role": "同一盛糊烤模→烤箱",
+            "media_ref": {
+              "path": "../../source/GX010021.MP4",
+              "time": {
+                "start_sec": 687.2,
+                "end_sec": 691.2,
+                "start_hms": "00:11:27.200",
+                "end_hms": "00:11:31.200"
+              }
+            },
+            "availability_time": null,
+            "human_review": "NOT_REVIEWED"
+          }
+        ]
+      ],
+      "reasoning_relation": [
+        "对象传递",
+        "uses_output_of（事实来源链，非新增规范次序）",
+        "非冗余入料路径整合"
+      ],
+      "history_necessity": {
+        "status": "PENDING_RECENT_ONLY_AND_NO_VIDEO_AUDIT",
+        "long_horizon_claim": "NOT_ESTABLISHED",
+        "recall_only": false,
+        "nonredundant_evidence": "不同材料的不同转移边共同连接到当前烤模；路径重建比单问次数有更多约束。",
+        "shortcut_risk": "需排除当前指令或画面泄漏配料路径，以及依据通常菜谱猜测。"
+      },
+      "current_process_evidence_ids": [
+        "V-E055-01"
+      ],
+      "query_time": 692.3,
+      "dependency_span": 539.1,
+      "dependency_span_unit": "seconds",
+      "dependency_span_basis": {
+        "earliest_required_evidence_start": 153.2,
+        "note": "仅描述候选证据跨度，不等于通过长程必要性门禁。"
+      },
+      "required_evidence_sets_status": "PROPOSED_MINIMAL_SUFFICIENT; 独立审核与片段删除实验前不声明已最小充分",
+      "probe_isolation": {
+        "required": true,
+        "write_back_to_main_agent": false,
+        "method": "冻结t_q主执行状态，复制到只读分支，回答后丢弃分支；主状态继续",
+        "fallback": "预先声明并验证等价隔离策略及额外成本",
+        "verified": false
+      },
+      "agent_facing_input": {
+        "interface": "query_snapshot(query, at_media_time, isolated=true)",
+        "expose_only_at_query_time": [
+          "question",
+          "answer_type"
+        ],
+        "private_fields": "其余均为Evaluator私有，不作为Agent输入",
+        "answer_evidence_refs": "Agent引用已公开observation/指令；私有V-/T-证据ID仅由Evaluator映射"
+      }
+    },
+    {
+      "task_id": "GX010021-T3-001",
+      "episode_id": "GX010021",
+      "track": "T3",
+      "task_type": "T3.1",
+      "title": "局部负例候选：已获许可的用油替代不应被误报为遗漏垫纸",
+      "data_status": "CANDIDATE",
+      "human_review": "NOT_REVIEWED",
+      "hard_scoring_eligible": false,
+      "execution_ready": false,
+      "design_refs": [
+        "4.3",
+        "5.2",
+        "6.3"
+      ],
+      "trigger": {
+        "mode": "continuous_monitoring",
+        "media_time": 560.2,
+        "scheduling_status": "CANDIDATE_PRIVATE_MONITORING_WINDOW"
+      },
+      "observation_cutoff": 579.2,
+      "reference_event_ids": [
+        "E049"
+      ],
+      "reference_object_ids": [
+        "O12",
+        "O13"
+      ],
+      "reference_facts": [
+        {
+          "artifact": "annotations",
+          "record_id": "R39",
+          "source_ref": "../../annotations.json#/texts/38",
+          "source_index": 38,
+          "text": "Use a parchment paper to line the baking tray.",
+          "text_type": "Instruction-Clarification",
+          "time": {
+            "start_sec": 538.698,
+            "end_sec": 538.698,
+            "start_hms": "00:08:58.698",
+            "end_hms": "00:08:58.698"
+          },
+          "evidence_ids": [
+            "T-R39"
+          ],
+          "use": "NORMATIVE_OR_DIALOGUE_CANDIDATE; NOT_PROOF_OF_EXECUTED_ACTION"
+        },
+        {
+          "artifact": "annotations",
+          "record_id": "R40",
+          "source_ref": "../../annotations.json#/texts/39",
+          "source_index": 39,
+          "text": "I don't have a parchment paper.",
+          "text_type": "User-Comment",
+          "time": {
+            "start_sec": 544.398,
+            "end_sec": 544.398,
+            "start_hms": "00:09:04.398",
+            "end_hms": "00:09:04.398"
+          },
+          "evidence_ids": [
+            "T-R40"
+          ],
+          "use": "NORMATIVE_OR_DIALOGUE_CANDIDATE; NOT_PROOF_OF_EXECUTED_ACTION"
+        },
+        {
+          "artifact": "annotations",
+          "record_id": "R41",
+          "source_ref": "../../annotations.json#/texts/40",
+          "source_index": 40,
+          "text": "You can then use some of the leftover butter from the melt to line up the tray.",
+          "text_type": "Instruction-Clarification",
+          "time": {
+            "start_sec": 546.378,
+            "end_sec": 546.378,
+            "start_hms": "00:09:06.378",
+            "end_hms": "00:09:06.378"
+          },
+          "evidence_ids": [
+            "T-R41"
+          ],
+          "use": "NORMATIVE_OR_DIALOGUE_CANDIDATE; NOT_PROOF_OF_EXECUTED_ACTION"
+        },
+        {
+          "artifact": "annotations",
+          "record_id": "R42",
+          "source_ref": "../../annotations.json#/texts/41",
+          "source_index": 41,
+          "text": "I don't have any leftover butter, should I use oil instead?",
+          "text_type": "User-Question",
+          "time": {
+            "start_sec": 552.478,
+            "end_sec": 552.478,
+            "start_hms": "00:09:12.478",
+            "end_hms": "00:09:12.478"
+          },
+          "evidence_ids": [
+            "T-R42"
+          ],
+          "use": "NORMATIVE_OR_DIALOGUE_CANDIDATE; NOT_PROOF_OF_EXECUTED_ACTION"
+        },
+        {
+          "artifact": "annotations",
+          "record_id": "R43",
+          "source_ref": "../../annotations.json#/texts/42",
+          "source_index": 42,
+          "text": "Yes, you can use oil.",
+          "text_type": "Instruction-Clarification",
+          "time": {
+            "start_sec": 556.368,
+            "end_sec": 556.368,
+            "start_hms": "00:09:16.368",
+            "end_hms": "00:09:16.368"
+          },
+          "evidence_ids": [
+            "T-R43"
+          ],
+          "use": "NORMATIVE_OR_DIALOGUE_CANDIDATE; NOT_PROOF_OF_EXECUTED_ACTION"
+        }
+      ],
+      "evidence_refs": [
+        {
+          "evidence_id": "T-R39",
+          "registry_ref": "events.json#/evidence/115",
+          "source": {
+            "path": "source/annotations.json",
+            "section": "texts[38]"
+          },
+          "time": {
+            "start_sec": 538.698,
+            "end_sec": 538.698,
+            "start_hms": "00:08:58.698",
+            "end_hms": "00:08:58.698"
+          },
+          "kind": "ego_mc_text",
+          "grade": "TEXT",
+          "description": "原始Ego-MC线索，非视觉事实。",
+          "role": "最初烤模处理建议",
+          "media_ref": {
+            "path": "../../source/GX010021.MP4",
+            "time": {
+              "start_sec": 538.698,
+              "end_sec": 538.698,
+              "start_hms": "00:08:58.698",
+              "end_hms": "00:08:58.698"
+            }
+          },
+          "availability_time": null,
+          "human_review": "NOT_REVIEWED"
+        },
+        {
+          "evidence_id": "T-R40",
+          "registry_ref": "events.json#/evidence/116",
+          "source": {
+            "path": "source/annotations.json",
+            "section": "texts[39]"
+          },
+          "time": {
+            "start_sec": 544.398,
+            "end_sec": 544.398,
+            "start_hms": "00:09:04.398",
+            "end_hms": "00:09:04.398"
+          },
+          "kind": "ego_mc_text",
+          "grade": "TEXT",
+          "description": "原始Ego-MC线索，非视觉事实。",
+          "role": "没有烘焙纸的自述条件",
+          "media_ref": {
+            "path": "../../source/GX010021.MP4",
+            "time": {
+              "start_sec": 544.398,
+              "end_sec": 544.398,
+              "start_hms": "00:09:04.398",
+              "end_hms": "00:09:04.398"
+            }
+          },
+          "availability_time": null,
+          "human_review": "NOT_REVIEWED"
+        },
+        {
+          "evidence_id": "T-R41",
+          "registry_ref": "events.json#/evidence/117",
+          "source": {
+            "path": "source/annotations.json",
+            "section": "texts[40]"
+          },
+          "time": {
+            "start_sec": 546.378,
+            "end_sec": 546.378,
+            "start_hms": "00:09:06.378",
+            "end_hms": "00:09:06.378"
+          },
+          "kind": "ego_mc_text",
+          "grade": "TEXT",
+          "description": "原始Ego-MC线索，非视觉事实。",
+          "role": "剩余黄油替代建议及作用范围",
+          "media_ref": {
+            "path": "../../source/GX010021.MP4",
+            "time": {
+              "start_sec": 546.378,
+              "end_sec": 546.378,
+              "start_hms": "00:09:06.378",
+              "end_hms": "00:09:06.378"
+            }
+          },
+          "availability_time": null,
+          "human_review": "NOT_REVIEWED"
+        },
+        {
+          "evidence_id": "T-R42",
+          "registry_ref": "events.json#/evidence/118",
+          "source": {
+            "path": "source/annotations.json",
+            "section": "texts[41]"
+          },
+          "time": {
+            "start_sec": 552.478,
+            "end_sec": 552.478,
+            "start_hms": "00:09:12.478",
+            "end_hms": "00:09:12.478"
+          },
+          "kind": "ego_mc_text",
+          "grade": "TEXT",
+          "description": "原始Ego-MC线索，非视觉事实。",
+          "role": "没有剩余黄油并提议用油的自述条件",
+          "media_ref": {
+            "path": "../../source/GX010021.MP4",
+            "time": {
+              "start_sec": 552.478,
+              "end_sec": 552.478,
+              "start_hms": "00:09:12.478",
+              "end_hms": "00:09:12.478"
+            }
+          },
+          "availability_time": null,
+          "human_review": "NOT_REVIEWED"
+        },
+        {
+          "evidence_id": "T-R43",
+          "registry_ref": "events.json#/evidence/119",
+          "source": {
+            "path": "source/annotations.json",
+            "section": "texts[42]"
+          },
+          "time": {
+            "start_sec": 556.368,
+            "end_sec": 556.368,
+            "start_hms": "00:09:16.368",
+            "end_hms": "00:09:16.368"
+          },
+          "kind": "ego_mc_text",
+          "grade": "TEXT",
+          "description": "原始Ego-MC线索，非视觉事实。",
+          "role": "指导者许可",
+          "media_ref": {
+            "path": "../../source/GX010021.MP4",
+            "time": {
+              "start_sec": 556.368,
+              "end_sec": 556.368,
+              "start_hms": "00:09:16.368",
+              "end_hms": "00:09:16.368"
+            }
+          },
+          "availability_time": null,
+          "human_review": "NOT_REVIEWED"
+        },
+        {
+          "evidence_id": "V-E049-01",
+          "registry_ref": "events.json#/evidence/64",
+          "source": {
+            "path": "annotation_reports/verification_report.md",
+            "line": 78,
+            "section": "B"
+          },
+          "time": {
+            "start_sec": 560.2,
+            "end_sec": 562.2,
+            "start_hms": "00:09:20.200",
+            "end_hms": "00:09:22.200"
+          },
+          "kind": "reported_visual_observation",
+          "grade": "V1",
+          "description": "油流/油滴进入模底",
+          "role": "模底实际见油",
+          "media_ref": {
+            "path": "../../source/GX010021.MP4",
+            "time": {
+              "start_sec": 560.2,
+              "end_sec": 562.2,
+              "start_hms": "00:09:20.200",
+              "end_hms": "00:09:22.200"
+            }
+          },
+          "availability_time": null,
+          "human_review": "NOT_REVIEWED"
+        },
+        {
+          "evidence_id": "V-E049-02",
+          "registry_ref": "events.json#/evidence/65",
+          "source": {
+            "path": "annotation_reports/verification_report.md",
+            "line": 78,
+            "section": "B"
+          },
+          "time": {
+            "start_sec": 567.2,
+            "end_sec": 579.2,
+            "start_hms": "00:09:27.200",
+            "end_hms": "00:09:39.200"
+          },
+          "kind": "reported_visual_observation",
+          "grade": "V1",
+          "description": "持模倾斜旋转，内壁油膜不可辨",
+          "role": "烤模倾斜旋转；内壁油膜不可辨",
+          "media_ref": {
+            "path": "../../source/GX010021.MP4",
+            "time": {
+              "start_sec": 567.2,
+              "end_sec": 579.2,
+              "start_hms": "00:09:27.200",
+              "end_hms": "00:09:39.200"
+            }
+          },
+          "availability_time": null,
+          "human_review": "NOT_REVIEWED"
+        }
+      ],
+      "normative_rules": [
+        {
+          "rule_id": "GX010021-RULE-CAND-R39",
+          "status": "CANDIDATE",
+          "record_id": "R39",
+          "evidence_ids": [
+            "T-R39"
+          ],
+          "statement": "Use a parchment paper to line the baking tray.",
+          "issued_at": 538.698,
+          "effective_from": null,
+          "candidate_effective_not_before": 538.698,
+          "scope": "本次烤模处理",
+          "condition": "先提出烘焙纸",
+          "supersedes": null,
+          "supersedes_status": "NOT_ASSERTED",
+          "release_note": "点时间戳不是整段话结束/Runner公开时间；effective_from需独立核验，当前不可执行。"
+        },
+        {
+          "rule_id": "GX010021-RULE-CAND-R41",
+          "status": "CANDIDATE",
+          "record_id": "R41",
+          "evidence_ids": [
+            "T-R41"
+          ],
+          "statement": "You can then use some of the leftover butter from the melt to line up the tray.",
+          "issued_at": 546.378,
+          "effective_from": null,
+          "candidate_effective_not_before": 546.378,
+          "scope": "本次烤模处理",
+          "condition": "R40称没有烘焙纸后，建议用融化剩余黄油",
+          "supersedes": "GX010021-RULE-CAND-R39",
+          "supersedes_status": "PENDING_CONTEXT_REVIEW",
+          "release_note": "点时间戳不是整段话结束/Runner公开时间；effective_from需独立核验，当前不可执行。"
+        },
+        {
+          "rule_id": "GX010021-RULE-CAND-R43",
+          "status": "CANDIDATE",
+          "record_id": "R43",
+          "evidence_ids": [
+            "T-R43"
+          ],
+          "statement": "Yes, you can use oil.",
+          "issued_at": 556.368,
+          "effective_from": null,
+          "candidate_effective_not_before": 556.368,
+          "scope": "本次烤模处理",
+          "condition": "R42称无剩余黄油并提议用油；yes的对象与作用须依赖上下文",
+          "supersedes": "GX010021-RULE-CAND-R41",
+          "supersedes_status": "PENDING_CONTEXT_REVIEW",
+          "release_note": "点时间戳不是整段话结束/Runner公开时间；effective_from需独立核验，当前不可执行。"
+        }
+      ],
+      "candidate_answer": {
+        "expected_behavior": "在该范围内不因采用已许可的油替代方案而raise",
+        "prohibited_false_alarm_scope": [
+          "仅因没用烘焙纸而判遗漏",
+          "仅因没用剩余黄油而判错误材料"
+        ],
+        "other_anomaly_status": "NOT_LABELED",
+        "inner_wall_coverage": "unknown",
+        "whole_episode_normal": "NOT_LABELED"
+      },
+      "gold_answer": null,
+      "scorable_conditions": [
+        "独立核验局部替代规则及当时已公开，才可按该范围判定这两类误报。",
+        "没有逐次问题触发或当时Evaluator提示；主Agent随Episode持续运行。",
+        "此窗口只是部分规则的负例候选，不能据此评分所有类别的FP或宣称全Episode正常。",
+        "未提供任何正错误事件，不能算Recall/F1/Timely Recall/Recovery Tracking；当前FA/h也缺完整有效分母。"
+      ],
+      "pending_verification": [
+        "核验对话作用范围、公开时刻与窗口内确实采用许可方案；核验其他异常需另行标注。",
+        "检查该窗口前是否存在同类未解除事件，不能用局部沉默替代完整恢复评测。",
+        "窗口止579.2s，不用580s Success当自主正常判据；完整G1仍按时释放原反馈。"
+      ],
+      "existing_review_queue_ids": [
+        "RQ03"
+      ],
+      "evidence_quality": {
+        "status": "NOT_INDEPENDENTLY_VERIFIED",
+        "directly_observed_in_this_round": false,
+        "visual_source": "ARCHIVED_AI_REPORTS_ONLY",
+        "numeric_confidence": null,
+        "annotation_disagreements": "继承字段不确定性与历史修订；未做人类一致性测量。"
+      },
+      "visibility_regime": "G1",
+      "causal_constraints": {
+        "max_media_time": "每次输出的当时已公开媒体截止点；不能在窗口开始读取整个窗口",
+        "require_availability_time_check": true,
+        "evaluator_reference_visible_to_agent": false,
+        "event_id_link_is_not_full_record_access": true,
+        "unknown_requires_observability_adjudication": true
+      },
+      "protocol_tbd": [
+        "输入窗口/采样与实际availability_time",
+        "运行预算/超时",
+        "最终输出Schema/证据匹配阈值",
+        "同类报警/事件匹配、误报持续时间、完整有效受测小时数与报警工作点"
+      ],
+      "monitoring_window": {
+        "start_sec": 560.2,
+        "end_sec": 579.2,
+        "start_hms": "00:09:20.200",
+        "end_hms": "00:09:39.200"
+      },
+      "agent_facing_input": null,
+      "sample_role": "RULE_SCOPED_NEGATIVE_CANDIDATE",
+      "is_error": false,
+      "error_onset": null,
+      "detectable_from": null,
+      "deadline": null,
+      "feedback_given_at": null,
+      "resolved_at": null,
+      "time_semantics_note": "非错误窗口，没有error_onset/detectable_from/resolved_at；null不代表某真实错误尚未修复。",
+      "output_contract": {
+        "output_type": "alarm",
+        "decisions": [
+          "raise",
+          "update",
+          "resolve"
+        ],
+        "required_fields": [
+          "video_time",
+          "emission_wall_time",
+          "category",
+          "message",
+          "evidence_refs",
+          "incident_id"
+        ],
+        "allow_silence": true,
+        "no_per_event_query": true
+      }
+    }
+  ],
+  "unsupported_or_deferred_task_types": [
+    {
+      "task_type": "T2.1",
+      "task_variant": "已完成预热350°F/已完全融化黄油等确定满足判定",
+      "reason": "RQ08温度/预热及RQ01搅动、倾倒固块终态未知；不能由Success或自述构造satisfied/unsatisfied真值。",
+      "source_event_ids": [
+        "E002",
+        "E003",
+        "E043",
+        "E044",
+        "E055"
+      ],
+      "review_queue_ids": [
+        "RQ01",
+        "RQ08"
+      ]
+    },
+    {
+      "task_type": "T2.2",
+      "task_variant": "糖1/2→1/4杯的独立核心长程题、规则修订前后配对",
+      "reason": "R16单句即可回答当前目标糖量，易退化为Recall；实际糖量未测，点时间戳不能支持临界生效配对。仅列潜力，未生成单句回忆题。",
+      "source_event_ids": [
+        "E016",
+        "E018"
+      ],
+      "review_queue_ids": [
+        "RQ13"
+      ]
+    },
+    {
+      "task_type": "T2.4",
+      "task_variant": "Delayed Consequence & Recovery",
+      "reason": "V1.0 §4.2.1默认不启用；也无已审定偏差、持续后果、恢复链。",
+      "source_event_ids": [],
+      "review_queue_ids": []
+    },
+    {
+      "task_type": "T3.1",
+      "task_variant": "可靠正异常",
+      "reason": "无已审核规则+正错误组合。拿三枚不等于加入三枚；加粉后暂停不等于违序；用油已获许可；need not不等于禁止补粉。",
+      "source_event_ids": [
+        "E007",
+        "E012",
+        "E013",
+        "E033",
+        "E049",
+        "E051"
+      ],
+      "review_queue_ids": [
+        "RQ02",
+        "RQ03",
+        "RQ12"
+      ]
+    },
+    {
+      "task_type": "T3.2",
+      "task_variant": "自主及时干预",
+      "reason": "尚无可靠error_onset/detectable_from；反馈时间不能替代，deadline无外部价值依据不得编造。",
+      "source_event_ids": [
+        "E004",
+        "E012",
+        "E016",
+        "E039"
+      ],
+      "review_queue_ids": [
+        "RQ02",
+        "RQ13"
+      ]
+    },
+    {
+      "task_type": "T3.3",
+      "task_variant": "恢复/解除及纠正后后续异常",
+      "reason": "第三枚蛋归盒未知且原错误未成立；更换碗缺规格规则；正常再加热未证为异常恢复。缺resolved_at和多错链。",
+      "source_event_ids": [
+        "E004",
+        "E005",
+        "E012",
+        "E013",
+        "E039",
+        "E040"
+      ],
+      "review_queue_ids": [
+        "RQ02"
+      ]
+    }
+  ],
+  "statistics": {
+    "task_count": 8,
+    "by_track": {
+      "T1": 4,
+      "T2": 3,
+      "T3": 1
+    },
+    "by_task_type": {
+      "T1.1": 1,
+      "T1.2": 2,
+      "T1.3": 1,
+      "T2.1": 1,
+      "T2.2": 1,
+      "T2.3": 1,
+      "T3.1": 1
+    },
+    "t3_positive_error_count": 0,
+    "t3_rule_scoped_negative_count": 1,
+    "executable_task_count": 0,
+    "gold_task_count": 0,
+    "referenced_event_count": 13,
+    "total_source_events": 56,
+    "referenced_event_ids": [
+      "E020",
+      "E022",
+      "E023",
+      "E027",
+      "E028",
+      "E031",
+      "E032",
+      "E042",
+      "E049",
+      "E051",
+      "E052",
+      "E053",
+      "E055"
+    ],
+    "referenced_object_count": 11,
+    "referenced_object_ids": [
+      "O01",
+      "O05",
+      "O06",
+      "O07",
+      "O08",
+      "O09",
+      "O10",
+      "O12",
+      "O13",
+      "O14",
+      "O15"
+    ],
+    "unique_evidence_count": 36,
+    "evidence_kind_coverage": {
+      "reported_visual_observation": 21,
+      "model_inference": 3,
+      "ego_mc_text": 11,
+      "inherited_candidate_text": 1
+    },
+    "referenced_record_count": 11,
+    "referenced_record_ids": [
+      "R01",
+      "R02",
+      "R18",
+      "R19",
+      "R32",
+      "R39",
+      "R40",
+      "R41",
+      "R42",
+      "R43",
+      "R45"
+    ]
+  },
+  "validation": {
+    "status": "PASS",
+    "check_count": 517,
+    "checks": {
+      "task_ids": 1,
+      "candidate_status": 8,
+      "time_bounds": 8,
+      "event_refs": 20,
+      "object_refs": 27,
+      "reference_consistency": 67,
+      "causal_references": 137,
+      "evidence_consistency": 39,
+      "source_paths": 39,
+      "source_lines": 26,
+      "review_refs": 9,
+      "candidate_rules": 14,
+      "probe_time": 6,
+      "evidence_sets": 6,
+      "dependency_span": 3,
+      "probe_isolation": 3,
+      "negative_semantics": 1,
+      "continuous_monitoring": 1,
+      "feedback_boundary": 1,
+      "answer_consistency": 5,
+      "input_integrity": 18,
+      "json_pointers": 78
+    },
+    "scope": "静态ID/路径/源值/时间截止/证据/候选答案防越权和输入哈希；不验证视频事实或运行隔离",
+    "future_event_context_links": [
+      "T2-001关联E027但只用199.2s开始锚点，不读后续搅拌结果",
+      "T2-002关联E053但只用633.2–641.2s倒糊锚点，不读后续刮净结果"
+    ],
+    "runtime_availability_and_isolation_verified": false,
+    "original_files_unchanged_count": 18
+  }
+}

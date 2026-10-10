@@ -1,0 +1,518 @@
+{
+  "access": "BLIND_REVIEW_NAVIGATION",
+  "frames": [
+    {
+      "frame_id": "K001",
+      "path": "frames/K001_144.210733.png",
+      "requested_source_time_sec": 144.2,
+      "source_time_sec": 144.21073333333334,
+      "source_pts": 4326322,
+      "source_time_base": "1/30000",
+      "source_frame_index": 4322,
+      "clip_id": "C01",
+      "clip_frame_index": 156,
+      "clip_time_sec": 5.205199999999991,
+      "task_ids": [
+        "GX010021-T1-001",
+        "GX010021-T2-003"
+      ],
+      "sha256": "75243ed9d92b255de67b2a4c4fd635d288eac2333c3f34f47ff68ffb9bda13b3",
+      "purpose": "navigation_only; no fact adjudication; complete clips remain required"
+    },
+    {
+      "frame_id": "K002",
+      "path": "frames/K002_153.219733.png",
+      "requested_source_time_sec": 153.2,
+      "source_time_sec": 153.21973333333332,
+      "source_pts": 4596592,
+      "source_time_base": "1/30000",
+      "source_frame_index": 4592,
+      "clip_id": "C01",
+      "clip_frame_index": 426,
+      "clip_time_sec": 14.214199999999977,
+      "task_ids": [
+        "GX010021-T1-001",
+        "GX010021-T2-003"
+      ],
+      "sha256": "36af6f4fa88fcbde935f3125e539a8825e2aa122d881cb490858a412a62961df",
+      "purpose": "navigation_only; no fact adjudication; complete clips remain required"
+    },
+    {
+      "frame_id": "K003",
+      "path": "frames/K003_156.222733.png",
+      "requested_source_time_sec": 156.2,
+      "source_time_sec": 156.22273333333334,
+      "source_pts": 4686682,
+      "source_time_base": "1/30000",
+      "source_frame_index": 4682,
+      "clip_id": "C01",
+      "clip_frame_index": 516,
+      "clip_time_sec": 17.21719999999999,
+      "task_ids": [
+        "GX010021-T1-001",
+        "GX010021-T2-003"
+      ],
+      "sha256": "ffa381cd7dd31320b72c9a8f159856aaff448cf80c025a8232e6d85176ea961c",
+      "purpose": "navigation_only; no fact adjudication; complete clips remain required"
+    },
+    {
+      "frame_id": "K004",
+      "path": "frames/K004_159.225733.png",
+      "requested_source_time_sec": 159.2,
+      "source_time_sec": 159.22573333333332,
+      "source_pts": 4776772,
+      "source_time_base": "1/30000",
+      "source_frame_index": 4772,
+      "clip_id": "C01",
+      "clip_frame_index": 606,
+      "clip_time_sec": 20.220199999999977,
+      "task_ids": [
+        "GX010021-T1-001",
+        "GX010021-T2-003"
+      ],
+      "sha256": "be813e91f9b6d946c118de126e4484807addf5b0933600bd35c4096c9423e7f8",
+      "purpose": "navigation_only; no fact adjudication; complete clips remain required"
+    },
+    {
+      "frame_id": "K005",
+      "path": "frames/K005_161.227733.png",
+      "requested_source_time_sec": 161.2,
+      "source_time_sec": 161.22773333333333,
+      "source_pts": 4836832,
+      "source_time_base": "1/30000",
+      "source_frame_index": 4832,
+      "clip_id": "C01",
+      "clip_frame_index": 666,
+      "clip_time_sec": 22.222199999999987,
+      "task_ids": [
+        "GX010021-T1-001",
+        "GX010021-T2-003"
+      ],
+      "sha256": "ad3d9ff73e79710095ea2555f58b7711807ae41b8b431b752396c7b8694355fe",
+      "purpose": "navigation_only; no fact adjudication; complete clips remain required"
+    },
+    {
+      "frame_id": "K006",
+      "path": "frames/K006_194.227367.png",
+      "requested_source_time_sec": 194.2,
+      "source_time_sec": 194.22736666666665,
+      "source_pts": 5826821,
+      "source_time_base": "1/30000",
+      "source_frame_index": 5821,
+      "clip_id": "C03",
+      "clip_frame_index": 6,
+      "clip_time_sec": 0.20019999999999527,
+      "task_ids": [
+        "GX010021-T1-001",
+        "GX010021-T2-003"
+      ],
+      "sha256": "c03b3213145a51dd35ffa149a3a42a1c67807101e9873629e9ec37dddb5bf8df",
+      "purpose": "navigation_only; no fact adjudication; complete clips remain required"
+    },
+    {
+      "frame_id": "K007",
+      "path": "frames/K007_199.232367.png",
+      "requested_source_time_sec": 199.2,
+      "source_time_sec": 199.23236666666668,
+      "source_pts": 5976971,
+      "source_time_base": "1/30000",
+      "source_frame_index": 5971,
+      "clip_id": "C03",
+      "clip_frame_index": 156,
+      "clip_time_sec": 5.205200000000019,
+      "task_ids": [
+        "GX010021-T1-001",
+        "GX010021-T2-003"
+      ],
+      "sha256": "4fd1d0dffbf05d270b94236aae712b4040335df7e1c33496245aa1af94c05d8c",
+      "purpose": "navigation_only; no fact adjudication; complete clips remain required"
+    },
+    {
+      "frame_id": "K008",
+      "path": "frames/K008_234.200633.png",
+      "requested_source_time_sec": 234.2,
+      "source_time_sec": 234.20063333333334,
+      "source_pts": 7026019,
+      "source_time_base": "1/30000",
+      "source_frame_index": 7019,
+      "clip_id": "C03",
+      "clip_frame_index": 1204,
+      "clip_time_sec": 40.173466666666684,
+      "task_ids": [
+        "GX010021-T1-001",
+        "GX010021-T2-003"
+      ],
+      "sha256": "1fea1a3c9dff7e93109d4da756bbdab69788a573daa74b2533ac950f6d4cde0d",
+      "purpose": "navigation_only; no fact adjudication; complete clips remain required"
+    },
+    {
+      "frame_id": "K009",
+      "path": "frames/K009_235.201633.png",
+      "requested_source_time_sec": 235.2,
+      "source_time_sec": 235.20163333333332,
+      "source_pts": 7056049,
+      "source_time_base": "1/30000",
+      "source_frame_index": 7049,
+      "clip_id": "C03",
+      "clip_frame_index": 1234,
+      "clip_time_sec": 41.17446666666666,
+      "task_ids": [
+        "GX010021-T1-001",
+        "GX010021-T2-003"
+      ],
+      "sha256": "351ab4e47fedc134dc3c266da627cfe840106413fb94d1a788296e6644854f25",
+      "purpose": "navigation_only; no fact adjudication; complete clips remain required"
+    },
+    {
+      "frame_id": "K010",
+      "path": "frames/K010_236.202633.png",
+      "requested_source_time_sec": 236.2,
+      "source_time_sec": 236.20263333333332,
+      "source_pts": 7086079,
+      "source_time_base": "1/30000",
+      "source_frame_index": 7079,
+      "clip_id": "C03",
+      "clip_frame_index": 1264,
+      "clip_time_sec": 42.175466666666665,
+      "task_ids": [
+        "GX010021-T1-001",
+        "GX010021-T2-003"
+      ],
+      "sha256": "8ffbd1dd938be3c67fc816b5ed76aae8cffab77065cb8e85d26732eca2ec8b8a",
+      "purpose": "navigation_only; no fact adjudication; complete clips remain required"
+    },
+    {
+      "frame_id": "K011",
+      "path": "frames/K011_238.204633.png",
+      "requested_source_time_sec": 238.2,
+      "source_time_sec": 238.20463333333333,
+      "source_pts": 7146139,
+      "source_time_base": "1/30000",
+      "source_frame_index": 7139,
+      "clip_id": "C03",
+      "clip_frame_index": 1324,
+      "clip_time_sec": 44.177466666666675,
+      "task_ids": [
+        "GX010021-T1-001",
+        "GX010021-T2-003"
+      ],
+      "sha256": "5f4253d0513ab3d000d3047c3c25f67710a44a10b893de805d3c060fdd106a6c",
+      "purpose": "navigation_only; no fact adjudication; complete clips remain required"
+    },
+    {
+      "frame_id": "K012",
+      "path": "frames/K012_270.203267.png",
+      "requested_source_time_sec": 270.2,
+      "source_time_sec": 270.20326666666665,
+      "source_pts": 8106098,
+      "source_time_base": "1/30000",
+      "source_frame_index": 8098,
+      "clip_id": "C05",
+      "clip_frame_index": 36,
+      "clip_time_sec": 1.2011999999999716,
+      "task_ids": [
+        "GX010021-T2-003"
+      ],
+      "sha256": "dfb1107c4843d93b524283ebe5d5eb499b449961aeab980f5ad15a0bf8d99597",
+      "purpose": "navigation_only; no fact adjudication; complete clips remain required"
+    },
+    {
+      "frame_id": "K013",
+      "path": "frames/K013_281.214267.png",
+      "requested_source_time_sec": 281.2,
+      "source_time_sec": 281.2142666666667,
+      "source_pts": 8436428,
+      "source_time_base": "1/30000",
+      "source_frame_index": 8428,
+      "clip_id": "C05",
+      "clip_frame_index": 366,
+      "clip_time_sec": 12.212199999999996,
+      "task_ids": [
+        "GX010021-T2-003"
+      ],
+      "sha256": "71ba3a4978ca2984347f6a3515b48e0e8e19a957803df5755fda5588ca7af52e",
+      "purpose": "navigation_only; no fact adjudication; complete clips remain required"
+    },
+    {
+      "frame_id": "K014",
+      "path": "frames/K014_287.220267.png",
+      "requested_source_time_sec": 287.2,
+      "source_time_sec": 287.22026666666665,
+      "source_pts": 8616608,
+      "source_time_base": "1/30000",
+      "source_frame_index": 8608,
+      "clip_id": "C05",
+      "clip_frame_index": 546,
+      "clip_time_sec": 18.218199999999968,
+      "task_ids": [
+        "GX010021-T2-003"
+      ],
+      "sha256": "9afe5d7081dd1c3c353c5086b658609634a3d567192c9274c5fb135fe62dce2e",
+      "purpose": "navigation_only; no fact adjudication; complete clips remain required"
+    },
+    {
+      "frame_id": "K015",
+      "path": "frames/K015_291.224267.png",
+      "requested_source_time_sec": 291.2,
+      "source_time_sec": 291.22426666666667,
+      "source_pts": 8736728,
+      "source_time_base": "1/30000",
+      "source_frame_index": 8728,
+      "clip_id": "C05",
+      "clip_frame_index": 666,
+      "clip_time_sec": 22.222199999999987,
+      "task_ids": [
+        "GX010021-T2-003"
+      ],
+      "sha256": "65ca6f02f992bf8d8d15e90075075bfe7fa9d2a0d64156b8bffcd138b27bdb02",
+      "purpose": "navigation_only; no fact adjudication; complete clips remain required"
+    },
+    {
+      "frame_id": "K016",
+      "path": "frames/K016_560.226333.png",
+      "requested_source_time_sec": 560.2,
+      "source_time_sec": 560.2263333333333,
+      "source_pts": 16806790,
+      "source_time_base": "1/30000",
+      "source_frame_index": 16790,
+      "clip_id": "C09",
+      "clip_frame_index": 6,
+      "clip_time_sec": 0.20019999999999527,
+      "task_ids": [
+        "GX010021-T2-002",
+        "GX010021-T2-003"
+      ],
+      "sha256": "9ee826336d744f74906240204edfbe829b03c806d66a632553e19a99b0255e46",
+      "purpose": "navigation_only; no fact adjudication; complete clips remain required"
+    },
+    {
+      "frame_id": "K017",
+      "path": "frames/K017_562.228333.png",
+      "requested_source_time_sec": 562.2,
+      "source_time_sec": 562.2283333333334,
+      "source_pts": 16866850,
+      "source_time_base": "1/30000",
+      "source_frame_index": 16850,
+      "clip_id": "C09",
+      "clip_frame_index": 66,
+      "clip_time_sec": 2.2022000000000617,
+      "task_ids": [
+        "GX010021-T2-002",
+        "GX010021-T2-003"
+      ],
+      "sha256": "33c2307288edf16f616c29bb12f879ed5b7dd43f9923e028a91f19fd53c1f49d",
+      "purpose": "navigation_only; no fact adjudication; complete clips remain required"
+    },
+    {
+      "frame_id": "K018",
+      "path": "frames/K018_567.233333.png",
+      "requested_source_time_sec": 567.2,
+      "source_time_sec": 567.2333333333333,
+      "source_pts": 17017000,
+      "source_time_base": "1/30000",
+      "source_frame_index": 17000,
+      "clip_id": "C09",
+      "clip_frame_index": 216,
+      "clip_time_sec": 7.207200000000057,
+      "task_ids": [
+        "GX010021-T2-002",
+        "GX010021-T2-003"
+      ],
+      "sha256": "eda61e2d0a1ba36268b84a5e58f741e6fc3c8ebf4495e6225cfd23a858614ef9",
+      "purpose": "navigation_only; no fact adjudication; complete clips remain required"
+    },
+    {
+      "frame_id": "K019",
+      "path": "frames/K019_579.211967.png",
+      "requested_source_time_sec": 579.2,
+      "source_time_sec": 579.2119666666666,
+      "source_pts": 17376359,
+      "source_time_base": "1/30000",
+      "source_frame_index": 17359,
+      "clip_id": "C09",
+      "clip_frame_index": 575,
+      "clip_time_sec": 19.185833333333335,
+      "task_ids": [
+        "GX010021-T2-002",
+        "GX010021-T2-003"
+      ],
+      "sha256": "19a4742f7651778e30718cf883d7cac0d9fd1c6a88f0a7436de24d93eb1f8bde",
+      "purpose": "navigation_only; no fact adjudication; complete clips remain required"
+    },
+    {
+      "frame_id": "K020",
+      "path": "frames/K020_595.227967.png",
+      "requested_source_time_sec": 595.2,
+      "source_time_sec": 595.2279666666667,
+      "source_pts": 17856839,
+      "source_time_base": "1/30000",
+      "source_frame_index": 17839,
+      "clip_id": "C11",
+      "clip_frame_index": 36,
+      "clip_time_sec": 1.2012000000000853,
+      "task_ids": [
+        "GX010021-T2-002",
+        "GX010021-T2-003"
+      ],
+      "sha256": "4d2cfdcef88ae9bccf4f6a872214adb1d8e1e8ccc7a9777f09752e783c5271d0",
+      "purpose": "navigation_only; no fact adjudication; complete clips remain required"
+    },
+    {
+      "frame_id": "K021",
+      "path": "frames/K021_602.201600.png",
+      "requested_source_time_sec": 602.2,
+      "source_time_sec": 602.2016,
+      "source_pts": 18066048,
+      "source_time_base": "1/30000",
+      "source_frame_index": 18048,
+      "clip_id": "C11",
+      "clip_frame_index": 245,
+      "clip_time_sec": 8.174833333333368,
+      "task_ids": [
+        "GX010021-T2-002",
+        "GX010021-T2-003"
+      ],
+      "sha256": "697c76a2c05ca488e6b19e73de83b4e1c8cfa4e01dd6a4f9d89bfa41cfedc1a9",
+      "purpose": "navigation_only; no fact adjudication; complete clips remain required"
+    },
+    {
+      "frame_id": "K022",
+      "path": "frames/K022_603.202600.png",
+      "requested_source_time_sec": 603.2,
+      "source_time_sec": 603.2026,
+      "source_pts": 18096078,
+      "source_time_base": "1/30000",
+      "source_frame_index": 18078,
+      "clip_id": "C11",
+      "clip_frame_index": 275,
+      "clip_time_sec": 9.175833333333344,
+      "task_ids": [
+        "GX010021-T2-002",
+        "GX010021-T2-003"
+      ],
+      "sha256": "47cef7386826fcb528762b57ae97f88569a890d53bd9cf79a2c2706b05b14c67",
+      "purpose": "navigation_only; no fact adjudication; complete clips remain required"
+    },
+    {
+      "frame_id": "K023",
+      "path": "frames/K023_633.232600.png",
+      "requested_source_time_sec": 633.2,
+      "source_time_sec": 633.2326,
+      "source_pts": 18996978,
+      "source_time_base": "1/30000",
+      "source_frame_index": 18978,
+      "clip_id": "C13",
+      "clip_frame_index": 36,
+      "clip_time_sec": 1.2012000000000853,
+      "task_ids": [
+        "GX010021-T2-002",
+        "GX010021-T2-003"
+      ],
+      "sha256": "388dfb86be3f8ae71220ffe92a6d6c6d1e2e9331285d90ebdcb2cade2fd00b8c",
+      "purpose": "navigation_only; no fact adjudication; complete clips remain required"
+    },
+    {
+      "frame_id": "K024",
+      "path": "frames/K024_641.207233.png",
+      "requested_source_time_sec": 641.2,
+      "source_time_sec": 641.2072333333333,
+      "source_pts": 19236217,
+      "source_time_base": "1/30000",
+      "source_frame_index": 19217,
+      "clip_id": "C13",
+      "clip_frame_index": 275,
+      "clip_time_sec": 9.175833333333344,
+      "task_ids": [
+        "GX010021-T2-002",
+        "GX010021-T2-003"
+      ],
+      "sha256": "ddc4197ce9267b847c6d70af6729fb0f376fbdf174601be1a60ba3cea1cf85cc",
+      "purpose": "navigation_only; no fact adjudication; complete clips remain required"
+    },
+    {
+      "frame_id": "K025",
+      "path": "frames/K025_645.211233.png",
+      "requested_source_time_sec": 645.2,
+      "source_time_sec": 645.2112333333333,
+      "source_pts": 19356337,
+      "source_time_base": "1/30000",
+      "source_frame_index": 19337,
+      "clip_id": "C14",
+      "clip_frame_index": 117,
+      "clip_time_sec": 3.9039000000000215,
+      "task_ids": [
+        "GX010021-T2-003"
+      ],
+      "sha256": "fb70cb11042635c97bc4517dce18540fc68c6fa01e681ef48700d7b611b95d63",
+      "purpose": "navigation_only; no fact adjudication; complete clips remain required"
+    },
+    {
+      "frame_id": "K026",
+      "path": "frames/K026_677.209867.png",
+      "requested_source_time_sec": 677.2,
+      "source_time_sec": 677.2098666666667,
+      "source_pts": 20316296,
+      "source_time_base": "1/30000",
+      "source_frame_index": 20296,
+      "clip_id": "C14",
+      "clip_frame_index": 1076,
+      "clip_time_sec": 35.902533333333395,
+      "task_ids": [
+        "GX010021-T2-003"
+      ],
+      "sha256": "caaca123d2044c9301fac6603410b2988dd2ba0447a5f49dd6d5ee1be00f6a78",
+      "purpose": "navigation_only; no fact adjudication; complete clips remain required"
+    },
+    {
+      "frame_id": "K027",
+      "path": "frames/K027_687.219867.png",
+      "requested_source_time_sec": 687.2,
+      "source_time_sec": 687.2198666666667,
+      "source_pts": 20616596,
+      "source_time_base": "1/30000",
+      "source_frame_index": 20596,
+      "clip_id": "C15",
+      "clip_frame_index": 6,
+      "clip_time_sec": 0.20019999999999527,
+      "task_ids": [
+        "GX010021-T2-003"
+      ],
+      "sha256": "de1143fac3c9828c4f1699fbadc814edae784afe7322a3f45a389a25eb606724",
+      "purpose": "navigation_only; no fact adjudication; complete clips remain required"
+    },
+    {
+      "frame_id": "K028",
+      "path": "frames/K028_689.221867.png",
+      "requested_source_time_sec": 689.2,
+      "source_time_sec": 689.2218666666666,
+      "source_pts": 20676656,
+      "source_time_base": "1/30000",
+      "source_frame_index": 20656,
+      "clip_id": "C15",
+      "clip_frame_index": 66,
+      "clip_time_sec": 2.202199999999948,
+      "task_ids": [
+        "GX010021-T2-003"
+      ],
+      "sha256": "d66c9598632044be56511c117f1005568e34597a094f7cb6417d1fd5b78db11f",
+      "purpose": "navigation_only; no fact adjudication; complete clips remain required"
+    },
+    {
+      "frame_id": "K029",
+      "path": "frames/K029_691.223867.png",
+      "requested_source_time_sec": 691.2,
+      "source_time_sec": 691.2238666666667,
+      "source_pts": 20736716,
+      "source_time_base": "1/30000",
+      "source_frame_index": 20716,
+      "clip_id": "C15",
+      "clip_frame_index": 126,
+      "clip_time_sec": 4.204200000000014,
+      "task_ids": [
+        "GX010021-T2-003"
+      ],
+      "sha256": "c6151a7ebf75658b32f106cedecaa865d70a3085e4458e478235843a9342d657",
+      "purpose": "navigation_only; no fact adjudication; complete clips remain required"
+    }
+  ]
+}
