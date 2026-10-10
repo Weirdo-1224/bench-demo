@@ -10,7 +10,7 @@ from pathlib import Path
 
 EP = Path(__file__).resolve().parent.parent
 ROOT = EP.parents[1]
-ANN = EP / "annotations"
+ANN = EP / "annotations" / "v1_candidate"
 REP = EP / "reports"
 REPORTS = EP / "annotation_reports"
 BASE = "annotation_reports/candidate_events_v1.md"

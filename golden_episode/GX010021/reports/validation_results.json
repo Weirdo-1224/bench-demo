@@ -1,6 +1,8 @@
 {
-  "passed": true,
-  "errors": [],
+  "passed": false,
+  "errors": [
+    "Input SHA256 changed: annotation_reports/README.md"
+  ],
   "notes": [
     "E002/V-E002-01: 结果/边界证据晚于秒级事件末界0.2s，保留原范围；不是新的事件。",
     "E002/V-E002-02: 结果/边界证据晚于秒级事件末界1.2s，保留原范围；不是新的事件。",

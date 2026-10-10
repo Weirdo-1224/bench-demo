@@ -307,10 +307,10 @@ def write_merge_report(docs,result):
 
 | 产物 | 内容 |
 |---|---|
-| [events.json](../annotations/events.json) | E001–E056，56 条；原候选完整保留，关联证据、对象、状态节点、Ego-MC 原文及修订依据 |
-| [objects.json](../annotations/objects.json) | {summary['object_record_count']} 条对象引用记录：15 条原始 O01–O15 + 7 条补充指称；{summary['state_entry_count']} 条状态节点 |
-| [review_queue.json](../annotations/review_queue.json) | 14 项 OPEN：P0×{priorities.get('P0',0)}、P1×{priorities.get('P1',0)}、P2×{priorities.get('P2',0)}；全部不确定字段可定位到复核目标 |
-| [schema.json](../annotations/schema.json) | JSON Schema Draft 2020-12；三类产物共用 time / source / fact / revision 定义 |
+| [events.json](../annotations/v1_candidate/events.json) | E001–E056，56 条；原候选完整保留，关联证据、对象、状态节点、Ego-MC 原文及修订依据 |
+| [objects.json](../annotations/v1_candidate/objects.json) | {summary['object_record_count']} 条对象引用记录：15 条原始 O01–O15 + 7 条补充指称；{summary['state_entry_count']} 条状态节点 |
+| [review_queue.json](../annotations/v1_candidate/review_queue.json) | 14 项 OPEN：P0×{priorities.get('P0',0)}、P1×{priorities.get('P1',0)}、P2×{priorities.get('P2',0)}；全部不确定字段可定位到复核目标 |
+| [schema.json](../annotations/v1_candidate/schema.json) | JSON Schema Draft 2020-12；三类产物共用 time / source / fact / revision 定义 |
 | [build.py](../scripts/build.py) | 可重跑的只读输入整合脚本；读取 ffprobe 元数据，不解码视频帧 |
 | [validate.py](../scripts/validate.py) | Schema、语义一致性与输入 SHA-256 校验；负例检查在内存执行 |
 | [validation_results.json](validation_results.json) | 最终校验结果和边界/覆盖说明 |

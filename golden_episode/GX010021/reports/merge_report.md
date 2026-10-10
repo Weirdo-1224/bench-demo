@@ -6,10 +6,10 @@
 
 | 产物 | 内容 |
 |---|---|
-| [events.json](../annotations/events.json) | E001–E056，56 条；原候选完整保留，关联证据、对象、状态节点、Ego-MC 原文及修订依据 |
-| [objects.json](../annotations/objects.json) | 22 条对象引用记录：15 条原始 O01–O15 + 7 条补充指称；115 条状态节点 |
-| [review_queue.json](../annotations/review_queue.json) | 14 项 OPEN：P0×2、P1×4、P2×8；全部不确定字段可定位到复核目标 |
-| [schema.json](../annotations/schema.json) | JSON Schema Draft 2020-12；三类产物共用 time / source / fact / revision 定义 |
+| [events.json](../annotations/v1_candidate/events.json) | E001–E056，56 条；原候选完整保留，关联证据、对象、状态节点、Ego-MC 原文及修订依据 |
+| [objects.json](../annotations/v1_candidate/objects.json) | 22 条对象引用记录：15 条原始 O01–O15 + 7 条补充指称；115 条状态节点 |
+| [review_queue.json](../annotations/v1_candidate/review_queue.json) | 14 项 OPEN：P0×2、P1×4、P2×8；全部不确定字段可定位到复核目标 |
+| [schema.json](../annotations/v1_candidate/schema.json) | JSON Schema Draft 2020-12；三类产物共用 time / source / fact / revision 定义 |
 | [build.py](../scripts/build.py) | 可重跑的只读输入整合脚本；读取 ffprobe 元数据，不解码视频帧 |
 | [validate.py](../scripts/validate.py) | Schema、语义一致性与输入 SHA-256 校验；负例检查在内存执行 |
 | [validation_results.json](validation_results.json) | 最终校验结果和边界/覆盖说明 |
@@ -83,7 +83,7 @@ E014 保留第一轮01:30–01:37，拿糖袋帧95.2s在该候选范围内；不
 
 ## 自动校验结果
 
-最终结果：**PASS**；错误0条；执行5618项断言，含3份JSON的Schema入口检查。成功判定只涉及结构/引用/溯源/约束一致性，不能证明视频事实本身正确。
+最终结果：**FAIL**；错误1条；执行5618项断言，含3份JSON的Schema入口检查。成功判定只涉及结构/引用/溯源/约束一致性，不能证明视频事实本身正确。
 
 | 类别 | 断言数 |
 |---|---|
@@ -106,7 +106,7 @@ E014 保留第一轮01:30–01:37，拿糖袋帧95.2s在该候选范围内；不
 
 负例检查 **13/13**被正确拒绝，全部为内存副本：越界时间、重复事件ID、悬空对象/证据、错误证据级别、无效事件状态、E042当前主张继承CONTRADICTED、恢复E057、V2计数升格、油膜升格、E054补插入动作、改写原候选、删除必要复核项。未修改最终数据或输入。
 
-无错误。
+- Input SHA256 changed: annotation_reports/README.md
 
 运行命令（项目根目录，Python和现有jsonschema，ffprobe已在PATH）：
 

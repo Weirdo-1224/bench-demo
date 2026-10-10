@@ -59,11 +59,11 @@ def pointer(d, ptr):
         d = d[int(part)] if isinstance(d, list) else d[part]
     return d
 
-tasks_doc = read(EP / 'tasks/pilot_task_candidates.json')
+tasks_doc = read(EP / 'tasks/v1_candidates/pilot_task_candidates.json')
 tasks = {t['task_id']: t for t in tasks_doc['tasks'] if t['task_id'] in IDS}
-events_doc = read(EP / 'annotations/events.json')
-objects_doc = read(EP / 'annotations/objects.json')
-reviews_doc = read(EP / 'annotations/review_queue.json')
+events_doc = read(EP / 'annotations/v1_candidate/events.json')
+objects_doc = read(EP / 'annotations/v1_candidate/objects.json')
+reviews_doc = read(EP / 'annotations/v1_candidate/review_queue.json')
 raw = read(EP / 'source/annotations.json')
 evreg = {e['id']: e for e in events_doc['evidence']}
 evmap = {e['id']: e for e in events_doc['events']}
@@ -342,7 +342,7 @@ manifest={'evidence_package_version':'1.0','episode_id':'GX010021','created_date
                         'history_experiments_executed':False,'gold_count':0}}
 for t in IDS:
     manifest['tasks'].append({'task_id':t,'source_pointer':f'/tasks/{next(i for i,v in enumerate(tasks_doc["tasks"]) if v["task_id"]==t)}',
-                             'source_path':rp(EP/'tasks/pilot_task_candidates.json'),'cutoff_sec':tasks[t]['observation_cutoff'],
+                             'source_path':rp(EP/'tasks/v1_candidates/pilot_task_candidates.json'),'cutoff_sec':tasks[t]['observation_cutoff'],
                              'atom_count':sum(f['task_id']==t for f in facts),'fact_ids':[f['fact_id'] for f in facts if f['task_id']==t],
                              'review_clip_ids':alloc[t],'original_reference_facts':tasks[t]['reference_facts'],
                              'original_evidence_refs':tasks[t]['evidence_refs'],
@@ -464,7 +464,7 @@ il=['# GX010021 内部参考（禁止向盲审者或被评测Agent提供）','',
     '- 提取[0,692.3)全部源帧，按任务分段并设置截止；没有提取692.608秒R55及尾部作为任务证据。源余段[692.3,696.929567)不属本轮任务合法输入，历史尾部缺口696.2–696.929567无须为这些任务补裁决。',
     '- 所有片段原帧解码MD5与来源逐帧一致。此校验只证明媒体技术完整性，不判断动作、身份、材料或Ground Truth。',
     '', '## 路径修复与引用边界','',
-    '上游reference_facts的`../../annotations.json#/texts/...`为整理前遗留定位，当前实际唯一源为`golden_episode/GX010021/source/annotations.json`；`events.json`和`objects.json`实际在`annotations/`。保留原字符串并通过artifact解析其JSON Pointer，本包不创建副本、不写回上游。任务media_ref的`../../source/GX010021.MP4`从tasks文件目录直接解释也不能找到实际文件；本包按Episode根规范化到现有source路径。',
+    '上游reference_facts的`../../annotations.json#/texts/...`为整理前遗留定位，当前实际唯一源为`golden_episode/GX010021/source/annotations.json`；`events.json`和`objects.json`实际在`annotations/v1_candidate/`。保留原字符串并通过artifact解析其JSON Pointer，本包不创建副本、不写回上游。任务media_ref的`../../source/GX010021.MP4`从tasks文件目录直接解释也不能找到实际文件；本包按Episode根规范化到现有source路径。',
     '', '## 历史冲突（全部为历史主张）','',
     '| 项目 | 历史分歧与后续修订 | 本包处理 |','|---|---|---|',
     '| E027/E028 | 初稿E027为200–234秒；后轮改为199–235秒。E028对象状态仍234–239秒，与约235.2秒提离及236.2–238.2秒放置重叠。 | 保留原引用；提取194–239.3秒连续过程；不裁定精确结束/完成时刻。 |',
