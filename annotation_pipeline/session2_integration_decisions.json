@@ -1,0 +1,617 @@
+{
+  "episode_id": "GX010021",
+  "annotation_status": "CANDIDATE",
+  "crosscheck": [
+    {
+      "v1_event_id": "E001",
+      "model_event_ids": [],
+      "category": "V1_ONLY",
+      "risk": "MEDIUM",
+      "requires_further_video_review": false,
+      "note": "独立全片模型没有单独表示此动作；作为历史候选保留，未自动确认为本轮视频观察。"
+    },
+    {
+      "v1_event_id": "E002",
+      "model_event_ids": [
+        "E31"
+      ],
+      "category": "BOTH_OBSERVED",
+      "risk": "LOW",
+      "requires_further_video_review": false,
+      "note": "宏观动作有交集，粒度与边界未审定；此匹配不证明全部属性一致。"
+    },
+    {
+      "v1_event_id": "E003",
+      "model_event_ids": [],
+      "category": "V1_ONLY",
+      "risk": "MEDIUM",
+      "requires_further_video_review": false,
+      "note": "独立全片模型没有单独表示此动作；作为历史候选保留，未自动确认为本轮视频观察。"
+    },
+    {
+      "v1_event_id": "E004",
+      "model_event_ids": [
+        "E32"
+      ],
+      "category": "BOTH_OBSERVED",
+      "risk": "LOW",
+      "requires_further_video_review": false,
+      "note": "宏观动作有交集，粒度与边界未审定；此匹配不证明全部属性一致。"
+    },
+    {
+      "v1_event_id": "E005",
+      "model_event_ids": [
+        "E1"
+      ],
+      "category": "BOTH_OBSERVED",
+      "risk": "LOW",
+      "requires_further_video_review": false,
+      "note": "宏观动作有交集，粒度与边界未审定；此匹配不证明全部属性一致。"
+    },
+    {
+      "v1_event_id": "E006",
+      "model_event_ids": [
+        "E2"
+      ],
+      "category": "BOTH_OBSERVED",
+      "risk": "LOW",
+      "requires_further_video_review": false,
+      "note": "宏观动作有交集，粒度与边界未审定；此匹配不证明全部属性一致。"
+    },
+    {
+      "v1_event_id": "E007",
+      "model_event_ids": [
+        "E2"
+      ],
+      "category": "CONFLICT",
+      "risk": "HIGH",
+      "requires_further_video_review": true,
+      "note": "取蛋数量：V2说两个，V1累计三枚也是不确定候选；不等于打入数。"
+    },
+    {
+      "v1_event_id": "E008",
+      "model_event_ids": [],
+      "category": "V1_ONLY",
+      "risk": "MEDIUM",
+      "requires_further_video_review": false,
+      "note": "独立全片模型没有单独表示此动作；作为历史候选保留，未自动确认为本轮视频观察。"
+    },
+    {
+      "v1_event_id": "E009",
+      "model_event_ids": [],
+      "category": "V1_ONLY",
+      "risk": "MEDIUM",
+      "requires_further_video_review": false,
+      "note": "独立全片模型没有单独表示此动作；作为历史候选保留，未自动确认为本轮视频观察。"
+    },
+    {
+      "v1_event_id": "E010",
+      "model_event_ids": [
+        "E3"
+      ],
+      "category": "BOTH_OBSERVED",
+      "risk": "LOW",
+      "requires_further_video_review": false,
+      "note": "宏观动作有交集，粒度与边界未审定；此匹配不证明全部属性一致。"
+    },
+    {
+      "v1_event_id": "E011",
+      "model_event_ids": [
+        "E4"
+      ],
+      "category": "CONFLICT",
+      "risk": "HIGH",
+      "requires_further_video_review": true,
+      "note": "V2在66–76秒同时声称第二及第三枚倒入；76.209与83.217秒局部图像只见两个蛋黄。"
+    },
+    {
+      "v1_event_id": "E012",
+      "model_event_ids": [
+        "E4"
+      ],
+      "category": "CONFLICT",
+      "risk": "HIGH",
+      "requires_further_video_review": true,
+      "note": "操作第三枚与第三枚蛋液已进入不同，当前无法确定是否破损和最终去向。"
+    },
+    {
+      "v1_event_id": "E013",
+      "model_event_ids": [
+        "E44"
+      ],
+      "category": "CONFLICT",
+      "risk": "HIGH",
+      "requires_further_video_review": true,
+      "note": "V2说移走空蛋盒，V1说持蛋去蛋盒；V2证据V5在44–55秒，未覆盖85–88秒动作。"
+    },
+    {
+      "v1_event_id": "E014",
+      "model_event_ids": [],
+      "category": "V1_ONLY",
+      "risk": "MEDIUM",
+      "requires_further_video_review": false,
+      "note": "独立全片模型没有单独表示此动作；作为历史候选保留，未自动确认为本轮视频观察。"
+    },
+    {
+      "v1_event_id": "E015",
+      "model_event_ids": [],
+      "category": "V1_ONLY",
+      "risk": "MEDIUM",
+      "requires_further_video_review": false,
+      "note": "独立全片模型没有单独表示此动作；作为历史候选保留，未自动确认为本轮视频观察。"
+    },
+    {
+      "v1_event_id": "E016",
+      "model_event_ids": [
+        "E5"
+      ],
+      "category": "BOTH_OBSERVED",
+      "risk": "LOW",
+      "requires_further_video_review": false,
+      "note": "宏观动作有交集，粒度与边界未审定；此匹配不证明全部属性一致。"
+    },
+    {
+      "v1_event_id": "E017",
+      "model_event_ids": [],
+      "category": "V1_ONLY",
+      "risk": "MEDIUM",
+      "requires_further_video_review": false,
+      "note": "独立全片模型没有单独表示此动作；作为历史候选保留，未自动确认为本轮视频观察。"
+    },
+    {
+      "v1_event_id": "E018",
+      "model_event_ids": [
+        "E6"
+      ],
+      "category": "CONFLICT",
+      "risk": "HIGH",
+      "requires_further_video_review": true,
+      "note": "V2糖入容器时间115–120与V1的123–132冲突；V2证据混合量取与入料，应局部连贯核查。"
+    },
+    {
+      "v1_event_id": "E019",
+      "model_event_ids": [],
+      "category": "V1_ONLY",
+      "risk": "MEDIUM",
+      "requires_further_video_review": false,
+      "note": "独立全片模型没有单独表示此动作；作为历史候选保留，未自动确认为本轮视频观察。"
+    },
+    {
+      "v1_event_id": "E020",
+      "model_event_ids": [],
+      "category": "V1_ONLY",
+      "risk": "HIGH",
+      "requires_further_video_review": true,
+      "note": "独立全片模型没有单独表示此动作；作为历史候选保留，未自动确认为本轮视频观察。"
+    },
+    {
+      "v1_event_id": "E021",
+      "model_event_ids": [
+        "E7"
+      ],
+      "category": "BOTH_OBSERVED",
+      "risk": "LOW",
+      "requires_further_video_review": false,
+      "note": "宏观动作有交集，粒度与边界未审定；此匹配不证明全部属性一致。"
+    },
+    {
+      "v1_event_id": "E022",
+      "model_event_ids": [
+        "E7"
+      ],
+      "category": "BOTH_OBSERVED",
+      "risk": "LOW",
+      "requires_further_video_review": false,
+      "note": "宏观动作有交集，粒度与边界未审定；此匹配不证明全部属性一致。"
+    },
+    {
+      "v1_event_id": "E023",
+      "model_event_ids": [
+        "E8"
+      ],
+      "category": "BOTH_OBSERVED",
+      "risk": "LOW",
+      "requires_further_video_review": false,
+      "note": "宏观动作有交集，粒度与边界未审定；此匹配不证明全部属性一致。"
+    },
+    {
+      "v1_event_id": "E024",
+      "model_event_ids": [],
+      "category": "V1_ONLY",
+      "risk": "MEDIUM",
+      "requires_further_video_review": false,
+      "note": "独立全片模型没有单独表示此动作；作为历史候选保留，未自动确认为本轮视频观察。"
+    },
+    {
+      "v1_event_id": "E025",
+      "model_event_ids": [
+        "E9"
+      ],
+      "category": "BOTH_OBSERVED",
+      "risk": "LOW",
+      "requires_further_video_review": false,
+      "note": "宏观动作有交集，粒度与边界未审定；此匹配不证明全部属性一致。"
+    },
+    {
+      "v1_event_id": "E026",
+      "model_event_ids": [],
+      "category": "V1_ONLY",
+      "risk": "MEDIUM",
+      "requires_further_video_review": false,
+      "note": "独立全片模型没有单独表示此动作；作为历史候选保留，未自动确认为本轮视频观察。"
+    },
+    {
+      "v1_event_id": "E027",
+      "model_event_ids": [
+        "E10"
+      ],
+      "category": "BOTH_OBSERVED",
+      "risk": "LOW",
+      "requires_further_video_review": false,
+      "note": "宏观动作有交集，粒度与边界未审定；此匹配不证明全部属性一致。"
+    },
+    {
+      "v1_event_id": "E028",
+      "model_event_ids": [],
+      "category": "V1_ONLY",
+      "risk": "MEDIUM",
+      "requires_further_video_review": false,
+      "note": "独立全片模型没有单独表示此动作；作为历史候选保留，未自动确认为本轮视频观察。"
+    },
+    {
+      "v1_event_id": "E029",
+      "model_event_ids": [],
+      "category": "V1_ONLY",
+      "risk": "MEDIUM",
+      "requires_further_video_review": false,
+      "note": "独立全片模型没有单独表示此动作；作为历史候选保留，未自动确认为本轮视频观察。"
+    },
+    {
+      "v1_event_id": "E030",
+      "model_event_ids": [
+        "E11"
+      ],
+      "category": "BOTH_OBSERVED",
+      "risk": "LOW",
+      "requires_further_video_review": false,
+      "note": "宏观动作有交集，粒度与边界未审定；此匹配不证明全部属性一致。"
+    },
+    {
+      "v1_event_id": "E031",
+      "model_event_ids": [
+        "E12",
+        "E33"
+      ],
+      "category": "BOTH_OBSERVED",
+      "risk": "LOW",
+      "requires_further_video_review": false,
+      "note": "宏观动作有交集，粒度与边界未审定；此匹配不证明全部属性一致。"
+    },
+    {
+      "v1_event_id": "E032",
+      "model_event_ids": [
+        "E13"
+      ],
+      "category": "BOTH_OBSERVED",
+      "risk": "LOW",
+      "requires_further_video_review": false,
+      "note": "宏观动作有交集，粒度与边界未审定；此匹配不证明全部属性一致。"
+    },
+    {
+      "v1_event_id": "E033",
+      "model_event_ids": [],
+      "category": "V1_ONLY",
+      "risk": "MEDIUM",
+      "requires_further_video_review": false,
+      "note": "独立全片模型没有单独表示此动作；作为历史候选保留，未自动确认为本轮视频观察。"
+    },
+    {
+      "v1_event_id": "E034",
+      "model_event_ids": [
+        "E14"
+      ],
+      "category": "BOTH_OBSERVED",
+      "risk": "LOW",
+      "requires_further_video_review": false,
+      "note": "宏观动作有交集，粒度与边界未审定；此匹配不证明全部属性一致。"
+    },
+    {
+      "v1_event_id": "E035",
+      "model_event_ids": [
+        "E15"
+      ],
+      "category": "BOTH_OBSERVED",
+      "risk": "LOW",
+      "requires_further_video_review": false,
+      "note": "宏观动作有交集，粒度与边界未审定；此匹配不证明全部属性一致。"
+    },
+    {
+      "v1_event_id": "E036",
+      "model_event_ids": [
+        "E16"
+      ],
+      "category": "BOTH_OBSERVED",
+      "risk": "LOW",
+      "requires_further_video_review": false,
+      "note": "宏观动作有交集，粒度与边界未审定；此匹配不证明全部属性一致。"
+    },
+    {
+      "v1_event_id": "E037",
+      "model_event_ids": [
+        "E16"
+      ],
+      "category": "BOTH_OBSERVED",
+      "risk": "LOW",
+      "requires_further_video_review": true,
+      "note": "宏观动作有交集，粒度与边界未审定；此匹配不证明全部属性一致。"
+    },
+    {
+      "v1_event_id": "E038",
+      "model_event_ids": [],
+      "category": "V1_ONLY",
+      "risk": "MEDIUM",
+      "requires_further_video_review": false,
+      "note": "独立全片模型没有单独表示此动作；作为历史候选保留，未自动确认为本轮视频观察。"
+    },
+    {
+      "v1_event_id": "E039",
+      "model_event_ids": [
+        "E17"
+      ],
+      "category": "BOTH_OBSERVED",
+      "risk": "LOW",
+      "requires_further_video_review": false,
+      "note": "宏观动作有交集，粒度与边界未审定；此匹配不证明全部属性一致。"
+    },
+    {
+      "v1_event_id": "E040",
+      "model_event_ids": [
+        "E18"
+      ],
+      "category": "BOTH_OBSERVED",
+      "risk": "LOW",
+      "requires_further_video_review": false,
+      "note": "宏观动作有交集，粒度与边界未审定；此匹配不证明全部属性一致。"
+    },
+    {
+      "v1_event_id": "E041",
+      "model_event_ids": [
+        "E18"
+      ],
+      "category": "BOTH_OBSERVED",
+      "risk": "LOW",
+      "requires_further_video_review": true,
+      "note": "宏观动作有交集，粒度与边界未审定；此匹配不证明全部属性一致。"
+    },
+    {
+      "v1_event_id": "E042",
+      "model_event_ids": [
+        "E19"
+      ],
+      "category": "CONFLICT",
+      "risk": "HIGH",
+      "requires_further_video_review": true,
+      "note": "V2称第三次取出且完全融化；历史称第二次，431.231秒图像仍有固块。"
+    },
+    {
+      "v1_event_id": "E043",
+      "model_event_ids": [
+        "E20"
+      ],
+      "category": "CONFLICT",
+      "risk": "HIGH",
+      "requires_further_video_review": true,
+      "note": "V2以完全融化语义描述搅动；445.245秒仍见固态物，最终消失时刻未知。"
+    },
+    {
+      "v1_event_id": "E044",
+      "model_event_ids": [
+        "E21"
+      ],
+      "category": "BOTH_OBSERVED",
+      "risk": "LOW",
+      "requires_further_video_review": false,
+      "note": "宏观动作有交集，粒度与边界未审定；此匹配不证明全部属性一致。"
+    },
+    {
+      "v1_event_id": "E045",
+      "model_event_ids": [
+        "E22",
+        "E36"
+      ],
+      "category": "BOTH_OBSERVED",
+      "risk": "LOW",
+      "requires_further_video_review": false,
+      "note": "宏观动作有交集，粒度与边界未审定；此匹配不证明全部属性一致。"
+    },
+    {
+      "v1_event_id": "E046",
+      "model_event_ids": [
+        "E37"
+      ],
+      "category": "BOTH_OBSERVED",
+      "risk": "LOW",
+      "requires_further_video_review": false,
+      "note": "宏观动作有交集，粒度与边界未审定；此匹配不证明全部属性一致。"
+    },
+    {
+      "v1_event_id": "E047",
+      "model_event_ids": [],
+      "category": "V1_ONLY",
+      "risk": "MEDIUM",
+      "requires_further_video_review": false,
+      "note": "独立全片模型没有单独表示此动作；作为历史候选保留，未自动确认为本轮视频观察。"
+    },
+    {
+      "v1_event_id": "E048",
+      "model_event_ids": [
+        "E23"
+      ],
+      "category": "BOTH_OBSERVED",
+      "risk": "LOW",
+      "requires_further_video_review": false,
+      "note": "宏观动作有交集，粒度与边界未审定；此匹配不证明全部属性一致。"
+    },
+    {
+      "v1_event_id": "E049",
+      "model_event_ids": [
+        "E24",
+        "E25",
+        "E35"
+      ],
+      "category": "BOTH_OBSERVED",
+      "risk": "LOW",
+      "requires_further_video_review": true,
+      "note": "宏观动作有交集，粒度与边界未审定；此匹配不证明全部属性一致。"
+    },
+    {
+      "v1_event_id": "E050",
+      "model_event_ids": [],
+      "category": "V1_ONLY",
+      "risk": "MEDIUM",
+      "requires_further_video_review": false,
+      "note": "独立全片模型没有单独表示此动作；作为历史候选保留，未自动确认为本轮视频观察。"
+    },
+    {
+      "v1_event_id": "E051",
+      "model_event_ids": [],
+      "category": "V1_ONLY",
+      "risk": "HIGH",
+      "requires_further_video_review": true,
+      "note": "独立全片模型没有单独表示此动作；作为历史候选保留，未自动确认为本轮视频观察。"
+    },
+    {
+      "v1_event_id": "E052",
+      "model_event_ids": [],
+      "category": "V1_ONLY",
+      "risk": "HIGH",
+      "requires_further_video_review": true,
+      "note": "独立全片模型没有单独表示此动作；作为历史候选保留，未自动确认为本轮视频观察。"
+    },
+    {
+      "v1_event_id": "E053",
+      "model_event_ids": [
+        "E26",
+        "E27",
+        "E38",
+        "E39"
+      ],
+      "category": "BOTH_OBSERVED",
+      "risk": "LOW",
+      "requires_further_video_review": false,
+      "note": "宏观动作有交集，粒度与边界未审定；此匹配不证明全部属性一致。"
+    },
+    {
+      "v1_event_id": "E054",
+      "model_event_ids": [
+        "E45"
+      ],
+      "category": "CONFLICT",
+      "risk": "HIGH",
+      "requires_further_video_review": true,
+      "note": "V2声称刮刀放台面，V1为盖粉色罐盖；680.213秒刮刀在混合容器内，不能倒推出放置动作。"
+    },
+    {
+      "v1_event_id": "E055",
+      "model_event_ids": [
+        "E28",
+        "E29",
+        "E30",
+        "E40",
+        "E41",
+        "E42",
+        "E43"
+      ],
+      "category": "BOTH_OBSERVED",
+      "risk": "LOW",
+      "requires_further_video_review": false,
+      "note": "宏观动作有交集，粒度与边界未审定；此匹配不证明全部属性一致。"
+    },
+    {
+      "v1_event_id": "E056",
+      "model_event_ids": [],
+      "category": "V1_ONLY",
+      "risk": "MEDIUM",
+      "requires_further_video_review": false,
+      "note": "独立全片模型没有单独表示此动作；作为历史候选保留，未自动确认为本轮视频观察。"
+    }
+  ],
+  "object_correspondences": {
+    "O01": [
+      "O1"
+    ],
+    "O02": [],
+    "O03": [],
+    "O04": [
+      "O4"
+    ],
+    "O05": [
+      "O13"
+    ],
+    "O06": [
+      "O5"
+    ],
+    "O07": [
+      "O6"
+    ],
+    "O08": [
+      "O7"
+    ],
+    "O09": [],
+    "O10": [
+      "O9"
+    ],
+    "O11": [
+      "O11"
+    ],
+    "O12": [
+      "O10"
+    ],
+    "O13": [
+      "O15"
+    ],
+    "O14": [
+      "O12",
+      "O19"
+    ],
+    "O15": [],
+    "O16": [],
+    "O17": [],
+    "O18": [
+      "O18"
+    ],
+    "O19": [
+      "O2"
+    ],
+    "O20": [
+      "O3"
+    ],
+    "O21": [
+      "O8"
+    ],
+    "O22": []
+  },
+  "duplicate_event_aliases": {
+    "E34": "E26",
+    "E38": "E26",
+    "E39": "E27",
+    "E41": "E28",
+    "E42": "E29",
+    "E43": "E30"
+  },
+  "model_event_caveats": {
+    "E2": "取出数量未知；模型两个与历史累计三个不一致。",
+    "E4": "额外第三枚是否倒入无法确证；仅保留打蛋操作候选，局部帧见两个蛋黄。",
+    "E5": "模型事件时间110–115却引用95–100秒证据，证据定位不覆盖此动作。",
+    "E6": "糖量取与入容器时间有冲突，需连续视频核查。",
+    "E7": "盒到杯为倾倒或量取，舀取措辞未确证；杯物理身份及容量未知。",
+    "E19": "去除第三次与完全融化的主张；取出次数与固液状态分开保存。",
+    "E20": "固液共存至少在445.211秒可见；不得声称已完全融化。",
+    "E25": "引用633–678秒未来证据V24不能支持568–578秒状态；相关证据支持尚缺。",
+    "E30": "原候选结束延至媒体结束，真实门关闭边界未精查。",
+    "E36": "准备是意图推断；只候选记录拿取/移动打蛋器。",
+    "E44": "所引证据在44–55秒，不能支持85–88秒动作；对象及动作未知。",
+    "E45": "所引633–678秒转移证据不足以证明678–680秒工具放台面；局部680.213秒见工具在混合容器内。"
+  },
+  "semantic_conclusions_are_candidates": true
+}

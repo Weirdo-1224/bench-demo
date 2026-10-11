@@ -1,0 +1,3696 @@
+{
+  "annotation_status": "CANDIDATE",
+  "schema_version": "unified-candidate-v0.1",
+  "records": [
+    {
+      "id": "H1-E001",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/0"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E001-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "环视/走近",
+      "actor": "相机视角",
+      "objects": [],
+      "start_time": 0.0,
+      "end_time": 9.0,
+      "evidence_sufficient_time": null,
+      "observability": "historical_report_only",
+      "confidence": null,
+      "execution_status": "uncertain",
+      "time_precision": "HISTORICAL_APPROXIMATE",
+      "historical_event_ids": [
+        "E001"
+      ],
+      "description": "从水槽区移步至灶台前，观察灶台与台面物品",
+      "historical_facts": [
+        {
+          "field": "core_action",
+          "value": "环视/走近",
+          "status": "REPORTED_SUPPORTED",
+          "evidence_ids": [
+            "V-E001-01"
+          ],
+          "reason": "仅依据历史报告所述抽样帧的核心动作；未人工确认。"
+        }
+      ],
+      "uncertainties": [
+        "未在独立全片模型中单独表示；历史候选未自动成为新视觉事实。"
+      ]
+    },
+    {
+      "id": "V2-E31",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/events/30"
+        },
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/1"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V2"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "按压灶台按钮",
+      "actor": "person",
+      "objects": [
+        "V2-O12"
+      ],
+      "evidence_sufficient_time": 15.0,
+      "execution_status": "executed",
+      "observability": "direct_visual",
+      "confidence": 0.98,
+      "uncertainties": [],
+      "start_time": 10.0,
+      "end_time": 15.0,
+      "model_event_ids": [
+        "E31"
+      ],
+      "historical_event_ids": [
+        "E002"
+      ],
+      "time_precision": "MODEL_APPROXIMATE",
+      "model_claim": {
+        "event_id": "E31",
+        "action": "按压灶台按钮",
+        "actor": "person",
+        "objects": [
+          "O12"
+        ],
+        "evidence_sufficient_time": 15.0,
+        "execution_status": "executed",
+        "observability": "direct_visual",
+        "evidence_refs": [
+          "V2"
+        ],
+        "confidence": 0.98,
+        "uncertainties": [],
+        "start_time": 10.0,
+        "end_time": 15.0
+      },
+      "crosscheck_categories": [
+        "BOTH_OBSERVED"
+      ],
+      "interpretation_status": "MODEL_CANDIDATE",
+      "interval_coverage_is_unverified": true
+    },
+    {
+      "id": "H1-E003",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/2"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E003-01",
+        "H1-T-R01",
+        "H1-T-R03",
+        "H1-H-E003-02",
+        "H1-T-R02"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "观察确认",
+      "actor": "相机视角",
+      "objects": [
+        "H1-O14"
+      ],
+      "start_time": 15.0,
+      "end_time": 19.0,
+      "evidence_sufficient_time": null,
+      "observability": "historical_report_only",
+      "confidence": null,
+      "execution_status": "uncertain",
+      "time_precision": "HISTORICAL_APPROXIMATE",
+      "historical_event_ids": [
+        "E003"
+      ],
+      "description": "视角停留，面板显示保持 \"100\"；不能据此确认温度或预热完成。",
+      "historical_facts": [
+        {
+          "field": "core_action",
+          "value": "观察确认",
+          "status": "REPORTED_SUPPORTED",
+          "evidence_ids": [
+            "V-E003-01"
+          ],
+          "reason": "仅依据历史报告所述抽样帧的核心动作；未人工确认。"
+        },
+        {
+          "field": "display_text",
+          "value": "100",
+          "status": "REPORTED_SUPPORTED",
+          "evidence_ids": [
+            "V-E003-01"
+          ],
+          "reason": "报告称可见读数；含义另列未知。"
+        },
+        {
+          "field": "display_semantics",
+          "value": "温度/预热代码含义未知；350°F仅为R01/R02线索。",
+          "status": "UNCERTAIN",
+          "evidence_ids": [
+            "V-E003-01",
+            "H-E003-02",
+            "T-R01",
+            "T-R02"
+          ],
+          "reason": "小字和按键功能不可视觉读证；不得将350°F等同显示100。"
+        }
+      ],
+      "uncertainties": [
+        "未在独立全片模型中单独表示；历史候选未自动成为新视觉事实。"
+      ]
+    },
+    {
+      "id": "V2-E32",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/events/31"
+        },
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/3"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V3"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "拿起白色瓷碗",
+      "actor": "person",
+      "objects": [
+        "V2-O2"
+      ],
+      "evidence_sufficient_time": 28.0,
+      "execution_status": "executed",
+      "observability": "direct_visual",
+      "confidence": 0.97,
+      "uncertainties": [],
+      "start_time": 22.0,
+      "end_time": 28.0,
+      "model_event_ids": [
+        "E32"
+      ],
+      "historical_event_ids": [
+        "E004"
+      ],
+      "time_precision": "MODEL_APPROXIMATE",
+      "model_claim": {
+        "event_id": "E32",
+        "action": "拿起白色瓷碗",
+        "actor": "person",
+        "objects": [
+          "O2"
+        ],
+        "evidence_sufficient_time": 28.0,
+        "execution_status": "executed",
+        "observability": "direct_visual",
+        "evidence_refs": [
+          "V3"
+        ],
+        "confidence": 0.97,
+        "uncertainties": [],
+        "start_time": 22.0,
+        "end_time": 28.0
+      },
+      "crosscheck_categories": [
+        "BOTH_OBSERVED"
+      ],
+      "interpretation_status": "MODEL_CANDIDATE",
+      "interval_coverage_is_unverified": true
+    },
+    {
+      "id": "V2-E1",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/events/0"
+        },
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/4"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V4"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "放置透明塑料盒于台面",
+      "actor": "person",
+      "objects": [
+        "V2-O1"
+      ],
+      "evidence_sufficient_time": 35.0,
+      "execution_status": "executed",
+      "observability": "direct_visual",
+      "confidence": 0.99,
+      "uncertainties": [],
+      "start_time": 30.0,
+      "end_time": 35.0,
+      "model_event_ids": [
+        "E1"
+      ],
+      "historical_event_ids": [
+        "E005"
+      ],
+      "time_precision": "MODEL_APPROXIMATE",
+      "model_claim": {
+        "event_id": "E1",
+        "action": "放置透明塑料盒于台面",
+        "actor": "person",
+        "objects": [
+          "O1"
+        ],
+        "evidence_sufficient_time": 35.0,
+        "execution_status": "executed",
+        "observability": "direct_visual",
+        "evidence_refs": [
+          "V4"
+        ],
+        "confidence": 0.99,
+        "uncertainties": [],
+        "start_time": 30.0,
+        "end_time": 35.0
+      },
+      "crosscheck_categories": [
+        "BOTH_OBSERVED"
+      ],
+      "interpretation_status": "MODEL_CANDIDATE",
+      "interval_coverage_is_unverified": true
+    },
+    {
+      "id": "V2-E2",
+      "annotation_status": "CANDIDATE",
+      "source_type": "integration_candidate",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/events/1"
+        },
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/5"
+        },
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/6"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V5"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "从蛋盒取出鸡蛋（累计数量未知）",
+      "actor": "person",
+      "objects": [
+        "V2-O3"
+      ],
+      "evidence_sufficient_time": null,
+      "execution_status": "executed",
+      "observability": "direct_visual",
+      "confidence": null,
+      "uncertainties": [
+        "取出数量未知；模型两个与历史累计三个不一致。"
+      ],
+      "start_time": 44.0,
+      "end_time": 55.0,
+      "model_event_ids": [
+        "E2"
+      ],
+      "historical_event_ids": [
+        "E006",
+        "E007"
+      ],
+      "time_precision": "MODEL_APPROXIMATE",
+      "model_claim": {
+        "event_id": "E2",
+        "action": "取出两个鸡蛋",
+        "actor": "person",
+        "objects": [
+          "O3"
+        ],
+        "evidence_sufficient_time": 55.0,
+        "execution_status": "executed",
+        "observability": "direct_visual",
+        "evidence_refs": [
+          "V5"
+        ],
+        "confidence": 0.99,
+        "uncertainties": [],
+        "start_time": 44.0,
+        "end_time": 55.0
+      },
+      "crosscheck_categories": [
+        "BOTH_OBSERVED",
+        "CONFLICT"
+      ],
+      "interpretation_status": "DISPUTED_OR_EVIDENCE_GAP",
+      "interval_coverage_is_unverified": true
+    },
+    {
+      "id": "H1-E008",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/7"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E008-01",
+        "H1-T-R09",
+        "H1-I-E008-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "扶/碰盒盖后离开",
+      "actor": "右手",
+      "objects": [
+        "V2-O3"
+      ],
+      "start_time": 53.0,
+      "end_time": 55.0,
+      "evidence_sufficient_time": null,
+      "observability": "historical_report_only",
+      "confidence": null,
+      "execution_status": "uncertain",
+      "time_precision": "HISTORICAL_APPROXIMATE",
+      "historical_event_ids": [
+        "E008"
+      ],
+      "description": "右手扶/碰蛋盒盖后离开；所报帧中盖仍呈开启平摊状，是否短暂扣合未知。",
+      "historical_facts": [
+        {
+          "field": "core_action",
+          "value": "扶/碰盒盖后离开",
+          "status": "REPORTED_SUPPORTED",
+          "evidence_ids": [
+            "V-E008-01"
+          ],
+          "reason": "仅依据历史报告所述抽样帧的核心动作；未人工确认。"
+        },
+        {
+          "field": "lid_latched",
+          "value": null,
+          "status": "UNCERTAIN",
+          "evidence_ids": [
+            "V-E008-01",
+            "I-E008-01"
+          ],
+          "reason": "54.2s仍开启；短暂扣合不可排除。"
+        }
+      ],
+      "uncertainties": [
+        "未在独立全片模型中单独表示；历史候选未自动成为新视觉事实。"
+      ]
+    },
+    {
+      "id": "H1-E009",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/8"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E009-01",
+        "H1-T-R09"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "放置暂存",
+      "actor": "手",
+      "objects": [
+        "H1-O02"
+      ],
+      "start_time": 56.0,
+      "end_time": 59.0,
+      "evidence_sufficient_time": null,
+      "observability": "historical_report_only",
+      "confidence": null,
+      "execution_status": "uncertain",
+      "time_precision": "HISTORICAL_APPROXIMATE",
+      "historical_event_ids": [
+        "E009"
+      ],
+      "description": "将其中 2 枚蛋放在台面（不锈钢罐与白碗之间），保留 1 枚在手",
+      "historical_facts": [
+        {
+          "field": "core_action",
+          "value": "放置暂存",
+          "status": "REPORTED_SUPPORTED",
+          "evidence_ids": [
+            "V-E009-01"
+          ],
+          "reason": "仅依据历史报告所述抽样帧的核心动作；未人工确认。"
+        },
+        {
+          "field": "eggs_on_counter",
+          "value": 2,
+          "status": "REPORTED_SUPPORTED",
+          "evidence_ids": [
+            "V-E009-01"
+          ],
+          "reason": "台面暂存数与手中一枚均为报告所述。"
+        }
+      ],
+      "uncertainties": [
+        "未在独立全片模型中单独表示；历史候选未自动成为新视觉事实。"
+      ]
+    },
+    {
+      "id": "V2-E3",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/events/2"
+        },
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/9"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V6"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "将第一个鸡蛋打入塑料盒",
+      "actor": "person",
+      "objects": [
+        "V2-O1",
+        "V2-O3"
+      ],
+      "evidence_sufficient_time": 65.0,
+      "execution_status": "executed",
+      "observability": "direct_visual",
+      "confidence": 0.99,
+      "uncertainties": [],
+      "start_time": 56.0,
+      "end_time": 65.0,
+      "model_event_ids": [
+        "E3"
+      ],
+      "historical_event_ids": [
+        "E010"
+      ],
+      "time_precision": "MODEL_APPROXIMATE",
+      "model_claim": {
+        "event_id": "E3",
+        "action": "将第一个鸡蛋打入塑料盒",
+        "actor": "person",
+        "objects": [
+          "O1",
+          "O3"
+        ],
+        "evidence_sufficient_time": 65.0,
+        "execution_status": "executed",
+        "observability": "direct_visual",
+        "evidence_refs": [
+          "V6"
+        ],
+        "confidence": 0.99,
+        "uncertainties": [],
+        "start_time": 56.0,
+        "end_time": 65.0
+      },
+      "crosscheck_categories": [
+        "BOTH_OBSERVED"
+      ],
+      "interpretation_status": "MODEL_CANDIDATE",
+      "interval_coverage_is_unverified": true
+    },
+    {
+      "id": "V2-E4",
+      "annotation_status": "CANDIDATE",
+      "source_type": "integration_candidate",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/events/3"
+        },
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/10"
+        },
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/11"
+        },
+        {
+          "source_id": "local_checks",
+          "json_pointer": "/records/1"
+        },
+        {
+          "source_id": "local_checks",
+          "json_pointer": "/records/2"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V7",
+        "LC-76-2",
+        "LC-83-2"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "在容器边缘操作后续鸡蛋（第三枚是否倒入未知）",
+      "actor": "person",
+      "objects": [
+        "V2-O1",
+        "V2-O3"
+      ],
+      "evidence_sufficient_time": null,
+      "execution_status": "uncertain",
+      "observability": "direct_visual",
+      "confidence": null,
+      "uncertainties": [
+        "额外第三枚是否倒入无法确证；仅保留打蛋操作候选，局部帧见两个蛋黄。"
+      ],
+      "start_time": 66.0,
+      "end_time": 76.0,
+      "model_event_ids": [
+        "E4"
+      ],
+      "historical_event_ids": [
+        "E011",
+        "E012"
+      ],
+      "time_precision": "MODEL_APPROXIMATE",
+      "model_claim": {
+        "event_id": "E4",
+        "action": "将第二、第三个鸡蛋打入塑料盒",
+        "actor": "person",
+        "objects": [
+          "O1",
+          "O3"
+        ],
+        "evidence_sufficient_time": 76.0,
+        "execution_status": "executed",
+        "observability": "direct_visual",
+        "evidence_refs": [
+          "V7"
+        ],
+        "confidence": 0.98,
+        "uncertainties": [],
+        "start_time": 66.0,
+        "end_time": 76.0
+      },
+      "crosscheck_categories": [
+        "CONFLICT"
+      ],
+      "interpretation_status": "DISPUTED_OR_EVIDENCE_GAP",
+      "interval_coverage_is_unverified": true
+    },
+    {
+      "id": "V2-E44",
+      "annotation_status": "CANDIDATE",
+      "source_type": "integration_candidate",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/events/43"
+        },
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/12"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V5"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "85–88秒台面附近物体操作候选（动作与对象未确认）",
+      "actor": "person",
+      "objects": [
+        "V2-O3"
+      ],
+      "evidence_sufficient_time": null,
+      "execution_status": "uncertain",
+      "observability": "partial_visual",
+      "confidence": null,
+      "uncertainties": [
+        "仅见移动，未见最终位置",
+        "所引证据在44–55秒，不能支持85–88秒动作；对象及动作未知。"
+      ],
+      "start_time": 85.0,
+      "end_time": 88.0,
+      "model_event_ids": [
+        "E44"
+      ],
+      "historical_event_ids": [
+        "E013"
+      ],
+      "time_precision": "MODEL_APPROXIMATE",
+      "model_claim": {
+        "event_id": "E44",
+        "action": "整理台面（移走空蛋盒等）",
+        "actor": "person",
+        "objects": [
+          "O3"
+        ],
+        "evidence_sufficient_time": 88.0,
+        "execution_status": "executed",
+        "observability": "partial_visual",
+        "evidence_refs": [
+          "V5"
+        ],
+        "confidence": 0.7,
+        "uncertainties": [
+          "仅见移动，未见最终位置"
+        ],
+        "start_time": 85.0,
+        "end_time": 88.0
+      },
+      "crosscheck_categories": [
+        "CONFLICT"
+      ],
+      "interpretation_status": "DISPUTED_OR_EVIDENCE_GAP",
+      "interval_coverage_is_unverified": true
+    },
+    {
+      "id": "H1-E014",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/13"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E014-01",
+        "H1-T-R13"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "拿取并开口",
+      "actor": "双手",
+      "objects": [
+        "V2-O4"
+      ],
+      "start_time": 90.0,
+      "end_time": 97.0,
+      "evidence_sufficient_time": null,
+      "observability": "historical_report_only",
+      "confidence": null,
+      "execution_status": "uncertain",
+      "time_precision": "HISTORICAL_APPROXIMATE",
+      "historical_event_ids": [
+        "E014"
+      ],
+      "description": "从粉盖罐旁拿起灰蓝色糖袋，双手撕/撑开袋口",
+      "historical_facts": [
+        {
+          "field": "core_action",
+          "value": "拿取并开口",
+          "status": "REPORTED_SUPPORTED",
+          "evidence_ids": [
+            "V-E014-01"
+          ],
+          "reason": "仅依据历史报告所述抽样帧的核心动作；未人工确认。"
+        }
+      ],
+      "uncertainties": [
+        "未在独立全片模型中单独表示；历史候选未自动成为新视觉事实。"
+      ]
+    },
+    {
+      "id": "H1-E015",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/14"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E015-01",
+        "H1-T-R13"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "拿取量杯",
+      "actor": "左手",
+      "objects": [
+        "V2-O13"
+      ],
+      "start_time": 98.0,
+      "end_time": 106.0,
+      "evidence_sufficient_time": null,
+      "observability": "historical_report_only",
+      "confidence": null,
+      "execution_status": "uncertain",
+      "time_precision": "HISTORICAL_APPROXIMATE",
+      "historical_event_ids": [
+        "E015"
+      ],
+      "description": "从台面量杯组中取出一只黑色量杯并查看",
+      "historical_facts": [
+        {
+          "field": "core_action",
+          "value": "拿取量杯",
+          "status": "REPORTED_SUPPORTED",
+          "evidence_ids": [
+            "V-E015-01"
+          ],
+          "reason": "仅依据历史报告所述抽样帧的核心动作；未人工确认。"
+        }
+      ],
+      "uncertainties": [
+        "未在独立全片模型中单独表示；历史候选未自动成为新视觉事实。"
+      ]
+    },
+    {
+      "id": "V2-E5",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/events/4"
+        },
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/15"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V8"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "舀取红糖",
+      "actor": "person",
+      "objects": [
+        "V2-O4",
+        "V2-O13"
+      ],
+      "evidence_sufficient_time": null,
+      "execution_status": "executed",
+      "observability": "direct_visual",
+      "confidence": null,
+      "uncertainties": [
+        "模型事件时间110–115却引用95–100秒证据，证据定位不覆盖此动作。"
+      ],
+      "start_time": 110.0,
+      "end_time": 115.0,
+      "model_event_ids": [
+        "E5"
+      ],
+      "historical_event_ids": [
+        "E016"
+      ],
+      "time_precision": "MODEL_APPROXIMATE",
+      "model_claim": {
+        "event_id": "E5",
+        "action": "舀取红糖",
+        "actor": "person",
+        "objects": [
+          "O4",
+          "O13"
+        ],
+        "evidence_sufficient_time": 115.0,
+        "execution_status": "executed",
+        "observability": "direct_visual",
+        "evidence_refs": [
+          "V8"
+        ],
+        "confidence": 0.97,
+        "uncertainties": [],
+        "start_time": 110.0,
+        "end_time": 115.0
+      },
+      "crosscheck_categories": [
+        "BOTH_OBSERVED"
+      ],
+      "interpretation_status": "DISPUTED_OR_EVIDENCE_GAP",
+      "interval_coverage_is_unverified": true
+    },
+    {
+      "id": "V2-E6",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/events/5"
+        },
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/17"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V9"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "将红糖倒入塑料盒",
+      "actor": "person",
+      "objects": [
+        "V2-O1",
+        "V2-O13"
+      ],
+      "evidence_sufficient_time": null,
+      "execution_status": "executed",
+      "observability": "direct_visual",
+      "confidence": null,
+      "uncertainties": [
+        "糖量取与入容器时间有冲突，需连续视频核查。"
+      ],
+      "start_time": 115.0,
+      "end_time": 120.0,
+      "model_event_ids": [
+        "E6"
+      ],
+      "historical_event_ids": [
+        "E018"
+      ],
+      "time_precision": "MODEL_APPROXIMATE",
+      "model_claim": {
+        "event_id": "E6",
+        "action": "将红糖倒入塑料盒",
+        "actor": "person",
+        "objects": [
+          "O1",
+          "O13"
+        ],
+        "evidence_sufficient_time": 120.0,
+        "execution_status": "executed",
+        "observability": "direct_visual",
+        "evidence_refs": [
+          "V9"
+        ],
+        "confidence": 0.99,
+        "uncertainties": [],
+        "start_time": 115.0,
+        "end_time": 120.0
+      },
+      "crosscheck_categories": [
+        "CONFLICT"
+      ],
+      "interpretation_status": "DISPUTED_OR_EVIDENCE_GAP",
+      "interval_coverage_is_unverified": true
+    },
+    {
+      "id": "H1-E017",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/16"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E017-01",
+        "H1-T-R13"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "放置",
+      "actor": "右手",
+      "objects": [
+        "V2-O4"
+      ],
+      "start_time": 120.0,
+      "end_time": 122.0,
+      "evidence_sufficient_time": null,
+      "observability": "historical_report_only",
+      "confidence": null,
+      "execution_status": "uncertain",
+      "time_precision": "HISTORICAL_APPROXIMATE",
+      "historical_event_ids": [
+        "E017"
+      ],
+      "description": "糖袋放回右侧台面",
+      "historical_facts": [
+        {
+          "field": "core_action",
+          "value": "放置",
+          "status": "REPORTED_SUPPORTED",
+          "evidence_ids": [
+            "V-E017-01"
+          ],
+          "reason": "仅依据历史报告所述抽样帧的核心动作；未人工确认。"
+        }
+      ],
+      "uncertainties": [
+        "未在独立全片模型中单独表示；历史候选未自动成为新视觉事实。"
+      ]
+    },
+    {
+      "id": "H1-E019",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/18"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E019-01",
+        "H1-T-R15",
+        "H1-T-R17",
+        "H1-I-E019-01",
+        "H1-I-O18.S01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "放回量杯并整理/按压",
+      "actor": "双手",
+      "objects": [
+        "V2-O13",
+        "V2-O4",
+        "V2-O18"
+      ],
+      "start_time": 133.0,
+      "end_time": 138.0,
+      "evidence_sufficient_time": null,
+      "observability": "historical_report_only",
+      "confidence": null,
+      "execution_status": "uncertain",
+      "time_precision": "HISTORICAL_APPROXIMATE",
+      "historical_event_ids": [
+        "E019"
+      ],
+      "description": "放回量杯；双手在糖袋与粉盖罐处整理/按压，糖袋折口和具体收纳动作未确证。",
+      "historical_facts": [
+        {
+          "field": "core_action",
+          "value": "放回量杯并整理/按压",
+          "status": "REPORTED_SUPPORTED",
+          "evidence_ids": [
+            "V-E019-01"
+          ],
+          "reason": "仅依据历史报告所述抽样帧的核心动作；未人工确认。"
+        },
+        {
+          "field": "sugar_bag_folded_or_inserted",
+          "value": null,
+          "status": "UNCERTAIN",
+          "evidence_ids": [
+            "V-E019-01",
+            "I-E019-01"
+          ],
+          "reason": "整理/按压可见；折口、插入及罐盖开关未知。"
+        }
+      ],
+      "uncertainties": [
+        "未在独立全片模型中单独表示；历史候选未自动成为新视觉事实。"
+      ]
+    },
+    {
+      "id": "H1-E020",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/19"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E020-01",
+        "H1-V-E020-02",
+        "H1-T-R16",
+        "H1-T-R19",
+        "H1-I-E020-02",
+        "H1-T-R18"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "手持/比对量杯",
+      "actor": "右手/双手",
+      "objects": [
+        "V2-O13"
+      ],
+      "start_time": 139.0,
+      "end_time": 145.0,
+      "evidence_sufficient_time": null,
+      "observability": "historical_report_only",
+      "confidence": null,
+      "execution_status": "uncertain",
+      "time_precision": "HISTORICAL_APPROXIMATE",
+      "historical_event_ids": [
+        "E020"
+      ],
+      "description": "手持/比对黑色量杯，杯柄可见 \"1/4 CUP\"；R19 自述寻找半杯量杯的用途另记为文本线索。",
+      "historical_facts": [
+        {
+          "field": "core_action",
+          "value": "手持/比对量杯",
+          "status": "REPORTED_SUPPORTED",
+          "evidence_ids": [
+            "V-E020-01",
+            "V-E020-02"
+          ],
+          "reason": "仅依据历史报告所述抽样帧的核心动作；未人工确认。"
+        },
+        {
+          "field": "cup_label",
+          "value": "1/4 CUP",
+          "status": "REPORTED_SUPPORTED",
+          "evidence_ids": [
+            "V-E020-02"
+          ],
+          "reason": "144.2s杯柄标签，不等于牛奶实测量值。"
+        },
+        {
+          "field": "same_cup_as_E015",
+          "value": null,
+          "status": "UNCERTAIN",
+          "evidence_ids": [
+            "V-E020-01",
+            "V-E020-02",
+            "I-E020-02"
+          ],
+          "reason": "无连续跟踪，无法判断同杯或另一只。"
+        },
+        {
+          "field": "search_purpose",
+          "value": "操作者自述寻找half-cup规格（为牛奶准备）",
+          "status": "UNCERTAIN",
+          "evidence_ids": [
+            "T-R18",
+            "T-R19"
+          ],
+          "reason": "用途仅来自R19与R18语境；不作为视觉观察或实际杯规格。"
+        }
+      ],
+      "uncertainties": [
+        "未在独立全片模型中单独表示；历史候选未自动成为新视觉事实。"
+      ]
+    },
+    {
+      "id": "V2-E7",
+      "annotation_status": "CANDIDATE",
+      "source_type": "integration_candidate",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/events/6"
+        },
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/20"
+        },
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/21"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V10"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "在牛奶盒与黑色量具之间量取/转移液体",
+      "actor": "person",
+      "objects": [
+        "V2-O5",
+        "V2-O13"
+      ],
+      "evidence_sufficient_time": null,
+      "execution_status": "executed",
+      "observability": "direct_visual",
+      "confidence": null,
+      "uncertainties": [
+        "盒到杯为倾倒或量取，舀取措辞未确证；杯物理身份及容量未知。"
+      ],
+      "start_time": 145.0,
+      "end_time": 155.0,
+      "model_event_ids": [
+        "E7"
+      ],
+      "historical_event_ids": [
+        "E021",
+        "E022"
+      ],
+      "time_precision": "MODEL_APPROXIMATE",
+      "model_claim": {
+        "event_id": "E7",
+        "action": "用量勺取牛奶",
+        "actor": "person",
+        "objects": [
+          "O5",
+          "O13"
+        ],
+        "evidence_sufficient_time": 155.0,
+        "execution_status": "executed",
+        "observability": "direct_visual",
+        "evidence_refs": [
+          "V10"
+        ],
+        "confidence": 0.96,
+        "uncertainties": [],
+        "start_time": 145.0,
+        "end_time": 155.0
+      },
+      "crosscheck_categories": [
+        "BOTH_OBSERVED"
+      ],
+      "interpretation_status": "DISPUTED_OR_EVIDENCE_GAP",
+      "interval_coverage_is_unverified": true
+    },
+    {
+      "id": "V2-E8",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/events/7"
+        },
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/22"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V10"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "将牛奶倒入塑料盒",
+      "actor": "person",
+      "objects": [
+        "V2-O1",
+        "V2-O13"
+      ],
+      "evidence_sufficient_time": 160.0,
+      "execution_status": "executed",
+      "observability": "direct_visual",
+      "confidence": 0.99,
+      "uncertainties": [],
+      "start_time": 155.0,
+      "end_time": 160.0,
+      "model_event_ids": [
+        "E8"
+      ],
+      "historical_event_ids": [
+        "E023"
+      ],
+      "time_precision": "MODEL_APPROXIMATE",
+      "model_claim": {
+        "event_id": "E8",
+        "action": "将牛奶倒入塑料盒",
+        "actor": "person",
+        "objects": [
+          "O1",
+          "O13"
+        ],
+        "evidence_sufficient_time": 160.0,
+        "execution_status": "executed",
+        "observability": "direct_visual",
+        "evidence_refs": [
+          "V10"
+        ],
+        "confidence": 0.99,
+        "uncertainties": [],
+        "start_time": 155.0,
+        "end_time": 160.0
+      },
+      "crosscheck_categories": [
+        "BOTH_OBSERVED"
+      ],
+      "interpretation_status": "MODEL_CANDIDATE",
+      "interval_coverage_is_unverified": true
+    },
+    {
+      "id": "H1-E024",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/23"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E024-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "拧盖并归位",
+      "actor": "双手",
+      "objects": [
+        "V2-O5"
+      ],
+      "start_time": 164.0,
+      "end_time": 173.0,
+      "evidence_sufficient_time": null,
+      "observability": "historical_report_only",
+      "confidence": null,
+      "execution_status": "uncertain",
+      "time_precision": "HISTORICAL_APPROXIMATE",
+      "historical_event_ids": [
+        "E024"
+      ],
+      "description": "拧回黄色盖，将牛奶盒放回灶台旁台面原位",
+      "historical_facts": [
+        {
+          "field": "core_action",
+          "value": "拧盖并归位",
+          "status": "REPORTED_SUPPORTED",
+          "evidence_ids": [
+            "V-E024-01"
+          ],
+          "reason": "仅依据历史报告所述抽样帧的核心动作；未人工确认。"
+        }
+      ],
+      "uncertainties": [
+        "未在独立全片模型中单独表示；历史候选未自动成为新视觉事实。"
+      ]
+    },
+    {
+      "id": "V2-E9",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/events/8"
+        },
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/24"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V11"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "组装打蛋器",
+      "actor": "person",
+      "objects": [
+        "V2-O6"
+      ],
+      "evidence_sufficient_time": 185.0,
+      "execution_status": "executed",
+      "observability": "direct_visual",
+      "confidence": 0.98,
+      "uncertainties": [],
+      "start_time": 178.0,
+      "end_time": 185.0,
+      "model_event_ids": [
+        "E9"
+      ],
+      "historical_event_ids": [
+        "E025"
+      ],
+      "time_precision": "MODEL_APPROXIMATE",
+      "model_claim": {
+        "event_id": "E9",
+        "action": "组装打蛋器",
+        "actor": "person",
+        "objects": [
+          "O6"
+        ],
+        "evidence_sufficient_time": 185.0,
+        "execution_status": "executed",
+        "observability": "direct_visual",
+        "evidence_refs": [
+          "V11"
+        ],
+        "confidence": 0.98,
+        "uncertainties": [],
+        "start_time": 178.0,
+        "end_time": 185.0
+      },
+      "crosscheck_categories": [
+        "BOTH_OBSERVED"
+      ],
+      "interpretation_status": "MODEL_CANDIDATE",
+      "interval_coverage_is_unverified": true
+    },
+    {
+      "id": "H1-E026",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/25"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E026-01",
+        "H1-T-R18",
+        "H1-T-R22"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "检查开关/握持",
+      "actor": "双手",
+      "objects": [
+        "V2-O6"
+      ],
+      "start_time": 194.0,
+      "end_time": 199.0,
+      "evidence_sufficient_time": null,
+      "observability": "historical_report_only",
+      "confidence": null,
+      "execution_status": "uncertain",
+      "time_precision": "HISTORICAL_APPROXIMATE",
+      "historical_event_ids": [
+        "E026"
+      ],
+      "description": "翻转本体查看背面与按键，握持移至容器上方",
+      "historical_facts": [
+        {
+          "field": "core_action",
+          "value": "检查开关/握持",
+          "status": "REPORTED_SUPPORTED",
+          "evidence_ids": [
+            "V-E026-01"
+          ],
+          "reason": "仅依据历史报告所述抽样帧的核心动作；未人工确认。"
+        }
+      ],
+      "uncertainties": [
+        "未在独立全片模型中单独表示；历史候选未自动成为新视觉事实。"
+      ]
+    },
+    {
+      "id": "V2-E10",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/events/9"
+        },
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/26"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V12"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "初次搅拌混合液",
+      "actor": "person",
+      "objects": [
+        "V2-O1",
+        "V2-O6"
+      ],
+      "evidence_sufficient_time": 225.0,
+      "execution_status": "executed",
+      "observability": "direct_visual",
+      "confidence": 0.99,
+      "uncertainties": [],
+      "start_time": 198.0,
+      "end_time": 225.0,
+      "model_event_ids": [
+        "E10"
+      ],
+      "historical_event_ids": [
+        "E027"
+      ],
+      "time_precision": "MODEL_APPROXIMATE",
+      "model_claim": {
+        "event_id": "E10",
+        "action": "初次搅拌混合液",
+        "actor": "person",
+        "objects": [
+          "O1",
+          "O6"
+        ],
+        "evidence_sufficient_time": 225.0,
+        "execution_status": "executed",
+        "observability": "direct_visual",
+        "evidence_refs": [
+          "V12"
+        ],
+        "confidence": 0.99,
+        "uncertainties": [],
+        "start_time": 198.0,
+        "end_time": 225.0
+      },
+      "crosscheck_categories": [
+        "BOTH_OBSERVED"
+      ],
+      "interpretation_status": "MODEL_CANDIDATE",
+      "interval_coverage_is_unverified": true
+    },
+    {
+      "id": "H1-E028",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/27"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E028-01",
+        "H1-T-R25"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "停机放置",
+      "actor": "双手",
+      "objects": [
+        "V2-O6"
+      ],
+      "start_time": 234.0,
+      "end_time": 239.0,
+      "evidence_sufficient_time": null,
+      "observability": "historical_report_only",
+      "confidence": null,
+      "execution_status": "uncertain",
+      "time_precision": "HISTORICAL_APPROXIMATE",
+      "historical_event_ids": [
+        "E028"
+      ],
+      "description": "提离容器，将打蛋器放左侧台面",
+      "historical_facts": [
+        {
+          "field": "core_action",
+          "value": "停机放置",
+          "status": "REPORTED_SUPPORTED",
+          "evidence_ids": [
+            "V-E028-01"
+          ],
+          "reason": "仅依据历史报告所述抽样帧的核心动作；未人工确认。"
+        }
+      ],
+      "uncertainties": [
+        "未在独立全片模型中单独表示；历史候选未自动成为新视觉事实。"
+      ]
+    },
+    {
+      "id": "H1-E029",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/28"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E029-01",
+        "H1-V-E029-02",
+        "H1-I-E029-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "持量杯、伸触纸盒",
+      "actor": "双手",
+      "objects": [
+        "V2-O13",
+        "H1-O22"
+      ],
+      "start_time": 240.0,
+      "end_time": 258.0,
+      "evidence_sufficient_time": null,
+      "observability": "historical_report_only",
+      "confidence": null,
+      "execution_status": "uncertain",
+      "time_precision": "HISTORICAL_APPROXIMATE",
+      "historical_event_ids": [
+        "E029"
+      ],
+      "description": "手持空量杯，伸手触向靠墙白色纸盒；接触部分可见，意图和盒内物未知。",
+      "historical_facts": [
+        {
+          "field": "core_action",
+          "value": "持量杯、伸触纸盒",
+          "status": "REPORTED_SUPPORTED",
+          "evidence_ids": [
+            "V-E029-01",
+            "V-E029-02"
+          ],
+          "reason": "仅依据历史报告所述抽样帧的核心动作；未人工确认。"
+        },
+        {
+          "field": "box_identity_and_intent",
+          "value": null,
+          "status": "UNCERTAIN",
+          "evidence_ids": [
+            "V-E029-01",
+            "V-E029-02",
+            "I-E029-01"
+          ],
+          "reason": "白盒内容与伸触目的未知，不能凭外观补造材料。"
+        }
+      ],
+      "uncertainties": [
+        "未在独立全片模型中单独表示；历史候选未自动成为新视觉事实。"
+      ]
+    },
+    {
+      "id": "V2-E11",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/events/10"
+        },
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/29"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V13"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "从橱柜取面粉袋",
+      "actor": "person",
+      "objects": [
+        "V2-O7"
+      ],
+      "evidence_sufficient_time": 265.0,
+      "execution_status": "executed",
+      "observability": "direct_visual",
+      "confidence": 0.97,
+      "uncertainties": [],
+      "start_time": 260.0,
+      "end_time": 265.0,
+      "model_event_ids": [
+        "E11"
+      ],
+      "historical_event_ids": [
+        "E030"
+      ],
+      "time_precision": "MODEL_APPROXIMATE",
+      "model_claim": {
+        "event_id": "E11",
+        "action": "从橱柜取面粉袋",
+        "actor": "person",
+        "objects": [
+          "O7"
+        ],
+        "evidence_sufficient_time": 265.0,
+        "execution_status": "executed",
+        "observability": "direct_visual",
+        "evidence_refs": [
+          "V13"
+        ],
+        "confidence": 0.97,
+        "uncertainties": [],
+        "start_time": 260.0,
+        "end_time": 265.0
+      },
+      "crosscheck_categories": [
+        "BOTH_OBSERVED"
+      ],
+      "interpretation_status": "MODEL_CANDIDATE",
+      "interval_coverage_is_unverified": true
+    },
+    {
+      "id": "V2-E33",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/events/32"
+        },
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/30"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V13"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "打开面粉袋",
+      "actor": "person",
+      "objects": [
+        "V2-O7"
+      ],
+      "evidence_sufficient_time": 270.0,
+      "execution_status": "executed",
+      "observability": "direct_visual",
+      "confidence": 0.95,
+      "uncertainties": [],
+      "start_time": 268.0,
+      "end_time": 270.0,
+      "model_event_ids": [
+        "E33"
+      ],
+      "historical_event_ids": [
+        "E031"
+      ],
+      "time_precision": "MODEL_APPROXIMATE",
+      "model_claim": {
+        "event_id": "E33",
+        "action": "打开面粉袋",
+        "actor": "person",
+        "objects": [
+          "O7"
+        ],
+        "evidence_sufficient_time": 270.0,
+        "execution_status": "executed",
+        "observability": "direct_visual",
+        "evidence_refs": [
+          "V13"
+        ],
+        "confidence": 0.95,
+        "uncertainties": [],
+        "start_time": 268.0,
+        "end_time": 270.0
+      },
+      "crosscheck_categories": [
+        "BOTH_OBSERVED"
+      ],
+      "interpretation_status": "MODEL_CANDIDATE",
+      "interval_coverage_is_unverified": true
+    },
+    {
+      "id": "V2-E12",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/events/11"
+        },
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/30"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V14"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "舀取面粉",
+      "actor": "person",
+      "objects": [
+        "V2-O7",
+        "V2-O13"
+      ],
+      "evidence_sufficient_time": 285.0,
+      "execution_status": "executed",
+      "observability": "direct_visual",
+      "confidence": 0.96,
+      "uncertainties": [],
+      "start_time": 272.0,
+      "end_time": 285.0,
+      "model_event_ids": [
+        "E12"
+      ],
+      "historical_event_ids": [
+        "E031"
+      ],
+      "time_precision": "MODEL_APPROXIMATE",
+      "model_claim": {
+        "event_id": "E12",
+        "action": "舀取面粉",
+        "actor": "person",
+        "objects": [
+          "O7",
+          "O13"
+        ],
+        "evidence_sufficient_time": 285.0,
+        "execution_status": "executed",
+        "observability": "direct_visual",
+        "evidence_refs": [
+          "V14"
+        ],
+        "confidence": 0.96,
+        "uncertainties": [],
+        "start_time": 272.0,
+        "end_time": 285.0
+      },
+      "crosscheck_categories": [
+        "BOTH_OBSERVED"
+      ],
+      "interpretation_status": "MODEL_CANDIDATE",
+      "interval_coverage_is_unverified": true
+    },
+    {
+      "id": "V2-E13",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/events/12"
+        },
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/31"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V14"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "将面粉倒入塑料盒",
+      "actor": "person",
+      "objects": [
+        "V2-O1",
+        "V2-O13"
+      ],
+      "evidence_sufficient_time": 290.0,
+      "execution_status": "executed",
+      "observability": "direct_visual",
+      "confidence": 0.99,
+      "uncertainties": [],
+      "start_time": 285.0,
+      "end_time": 290.0,
+      "model_event_ids": [
+        "E13"
+      ],
+      "historical_event_ids": [
+        "E032"
+      ],
+      "time_precision": "MODEL_APPROXIMATE",
+      "model_claim": {
+        "event_id": "E13",
+        "action": "将面粉倒入塑料盒",
+        "actor": "person",
+        "objects": [
+          "O1",
+          "O13"
+        ],
+        "evidence_sufficient_time": 290.0,
+        "execution_status": "executed",
+        "observability": "direct_visual",
+        "evidence_refs": [
+          "V14"
+        ],
+        "confidence": 0.99,
+        "uncertainties": [],
+        "start_time": 285.0,
+        "end_time": 290.0
+      },
+      "crosscheck_categories": [
+        "BOTH_OBSERVED"
+      ],
+      "interpretation_status": "MODEL_CANDIDATE",
+      "interval_coverage_is_unverified": true
+    },
+    {
+      "id": "H1-E033",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/32"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E033-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "暂停/环视",
+      "actor": "相机视角",
+      "objects": [
+        "V2-O1",
+        "H1-O15"
+      ],
+      "start_time": 293.0,
+      "end_time": 300.0,
+      "evidence_sufficient_time": null,
+      "observability": "historical_report_only",
+      "confidence": null,
+      "execution_status": "uncertain",
+      "time_precision": "HISTORICAL_APPROXIMATE",
+      "historical_event_ids": [
+        "E033"
+      ],
+      "description": "视角在台面徘徊，手短暂扶碗/空手",
+      "historical_facts": [
+        {
+          "field": "core_action",
+          "value": "暂停/环视",
+          "status": "REPORTED_SUPPORTED",
+          "evidence_ids": [
+            "V-E033-01"
+          ],
+          "reason": "仅依据历史报告所述抽样帧的核心动作；未人工确认。"
+        },
+        {
+          "field": "immediate_mixing_after_flour",
+          "value": false,
+          "status": "REPORTED_SUPPORTED",
+          "evidence_ids": [
+            "V-E033-01"
+          ],
+          "reason": "293.2–300.2s所报抽样帧未见搅拌，只记录可见顺序。"
+        }
+      ],
+      "uncertainties": [
+        "未在独立全片模型中单独表示；历史候选未自动成为新视觉事实。"
+      ]
+    },
+    {
+      "id": "V2-E14",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/events/13"
+        },
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/33"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V15"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "拆开黄油包装",
+      "actor": "person",
+      "objects": [
+        "V2-O8"
+      ],
+      "evidence_sufficient_time": 315.0,
+      "execution_status": "executed",
+      "observability": "direct_visual",
+      "confidence": 0.98,
+      "uncertainties": [],
+      "start_time": 302.0,
+      "end_time": 315.0,
+      "model_event_ids": [
+        "E14"
+      ],
+      "historical_event_ids": [
+        "E034"
+      ],
+      "time_precision": "MODEL_APPROXIMATE",
+      "model_claim": {
+        "event_id": "E14",
+        "action": "拆开黄油包装",
+        "actor": "person",
+        "objects": [
+          "O8"
+        ],
+        "evidence_sufficient_time": 315.0,
+        "execution_status": "executed",
+        "observability": "direct_visual",
+        "evidence_refs": [
+          "V15"
+        ],
+        "confidence": 0.98,
+        "uncertainties": [],
+        "start_time": 302.0,
+        "end_time": 315.0
+      },
+      "crosscheck_categories": [
+        "BOTH_OBSERVED"
+      ],
+      "interpretation_status": "MODEL_CANDIDATE",
+      "interval_coverage_is_unverified": true
+    },
+    {
+      "id": "V2-E15",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/events/14"
+        },
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/34"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V15",
+        "V2-V16"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "将黄油放入玻璃容器",
+      "actor": "person",
+      "objects": [
+        "V2-O8",
+        "V2-O9"
+      ],
+      "evidence_sufficient_time": null,
+      "execution_status": "executed",
+      "observability": "direct_visual",
+      "confidence": 0.99,
+      "uncertainties": [],
+      "start_time": 320.0,
+      "end_time": 335.0,
+      "model_event_ids": [
+        "E15"
+      ],
+      "historical_event_ids": [
+        "E035"
+      ],
+      "time_precision": "MODEL_APPROXIMATE",
+      "model_claim": {
+        "event_id": "E15",
+        "action": "将黄油放入玻璃容器",
+        "actor": "person",
+        "objects": [
+          "O8",
+          "O9"
+        ],
+        "evidence_sufficient_time": null,
+        "execution_status": "executed",
+        "observability": "direct_visual",
+        "evidence_refs": [
+          "V15",
+          "V16"
+        ],
+        "confidence": 0.99,
+        "uncertainties": [],
+        "start_time": 320.0,
+        "end_time": 335.0
+      },
+      "crosscheck_categories": [
+        "BOTH_OBSERVED"
+      ],
+      "interpretation_status": "MODEL_CANDIDATE",
+      "interval_coverage_is_unverified": true
+    },
+    {
+      "id": "V2-E16",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/events/15"
+        },
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/35"
+        },
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/36"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V16"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "将黄油容器放入微波炉并启动",
+      "actor": "person",
+      "objects": [
+        "V2-O9",
+        "V2-O11"
+      ],
+      "evidence_sufficient_time": 345.0,
+      "execution_status": "executed",
+      "observability": "direct_visual",
+      "confidence": 0.99,
+      "uncertainties": [],
+      "start_time": 338.0,
+      "end_time": 345.0,
+      "model_event_ids": [
+        "E16"
+      ],
+      "historical_event_ids": [
+        "E036",
+        "E037"
+      ],
+      "time_precision": "MODEL_APPROXIMATE",
+      "model_claim": {
+        "event_id": "E16",
+        "action": "将黄油容器放入微波炉并启动",
+        "actor": "person",
+        "objects": [
+          "O9",
+          "O11"
+        ],
+        "evidence_sufficient_time": 345.0,
+        "execution_status": "executed",
+        "observability": "direct_visual",
+        "evidence_refs": [
+          "V16"
+        ],
+        "confidence": 0.99,
+        "uncertainties": [],
+        "start_time": 338.0,
+        "end_time": 345.0
+      },
+      "crosscheck_categories": [
+        "BOTH_OBSERVED"
+      ],
+      "interpretation_status": "MODEL_CANDIDATE",
+      "interval_coverage_is_unverified": true
+    },
+    {
+      "id": "H1-E038",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/37"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E038-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "等待",
+      "actor": "相机视角",
+      "objects": [
+        "V2-O11"
+      ],
+      "start_time": 375.0,
+      "end_time": 389.0,
+      "evidence_sufficient_time": null,
+      "observability": "historical_report_only",
+      "confidence": null,
+      "execution_status": "uncertain",
+      "time_precision": "HISTORICAL_APPROXIMATE",
+      "historical_event_ids": [
+        "E038"
+      ],
+      "description": "视角停留于微波炉/灶台，无手部操作",
+      "historical_facts": [
+        {
+          "field": "core_action",
+          "value": "等待",
+          "status": "REPORTED_SUPPORTED",
+          "evidence_ids": [
+            "V-E038-01"
+          ],
+          "reason": "仅依据历史报告所述抽样帧的核心动作；未人工确认。"
+        }
+      ],
+      "uncertainties": [
+        "未在独立全片模型中单独表示；历史候选未自动成为新视觉事实。"
+      ]
+    },
+    {
+      "id": "V2-E17",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/events/16"
+        },
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/38"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V17"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "取出部分融化的黄油",
+      "actor": "person",
+      "objects": [
+        "V2-O9",
+        "V2-O11"
+      ],
+      "evidence_sufficient_time": 395.0,
+      "execution_status": "executed",
+      "observability": "direct_visual",
+      "confidence": 0.98,
+      "uncertainties": [],
+      "start_time": 390.0,
+      "end_time": 395.0,
+      "model_event_ids": [
+        "E17"
+      ],
+      "historical_event_ids": [
+        "E039"
+      ],
+      "time_precision": "MODEL_APPROXIMATE",
+      "model_claim": {
+        "event_id": "E17",
+        "action": "取出部分融化的黄油",
+        "actor": "person",
+        "objects": [
+          "O9",
+          "O11"
+        ],
+        "evidence_sufficient_time": 395.0,
+        "execution_status": "executed",
+        "observability": "direct_visual",
+        "evidence_refs": [
+          "V17"
+        ],
+        "confidence": 0.98,
+        "uncertainties": [],
+        "start_time": 390.0,
+        "end_time": 395.0
+      },
+      "crosscheck_categories": [
+        "BOTH_OBSERVED"
+      ],
+      "interpretation_status": "MODEL_CANDIDATE",
+      "interval_coverage_is_unverified": true
+    },
+    {
+      "id": "V2-E18",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/events/17"
+        },
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/39"
+        },
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/40"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V18"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "再次加热黄油",
+      "actor": "person",
+      "objects": [
+        "V2-O9",
+        "V2-O11"
+      ],
+      "evidence_sufficient_time": 410.0,
+      "execution_status": "executed",
+      "observability": "direct_visual",
+      "confidence": 0.97,
+      "uncertainties": [],
+      "start_time": 405.0,
+      "end_time": 410.0,
+      "model_event_ids": [
+        "E18"
+      ],
+      "historical_event_ids": [
+        "E040",
+        "E041"
+      ],
+      "time_precision": "MODEL_APPROXIMATE",
+      "model_claim": {
+        "event_id": "E18",
+        "action": "再次加热黄油",
+        "actor": "person",
+        "objects": [
+          "O9",
+          "O11"
+        ],
+        "evidence_sufficient_time": 410.0,
+        "execution_status": "executed",
+        "observability": "direct_visual",
+        "evidence_refs": [
+          "V18"
+        ],
+        "confidence": 0.97,
+        "uncertainties": [],
+        "start_time": 405.0,
+        "end_time": 410.0
+      },
+      "crosscheck_categories": [
+        "BOTH_OBSERVED"
+      ],
+      "interpretation_status": "MODEL_CANDIDATE",
+      "interval_coverage_is_unverified": true
+    },
+    {
+      "id": "V2-E19",
+      "annotation_status": "CANDIDATE",
+      "source_type": "integration_candidate",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/events/18"
+        },
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/41"
+        },
+        {
+          "source_id": "local_checks",
+          "json_pointer": "/records/3"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V19",
+        "LC-431-2"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "加热后取出玻璃容器（次数、完全融化主张有分歧）",
+      "actor": "person",
+      "objects": [
+        "V2-O9",
+        "V2-O11"
+      ],
+      "evidence_sufficient_time": null,
+      "execution_status": "executed",
+      "observability": "direct_visual",
+      "confidence": null,
+      "uncertainties": [
+        "去除第三次与完全融化的主张；取出次数与固液状态分开保存。"
+      ],
+      "start_time": 425.0,
+      "end_time": 430.0,
+      "model_event_ids": [
+        "E19"
+      ],
+      "historical_event_ids": [
+        "E042"
+      ],
+      "time_precision": "MODEL_APPROXIMATE",
+      "model_claim": {
+        "event_id": "E19",
+        "action": "第三次取出完全融化的黄油",
+        "actor": "person",
+        "objects": [
+          "O9",
+          "O11"
+        ],
+        "evidence_sufficient_time": 430.0,
+        "execution_status": "executed",
+        "observability": "direct_visual",
+        "evidence_refs": [
+          "V19"
+        ],
+        "confidence": 0.99,
+        "uncertainties": [],
+        "start_time": 425.0,
+        "end_time": 430.0
+      },
+      "crosscheck_categories": [
+        "CONFLICT"
+      ],
+      "interpretation_status": "DISPUTED_OR_EVIDENCE_GAP",
+      "interval_coverage_is_unverified": true
+    },
+    {
+      "id": "V2-E20",
+      "annotation_status": "CANDIDATE",
+      "source_type": "integration_candidate",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/events/19"
+        },
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/42"
+        },
+        {
+          "source_id": "local_checks",
+          "json_pointer": "/records/4"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V20",
+        "LC-445-2"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "用黑色工具搅动黄色固液混合物",
+      "actor": "person",
+      "objects": [
+        "V2-O9",
+        "V2-O14"
+      ],
+      "evidence_sufficient_time": null,
+      "execution_status": "executed",
+      "observability": "direct_visual",
+      "confidence": null,
+      "uncertainties": [
+        "固液共存至少在445.211秒可见；不得声称已完全融化。"
+      ],
+      "start_time": 444.0,
+      "end_time": 458.0,
+      "model_event_ids": [
+        "E20"
+      ],
+      "historical_event_ids": [
+        "E043"
+      ],
+      "time_precision": "MODEL_APPROXIMATE",
+      "model_claim": {
+        "event_id": "E20",
+        "action": "搅拌融化的黄油",
+        "actor": "person",
+        "objects": [
+          "O9",
+          "O14"
+        ],
+        "evidence_sufficient_time": 458.0,
+        "execution_status": "executed",
+        "observability": "direct_visual",
+        "evidence_refs": [
+          "V20"
+        ],
+        "confidence": 0.96,
+        "uncertainties": [],
+        "start_time": 444.0,
+        "end_time": 458.0
+      },
+      "crosscheck_categories": [
+        "CONFLICT"
+      ],
+      "interpretation_status": "DISPUTED_OR_EVIDENCE_GAP",
+      "interval_coverage_is_unverified": true
+    },
+    {
+      "id": "V2-E21",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/events/20"
+        },
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/43"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V21"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "将融化的黄油倒入塑料盒",
+      "actor": "person",
+      "objects": [
+        "V2-O1",
+        "V2-O9"
+      ],
+      "evidence_sufficient_time": 468.0,
+      "execution_status": "executed",
+      "observability": "direct_visual",
+      "confidence": 0.99,
+      "uncertainties": [],
+      "start_time": 465.0,
+      "end_time": 468.0,
+      "model_event_ids": [
+        "E21"
+      ],
+      "historical_event_ids": [
+        "E044"
+      ],
+      "time_precision": "MODEL_APPROXIMATE",
+      "model_claim": {
+        "event_id": "E21",
+        "action": "将融化的黄油倒入塑料盒",
+        "actor": "person",
+        "objects": [
+          "O1",
+          "O9"
+        ],
+        "evidence_sufficient_time": 468.0,
+        "execution_status": "executed",
+        "observability": "direct_visual",
+        "evidence_refs": [
+          "V21"
+        ],
+        "confidence": 0.99,
+        "uncertainties": [],
+        "start_time": 465.0,
+        "end_time": 468.0
+      },
+      "crosscheck_categories": [
+        "BOTH_OBSERVED"
+      ],
+      "interpretation_status": "MODEL_CANDIDATE",
+      "interval_coverage_is_unverified": true
+    },
+    {
+      "id": "V2-E36",
+      "annotation_status": "CANDIDATE",
+      "source_type": "integration_candidate",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/events/35"
+        },
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/44"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V22"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "拿取/移动打蛋器",
+      "actor": "person",
+      "objects": [
+        "V2-O6"
+      ],
+      "evidence_sufficient_time": null,
+      "execution_status": "executed",
+      "observability": "direct_visual",
+      "confidence": null,
+      "uncertainties": [
+        "准备是意图推断；只候选记录拿取/移动打蛋器。"
+      ],
+      "start_time": 470.0,
+      "end_time": 473.0,
+      "model_event_ids": [
+        "E36"
+      ],
+      "historical_event_ids": [
+        "E045"
+      ],
+      "time_precision": "MODEL_APPROXIMATE",
+      "model_claim": {
+        "event_id": "E36",
+        "action": "拿起打蛋器准备二次搅拌",
+        "actor": "person",
+        "objects": [
+          "O6"
+        ],
+        "evidence_sufficient_time": null,
+        "execution_status": "executed",
+        "observability": "direct_visual",
+        "evidence_refs": [
+          "V22"
+        ],
+        "confidence": 0.97,
+        "uncertainties": [],
+        "start_time": 470.0,
+        "end_time": 473.0
+      },
+      "crosscheck_categories": [
+        "BOTH_OBSERVED"
+      ],
+      "interpretation_status": "DISPUTED_OR_EVIDENCE_GAP",
+      "interval_coverage_is_unverified": true
+    },
+    {
+      "id": "V2-E22",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/events/21"
+        },
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/44"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V22"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "二次搅拌面糊",
+      "actor": "person",
+      "objects": [
+        "V2-O1",
+        "V2-O6"
+      ],
+      "evidence_sufficient_time": 525.0,
+      "execution_status": "executed",
+      "observability": "direct_visual",
+      "confidence": 0.99,
+      "uncertainties": [],
+      "start_time": 473.0,
+      "end_time": 525.0,
+      "model_event_ids": [
+        "E22"
+      ],
+      "historical_event_ids": [
+        "E045"
+      ],
+      "time_precision": "MODEL_APPROXIMATE",
+      "model_claim": {
+        "event_id": "E22",
+        "action": "二次搅拌面糊",
+        "actor": "person",
+        "objects": [
+          "O1",
+          "O6"
+        ],
+        "evidence_sufficient_time": 525.0,
+        "execution_status": "executed",
+        "observability": "direct_visual",
+        "evidence_refs": [
+          "V22"
+        ],
+        "confidence": 0.99,
+        "uncertainties": [],
+        "start_time": 473.0,
+        "end_time": 525.0
+      },
+      "crosscheck_categories": [
+        "BOTH_OBSERVED"
+      ],
+      "interpretation_status": "MODEL_CANDIDATE",
+      "interval_coverage_is_unverified": true
+    },
+    {
+      "id": "V2-E37",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/events/36"
+        },
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/45"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V22"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "搅拌完成后停用打蛋器",
+      "actor": "person",
+      "objects": [
+        "V2-O6"
+      ],
+      "evidence_sufficient_time": 525.0,
+      "execution_status": "executed",
+      "observability": "direct_visual",
+      "confidence": 0.98,
+      "uncertainties": [],
+      "start_time": 522.0,
+      "end_time": 525.0,
+      "model_event_ids": [
+        "E37"
+      ],
+      "historical_event_ids": [
+        "E046"
+      ],
+      "time_precision": "MODEL_APPROXIMATE",
+      "model_claim": {
+        "event_id": "E37",
+        "action": "搅拌完成后停用打蛋器",
+        "actor": "person",
+        "objects": [
+          "O6"
+        ],
+        "evidence_sufficient_time": 525.0,
+        "execution_status": "executed",
+        "observability": "direct_visual",
+        "evidence_refs": [
+          "V22"
+        ],
+        "confidence": 0.98,
+        "uncertainties": [],
+        "start_time": 522.0,
+        "end_time": 525.0
+      },
+      "crosscheck_categories": [
+        "BOTH_OBSERVED"
+      ],
+      "interpretation_status": "MODEL_CANDIDATE",
+      "interval_coverage_is_unverified": true
+    },
+    {
+      "id": "H1-E047",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/46"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E047-01",
+        "H1-T-R38",
+        "H1-T-R40"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "收拾包装废弃物",
+      "actor": "双手",
+      "objects": [
+        "V2-O8"
+      ],
+      "start_time": 541.0,
+      "end_time": 547.0,
+      "evidence_sufficient_time": null,
+      "observability": "historical_report_only",
+      "confidence": null,
+      "execution_status": "uncertain",
+      "time_precision": "HISTORICAL_APPROXIMATE",
+      "historical_event_ids": [
+        "E047"
+      ],
+      "description": "将箔纸与塑料膜折叠收拢，放鱼形垫上",
+      "historical_facts": [
+        {
+          "field": "core_action",
+          "value": "收拾包装废弃物",
+          "status": "REPORTED_SUPPORTED",
+          "evidence_ids": [
+            "V-E047-01"
+          ],
+          "reason": "仅依据历史报告所述抽样帧的核心动作；未人工确认。"
+        }
+      ],
+      "uncertainties": [
+        "未在独立全片模型中单独表示；历史候选未自动成为新视觉事实。"
+      ]
+    },
+    {
+      "id": "V2-E23",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/events/22"
+        },
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/47"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V23"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "取油瓶",
+      "actor": "person",
+      "objects": [
+        "V2-O15"
+      ],
+      "evidence_sufficient_time": null,
+      "execution_status": "executed",
+      "observability": "direct_visual",
+      "confidence": 0.85,
+      "uncertainties": [
+        "内容物不确定"
+      ],
+      "start_time": 558.0,
+      "end_time": 560.0,
+      "model_event_ids": [
+        "E23"
+      ],
+      "historical_event_ids": [
+        "E048"
+      ],
+      "time_precision": "MODEL_APPROXIMATE",
+      "model_claim": {
+        "event_id": "E23",
+        "action": "取油瓶",
+        "actor": "person",
+        "objects": [
+          "O15"
+        ],
+        "evidence_sufficient_time": null,
+        "execution_status": "executed",
+        "observability": "direct_visual",
+        "evidence_refs": [
+          "V23"
+        ],
+        "confidence": 0.85,
+        "uncertainties": [
+          "内容物不确定"
+        ],
+        "start_time": 558.0,
+        "end_time": 560.0
+      },
+      "crosscheck_categories": [
+        "BOTH_OBSERVED"
+      ],
+      "interpretation_status": "MODEL_CANDIDATE",
+      "interval_coverage_is_unverified": true
+    },
+    {
+      "id": "V2-E24",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/events/23"
+        },
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/48"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V23"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "向烤盘倒油",
+      "actor": "person",
+      "objects": [
+        "V2-O10",
+        "V2-O15"
+      ],
+      "evidence_sufficient_time": 565.0,
+      "execution_status": "executed",
+      "observability": "direct_visual",
+      "confidence": 0.97,
+      "uncertainties": [],
+      "start_time": 560.0,
+      "end_time": 565.0,
+      "model_event_ids": [
+        "E24"
+      ],
+      "historical_event_ids": [
+        "E049"
+      ],
+      "time_precision": "MODEL_APPROXIMATE",
+      "model_claim": {
+        "event_id": "E24",
+        "action": "向烤盘倒油",
+        "actor": "person",
+        "objects": [
+          "O10",
+          "O15"
+        ],
+        "evidence_sufficient_time": 565.0,
+        "execution_status": "executed",
+        "observability": "direct_visual",
+        "evidence_refs": [
+          "V23"
+        ],
+        "confidence": 0.97,
+        "uncertainties": [],
+        "start_time": 560.0,
+        "end_time": 565.0
+      },
+      "crosscheck_categories": [
+        "BOTH_OBSERVED"
+      ],
+      "interpretation_status": "MODEL_CANDIDATE",
+      "interval_coverage_is_unverified": true
+    },
+    {
+      "id": "V2-E25",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/events/24"
+        },
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/48"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V23",
+        "V2-V24"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "拿起烤盘检查",
+      "actor": "person",
+      "objects": [
+        "V2-O10"
+      ],
+      "evidence_sufficient_time": null,
+      "execution_status": "executed",
+      "observability": "direct_visual",
+      "confidence": null,
+      "uncertainties": [
+        "引用633–678秒未来证据V24不能支持568–578秒状态；相关证据支持尚缺。"
+      ],
+      "start_time": 568.0,
+      "end_time": 578.0,
+      "model_event_ids": [
+        "E25"
+      ],
+      "historical_event_ids": [
+        "E049"
+      ],
+      "time_precision": "MODEL_APPROXIMATE",
+      "model_claim": {
+        "event_id": "E25",
+        "action": "拿起烤盘检查",
+        "actor": "person",
+        "objects": [
+          "O10"
+        ],
+        "evidence_sufficient_time": null,
+        "execution_status": "executed",
+        "observability": "direct_visual",
+        "evidence_refs": [
+          "V23",
+          "V24"
+        ],
+        "confidence": 0.95,
+        "uncertainties": [],
+        "start_time": 568.0,
+        "end_time": 578.0
+      },
+      "crosscheck_categories": [
+        "BOTH_OBSERVED"
+      ],
+      "interpretation_status": "DISPUTED_OR_EVIDENCE_GAP",
+      "interval_coverage_is_unverified": true
+    },
+    {
+      "id": "V2-E35",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/events/34"
+        },
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/48"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V23"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "放置烤盘于台面",
+      "actor": "person",
+      "objects": [
+        "V2-O10"
+      ],
+      "evidence_sufficient_time": 580.0,
+      "execution_status": "executed",
+      "observability": "direct_visual",
+      "confidence": 0.96,
+      "uncertainties": [],
+      "start_time": 578.0,
+      "end_time": 580.0,
+      "model_event_ids": [
+        "E35"
+      ],
+      "historical_event_ids": [
+        "E049"
+      ],
+      "time_precision": "MODEL_APPROXIMATE",
+      "model_claim": {
+        "event_id": "E35",
+        "action": "放置烤盘于台面",
+        "actor": "person",
+        "objects": [
+          "O10"
+        ],
+        "evidence_sufficient_time": 580.0,
+        "execution_status": "executed",
+        "observability": "direct_visual",
+        "evidence_refs": [
+          "V23"
+        ],
+        "confidence": 0.96,
+        "uncertainties": [],
+        "start_time": 578.0,
+        "end_time": 580.0
+      },
+      "crosscheck_categories": [
+        "BOTH_OBSERVED"
+      ],
+      "interpretation_status": "MODEL_CANDIDATE",
+      "interval_coverage_is_unverified": true
+    },
+    {
+      "id": "H1-E050",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/49"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E050-01",
+        "H1-T-R46",
+        "H1-T-R47"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "端起查看面糊",
+      "actor": "双手",
+      "objects": [
+        "V2-O1",
+        "H1-O15"
+      ],
+      "start_time": 582.0,
+      "end_time": 591.0,
+      "evidence_sufficient_time": null,
+      "observability": "historical_report_only",
+      "confidence": null,
+      "execution_status": "uncertain",
+      "time_precision": "HISTORICAL_APPROXIMATE",
+      "historical_event_ids": [
+        "E050"
+      ],
+      "description": "端起容器观察面糊表面后放回",
+      "historical_facts": [
+        {
+          "field": "core_action",
+          "value": "端起查看面糊",
+          "status": "REPORTED_SUPPORTED",
+          "evidence_ids": [
+            "V-E050-01"
+          ],
+          "reason": "仅依据历史报告所述抽样帧的核心动作；未人工确认。"
+        }
+      ],
+      "uncertainties": [
+        "未在独立全片模型中单独表示；历史候选未自动成为新视觉事实。"
+      ]
+    },
+    {
+      "id": "H1-E051",
+      "annotation_status": "CANDIDATE",
+      "source_type": "integration_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/50"
+        },
+        {
+          "source_id": "local_checks",
+          "json_pointer": "/records/5"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E051-01",
+        "H1-V-E051-02",
+        "H1-T-R46",
+        "H1-T-R47",
+        "H1-T-R48",
+        "H1-T-R49",
+        "H1-I-E051-02",
+        "LC-599-2"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "直接补加面粉",
+      "actor": "双手",
+      "objects": [
+        "V2-O7",
+        "V2-O1",
+        "H1-O15"
+      ],
+      "start_time": 595,
+      "end_time": 604,
+      "evidence_sufficient_time": null,
+      "observability": "partial_visual_snapshot_plus_historical_candidate",
+      "confidence": null,
+      "execution_status": "uncertain",
+      "time_precision": "HISTORICAL_APPROXIMATE",
+      "historical_event_ids": [
+        "E051"
+      ],
+      "description": "拿起面粉袋直接向容器面糊表面倾倒少量白色面粉",
+      "historical_facts": [
+        {
+          "field": "core_action",
+          "value": "直接补加面粉",
+          "status": "REPORTED_SUPPORTED",
+          "evidence_ids": [
+            "V-E051-01",
+            "V-E051-02"
+          ],
+          "reason": "仅依据历史报告所述抽样帧的核心动作；未人工确认。"
+        },
+        {
+          "field": "flour_addition_to_mixing_container",
+          "value": 2,
+          "status": "REPORTED_SUPPORTED",
+          "evidence_ids": [
+            "V-E051-01",
+            "V-E051-02"
+          ],
+          "reason": "第二处可见粉入容器；仅计E032/E051。"
+        },
+        {
+          "field": "additional_hidden_flour_addition",
+          "value": null,
+          "status": "UNCERTAIN",
+          "evidence_ids": [
+            "V-E051-01",
+            "V-E051-02",
+            "I-E051-02"
+          ],
+          "reason": "1fps不能排除遮挡动作，无证据不补造第三次。"
+        },
+        {
+          "field": "supplement_intent",
+          "value": "操作者自述仍要加一点面粉",
+          "status": "UNCERTAIN",
+          "evidence_ids": [
+            "T-R49"
+          ],
+          "reason": "R49语句印证意图；意图字段仍非视觉事实。"
+        }
+      ],
+      "uncertainties": [
+        "未在独立全片模型中单独表示；历史候选未自动成为新视觉事实。",
+        "局部单帧佐证此动作阶段，未验证历史完整起止。"
+      ]
+    },
+    {
+      "id": "H1-E052",
+      "annotation_status": "CANDIDATE",
+      "source_type": "integration_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/51"
+        },
+        {
+          "source_id": "local_checks",
+          "json_pointer": "/records/6"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E052-01",
+        "H1-V-E052-02",
+        "H1-T-R50",
+        "H1-T-R51",
+        "LC-610-2"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "电动搅拌（第 3 次）",
+      "actor": "右手持打蛋器",
+      "objects": [
+        "V2-O6",
+        "V2-O1",
+        "H1-O15"
+      ],
+      "start_time": 605.0,
+      "end_time": 631.0,
+      "evidence_sufficient_time": null,
+      "observability": "partial_visual_snapshot_plus_historical_candidate",
+      "confidence": null,
+      "execution_status": "uncertain",
+      "time_precision": "HISTORICAL_APPROXIMATE",
+      "historical_event_ids": [
+        "E052"
+      ],
+      "description": "开机搅拌至表面光滑均匀淡黄面糊；提离搅拌棒停机",
+      "historical_facts": [
+        {
+          "field": "core_action",
+          "value": "电动搅拌（第 3 次）",
+          "status": "REPORTED_SUPPORTED",
+          "evidence_ids": [
+            "V-E052-01",
+            "V-E052-02"
+          ],
+          "reason": "仅依据历史报告所述抽样帧的核心动作；未人工确认。"
+        }
+      ],
+      "uncertainties": [
+        "未在独立全片模型中单独表示；历史候选未自动成为新视觉事实。",
+        "局部单帧佐证此动作阶段，未验证历史完整起止。"
+      ]
+    },
+    {
+      "id": "V2-E26",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/events/25"
+        },
+        {
+          "source_id": "independent",
+          "json_pointer": "/events/33"
+        },
+        {
+          "source_id": "independent",
+          "json_pointer": "/events/37"
+        },
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/52"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V24"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "将面糊倒入烤盘",
+      "actor": "person",
+      "objects": [
+        "V2-O1",
+        "V2-O10"
+      ],
+      "evidence_sufficient_time": 678.0,
+      "execution_status": "executed",
+      "observability": "direct_visual",
+      "confidence": 0.99,
+      "uncertainties": [],
+      "start_time": 633.0,
+      "end_time": 678.0,
+      "model_event_ids": [
+        "E26",
+        "E34",
+        "E38"
+      ],
+      "historical_event_ids": [
+        "E053"
+      ],
+      "time_precision": "MODEL_APPROXIMATE",
+      "model_claim": {
+        "event_id": "E26",
+        "action": "将面糊倒入烤盘",
+        "actor": "person",
+        "objects": [
+          "O1",
+          "O10"
+        ],
+        "evidence_sufficient_time": 678.0,
+        "execution_status": "executed",
+        "observability": "direct_visual",
+        "evidence_refs": [
+          "V24"
+        ],
+        "confidence": 0.99,
+        "uncertainties": [],
+        "start_time": 633.0,
+        "end_time": 678.0
+      },
+      "crosscheck_categories": [
+        "BOTH_OBSERVED"
+      ],
+      "interpretation_status": "MODEL_CANDIDATE",
+      "interval_coverage_is_unverified": true
+    },
+    {
+      "id": "V2-E27",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/events/26"
+        },
+        {
+          "source_id": "independent",
+          "json_pointer": "/events/38"
+        },
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/52"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V24"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "用刮刀刮净塑料盒残留面糊",
+      "actor": "person",
+      "objects": [
+        "V2-O1",
+        "V2-O14",
+        "V2-O10"
+      ],
+      "evidence_sufficient_time": 678.0,
+      "execution_status": "executed",
+      "observability": "direct_visual",
+      "confidence": 0.98,
+      "uncertainties": [],
+      "start_time": 640.0,
+      "end_time": 678.0,
+      "model_event_ids": [
+        "E27",
+        "E39"
+      ],
+      "historical_event_ids": [
+        "E053"
+      ],
+      "time_precision": "MODEL_APPROXIMATE",
+      "model_claim": {
+        "event_id": "E27",
+        "action": "用刮刀刮净塑料盒残留面糊",
+        "actor": "person",
+        "objects": [
+          "O1",
+          "O14",
+          "O10"
+        ],
+        "evidence_sufficient_time": 678.0,
+        "execution_status": "executed",
+        "observability": "direct_visual",
+        "evidence_refs": [
+          "V24"
+        ],
+        "confidence": 0.98,
+        "uncertainties": [],
+        "start_time": 640.0,
+        "end_time": 678.0
+      },
+      "crosscheck_categories": [
+        "BOTH_OBSERVED"
+      ],
+      "interpretation_status": "MODEL_CANDIDATE",
+      "interval_coverage_is_unverified": true
+    },
+    {
+      "id": "V2-E45",
+      "annotation_status": "CANDIDATE",
+      "source_type": "integration_candidate",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/events/44"
+        },
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/53"
+        },
+        {
+          "source_id": "local_checks",
+          "json_pointer": "/records/7"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V24",
+        "LC-680-2"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "末段黑色工具位置候选（放台面动作未确认）",
+      "actor": "person",
+      "objects": [
+        "V2-O14"
+      ],
+      "evidence_sufficient_time": null,
+      "execution_status": "uncertain",
+      "observability": "direct_visual",
+      "confidence": null,
+      "uncertainties": [
+        "所引633–678秒转移证据不足以证明678–680秒工具放台面；局部680.213秒见工具在混合容器内。"
+      ],
+      "start_time": 678.0,
+      "end_time": 680.0,
+      "model_event_ids": [
+        "E45"
+      ],
+      "historical_event_ids": [
+        "E054"
+      ],
+      "time_precision": "MODEL_APPROXIMATE",
+      "model_claim": {
+        "event_id": "E45",
+        "action": "放置刮刀于台面",
+        "actor": "person",
+        "objects": [
+          "O14"
+        ],
+        "evidence_sufficient_time": 680.0,
+        "execution_status": "executed",
+        "observability": "direct_visual",
+        "evidence_refs": [
+          "V24"
+        ],
+        "confidence": 0.95,
+        "uncertainties": [],
+        "start_time": 678.0,
+        "end_time": 680.0
+      },
+      "crosscheck_categories": [
+        "CONFLICT"
+      ],
+      "interpretation_status": "DISPUTED_OR_EVIDENCE_GAP",
+      "interval_coverage_is_unverified": true
+    },
+    {
+      "id": "V2-E40",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/events/39"
+        },
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/54"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V25"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "移动烤盘至烤箱前",
+      "actor": "person",
+      "objects": [
+        "V2-O10"
+      ],
+      "evidence_sufficient_time": null,
+      "execution_status": "executed",
+      "observability": "direct_visual",
+      "confidence": 0.97,
+      "uncertainties": [],
+      "start_time": 680.0,
+      "end_time": 686.0,
+      "model_event_ids": [
+        "E40"
+      ],
+      "historical_event_ids": [
+        "E055"
+      ],
+      "time_precision": "MODEL_APPROXIMATE",
+      "model_claim": {
+        "event_id": "E40",
+        "action": "移动烤盘至烤箱前",
+        "actor": "person",
+        "objects": [
+          "O10"
+        ],
+        "evidence_sufficient_time": null,
+        "execution_status": "executed",
+        "observability": "direct_visual",
+        "evidence_refs": [
+          "V25"
+        ],
+        "confidence": 0.97,
+        "uncertainties": [],
+        "start_time": 680.0,
+        "end_time": 686.0
+      },
+      "crosscheck_categories": [
+        "BOTH_OBSERVED"
+      ],
+      "interpretation_status": "MODEL_CANDIDATE",
+      "interval_coverage_is_unverified": true
+    },
+    {
+      "id": "V2-E28",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/events/27"
+        },
+        {
+          "source_id": "independent",
+          "json_pointer": "/events/40"
+        },
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/54"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V25"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "打开烤箱门",
+      "actor": "person",
+      "objects": [
+        "V2-O19"
+      ],
+      "evidence_sufficient_time": null,
+      "execution_status": "executed",
+      "observability": "direct_visual",
+      "confidence": 0.99,
+      "uncertainties": [],
+      "start_time": 686.0,
+      "end_time": 688.0,
+      "model_event_ids": [
+        "E28",
+        "E41"
+      ],
+      "historical_event_ids": [
+        "E055"
+      ],
+      "time_precision": "MODEL_APPROXIMATE",
+      "model_claim": {
+        "event_id": "E28",
+        "action": "打开烤箱门",
+        "actor": "person",
+        "objects": [
+          "O19"
+        ],
+        "evidence_sufficient_time": null,
+        "execution_status": "executed",
+        "observability": "direct_visual",
+        "evidence_refs": [
+          "V25"
+        ],
+        "confidence": 0.99,
+        "uncertainties": [],
+        "start_time": 686.0,
+        "end_time": 688.0
+      },
+      "crosscheck_categories": [
+        "BOTH_OBSERVED"
+      ],
+      "interpretation_status": "MODEL_CANDIDATE",
+      "interval_coverage_is_unverified": true
+    },
+    {
+      "id": "V2-E29",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/events/28"
+        },
+        {
+          "source_id": "independent",
+          "json_pointer": "/events/41"
+        },
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/54"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V25"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "将烤盘放入烤箱",
+      "actor": "person",
+      "objects": [
+        "V2-O10",
+        "V2-O19"
+      ],
+      "evidence_sufficient_time": 692.0,
+      "execution_status": "executed",
+      "observability": "direct_visual",
+      "confidence": 0.99,
+      "uncertainties": [],
+      "start_time": 688.0,
+      "end_time": 692.0,
+      "model_event_ids": [
+        "E29",
+        "E42"
+      ],
+      "historical_event_ids": [
+        "E055"
+      ],
+      "time_precision": "MODEL_APPROXIMATE",
+      "model_claim": {
+        "event_id": "E29",
+        "action": "将烤盘放入烤箱",
+        "actor": "person",
+        "objects": [
+          "O10",
+          "O19"
+        ],
+        "evidence_sufficient_time": 692.0,
+        "execution_status": "executed",
+        "observability": "direct_visual",
+        "evidence_refs": [
+          "V25"
+        ],
+        "confidence": 0.99,
+        "uncertainties": [],
+        "start_time": 688.0,
+        "end_time": 692.0
+      },
+      "crosscheck_categories": [
+        "BOTH_OBSERVED"
+      ],
+      "interpretation_status": "MODEL_CANDIDATE",
+      "interval_coverage_is_unverified": true
+    },
+    {
+      "id": "V2-E30",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/events/29"
+        },
+        {
+          "source_id": "independent",
+          "json_pointer": "/events/42"
+        },
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/54"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V25"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "关闭烤箱门",
+      "actor": "person",
+      "objects": [
+        "V2-O19"
+      ],
+      "evidence_sufficient_time": null,
+      "execution_status": "executed",
+      "observability": "direct_visual",
+      "confidence": null,
+      "uncertainties": [
+        "原候选结束延至媒体结束，真实门关闭边界未精查。"
+      ],
+      "start_time": 692.0,
+      "end_time": 696.929567,
+      "model_event_ids": [
+        "E30",
+        "E43"
+      ],
+      "historical_event_ids": [
+        "E055"
+      ],
+      "time_precision": "MODEL_APPROXIMATE",
+      "model_claim": {
+        "event_id": "E30",
+        "action": "关闭烤箱门",
+        "actor": "person",
+        "objects": [
+          "O19"
+        ],
+        "evidence_sufficient_time": 696.929567,
+        "execution_status": "executed",
+        "observability": "direct_visual",
+        "evidence_refs": [
+          "V25"
+        ],
+        "confidence": 0.99,
+        "uncertainties": [],
+        "start_time": 692.0,
+        "end_time": 696.929567
+      },
+      "crosscheck_categories": [
+        "BOTH_OBSERVED"
+      ],
+      "interpretation_status": "DISPUTED_OR_EVIDENCE_GAP",
+      "interval_coverage_is_unverified": true
+    },
+    {
+      "id": "H1-E056",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/55"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E056-01",
+        "H1-T-R55"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "action": "结束观察",
+      "actor": "相机视角",
+      "objects": [
+        "H1-O14",
+        "V2-O9"
+      ],
+      "start_time": 693.0,
+      "end_time": 696.0,
+      "evidence_sufficient_time": null,
+      "observability": "historical_report_only",
+      "confidence": null,
+      "execution_status": "uncertain",
+      "time_precision": "HISTORICAL_APPROXIMATE",
+      "historical_event_ids": [
+        "E056"
+      ],
+      "description": "视角停留灶台，烤箱门关闭，操作停止",
+      "historical_facts": [
+        {
+          "field": "core_action",
+          "value": "结束观察",
+          "status": "REPORTED_SUPPORTED",
+          "evidence_ids": [
+            "V-E056-01"
+          ],
+          "reason": "仅依据历史报告所述抽样帧的核心动作；未人工确认。"
+        }
+      ],
+      "uncertainties": [
+        "未在独立全片模型中单独表示；历史候选未自动成为新视觉事实。"
+      ]
+    }
+  ],
+  "historical_event_ids": [
+    "E001",
+    "E002",
+    "E003",
+    "E004",
+    "E005",
+    "E006",
+    "E007",
+    "E008",
+    "E009",
+    "E010",
+    "E011",
+    "E012",
+    "E013",
+    "E014",
+    "E015",
+    "E016",
+    "E017",
+    "E018",
+    "E019",
+    "E020",
+    "E021",
+    "E022",
+    "E023",
+    "E024",
+    "E025",
+    "E026",
+    "E027",
+    "E028",
+    "E029",
+    "E030",
+    "E031",
+    "E032",
+    "E033",
+    "E034",
+    "E035",
+    "E036",
+    "E037",
+    "E038",
+    "E039",
+    "E040",
+    "E041",
+    "E042",
+    "E043",
+    "E044",
+    "E045",
+    "E046",
+    "E047",
+    "E048",
+    "E049",
+    "E050",
+    "E051",
+    "E052",
+    "E053",
+    "E054",
+    "E055",
+    "E056"
+  ],
+  "count_semantics": "39 deduplicated model records plus historical-only candidates; not a count of verified unique physical actions"
+}

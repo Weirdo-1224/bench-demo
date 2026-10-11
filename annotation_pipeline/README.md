@@ -1,4 +1,41 @@
-# V2 视频模型标注流水线 · Session 1
+# V2 视频模型标注流水线 · Session 2
+
+已完成 GX010021 的两次真实 Qwen3-VL-Plus 原生完整视频分析，以及 V1/源文本整合。全部产物为 CANDIDATE。完整结果见 [全视频报告](../golden_episode/GX010021/annotations/v2_video_model/full_video_report.md) 和 [交叉对照](../golden_episode/GX010021/annotations/v2_video_model/crosscheck_report.md)。
+
+## Full-video First
+
+`full_video` 是 Session 2 默认分析入口；原始 MP4 以受控临时私有上传交给原生 multimodal-generation 接口。1 fps、max_pixels=100352、输出14000 Token、2次推理上限、1 CNY 总预留上限均见 `config.full_video.yaml`。模型、fps、输出 Token 和预算可配置。自动重试为0，不自动分段回退。凭证沿用 Session 1 的独立环境变量/本地忽略文件加载。
+
+在项目根目录运行（PowerShell）：
+
+```powershell
+python -m annotation_pipeline.full_video --dry-run
+python -m annotation_pipeline.full_video
+python -m annotation_pipeline.full_video --pass-id focused --reparse-only
+python -m annotation_pipeline.integrate_v2
+python -m annotation_pipeline.validate_v2
+python -m unittest discover -s annotation_pipeline/tests -v
+```
+
+已有 session2-full-video 两次响应；离线命令复用结果不发送新请求。运行新的专题分析时用同一 run-id 和不同 pass-id，并先报告费用/Token 预算；预算账本在同一运行下累计，不能为绕过限额换 run-id。
+
+独立输出 Schema 在 schemas/full_video.schema.json；统一候选核心契约在 schemas/unified_candidate.schema.json。normalize_full_video.py 只置空引用未来证据的充分时刻并重建阶段索引，原始动作/状态不变；原始输出和透明修复记录都保存。integrate_v2.py 是后续离线整合入口，读取固定的 session2_integration_decisions.json、原模型输出、V1/源文本及局部原帧检查记录，保留所有来源与分歧。执行前需要 runs/ 原始响应和8张局部图像；它们已被 Git 忽略，当前本地齐全。仅克隆已跟踪统一候选文件不足以通过完整来源验证，需要恢复这些本地运行材料。
+
+segment 模式继续使用已有 annotate_segments 入口，适用于显式选定的短窗口精查：
+
+```powershell
+python -m annotation_pipeline.annotate_segments --config annotation_pipeline/config.example.yaml --smoke --dry-run
+```
+
+需要真实局部检查时先在独立配置中指定 smoke_start_sec/window_sec/fps 及预算，调用前报告预估费用；Session 2 当前没有新增局部模型请求。full_video 的 --mode segment 只提示使用上述独立入口，禁止默默回退为全片分窗。
+
+## 时间和计数边界
+
+原片无音轨；源文本单点时间不能当完整公开/生效时间。原生服务端的实际抽样 PTS 不公开，模型定位只是近似原视频秒数；局部八帧则有独立原 PTS 和哈希验证。59条统一事件、28个对象/观察组、138条状态、24条关系均为候选，数量不代表确认物理实体或准确动作召回。结构 PASS 不等于 Ground Truth。没有正式生成任务，也没有 Runner/Evaluator/Baseline。
+
+---
+
+## Session 1 短窗口入口及原有说明
 
 本包实现独立的 L0 媒体来源与 L2 可见事件候选观察。三个 Track 以总体设计 V1.0 为准：T1 过程状态理解、T2 长程过程依赖推理、T3 持续监测与及时干预。本包不是 Streaming Runner 或 Evaluator。
 

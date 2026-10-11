@@ -6,16 +6,16 @@
 
 Benchmark 总体设计见 `docs/Long_Horizon_Streaming_Agent_Benchmark_Overall_Design_v1.0 (1).md`，定义了面向长程过程性视频（第一视角烹饪等）的三个 Track：
 
-- **T1 Streaming QA**：视频流式输入下的在线问答，考察信息可见时刻与最早可答时间。
-- **T2 Agentic Online Assistant**：助手在交互规则、建议与许可约束下的在线辅助行为。
-- **T3 State-dependent Procedure**：依赖过程状态与历史一致性的程序性任务。
+- **T1 Online Procedural State Understanding**：在线理解实际步骤进度、对象状态和状态转移。
+- **T2 Long-Horizon Procedural Dependency Reasoning**：利用跨时间事实与有效规则进行操作依赖推理。
+- **T3 Continual Monitoring & Timely Intervention**：持续发现可证异常、及时提醒并跟踪恢复。
 
 统一评测协议与三 Track 的任务定义以总体设计 V1.0 为准。
 
 ## V1 与 V2 的区别
 
 - **V1 Candidate（已完成，已归档）**：利用 AI 辅助分析、历史报告整合形成的结构化候选事实与任务数据（`annotations/v1_candidate/`、`tasks/v1_candidates/`），作为历史基线和交叉核验来源。全部为 **CANDIDATE / NOT_REVIEWED**，人工 Gold 数量为 0，不代表人工确认的 Gold Ground Truth。
-- **V2 Video-model Annotation（尚未实施）**：计划由视频理解模型**独立**理解原始视频，再与 V1 历史标注交叉整合，生成服务于三个 Track 的统一时序标注，并派生 V2 候选任务。当前仅有占位目录（`annotations/v2_video_model/`、`tasks/v2_candidates/`），**没有任何标注或任务产物**。
+- **V2 Video-model Annotation（Session 2 候选标注已完成）**：Qwen3-VL-Plus 两次实际分析原始全片，并与 V1/源文本交叉整合；59 事件候选、28 对象/观察组、138 状态、24 关系，全部 CANDIDATE，正错误与 Gold 为 0。模型仍有重要遗漏和分歧，详见 [全视频报告](golden_episode/GX010021/annotations/v2_video_model/full_video_report.md)。V2 任务构建留到 Session 3。
 
 ## 当前项目进度
 
@@ -25,8 +25,9 @@ Benchmark 总体设计见 `docs/Long_Horizon_Streaming_Agent_Benchmark_Overall_D
 - [x] 三个 Track 的 Pilot 候选任务实例化（`tasks/v1_candidates/pilot_task_candidates.json`，gold_answer 全 null）
 - [x] 证据准备产物（`evidence/`）：切片 + 关键帧 + manifest + T1/T2 任务复核清单与裁决记录（adjudication 尚未执行）
 - [x] V1/V2 目录隔离重构（Git 快照标签 `pre-v2-annotation`）
-- [ ] V2 Schema 设计、视频模型接入与独立标注
-- [ ] V2 与 V1 交叉整合、三个 Track 候选任务重新派生
+- [x] V2 Schema、原生全视频模型接入与独立候选标注
+- [x] V2 与 V1 交叉整合、来源/时间/引用校验与候选覆盖报告
+- [ ] Session 3：从 V2 构建三个 Track 的适用任务
 - [ ] 证据复核裁决执行与人工 Gold 标注
 - [ ] Evaluator / Harness 开发、Pilot 与 Baseline 运行
 - [ ] 第二个及后续 Episode 接入
@@ -42,7 +43,7 @@ bench-demo/
 │       ├── annotation_reports/  # Qwen 四轮历史标注报告及归档说明 README
 │       ├── annotations/
 │       │   ├── v1_candidate/    # V1 结构化候选标注：events.json / objects.json / review_queue.json / schema.json
-│       │   └── v2_video_model/  # V2 视频模型标注工作区（占位，尚未实施）
+│       │   └── v2_video_model/  # V2 统一候选标注、报告和本地 runs 原响应
 │       ├── tasks/
 │       │   ├── v1_candidates/   # pilot_task_candidates.json（T1/T2/T3 候选任务，gold_answer 全 null）
 │       │   └── v2_candidates/   # V2 候选任务工作区（占位，尚未实施）
@@ -71,15 +72,15 @@ python golden_episode/GX010021/scripts/validate.py --self-test
 
 注意：`build.py` 会覆盖重写 `annotations/v1_candidate/` 下的归档 JSON，属于可重跑的确定性重建（输入哈希校验通过后才会执行），不要在未核对输入快照的情况下对归档数据直接重跑。
 
-## 下一阶段计划（V2）
+## 下一阶段计划（Session 3）
 
-1. 设计 V2 统一时序标注 Schema（覆盖三 Track 需求）。
-2. 接入视频理解模型，对 `source/GX010021.MP4` 独立标注。
-3. 与 V1 候选标注交叉整合（冲突保留双方来源），派生三个 Track 的 V2 候选任务。
-4. 执行证据复核裁决，逐步建立人工 Gold。
+1. 从 V2 候选筛选可以支撑任务的事实，精查影响答案的关键缺口。
+2. 明确源文本合法公开/生效时间、T1 完成条件及 T2 最小历史证据。
+3. 审核 T3 是否有可证正错误，不把反馈或正常再加热当错误真值。
+4. 在下一轮安排下构建任务；当前不开发 Runner、Evaluator 或 Baseline。
 
 ## 注意事项
 
 - `source/GX010021.MP4`（约 88MB）被 `.gitignore` 排除，不进入普通 Git 提交；原始视频保留在本地，勿删。
-- 所有事件的 `time_status=APPROXIMATE`；视觉证据仅为历史 AI 报告所述抽样帧观察，SUPPORTED ≠ 人工 Gold。
+- V1 视觉证据来自历史 AI 报告；V2 新增原生视频模型来源和局部原帧证据。二者均为候选，结构校验通过和模型高置信度均不等于人工 Gold。
 - 历史报告与 `evidence/` 清单中记录的旧路径（如 `annotations/events.json`、`tasks/pilot_task_candidates.json`）为历史溯源字段，保留原值；当前实际运行路径见上方目录结构与各脚本中的 `v1_candidate` / `v1_candidates` 路径常量。

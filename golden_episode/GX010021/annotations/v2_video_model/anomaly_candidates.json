@@ -1,0 +1,361 @@
+{
+  "annotation_status": "CANDIDATE",
+  "records": [
+    {
+      "id": "L5-01",
+      "annotation_status": "CANDIDATE",
+      "source_type": "integration_candidate",
+      "source_refs": [
+        {
+          "source_id": "source_text",
+          "json_pointer": "/texts/3"
+        },
+        {
+          "source_id": "source_text",
+          "json_pointer": "/texts/5"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V3",
+        "V2-V4"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "label": "small_bowl_feedback",
+      "candidate_kind": "UNCONFIRMED_DEVIATION_OR_FEEDBACK",
+      "normative_refs": [
+        "SRC-R04",
+        "SRC-R06"
+      ],
+      "related_event_ids": [
+        "V2-E32",
+        "V2-E1"
+      ],
+      "error_onset": null,
+      "detectable_from": null,
+      "deadline": null,
+      "resolved_at": null,
+      "feedback_given_at": null,
+      "alarm_ground_truth": false,
+      "hard_scoring_eligible": false,
+      "uncertainties": [
+        "容器过小只有文本反馈，缺独立容量/提前可检测规则。",
+        "规范公开/生效时间缺失，不构成在线可检测错误。"
+      ],
+      "candidate_observation_interval": null
+    },
+    {
+      "id": "L5-02",
+      "annotation_status": "CANDIDATE",
+      "source_type": "integration_candidate",
+      "source_refs": [
+        {
+          "source_id": "source_text",
+          "json_pointer": "/texts/8"
+        },
+        {
+          "source_id": "source_text",
+          "json_pointer": "/texts/9"
+        },
+        {
+          "source_id": "source_text",
+          "json_pointer": "/texts/10"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V5",
+        "V2-V7",
+        "LC-76-2",
+        "LC-83-2"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "label": "extra_egg_feedback",
+      "candidate_kind": "UNCONFIRMED_DEVIATION_OR_FEEDBACK",
+      "normative_refs": [
+        "SRC-R09",
+        "SRC-R10",
+        "SRC-R11"
+      ],
+      "related_event_ids": [
+        "V2-E2",
+        "V2-E4"
+      ],
+      "error_onset": null,
+      "detectable_from": null,
+      "deadline": null,
+      "resolved_at": null,
+      "feedback_given_at": null,
+      "alarm_ground_truth": false,
+      "hard_scoring_eligible": false,
+      "uncertainties": [
+        "取蛋与实际加入不同；局部两蛋黄不能构成第三枚未破损真值或三蛋入料错误。",
+        "规范公开/生效时间缺失，不构成在线可检测错误。"
+      ],
+      "candidate_observation_interval": null
+    },
+    {
+      "id": "L5-03",
+      "annotation_status": "CANDIDATE",
+      "source_type": "integration_candidate",
+      "source_refs": [
+        {
+          "source_id": "source_text",
+          "json_pointer": "/texts/12"
+        },
+        {
+          "source_id": "source_text",
+          "json_pointer": "/texts/13"
+        },
+        {
+          "source_id": "source_text",
+          "json_pointer": "/texts/14"
+        },
+        {
+          "source_id": "source_text",
+          "json_pointer": "/texts/15"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V8",
+        "V2-V9"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "label": "sugar_amount_feedback",
+      "candidate_kind": "UNCONFIRMED_DEVIATION_OR_FEEDBACK",
+      "normative_refs": [
+        "SRC-R13",
+        "SRC-R14",
+        "SRC-R15",
+        "SRC-R16"
+      ],
+      "related_event_ids": [
+        "V2-E5",
+        "V2-E6"
+      ],
+      "error_onset": null,
+      "detectable_from": null,
+      "deadline": null,
+      "resolved_at": null,
+      "feedback_given_at": null,
+      "alarm_ground_truth": false,
+      "hard_scoring_eligible": false,
+      "uncertainties": [
+        "实际量不可测，且存在修订许可；不能由反馈时间生成异常时刻。",
+        "规范公开/生效时间缺失，不构成在线可检测错误。"
+      ],
+      "candidate_observation_interval": null
+    },
+    {
+      "id": "L5-04",
+      "annotation_status": "CANDIDATE",
+      "source_type": "integration_candidate",
+      "source_refs": [
+        {
+          "source_id": "source_text",
+          "json_pointer": "/texts/27"
+        },
+        {
+          "source_id": "source_text",
+          "json_pointer": "/texts/29"
+        },
+        {
+          "source_id": "source_text",
+          "json_pointer": "/texts/30"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V17",
+        "V2-V18",
+        "V2-V19",
+        "LC-431-2"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "label": "butter_reheat",
+      "candidate_kind": "UNCONFIRMED_DEVIATION_OR_FEEDBACK",
+      "normative_refs": [
+        "SRC-R28",
+        "SRC-R30",
+        "SRC-R31"
+      ],
+      "related_event_ids": [
+        "V2-E17",
+        "V2-E18",
+        "V2-E19"
+      ],
+      "error_onset": null,
+      "detectable_from": null,
+      "deadline": null,
+      "resolved_at": null,
+      "feedback_given_at": null,
+      "alarm_ground_truth": false,
+      "hard_scoring_eligible": false,
+      "uncertainties": [
+        "部分融化与再次加热可能属于分段检查流程，不证明操作错误。",
+        "规范公开/生效时间缺失，不构成在线可检测错误。"
+      ],
+      "candidate_observation_interval": null
+    },
+    {
+      "id": "L5-05",
+      "annotation_status": "CANDIDATE",
+      "source_type": "integration_candidate",
+      "source_refs": [
+        {
+          "source_id": "source_text",
+          "json_pointer": "/texts/46"
+        },
+        {
+          "source_id": "source_text",
+          "json_pointer": "/texts/47"
+        },
+        {
+          "source_id": "source_text",
+          "json_pointer": "/texts/48"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E051-01",
+        "H1-V-E051-02",
+        "H1-T-R46",
+        "H1-T-R47",
+        "H1-T-R48",
+        "H1-T-R49",
+        "H1-I-E051-02",
+        "LC-599-2",
+        "H1-V-E052-01",
+        "H1-V-E052-02",
+        "H1-T-R50",
+        "H1-T-R51",
+        "LC-610-2"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "label": "late_flour_addition",
+      "candidate_kind": "UNCONFIRMED_DEVIATION_OR_FEEDBACK",
+      "normative_refs": [
+        "SRC-R47",
+        "SRC-R48",
+        "SRC-R49"
+      ],
+      "related_event_ids": [
+        "H1-E051",
+        "H1-E052"
+      ],
+      "error_onset": null,
+      "detectable_from": null,
+      "deadline": null,
+      "resolved_at": null,
+      "feedback_given_at": null,
+      "alarm_ground_truth": false,
+      "hard_scoring_eligible": false,
+      "uncertainties": [
+        "不必加不等于禁止加；稀稠条件与实际量未知，不构成已确认违例。",
+        "规范公开/生效时间缺失，不构成在线可检测错误。"
+      ],
+      "candidate_observation_interval": null
+    },
+    {
+      "id": "L5-06",
+      "annotation_status": "CANDIDATE",
+      "source_type": "integration_candidate",
+      "source_refs": [
+        {
+          "source_id": "source_text",
+          "json_pointer": "/texts/38"
+        },
+        {
+          "source_id": "source_text",
+          "json_pointer": "/texts/39"
+        },
+        {
+          "source_id": "source_text",
+          "json_pointer": "/texts/40"
+        },
+        {
+          "source_id": "source_text",
+          "json_pointer": "/texts/41"
+        },
+        {
+          "source_id": "source_text",
+          "json_pointer": "/texts/42"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V23",
+        "V2-V24"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "label": "permitted_oil_normal_candidate",
+      "candidate_kind": "NORMAL_OPERATION_CANDIDATE",
+      "normative_refs": [
+        "SRC-R39",
+        "SRC-R40",
+        "SRC-R41",
+        "SRC-R42",
+        "SRC-R43"
+      ],
+      "related_event_ids": [
+        "V2-E24",
+        "V2-E25"
+      ],
+      "error_onset": null,
+      "detectable_from": null,
+      "deadline": null,
+      "resolved_at": null,
+      "feedback_given_at": null,
+      "alarm_ground_truth": false,
+      "hard_scoring_eligible": false,
+      "uncertainties": [
+        "仅限定垫纸/黄油被允许用油替代的候选负例，不证明全区间没有其他错误。",
+        "规范公开/生效时间缺失，不构成在线可检测错误。"
+      ],
+      "candidate_observation_interval": {
+        "start_time": 560,
+        "end_time": 581
+      }
+    },
+    {
+      "id": "L5-07",
+      "annotation_status": "CANDIDATE",
+      "source_type": "integration_candidate",
+      "source_refs": [
+        {
+          "source_id": "source_text",
+          "json_pointer": "/texts/29"
+        },
+        {
+          "source_id": "source_text",
+          "json_pointer": "/texts/30"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V17",
+        "V2-V18"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "label": "reheat_normal_candidate",
+      "candidate_kind": "NORMAL_OPERATION_CANDIDATE",
+      "normative_refs": [
+        "SRC-R30",
+        "SRC-R31"
+      ],
+      "related_event_ids": [
+        "V2-E17",
+        "V2-E18"
+      ],
+      "error_onset": null,
+      "detectable_from": null,
+      "deadline": null,
+      "resolved_at": null,
+      "feedback_given_at": null,
+      "alarm_ground_truth": false,
+      "hard_scoring_eligible": false,
+      "uncertainties": [
+        "分段加热检查的正常流程候选，非错误修复真值。",
+        "规范公开/生效时间缺失，不构成在线可检测错误。"
+      ],
+      "candidate_observation_interval": null
+    }
+  ],
+  "confirmed_error_count": 0,
+  "confirmed_normal_episode": false,
+  "alarm_ground_truth_count": 0
+}

@@ -63,7 +63,8 @@ def call_or_reuse(provider, request, segment_dir, run_dir, config, api_key,
         except requests.RequestException as error:
             # Exception messages can include payloads/headers; only retain its type.
             raw = {"status_code": None, "body": None, "transport_error": type(error).__name__}
-        raw |= {"request_sha256": request_hash, "completed_at": utc_now(), "elapsed_sec": time.monotonic() - began}
+        raw |= {"request_sha256": request_hash, "completed_at": utc_now(), "elapsed_sec": time.monotonic() - began,
+                "transport_operations": getattr(provider, "network_log", [])}
         response_path = prefix.with_suffix(".response.json")
         write_new(response_path, raw)
         code = raw["status_code"]

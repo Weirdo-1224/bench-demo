@@ -1,0 +1,6018 @@
+{
+  "annotation_status": "CANDIDATE",
+  "records": [
+    {
+      "id": "V2-O1",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/objects/0"
+        },
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/0"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V4",
+        "V2-V6",
+        "V2-V7",
+        "V2-V9",
+        "V2-V10",
+        "V2-V12",
+        "V2-V14",
+        "V2-V21",
+        "V2-V22",
+        "V2-V24"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "label": "透明方形塑料盒",
+      "appearance": "透明塑料材质，带盖，用于混合原料",
+      "identity_status": "uncertain",
+      "confidence": 0.98,
+      "uncertainties": [
+        "连续身份仅为候选；出画及遮挡期间不能断言状态持续。"
+      ],
+      "historical_object_ids": [
+        "O01"
+      ],
+      "model_identity_status": "candidate_continuous",
+      "identity_interpretation": "CANDIDATE_CORRESPONDENCE; disjoint sampled observations do not establish uninterrupted physical identity",
+      "occlusion_and_out_of_frame": "NOT_EXHAUSTIVELY_ANNOTATED",
+      "model_claim": {
+        "object_id": "O1",
+        "label": "透明方形塑料盒",
+        "appearance": "透明塑料材质，带盖，用于混合原料",
+        "identity_status": "candidate_continuous",
+        "evidence_refs": [
+          "V4",
+          "V6",
+          "V7",
+          "V9",
+          "V10",
+          "V12",
+          "V14",
+          "V21",
+          "V22",
+          "V24"
+        ],
+        "confidence": 0.98,
+        "uncertainties": [
+          "连续身份仅为候选；出画及遮挡期间不能断言状态持续。"
+        ]
+      }
+    },
+    {
+      "id": "V2-O2",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/objects/1"
+        },
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/18"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V3",
+        "V2-V10"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "label": "白色瓷碗",
+      "appearance": "纯白陶瓷小碗，无图案",
+      "identity_status": "uncertain",
+      "confidence": 0.95,
+      "uncertainties": [
+        "未见后续使用",
+        "连续身份仅为候选；出画及遮挡期间不能断言状态持续。"
+      ],
+      "historical_object_ids": [
+        "O19"
+      ],
+      "model_identity_status": "candidate_continuous",
+      "identity_interpretation": "CANDIDATE_CORRESPONDENCE; disjoint sampled observations do not establish uninterrupted physical identity",
+      "occlusion_and_out_of_frame": "NOT_EXHAUSTIVELY_ANNOTATED",
+      "model_claim": {
+        "object_id": "O2",
+        "label": "白色瓷碗",
+        "appearance": "纯白陶瓷小碗，无图案",
+        "identity_status": "candidate_continuous",
+        "evidence_refs": [
+          "V3",
+          "V10"
+        ],
+        "confidence": 0.95,
+        "uncertainties": [
+          "未见后续使用",
+          "连续身份仅为候选；出画及遮挡期间不能断言状态持续。"
+        ]
+      }
+    },
+    {
+      "id": "V2-O3",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/objects/2"
+        },
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/19"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V1",
+        "V2-V5"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "label": "鸡蛋盒",
+      "appearance": "透明塑料托盘装12枚棕色鸡蛋",
+      "identity_status": "uncertain",
+      "confidence": 0.99,
+      "uncertainties": [
+        "连续身份仅为候选；出画及遮挡期间不能断言状态持续。"
+      ],
+      "historical_object_ids": [
+        "O20"
+      ],
+      "model_identity_status": "candidate_continuous",
+      "identity_interpretation": "CANDIDATE_CORRESPONDENCE; disjoint sampled observations do not establish uninterrupted physical identity",
+      "occlusion_and_out_of_frame": "NOT_EXHAUSTIVELY_ANNOTATED",
+      "model_claim": {
+        "object_id": "O3",
+        "label": "鸡蛋盒",
+        "appearance": "透明塑料托盘装12枚棕色鸡蛋",
+        "identity_status": "candidate_continuous",
+        "evidence_refs": [
+          "V1",
+          "V5"
+        ],
+        "confidence": 0.99,
+        "uncertainties": [
+          "连续身份仅为候选；出画及遮挡期间不能断言状态持续。"
+        ]
+      }
+    },
+    {
+      "id": "V2-O4",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/objects/3"
+        },
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/3"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V8",
+        "V2-V9"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "label": "红糖袋",
+      "appearance": "蓝色牛仔布纹包装，印有'Organic Brown Sugar'",
+      "identity_status": "uncertain",
+      "confidence": 0.97,
+      "uncertainties": [
+        "未见封口或剩余量",
+        "连续身份仅为候选；出画及遮挡期间不能断言状态持续。"
+      ],
+      "historical_object_ids": [
+        "O04"
+      ],
+      "model_identity_status": "candidate_continuous",
+      "identity_interpretation": "CANDIDATE_CORRESPONDENCE; disjoint sampled observations do not establish uninterrupted physical identity",
+      "occlusion_and_out_of_frame": "NOT_EXHAUSTIVELY_ANNOTATED",
+      "model_claim": {
+        "object_id": "O4",
+        "label": "红糖袋",
+        "appearance": "蓝色牛仔布纹包装，印有'Organic Brown Sugar'",
+        "identity_status": "candidate_continuous",
+        "evidence_refs": [
+          "V8",
+          "V9"
+        ],
+        "confidence": 0.97,
+        "uncertainties": [
+          "未见封口或剩余量",
+          "连续身份仅为候选；出画及遮挡期间不能断言状态持续。"
+        ]
+      }
+    },
+    {
+      "id": "V2-O5",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/objects/4"
+        },
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/5"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V10",
+        "V2-V11"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "label": "牛奶盒",
+      "appearance": "红蓝白三色纸盒，标有'Horizon Organic Whole Milk'",
+      "identity_status": "uncertain",
+      "confidence": 0.96,
+      "uncertainties": [
+        "连续身份仅为候选；出画及遮挡期间不能断言状态持续。",
+        "首轮Half & Half与专题Whole Milk标签描述不一致，产品名仅为模型候选。"
+      ],
+      "historical_object_ids": [
+        "O06"
+      ],
+      "model_identity_status": "candidate_continuous",
+      "identity_interpretation": "CANDIDATE_CORRESPONDENCE; disjoint sampled observations do not establish uninterrupted physical identity",
+      "occlusion_and_out_of_frame": "NOT_EXHAUSTIVELY_ANNOTATED",
+      "model_claim": {
+        "object_id": "O5",
+        "label": "牛奶盒",
+        "appearance": "红蓝白三色纸盒，标有'Horizon Organic Whole Milk'",
+        "identity_status": "candidate_continuous",
+        "evidence_refs": [
+          "V10",
+          "V11"
+        ],
+        "confidence": 0.96,
+        "uncertainties": [
+          "连续身份仅为候选；出画及遮挡期间不能断言状态持续。",
+          "首轮Half & Half与专题Whole Milk标签描述不一致，产品名仅为模型候选。"
+        ]
+      }
+    },
+    {
+      "id": "V2-O6",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/objects/5"
+        },
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/6"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V11",
+        "V2-V12",
+        "V2-V22"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "label": "手持电动打蛋器",
+      "appearance": "白色机身，银色搅拌头，带电源线",
+      "identity_status": "uncertain",
+      "confidence": 0.99,
+      "uncertainties": [
+        "连续身份仅为候选；出画及遮挡期间不能断言状态持续。"
+      ],
+      "historical_object_ids": [
+        "O07"
+      ],
+      "model_identity_status": "candidate_continuous",
+      "identity_interpretation": "CANDIDATE_CORRESPONDENCE; disjoint sampled observations do not establish uninterrupted physical identity",
+      "occlusion_and_out_of_frame": "NOT_EXHAUSTIVELY_ANNOTATED",
+      "model_claim": {
+        "object_id": "O6",
+        "label": "手持电动打蛋器",
+        "appearance": "白色机身，银色搅拌头，带电源线",
+        "identity_status": "candidate_continuous",
+        "evidence_refs": [
+          "V11",
+          "V12",
+          "V22"
+        ],
+        "confidence": 0.99,
+        "uncertainties": [
+          "连续身份仅为候选；出画及遮挡期间不能断言状态持续。"
+        ]
+      }
+    },
+    {
+      "id": "V2-O7",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/objects/6"
+        },
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/7"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V13",
+        "V2-V14"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "label": "面粉袋",
+      "appearance": "棕色牛皮纸袋，印有'All-Purpose Flour'",
+      "identity_status": "uncertain",
+      "confidence": 0.94,
+      "uncertainties": [
+        "品牌不可辨",
+        "连续身份仅为候选；出画及遮挡期间不能断言状态持续。"
+      ],
+      "historical_object_ids": [
+        "O08"
+      ],
+      "model_identity_status": "candidate_continuous",
+      "identity_interpretation": "CANDIDATE_CORRESPONDENCE; disjoint sampled observations do not establish uninterrupted physical identity",
+      "occlusion_and_out_of_frame": "NOT_EXHAUSTIVELY_ANNOTATED",
+      "model_claim": {
+        "object_id": "O7",
+        "label": "面粉袋",
+        "appearance": "棕色牛皮纸袋，印有'All-Purpose Flour'",
+        "identity_status": "candidate_continuous",
+        "evidence_refs": [
+          "V13",
+          "V14"
+        ],
+        "confidence": 0.94,
+        "uncertainties": [
+          "品牌不可辨",
+          "连续身份仅为候选；出画及遮挡期间不能断言状态持续。"
+        ]
+      }
+    },
+    {
+      "id": "V2-O8",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/objects/7"
+        },
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/20"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V15",
+        "V2-V16",
+        "V2-V17",
+        "V2-V18",
+        "V2-V19",
+        "V2-V20",
+        "V2-V21"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "label": "黄油包装及黄色材料的模型观察组",
+      "appearance": "银色铝箔纸包裹，内含黄色块状黄油",
+      "identity_status": "uncertain",
+      "confidence": 0.97,
+      "uncertainties": [
+        "连续身份仅为候选；出画及遮挡期间不能断言状态持续。",
+        "原模型把包装和黄油材料合在同一ID；不得将两者物理身份等同。"
+      ],
+      "historical_object_ids": [
+        "O21"
+      ],
+      "model_identity_status": "candidate_continuous",
+      "identity_interpretation": "CANDIDATE_CORRESPONDENCE; disjoint sampled observations do not establish uninterrupted physical identity",
+      "occlusion_and_out_of_frame": "NOT_EXHAUSTIVELY_ANNOTATED",
+      "model_claim": {
+        "object_id": "O8",
+        "label": "黄油包装",
+        "appearance": "银色铝箔纸包裹，内含黄色块状黄油",
+        "identity_status": "candidate_continuous",
+        "evidence_refs": [
+          "V15",
+          "V16",
+          "V17",
+          "V18",
+          "V19",
+          "V20",
+          "V21"
+        ],
+        "confidence": 0.97,
+        "uncertainties": [
+          "连续身份仅为候选；出画及遮挡期间不能断言状态持续。",
+          "原模型把包装和黄油材料合在同一ID；不得将两者物理身份等同。"
+        ]
+      }
+    },
+    {
+      "id": "V2-O9",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/objects/8"
+        },
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/9"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V16",
+        "V2-V17",
+        "V2-V18",
+        "V2-V19",
+        "V2-V20",
+        "V2-V21"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "label": "玻璃容器",
+      "appearance": "透明长方形耐热玻璃盒，用于盛放黄油",
+      "identity_status": "uncertain",
+      "confidence": 0.98,
+      "uncertainties": [
+        "连续身份仅为候选；出画及遮挡期间不能断言状态持续。"
+      ],
+      "historical_object_ids": [
+        "O10"
+      ],
+      "model_identity_status": "candidate_continuous",
+      "identity_interpretation": "CANDIDATE_CORRESPONDENCE; disjoint sampled observations do not establish uninterrupted physical identity",
+      "occlusion_and_out_of_frame": "NOT_EXHAUSTIVELY_ANNOTATED",
+      "model_claim": {
+        "object_id": "O9",
+        "label": "玻璃容器",
+        "appearance": "透明长方形耐热玻璃盒，用于盛放黄油",
+        "identity_status": "candidate_continuous",
+        "evidence_refs": [
+          "V16",
+          "V17",
+          "V18",
+          "V19",
+          "V20",
+          "V21"
+        ],
+        "confidence": 0.98,
+        "uncertainties": [
+          "连续身份仅为候选；出画及遮挡期间不能断言状态持续。"
+        ]
+      }
+    },
+    {
+      "id": "V2-O10",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/objects/9"
+        },
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/11"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V3",
+        "V2-V23",
+        "V2-V24",
+        "V2-V25"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "label": "金属烤盘",
+      "appearance": "深灰色长方形金属烤模，带圆角",
+      "identity_status": "uncertain",
+      "confidence": 0.99,
+      "uncertainties": [
+        "连续身份仅为候选；出画及遮挡期间不能断言状态持续。"
+      ],
+      "historical_object_ids": [
+        "O12"
+      ],
+      "model_identity_status": "candidate_continuous",
+      "identity_interpretation": "CANDIDATE_CORRESPONDENCE; disjoint sampled observations do not establish uninterrupted physical identity",
+      "occlusion_and_out_of_frame": "NOT_EXHAUSTIVELY_ANNOTATED",
+      "model_claim": {
+        "object_id": "O10",
+        "label": "金属烤盘",
+        "appearance": "深灰色长方形金属烤模，带圆角",
+        "identity_status": "candidate_continuous",
+        "evidence_refs": [
+          "V3",
+          "V23",
+          "V24",
+          "V25"
+        ],
+        "confidence": 0.99,
+        "uncertainties": [
+          "连续身份仅为候选；出画及遮挡期间不能断言状态持续。"
+        ]
+      }
+    },
+    {
+      "id": "V2-O11",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/objects/10"
+        },
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/10"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V1",
+        "V2-V16",
+        "V2-V17",
+        "V2-V18",
+        "V2-V19"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "label": "微波炉",
+      "appearance": "白色Whirlpool牌嵌入式微波炉，带数字屏和按键面板",
+      "identity_status": "uncertain",
+      "confidence": 0.99,
+      "uncertainties": [
+        "连续身份仅为候选；出画及遮挡期间不能断言状态持续。"
+      ],
+      "historical_object_ids": [
+        "O11"
+      ],
+      "model_identity_status": "candidate_continuous",
+      "identity_interpretation": "CANDIDATE_CORRESPONDENCE; disjoint sampled observations do not establish uninterrupted physical identity",
+      "occlusion_and_out_of_frame": "NOT_EXHAUSTIVELY_ANNOTATED",
+      "model_claim": {
+        "object_id": "O11",
+        "label": "微波炉",
+        "appearance": "白色Whirlpool牌嵌入式微波炉，带数字屏和按键面板",
+        "identity_status": "candidate_continuous",
+        "evidence_refs": [
+          "V1",
+          "V16",
+          "V17",
+          "V18",
+          "V19"
+        ],
+        "confidence": 0.99,
+        "uncertainties": [
+          "连续身份仅为候选；出画及遮挡期间不能断言状态持续。"
+        ]
+      }
+    },
+    {
+      "id": "V2-O12",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/objects/11"
+        },
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/13"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V1",
+        "V2-V2",
+        "V2-V16"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "label": "灶台",
+      "appearance": "白色Whirlpool电陶炉，黑色玻璃面板，四眼",
+      "identity_status": "uncertain",
+      "confidence": 0.99,
+      "uncertainties": [
+        "连续身份仅为候选；出画及遮挡期间不能断言状态持续。"
+      ],
+      "historical_object_ids": [
+        "O14"
+      ],
+      "model_identity_status": "candidate_continuous",
+      "identity_interpretation": "CANDIDATE_CORRESPONDENCE; disjoint sampled observations do not establish uninterrupted physical identity",
+      "occlusion_and_out_of_frame": "NOT_EXHAUSTIVELY_ANNOTATED",
+      "model_claim": {
+        "object_id": "O12",
+        "label": "灶台",
+        "appearance": "白色Whirlpool电陶炉，黑色玻璃面板，四眼",
+        "identity_status": "candidate_continuous",
+        "evidence_refs": [
+          "V1",
+          "V2",
+          "V16"
+        ],
+        "confidence": 0.99,
+        "uncertainties": [
+          "连续身份仅为候选；出画及遮挡期间不能断言状态持续。"
+        ]
+      }
+    },
+    {
+      "id": "V2-O13",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/objects/12"
+        },
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/4"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V8",
+        "V2-V9",
+        "V2-V10",
+        "V2-V14"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "label": "黑色量勺",
+      "appearance": "黑色塑料量勺，带手柄，用于舀取糖/面粉",
+      "identity_status": "uncertain",
+      "confidence": 0.95,
+      "uncertainties": [
+        "连续身份仅为候选；出画及遮挡期间不能断言状态持续。",
+        "黑色量具/黑色搅动与刮糊工具不能凭相似外观强行确认同一件。"
+      ],
+      "historical_object_ids": [
+        "O05"
+      ],
+      "model_identity_status": "candidate_continuous",
+      "identity_interpretation": "CANDIDATE_CORRESPONDENCE; disjoint sampled observations do not establish uninterrupted physical identity",
+      "occlusion_and_out_of_frame": "NOT_EXHAUSTIVELY_ANNOTATED",
+      "model_claim": {
+        "object_id": "O13",
+        "label": "黑色量勺",
+        "appearance": "黑色塑料量勺，带手柄，用于舀取糖/面粉",
+        "identity_status": "candidate_continuous",
+        "evidence_refs": [
+          "V8",
+          "V9",
+          "V10",
+          "V14"
+        ],
+        "confidence": 0.95,
+        "uncertainties": [
+          "连续身份仅为候选；出画及遮挡期间不能断言状态持续。",
+          "黑色量具/黑色搅动与刮糊工具不能凭相似外观强行确认同一件。"
+        ]
+      }
+    },
+    {
+      "id": "V2-O14",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/objects/13"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V20",
+        "V2-V24"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "label": "黑色刮刀",
+      "appearance": "黑色硅胶头+塑料手柄刮刀",
+      "identity_status": "uncertain",
+      "confidence": 0.96,
+      "uncertainties": [
+        "连续身份仅为候选；出画及遮挡期间不能断言状态持续。",
+        "黑色量具/黑色搅动与刮糊工具不能凭相似外观强行确认同一件。"
+      ],
+      "historical_object_ids": [],
+      "model_identity_status": "candidate_continuous",
+      "identity_interpretation": "CANDIDATE_CORRESPONDENCE; disjoint sampled observations do not establish uninterrupted physical identity",
+      "occlusion_and_out_of_frame": "NOT_EXHAUSTIVELY_ANNOTATED",
+      "model_claim": {
+        "object_id": "O14",
+        "label": "黑色刮刀",
+        "appearance": "黑色硅胶头+塑料手柄刮刀",
+        "identity_status": "candidate_continuous",
+        "evidence_refs": [
+          "V20",
+          "V24"
+        ],
+        "confidence": 0.96,
+        "uncertainties": [
+          "连续身份仅为候选；出画及遮挡期间不能断言状态持续。",
+          "黑色量具/黑色搅动与刮糊工具不能凭相似外观强行确认同一件。"
+        ]
+      }
+    },
+    {
+      "id": "V2-O15",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/objects/14"
+        },
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/12"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V23"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "label": "油瓶",
+      "appearance": "透明塑料瓶装黄色液体，绿色瓶盖",
+      "identity_status": "uncertain",
+      "confidence": 0.7,
+      "uncertainties": [
+        "内容物为植物油 or 其他？标签不可读",
+        "连续身份仅为候选；出画及遮挡期间不能断言状态持续。"
+      ],
+      "historical_object_ids": [
+        "O13"
+      ],
+      "model_identity_status": "uncertain",
+      "identity_interpretation": "CANDIDATE_CORRESPONDENCE; disjoint sampled observations do not establish uninterrupted physical identity",
+      "occlusion_and_out_of_frame": "NOT_EXHAUSTIVELY_ANNOTATED",
+      "model_claim": {
+        "object_id": "O15",
+        "label": "油瓶",
+        "appearance": "透明塑料瓶装黄色液体，绿色瓶盖",
+        "identity_status": "uncertain",
+        "evidence_refs": [
+          "V23"
+        ],
+        "confidence": 0.7,
+        "uncertainties": [
+          "内容物为植物油 or 其他？标签不可读",
+          "连续身份仅为候选；出画及遮挡期间不能断言状态持续。"
+        ]
+      }
+    },
+    {
+      "id": "V2-O16",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/objects/15"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V1",
+        "V2-V3",
+        "V2-V22"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "label": "不锈钢锅组",
+      "appearance": "多个带盖不锈钢小锅，堆叠在台面右后方",
+      "identity_status": "uncertain",
+      "confidence": 0.5,
+      "uncertainties": [
+        "无法区分是否为同一套或不同批次",
+        "连续身份仅为候选；出画及遮挡期间不能断言状态持续。"
+      ],
+      "historical_object_ids": [],
+      "model_identity_status": "uncertain",
+      "identity_interpretation": "CANDIDATE_CORRESPONDENCE; disjoint sampled observations do not establish uninterrupted physical identity",
+      "occlusion_and_out_of_frame": "NOT_EXHAUSTIVELY_ANNOTATED",
+      "model_claim": {
+        "object_id": "O16",
+        "label": "不锈钢锅组",
+        "appearance": "多个带盖不锈钢小锅，堆叠在台面右后方",
+        "identity_status": "uncertain",
+        "evidence_refs": [
+          "V1",
+          "V3",
+          "V22"
+        ],
+        "confidence": 0.5,
+        "uncertainties": [
+          "无法区分是否为同一套或不同批次",
+          "连续身份仅为候选；出画及遮挡期间不能断言状态持续。"
+        ]
+      }
+    },
+    {
+      "id": "V2-O17",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/objects/16"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V1",
+        "V2-V3"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "label": "洋葱碗",
+      "appearance": "白色碗中装数颗紫皮洋葱",
+      "identity_status": "uncertain",
+      "confidence": 0.9,
+      "uncertainties": [
+        "连续身份仅为候选；出画及遮挡期间不能断言状态持续。"
+      ],
+      "historical_object_ids": [],
+      "model_identity_status": "candidate_continuous",
+      "identity_interpretation": "CANDIDATE_CORRESPONDENCE; disjoint sampled observations do not establish uninterrupted physical identity",
+      "occlusion_and_out_of_frame": "NOT_EXHAUSTIVELY_ANNOTATED",
+      "model_claim": {
+        "object_id": "O17",
+        "label": "洋葱碗",
+        "appearance": "白色碗中装数颗紫皮洋葱",
+        "identity_status": "candidate_continuous",
+        "evidence_refs": [
+          "V1",
+          "V3"
+        ],
+        "confidence": 0.9,
+        "uncertainties": [
+          "连续身份仅为候选；出画及遮挡期间不能断言状态持续。"
+        ]
+      }
+    },
+    {
+      "id": "V2-O18",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/objects/17"
+        },
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/17"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V3",
+        "V2-V10",
+        "V2-V22"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "label": "粉色盖罐",
+      "appearance": "透明塑料罐配粉色螺旋盖，内含粉红色物质",
+      "identity_status": "uncertain",
+      "confidence": 0.6,
+      "uncertainties": [
+        "内容物未知，可能为糖或调味料",
+        "连续身份仅为候选；出画及遮挡期间不能断言状态持续。"
+      ],
+      "historical_object_ids": [
+        "O18"
+      ],
+      "model_identity_status": "uncertain",
+      "identity_interpretation": "CANDIDATE_CORRESPONDENCE; disjoint sampled observations do not establish uninterrupted physical identity",
+      "occlusion_and_out_of_frame": "NOT_EXHAUSTIVELY_ANNOTATED",
+      "model_claim": {
+        "object_id": "O18",
+        "label": "粉色盖罐",
+        "appearance": "透明塑料罐配粉色螺旋盖，内含粉红色物质",
+        "identity_status": "uncertain",
+        "evidence_refs": [
+          "V3",
+          "V10",
+          "V22"
+        ],
+        "confidence": 0.6,
+        "uncertainties": [
+          "内容物未知，可能为糖或调味料",
+          "连续身份仅为候选；出画及遮挡期间不能断言状态持续。"
+        ]
+      }
+    },
+    {
+      "id": "V2-O19",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/objects/18"
+        },
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/13"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V25"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "label": "烤箱",
+      "appearance": "白色Whirlpool烤箱，下部嵌入式，带玻璃门",
+      "identity_status": "uncertain",
+      "confidence": 0.99,
+      "uncertainties": [
+        "连续身份仅为候选；出画及遮挡期间不能断言状态持续。"
+      ],
+      "historical_object_ids": [
+        "O14"
+      ],
+      "model_identity_status": "candidate_continuous",
+      "identity_interpretation": "CANDIDATE_CORRESPONDENCE; disjoint sampled observations do not establish uninterrupted physical identity",
+      "occlusion_and_out_of_frame": "NOT_EXHAUSTIVELY_ANNOTATED",
+      "model_claim": {
+        "object_id": "O19",
+        "label": "烤箱",
+        "appearance": "白色Whirlpool烤箱，下部嵌入式，带玻璃门",
+        "identity_status": "candidate_continuous",
+        "evidence_refs": [
+          "V25"
+        ],
+        "confidence": 0.99,
+        "uncertainties": [
+          "连续身份仅为候选；出画及遮挡期间不能断言状态持续。"
+        ]
+      }
+    },
+    {
+      "id": "V2-O20",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/objects/19"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V1",
+        "V2-V3",
+        "V2-V10"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "label": "台面杂物区",
+      "appearance": "包含刀架、调料瓶、纸盒等密集摆放物品",
+      "identity_status": "uncertain",
+      "confidence": 0.3,
+      "uncertainties": [
+        "多数物品未参与操作，身份不关键",
+        "连续身份仅为候选；出画及遮挡期间不能断言状态持续。"
+      ],
+      "historical_object_ids": [],
+      "model_identity_status": "unknown",
+      "identity_interpretation": "CANDIDATE_CORRESPONDENCE; disjoint sampled observations do not establish uninterrupted physical identity",
+      "occlusion_and_out_of_frame": "NOT_EXHAUSTIVELY_ANNOTATED",
+      "model_claim": {
+        "object_id": "O20",
+        "label": "台面杂物区",
+        "appearance": "包含刀架、调料瓶、纸盒等密集摆放物品",
+        "identity_status": "unknown",
+        "evidence_refs": [
+          "V1",
+          "V3",
+          "V10"
+        ],
+        "confidence": 0.3,
+        "uncertainties": [
+          "多数物品未参与操作，身份不关键",
+          "连续身份仅为候选；出画及遮挡期间不能断言状态持续。"
+        ]
+      }
+    },
+    {
+      "id": "H1-O02",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/1"
+        }
+      ],
+      "evidence_refs": [],
+      "confirmation_status": "UNCONFIRMED",
+      "label": "盒装褐色鸡蛋（取出组）",
+      "summary": "取蛋计数候选为3；两枚敲入确证；第三枚是否破损与入盒未知。",
+      "identity_status": "uncertain",
+      "historical_object_ids": [
+        "O02"
+      ],
+      "corresponding_model_object_ids": [],
+      "uncertainties": [
+        "历史材料/观察指称或组实体；未与新对象自动确认物理同一性。"
+      ]
+    },
+    {
+      "id": "H1-O03",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/2"
+        }
+      ],
+      "evidence_refs": [],
+      "confirmation_status": "UNCONFIRMED",
+      "label": "蛋壳",
+      "summary": "前两次敲蛋产生两份蛋壳；第三份是否产生未知，不能固定后段壳总数。",
+      "identity_status": "uncertain",
+      "historical_object_ids": [
+        "O03"
+      ],
+      "corresponding_model_object_ids": [],
+      "uncertainties": [
+        "历史材料/观察指称或组实体；未与新对象自动确认物理同一性。"
+      ]
+    },
+    {
+      "id": "H1-O09",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/8"
+        }
+      ],
+      "evidence_refs": [],
+      "confirmation_status": "UNCONFIRMED",
+      "label": "黄油条及融化后的黄油",
+      "summary": "固态、第一次部分融化、第二次液态为主仍见固块、搅动、倒入混合物；终态固块和精确残留未知。",
+      "identity_status": "uncertain",
+      "historical_object_ids": [
+        "O09"
+      ],
+      "corresponding_model_object_ids": [],
+      "uncertainties": [
+        "历史材料/观察指称或组实体；未与新对象自动确认物理同一性。"
+      ]
+    },
+    {
+      "id": "H1-O14",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/13"
+        }
+      ],
+      "evidence_refs": [],
+      "confirmation_status": "UNCONFIRMED",
+      "label": "烤箱/灶台",
+      "summary": "按键后显示100；显示语义、实际温度、预热完成未知；烤模入架后门关闭。",
+      "identity_status": "uncertain",
+      "historical_object_ids": [
+        "O14"
+      ],
+      "corresponding_model_object_ids": [
+        "V2-O12",
+        "V2-O19"
+      ],
+      "uncertainties": [
+        "历史材料/观察指称或组实体；未与新对象自动确认物理同一性。"
+      ]
+    },
+    {
+      "id": "H1-O15",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/14"
+        }
+      ],
+      "evidence_refs": [],
+      "confirmation_status": "UNCONFIRMED",
+      "label": "中间混合物/面糊（随配料逐步形成）",
+      "summary": "蛋液→加糖/奶→均匀淡黄液→表层干粉→加黄油→稠糊→补粉/搅拌成光滑面糊→入模/入烤箱。",
+      "identity_status": "uncertain",
+      "historical_object_ids": [
+        "O15"
+      ],
+      "corresponding_model_object_ids": [],
+      "uncertainties": [
+        "历史材料/观察指称或组实体；未与新对象自动确认物理同一性。"
+      ]
+    },
+    {
+      "id": "H1-O16",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/15"
+        }
+      ],
+      "evidence_refs": [],
+      "confirmation_status": "UNCONFIRMED",
+      "label": "E043黑色勺/量勺状工具（观察指称）",
+      "summary": "E043黑色勺/量勺状工具（观察指称）；补充引用记录，不新增操作事件。",
+      "identity_status": "uncertain",
+      "historical_object_ids": [
+        "O16"
+      ],
+      "corresponding_model_object_ids": [],
+      "uncertainties": [
+        "历史材料/观察指称或组实体；未与新对象自动确认物理同一性。"
+      ]
+    },
+    {
+      "id": "H1-O17",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/16"
+        }
+      ],
+      "evidence_refs": [],
+      "confirmation_status": "UNCONFIRMED",
+      "label": "E053黑色柄刮刀/勺状工具（观察指称）",
+      "summary": "E053黑色柄刮刀/勺状工具（观察指称）；补充引用记录，不新增操作事件。",
+      "identity_status": "uncertain",
+      "historical_object_ids": [
+        "O17"
+      ],
+      "corresponding_model_object_ids": [],
+      "uncertainties": [
+        "历史材料/观察指称或组实体；未与新对象自动确认物理同一性。"
+      ]
+    },
+    {
+      "id": "H1-O22",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/21"
+        }
+      ],
+      "evidence_refs": [],
+      "confirmation_status": "UNCONFIRMED",
+      "label": "靠墙白色纸盒（内容未知）",
+      "summary": "靠墙白色纸盒（内容未知）；补充引用记录，不新增操作事件。",
+      "identity_status": "uncertain",
+      "historical_object_ids": [
+        "O22"
+      ],
+      "corresponding_model_object_ids": [],
+      "uncertainties": [
+        "历史材料/观察指称或组实体；未与新对象自动确认物理同一性。"
+      ]
+    }
+  ],
+  "states": [
+    {
+      "id": "V2-ST1",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/states/0"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V4"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O1",
+      "attribute": "content",
+      "value": "空",
+      "valid_from": null,
+      "valid_to": null,
+      "transition_event_id": "V2-E1",
+      "observability": "direct_visual",
+      "confidence": 0.99,
+      "uncertainties": [
+        "模型给出的连续有效区间尚未被持续视觉跟踪核实，最终有效边界保留null。"
+      ],
+      "model_claimed_interval": {
+        "start_time": 30.0,
+        "end_time": 56.0
+      },
+      "validity_status": "UNVERIFIED_INTERVAL; event-driven claim only",
+      "model_claim": {
+        "state_id": "ST1",
+        "object_id": "O1",
+        "attribute": "content",
+        "value": "空",
+        "valid_from": 30.0,
+        "valid_to": 56.0,
+        "transition_event_id": "E1",
+        "observability": "direct_visual",
+        "evidence_refs": [
+          "V4"
+        ],
+        "confidence": 0.99,
+        "uncertainties": [
+          "模型给出的连续有效区间尚未被持续视觉跟踪核实，最终有效边界保留null。"
+        ]
+      }
+    },
+    {
+      "id": "V2-ST2",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/states/1"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V6",
+        "V2-V7"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O1",
+      "attribute": "content",
+      "value": "UNKNOWN: disputed count",
+      "valid_from": null,
+      "valid_to": null,
+      "transition_event_id": "V2-E3",
+      "observability": "inference",
+      "confidence": null,
+      "uncertainties": [
+        "模型给出的连续有效区间尚未被持续视觉跟踪核实，最终有效边界保留null。",
+        "三蛋黄/完全融化的模型断言与局部图像冲突，不用于确定事实。"
+      ],
+      "model_claimed_interval": {
+        "start_time": 65.0,
+        "end_time": 90.0
+      },
+      "validity_status": "UNVERIFIED_INTERVAL; event-driven claim only",
+      "model_claim": {
+        "state_id": "ST2",
+        "object_id": "O1",
+        "attribute": "content",
+        "value": "3个蛋黄",
+        "valid_from": 65.0,
+        "valid_to": 90.0,
+        "transition_event_id": "E3",
+        "observability": "direct_visual",
+        "evidence_refs": [
+          "V6",
+          "V7"
+        ],
+        "confidence": 0.99,
+        "uncertainties": [
+          "模型给出的连续有效区间尚未被持续视觉跟踪核实，最终有效边界保留null。",
+          "三蛋黄/完全融化的模型断言与局部图像冲突，不用于确定事实。"
+        ]
+      }
+    },
+    {
+      "id": "V2-ST3",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/states/2"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V9"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O1",
+      "attribute": "content",
+      "value": "蛋黄+红糖",
+      "valid_from": null,
+      "valid_to": null,
+      "transition_event_id": "V2-E6",
+      "observability": "direct_visual",
+      "confidence": 0.98,
+      "uncertainties": [
+        "模型给出的连续有效区间尚未被持续视觉跟踪核实，最终有效边界保留null。"
+      ],
+      "model_claimed_interval": {
+        "start_time": 120.0,
+        "end_time": 145.0
+      },
+      "validity_status": "UNVERIFIED_INTERVAL; event-driven claim only",
+      "model_claim": {
+        "state_id": "ST3",
+        "object_id": "O1",
+        "attribute": "content",
+        "value": "蛋黄+红糖",
+        "valid_from": 120.0,
+        "valid_to": 145.0,
+        "transition_event_id": "E6",
+        "observability": "direct_visual",
+        "evidence_refs": [
+          "V9"
+        ],
+        "confidence": 0.98,
+        "uncertainties": [
+          "模型给出的连续有效区间尚未被持续视觉跟踪核实，最终有效边界保留null。"
+        ]
+      }
+    },
+    {
+      "id": "V2-ST4",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/states/3"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V10"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O1",
+      "attribute": "content",
+      "value": "蛋黄+红糖+牛奶",
+      "valid_from": null,
+      "valid_to": null,
+      "transition_event_id": "V2-E8",
+      "observability": "inference",
+      "confidence": 0.97,
+      "uncertainties": [
+        "模型给出的连续有效区间尚未被持续视觉跟踪核实，最终有效边界保留null。",
+        "混合物材料成分来自跨事件谱系推断，当前画面不能直接识别全部成分。"
+      ],
+      "model_claimed_interval": {
+        "start_time": 160.0,
+        "end_time": 198.0
+      },
+      "validity_status": "UNVERIFIED_INTERVAL; event-driven claim only",
+      "model_claim": {
+        "state_id": "ST4",
+        "object_id": "O1",
+        "attribute": "content",
+        "value": "蛋黄+红糖+牛奶",
+        "valid_from": 160.0,
+        "valid_to": 198.0,
+        "transition_event_id": "E8",
+        "observability": "direct_visual",
+        "evidence_refs": [
+          "V10"
+        ],
+        "confidence": 0.97,
+        "uncertainties": [
+          "模型给出的连续有效区间尚未被持续视觉跟踪核实，最终有效边界保留null。",
+          "混合物材料成分来自跨事件谱系推断，当前画面不能直接识别全部成分。"
+        ]
+      }
+    },
+    {
+      "id": "V2-ST5",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/states/4"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V14"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O1",
+      "attribute": "content",
+      "value": "蛋黄+红糖+牛奶+面粉",
+      "valid_from": null,
+      "valid_to": null,
+      "transition_event_id": "V2-E13",
+      "observability": "inference",
+      "confidence": 0.96,
+      "uncertainties": [
+        "模型给出的连续有效区间尚未被持续视觉跟踪核实，最终有效边界保留null。",
+        "混合物材料成分来自跨事件谱系推断，当前画面不能直接识别全部成分。"
+      ],
+      "model_claimed_interval": {
+        "start_time": 290.0,
+        "end_time": 465.0
+      },
+      "validity_status": "UNVERIFIED_INTERVAL; event-driven claim only",
+      "model_claim": {
+        "state_id": "ST5",
+        "object_id": "O1",
+        "attribute": "content",
+        "value": "蛋黄+红糖+牛奶+面粉",
+        "valid_from": 290.0,
+        "valid_to": 465.0,
+        "transition_event_id": "E13",
+        "observability": "direct_visual",
+        "evidence_refs": [
+          "V14"
+        ],
+        "confidence": 0.96,
+        "uncertainties": [
+          "模型给出的连续有效区间尚未被持续视觉跟踪核实，最终有效边界保留null。",
+          "混合物材料成分来自跨事件谱系推断，当前画面不能直接识别全部成分。"
+        ]
+      }
+    },
+    {
+      "id": "V2-ST6",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/states/5"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V21",
+        "V2-V22"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O1",
+      "attribute": "content",
+      "value": "全成分面糊",
+      "valid_from": null,
+      "valid_to": null,
+      "transition_event_id": "V2-E21",
+      "observability": "inference",
+      "confidence": 0.99,
+      "uncertainties": [
+        "模型给出的连续有效区间尚未被持续视觉跟踪核实，最终有效边界保留null。",
+        "混合物材料成分来自跨事件谱系推断，当前画面不能直接识别全部成分。"
+      ],
+      "model_claimed_interval": {
+        "start_time": 468.0,
+        "end_time": 633.0
+      },
+      "validity_status": "UNVERIFIED_INTERVAL; event-driven claim only",
+      "model_claim": {
+        "state_id": "ST6",
+        "object_id": "O1",
+        "attribute": "content",
+        "value": "全成分面糊",
+        "valid_from": 468.0,
+        "valid_to": 633.0,
+        "transition_event_id": "E21",
+        "observability": "direct_visual",
+        "evidence_refs": [
+          "V21",
+          "V22"
+        ],
+        "confidence": 0.99,
+        "uncertainties": [
+          "模型给出的连续有效区间尚未被持续视觉跟踪核实，最终有效边界保留null。",
+          "混合物材料成分来自跨事件谱系推断，当前画面不能直接识别全部成分。"
+        ]
+      }
+    },
+    {
+      "id": "V2-ST7",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/states/6"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V15"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O9",
+      "attribute": "content",
+      "value": "固态黄油",
+      "valid_from": null,
+      "valid_to": null,
+      "transition_event_id": "V2-E15",
+      "observability": "direct_visual",
+      "confidence": 0.99,
+      "uncertainties": [
+        "模型给出的连续有效区间尚未被持续视觉跟踪核实，最终有效边界保留null。"
+      ],
+      "model_claimed_interval": {
+        "start_time": 320.0,
+        "end_time": 338.0
+      },
+      "validity_status": "UNVERIFIED_INTERVAL; event-driven claim only",
+      "model_claim": {
+        "state_id": "ST7",
+        "object_id": "O9",
+        "attribute": "content",
+        "value": "固态黄油",
+        "valid_from": 320.0,
+        "valid_to": 338.0,
+        "transition_event_id": "E15",
+        "observability": "direct_visual",
+        "evidence_refs": [
+          "V15"
+        ],
+        "confidence": 0.99,
+        "uncertainties": [
+          "模型给出的连续有效区间尚未被持续视觉跟踪核实，最终有效边界保留null。"
+        ]
+      }
+    },
+    {
+      "id": "V2-ST8",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/states/7"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V17"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O9",
+      "attribute": "content",
+      "value": "部分融化黄油",
+      "valid_from": null,
+      "valid_to": null,
+      "transition_event_id": "V2-E17",
+      "observability": "direct_visual",
+      "confidence": 0.97,
+      "uncertainties": [
+        "模型给出的连续有效区间尚未被持续视觉跟踪核实，最终有效边界保留null。"
+      ],
+      "model_claimed_interval": {
+        "start_time": 395.0,
+        "end_time": 405.0
+      },
+      "validity_status": "UNVERIFIED_INTERVAL; event-driven claim only",
+      "model_claim": {
+        "state_id": "ST8",
+        "object_id": "O9",
+        "attribute": "content",
+        "value": "部分融化黄油",
+        "valid_from": 395.0,
+        "valid_to": 405.0,
+        "transition_event_id": "E17",
+        "observability": "direct_visual",
+        "evidence_refs": [
+          "V17"
+        ],
+        "confidence": 0.97,
+        "uncertainties": [
+          "模型给出的连续有效区间尚未被持续视觉跟踪核实，最终有效边界保留null。"
+        ]
+      }
+    },
+    {
+      "id": "V2-ST9",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/states/8"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V19"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O9",
+      "attribute": "content",
+      "value": "UNKNOWN: full melting not established",
+      "valid_from": null,
+      "valid_to": null,
+      "transition_event_id": "V2-E19",
+      "observability": "inference",
+      "confidence": null,
+      "uncertainties": [
+        "模型给出的连续有效区间尚未被持续视觉跟踪核实，最终有效边界保留null。",
+        "三蛋黄/完全融化的模型断言与局部图像冲突，不用于确定事实。"
+      ],
+      "model_claimed_interval": {
+        "start_time": 430.0,
+        "end_time": 465.0
+      },
+      "validity_status": "UNVERIFIED_INTERVAL; event-driven claim only",
+      "model_claim": {
+        "state_id": "ST9",
+        "object_id": "O9",
+        "attribute": "content",
+        "value": "完全融化黄油",
+        "valid_from": 430.0,
+        "valid_to": 465.0,
+        "transition_event_id": "E19",
+        "observability": "direct_visual",
+        "evidence_refs": [
+          "V19"
+        ],
+        "confidence": 0.99,
+        "uncertainties": [
+          "模型给出的连续有效区间尚未被持续视觉跟踪核实，最终有效边界保留null。",
+          "三蛋黄/完全融化的模型断言与局部图像冲突，不用于确定事实。"
+        ]
+      }
+    },
+    {
+      "id": "V2-ST10",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/states/9"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V23"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O10",
+      "attribute": "content",
+      "value": "少量油",
+      "valid_from": null,
+      "valid_to": null,
+      "transition_event_id": "V2-E24",
+      "observability": "direct_visual",
+      "confidence": 0.98,
+      "uncertainties": [
+        "模型给出的连续有效区间尚未被持续视觉跟踪核实，最终有效边界保留null。"
+      ],
+      "model_claimed_interval": {
+        "start_time": 565.0,
+        "end_time": 633.0
+      },
+      "validity_status": "UNVERIFIED_INTERVAL; event-driven claim only",
+      "model_claim": {
+        "state_id": "ST10",
+        "object_id": "O10",
+        "attribute": "content",
+        "value": "少量油",
+        "valid_from": 565.0,
+        "valid_to": 633.0,
+        "transition_event_id": "E24",
+        "observability": "direct_visual",
+        "evidence_refs": [
+          "V23"
+        ],
+        "confidence": 0.98,
+        "uncertainties": [
+          "模型给出的连续有效区间尚未被持续视觉跟踪核实，最终有效边界保留null。"
+        ]
+      }
+    },
+    {
+      "id": "V2-ST11",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/states/10"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V24"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O10",
+      "attribute": "content",
+      "value": "面糊",
+      "valid_from": null,
+      "valid_to": null,
+      "transition_event_id": "V2-E26",
+      "observability": "direct_visual",
+      "confidence": 0.99,
+      "uncertainties": [
+        "模型给出的连续有效区间尚未被持续视觉跟踪核实，最终有效边界保留null。"
+      ],
+      "model_claimed_interval": {
+        "start_time": 678.0,
+        "end_time": 686.0
+      },
+      "validity_status": "UNVERIFIED_INTERVAL; event-driven claim only",
+      "model_claim": {
+        "state_id": "ST11",
+        "object_id": "O10",
+        "attribute": "content",
+        "value": "面糊",
+        "valid_from": 678.0,
+        "valid_to": 686.0,
+        "transition_event_id": "E26",
+        "observability": "direct_visual",
+        "evidence_refs": [
+          "V24"
+        ],
+        "confidence": 0.99,
+        "uncertainties": [
+          "模型给出的连续有效区间尚未被持续视觉跟踪核实，最终有效边界保留null。"
+        ]
+      }
+    },
+    {
+      "id": "V2-ST12",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/states/11"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V1",
+        "V2-V16"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O11",
+      "attribute": "door",
+      "value": "closed",
+      "valid_from": null,
+      "valid_to": null,
+      "transition_event_id": null,
+      "observability": "direct_visual",
+      "confidence": 0.95,
+      "uncertainties": [
+        "模型给出的连续有效区间尚未被持续视觉跟踪核实，最终有效边界保留null。"
+      ],
+      "model_claimed_interval": {
+        "start_time": 0.0,
+        "end_time": 338.0
+      },
+      "validity_status": "UNVERIFIED_INTERVAL; event-driven claim only",
+      "model_claim": {
+        "state_id": "ST12",
+        "object_id": "O11",
+        "attribute": "door",
+        "value": "closed",
+        "valid_from": 0.0,
+        "valid_to": 338.0,
+        "transition_event_id": null,
+        "observability": "direct_visual",
+        "evidence_refs": [
+          "V1",
+          "V16"
+        ],
+        "confidence": 0.95,
+        "uncertainties": [
+          "模型给出的连续有效区间尚未被持续视觉跟踪核实，最终有效边界保留null。"
+        ]
+      }
+    },
+    {
+      "id": "V2-ST13",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/states/12"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V16"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O11",
+      "attribute": "door",
+      "value": "open",
+      "valid_from": null,
+      "valid_to": null,
+      "transition_event_id": "V2-E16",
+      "observability": "direct_visual",
+      "confidence": 0.99,
+      "uncertainties": [
+        "模型给出的连续有效区间尚未被持续视觉跟踪核实，最终有效边界保留null。"
+      ],
+      "model_claimed_interval": {
+        "start_time": 340.0,
+        "end_time": 345.0
+      },
+      "validity_status": "UNVERIFIED_INTERVAL; event-driven claim only",
+      "model_claim": {
+        "state_id": "ST13",
+        "object_id": "O11",
+        "attribute": "door",
+        "value": "open",
+        "valid_from": 340.0,
+        "valid_to": 345.0,
+        "transition_event_id": "E16",
+        "observability": "direct_visual",
+        "evidence_refs": [
+          "V16"
+        ],
+        "confidence": 0.99,
+        "uncertainties": [
+          "模型给出的连续有效区间尚未被持续视觉跟踪核实，最终有效边界保留null。"
+        ]
+      }
+    },
+    {
+      "id": "V2-ST14",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/states/13"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V25"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O19",
+      "attribute": "door",
+      "value": "open",
+      "valid_from": null,
+      "valid_to": null,
+      "transition_event_id": "V2-E28",
+      "observability": "direct_visual",
+      "confidence": 0.99,
+      "uncertainties": [
+        "模型给出的连续有效区间尚未被持续视觉跟踪核实，最终有效边界保留null。"
+      ],
+      "model_claimed_interval": {
+        "start_time": 686.0,
+        "end_time": 688.0
+      },
+      "validity_status": "UNVERIFIED_INTERVAL; event-driven claim only",
+      "model_claim": {
+        "state_id": "ST14",
+        "object_id": "O19",
+        "attribute": "door",
+        "value": "open",
+        "valid_from": 686.0,
+        "valid_to": 688.0,
+        "transition_event_id": "E28",
+        "observability": "direct_visual",
+        "evidence_refs": [
+          "V25"
+        ],
+        "confidence": 0.99,
+        "uncertainties": [
+          "模型给出的连续有效区间尚未被持续视觉跟踪核实，最终有效边界保留null。"
+        ]
+      }
+    },
+    {
+      "id": "V2-ST15",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/states/14"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V25"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O19",
+      "attribute": "door",
+      "value": "closed",
+      "valid_from": null,
+      "valid_to": null,
+      "transition_event_id": "V2-E30",
+      "observability": "direct_visual",
+      "confidence": 0.99,
+      "uncertainties": [
+        "模型给出的连续有效区间尚未被持续视觉跟踪核实，最终有效边界保留null。"
+      ],
+      "model_claimed_interval": {
+        "start_time": 692.0,
+        "end_time": 696.929567
+      },
+      "validity_status": "UNVERIFIED_INTERVAL; event-driven claim only",
+      "model_claim": {
+        "state_id": "ST15",
+        "object_id": "O19",
+        "attribute": "door",
+        "value": "closed",
+        "valid_from": 692.0,
+        "valid_to": 696.929567,
+        "transition_event_id": "E30",
+        "observability": "direct_visual",
+        "evidence_refs": [
+          "V25"
+        ],
+        "confidence": 0.99,
+        "uncertainties": [
+          "模型给出的连续有效区间尚未被持续视觉跟踪核实，最终有效边界保留null。"
+        ]
+      }
+    },
+    {
+      "id": "H1-O01.S01",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/0/state_history/0"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E005-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O1",
+      "attribute": "location",
+      "value": "台面中央、空置",
+      "before": "旁侧嵌套存放",
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 29.0,
+        "end_time": 41.0
+      },
+      "transition_event_id": "V2-E1",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O01.S02",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/0/state_history/1"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E010-01",
+        "H1-V-E010-02"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O1",
+      "attribute": "contents",
+      "value": "一枚蛋液（一个蛋黄）",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 60.0,
+        "end_time": 66.0
+      },
+      "transition_event_id": "V2-E3",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O01.S03",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/0/state_history/2"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E011-01",
+        "H1-V-E011-02"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O1",
+      "attribute": "contents",
+      "value": "累计两枚蛋液（两个蛋黄）",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 67.0,
+        "end_time": 76.0
+      },
+      "transition_event_id": "V2-E4",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O01.S04",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/0/state_history/3"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E018-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O1",
+      "attribute": "contents",
+      "value": "蛋液上新增褐色糖堆",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 123.0,
+        "end_time": 132.0
+      },
+      "transition_event_id": "V2-E6",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O01.S05",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/0/state_history/4"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E023-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O1",
+      "attribute": "contents",
+      "value": "新增牛奶",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 158.0,
+        "end_time": 165.0
+      },
+      "transition_event_id": "V2-E8",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O01.S06",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/0/state_history/5"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E027-01",
+        "H1-V-E027-02",
+        "H1-V-E027-03"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O1",
+      "attribute": "contents",
+      "value": "淡黄均匀液",
+      "before": "蛋/糖/奶分层",
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 199,
+        "end_time": 235
+      },
+      "transition_event_id": "V2-E10",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O01.S07",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/0/state_history/6"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E032-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O1",
+      "attribute": "contents",
+      "value": "淡黄液面新增白色粉堆",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 283.0,
+        "end_time": 292.0
+      },
+      "transition_event_id": "V2-E13",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O01.S08",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/0/state_history/7"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E044-01",
+        "H1-V-E044-02"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O1",
+      "attribute": "contents",
+      "value": "新增倒入的黄油；是否含固块另列未知",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 461.0,
+        "end_time": 469.0
+      },
+      "transition_event_id": "V2-E21",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O01.S09",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/0/state_history/8"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E045-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O1",
+      "attribute": "contents",
+      "value": "稠厚淡黄糊",
+      "before": "粉/液分层",
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 470.0,
+        "end_time": 529.0
+      },
+      "transition_event_id": "V2-E22",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O01.S10",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/0/state_history/9"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E051-01",
+        "H1-V-E051-02"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O1",
+      "attribute": "contents",
+      "value": "面糊表面新增干粉",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 595,
+        "end_time": 604
+      },
+      "transition_event_id": "H1-E051",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O01.S11",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/0/state_history/10"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E052-01",
+        "H1-V-E052-02"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O1",
+      "attribute": "contents",
+      "value": "光滑均匀淡黄面糊",
+      "before": "表面带干粉",
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 605.0,
+        "end_time": 631.0
+      },
+      "transition_event_id": "H1-E052",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O01.S12",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/0/state_history/11"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E053-01",
+        "H1-V-E053-02"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O1",
+      "attribute": "contents",
+      "value": "面糊已转入烤模、容器近空",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 633,
+        "end_time": 679
+      },
+      "transition_event_id": "V2-E26",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O01.S13",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/0/state_history/12"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E054-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O1",
+      "attribute": "tool_present",
+      "value": "内留黑色刮刀/勺状工具",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 680.2,
+        "end_time": 680.2
+      },
+      "transition_event_id": "V2-E45",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "工具已在容器内，仅观察结果状态；放置动作时间未知。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O02.S01",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/1/state_history/0"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E007-01",
+        "H1-V-E007-02",
+        "H1-I-E007-01",
+        "H1-T-R10"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "H1-O02",
+      "attribute": "taken_count",
+      "value": 3,
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 47.0,
+        "end_time": 54.0
+      },
+      "transition_event_id": "V2-E2",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "UNCERTAIN",
+      "uncertainties": [
+        "V2计数和R10文字印证不能替代逐次动作确认。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O02.S02",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/1/state_history/1"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E009-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "H1-O02",
+      "attribute": "distribution",
+      "value": "台面暂存两枚、手持一枚",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 56.0,
+        "end_time": 59.0
+      },
+      "transition_event_id": "H1-E009",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O02.S03",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/1/state_history/2"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E010-01",
+        "H1-V-E010-02"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "H1-O02",
+      "attribute": "cracked_into_container_count",
+      "value": 1,
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 60.0,
+        "end_time": 66.0
+      },
+      "transition_event_id": "V2-E3",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O02.S04",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/1/state_history/3"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E011-01",
+        "H1-V-E011-02"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "H1-O02",
+      "attribute": "cracked_into_container_count",
+      "value": 2,
+      "before": 1,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 67.0,
+        "end_time": 76.0
+      },
+      "transition_event_id": "V2-E4",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O02.S05",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/1/state_history/4"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E012-01",
+        "H1-V-E012-02",
+        "H1-V-E012-03",
+        "H1-I-E012-02",
+        "H1-T-R10"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "H1-O02",
+      "attribute": "third_egg_integrity",
+      "value": null,
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 76.0,
+        "end_time": 84.0
+      },
+      "transition_event_id": "V2-E4",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "UNCERTAIN",
+      "uncertainties": [
+        "第三枚有磕/掰样动作，完整性未知。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O02.S06",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/1/state_history/5"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E013-01",
+        "H1-I-E013-01",
+        "H1-T-R11"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "H1-O02",
+      "attribute": "returned_inside_carton",
+      "value": null,
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 85.0,
+        "end_time": 89.0
+      },
+      "transition_event_id": "V2-E44",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "UNCERTAIN",
+      "uncertainties": [
+        "仅见持蛋到盒处、随后空手，不显示入盒。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O03.S01",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/2/state_history/0"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E010-01",
+        "H1-V-E010-02"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "H1-O03",
+      "attribute": "observed_shell_portions",
+      "value": 1,
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 60.0,
+        "end_time": 66.0
+      },
+      "transition_event_id": "V2-E3",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O03.S02",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/2/state_history/1"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E011-01",
+        "H1-V-E011-02"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "H1-O03",
+      "attribute": "observed_shell_portions",
+      "value": 2,
+      "before": 1,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 67.0,
+        "end_time": 76.0
+      },
+      "transition_event_id": "V2-E4",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O03.S03",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/2/state_history/2"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E012-01",
+        "H1-V-E012-02",
+        "H1-V-E012-03",
+        "H1-I-E012-03"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "H1-O03",
+      "attribute": "third_shell_created",
+      "value": null,
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 76.0,
+        "end_time": 84.0
+      },
+      "transition_event_id": "V2-E4",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "UNCERTAIN",
+      "uncertainties": [
+        "83.2s似见第三份壳，未确证；后续总量未知。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O04.S01",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/3/state_history/0"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E014-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O4",
+      "attribute": "bag_access",
+      "value": "袋口打开、手持",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 90.0,
+        "end_time": 97.0
+      },
+      "transition_event_id": "H1-E014",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O04.S02",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/3/state_history/1"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E016-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O4",
+      "attribute": "contents_use",
+      "value": "部分糖倒入量杯",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 107.0,
+        "end_time": 119.0
+      },
+      "transition_event_id": "V2-E5",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O04.S03",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/3/state_history/2"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E017-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O4",
+      "attribute": "location",
+      "value": "右侧台面",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 120.0,
+        "end_time": 122.0
+      },
+      "transition_event_id": "H1-E017",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O04.S04",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/3/state_history/3"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E019-01",
+        "H1-I-E019-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O4",
+      "attribute": "sugar_bag_folded_or_inserted",
+      "value": null,
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 133.0,
+        "end_time": 138.0
+      },
+      "transition_event_id": "H1-E019",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "UNCERTAIN",
+      "uncertainties": [
+        "折口与插入不能由整理动作确认。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O04.S06",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/3/state_history/4"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E054-01",
+        "H1-V-E054-02",
+        "H1-I-E054-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O4",
+      "attribute": "sugar_bag_inserted_during_event",
+      "value": null,
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 680.0,
+        "end_time": 685.0
+      },
+      "transition_event_id": "V2-E45",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "UNCERTAIN",
+      "uncertainties": [
+        "680.2s已在罐内；不得由状态反推本段插入。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O04.S05",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/3/state_history/5"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E054-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O4",
+      "attribute": "location",
+      "value": "已位于粉盖罐内",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 680.2,
+        "end_time": 680.2
+      },
+      "transition_event_id": "V2-E45",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "第四轮要求记为已存在的状态，插入发生时间未知，不是E054插入动作。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O05.S01",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/4/state_history/0"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E015-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O13",
+      "attribute": "group_member_use",
+      "value": "取一只量杯查看",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 98.0,
+        "end_time": 106.0
+      },
+      "transition_event_id": "H1-E015",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "指组内当时观察到的一只量杯，不推定与其他时段为同一只。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O05.S02",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/4/state_history/1"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E016-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O13",
+      "attribute": "group_member_use",
+      "value": "杯内见褐色糖",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 107.0,
+        "end_time": 119.0
+      },
+      "transition_event_id": "V2-E5",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "指组内当时观察到的一只量杯，不推定与其他时段为同一只。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O05.S03",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/4/state_history/2"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E018-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O13",
+      "attribute": "group_member_use",
+      "value": "杯内糖倒入混合容器",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 123.0,
+        "end_time": 132.0
+      },
+      "transition_event_id": "V2-E6",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "指组内当时观察到的一只量杯，不推定与其他时段为同一只。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O05.S04",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/4/state_history/3"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E019-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O13",
+      "attribute": "group_member_use",
+      "value": "量杯放回",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 133.0,
+        "end_time": 138.0
+      },
+      "transition_event_id": "H1-E019",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "指组内当时观察到的一只量杯，不推定与其他时段为同一只。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O05.S05",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/4/state_history/4"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E020-01",
+        "H1-V-E020-02"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O13",
+      "attribute": "group_member_use",
+      "value": "查看量杯；一只杯柄见1/4 CUP",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 139.0,
+        "end_time": 145.0
+      },
+      "transition_event_id": "H1-E020",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "指组内当时观察到的一只量杯，不推定与其他时段为同一只。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O05.S11",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/4/state_history/5"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E020-01",
+        "H1-V-E020-02",
+        "H1-I-E020-02"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O13",
+      "attribute": "same_cup_as_E015",
+      "value": null,
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 139.0,
+        "end_time": 145.0
+      },
+      "transition_event_id": "H1-E020",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "UNCERTAIN",
+      "uncertainties": [
+        "单杯身份无连续跟踪。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O05.S06",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/4/state_history/6"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E022-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O13",
+      "attribute": "group_member_use",
+      "value": "杯中量取牛奶",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 152.0,
+        "end_time": 157.0
+      },
+      "transition_event_id": "V2-E7",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "指组内当时观察到的一只量杯，不推定与其他时段为同一只。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O05.S07",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/4/state_history/7"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E023-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O13",
+      "attribute": "group_member_use",
+      "value": "杯中奶倒入混合容器",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 158.0,
+        "end_time": 165.0
+      },
+      "transition_event_id": "V2-E8",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "指组内当时观察到的一只量杯，不推定与其他时段为同一只。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O05.S08",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/4/state_history/8"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E029-01",
+        "H1-V-E029-02"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O13",
+      "attribute": "group_member_use",
+      "value": "手持空量杯",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 240.0,
+        "end_time": 258.0
+      },
+      "transition_event_id": "H1-E029",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "指组内当时观察到的一只量杯，不推定与其他时段为同一只。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O05.S09",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/4/state_history/9"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E031-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O13",
+      "attribute": "group_member_use",
+      "value": "杯中量取面粉",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 269.0,
+        "end_time": 282.0
+      },
+      "transition_event_id": "V2-E12",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "指组内当时观察到的一只量杯，不推定与其他时段为同一只。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O05.S10",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/4/state_history/10"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E032-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O13",
+      "attribute": "group_member_use",
+      "value": "杯中面粉倒入混合容器",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 283.0,
+        "end_time": 292.0
+      },
+      "transition_event_id": "V2-E13",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "指组内当时观察到的一只量杯，不推定与其他时段为同一只。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O06.S01",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/5/state_history/0"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E021-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O5",
+      "attribute": "closure",
+      "value": "黄盖打开",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 146.0,
+        "end_time": 151.0
+      },
+      "transition_event_id": "V2-E7",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O06.S02",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/5/state_history/1"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E022-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O5",
+      "attribute": "contents_use",
+      "value": "部分牛奶倒入量杯",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 152.0,
+        "end_time": 157.0
+      },
+      "transition_event_id": "V2-E7",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O06.S03",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/5/state_history/2"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E024-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O5",
+      "attribute": "closure_and_location",
+      "value": "拧回黄盖、归位灶侧",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 164.0,
+        "end_time": 173.0
+      },
+      "transition_event_id": "H1-E024",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O07.S01",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/6/state_history/0"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E025-01",
+        "H1-V-E025-02"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O6",
+      "attribute": "assembly",
+      "value": "两根棒装入本体",
+      "before": "本体与棒分离",
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 174.0,
+        "end_time": 193.0
+      },
+      "transition_event_id": "V2-E9",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O07.S02",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/6/state_history/1"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E027-01",
+        "H1-V-E027-02",
+        "H1-V-E027-03"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O6",
+      "attribute": "mixing_round",
+      "value": 1,
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 199,
+        "end_time": 235
+      },
+      "transition_event_id": "V2-E10",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O07.S05",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/6/state_history/2"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E028-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O6",
+      "attribute": "location",
+      "value": "提离混合容器并置左台面",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 234.0,
+        "end_time": 239.0
+      },
+      "transition_event_id": "H1-E028",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O07.S03",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/6/state_history/3"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E045-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O6",
+      "attribute": "mixing_round",
+      "value": 2,
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 470.0,
+        "end_time": 529.0
+      },
+      "transition_event_id": "V2-E22",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O07.S04",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/6/state_history/4"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E052-01",
+        "H1-V-E052-02"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O6",
+      "attribute": "mixing_round",
+      "value": 3,
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 605.0,
+        "end_time": 631.0
+      },
+      "transition_event_id": "H1-E052",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O08.S01",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/7/state_history/0"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E030-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O7",
+      "attribute": "location",
+      "value": "从吊柜取出至手持",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 259.0,
+        "end_time": 268.0
+      },
+      "transition_event_id": "V2-E11",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O08.S02",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/7/state_history/1"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E031-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O7",
+      "attribute": "contents_use",
+      "value": "开袋、供粉入量杯",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 269.0,
+        "end_time": 282.0
+      },
+      "transition_event_id": "V2-E12",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O08.S03",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/7/state_history/2"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E051-01",
+        "H1-V-E051-02"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O7",
+      "attribute": "contents_use",
+      "value": "袋直接供粉入混合容器",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 595,
+        "end_time": 604
+      },
+      "transition_event_id": "H1-E051",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O09.S01",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/8/state_history/0"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E034-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "H1-O09",
+      "attribute": "packaging_and_phase",
+      "value": "拆包、固态黄油裸露",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 303,
+        "end_time": 319
+      },
+      "transition_event_id": "V2-E14",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O09.S02",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/8/state_history/1"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E035-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "H1-O09",
+      "attribute": "location",
+      "value": "玻璃容器内",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 320.0,
+        "end_time": 331.0
+      },
+      "transition_event_id": "V2-E15",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O09.S03",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/8/state_history/2"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E036-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "H1-O09",
+      "attribute": "location",
+      "value": "随玻璃容器第一次入微波炉",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 332.0,
+        "end_time": 343.0
+      },
+      "transition_event_id": "V2-E16",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O09.S04",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/8/state_history/3"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E039-01",
+        "H1-V-E039-02"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "H1-O09",
+      "attribute": "butter_phase",
+      "value": "液体与固态块共存",
+      "before": "固态",
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 390.0,
+        "end_time": 401.0
+      },
+      "transition_event_id": "V2-E17",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O09.S05",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/8/state_history/4"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E040-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "H1-O09",
+      "attribute": "location",
+      "value": "随玻璃容器第二次入微波炉",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 402.0,
+        "end_time": 407.0
+      },
+      "transition_event_id": "V2-E18",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O09.S06",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/8/state_history/5"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E042-01",
+        "H1-V-E042-02"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "H1-O09",
+      "attribute": "butter_phase",
+      "value": "以液体为主、仍见固态块",
+      "before": "部分融化",
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 426.0,
+        "end_time": 433.0
+      },
+      "transition_event_id": "V2-E19",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O09.S07",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/8/state_history/6"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E042-01",
+        "H1-V-E042-02",
+        "H1-I-E042-02",
+        "H1-T-R32"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "H1-O09",
+      "attribute": "solid_fraction",
+      "value": null,
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 426.0,
+        "end_time": 433.0
+      },
+      "transition_event_id": "V2-E19",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "UNCERTAIN",
+      "uncertainties": [
+        "无定量比例证据。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O09.S08",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/8/state_history/7"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E043-01",
+        "H1-V-E043-02"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "H1-O09",
+      "attribute": "butter_phase",
+      "value": "固液混合被搅动，抽样帧仍见固块",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 434.0,
+        "end_time": 460.0
+      },
+      "transition_event_id": "V2-E20",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O09.S09",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/8/state_history/8"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E043-01",
+        "H1-V-E043-02",
+        "H1-I-E043-02"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "H1-O09",
+      "attribute": "butter_fully_melted_after_stirring",
+      "value": null,
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 434.0,
+        "end_time": 460.0
+      },
+      "transition_event_id": "V2-E20",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "UNCERTAIN",
+      "uncertainties": [
+        "搅拌终态未确认。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O09.S10",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/8/state_history/9"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E044-01",
+        "H1-V-E044-02"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "H1-O09",
+      "attribute": "location",
+      "value": "倒入混合容器；原玻璃容器宏观近空",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 461.0,
+        "end_time": 469.0
+      },
+      "transition_event_id": "V2-E21",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O09.S11",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/8/state_history/10"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E044-01",
+        "H1-V-E044-02",
+        "H1-I-E044-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "H1-O09",
+      "attribute": "solid_blocks_transferred",
+      "value": null,
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 461.0,
+        "end_time": 469.0
+      },
+      "transition_event_id": "V2-E21",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "UNCERTAIN",
+      "uncertainties": [
+        "倒入时固块是否已消失未知。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O09.S12",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/8/state_history/11"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E044-01",
+        "H1-V-E044-02",
+        "H1-I-E044-02",
+        "H1-T-R42"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "H1-O09",
+      "attribute": "exact_residue_or_mass_balance",
+      "value": null,
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 461.0,
+        "end_time": 469.0
+      },
+      "transition_event_id": "V2-E21",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "UNCERTAIN",
+      "uncertainties": [
+        "全部倒入仅为宏观候选，不能当定量质量守恒。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O10.S01",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/9/state_history/0"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E035-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O9",
+      "attribute": "location_and_contents",
+      "value": "盛固态黄油",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 320.0,
+        "end_time": 331.0
+      },
+      "transition_event_id": "V2-E15",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O10.S02",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/9/state_history/1"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E036-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O9",
+      "attribute": "location_and_contents",
+      "value": "第一次置微波炉转盘",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 332.0,
+        "end_time": 343.0
+      },
+      "transition_event_id": "V2-E16",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O10.S03",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/9/state_history/2"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E039-01",
+        "H1-V-E039-02"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O9",
+      "attribute": "location_and_contents",
+      "value": "第一次取出，盛固液混合黄油",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 390.0,
+        "end_time": 401.0
+      },
+      "transition_event_id": "V2-E17",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O10.S04",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/9/state_history/3"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E040-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O9",
+      "attribute": "location_and_contents",
+      "value": "再次置微波炉转盘",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 402.0,
+        "end_time": 407.0
+      },
+      "transition_event_id": "V2-E18",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O10.S05",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/9/state_history/4"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E042-01",
+        "H1-V-E042-02"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O9",
+      "attribute": "location_and_contents",
+      "value": "第二次取出，盛液态为主且有固块黄油",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 426.0,
+        "end_time": 433.0
+      },
+      "transition_event_id": "V2-E19",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O10.S06",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/9/state_history/5"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E044-02"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O9",
+      "attribute": "location_and_contents",
+      "value": "倾倒后空置于灶台黑面",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 470.2,
+        "end_time": 470.2
+      },
+      "transition_event_id": "V2-E21",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "E044放置子动作结果；470.2s为后续结果帧，保留原事件末界469s，不恢复E058。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O10.S07",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/9/state_history/6"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E056-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O9",
+      "attribute": "location_and_contents",
+      "value": "灶台黑面仍可见玻璃容器",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 693.2,
+        "end_time": 696.2
+      },
+      "transition_event_id": "H1-E056",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O11.S01",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/10/state_history/0"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E036-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O11",
+      "attribute": "door_and_contents",
+      "value": "门开启、置入盛黄油容器",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 332.0,
+        "end_time": 343.0
+      },
+      "transition_event_id": "V2-E16",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O11.S02",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/10/state_history/1"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E037-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O11",
+      "attribute": "heating_workflow",
+      "value": "第一次关门按键流程",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 344.0,
+        "end_time": 374.0
+      },
+      "transition_event_id": "V2-E16",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O11.S03",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/10/state_history/2"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E037-01",
+        "H1-H-E037-01",
+        "H1-T-R30"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O11",
+      "attribute": "heating_duration_sec",
+      "value": null,
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 344.0,
+        "end_time": 374.0
+      },
+      "transition_event_id": "V2-E16",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "UNCERTAIN",
+      "uncertainties": [
+        "15秒仅文本线索。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O11.S04",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/10/state_history/3"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E039-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O11",
+      "attribute": "display",
+      "value": "End",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 390.2,
+        "end_time": 390.2
+      },
+      "transition_event_id": "V2-E17",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O11.S05",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/10/state_history/4"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E040-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O11",
+      "attribute": "door_and_contents",
+      "value": "容器再次放回转盘",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 402.0,
+        "end_time": 407.0
+      },
+      "transition_event_id": "V2-E18",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O11.S06",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/10/state_history/5"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E041-01",
+        "H1-V-E041-02"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O11",
+      "attribute": "heating_workflow",
+      "value": "第二次关门按键流程",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 408.0,
+        "end_time": 425.0
+      },
+      "transition_event_id": "V2-E18",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O11.S07",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/10/state_history/6"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E041-01",
+        "H1-V-E041-02",
+        "H1-T-R31"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O11",
+      "attribute": "heating_duration_sec",
+      "value": null,
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 408.0,
+        "end_time": 425.0
+      },
+      "transition_event_id": "V2-E18",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "UNCERTAIN",
+      "uncertainties": [
+        "15秒仅文本线索。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O11.S08",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/10/state_history/7"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E042-01",
+        "H1-V-E042-02"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O11",
+      "attribute": "door_and_contents",
+      "value": "取出容器、关门",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 426.0,
+        "end_time": 433.0
+      },
+      "transition_event_id": "V2-E19",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O12.S01",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/11/state_history/0"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E049-01",
+        "H1-V-E049-02"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O10",
+      "attribute": "oil_at_bottom",
+      "value": "模底见少量油；烤模被倾斜旋转",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 560,
+        "end_time": 581
+      },
+      "transition_event_id": "V2-E24",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O12.S02",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/11/state_history/1"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E049-01",
+        "H1-V-E049-02",
+        "H1-I-E049-01",
+        "H1-T-R43",
+        "H1-T-R45"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O10",
+      "attribute": "inner_wall_oil_film",
+      "value": null,
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 560,
+        "end_time": 581
+      },
+      "transition_event_id": "V2-E24",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "UNCERTAIN",
+      "uncertainties": [
+        "动作不等于油膜分布确证。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O12.S03",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/11/state_history/2"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E053-01",
+        "H1-V-E053-02"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O10",
+      "attribute": "contents",
+      "value": "装入面糊",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 633,
+        "end_time": 679
+      },
+      "transition_event_id": "V2-E26",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O12.S04",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/11/state_history/3"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E055-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O10",
+      "attribute": "location",
+      "value": "烤箱烤架内",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 687,
+        "end_time": 692
+      },
+      "transition_event_id": "V2-E28",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O13.S01",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/12/state_history/0"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E048-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O15",
+      "attribute": "closure",
+      "value": "绿盖打开",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 548.0,
+        "end_time": 565.0
+      },
+      "transition_event_id": "V2-E23",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O13.S02",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/12/state_history/1"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E049-01",
+        "H1-V-E049-02"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O15",
+      "attribute": "contents_use",
+      "value": "少量油倒入烤模",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 560,
+        "end_time": 581
+      },
+      "transition_event_id": "V2-E24",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O14.S03",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/13/state_history/0"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E002-01",
+        "H1-V-E002-02",
+        "H1-H-E002-02",
+        "H1-T-R01",
+        "H1-T-R02"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "H1-O14",
+      "attribute": "display_semantics",
+      "value": null,
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 10.0,
+        "end_time": 14.0
+      },
+      "transition_event_id": "V2-E31",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "UNCERTAIN",
+      "uncertainties": [
+        "显示语义未知，不能当预热温度。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O14.S02",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/13/state_history/1"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E003-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "H1-O14",
+      "attribute": "display",
+      "value": "100",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 15.0,
+        "end_time": 19.0
+      },
+      "transition_event_id": "H1-E003",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O14.S01",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/13/state_history/2"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E002-02"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "H1-O14",
+      "attribute": "display",
+      "value": "100",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 15.2,
+        "end_time": 15.2
+      },
+      "transition_event_id": "V2-E31",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "按键后的结果帧，比事件末界晚1.2s；不证明按键因果或温度语义。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O14.S04",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/13/state_history/3"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E055-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "H1-O14",
+      "attribute": "door_and_contents",
+      "value": "门打开、置入盛面糊烤模、关门",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 687,
+        "end_time": 692
+      },
+      "transition_event_id": "V2-E28",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O14.S05",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/13/state_history/4"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E055-01",
+        "H1-H-E055-01",
+        "H1-T-R01",
+        "H1-T-R02"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "H1-O14",
+      "attribute": "oven_preheat_complete",
+      "value": null,
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 687,
+        "end_time": 692
+      },
+      "transition_event_id": "V2-E28",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "UNCERTAIN",
+      "uncertainties": [
+        "预热完成无实际温度证据。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O15.S01",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/14/state_history/0"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E010-01",
+        "H1-V-E010-02"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "H1-O15",
+      "attribute": "mixture_state",
+      "value": "一枚蛋液",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 60.0,
+        "end_time": 66.0
+      },
+      "transition_event_id": "V2-E3",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O15.S02",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/14/state_history/1"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E011-01",
+        "H1-V-E011-02"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "H1-O15",
+      "attribute": "mixture_state",
+      "value": "累计两枚蛋液",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 67.0,
+        "end_time": 76.0
+      },
+      "transition_event_id": "V2-E4",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O15.S03",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/14/state_history/2"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E018-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "H1-O15",
+      "attribute": "mixture_state",
+      "value": "蛋液上加入糖堆",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 123.0,
+        "end_time": 132.0
+      },
+      "transition_event_id": "V2-E6",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O15.S04",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/14/state_history/3"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E023-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "H1-O15",
+      "attribute": "mixture_state",
+      "value": "加入牛奶",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 158.0,
+        "end_time": 165.0
+      },
+      "transition_event_id": "V2-E8",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O15.S05",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/14/state_history/4"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E027-01",
+        "H1-V-E027-02",
+        "H1-V-E027-03"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "H1-O15",
+      "attribute": "mixture_state",
+      "value": "均匀淡黄混合液",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 199,
+        "end_time": 235
+      },
+      "transition_event_id": "V2-E10",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O15.S06",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/14/state_history/5"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E032-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "H1-O15",
+      "attribute": "mixture_state",
+      "value": "液面新增干粉层",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 283.0,
+        "end_time": 292.0
+      },
+      "transition_event_id": "V2-E13",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O15.S07",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/14/state_history/6"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E044-01",
+        "H1-V-E044-02"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "H1-O15",
+      "attribute": "mixture_state",
+      "value": "加入黄油，固块终态未知",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 461.0,
+        "end_time": 469.0
+      },
+      "transition_event_id": "V2-E21",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O15.S08",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/14/state_history/7"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E045-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "H1-O15",
+      "attribute": "mixture_state",
+      "value": "稠厚淡黄糊",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 470.0,
+        "end_time": 529.0
+      },
+      "transition_event_id": "V2-E22",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O15.S09",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/14/state_history/8"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E051-01",
+        "H1-V-E051-02"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "H1-O15",
+      "attribute": "mixture_state",
+      "value": "表面补加干粉",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 595,
+        "end_time": 604
+      },
+      "transition_event_id": "H1-E051",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O15.S10",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/14/state_history/9"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E052-01",
+        "H1-V-E052-02"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "H1-O15",
+      "attribute": "mixture_state",
+      "value": "光滑均匀面糊",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 605.0,
+        "end_time": 631.0
+      },
+      "transition_event_id": "H1-E052",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O15.S11",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/14/state_history/10"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E053-01",
+        "H1-V-E053-02"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "H1-O15",
+      "attribute": "mixture_state",
+      "value": "转入烤模",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 633,
+        "end_time": 679
+      },
+      "transition_event_id": "V2-E26",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O15.S12",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/14/state_history/11"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E055-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "H1-O15",
+      "attribute": "mixture_state",
+      "value": "随烤模入烤箱",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 687,
+        "end_time": 692
+      },
+      "transition_event_id": "V2-E28",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O16.S01",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/15/state_history/0"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E043-01",
+        "H1-V-E043-02"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "H1-O16",
+      "attribute": "use",
+      "value": "勺/量勺状工具在玻璃容器中搅黄油",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 434.0,
+        "end_time": 460.0
+      },
+      "transition_event_id": "V2-E20",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O16.S02",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/15/state_history/1"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E043-01",
+        "H1-V-E043-02",
+        "H1-I-E043-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "H1-O16",
+      "attribute": "same_tool_as_E053_or_cups",
+      "value": null,
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 434.0,
+        "end_time": 460.0
+      },
+      "transition_event_id": "V2-E20",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "UNCERTAIN",
+      "uncertainties": [
+        "物理同一性未确认。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O17.S01",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/16/state_history/0"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E053-01",
+        "H1-V-E053-02"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "H1-O17",
+      "attribute": "use",
+      "value": "刮刀/勺状工具刮擦混合容器",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 633,
+        "end_time": 679
+      },
+      "transition_event_id": "V2-E26",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O17.S02",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/16/state_history/1"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E053-01",
+        "H1-V-E053-02",
+        "H1-I-E053-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "H1-O17",
+      "attribute": "same_tool_as_E043_or_cups",
+      "value": null,
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 633,
+        "end_time": 679
+      },
+      "transition_event_id": "V2-E26",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "UNCERTAIN",
+      "uncertainties": [
+        "物理同一性未确认。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O17.S03",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/16/state_history/2"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E054-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "H1-O17",
+      "attribute": "location",
+      "value": "已留在近空混合容器内",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 680.2,
+        "end_time": 680.2
+      },
+      "transition_event_id": "V2-E45",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O18.S01",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/17/state_history/0"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E019-01",
+        "H1-I-O18.S01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O18",
+      "attribute": "handling_content",
+      "value": null,
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 133.0,
+        "end_time": 138.0
+      },
+      "transition_event_id": "H1-E019",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "UNCERTAIN",
+      "uncertainties": [
+        "整理/按压内容未知，不确证此段开关罐盖。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O18.S02",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/17/state_history/1"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E054-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O18",
+      "attribute": "contents",
+      "value": "罐口已见糖袋",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 680.2,
+        "end_time": 680.2
+      },
+      "transition_event_id": "V2-E45",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O18.S03",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/17/state_history/2"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E054-02"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O18",
+      "attribute": "closure",
+      "value": "粉色盖盖回、罐闭合",
+      "before": "盖分离、罐敞口",
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 681.2,
+        "end_time": 683.2
+      },
+      "transition_event_id": "V2-E45",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O19.S01",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/18/state_history/0"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E004-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O2",
+      "attribute": "location",
+      "value": "翻看后放回叠位",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 20.0,
+        "end_time": 28.0
+      },
+      "transition_event_id": "V2-E32",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O20.S01",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/19/state_history/0"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E006-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O3",
+      "attribute": "closure",
+      "value": "盒盖掀起",
+      "before": "闭合",
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 42.0,
+        "end_time": 47.0
+      },
+      "transition_event_id": "V2-E2",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O20.S02",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/19/state_history/1"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E008-01",
+        "H1-I-E008-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O3",
+      "attribute": "lid_latched",
+      "value": null,
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 53.0,
+        "end_time": 55.0
+      },
+      "transition_event_id": "H1-E008",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "UNCERTAIN",
+      "uncertainties": [
+        "所报盖开启，是否短暂扣合未知。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O20.S03",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/19/state_history/2"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E013-01",
+        "H1-I-E013-01",
+        "H1-T-R11"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O3",
+      "attribute": "returned_inside_carton",
+      "value": null,
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 85.0,
+        "end_time": 89.0
+      },
+      "transition_event_id": "V2-E44",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "UNCERTAIN",
+      "uncertainties": [
+        "不将回到盒处等同入盒。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O21.S01",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/20/state_history/0"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E034-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O8",
+      "attribute": "packaging",
+      "value": "黄油被拆出、包装剥离",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 303,
+        "end_time": 319
+      },
+      "transition_event_id": "V2-E14",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O21.S02",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/20/state_history/1"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E047-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O8",
+      "attribute": "location",
+      "value": "折叠收拢并放鱼形垫",
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 541.0,
+        "end_time": 547.0
+      },
+      "transition_event_id": "H1-E047",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "REPORTED_SUPPORTED",
+      "uncertainties": [
+        "历史报告所述宏观状态，未人工复核；before=null表示未断言前态。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "H1-O22.S01",
+      "annotation_status": "CANDIDATE",
+      "source_type": "historical_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_objects",
+          "json_pointer": "/objects/21/state_history/0"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E029-01",
+        "H1-V-E029-02",
+        "H1-I-E029-01"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "H1-O22",
+      "attribute": "box_identity_and_intent",
+      "value": null,
+      "before": null,
+      "valid_from": null,
+      "valid_to": null,
+      "reported_observation_interval": {
+        "start_time": 240.0,
+        "end_time": 258.0
+      },
+      "transition_event_id": "H1-E029",
+      "observability": "historical_report_only",
+      "confidence": null,
+      "historical_status": "UNCERTAIN",
+      "uncertainties": [
+        "白盒内容与触碰目的未知。",
+        "历史观察区间不是已验证的状态持续区间。"
+      ]
+    },
+    {
+      "id": "STATE-LC-15-2",
+      "annotation_status": "CANDIDATE",
+      "source_type": "integration_candidate",
+      "source_refs": [
+        {
+          "source_id": "local_checks",
+          "json_pointer": "/records/0"
+        }
+      ],
+      "evidence_refs": [
+        "LC-15-2"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O12",
+      "attribute": "display_text",
+      "value": "100",
+      "valid_from": 15.2152,
+      "valid_to": 15.2152,
+      "transition_event_id": null,
+      "observability": "direct_visual_snapshot",
+      "confidence": null,
+      "uncertainties": [
+        "仅对应这一原始帧；不推定此前/此后状态或完整动作。"
+      ]
+    },
+    {
+      "id": "STATE-LC-76-2",
+      "annotation_status": "CANDIDATE",
+      "source_type": "integration_candidate",
+      "source_refs": [
+        {
+          "source_id": "local_checks",
+          "json_pointer": "/records/1"
+        }
+      ],
+      "evidence_refs": [
+        "LC-76-2"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O1",
+      "attribute": "visible_yolk_count",
+      "value": 2,
+      "valid_from": 76.209467,
+      "valid_to": 76.209467,
+      "transition_event_id": null,
+      "observability": "direct_visual_snapshot",
+      "confidence": null,
+      "uncertainties": [
+        "仅对应这一原始帧；不推定此前/此后状态或完整动作。"
+      ]
+    },
+    {
+      "id": "STATE-LC-83-2",
+      "annotation_status": "CANDIDATE",
+      "source_type": "integration_candidate",
+      "source_refs": [
+        {
+          "source_id": "local_checks",
+          "json_pointer": "/records/2"
+        }
+      ],
+      "evidence_refs": [
+        "LC-83-2"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O1",
+      "attribute": "visible_yolk_count",
+      "value": 2,
+      "valid_from": 83.216467,
+      "valid_to": 83.216467,
+      "transition_event_id": null,
+      "observability": "direct_visual_snapshot",
+      "confidence": null,
+      "uncertainties": [
+        "仅对应这一原始帧；不推定此前/此后状态或完整动作。"
+      ]
+    },
+    {
+      "id": "STATE-LC-431-2",
+      "annotation_status": "CANDIDATE",
+      "source_type": "integration_candidate",
+      "source_refs": [
+        {
+          "source_id": "local_checks",
+          "json_pointer": "/records/3"
+        }
+      ],
+      "evidence_refs": [
+        "LC-431-2"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O9",
+      "attribute": "visible_phase",
+      "value": "yellow liquid plus pale solid block",
+      "valid_from": 431.2308,
+      "valid_to": 431.2308,
+      "transition_event_id": null,
+      "observability": "direct_visual_snapshot",
+      "confidence": null,
+      "uncertainties": [
+        "仅对应这一原始帧；不推定此前/此后状态或完整动作。"
+      ]
+    },
+    {
+      "id": "STATE-LC-445-2",
+      "annotation_status": "CANDIDATE",
+      "source_type": "integration_candidate",
+      "source_refs": [
+        {
+          "source_id": "local_checks",
+          "json_pointer": "/records/4"
+        }
+      ],
+      "evidence_refs": [
+        "LC-445-2"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O9",
+      "attribute": "visible_phase",
+      "value": "liquid plus pale solid material",
+      "valid_from": 445.211433,
+      "valid_to": 445.211433,
+      "transition_event_id": null,
+      "observability": "direct_visual_snapshot",
+      "confidence": null,
+      "uncertainties": [
+        "仅对应这一原始帧；不推定此前/此后状态或完整动作。"
+      ]
+    },
+    {
+      "id": "STATE-LC-599-2",
+      "annotation_status": "CANDIDATE",
+      "source_type": "integration_candidate",
+      "source_refs": [
+        {
+          "source_id": "local_checks",
+          "json_pointer": "/records/5"
+        }
+      ],
+      "evidence_refs": [
+        "LC-599-2"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O1",
+      "attribute": "visible_surface",
+      "value": "pale powder-like material under tilted brown paper bag",
+      "valid_from": 599.231967,
+      "valid_to": 599.231967,
+      "transition_event_id": null,
+      "observability": "direct_visual_snapshot",
+      "confidence": null,
+      "uncertainties": [
+        "仅对应这一原始帧；不推定此前/此后状态或完整动作。"
+      ]
+    },
+    {
+      "id": "STATE-LC-610-2",
+      "annotation_status": "CANDIDATE",
+      "source_type": "integration_candidate",
+      "source_refs": [
+        {
+          "source_id": "local_checks",
+          "json_pointer": "/records/6"
+        }
+      ],
+      "evidence_refs": [
+        "LC-610-2"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O6",
+      "attribute": "location",
+      "value": "beaters inside main mixing container",
+      "valid_from": 610.2096,
+      "valid_to": 610.2096,
+      "transition_event_id": null,
+      "observability": "direct_visual_snapshot",
+      "confidence": null,
+      "uncertainties": [
+        "仅对应这一原始帧；不推定此前/此后状态或完整动作。"
+      ]
+    },
+    {
+      "id": "STATE-LC-680-2",
+      "annotation_status": "CANDIDATE",
+      "source_type": "integration_candidate",
+      "source_refs": [
+        {
+          "source_id": "local_checks",
+          "json_pointer": "/records/7"
+        }
+      ],
+      "evidence_refs": [
+        "LC-680-2"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "object_id": "V2-O10",
+      "attribute": "contents",
+      "value": "batter visible; transfer amount unknown",
+      "valid_from": 680.212867,
+      "valid_to": 680.212867,
+      "transition_event_id": null,
+      "observability": "direct_visual_snapshot",
+      "confidence": null,
+      "uncertainties": [
+        "仅对应这一原始帧；不推定此前/此后状态或完整动作。"
+      ]
+    }
+  ],
+  "count_semantics": "observation IDs/material/group IDs; not verified physical-entity count"
+}

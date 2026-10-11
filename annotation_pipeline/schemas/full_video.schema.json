@@ -1,0 +1,446 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "full-video-v0.1"
+    },
+    "time_basis": {
+      "const": "original_mp4_seconds"
+    },
+    "annotation_status": {
+      "const": "CANDIDATE"
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1
+    },
+    "coverage": {
+      "type": "object",
+      "properties": {
+        "observed_start_time": {
+          "type": "number",
+          "minimum": 0
+        },
+        "observed_end_time": {
+          "type": "number",
+          "minimum": 0
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [
+        "observed_start_time",
+        "observed_end_time",
+        "limitations"
+      ],
+      "additionalProperties": false
+    },
+    "stages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "stage_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "label": {
+            "type": "string",
+            "minLength": 1
+          },
+          "start_time": {
+            "type": "number",
+            "minimum": 0
+          },
+          "end_time": {
+            "type": "number",
+            "minimum": 0
+          },
+          "event_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "required": [
+          "stage_id",
+          "label",
+          "start_time",
+          "end_time",
+          "event_ids"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "evidence_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "start_time": {
+            "type": "number",
+            "minimum": 0
+          },
+          "end_time": {
+            "type": "number",
+            "minimum": 0
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1
+          },
+          "observability": {
+            "enum": [
+              "direct_visual",
+              "partial_visual",
+              "inference"
+            ]
+          }
+        },
+        "required": [
+          "evidence_id",
+          "start_time",
+          "end_time",
+          "description",
+          "observability"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "objects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "object_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "label": {
+            "type": "string",
+            "minLength": 1
+          },
+          "appearance": {
+            "type": "string",
+            "minLength": 1
+          },
+          "identity_status": {
+            "enum": [
+              "candidate_continuous",
+              "uncertain",
+              "unknown"
+            ]
+          },
+          "evidence_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "confidence": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "uncertainties": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "required": [
+          "object_id",
+          "label",
+          "appearance",
+          "identity_status",
+          "evidence_refs",
+          "confidence",
+          "uncertainties"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "event_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "action": {
+            "type": "string",
+            "minLength": 1
+          },
+          "actor": {
+            "type": "string",
+            "minLength": 1
+          },
+          "objects": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "evidence_sufficient_time": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": 0
+          },
+          "execution_status": {
+            "enum": [
+              "executed",
+              "ongoing",
+              "positioning_only",
+              "uncertain"
+            ]
+          },
+          "observability": {
+            "enum": [
+              "direct_visual",
+              "partial_visual",
+              "inference"
+            ]
+          },
+          "evidence_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "confidence": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "uncertainties": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "start_time": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": 0
+          },
+          "end_time": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": 0
+          }
+        },
+        "required": [
+          "event_id",
+          "action",
+          "actor",
+          "objects",
+          "evidence_sufficient_time",
+          "execution_status",
+          "observability",
+          "evidence_refs",
+          "confidence",
+          "uncertainties",
+          "start_time",
+          "end_time"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "states": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "state_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "object_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "attribute": {
+            "type": "string",
+            "minLength": 1
+          },
+          "value": {
+            "type": "string",
+            "minLength": 1
+          },
+          "valid_from": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": 0
+          },
+          "valid_to": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": 0
+          },
+          "transition_event_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "observability": {
+            "enum": [
+              "direct_visual",
+              "partial_visual",
+              "inference"
+            ]
+          },
+          "evidence_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "confidence": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "uncertainties": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "required": [
+          "state_id",
+          "object_id",
+          "attribute",
+          "value",
+          "valid_from",
+          "valid_to",
+          "transition_event_id",
+          "observability",
+          "evidence_refs",
+          "confidence",
+          "uncertainties"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "relations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "relation_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "type": {
+            "enum": [
+              "temporal_precedes",
+              "material_transferred_to",
+              "uses_output_of",
+              "possible_same_object"
+            ]
+          },
+          "from_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "to_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "event_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "evidence_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "confidence": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "uncertainties": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "required": [
+          "relation_id",
+          "type",
+          "from_id",
+          "to_id",
+          "event_ids",
+          "evidence_refs",
+          "confidence",
+          "uncertainties"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "unknowns": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "time_basis",
+    "annotation_status",
+    "summary",
+    "coverage",
+    "stages",
+    "evidence",
+    "objects",
+    "events",
+    "states",
+    "relations",
+    "unknowns"
+  ],
+  "additionalProperties": false
+}

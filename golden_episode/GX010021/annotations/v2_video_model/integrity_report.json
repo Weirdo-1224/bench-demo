@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "frozen_historical_file_count": 62,
+  "historical_mismatches": [],
+  "credential_leak_files": [],
+  "scan_file_count": 146,
+  "credentials_media_runs_ignored": true,
+  "full_decode_check": "PASS",
+  "local_frames_pts_hash_matches": true,
+  "original_video_sha256": "fe4a11550bf2aea09a39ce1e72dba4633adc8c8b6a540e9894696e8b2ed1c8f9",
+  "new_live_inference_calls": 2,
+  "reparse_additional_inference_calls": 0,
+  "api_http_failures": 0,
+  "raw_candidate_processing_failures": 2,
+  "candidate_maturity": "CANDIDATE",
+  "semantic_truth_verified": false,
+  "transient_upload_credentials_or_urls_in_runs": []
+}
