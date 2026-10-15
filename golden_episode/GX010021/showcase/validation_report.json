@@ -1,0 +1,3747 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "date": "2026-10-13",
+  "timezone": "Asia/Shanghai",
+  "checks": [
+    {
+      "check": "source exists/hash: annotation_pipeline/session2_integration_decisions.json",
+      "pass": true
+    },
+    {
+      "check": "source exists/hash: golden_episode/GX010021/annotation_reports/README.md",
+      "pass": true
+    },
+    {
+      "check": "source exists/hash: golden_episode/GX010021/annotation_reports/candidate_events_v1.md",
+      "pass": true
+    },
+    {
+      "check": "source exists/hash: golden_episode/GX010021/annotation_reports/consistency_revision.md",
+      "pass": true
+    },
+    {
+      "check": "source exists/hash: golden_episode/GX010021/annotation_reports/crosscheck_report.md",
+      "pass": true
+    },
+    {
+      "check": "source exists/hash: golden_episode/GX010021/annotation_reports/verification_report.md",
+      "pass": true
+    },
+    {
+      "check": "source exists/hash: golden_episode/GX010021/annotations/v1_candidate/events.json",
+      "pass": true
+    },
+    {
+      "check": "source exists/hash: golden_episode/GX010021/annotations/v1_candidate/objects.json",
+      "pass": true
+    },
+    {
+      "check": "source exists/hash: golden_episode/GX010021/annotations/v2_video_model/annotation_manifest.json",
+      "pass": true
+    },
+    {
+      "check": "source exists/hash: golden_episode/GX010021/annotations/v2_video_model/anomaly_candidates.json",
+      "pass": true
+    },
+    {
+      "check": "source exists/hash: golden_episode/GX010021/annotations/v2_video_model/crosscheck.json",
+      "pass": true
+    },
+    {
+      "check": "source exists/hash: golden_episode/GX010021/annotations/v2_video_model/crosscheck_report.md",
+      "pass": true
+    },
+    {
+      "check": "source exists/hash: golden_episode/GX010021/annotations/v2_video_model/events.json",
+      "pass": true
+    },
+    {
+      "check": "source exists/hash: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json",
+      "pass": true
+    },
+    {
+      "check": "source exists/hash: golden_episode/GX010021/annotations/v2_video_model/full_video_report.md",
+      "pass": true
+    },
+    {
+      "check": "source exists/hash: golden_episode/GX010021/annotations/v2_video_model/global_analysis.json",
+      "pass": true
+    },
+    {
+      "check": "source exists/hash: golden_episode/GX010021/annotations/v2_video_model/objects.json",
+      "pass": true
+    },
+    {
+      "check": "source exists/hash: golden_episode/GX010021/annotations/v2_video_model/procedure.json",
+      "pass": true
+    },
+    {
+      "check": "source exists/hash: golden_episode/GX010021/annotations/v2_video_model/relations.json",
+      "pass": true
+    },
+    {
+      "check": "source exists/hash: golden_episode/GX010021/annotations/v2_video_model/runs/session2-full-video/local_visual_checks/manifest.json",
+      "pass": true
+    },
+    {
+      "check": "source exists/hash: golden_episode/GX010021/annotations/v2_video_model/runs/session2-full-video/local_visual_checks/pts_validation.json",
+      "pass": true
+    },
+    {
+      "check": "source exists/hash: golden_episode/GX010021/annotations/v2_video_model/runs/session2-full-video/seg-focused/global_analysis.json",
+      "pass": true
+    },
+    {
+      "check": "source exists/hash: golden_episode/GX010021/annotations/v2_video_model/runs/session2-full-video/seg-global/global_analysis.json",
+      "pass": true
+    },
+    {
+      "check": "source exists/hash: golden_episode/GX010021/evidence/evidence_manifest.json",
+      "pass": true
+    },
+    {
+      "check": "source exists/hash: golden_episode/GX010021/evidence/frames/index.json",
+      "pass": true
+    },
+    {
+      "check": "source exists/hash: golden_episode/GX010021/evidence/review_decisions.json",
+      "pass": true
+    },
+    {
+      "check": "source exists/hash: golden_episode/GX010021/source/GX010021.MP4",
+      "pass": true
+    },
+    {
+      "check": "source exists/hash: golden_episode/GX010021/source/annotations.json",
+      "pass": true
+    },
+    {
+      "check": "source exists/hash: golden_episode/GX010021/tasks/v2_candidates/evidence_gaps.md",
+      "pass": true
+    },
+    {
+      "check": "source exists/hash: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json",
+      "pass": true
+    },
+    {
+      "check": "source exists/hash: golden_episode/GX010021/tasks/v2_candidates/task_feasibility_report.md",
+      "pass": true
+    },
+    {
+      "check": "source exists/hash: golden_episode/GX010021/tasks/v2_candidates/task_schema.json",
+      "pass": true
+    },
+    {
+      "check": "source exists/hash: golden_episode/GX010021/tasks/v2_candidates/track_coverage_report.md",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/annotation_manifest.json#",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/events.json#/records/18",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/53",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/events.json#/records/19",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/54",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/events.json#/records/28",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/66",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/events.json#/records/29",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/67",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/events.json#/records/37",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/187",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/events.json#/records/49",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/92",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/189",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/events.json#/records/50",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/190",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/94",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/events.json#/records/51",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/events.json#/records/52",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/23",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/tasks/1",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/tasks/1",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/public_output_contracts/state",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/public_output_contracts/state",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/evidence_registry/LC-431-2",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/evidence_registry/LC-431-2",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/evidence_registry/LC-445-2",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/evidence_registry/LC-445-2",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/tasks/6",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/tasks/6",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/public_output_contracts/probe",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/public_output_contracts/probe",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/evidence_registry/H1-V-E022-01",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/evidence_registry/H1-V-E022-01",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/evidence_registry/H1-V-E023-01",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/evidence_registry/H1-V-E023-01",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/evidence_registry/H1-V-E031-01",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/evidence_registry/H1-V-E031-01",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/evidence_registry/H1-V-E032-01",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/evidence_registry/H1-V-E032-01",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/evidence_registry/H1-V-E051-01",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/evidence_registry/H1-V-E051-01",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/evidence_registry/LC-680-2",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/evidence_registry/LC-680-2",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/evidence_registry/V2-V24",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/evidence_registry/V2-V24",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/53",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/54",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/66",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/67",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/92",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/23",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/191",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/objects.json#/records/4",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/objects.json#/records/6",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/objects.json#/records/12",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/objects.json#/records/0",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/objects.json#/records/9",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/relations.json#/records/16",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/relations.json#/records/17",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/relations.json#/records/18",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/relations.json#/records/19",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/relations.json#/records/20",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/relations.json#/records/10",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/tasks/6/evaluator_private/reasoning",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/tasks/8",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/tasks/8",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/public_output_contracts/alarm",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/public_output_contracts/alarm",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/evidence_registry/H1-V-E049-01",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/evidence_registry/H1-V-E049-01",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/evidence_registry/H1-V-E049-02",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/evidence_registry/H1-V-E049-02",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/evidence_registry/SRC-R39",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/evidence_registry/SRC-R39",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/evidence_registry/SRC-R40",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/evidence_registry/SRC-R40",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/evidence_registry/SRC-R41",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/evidence_registry/SRC-R41",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/evidence_registry/SRC-R42",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/evidence_registry/SRC-R42",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/evidence_registry/SRC-R43",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/evidence_registry/SRC-R43",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/procedure.json#/records/38",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/procedure.json#/records/39",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/procedure.json#/records/40",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/procedure.json#/records/41",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/procedure.json#/records/42",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/89",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/90",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/crosscheck.json#/category_counts",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/crosscheck.json#/category_counts",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/crosscheck.json#/v1_event_comparisons/50",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/crosscheck.json#/v1_event_comparisons/50",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v1_candidate/events.json#/events/50",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v1_candidate/events.json#/events/50",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/events.json#/records/49",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/crosscheck.json#/v1_event_comparisons/51",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/crosscheck.json#/v1_event_comparisons/51",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v1_candidate/events.json#/events/51",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v1_candidate/events.json#/events/51",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/events.json#/records/50",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/crosscheck.json#/v1_event_comparisons/41",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/crosscheck.json#/v1_event_comparisons/41",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/crosscheck.json#/v1_event_comparisons/42",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/crosscheck.json#/v1_event_comparisons/42",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v1_candidate/events.json#/events/41",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v1_candidate/events.json#/events/41",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v1_candidate/events.json#/events/42",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v1_candidate/events.json#/events/42",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/events.json#/records/37",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/events.json#/records/38",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/crosscheck.json#/v1_event_comparisons/42",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/evidence/frames/index.json#/frames/1",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/evidence/frames/index.json#/frames/1",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/evidence/frames/index.json#/frames/3",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/evidence/frames/index.json#/frames/3",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/evidence/frames/index.json#/frames/12",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/evidence/frames/index.json#/frames/12",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/evidence/frames/index.json#/frames/14",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/evidence/frames/index.json#/frames/14",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/runs/session2-full-video/local_visual_checks/manifest.json#/records/3",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/runs/session2-full-video/local_visual_checks/manifest.json#/records/3",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/runs/session2-full-video/local_visual_checks/manifest.json#/records/4",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/runs/session2-full-video/local_visual_checks/manifest.json#/records/4",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/evidence/frames/index.json#/frames/16",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/evidence/frames/index.json#/frames/16",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/evidence/frames/index.json#/frames/17",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/evidence/frames/index.json#/frames/17",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/runs/session2-full-video/local_visual_checks/manifest.json#/records/5",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/runs/session2-full-video/local_visual_checks/manifest.json#/records/5",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/runs/session2-full-video/local_visual_checks/manifest.json#/records/6",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/runs/session2-full-video/local_visual_checks/manifest.json#/records/6",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/evidence/frames/index.json#/frames/24",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/evidence/frames/index.json#/frames/24",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/runs/session2-full-video/local_visual_checks/manifest.json#/records/7",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/runs/session2-full-video/local_visual_checks/manifest.json#/records/7",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/events.json#/records/18",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/events.json#/records/18",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/53",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/53",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/events.json#/records/19",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/events.json#/records/19",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/54",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/54",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/events.json#/records/28",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/events.json#/records/28",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/66",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/66",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/events.json#/records/29",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/events.json#/records/29",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/67",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/67",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/events.json#/records/37",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/events.json#/records/37",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/187",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/187",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/events.json#/records/38",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/events.json#/records/38",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/188",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/188",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/events.json#/records/45",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/events.json#/records/45",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/89",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/89",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/events.json#/records/46",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/events.json#/records/46",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/90",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/90",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/events.json#/records/49",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/events.json#/records/49",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/92",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/92",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/189",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/189",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/events.json#/records/50",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/events.json#/records/50",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/190",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/190",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/94",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/94",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/events.json#/records/51",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/events.json#/records/51",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/events.json#/records/52",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/events.json#/records/52",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/23",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/23",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/191",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/191",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/objects.json#/states/49",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/objects.json#/states/49",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/objects.json#/states/19",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/objects.json#/states/19",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/objects.json#/states/21",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/objects.json#/states/21",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/relations.json#/records/16",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/relations.json#/records/16",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/relations.json#/records/17",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/relations.json#/records/17",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/relations.json#/records/19",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/relations.json#/records/19",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/procedure.json#/records/25",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/procedure.json#/records/25",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/objects.json#/records/8",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/objects.json#/records/8",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/objects.json#/states/133",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/objects.json#/states/133",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/objects.json#/states/134",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/objects.json#/states/134",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/relations.json#/records/18",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/relations.json#/records/18",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/relations.json#/records/20",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/relations.json#/records/20",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/relations.json#/records/10",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/relations.json#/records/10",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/objects.json#/records/0",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/objects.json#/records/0",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/objects.json#/records/9",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/objects.json#/records/9",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/objects.json#/records/12",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/objects.json#/records/12",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/anomaly_candidates.json#/records/5",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/anomaly_candidates.json#/records/5",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/relations.json#/records/22",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/relations.json#/records/22",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/relations.json#/records/23",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/relations.json#/records/23",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/procedure.json#/records/42",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/procedure.json#/records/42",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/procedure.json#/records/40",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/procedure.json#/records/40",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/procedure.json#/records/41",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/procedure.json#/records/41",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/procedure.json#/records/38",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/procedure.json#/records/38",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/procedure.json#/records/39",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/procedure.json#/records/39",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/objects.json#/records/4",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/objects.json#/records/4",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/objects.json#/records/6",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/objects.json#/records/6",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/9",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/9",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/13",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/13",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/18",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/18",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/objects.json#/records/10",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/objects.json#/records/10",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/19",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/19",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/objects.json#/records/13",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/objects.json#/records/13",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/22",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/22",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/objects.json#/records/14",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/objects.json#/records/14",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/93",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/93",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/147",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/147",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/148",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/148",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/149",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/149",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/150",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/150",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/178",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/178",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/objects.json#/records/24",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/objects.json#/records/24",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/95",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/95",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/151",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/151",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/152",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/152",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/objects.json#/records/5",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/objects.json#/records/5",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/119",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/119",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/120",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/120",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/127",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/127",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/128",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/128",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/15",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/15",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/16",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/16",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/17",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/17",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/20",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/20",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/3",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/3",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/5",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/5",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/6",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/6",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/8",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/8",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/11",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/11",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/21",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/21",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/2",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/2",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/24",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/24",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/7",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/7",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/10",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/10",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/12",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/12",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/0",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/evidence_index.json#/records/0",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/evidence_gaps/0",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/evidence_gaps/0",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/evidence_gaps/1",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/evidence_gaps/1",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/evidence_gaps/3",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/evidence_gaps/3",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/evidence_gaps/4",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/evidence_gaps/4",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/evidence_gaps/5",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/evidence_gaps/5",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/evidence_gaps/6",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/evidence_gaps/6",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/evidence_gaps/7",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/evidence_gaps/7",
+      "pass": true
+    },
+    {
+      "check": "source snapshot: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/evidence_gaps/8",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/evidence_gaps/8",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/tasks/v2_candidates/task_candidates.json#/protocol",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/crosscheck.json#/v1_event_comparisons/42",
+      "pass": true
+    },
+    {
+      "check": "source pointer: golden_episode/GX010021/annotations/v2_video_model/annotation_manifest.json#/statistics",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: V2-E7",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: V2-E7",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: V2-E7 -> V2-V10",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-E7:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-E7:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: H1-V-E022-01",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: H1-V-E022-01",
+      "pass": true
+    },
+    {
+      "check": "time bounds: H1-V-E022-01:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: H1-V-E022-01:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: V2-E8",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: V2-E8",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: V2-E8 -> V2-V10",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-E8:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-E8:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: H1-V-E023-01",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: H1-V-E023-01",
+      "pass": true
+    },
+    {
+      "check": "time bounds: H1-V-E023-01:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: H1-V-E023-01:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: V2-E12",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: V2-E12",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: V2-E12 -> V2-V14",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-E12:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-E12:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: H1-V-E031-01",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: H1-V-E031-01",
+      "pass": true
+    },
+    {
+      "check": "time bounds: H1-V-E031-01:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: H1-V-E031-01:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: V2-E13",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: V2-E13",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: V2-E13 -> V2-V14",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-E13:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-E13:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: H1-V-E032-01",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: H1-V-E032-01",
+      "pass": true
+    },
+    {
+      "check": "time bounds: H1-V-E032-01:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: H1-V-E032-01:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: V2-E19",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: V2-E19",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: V2-E19 -> V2-V19",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: V2-E19 -> LC-431-2",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-E19:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-E19:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: LC-431-2",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: LC-431-2",
+      "pass": true
+    },
+    {
+      "check": "time bounds: LC-431-2:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: LC-431-2:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: V2-E20",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: V2-E20",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: V2-E20 -> V2-V20",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: V2-E20 -> LC-445-2",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-E20:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-E20:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: LC-445-2",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: LC-445-2",
+      "pass": true
+    },
+    {
+      "check": "time bounds: LC-445-2:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: LC-445-2:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: V2-E24",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: V2-E24",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: V2-E24 -> V2-V23",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-E24:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-E24:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: H1-V-E049-01",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: H1-V-E049-01",
+      "pass": true
+    },
+    {
+      "check": "time bounds: H1-V-E049-01:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: H1-V-E049-01:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: V2-E25",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: V2-E25",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: V2-E25 -> V2-V23",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: V2-E25 -> V2-V24",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-E25:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-E25:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: H1-V-E049-02",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: H1-V-E049-02",
+      "pass": true
+    },
+    {
+      "check": "time bounds: H1-V-E049-02:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: H1-V-E049-02:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: H1-E051",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: H1-E051",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: H1-E051 -> H1-V-E051-01",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: H1-E051 -> H1-V-E051-02",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: H1-E051 -> H1-T-R46",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: H1-E051 -> H1-T-R47",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: H1-E051 -> H1-T-R48",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: H1-E051 -> H1-T-R49",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: H1-E051 -> H1-I-E051-02",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: H1-E051 -> LC-599-2",
+      "pass": true
+    },
+    {
+      "check": "time bounds: H1-E051:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: H1-E051:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: H1-V-E051-01",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: H1-V-E051-01",
+      "pass": true
+    },
+    {
+      "check": "time bounds: H1-V-E051-01:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: H1-V-E051-01:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: LC-599-2",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: LC-599-2",
+      "pass": true
+    },
+    {
+      "check": "time bounds: LC-599-2:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: LC-599-2:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: H1-E052",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: H1-E052",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: H1-E052 -> H1-V-E052-01",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: H1-E052 -> H1-V-E052-02",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: H1-E052 -> H1-T-R50",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: H1-E052 -> H1-T-R51",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: H1-E052 -> LC-610-2",
+      "pass": true
+    },
+    {
+      "check": "time bounds: H1-E052:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: H1-E052:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: LC-610-2",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: LC-610-2",
+      "pass": true
+    },
+    {
+      "check": "time bounds: LC-610-2:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: LC-610-2:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: H1-V-E052-01",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: H1-V-E052-01",
+      "pass": true
+    },
+    {
+      "check": "time bounds: H1-V-E052-01:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: H1-V-E052-01:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: V2-E26",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: V2-E26",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: V2-E26 -> V2-V24",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-E26:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-E26:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: V2-E27",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: V2-E27",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: V2-E27 -> V2-V24",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-E27:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-E27:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: V2-V24",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: V2-V24",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-V24:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-V24:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: LC-680-2",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: LC-680-2",
+      "pass": true
+    },
+    {
+      "check": "time bounds: LC-680-2:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: LC-680-2:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: H1-O05.S06",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: H1-O05.S06",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: H1-O05.S06 -> H1-V-E022-01",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: H1-O01.S05",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: H1-O01.S05",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: H1-O01.S05 -> H1-V-E023-01",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: H1-O01.S07",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: H1-O01.S07",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: H1-O01.S07 -> H1-V-E032-01",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: PATH-03",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: PATH-03",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: PATH-03 -> H1-V-E022-01",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: PATH-03 -> H1-T-R18",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: PATH-03 -> H1-T-R19",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: PATH-04",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: PATH-04",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: PATH-04 -> H1-V-E023-01",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: PATH-04 -> H1-T-R18",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: PATH-04 -> H1-T-R19",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: PATH-06",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: PATH-06",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: PATH-06 -> H1-V-E032-01",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: PATH-06 -> H1-T-R26",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: PATH-06 -> H1-T-R27",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: SRC-R26",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: SRC-R26",
+      "pass": true
+    },
+    {
+      "check": "time bounds: SRC-R26:source_timestamp",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: V2-O9",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: V2-O9",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: V2-O9 -> V2-V16",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: V2-O9 -> V2-V17",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: V2-O9 -> V2-V18",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: V2-O9 -> V2-V19",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: V2-O9 -> V2-V20",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: V2-O9 -> V2-V21",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: STATE-LC-431-2",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: STATE-LC-431-2",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: STATE-LC-431-2 -> LC-431-2",
+      "pass": true
+    },
+    {
+      "check": "time bounds: STATE-LC-431-2:valid_from",
+      "pass": true
+    },
+    {
+      "check": "time bounds: STATE-LC-431-2:valid_to",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: STATE-LC-445-2",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: STATE-LC-445-2",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: STATE-LC-445-2 -> LC-445-2",
+      "pass": true
+    },
+    {
+      "check": "time bounds: STATE-LC-445-2:valid_from",
+      "pass": true
+    },
+    {
+      "check": "time bounds: STATE-LC-445-2:valid_to",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: PATH-05",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: PATH-05",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: PATH-05 -> H1-V-E031-01",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: PATH-05 -> H1-T-R26",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: PATH-07",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: PATH-07",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: PATH-07 -> H1-V-E051-01",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: PATH-07 -> H1-V-E051-02",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: PATH-07 -> H1-T-R46",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: PATH-07 -> H1-T-R47",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: PATH-07 -> H1-T-R48",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: PATH-07 -> H1-T-R49",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: PATH-07 -> H1-I-E051-02",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: PATH-07 -> LC-599-2",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: V2-R12",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: V2-R12",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: V2-R12 -> V2-V24",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: V2-O1",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: V2-O1",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: V2-O1 -> V2-V4",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: V2-O1 -> V2-V6",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: V2-O1 -> V2-V7",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: V2-O1 -> V2-V9",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: V2-O1 -> V2-V10",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: V2-O1 -> V2-V12",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: V2-O1 -> V2-V14",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: V2-O1 -> V2-V21",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: V2-O1 -> V2-V22",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: V2-O1 -> V2-V24",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: V2-O10",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: V2-O10",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: V2-O10 -> V2-V3",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: V2-O10 -> V2-V23",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: V2-O10 -> V2-V24",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: V2-O10 -> V2-V25",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: V2-O13",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: V2-O13",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: V2-O13 -> V2-V8",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: V2-O13 -> V2-V9",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: V2-O13 -> V2-V10",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: V2-O13 -> V2-V14",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: L5-06",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: L5-06",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: L5-06 -> V2-V23",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: L5-06 -> V2-V24",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: RULE-02",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: RULE-02",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: RULE-03",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: RULE-03",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: SRC-R43",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: SRC-R43",
+      "pass": true
+    },
+    {
+      "check": "time bounds: SRC-R43:source_timestamp",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: SRC-R41",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: SRC-R41",
+      "pass": true
+    },
+    {
+      "check": "time bounds: SRC-R41:source_timestamp",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: SRC-R42",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: SRC-R42",
+      "pass": true
+    },
+    {
+      "check": "time bounds: SRC-R42:source_timestamp",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: SRC-R39",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: SRC-R39",
+      "pass": true
+    },
+    {
+      "check": "time bounds: SRC-R39:source_timestamp",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: SRC-R40",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: SRC-R40",
+      "pass": true
+    },
+    {
+      "check": "time bounds: SRC-R40:source_timestamp",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: V2-O5",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: V2-O5",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: V2-O5 -> V2-V10",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: V2-O5 -> V2-V11",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: V2-O7",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: V2-O7",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: V2-O7 -> V2-V13",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: V2-O7 -> V2-V14",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: V2-V10",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: V2-V10",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-V10:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-V10:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: V2-V14",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: V2-V14",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-V14:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-V14:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: V2-V19",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: V2-V19",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-V19:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-V19:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: V2-O11",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: V2-O11",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: V2-O11 -> V2-V1",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: V2-O11 -> V2-V16",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: V2-O11 -> V2-V17",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: V2-O11 -> V2-V18",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: V2-O11 -> V2-V19",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: V2-V20",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: V2-V20",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-V20:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-V20:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: V2-O14",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: V2-O14",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: V2-O14 -> V2-V20",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: V2-O14 -> V2-V24",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: V2-V23",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: V2-V23",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-V23:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-V23:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: V2-O15",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: V2-O15",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: V2-O15 -> V2-V23",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: H1-V-E051-02",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: H1-V-E051-02",
+      "pass": true
+    },
+    {
+      "check": "time bounds: H1-V-E051-02:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: H1-V-E051-02:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: H1-T-R46",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: H1-T-R46",
+      "pass": true
+    },
+    {
+      "check": "time bounds: H1-T-R46:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: H1-T-R46:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: H1-T-R47",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: H1-T-R47",
+      "pass": true
+    },
+    {
+      "check": "time bounds: H1-T-R47:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: H1-T-R47:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: H1-T-R48",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: H1-T-R48",
+      "pass": true
+    },
+    {
+      "check": "time bounds: H1-T-R48:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: H1-T-R48:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: H1-T-R49",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: H1-T-R49",
+      "pass": true
+    },
+    {
+      "check": "time bounds: H1-T-R49:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: H1-T-R49:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: H1-I-E051-02",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: H1-I-E051-02",
+      "pass": true
+    },
+    {
+      "check": "time bounds: H1-I-E051-02:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: H1-I-E051-02:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: H1-O15",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: H1-O15",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: H1-V-E052-02",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: H1-V-E052-02",
+      "pass": true
+    },
+    {
+      "check": "time bounds: H1-V-E052-02:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: H1-V-E052-02:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: H1-T-R50",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: H1-T-R50",
+      "pass": true
+    },
+    {
+      "check": "time bounds: H1-T-R50:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: H1-T-R50:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: H1-T-R51",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: H1-T-R51",
+      "pass": true
+    },
+    {
+      "check": "time bounds: H1-T-R51:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: H1-T-R51:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: V2-O6",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: V2-O6",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: V2-O6 -> V2-V11",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: V2-O6 -> V2-V12",
+      "pass": true
+    },
+    {
+      "check": "evidence ID: V2-O6 -> V2-V22",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: H1-T-R18",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: H1-T-R18",
+      "pass": true
+    },
+    {
+      "check": "time bounds: H1-T-R18:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: H1-T-R18:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: H1-T-R19",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: H1-T-R19",
+      "pass": true
+    },
+    {
+      "check": "time bounds: H1-T-R19:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: H1-T-R19:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: H1-T-R26",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: H1-T-R26",
+      "pass": true
+    },
+    {
+      "check": "time bounds: H1-T-R26:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: H1-T-R26:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: H1-T-R27",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: H1-T-R27",
+      "pass": true
+    },
+    {
+      "check": "time bounds: H1-T-R27:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: H1-T-R27:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: V2-V16",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: V2-V16",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-V16:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-V16:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: V2-V17",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: V2-V17",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-V17:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-V17:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: V2-V18",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: V2-V18",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-V18:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-V18:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: V2-V21",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: V2-V21",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-V21:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-V21:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: V2-V4",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: V2-V4",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-V4:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-V4:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: V2-V6",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: V2-V6",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-V6:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-V6:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: V2-V7",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: V2-V7",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-V7:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-V7:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: V2-V9",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: V2-V9",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-V9:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-V9:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: V2-V12",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: V2-V12",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-V12:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-V12:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: V2-V22",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: V2-V22",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-V22:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-V22:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: V2-V3",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: V2-V3",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-V3:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-V3:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: V2-V25",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: V2-V25",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-V25:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-V25:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: V2-V8",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: V2-V8",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-V8:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-V8:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: V2-V11",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: V2-V11",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-V11:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-V11:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: V2-V13",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: V2-V13",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-V13:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-V13:end_time",
+      "pass": true
+    },
+    {
+      "check": "original ID/status: V2-V1",
+      "pass": true
+    },
+    {
+      "check": "key fields unchanged: V2-V1",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-V1:start_time",
+      "pass": true
+    },
+    {
+      "check": "time bounds: V2-V1:end_time",
+      "pass": true
+    },
+    {
+      "check": "image copy/hash: K002",
+      "pass": true
+    },
+    {
+      "check": "image PTS/range: K002",
+      "pass": true
+    },
+    {
+      "check": "image status: K002",
+      "pass": true
+    },
+    {
+      "check": "asset event ID: K002:V2-E7",
+      "pass": true
+    },
+    {
+      "check": "asset task ID: K002:GX010021-V2-T2-003",
+      "pass": true
+    },
+    {
+      "check": "image locator association: K002:H1-V-E022-01",
+      "pass": true
+    },
+    {
+      "check": "historical clip exists/hash: C01",
+      "pass": true
+    },
+    {
+      "check": "image copy/hash: K004",
+      "pass": true
+    },
+    {
+      "check": "image PTS/range: K004",
+      "pass": true
+    },
+    {
+      "check": "image status: K004",
+      "pass": true
+    },
+    {
+      "check": "asset event ID: K004:V2-E8",
+      "pass": true
+    },
+    {
+      "check": "asset task ID: K004:GX010021-V2-T2-003",
+      "pass": true
+    },
+    {
+      "check": "image locator association: K004:H1-V-E023-01",
+      "pass": true
+    },
+    {
+      "check": "historical clip exists/hash: C01",
+      "pass": true
+    },
+    {
+      "check": "image copy/hash: K013",
+      "pass": true
+    },
+    {
+      "check": "image PTS/range: K013",
+      "pass": true
+    },
+    {
+      "check": "image status: K013",
+      "pass": true
+    },
+    {
+      "check": "asset event ID: K013:V2-E12",
+      "pass": true
+    },
+    {
+      "check": "asset task ID: K013:GX010021-V2-T2-003",
+      "pass": true
+    },
+    {
+      "check": "image locator association: K013:H1-V-E031-01",
+      "pass": true
+    },
+    {
+      "check": "historical clip exists/hash: C05",
+      "pass": true
+    },
+    {
+      "check": "image copy/hash: K015",
+      "pass": true
+    },
+    {
+      "check": "image PTS/range: K015",
+      "pass": true
+    },
+    {
+      "check": "image status: K015",
+      "pass": true
+    },
+    {
+      "check": "asset event ID: K015:V2-E13",
+      "pass": true
+    },
+    {
+      "check": "asset task ID: K015:GX010021-V2-T2-003",
+      "pass": true
+    },
+    {
+      "check": "image locator association: K015:H1-V-E032-01",
+      "pass": true
+    },
+    {
+      "check": "historical clip exists/hash: C05",
+      "pass": true
+    },
+    {
+      "check": "image copy/hash: LC-431-2",
+      "pass": true
+    },
+    {
+      "check": "image PTS/range: LC-431-2",
+      "pass": true
+    },
+    {
+      "check": "image status: LC-431-2",
+      "pass": true
+    },
+    {
+      "check": "asset event ID: LC-431-2:V2-E19",
+      "pass": true
+    },
+    {
+      "check": "asset task ID: LC-431-2:GX010021-V2-T1-002",
+      "pass": true
+    },
+    {
+      "check": "image locator association: LC-431-2:LC-431-2",
+      "pass": true
+    },
+    {
+      "check": "image copy/hash: LC-445-2",
+      "pass": true
+    },
+    {
+      "check": "image PTS/range: LC-445-2",
+      "pass": true
+    },
+    {
+      "check": "image status: LC-445-2",
+      "pass": true
+    },
+    {
+      "check": "asset event ID: LC-445-2:V2-E20",
+      "pass": true
+    },
+    {
+      "check": "asset task ID: LC-445-2:GX010021-V2-T1-002",
+      "pass": true
+    },
+    {
+      "check": "image locator association: LC-445-2:LC-445-2",
+      "pass": true
+    },
+    {
+      "check": "image copy/hash: K017",
+      "pass": true
+    },
+    {
+      "check": "image PTS/range: K017",
+      "pass": true
+    },
+    {
+      "check": "image status: K017",
+      "pass": true
+    },
+    {
+      "check": "asset event ID: K017:V2-E24",
+      "pass": true
+    },
+    {
+      "check": "asset task ID: K017:GX010021-V2-T3-001",
+      "pass": true
+    },
+    {
+      "check": "image locator association: K017:H1-V-E049-01",
+      "pass": true
+    },
+    {
+      "check": "historical clip exists/hash: C09",
+      "pass": true
+    },
+    {
+      "check": "image copy/hash: K018",
+      "pass": true
+    },
+    {
+      "check": "image PTS/range: K018",
+      "pass": true
+    },
+    {
+      "check": "image status: K018",
+      "pass": true
+    },
+    {
+      "check": "asset event ID: K018:V2-E25",
+      "pass": true
+    },
+    {
+      "check": "asset task ID: K018:GX010021-V2-T3-001",
+      "pass": true
+    },
+    {
+      "check": "image locator association: K018:H1-V-E049-02",
+      "pass": true
+    },
+    {
+      "check": "historical clip exists/hash: C09",
+      "pass": true
+    },
+    {
+      "check": "image copy/hash: LC-599-2",
+      "pass": true
+    },
+    {
+      "check": "image PTS/range: LC-599-2",
+      "pass": true
+    },
+    {
+      "check": "image status: LC-599-2",
+      "pass": true
+    },
+    {
+      "check": "asset event ID: LC-599-2:H1-E051",
+      "pass": true
+    },
+    {
+      "check": "asset task ID: LC-599-2:GX010021-V2-T2-003",
+      "pass": true
+    },
+    {
+      "check": "image locator association: LC-599-2:H1-V-E051-01",
+      "pass": true
+    },
+    {
+      "check": "image locator association: LC-599-2:LC-599-2",
+      "pass": true
+    },
+    {
+      "check": "image copy/hash: LC-610-2",
+      "pass": true
+    },
+    {
+      "check": "image PTS/range: LC-610-2",
+      "pass": true
+    },
+    {
+      "check": "image status: LC-610-2",
+      "pass": true
+    },
+    {
+      "check": "asset event ID: LC-610-2:H1-E052",
+      "pass": true
+    },
+    {
+      "check": "image locator association: LC-610-2:LC-610-2",
+      "pass": true
+    },
+    {
+      "check": "image locator association: LC-610-2:H1-V-E052-01",
+      "pass": true
+    },
+    {
+      "check": "image copy/hash: K025",
+      "pass": true
+    },
+    {
+      "check": "image PTS/range: K025",
+      "pass": true
+    },
+    {
+      "check": "image status: K025",
+      "pass": true
+    },
+    {
+      "check": "asset event ID: K025:V2-E26",
+      "pass": true
+    },
+    {
+      "check": "asset event ID: K025:V2-E27",
+      "pass": true
+    },
+    {
+      "check": "asset task ID: K025:GX010021-V2-T2-003",
+      "pass": true
+    },
+    {
+      "check": "image locator association: K025:V2-V24",
+      "pass": true
+    },
+    {
+      "check": "historical clip exists/hash: C14",
+      "pass": true
+    },
+    {
+      "check": "image copy/hash: LC-680-2",
+      "pass": true
+    },
+    {
+      "check": "image PTS/range: LC-680-2",
+      "pass": true
+    },
+    {
+      "check": "image status: LC-680-2",
+      "pass": true
+    },
+    {
+      "check": "asset task ID: LC-680-2:GX010021-V2-T2-003",
+      "pass": true
+    },
+    {
+      "check": "image locator association: LC-680-2:LC-680-2",
+      "pass": true
+    },
+    {
+      "check": "timeline original frame: timeline-01",
+      "pass": true
+    },
+    {
+      "check": "timeline original event interval: V2-E7",
+      "pass": true
+    },
+    {
+      "check": "timeline original frame: timeline-02",
+      "pass": true
+    },
+    {
+      "check": "timeline original event interval: V2-E8",
+      "pass": true
+    },
+    {
+      "check": "timeline original frame: timeline-03",
+      "pass": true
+    },
+    {
+      "check": "timeline original event interval: V2-E12",
+      "pass": true
+    },
+    {
+      "check": "timeline original frame: timeline-04",
+      "pass": true
+    },
+    {
+      "check": "timeline original event interval: V2-E13",
+      "pass": true
+    },
+    {
+      "check": "timeline original frame: timeline-05",
+      "pass": true
+    },
+    {
+      "check": "timeline original event interval: V2-E19",
+      "pass": true
+    },
+    {
+      "check": "timeline original frame: timeline-06",
+      "pass": true
+    },
+    {
+      "check": "timeline original event interval: H1-E051",
+      "pass": true
+    },
+    {
+      "check": "timeline original frame: timeline-07",
+      "pass": true
+    },
+    {
+      "check": "timeline original event interval: H1-E052",
+      "pass": true
+    },
+    {
+      "check": "timeline original frame: timeline-08",
+      "pass": true
+    },
+    {
+      "check": "timeline original event interval: V2-E26",
+      "pass": true
+    },
+    {
+      "check": "timeline original event interval: V2-E27",
+      "pass": true
+    },
+    {
+      "check": "annotation event/state/relation link: V2-E7",
+      "pass": true
+    },
+    {
+      "check": "annotation image/evidence relation: V2-E7",
+      "pass": true
+    },
+    {
+      "check": "annotation event/state/relation link: V2-E8",
+      "pass": true
+    },
+    {
+      "check": "annotation image/evidence relation: V2-E8",
+      "pass": true
+    },
+    {
+      "check": "annotation event/state/relation link: V2-E13",
+      "pass": true
+    },
+    {
+      "check": "annotation image/evidence relation: V2-E13",
+      "pass": true
+    },
+    {
+      "check": "Session 3 exact task: GX010021-V2-T1-002",
+      "pass": true
+    },
+    {
+      "check": "no Gold/score promotion: GX010021-V2-T1-002",
+      "pass": true
+    },
+    {
+      "check": "Session 3 exact task: GX010021-V2-T2-003",
+      "pass": true
+    },
+    {
+      "check": "no Gold/score promotion: GX010021-V2-T2-003",
+      "pass": true
+    },
+    {
+      "check": "Session 3 exact task: GX010021-V2-T3-001",
+      "pass": true
+    },
+    {
+      "check": "no Gold/score promotion: GX010021-V2-T3-001",
+      "pass": true
+    },
+    {
+      "check": "exact T1 checkpoint image: LC-431-2",
+      "pass": true
+    },
+    {
+      "check": "exact T1 checkpoint image: LC-445-2",
+      "pass": true
+    },
+    {
+      "check": "T2 complete original evidence set",
+      "pass": true
+    },
+    {
+      "check": "T2 no future display image",
+      "pass": true
+    },
+    {
+      "check": "T2 unchanged material relation: PATH-03",
+      "pass": true
+    },
+    {
+      "check": "T2 unchanged material relation: PATH-04",
+      "pass": true
+    },
+    {
+      "check": "T2 unchanged material relation: PATH-05",
+      "pass": true
+    },
+    {
+      "check": "T2 unchanged material relation: PATH-06",
+      "pass": true
+    },
+    {
+      "check": "T2 unchanged material relation: PATH-07",
+      "pass": true
+    },
+    {
+      "check": "T2 unchanged material relation: V2-R12",
+      "pass": true
+    },
+    {
+      "check": "T2 source span",
+      "pass": true
+    },
+    {
+      "check": "T3 no fabricated incidents",
+      "pass": true
+    },
+    {
+      "check": "crosscheck actual statistics",
+      "pass": true
+    },
+    {
+      "check": "actual video duration/audio",
+      "pass": true
+    },
+    {
+      "check": "decoded selected frame count",
+      "pass": true
+    },
+    {
+      "check": "source decoded pixels equal: K002",
+      "pass": true
+    },
+    {
+      "check": "source decoded pixels equal: K004",
+      "pass": true
+    },
+    {
+      "check": "source decoded pixels equal: K013",
+      "pass": true
+    },
+    {
+      "check": "source decoded pixels equal: K015",
+      "pass": true
+    },
+    {
+      "check": "source decoded pixels equal: LC-431-2",
+      "pass": true
+    },
+    {
+      "check": "source decoded pixels equal: LC-445-2",
+      "pass": true
+    },
+    {
+      "check": "source decoded pixels equal: K017",
+      "pass": true
+    },
+    {
+      "check": "source decoded pixels equal: K018",
+      "pass": true
+    },
+    {
+      "check": "source decoded pixels equal: LC-599-2",
+      "pass": true
+    },
+    {
+      "check": "source decoded pixels equal: LC-610-2",
+      "pass": true
+    },
+    {
+      "check": "source decoded pixels equal: K025",
+      "pass": true
+    },
+    {
+      "check": "source decoded pixels equal: LC-680-2",
+      "pass": true
+    }
+  ],
+  "check_count": 911,
+  "media_verification": {
+    "performed": true,
+    "ffprobe_command": [
+      "ffprobe",
+      "-v",
+      "error",
+      "-show_streams",
+      "-show_format",
+      "-of",
+      "json",
+      "D:\\Python_Project\\bench-demo\\golden_episode\\GX010021\\source\\GX010021.MP4"
+    ],
+    "ffmpeg_command": [
+      "ffmpeg",
+      "-v",
+      "error",
+      "-nostdin",
+      "-i",
+      "D:\\Python_Project\\bench-demo\\golden_episode\\GX010021\\source\\GX010021.MP4",
+      "-map",
+      "0:v:0",
+      "-vf",
+      "select=eq(pts\\,4596592)+eq(pts\\,4776772)+eq(pts\\,8436428)+eq(pts\\,8736728)+eq(pts\\,12936924)+eq(pts\\,13356343)+eq(pts\\,16866850)+eq(pts\\,17017000)+eq(pts\\,17976959)+eq(pts\\,18306288)+eq(pts\\,19356337)+eq(pts\\,20406386)",
+      "-fps_mode",
+      "passthrough",
+      "<temporary-directory>/frame-%02d.png"
+    ],
+    "frame_results": [
+      {
+        "asset_id": "K002",
+        "source_pts": 4596592,
+        "pixels_identical": true
+      },
+      {
+        "asset_id": "K004",
+        "source_pts": 4776772,
+        "pixels_identical": true
+      },
+      {
+        "asset_id": "K013",
+        "source_pts": 8436428,
+        "pixels_identical": true
+      },
+      {
+        "asset_id": "K015",
+        "source_pts": 8736728,
+        "pixels_identical": true
+      },
+      {
+        "asset_id": "LC-431-2",
+        "source_pts": 12936924,
+        "pixels_identical": true
+      },
+      {
+        "asset_id": "LC-445-2",
+        "source_pts": 13356343,
+        "pixels_identical": true
+      },
+      {
+        "asset_id": "K017",
+        "source_pts": 16866850,
+        "pixels_identical": true
+      },
+      {
+        "asset_id": "K018",
+        "source_pts": 17017000,
+        "pixels_identical": true
+      },
+      {
+        "asset_id": "LC-599-2",
+        "source_pts": 17976959,
+        "pixels_identical": true
+      },
+      {
+        "asset_id": "LC-610-2",
+        "source_pts": 18306288,
+        "pixels_identical": true
+      },
+      {
+        "asset_id": "K025",
+        "source_pts": 19356337,
+        "pixels_identical": true
+      },
+      {
+        "asset_id": "LC-680-2",
+        "source_pts": 20406386,
+        "pixels_identical": true
+      }
+    ],
+    "scope": "PTS_AND_PIXELS_ONLY_NOT_SEMANTIC_ADJUDICATION"
+  },
+  "semantic_truth_verified": false,
+  "human_review": "NOT_REVIEWED",
+  "limits": "Source/time/hash/contract checks do not establish Gold, exact action boundaries, physical identity, history necessity, or normal/anomaly truth."
+}
