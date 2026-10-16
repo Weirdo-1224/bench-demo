@@ -150,4 +150,4 @@ python -m annotation_pipeline.validate_output 'golden_episode/GX010021/annotatio
 python -m annotation_pipeline.annotate_segments --smoke --reparse-only
 ```
 
-测试中的合成 Provider/事件只写 TemporaryDirectory，明确为 `SYNTHETIC_TEST_ONLY`，不进入 Episode 标注目录。初次缺密钥结果见 `SESSION1_REPORT.md`；配置密钥后的真实成功调用与进入 Session 2 的缺口见 `SESSION1_SMOKE_RETRY_REPORT.md`。
+测试中的合成 Provider/事件只写 TemporaryDirectory，明确为 `SYNTHETIC_TEST_ONLY`，不进入 Episode 标注目录。初次缺密钥结果见 [SESSION1_REPORT.md](../docs/SESSION1_REPORT.md)；配置密钥后的真实成功调用与进入 Session 2 的缺口见 [SESSION1_SMOKE_RETRY_REPORT.md](../docs/SESSION1_SMOKE_RETRY_REPORT.md)。
