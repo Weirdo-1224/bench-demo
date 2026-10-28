@@ -1,7 +1,0 @@
-{
-  "request_sha256": "d314c24bb5bb76d1f45016102853dbae8255ef50c307ea9320d2acddc69b344f",
-  "window": "experiments/icme2027_pilot/runs/p01-v1/CONTROL_MASK/seg-0002",
-  "started_at": "2026-10-28T12:55:48+08:00",
-  "reserved_cny": 0.25,
-  "local_allowance_not_billing_guarantee": true
-}

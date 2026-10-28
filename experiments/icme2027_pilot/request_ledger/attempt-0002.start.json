@@ -1,7 +1,0 @@
-{
-  "request_sha256": "e4891873a9fff1df8f51593d3da14b1cfa9d984da943dc0d7fd1f8420d21fd30",
-  "window": "experiments/icme2027_pilot/runs/p01-v1/FULL/seg-0002",
-  "started_at": "2026-10-28T12:51:12+08:00",
-  "reserved_cny": 0.25,
-  "local_allowance_not_billing_guarantee": true
-}

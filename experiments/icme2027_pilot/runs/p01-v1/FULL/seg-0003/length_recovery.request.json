@@ -1,9 +1,0 @@
-{
-  "base_request_sha256": "dd5819af801fca2d07bbe1cd26f3c61d59f3db51a033e1283bc23647dcdbc12e",
-  "request_sha256": "7a31e01ca0f21f2108e347bb715a3bd22a7572b392aaf035f6dce8e8ef5ac764",
-  "effective_max_output_tokens": 4096,
-  "prompt_unchanged": true,
-  "input_manifest_sha256": "49f6c280f507898f333b632b4be7ba98fe51e2215d9fac14d745e788dc90c3d4",
-  "trigger": "two HTTP200 finish_reason=length",
-  "amendment_ref": "experiments/icme2027_pilot/runs/p01-v1/runtime_amendment_v1.json"
-}

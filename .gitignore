@@ -20,6 +20,16 @@ experiments/*/inputs/
 experiments/*/review_frames/
 experiments/*/runs/**/frames/
 
+# Experiment raw API artifacts and local usage records (parsed output lives in checkpoint.json)
+experiments/*/runs/**/attempt-*.response.json
+experiments/*/runs/**/request.json
+experiments/*/runs/**/*.request.json
+experiments/*/request_ledger/
+
+# _showcase_export media frames and source snapshots are 1:1 copies of golden_episode content
+_showcase_export/*/media/frames/
+_showcase_export/*/source_snapshots/
+
 # Deliverable bundles (archived copies live under archive/)
 *.zip
 
