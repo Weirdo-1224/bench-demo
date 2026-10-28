@@ -1,0 +1,157 @@
+{
+  "before": {
+    "phase": "before",
+    "tests": {
+      "annotation": 0,
+      "pilot": 1,
+      "pilot_frozen_context_supplementary": 0
+    },
+    "wire_replays": 18,
+    "original_files_checked": 5381,
+    "allowed_document_changes": [],
+    "outputs": {
+      "results.csv": "365729e82d85abcc3013f4fb341b2f292c2d96b1b59d298feacd945b7b9237d7",
+      "predictions.jsonl": "fbf43e0241ac588ad0f81cc793880aaade2516e0d6b5c1b1b51d3b79c249a9ec",
+      "scoring_details_v1.json": "70e5b60ed2b16063ae15ef14bb8754eb4bdefb285e6328021ff79970065622f8",
+      "figures/p01_conditions_v1.png": "fb81d9d90f20788523661307d85ac1b252b72f67df9223f2d9797e5faae13ea0",
+      "advisor_report_v1.md": "aff9ca0cd8a6a17b20461b5bc8b7eb1462527a01a72d1da03adb63113c53ce67"
+    },
+    "summary": {
+      "stage": "REAL_PILOT",
+      "task_id": "P01",
+      "approved_tasks": 1,
+      "P02": "PENDING",
+      "conditions_complete": 4,
+      "real_pilot_completed": true,
+      "paper_grade_results": false,
+      "inference_attempts_reserved": 18,
+      "response_records": 18,
+      "input_tokens": 246034,
+      "output_tokens": 13268,
+      "elapsed_sec": 527.8580000000366,
+      "tokens_complete": true,
+      "estimated_cost_cny": null,
+      "actual_billed_cost_cny": null,
+      "cost_uncertainty": "Current regional/alias tariff not reliably verified. Local reservation is NOT provider billing cap; hard API attempt cap is enforced.",
+      "hard_attempt_cap": 20,
+      "local_reserved_cny": 4.5,
+      "evidence_appropriate_answer_count": 2,
+      "semantic_accuracy": null,
+      "semantic_review": "PENDING; temporal citation checks do not establish semantic support",
+      "recovered_execution_errors": [
+        {
+          "created_at": "2026-10-28T12:53:24+08:00",
+          "condition": "FULL",
+          "segment": {
+            "segment_id": "seg-0003",
+            "start_sec": 180,
+            "end_sec": 240,
+            "planned_frames": 60,
+            "sample_fps": 1
+          },
+          "error_type": "ValueError",
+          "reason": "WINDOW_RETRY_LIMIT: raw outputs retained"
+        }
+      ],
+      "length_recovery_applied": true,
+      "failures": []
+    },
+    "network_calls": 0,
+    "original_experiment_files_written": 0,
+    "recorded_results_equal": {
+      "results.csv": true,
+      "predictions.jsonl": true,
+      "scoring_details_v1.json": true,
+      "figures/p01_conditions_v1.png": true
+    },
+    "frozen_audit_mismatches": [
+      ".gitignore"
+    ],
+    "frozen_git_head": "d0db40fb7a7d7dd73edab546505b22b6d4b71eee",
+    "current_git_head": "635cc72905cc2b12ebdd54a12d85cbdba74b05fd"
+  },
+  "after": {
+    "phase": "after",
+    "tests": {
+      "annotation": 0,
+      "pilot": 1,
+      "pilot_frozen_context_supplementary": 0
+    },
+    "wire_replays": 18,
+    "original_files_checked": 5381,
+    "allowed_document_changes": [
+      ".gitignore",
+      "README.md"
+    ],
+    "outputs": {
+      "results.csv": "365729e82d85abcc3013f4fb341b2f292c2d96b1b59d298feacd945b7b9237d7",
+      "predictions.jsonl": "fbf43e0241ac588ad0f81cc793880aaade2516e0d6b5c1b1b51d3b79c249a9ec",
+      "scoring_details_v1.json": "70e5b60ed2b16063ae15ef14bb8754eb4bdefb285e6328021ff79970065622f8",
+      "figures/p01_conditions_v1.png": "fb81d9d90f20788523661307d85ac1b252b72f67df9223f2d9797e5faae13ea0",
+      "advisor_report_v1.md": "aff9ca0cd8a6a17b20461b5bc8b7eb1462527a01a72d1da03adb63113c53ce67"
+    },
+    "summary": {
+      "stage": "REAL_PILOT",
+      "task_id": "P01",
+      "approved_tasks": 1,
+      "P02": "PENDING",
+      "conditions_complete": 4,
+      "real_pilot_completed": true,
+      "paper_grade_results": false,
+      "inference_attempts_reserved": 18,
+      "response_records": 18,
+      "input_tokens": 246034,
+      "output_tokens": 13268,
+      "elapsed_sec": 527.8580000000366,
+      "tokens_complete": true,
+      "estimated_cost_cny": null,
+      "actual_billed_cost_cny": null,
+      "cost_uncertainty": "Current regional/alias tariff not reliably verified. Local reservation is NOT provider billing cap; hard API attempt cap is enforced.",
+      "hard_attempt_cap": 20,
+      "local_reserved_cny": 4.5,
+      "evidence_appropriate_answer_count": 2,
+      "semantic_accuracy": null,
+      "semantic_review": "PENDING; temporal citation checks do not establish semantic support",
+      "recovered_execution_errors": [
+        {
+          "created_at": "2026-10-28T12:53:24+08:00",
+          "condition": "FULL",
+          "segment": {
+            "segment_id": "seg-0003",
+            "start_sec": 180,
+            "end_sec": 240,
+            "planned_frames": 60,
+            "sample_fps": 1
+          },
+          "error_type": "ValueError",
+          "reason": "WINDOW_RETRY_LIMIT: raw outputs retained"
+        }
+      ],
+      "length_recovery_applied": true,
+      "failures": []
+    },
+    "network_calls": 0,
+    "original_experiment_files_written": 0,
+    "recorded_results_equal": {
+      "results.csv": true,
+      "predictions.jsonl": true,
+      "scoring_details_v1.json": true,
+      "figures/p01_conditions_v1.png": true
+    },
+    "frozen_audit_mismatches": [
+      ".gitignore",
+      "README.md"
+    ],
+    "frozen_git_head": "d0db40fb7a7d7dd73edab546505b22b6d4b71eee",
+    "current_git_head": "635cc72905cc2b12ebdd54a12d85cbdba74b05fd",
+    "before_after_equal": true
+  },
+  "final_catalog": {
+    "catalog_documents": 9,
+    "links_checked": 21,
+    "episode_references": 8,
+    "unchanged_original_files": 5379,
+    "ignore_policy": "PASS",
+    "source_video_hash": "PASS"
+  }
+}

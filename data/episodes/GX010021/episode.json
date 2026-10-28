@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "episode_id": "GX010021",
+  "layout": "legacy-reference",
+  "data_root": "golden_episode/GX010021",
+  "raw": "golden_episode/GX010021/source",
+  "candidates": [
+    "golden_episode/GX010021/annotations/v1_candidate",
+    "golden_episode/GX010021/annotations/v2_video_model"
+  ],
+  "human_gold": "experiments/icme2027_pilot/tasks_gold.jsonl",
+  "gold_scope": "P01 only; P02 PENDING; candidate annotations are not Gold",
+  "evidence_manifest": "golden_episode/GX010021/evidence/evidence_manifest.json",
+  "source_video": {
+    "path": "golden_episode/GX010021/source/GX010021.MP4",
+    "sha256": "fe4a11550bf2aea09a39ce1e72dba4633adc8c8b6a540e9894696e8b2ed1c8f9"
+  },
+  "experiment": "experiments/icme2027_pilot",
+  "P02": "PENDING"
+}

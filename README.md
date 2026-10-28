@@ -1,86 +1,35 @@
-# Long-Horizon Streaming Agent Benchmark — bench-demo
+# Long-Horizon Streaming Agent Benchmark
 
-多 Episode Benchmark 的单 Episode（Pilot）工作区，用于评测 **Model + Agent Harness** 的整体能力。当前以 GX010021 为 Golden Episode。
+面向多 Episode、多任务、多条件的长程流式视频 Agent 评测，研究 T1 在线过程状态理解、T2 长程依赖推理和 T3 持续监测与及时干预。
 
-## 研究目标与三个 Track
+当前 GX010021 是兼容保留的先导 Episode。P01 已完成四条件真实实验，P02 保持 **PENDING**。候选标注不等于人工 Gold；P01 批准记录以原实验文件为准。
 
-Benchmark 总体设计见 `docs/Long_Horizon_Streaming_Agent_Benchmark_Overall_Design_v1.0 (1).md`，定义了面向长程过程性视频（第一视角烹饪等）的三个 Track：
+- [研究与文档入口](docs/README.md)
+- [数据索引与新视频接入](data/README.md)
+- [实验版本和复现边界](docs/experiments.md)
+- [目录整理、映射、验收和恢复](docs/maintenance/README.md)
+- [现有标注流水线](annotation_pipeline/README.md)
 
-- **T1 Online Procedural State Understanding**：在线理解实际步骤进度、对象状态和状态转移。
-- **T2 Long-Horizon Procedural Dependency Reasoning**：利用跨时间事实与有效规则进行操作依赖推理。
-- **T3 Continual Monitoring & Timely Intervention**：持续发现可证异常、及时提醒并跟踪恢复。
-
-统一评测协议与三 Track 的任务定义以总体设计 V1.0 为准。
-
-## V1 与 V2 的区别
-
-- **V1 Candidate（已完成，已归档）**：利用 AI 辅助分析、历史报告整合形成的结构化候选事实与任务数据（`annotations/v1_candidate/`、`tasks/v1_candidates/`），作为历史基线和交叉核验来源。全部为 **CANDIDATE / NOT_REVIEWED**，人工 Gold 数量为 0，不代表人工确认的 Gold Ground Truth。
-- **V2 Video-model Annotation（Session 2 候选标注已完成）**：Qwen3-VL-Plus 两次实际分析原始全片，并与 V1/源文本交叉整合；59 事件候选、28 对象/观察组、138 状态、24 关系，全部 CANDIDATE，正错误与 Gold 为 0。模型仍有重要遗漏和分歧，详见 [全视频报告](golden_episode/GX010021/annotations/v2_video_model/full_video_report.md)。V2 任务构建留到 Session 3。
-
-## 当前项目进度
-
-- [x] Benchmark Overall Design V1.0（三个 Track 任务定义与统一评测协议）
-- [x] GX010021 多轮 AI 辅助标注报告归档与候选事实整合（V1：56 事件 / 22 对象引用 / 115 状态节点 / 162 证据 / 55 Ego-MC 记录）
-- [x] V1 自动校验与负例检查通过；14 项复核条目全部 OPEN（P0×2、P1×4、P2×8）
-- [x] 三个 Track 的 Pilot 候选任务实例化（`tasks/v1_candidates/pilot_task_candidates.json`，gold_answer 全 null）
-- [x] 证据准备产物（`evidence/`）：切片 + 关键帧 + manifest + T1/T2 任务复核清单与裁决记录（adjudication 尚未执行）
-- [x] V1/V2 目录隔离重构（Git 快照标签 `pre-v2-annotation`）
-- [x] V2 Schema、原生全视频模型接入与独立候选标注
-- [x] V2 与 V1 交叉整合、来源/时间/引用校验与候选覆盖报告
-- [ ] Session 3：从 V2 构建三个 Track 的适用任务
-- [ ] 证据复核裁决执行与人工 Gold 标注
-- [ ] Evaluator / Harness 开发、Pilot 与 Baseline 运行
-- [ ] 第二个及后续 Episode 接入
-
-## 目录结构
-
-```
-bench-demo/
-├── docs/                    # Benchmark 总体设计文档（V1.0）
-├── golden_episode/
-│   └── GX010021/            # 第一个 Golden Episode（后续 Episode 按同构目录并列添加）
-│       ├── source/          # 原始输入：GX010021.MP4、annotations.json（Ego-MC 原文）
-│       ├── annotation_reports/  # Qwen 四轮历史标注报告及归档说明 README
-│       ├── annotations/
-│       │   ├── v1_candidate/    # V1 结构化候选标注：events.json / objects.json / review_queue.json / schema.json
-│       │   └── v2_video_model/  # V2 统一候选标注、报告和本地 runs 原响应
-│       ├── tasks/
-│       │   ├── v1_candidates/   # pilot_task_candidates.json（T1/T2/T3 候选任务，gold_answer 全 null）
-│       │   └── v2_candidates/   # V2 候选任务工作区（占位，尚未实施）
-│       ├── reports/         # 整合报告、Track 适配性、缺口分析、任务生成报告、validation_results.json
-│       ├── scripts/         # build.py（可重跑整合）、validate.py（schema/语义/输入哈希校验）
-│       └── evidence/        # 证据复核产物：manifest、关键帧 PNG（入库）、切片 mp4（仅本地，
-│                            # 不入库，可用 prepare_evidence.py 从本地视频重新生成）、复核清单/裁决
-└── archive/                 # 已归档交付包（GX010021_pilot_task_candidates.zip），非日常输入，不入库
+```text
+annotation_pipeline/         兼容保留的标注代码、schemas、providers、tests
+benchmark/                   后续共用评测模块规划
+data/episodes/<episode_id>/   新 Episode 规范和旧数据索引
+golden_episode/GX010021/      旧 Episode 原位保留
+experiments/icme2027_pilot/   P01 冻结实验和重构链；P02 待定
+docs/                        当前研究设计、实验说明与整理记录
+archive/                     历史材料索引
+tests/                       测试入口说明
+scripts/                     自动化整理验证
 ```
 
-> 媒体文件说明：`*.MP4/*.mp4/*.zip` 与 `evidence/clips/` 已被 `.gitignore` 排除。原始视频（约 88MB）与 2.7GB 证据切片只保留在本地；克隆仓库后需把 `GX010021.MP4` 放回 `golden_episode/GX010021/source/` 才能重跑 `prepare_evidence.py` 与 build/validate 的视频元数据步骤。
+离线验收使用 Python 3.11 和现有 requirements.txt 中的依赖，需要完整本地资产及整理快照：
 
-## V1 标注构建与校验
-
-依赖：Python 3.11+、`jsonschema`、`ffprobe`（PATH）。在项目根目录执行：
-
-```bash
-python golden_episode/GX010021/scripts/build.py
-python golden_episode/GX010021/scripts/validate.py --self-test
+```powershell
+python -X utf8 scripts/verify_layout.py --phase before
+python -X utf8 scripts/verify_layout.py --phase after
+python -X utf8 scripts/check_catalog.py
 ```
 
-- `build.py` 基于脚本位置解析 Episode 根目录（不依赖调用时工作目录），先校验 7 个输入文件的 SHA-256 快照（4 份报告 + README + 视频元数据 + Ego-MC 原文），再从 `annotation_reports/` 整合生成 `annotations/v1_candidate/` 下四个 JSON；只读取 ffprobe 元数据，不解码视频帧。输入变化会拒绝重建。
-- `validate.py` 执行 Schema、ID/引用/时间/状态一致性、统计复算与输入哈希校验（约 5600 项断言），并运行内存负例检查；同时刷新 `reports/validation_results.json` 与 `reports/merge_report.md`。
+本次已执行，日志位于 `.local/layout-validation/`。重复执行前请将旧 phase 目录另名保留。流程在禁止网络的副本中运行单元测试、18 次 wire 请求重构、离线评分和报告生成。旧审计存在整理前就有的门禁失败，详情见验收报告，因此命令会返回非零退出码。
 
-最近一次校验：**PASS**（5618 项断言，13/13 负例被拒绝，7 个输入哈希一致）。
-
-注意：`build.py` 会覆盖重写 `annotations/v1_candidate/` 下的归档 JSON，属于可重跑的确定性重建（输入哈希校验通过后才会执行），不要在未核对输入快照的情况下对归档数据直接重跑。
-
-## 下一阶段计划（Session 3）
-
-1. 从 V2 候选筛选可以支撑任务的事实，精查影响答案的关键缺口。
-2. 明确源文本合法公开/生效时间、T1 完成条件及 T2 最小历史证据。
-3. 审核 T3 是否有可证正错误，不把反馈或正常再加热当错误真值。
-4. 在下一轮安排下构建任务；当前不开发 Runner、Evaluator 或 Baseline。
-
-## 注意事项
-
-- `source/GX010021.MP4`（约 88MB）被 `.gitignore` 排除，不进入普通 Git 提交；原始视频保留在本地，勿删。
-- V1 视觉证据来自历史 AI 报告；V2 新增原生视频模型来源和局部原帧证据。二者均为候选，结构校验通过和模型高置信度均不等于人工 Gold。
-- 历史报告与 `evidence/` 清单中记录的旧路径（如 `annotations/events.json`、`tasks/pilot_task_candidates.json`）为历史溯源字段，保留原值；当前实际运行路径见上方目录结构与各脚本中的 `v1_candidate` / `v1_candidates` 路径常量。
+Git 保存代码、文档、schemas、结构化标注、Gold 和小型结果；原视频、原始响应、帧、凭据及恢复快照仅留本地并独立备份。**Git clone 不包含完整实验资产。** 本次未调用模型 API，也未启动下一轮实验。

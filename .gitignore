@@ -56,3 +56,15 @@ golden_episode/*/annotations/v2_video_model/runs/
 # Annotation pipeline local credentials / baselines / config
 *.local.json
 config.local.yaml
+
+# Local recovery contains full media, raw responses and credentials; NEVER publish.
+/.recovery/
+/.local/
+
+# Future Episode local media and raw model runs (reviewed JSON/Gold remain tracked)
+/data/episodes/*/raw/*
+!/data/episodes/*/raw/README.md
+/data/episodes/*/evidence/frames/
+/data/episodes/*/evidence/clips/
+/data/episodes/*/annotations/candidates/**/runs/
+/data/episodes/*/annotations/candidates/**/raw_responses/

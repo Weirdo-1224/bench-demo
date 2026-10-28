@@ -1,0 +1,10 @@
+﻿old,new,action,reason,proposed
+docs/SESSION1_REPORT.md,docs/SESSION1_REPORT.md,retain,原审计冻结报告路径，暂缓移动，以历史索引区分,docs/archive/session1/SESSION1_REPORT.md
+docs/SESSION1_SMOKE_RETRY_REPORT.md,docs/SESSION1_SMOKE_RETRY_REPORT.md,retain,原审计冻结报告路径，暂缓移动，以历史索引区分,docs/archive/session1/SESSION1_SMOKE_RETRY_REPORT.md
+annotation_pipeline/,annotation_pipeline/,retain,保留模块导入、配置和命令行兼容,
+golden_episode/GX010021/,golden_episode/GX010021/,retain,硬编码路径、证据引用、冻结哈希及父目录层级依赖,
+experiments/icme2027_pilot/,experiments/icme2027_pilot/,retain,冻结 P01 全链及 P02 PENDING，保留原始请求、响应、输入和 Gold,
+_showcase_export/,_showcase_export/,retain,来源路径、帧资源和导出清单待独立验证,
+Benchmark_Research_Showcase_Final.html,Benchmark_Research_Showcase_Final.html,retain,历史展示资源和相对引用待独立验证,
+docs/Long_Horizon_Streaming_Agent_Benchmark_Overall_Design_v1.0 (1).md,docs/Long_Horizon_Streaming_Agent_Benchmark_Overall_Design_v1.0 (1).md,retain,保留当前设计的稳定入口,
+.venv/,.venv/,retain,本地环境含平台路径，不迁移,

@@ -1,0 +1,65 @@
+{
+  ".gitignore": {
+    "files": 1,
+    "bytes": 1336,
+    "tracked": 1,
+    "ignored": 0,
+    "untracked": 0
+  },
+  "Benchmark_Research_Showcase_Final.html": {
+    "files": 1,
+    "bytes": 5150500,
+    "tracked": 1,
+    "ignored": 0,
+    "untracked": 0
+  },
+  "README.md": {
+    "files": 1,
+    "bytes": 6871,
+    "tracked": 1,
+    "ignored": 0,
+    "untracked": 0
+  },
+  ".venv": {
+    "files": 2987,
+    "bytes": 47853836,
+    "tracked": 0,
+    "ignored": 2987,
+    "untracked": 0
+  },
+  "annotation_pipeline": {
+    "files": 49,
+    "bytes": 369559,
+    "tracked": 30,
+    "ignored": 19,
+    "untracked": 0
+  },
+  "docs": {
+    "files": 3,
+    "bytes": 61038,
+    "tracked": 3,
+    "ignored": 0,
+    "untracked": 0
+  },
+  "experiments": {
+    "files": 1700,
+    "bytes": 331722428,
+    "tracked": 99,
+    "ignored": 1601,
+    "untracked": 0
+  },
+  "golden_episode": {
+    "files": 558,
+    "bytes": 2984432221,
+    "tracked": 101,
+    "ignored": 457,
+    "untracked": 0
+  },
+  "_showcase_export": {
+    "files": 81,
+    "bytes": 14687061,
+    "tracked": 27,
+    "ignored": 54,
+    "untracked": 0
+  }
+}
