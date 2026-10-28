@@ -1,0 +1,66 @@
+[
+  {
+    "status": "fulfilled",
+    "value": {
+      "id": "LC-15-2",
+      "exit": 0,
+      "pts_frame_hash_match": true
+    }
+  },
+  {
+    "status": "fulfilled",
+    "value": {
+      "id": "LC-76-2",
+      "exit": 0,
+      "pts_frame_hash_match": true
+    }
+  },
+  {
+    "status": "fulfilled",
+    "value": {
+      "id": "LC-83-2",
+      "exit": 0,
+      "pts_frame_hash_match": true
+    }
+  },
+  {
+    "status": "fulfilled",
+    "value": {
+      "id": "LC-431-2",
+      "exit": 0,
+      "pts_frame_hash_match": true
+    }
+  },
+  {
+    "status": "fulfilled",
+    "value": {
+      "id": "LC-445-2",
+      "exit": 0,
+      "pts_frame_hash_match": true
+    }
+  },
+  {
+    "status": "fulfilled",
+    "value": {
+      "id": "LC-599-2",
+      "exit": 0,
+      "pts_frame_hash_match": true
+    }
+  },
+  {
+    "status": "fulfilled",
+    "value": {
+      "id": "LC-610-2",
+      "exit": 0,
+      "pts_frame_hash_match": true
+    }
+  },
+  {
+    "status": "fulfilled",
+    "value": {
+      "id": "LC-680-2",
+      "exit": 0,
+      "pts_frame_hash_match": true
+    }
+  }
+]

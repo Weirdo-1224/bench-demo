@@ -1,0 +1,224 @@
+{
+  "id": "GX010021-V2-T3-001",
+  "original_id": "GX010021-V2-T3-001",
+  "source_refs": [
+    {
+      "file": "golden_episode/GX010021/tasks/v2_candidates/task_candidates.json",
+      "json_pointer": "/tasks/8"
+    }
+  ],
+  "status": "NEEDS_EVIDENCE",
+  "annotation_version": "gx010021-task-candidate-v0.1",
+  "original_task_id": "GX010021-V2-T3-001",
+  "case_kind": "permitted_alternative_negative_candidate",
+  "title": "许可用油处理烤模的限定负例",
+  "track": "T3",
+  "subtask": "T3.1",
+  "raw_text": null,
+  "display_text": "许可用油处理烤模的限定负例",
+  "trigger": {
+    "kind": "CONTINUOUS_MONITORING",
+    "checkpoint_times": [],
+    "query_time": null,
+    "monitoring_interval": {
+      "start_time": 0,
+      "end_time": 696.929567
+    },
+    "isolation_required": false,
+    "mutate_main_state": false
+  },
+  "output_format": null,
+  "candidate_gt": {
+    "expected_behavior": "silence_for_scoped_permitted_substitution",
+    "scope": [
+      "missing_parchment_only",
+      "not_using_leftover_butter_only"
+    ],
+    "other_anomalies": "NOT_LABELED",
+    "inner_wall_coverage": "unknown"
+  },
+  "adjudicated_gt": null,
+  "reason_for_status": {
+    "track_fit": "主形式为全Episode自主监测；负例只能检查限定误报，不能替代T3正例能力",
+    "evidence_support": "L5-06正常候选有文本许可与视觉定位，但公开时间缺失",
+    "objective_scoring": "限定负例定义已明确；当前不能开启候选报警评分或全片FA/h",
+    "future_and_shortcut_audit": "排除V2-E25所引未来V2-V24，不以Success当正常真值；不向Agent发负例窗口或silence答案",
+    "ability_necessity": "连续报警轨迹可审计误报；始终沉默系统也可通过负例，无法证明发现/及时/恢复",
+    "evidence_gaps": [
+      "G04",
+      "G06",
+      "G09"
+    ]
+  },
+  "evidence_chain": [
+    {
+      "set_id": "oil-negative",
+      "bindings": [
+        {
+          "evidence_id": "SRC-R39",
+          "role": "原垫纸要求"
+        },
+        {
+          "evidence_id": "SRC-R40",
+          "role": "无纸自述"
+        },
+        {
+          "evidence_id": "SRC-R41",
+          "role": "剩余黄油建议"
+        },
+        {
+          "evidence_id": "SRC-R42",
+          "role": "无黄油并提议油"
+        },
+        {
+          "evidence_id": "SRC-R43",
+          "role": "限定许可"
+        },
+        {
+          "evidence_id": "H1-V-E049-01",
+          "role": "模底油候选"
+        },
+        {
+          "evidence_id": "H1-V-E049-02",
+          "role": "倾转烤模候选"
+        }
+      ],
+      "validity": "INSUFFICIENT",
+      "necessity": [
+        "许可与语境决定错误材料/遗漏误报范围；不能由模底液体断言所有规范满足"
+      ],
+      "applies_at_media_time": null,
+      "covers_fields": []
+    }
+  ],
+  "reference_items": [],
+  "record_refs": [
+    {
+      "kind": "l5",
+      "id": "L5-06",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/anomaly_candidates.json",
+      "json_pointer": "/records/5",
+      "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+    },
+    {
+      "kind": "event",
+      "id": "V2-E24",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/events.json",
+      "json_pointer": "/records/45",
+      "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+    },
+    {
+      "kind": "relation",
+      "id": "RULE-02",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+      "json_pointer": "/records/22",
+      "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+    },
+    {
+      "kind": "relation",
+      "id": "RULE-03",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+      "json_pointer": "/records/23",
+      "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+    }
+  ],
+  "media_frames": [
+    {
+      "id": "K017",
+      "original_id": "K017",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/showcase/showcase_manifest.json",
+          "json_pointer": "/asset_registry/6"
+        }
+      ],
+      "status": "UNCONFIRMED",
+      "annotation_version": "session4a-showcase-v1",
+      "source_path": "D:\\Python_Project\\bench-demo\\golden_episode\\GX010021\\evidence\\frames\\K017_562.228333.png",
+      "packaged_path": "media/frames/K017_562.228333.png",
+      "sha256": "33c2307288edf16f616c29bb12f879ed5b7dd43f9923e028a91f19fd53c1f49d",
+      "original_video_time_sec": 562.2283333333334,
+      "time_sec": 562.2283333333334,
+      "source_pts": 16866850,
+      "time_base": "1/30000",
+      "requested_seek_time_sec": 562.2,
+      "task_ids": [
+        "GX010021-V2-T3-001"
+      ],
+      "evidence_ids": [
+        "H1-V-E049-01"
+      ],
+      "event_ids": [
+        "V2-E24"
+      ],
+      "newly_extracted_for_showcase": false,
+      "transformation": "BYTE_IDENTICAL_COPY",
+      "display_text": "烤模底部可见局部液体、油瓶在附近；不能据此确认内壁全部覆盖。",
+      "raw_text": null
+    },
+    {
+      "id": "K018",
+      "original_id": "K018",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/showcase/showcase_manifest.json",
+          "json_pointer": "/asset_registry/7"
+        }
+      ],
+      "status": "UNCONFIRMED",
+      "annotation_version": "session4a-showcase-v1",
+      "source_path": "D:\\Python_Project\\bench-demo\\golden_episode\\GX010021\\evidence\\frames\\K018_567.233333.png",
+      "packaged_path": "media/frames/K018_567.233333.png",
+      "sha256": "eda61e2d0a1ba36268b84a5e58f741e6fc3c8ebf4495e6225cfd23a858614ef9",
+      "original_video_time_sec": 567.2333333333333,
+      "time_sec": 567.2333333333333,
+      "source_pts": 17017000,
+      "time_base": "1/30000",
+      "requested_seek_time_sec": 567.2,
+      "task_ids": [
+        "GX010021-V2-T3-001"
+      ],
+      "evidence_ids": [
+        "H1-V-E049-02"
+      ],
+      "event_ids": [
+        "V2-E25"
+      ],
+      "newly_extracted_for_showcase": false,
+      "transformation": "BYTE_IDENTICAL_COPY",
+      "display_text": "手持烤模的倾转候选阶段；这张静态图不证明完整旋转轨迹。",
+      "raw_text": null
+    }
+  ],
+  "missing_fields": [],
+  "monitoring_intervals": [],
+  "permitted_or_uncertain_conditions": [
+    {
+      "condition": "Yes, you can use oil.",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/procedure.json",
+          "json_pointer": "/records/42"
+        }
+      ],
+      "availability_to_online_agent": null
+    },
+    {
+      "condition": "油流/油滴进入模底候选",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/evidence_index.json",
+          "json_pointer": "/records/89"
+        }
+      ],
+      "video_interval_sec": [
+        560.2,
+        562.2
+      ]
+    }
+  ],
+  "confirmed_positive_examples": 0,
+  "alert_time_status": "not_established",
+  "false_alarm_risk": "HIGH_IF_SINGLE_PATH_TREATED_AS_MANDATORY",
+  "normal_monitoring_interval_status": "not_established"
+}

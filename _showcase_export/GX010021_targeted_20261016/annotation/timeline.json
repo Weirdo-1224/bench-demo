@@ -1,0 +1,792 @@
+{
+  "episode_id": "GX010021",
+  "selection": "四案例任务 record_refs 所直接引用的 V2 Event/State/Relation",
+  "records": [
+    {
+      "id": "V2-E17",
+      "original_id": "V2-E17",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/events.json",
+          "json_pointer": "/records/35"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "kind": "event",
+      "raw": {
+        "id": "V2-E17",
+        "annotation_status": "CANDIDATE",
+        "source_type": "video_model",
+        "source_refs": [
+          {
+            "source_id": "independent",
+            "json_pointer": "/events/16"
+          },
+          {
+            "source_id": "v1_events",
+            "json_pointer": "/events/38"
+          }
+        ],
+        "evidence_refs": [
+          "V2-V17"
+        ],
+        "confirmation_status": "UNCONFIRMED",
+        "action": "取出部分融化的黄油",
+        "actor": "person",
+        "objects": [
+          "V2-O9",
+          "V2-O11"
+        ],
+        "evidence_sufficient_time": 395.0,
+        "execution_status": "executed",
+        "observability": "direct_visual",
+        "confidence": 0.98,
+        "uncertainties": [],
+        "start_time": 390.0,
+        "end_time": 395.0,
+        "model_event_ids": [
+          "E17"
+        ],
+        "historical_event_ids": [
+          "E039"
+        ],
+        "time_precision": "MODEL_APPROXIMATE",
+        "model_claim": {
+          "event_id": "E17",
+          "action": "取出部分融化的黄油",
+          "actor": "person",
+          "objects": [
+            "O9",
+            "O11"
+          ],
+          "evidence_sufficient_time": 395.0,
+          "execution_status": "executed",
+          "observability": "direct_visual",
+          "evidence_refs": [
+            "V17"
+          ],
+          "confidence": 0.98,
+          "uncertainties": [],
+          "start_time": 390.0,
+          "end_time": 395.0
+        },
+        "crosscheck_categories": [
+          "BOTH_OBSERVED"
+        ],
+        "interpretation_status": "MODEL_CANDIDATE",
+        "interval_coverage_is_unverified": true
+      }
+    },
+    {
+      "id": "V2-E18",
+      "original_id": "V2-E18",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/events.json",
+          "json_pointer": "/records/36"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "kind": "event",
+      "raw": {
+        "id": "V2-E18",
+        "annotation_status": "CANDIDATE",
+        "source_type": "video_model",
+        "source_refs": [
+          {
+            "source_id": "independent",
+            "json_pointer": "/events/17"
+          },
+          {
+            "source_id": "v1_events",
+            "json_pointer": "/events/39"
+          },
+          {
+            "source_id": "v1_events",
+            "json_pointer": "/events/40"
+          }
+        ],
+        "evidence_refs": [
+          "V2-V18"
+        ],
+        "confirmation_status": "UNCONFIRMED",
+        "action": "再次加热黄油",
+        "actor": "person",
+        "objects": [
+          "V2-O9",
+          "V2-O11"
+        ],
+        "evidence_sufficient_time": 410.0,
+        "execution_status": "executed",
+        "observability": "direct_visual",
+        "confidence": 0.97,
+        "uncertainties": [],
+        "start_time": 405.0,
+        "end_time": 410.0,
+        "model_event_ids": [
+          "E18"
+        ],
+        "historical_event_ids": [
+          "E040",
+          "E041"
+        ],
+        "time_precision": "MODEL_APPROXIMATE",
+        "model_claim": {
+          "event_id": "E18",
+          "action": "再次加热黄油",
+          "actor": "person",
+          "objects": [
+            "O9",
+            "O11"
+          ],
+          "evidence_sufficient_time": 410.0,
+          "execution_status": "executed",
+          "observability": "direct_visual",
+          "evidence_refs": [
+            "V18"
+          ],
+          "confidence": 0.97,
+          "uncertainties": [],
+          "start_time": 405.0,
+          "end_time": 410.0
+        },
+        "crosscheck_categories": [
+          "BOTH_OBSERVED"
+        ],
+        "interpretation_status": "MODEL_CANDIDATE",
+        "interval_coverage_is_unverified": true
+      }
+    },
+    {
+      "id": "V2-E24",
+      "original_id": "V2-E24",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/events.json",
+          "json_pointer": "/records/45"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "kind": "event",
+      "raw": {
+        "id": "V2-E24",
+        "annotation_status": "CANDIDATE",
+        "source_type": "video_model",
+        "source_refs": [
+          {
+            "source_id": "independent",
+            "json_pointer": "/events/23"
+          },
+          {
+            "source_id": "v1_events",
+            "json_pointer": "/events/48"
+          }
+        ],
+        "evidence_refs": [
+          "V2-V23"
+        ],
+        "confirmation_status": "UNCONFIRMED",
+        "action": "向烤盘倒油",
+        "actor": "person",
+        "objects": [
+          "V2-O10",
+          "V2-O15"
+        ],
+        "evidence_sufficient_time": 565.0,
+        "execution_status": "executed",
+        "observability": "direct_visual",
+        "confidence": 0.97,
+        "uncertainties": [],
+        "start_time": 560.0,
+        "end_time": 565.0,
+        "model_event_ids": [
+          "E24"
+        ],
+        "historical_event_ids": [
+          "E049"
+        ],
+        "time_precision": "MODEL_APPROXIMATE",
+        "model_claim": {
+          "event_id": "E24",
+          "action": "向烤盘倒油",
+          "actor": "person",
+          "objects": [
+            "O10",
+            "O15"
+          ],
+          "evidence_sufficient_time": 565.0,
+          "execution_status": "executed",
+          "observability": "direct_visual",
+          "evidence_refs": [
+            "V23"
+          ],
+          "confidence": 0.97,
+          "uncertainties": [],
+          "start_time": 560.0,
+          "end_time": 565.0
+        },
+        "crosscheck_categories": [
+          "BOTH_OBSERVED"
+        ],
+        "interpretation_status": "MODEL_CANDIDATE",
+        "interval_coverage_is_unverified": true
+      }
+    },
+    {
+      "id": "H1-E051",
+      "original_id": "H1-E051",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/events.json",
+          "json_pointer": "/records/49"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "kind": "event",
+      "raw": {
+        "id": "H1-E051",
+        "annotation_status": "CANDIDATE",
+        "source_type": "integration_candidate",
+        "source_refs": [
+          {
+            "source_id": "v1_events",
+            "json_pointer": "/events/50"
+          },
+          {
+            "source_id": "local_checks",
+            "json_pointer": "/records/5"
+          }
+        ],
+        "evidence_refs": [
+          "H1-V-E051-01",
+          "H1-V-E051-02",
+          "H1-T-R46",
+          "H1-T-R47",
+          "H1-T-R48",
+          "H1-T-R49",
+          "H1-I-E051-02",
+          "LC-599-2"
+        ],
+        "confirmation_status": "UNCONFIRMED",
+        "action": "直接补加面粉",
+        "actor": "双手",
+        "objects": [
+          "V2-O7",
+          "V2-O1",
+          "H1-O15"
+        ],
+        "start_time": 595,
+        "end_time": 604,
+        "evidence_sufficient_time": null,
+        "observability": "partial_visual_snapshot_plus_historical_candidate",
+        "confidence": null,
+        "execution_status": "uncertain",
+        "time_precision": "HISTORICAL_APPROXIMATE",
+        "historical_event_ids": [
+          "E051"
+        ],
+        "description": "拿起面粉袋直接向容器面糊表面倾倒少量白色面粉",
+        "historical_facts": [
+          {
+            "field": "core_action",
+            "value": "直接补加面粉",
+            "status": "REPORTED_SUPPORTED",
+            "evidence_ids": [
+              "V-E051-01",
+              "V-E051-02"
+            ],
+            "reason": "仅依据历史报告所述抽样帧的核心动作；未人工确认。"
+          },
+          {
+            "field": "flour_addition_to_mixing_container",
+            "value": 2,
+            "status": "REPORTED_SUPPORTED",
+            "evidence_ids": [
+              "V-E051-01",
+              "V-E051-02"
+            ],
+            "reason": "第二处可见粉入容器；仅计E032/E051。"
+          },
+          {
+            "field": "additional_hidden_flour_addition",
+            "value": null,
+            "status": "UNCERTAIN",
+            "evidence_ids": [
+              "V-E051-01",
+              "V-E051-02",
+              "I-E051-02"
+            ],
+            "reason": "1fps不能排除遮挡动作，无证据不补造第三次。"
+          },
+          {
+            "field": "supplement_intent",
+            "value": "操作者自述仍要加一点面粉",
+            "status": "UNCERTAIN",
+            "evidence_ids": [
+              "T-R49"
+            ],
+            "reason": "R49语句印证意图；意图字段仍非视觉事实。"
+          }
+        ],
+        "uncertainties": [
+          "未在独立全片模型中单独表示；历史候选未自动成为新视觉事实。",
+          "局部单帧佐证此动作阶段，未验证历史完整起止。"
+        ]
+      }
+    },
+    {
+      "id": "STATE-LC-431-2",
+      "original_id": "STATE-LC-431-2",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/objects.json",
+          "json_pointer": "/states/133"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "kind": "state",
+      "raw": {
+        "id": "STATE-LC-431-2",
+        "annotation_status": "CANDIDATE",
+        "source_type": "integration_candidate",
+        "source_refs": [
+          {
+            "source_id": "local_checks",
+            "json_pointer": "/records/3"
+          }
+        ],
+        "evidence_refs": [
+          "LC-431-2"
+        ],
+        "confirmation_status": "UNCONFIRMED",
+        "object_id": "V2-O9",
+        "attribute": "visible_phase",
+        "value": "yellow liquid plus pale solid block",
+        "valid_from": 431.2308,
+        "valid_to": 431.2308,
+        "transition_event_id": null,
+        "observability": "direct_visual_snapshot",
+        "confidence": null,
+        "uncertainties": [
+          "仅对应这一原始帧；不推定此前/此后状态或完整动作。"
+        ]
+      }
+    },
+    {
+      "id": "STATE-LC-445-2",
+      "original_id": "STATE-LC-445-2",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/objects.json",
+          "json_pointer": "/states/134"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "kind": "state",
+      "raw": {
+        "id": "STATE-LC-445-2",
+        "annotation_status": "CANDIDATE",
+        "source_type": "integration_candidate",
+        "source_refs": [
+          {
+            "source_id": "local_checks",
+            "json_pointer": "/records/4"
+          }
+        ],
+        "evidence_refs": [
+          "LC-445-2"
+        ],
+        "confirmation_status": "UNCONFIRMED",
+        "object_id": "V2-O9",
+        "attribute": "visible_phase",
+        "value": "liquid plus pale solid material",
+        "valid_from": 445.211433,
+        "valid_to": 445.211433,
+        "transition_event_id": null,
+        "observability": "direct_visual_snapshot",
+        "confidence": null,
+        "uncertainties": [
+          "仅对应这一原始帧；不推定此前/此后状态或完整动作。"
+        ]
+      }
+    },
+    {
+      "id": "V2-R12",
+      "original_id": "V2-R12",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+          "json_pointer": "/records/10"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "kind": "relation",
+      "raw": {
+        "id": "V2-R12",
+        "annotation_status": "CANDIDATE",
+        "source_type": "video_model",
+        "source_refs": [
+          {
+            "source_id": "independent",
+            "json_pointer": "/relations/11"
+          }
+        ],
+        "evidence_refs": [
+          "V2-V24"
+        ],
+        "confirmation_status": "UNCONFIRMED",
+        "type": "material_transferred_to",
+        "from_id": "V2-O1",
+        "to_id": "V2-O10",
+        "event_ids": [
+          "V2-E26"
+        ],
+        "confidence": 0.99,
+        "uncertainties": [
+          "关系仅为候选；不能由时序先后转换为必然前置依赖。"
+        ],
+        "basis": "MODEL_VISUAL_CHAIN_CANDIDATE",
+        "model_claim": {
+          "relation_id": "R12",
+          "type": "material_transferred_to",
+          "from_id": "O1",
+          "to_id": "O10",
+          "event_ids": [
+            "E26"
+          ],
+          "evidence_refs": [
+            "V24"
+          ],
+          "confidence": 0.99,
+          "uncertainties": [
+            "关系仅为候选；不能由时序先后转换为必然前置依赖。"
+          ]
+        },
+        "evidence_available_from": null
+      }
+    },
+    {
+      "id": "PATH-03",
+      "original_id": "PATH-03",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+          "json_pointer": "/records/16"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "kind": "relation",
+      "raw": {
+        "id": "PATH-03",
+        "annotation_status": "CANDIDATE",
+        "source_type": "integration_candidate",
+        "source_refs": [
+          {
+            "source_id": "v1_events",
+            "json_pointer": "/events/21"
+          }
+        ],
+        "evidence_refs": [
+          "H1-V-E022-01",
+          "H1-T-R18",
+          "H1-T-R19"
+        ],
+        "confirmation_status": "UNCONFIRMED",
+        "type": "material_transferred_to",
+        "from_id": "V2-O5",
+        "to_id": "V2-O13",
+        "event_ids": [
+          "V2-E7"
+        ],
+        "basis": "HISTORICAL_VISUAL_CANDIDATE_WITH_SOURCE_POINTER",
+        "material_identity": "CANDIDATE",
+        "evidence_available_from": null,
+        "uncertainties": [
+          "对象对应为候选；各阶段黑色量杯不得自动确认为同一只，实际材料体积未知。"
+        ]
+      }
+    },
+    {
+      "id": "PATH-04",
+      "original_id": "PATH-04",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+          "json_pointer": "/records/17"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "kind": "relation",
+      "raw": {
+        "id": "PATH-04",
+        "annotation_status": "CANDIDATE",
+        "source_type": "integration_candidate",
+        "source_refs": [
+          {
+            "source_id": "v1_events",
+            "json_pointer": "/events/22"
+          }
+        ],
+        "evidence_refs": [
+          "H1-V-E023-01",
+          "H1-T-R18",
+          "H1-T-R19"
+        ],
+        "confirmation_status": "UNCONFIRMED",
+        "type": "material_transferred_to",
+        "from_id": "V2-O13",
+        "to_id": "V2-O1",
+        "event_ids": [
+          "V2-E8"
+        ],
+        "basis": "HISTORICAL_VISUAL_CANDIDATE_WITH_SOURCE_POINTER",
+        "material_identity": "CANDIDATE",
+        "evidence_available_from": null,
+        "uncertainties": [
+          "对象对应为候选；各阶段黑色量杯不得自动确认为同一只，实际材料体积未知。"
+        ]
+      }
+    },
+    {
+      "id": "PATH-05",
+      "original_id": "PATH-05",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+          "json_pointer": "/records/18"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "kind": "relation",
+      "raw": {
+        "id": "PATH-05",
+        "annotation_status": "CANDIDATE",
+        "source_type": "integration_candidate",
+        "source_refs": [
+          {
+            "source_id": "v1_events",
+            "json_pointer": "/events/30"
+          }
+        ],
+        "evidence_refs": [
+          "H1-V-E031-01",
+          "H1-T-R26"
+        ],
+        "confirmation_status": "UNCONFIRMED",
+        "type": "material_transferred_to",
+        "from_id": "V2-O7",
+        "to_id": "V2-O13",
+        "event_ids": [
+          "V2-E12"
+        ],
+        "basis": "HISTORICAL_VISUAL_CANDIDATE_WITH_SOURCE_POINTER",
+        "material_identity": "CANDIDATE",
+        "evidence_available_from": null,
+        "uncertainties": [
+          "对象对应为候选；各阶段黑色量杯不得自动确认为同一只，实际材料体积未知。"
+        ]
+      }
+    },
+    {
+      "id": "PATH-06",
+      "original_id": "PATH-06",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+          "json_pointer": "/records/19"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "kind": "relation",
+      "raw": {
+        "id": "PATH-06",
+        "annotation_status": "CANDIDATE",
+        "source_type": "integration_candidate",
+        "source_refs": [
+          {
+            "source_id": "v1_events",
+            "json_pointer": "/events/31"
+          }
+        ],
+        "evidence_refs": [
+          "H1-V-E032-01",
+          "H1-T-R26",
+          "H1-T-R27"
+        ],
+        "confirmation_status": "UNCONFIRMED",
+        "type": "material_transferred_to",
+        "from_id": "V2-O13",
+        "to_id": "V2-O1",
+        "event_ids": [
+          "V2-E13"
+        ],
+        "basis": "HISTORICAL_VISUAL_CANDIDATE_WITH_SOURCE_POINTER",
+        "material_identity": "CANDIDATE",
+        "evidence_available_from": null,
+        "uncertainties": [
+          "对象对应为候选；各阶段黑色量杯不得自动确认为同一只，实际材料体积未知。"
+        ]
+      }
+    },
+    {
+      "id": "PATH-07",
+      "original_id": "PATH-07",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+          "json_pointer": "/records/20"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "kind": "relation",
+      "raw": {
+        "id": "PATH-07",
+        "annotation_status": "CANDIDATE",
+        "source_type": "integration_candidate",
+        "source_refs": [
+          {
+            "source_id": "v1_events",
+            "json_pointer": "/events/50"
+          }
+        ],
+        "evidence_refs": [
+          "H1-V-E051-01",
+          "H1-V-E051-02",
+          "H1-T-R46",
+          "H1-T-R47",
+          "H1-T-R48",
+          "H1-T-R49",
+          "H1-I-E051-02",
+          "LC-599-2"
+        ],
+        "confirmation_status": "UNCONFIRMED",
+        "type": "material_transferred_to",
+        "from_id": "V2-O7",
+        "to_id": "V2-O1",
+        "event_ids": [
+          "H1-E051"
+        ],
+        "basis": "HISTORICAL_VISUAL_CANDIDATE_WITH_SOURCE_POINTER",
+        "material_identity": "CANDIDATE",
+        "evidence_available_from": null,
+        "uncertainties": [
+          "对象对应为候选；各阶段黑色量杯不得自动确认为同一只，实际材料体积未知。"
+        ]
+      }
+    },
+    {
+      "id": "RULE-02",
+      "original_id": "RULE-02",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+          "json_pointer": "/records/22"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "kind": "relation",
+      "raw": {
+        "id": "RULE-02",
+        "annotation_status": "CANDIDATE",
+        "source_type": "source_annotation_text",
+        "source_refs": [
+          {
+            "source_id": "source_text",
+            "json_pointer": "/texts/37"
+          },
+          {
+            "source_id": "source_text",
+            "json_pointer": "/texts/38"
+          },
+          {
+            "source_id": "source_text",
+            "json_pointer": "/texts/39"
+          },
+          {
+            "source_id": "source_text",
+            "json_pointer": "/texts/40"
+          }
+        ],
+        "evidence_refs": [],
+        "confirmation_status": "UNCONFIRMED",
+        "type": "rule_supersedes",
+        "from_id": "SRC-R39",
+        "to_id": "SRC-R41",
+        "event_ids": [],
+        "basis": "EXPLICIT_TEXT_AND_DIALOGUE_CONTEXT_CANDIDATE",
+        "scope": "lining this baking pan",
+        "condition": "No parchment paper is a speaker claim, not an inventory measurement",
+        "effective_from": null,
+        "evidence_available_from": null,
+        "applicability": "UNCONFIRMED_ONLINE_TIMING",
+        "uncertainties": [
+          "替代关系为限定语境候选；标签本身不证明替代，公开/生效时间仍未知。"
+        ]
+      }
+    },
+    {
+      "id": "RULE-03",
+      "original_id": "RULE-03",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+          "json_pointer": "/records/23"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "kind": "relation",
+      "raw": {
+        "id": "RULE-03",
+        "annotation_status": "CANDIDATE",
+        "source_type": "source_annotation_text",
+        "source_refs": [
+          {
+            "source_id": "source_text",
+            "json_pointer": "/texts/39"
+          },
+          {
+            "source_id": "source_text",
+            "json_pointer": "/texts/40"
+          },
+          {
+            "source_id": "source_text",
+            "json_pointer": "/texts/41"
+          },
+          {
+            "source_id": "source_text",
+            "json_pointer": "/texts/42"
+          }
+        ],
+        "evidence_refs": [],
+        "confirmation_status": "UNCONFIRMED",
+        "type": "rule_supersedes",
+        "from_id": "SRC-R41",
+        "to_id": "SRC-R43",
+        "event_ids": [],
+        "basis": "EXPLICIT_TEXT_AND_DIALOGUE_CONTEXT_CANDIDATE",
+        "scope": "lining this baking pan only",
+        "condition": "Oil permission applies to this pan context; no general recipe substitution",
+        "effective_from": null,
+        "evidence_available_from": null,
+        "applicability": "UNCONFIRMED_ONLINE_TIMING",
+        "uncertainties": [
+          "替代关系为限定语境候选；标签本身不证明替代，公开/生效时间仍未知。"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+﻿task_id,condition,mode,execution_status,fact_gold,evidence_sufficient,answer,answerability,fact_correct,evidence_appropriate_answer,answerability_correct,ungrounded_certain,temporal_citations_valid,citations_overlap_mask,visible_samples_cited,citations_outside_supplied_range,positive_citation_hits_verified_action,semantic_evidence_support,full_control_consistent,input_tokens,output_tokens,elapsed_sec,attempts,estimated_cost_cny,actual_billed_cost_cny,error
+P01,FULL,rolling_memory,SUCCESS,YES,True,YES,ANSWERABLE,True,True,True,False,True,False,16,False,False,PENDING_MANUAL_REVIEW,True,97052,7390,266.609,7,,,
+P01,CRITICAL_MASK,rolling_memory,SUCCESS,YES,False,NO,ANSWERABLE,,False,False,True,True,False,58,False,,PENDING_MANUAL_REVIEW,,67798,2746,109.813,5,,,
+P01,CONTROL_MASK,rolling_memory,SUCCESS,YES,True,YES,ANSWERABLE,True,True,True,False,True,False,44,False,True,PENDING_MANUAL_REVIEW,True,68031,2971,129.373,5,,,
+P01,recent_only,recent_only,SUCCESS,YES,False,NO,ANSWERABLE,,False,False,True,False,False,60,True,,PENDING_MANUAL_REVIEW,,13153,161,22.063,1,,,

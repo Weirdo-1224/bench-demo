@@ -1,0 +1,43 @@
+{
+  "protocol": "GX010021-P01-v1",
+  "gold_sha256": "c773cb7331e9c7ab57d28972619cb34a0d154e87378a903778e5f979186ee969",
+  "config": {
+    "model": "qwen3-vl-plus",
+    "model_version": "alias-unpinned",
+    "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+    "api_key_env": "DASHSCOPE_API_KEY",
+    "temperature": 0,
+    "max_output_tokens": 1536,
+    "max_frames_per_segment": 60,
+    "timeout_sec": 180,
+    "memory_max_chars": 4096,
+    "sample_fps": 1,
+    "max_attempts_global": 20,
+    "max_attempts_per_window": 2,
+    "max_request_bytes": 15000000,
+    "cost_reserve_per_attempt_cny": 0.25,
+    "max_local_reserved_cny": 5.0,
+    "price_estimate": null,
+    "price_uncertainty": "Current regional/alias tariff not reliably verified. Local reservation is NOT provider billing cap; hard API attempt cap is enforced."
+  },
+  "conditions": [
+    "FULL",
+    "CRITICAL_MASK",
+    "CONTROL_MASK",
+    "recent_only"
+  ],
+  "prompts": {
+    "base": "你是仅观察静音视频的流式视频助手。只根据已经提供的帧和你此前的观察记忆作答。黑帧表示该采样时刻的视觉信息不可见，不代表动作没有发生。所有时间为原视频秒；每秒只采样一帧，帧间事件不能当作已看见。不要根据常识或物体外观虚构动作、身份、材料种类、话语、指令或不可见内容。工具存在、结果外观和真实操作是不同证据。不能访问视频文件或外部来源。",
+    "observe": "当前没有问题。请更新有界历史观察记忆，供后续未知问题使用。保留直接可见的操作、物体与工具关系、容器和材料变化、原视频时间及不确定性。区分直接观察与推测。不要只写最新窗口，不要把黑帧内容补齐。返回严格JSON对象，且只有memory一个字段，值为不超过3000个Unicode字符的字符串；无需代码围栏。",
+    "answer": "现在到达提问时刻。请根据已提供的历史观察记忆和当前窗口回答问题。证据足够才给YES或NO；无法确定则给UNKNOWN，不能把没有看到当作没有发生。返回严格JSON，且恰好包含answer、answerability、evidence_intervals_sec、reason。answer只能是YES、NO、UNKNOWN；answerability只能是ANSWERABLE或INSUFFICIENT_EVIDENCE。evidence_intervals_sec为支持该结论的原视频秒区间列表，每项[start,end]，只引用实际已提供且可见的证据，不能引用黑屏内未见事件；若无直接支持证据可用空列表。reason说明直接观察、推断与不能确定的部分；不要代码围栏。"
+  },
+  "code_hashes": {
+    "experiments/icme2027_pilot/runtime.py": "5cc25e3be7e6d9d7a09edc5f899ef1a8e667f3dbf8f7453a5a33b5637c47a1c4",
+    "experiments/icme2027_pilot/pilot.py": "52c269cf43417de627e701e9e91a9cfe1cded0e5ef34ea72c62f0a56ffb772a1",
+    "annotation_pipeline/providers/qwen.py": "6fece78d5306a77769d0f1f5b95d95b94e4771b42cfe7f261f171f73091fefbc"
+  },
+  "reset_policy": "Empty memory per condition; only same-condition validated prefix reused",
+  "source_video_sha256": "fe4a11550bf2aea09a39ce1e72dba4633adc8c8b6a540e9894696e8b2ed1c8f9",
+  "seed": null,
+  "pricing_note": "Tariff lookup not sufficiently verified; estimate null, hard 20 inference-attempt cap across all resumes/conditions"
+}

@@ -1,0 +1,66 @@
+{
+  "created_at": "2026-10-28T11:43:24+08:00",
+  "plan_only": true,
+  "api_calls_made": 0,
+  "tasks": [
+    {
+      "task_id": "P01",
+      "query_time_sec": 300.0,
+      "rolling_windows": [
+        {
+          "segment_id": "seg-0000",
+          "start_sec": 0,
+          "end_sec": 60,
+          "planned_frames": 60,
+          "sample_fps": 1
+        },
+        {
+          "segment_id": "seg-0001",
+          "start_sec": 60,
+          "end_sec": 120,
+          "planned_frames": 60,
+          "sample_fps": 1
+        },
+        {
+          "segment_id": "seg-0002",
+          "start_sec": 120,
+          "end_sec": 180,
+          "planned_frames": 60,
+          "sample_fps": 1
+        },
+        {
+          "segment_id": "seg-0003",
+          "start_sec": 180,
+          "end_sec": 240,
+          "planned_frames": 60,
+          "sample_fps": 1
+        },
+        {
+          "segment_id": "seg-0004",
+          "start_sec": 240,
+          "end_sec": 300,
+          "planned_frames": 60,
+          "sample_fps": 1
+        }
+      ],
+      "recent_only_interval_sec": [
+        240.0,
+        300.0
+      ],
+      "calls_per_rolling_condition": 5,
+      "rolling_conditions": [
+        "FULL",
+        "CRITICAL_MASK",
+        "CONTROL_MASK"
+      ],
+      "rolling_calls_total": 15,
+      "recent_only_calls": 1,
+      "sampling_fps": 1,
+      "note": "Each historical window updates memory; final window answers with question delivered for first time. No extra answer call."
+    }
+  ],
+  "total_calls_without_retries": 16,
+  "price_estimate_cny": null,
+  "price_uncertainty": "Not quoted/verified; no model tokens billed in preparation. Runtime must enforce hard attempt cap.",
+  "run_gate": "APPROVED Gold + implemented/reviewed phase-2 runner + explicit request cap required"
+}

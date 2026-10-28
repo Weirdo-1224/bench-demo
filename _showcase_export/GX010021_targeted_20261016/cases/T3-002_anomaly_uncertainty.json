@@ -1,0 +1,149 @@
+{
+  "id": "GX010021-V2-T3-002",
+  "original_id": "GX010021-V2-T3-002",
+  "source_refs": [
+    {
+      "file": "golden_episode/GX010021/tasks/v2_candidates/task_candidates.json",
+      "json_pointer": "/tasks/9"
+    }
+  ],
+  "status": "NEEDS_EVIDENCE",
+  "annotation_version": "gx010021-task-candidate-v0.1",
+  "original_task_id": "GX010021-V2-T3-002",
+  "case_kind": "anomaly_uncertainty",
+  "title": "分段黄油再加热的潜在正常负例",
+  "track": "T3",
+  "subtask": "T3.1",
+  "raw_text": null,
+  "display_text": "分段黄油再加热的潜在正常负例",
+  "trigger": {
+    "kind": "CONTINUOUS_MONITORING",
+    "checkpoint_times": [],
+    "query_time": null,
+    "monitoring_interval": {
+      "start_time": 0,
+      "end_time": 696.929567
+    },
+    "isolation_required": false,
+    "mutate_main_state": false
+  },
+  "output_format": null,
+  "candidate_gt": {
+    "expected_behavior": "do_not_label_reheat_alone_as_error",
+    "normal_interval": null,
+    "heating_duration": "unknown",
+    "recovery_event": "NOT_ASSERTED"
+  },
+  "adjudicated_gt": null,
+  "reason_for_status": {
+    "track_fit": "全Episode持续监测的正常流程研究候选；非问答",
+    "evidence_support": "L5-07没有候选正常区间；V2定位只支持动作候选",
+    "objective_scoring": "无经核验正常窗口与规则时间，暂不评分；不硬填405–410正常真值",
+    "future_and_shortcut_audit": "SRC-R31是反馈身份，不能视作自主检测证据；不造15秒实际加热结论",
+    "ability_necessity": "可用于持续误报控制，无法测纠错恢复；需要额外正例",
+    "evidence_gaps": [
+      "G04",
+      "G09",
+      "G10"
+    ]
+  },
+  "evidence_chain": [
+    {
+      "set_id": "reheat-negative",
+      "bindings": [
+        {
+          "evidence_id": "SRC-R30",
+          "role": "分段加热检查规范候选"
+        },
+        {
+          "evidence_id": "SRC-R31",
+          "role": "进一步加热反馈候选"
+        },
+        {
+          "evidence_id": "V2-V17",
+          "role": "取出部分融化材料"
+        },
+        {
+          "evidence_id": "V2-V18",
+          "role": "再加热操作"
+        }
+      ],
+      "validity": "INSUFFICIENT",
+      "necessity": [
+        "分段许可与检查语境决定再加热是否偏差；反馈已公开后不能计反馈前自主识别"
+      ],
+      "applies_at_media_time": null,
+      "covers_fields": []
+    }
+  ],
+  "reference_items": [],
+  "record_refs": [
+    {
+      "kind": "l5",
+      "id": "L5-07",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/anomaly_candidates.json",
+      "json_pointer": "/records/6",
+      "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+    },
+    {
+      "kind": "l5",
+      "id": "L5-04",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/anomaly_candidates.json",
+      "json_pointer": "/records/3",
+      "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+    },
+    {
+      "kind": "event",
+      "id": "V2-E17",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/events.json",
+      "json_pointer": "/records/35",
+      "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+    },
+    {
+      "kind": "event",
+      "id": "V2-E18",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/events.json",
+      "json_pointer": "/records/36",
+      "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+    }
+  ],
+  "media_frames": [],
+  "missing_fields": [
+    "verified_online_rule_release_time",
+    "confirmed_deviation",
+    "observable_correction_or_recovery",
+    "adjudicated_alert_start"
+  ],
+  "monitoring_intervals": [],
+  "permitted_or_uncertain_conditions": [
+    {
+      "condition": "15-second bursts / 15 more seconds 来自辅助文本；在线公开时间未知",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/procedure.json",
+          "json_pointer": "/records/29"
+        },
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/procedure.json",
+          "json_pointer": "/records/30"
+        }
+      ]
+    },
+    {
+      "condition": "V2 仅记录部分融化、再加热候选",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/evidence_index.json",
+          "json_pointer": "/records/16"
+        },
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/evidence_index.json",
+          "json_pointer": "/records/17"
+        }
+      ]
+    }
+  ],
+  "confirmed_positive_examples": 0,
+  "alert_time_status": "not_established",
+  "false_alarm_risk": "HIGH; normal reheating could be mislabeled as error/recovery"
+}

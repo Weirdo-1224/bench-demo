@@ -1,0 +1,55 @@
+{
+  "episode_id": "GX010021",
+  "annotation_version": "session2-v2.0-candidate",
+  "adjudicated_gold_count": 0,
+  "review_status_mapping": {
+    "PILOT_CANDIDATE": "可做诊断展示，不是正式 Gold",
+    "NEEDS_EVIDENCE": "关键证据缺失",
+    "UNSUITABLE": "保留设计痕迹但不进入候选集"
+  },
+  "cases": [
+    {
+      "id": "T1-002",
+      "data": "../cases/T1-002_butter_state.json",
+      "frame_ids": [
+        "LC-431-2",
+        "LC-445-2"
+      ],
+      "status": "PILOT_CANDIDATE"
+    },
+    {
+      "id": "T2-003",
+      "data": "../cases/T2-003_material_history.json",
+      "frame_ids": [
+        "K002",
+        "K004",
+        "K013",
+        "K015",
+        "LC-599-2",
+        "K025",
+        "LC-680-2"
+      ],
+      "status": "PILOT_CANDIDATE"
+    },
+    {
+      "id": "T3-001",
+      "data": "../cases/T3-001_permitted_alternative.json",
+      "frame_ids": [
+        "K017",
+        "K018"
+      ],
+      "status": "NEEDS_EVIDENCE"
+    },
+    {
+      "id": "T3-002",
+      "data": "../cases/T3-002_anomaly_uncertainty.json",
+      "frame_ids": [],
+      "status": "NEEDS_EVIDENCE",
+      "missing_media_reason": "Session4A asset_registry 没有直接绑定 T3-002 的展示帧；不新抽帧。"
+    }
+  ],
+  "timeline_ref": "../annotation/timeline.json",
+  "state_ref": "../annotation/state_transitions.json",
+  "graph_ref": "../annotation/relation_graph.json",
+  "media_ref": "../media/media_index.json"
+}

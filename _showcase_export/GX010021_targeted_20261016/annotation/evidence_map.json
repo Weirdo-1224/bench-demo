@@ -1,0 +1,933 @@
+{
+  "episode_id": "GX010021",
+  "records": [
+    {
+      "id": "H1-V-E027-01",
+      "original_id": "H1-V-E027-01",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/tasks/v2_candidates/task_candidates.json",
+          "json_pointer": "/evidence_registry/H1-V-E027-01"
+        },
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/evidence_index.json",
+          "json_pointer": "/records/59"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "modality": "video",
+      "start_sec": 199.2,
+      "end_sec": 199.2,
+      "time_sec": 199.2,
+      "object_ids": [],
+      "event_ids": [],
+      "raw_text": "搅拌棒进入液面",
+      "display_text": "搅拌棒进入液面",
+      "availability_time": null,
+      "frame_path": null,
+      "frame_sha256": null,
+      "precision": "HISTORICAL_UNVERIFIED",
+      "access": "EVALUATOR_ONLY_REFERENCE"
+    },
+    {
+      "id": "H1-V-E027-03",
+      "original_id": "H1-V-E027-03",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/tasks/v2_candidates/task_candidates.json",
+          "json_pointer": "/evidence_registry/H1-V-E027-03"
+        },
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/evidence_index.json",
+          "json_pointer": "/records/61"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "modality": "video",
+      "start_sec": 235.2,
+      "end_sec": 235.2,
+      "time_sec": 235.2,
+      "object_ids": [],
+      "event_ids": [],
+      "raw_text": "搅拌棒提离",
+      "display_text": "搅拌棒提离",
+      "availability_time": null,
+      "frame_path": null,
+      "frame_sha256": null,
+      "precision": "HISTORICAL_UNVERIFIED",
+      "access": "EVALUATOR_ONLY_REFERENCE"
+    },
+    {
+      "id": "H1-V-E028-01",
+      "original_id": "H1-V-E028-01",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/tasks/v2_candidates/task_candidates.json",
+          "json_pointer": "/evidence_registry/H1-V-E028-01"
+        },
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/evidence_index.json",
+          "json_pointer": "/records/62"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "modality": "video",
+      "start_sec": 236.2,
+      "end_sec": 238.2,
+      "time_sec": null,
+      "object_ids": [],
+      "event_ids": [],
+      "raw_text": "打蛋器置左侧台面",
+      "display_text": "打蛋器置左侧台面",
+      "availability_time": null,
+      "frame_path": null,
+      "frame_sha256": null,
+      "precision": "HISTORICAL_UNVERIFIED",
+      "access": "EVALUATOR_ONLY_REFERENCE"
+    },
+    {
+      "id": "LC-431-2",
+      "original_id": "LC-431-2",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/tasks/v2_candidates/task_candidates.json",
+          "json_pointer": "/evidence_registry/LC-431-2"
+        },
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/evidence_index.json",
+          "json_pointer": "/records/187"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "modality": "video",
+      "start_sec": 431.2308,
+      "end_sec": 431.2308,
+      "time_sec": 431.2308,
+      "object_ids": [],
+      "event_ids": [],
+      "raw_text": "Yellow liquid and a pale solid block coexist in the glass dish after second microwave removal.",
+      "display_text": "Yellow liquid and a pale solid block coexist in the glass dish after second microwave removal.",
+      "availability_time": null,
+      "frame_path": "golden_episode/GX010021/annotations/v2_video_model/runs/session2-full-video/local_visual_checks/frame-431.2.png",
+      "frame_sha256": "01d0924407c43b6787cfbcf09e12cf39db29975b7832b851dd4d1441c3222a42",
+      "precision": "VERIFIED_SINGLE_FRAME_PTS",
+      "access": "EVALUATOR_ONLY_REFERENCE"
+    },
+    {
+      "id": "LC-445-2",
+      "original_id": "LC-445-2",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/tasks/v2_candidates/task_candidates.json",
+          "json_pointer": "/evidence_registry/LC-445-2"
+        },
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/evidence_index.json",
+          "json_pointer": "/records/188"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "modality": "video",
+      "start_sec": 445.211433,
+      "end_sec": 445.211433,
+      "time_sec": 445.211433,
+      "object_ids": [],
+      "event_ids": [],
+      "raw_text": "A black tool is inside the yellow liquid; pale solid material remains visible. This snapshot does not prove a full stir interval or final melting.",
+      "display_text": "A black tool is inside the yellow liquid; pale solid material remains visible. This snapshot does not prove a full stir interval or final melting.",
+      "availability_time": null,
+      "frame_path": "golden_episode/GX010021/annotations/v2_video_model/runs/session2-full-video/local_visual_checks/frame-445.2.png",
+      "frame_sha256": "5d339059ad2319c422d4bd704abecadfaef95b6e3ded8d71c26094f7c051d630",
+      "precision": "VERIFIED_SINGLE_FRAME_PTS",
+      "access": "EVALUATOR_ONLY_REFERENCE"
+    },
+    {
+      "id": "LC-680-2",
+      "original_id": "LC-680-2",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/tasks/v2_candidates/task_candidates.json",
+          "json_pointer": "/evidence_registry/LC-680-2"
+        },
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/evidence_index.json",
+          "json_pointer": "/records/191"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "modality": "video",
+      "start_sec": 680.212867,
+      "end_sec": 680.212867,
+      "time_sec": 680.212867,
+      "object_ids": [],
+      "event_ids": [],
+      "raw_text": "Batter is in loaf pan; main mixing container retains thin residue and a black tool. No new lid-closing or tool-placement action can be inferred from this one image.",
+      "display_text": "Batter is in loaf pan; main mixing container retains thin residue and a black tool. No new lid-closing or tool-placement action can be inferred from this one image.",
+      "availability_time": null,
+      "frame_path": "golden_episode/GX010021/annotations/v2_video_model/runs/session2-full-video/local_visual_checks/frame-680.2.png",
+      "frame_sha256": "82c5e98fab31057f00b8375ca3b2140f52a50bb133e34fb8a896ef8801f7a2c3",
+      "precision": "VERIFIED_SINGLE_FRAME_PTS",
+      "access": "EVALUATOR_ONLY_REFERENCE"
+    },
+    {
+      "id": "H1-V-E051-02",
+      "original_id": "H1-V-E051-02",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/tasks/v2_candidates/task_candidates.json",
+          "json_pointer": "/evidence_registry/H1-V-E051-02"
+        },
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/evidence_index.json",
+          "json_pointer": "/records/93"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "modality": "video",
+      "start_sec": 603.2,
+      "end_sec": 603.2,
+      "time_sec": 603.2,
+      "object_ids": [],
+      "event_ids": [],
+      "raw_text": "表面新增白粉堆",
+      "display_text": "表面新增白粉堆",
+      "availability_time": null,
+      "frame_path": null,
+      "frame_sha256": null,
+      "precision": "HISTORICAL_UNVERIFIED",
+      "access": "EVALUATOR_ONLY_REFERENCE"
+    },
+    {
+      "id": "H1-V-E052-02",
+      "original_id": "H1-V-E052-02",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/tasks/v2_candidates/task_candidates.json",
+          "json_pointer": "/evidence_registry/H1-V-E052-02"
+        },
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/evidence_index.json",
+          "json_pointer": "/records/95"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "modality": "video",
+      "start_sec": 630.2,
+      "end_sec": 630.2,
+      "time_sec": 630.2,
+      "object_ids": [],
+      "event_ids": [],
+      "raw_text": "面糊表面光滑",
+      "display_text": "面糊表面光滑",
+      "availability_time": null,
+      "frame_path": null,
+      "frame_sha256": null,
+      "precision": "HISTORICAL_UNVERIFIED",
+      "access": "EVALUATOR_ONLY_REFERENCE"
+    },
+    {
+      "id": "SRC-R18",
+      "original_id": "SRC-R18",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/tasks/v2_candidates/task_candidates.json",
+          "json_pointer": "/evidence_registry/SRC-R18"
+        },
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/procedure.json",
+          "json_pointer": "/records/17"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "modality": "external_text",
+      "start_sec": 134.748,
+      "end_sec": 134.748,
+      "time_sec": 134.748,
+      "object_ids": [],
+      "event_ids": [],
+      "raw_text": "Now add half cup of milk and whisk the mixture.",
+      "display_text": "Now add half cup of milk and whisk the mixture.",
+      "availability_time": null,
+      "frame_path": null,
+      "frame_sha256": null,
+      "precision": "UNSPECIFIED_SINGLE_POINT_LABEL",
+      "access": "EVALUATOR_ONLY_REFERENCE"
+    },
+    {
+      "id": "H1-V-E022-01",
+      "original_id": "H1-V-E022-01",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/tasks/v2_candidates/task_candidates.json",
+          "json_pointer": "/evidence_registry/H1-V-E022-01"
+        },
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/evidence_index.json",
+          "json_pointer": "/records/53"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "modality": "video",
+      "start_sec": 153.2,
+      "end_sec": 156.2,
+      "time_sec": null,
+      "object_ids": [],
+      "event_ids": [],
+      "raw_text": "牛奶盒倒奶入杯，一次可见量取",
+      "display_text": "牛奶盒倒奶入杯，一次可见量取",
+      "availability_time": null,
+      "frame_path": null,
+      "frame_sha256": null,
+      "precision": "HISTORICAL_UNVERIFIED",
+      "access": "EVALUATOR_ONLY_REFERENCE"
+    },
+    {
+      "id": "H1-V-E023-01",
+      "original_id": "H1-V-E023-01",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/tasks/v2_candidates/task_candidates.json",
+          "json_pointer": "/evidence_registry/H1-V-E023-01"
+        },
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/evidence_index.json",
+          "json_pointer": "/records/54"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "modality": "video",
+      "start_sec": 159.2,
+      "end_sec": 161.2,
+      "time_sec": null,
+      "object_ids": [],
+      "event_ids": [],
+      "raw_text": "杯中奶倾入容器，台面见白色液滴",
+      "display_text": "杯中奶倾入容器，台面见白色液滴",
+      "availability_time": null,
+      "frame_path": null,
+      "frame_sha256": null,
+      "precision": "HISTORICAL_UNVERIFIED",
+      "access": "EVALUATOR_ONLY_REFERENCE"
+    },
+    {
+      "id": "H1-V-E020-02",
+      "original_id": "H1-V-E020-02",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/tasks/v2_candidates/task_candidates.json",
+          "json_pointer": "/evidence_registry/H1-V-E020-02"
+        },
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/evidence_index.json",
+          "json_pointer": "/records/51"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "modality": "video",
+      "start_sec": 144.2,
+      "end_sec": 144.2,
+      "time_sec": 144.2,
+      "object_ids": [],
+      "event_ids": [],
+      "raw_text": "杯柄标签 \"1/4 CUP\"",
+      "display_text": "杯柄标签 \"1/4 CUP\"",
+      "availability_time": null,
+      "frame_path": null,
+      "frame_sha256": null,
+      "precision": "HISTORICAL_UNVERIFIED",
+      "access": "EVALUATOR_ONLY_REFERENCE"
+    },
+    {
+      "id": "SRC-R39",
+      "original_id": "SRC-R39",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/tasks/v2_candidates/task_candidates.json",
+          "json_pointer": "/evidence_registry/SRC-R39"
+        },
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/procedure.json",
+          "json_pointer": "/records/38"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "modality": "external_text",
+      "start_sec": 538.698,
+      "end_sec": 538.698,
+      "time_sec": 538.698,
+      "object_ids": [],
+      "event_ids": [],
+      "raw_text": "Use a parchment paper to line the baking tray.",
+      "display_text": "Use a parchment paper to line the baking tray.",
+      "availability_time": null,
+      "frame_path": null,
+      "frame_sha256": null,
+      "precision": "UNSPECIFIED_SINGLE_POINT_LABEL",
+      "access": "EVALUATOR_ONLY_REFERENCE"
+    },
+    {
+      "id": "SRC-R40",
+      "original_id": "SRC-R40",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/tasks/v2_candidates/task_candidates.json",
+          "json_pointer": "/evidence_registry/SRC-R40"
+        },
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/procedure.json",
+          "json_pointer": "/records/39"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "modality": "external_text",
+      "start_sec": 544.398,
+      "end_sec": 544.398,
+      "time_sec": 544.398,
+      "object_ids": [],
+      "event_ids": [],
+      "raw_text": "I don't have a parchment paper.",
+      "display_text": "I don't have a parchment paper.",
+      "availability_time": null,
+      "frame_path": null,
+      "frame_sha256": null,
+      "precision": "UNSPECIFIED_SINGLE_POINT_LABEL",
+      "access": "EVALUATOR_ONLY_REFERENCE"
+    },
+    {
+      "id": "SRC-R41",
+      "original_id": "SRC-R41",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/tasks/v2_candidates/task_candidates.json",
+          "json_pointer": "/evidence_registry/SRC-R41"
+        },
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/procedure.json",
+          "json_pointer": "/records/40"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "modality": "external_text",
+      "start_sec": 546.378,
+      "end_sec": 546.378,
+      "time_sec": 546.378,
+      "object_ids": [],
+      "event_ids": [],
+      "raw_text": "You can then use some of the leftover butter from the melt to line up the tray.",
+      "display_text": "You can then use some of the leftover butter from the melt to line up the tray.",
+      "availability_time": null,
+      "frame_path": null,
+      "frame_sha256": null,
+      "precision": "UNSPECIFIED_SINGLE_POINT_LABEL",
+      "access": "EVALUATOR_ONLY_REFERENCE"
+    },
+    {
+      "id": "SRC-R42",
+      "original_id": "SRC-R42",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/tasks/v2_candidates/task_candidates.json",
+          "json_pointer": "/evidence_registry/SRC-R42"
+        },
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/procedure.json",
+          "json_pointer": "/records/41"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "modality": "external_text",
+      "start_sec": 552.478,
+      "end_sec": 552.478,
+      "time_sec": 552.478,
+      "object_ids": [],
+      "event_ids": [],
+      "raw_text": "I don't have any leftover butter, should I use oil instead?",
+      "display_text": "I don't have any leftover butter, should I use oil instead?",
+      "availability_time": null,
+      "frame_path": null,
+      "frame_sha256": null,
+      "precision": "UNSPECIFIED_SINGLE_POINT_LABEL",
+      "access": "EVALUATOR_ONLY_REFERENCE"
+    },
+    {
+      "id": "SRC-R43",
+      "original_id": "SRC-R43",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/tasks/v2_candidates/task_candidates.json",
+          "json_pointer": "/evidence_registry/SRC-R43"
+        },
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/procedure.json",
+          "json_pointer": "/records/42"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "modality": "external_text",
+      "start_sec": 556.368,
+      "end_sec": 556.368,
+      "time_sec": 556.368,
+      "object_ids": [],
+      "event_ids": [],
+      "raw_text": "Yes, you can use oil.",
+      "display_text": "Yes, you can use oil.",
+      "availability_time": null,
+      "frame_path": null,
+      "frame_sha256": null,
+      "precision": "UNSPECIFIED_SINGLE_POINT_LABEL",
+      "access": "EVALUATOR_ONLY_REFERENCE"
+    },
+    {
+      "id": "H1-V-E049-01",
+      "original_id": "H1-V-E049-01",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/tasks/v2_candidates/task_candidates.json",
+          "json_pointer": "/evidence_registry/H1-V-E049-01"
+        },
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/evidence_index.json",
+          "json_pointer": "/records/89"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "modality": "video",
+      "start_sec": 560.2,
+      "end_sec": 562.2,
+      "time_sec": null,
+      "object_ids": [],
+      "event_ids": [],
+      "raw_text": "油流/油滴进入模底",
+      "display_text": "油流/油滴进入模底",
+      "availability_time": null,
+      "frame_path": null,
+      "frame_sha256": null,
+      "precision": "HISTORICAL_UNVERIFIED",
+      "access": "EVALUATOR_ONLY_REFERENCE"
+    },
+    {
+      "id": "H1-V-E053-01",
+      "original_id": "H1-V-E053-01",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/tasks/v2_candidates/task_candidates.json",
+          "json_pointer": "/evidence_registry/H1-V-E053-01"
+        },
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/evidence_index.json",
+          "json_pointer": "/records/96"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "modality": "video",
+      "start_sec": 633.2,
+      "end_sec": 641.2,
+      "time_sec": null,
+      "object_ids": [],
+      "event_ids": [],
+      "raw_text": "混合容器面糊倾入烤模",
+      "display_text": "混合容器面糊倾入烤模",
+      "availability_time": null,
+      "frame_path": null,
+      "frame_sha256": null,
+      "precision": "HISTORICAL_UNVERIFIED",
+      "access": "EVALUATOR_ONLY_REFERENCE"
+    },
+    {
+      "id": "H1-V-E031-01",
+      "original_id": "H1-V-E031-01",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/tasks/v2_candidates/task_candidates.json",
+          "json_pointer": "/evidence_registry/H1-V-E031-01"
+        },
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/evidence_index.json",
+          "json_pointer": "/records/66"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "modality": "video",
+      "start_sec": 270.2,
+      "end_sec": 281.2,
+      "time_sec": null,
+      "object_ids": [],
+      "event_ids": [],
+      "raw_text": "开袋并向杯倒粉",
+      "display_text": "开袋并向杯倒粉",
+      "availability_time": null,
+      "frame_path": null,
+      "frame_sha256": null,
+      "precision": "HISTORICAL_UNVERIFIED",
+      "access": "EVALUATOR_ONLY_REFERENCE"
+    },
+    {
+      "id": "H1-V-E032-01",
+      "original_id": "H1-V-E032-01",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/tasks/v2_candidates/task_candidates.json",
+          "json_pointer": "/evidence_registry/H1-V-E032-01"
+        },
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/evidence_index.json",
+          "json_pointer": "/records/67"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "modality": "video",
+      "start_sec": 287.2,
+      "end_sec": 291.2,
+      "time_sec": null,
+      "object_ids": [],
+      "event_ids": [],
+      "raw_text": "量杯倒粉入混合容器，出现白色粉堆",
+      "display_text": "量杯倒粉入混合容器，出现白色粉堆",
+      "availability_time": null,
+      "frame_path": null,
+      "frame_sha256": null,
+      "precision": "HISTORICAL_UNVERIFIED",
+      "access": "EVALUATOR_ONLY_REFERENCE"
+    },
+    {
+      "id": "H1-V-E051-01",
+      "original_id": "H1-V-E051-01",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/tasks/v2_candidates/task_candidates.json",
+          "json_pointer": "/evidence_registry/H1-V-E051-01"
+        },
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/evidence_index.json",
+          "json_pointer": "/records/92"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "modality": "video",
+      "start_sec": 595.2,
+      "end_sec": 602.2,
+      "time_sec": null,
+      "object_ids": [],
+      "event_ids": [],
+      "raw_text": "袋直接向混合容器倒粉",
+      "display_text": "袋直接向混合容器倒粉",
+      "availability_time": null,
+      "frame_path": null,
+      "frame_sha256": null,
+      "precision": "HISTORICAL_UNVERIFIED",
+      "access": "EVALUATOR_ONLY_REFERENCE"
+    },
+    {
+      "id": "V2-V24",
+      "original_id": "V2-V24",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/tasks/v2_candidates/task_candidates.json",
+          "json_pointer": "/evidence_registry/V2-V24"
+        },
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/evidence_index.json",
+          "json_pointer": "/records/23"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "modality": "video",
+      "start_sec": 633,
+      "end_sec": 678,
+      "time_sec": null,
+      "object_ids": [],
+      "event_ids": [],
+      "raw_text": "将面糊从塑料盒倒入金属烤盘，用刮刀辅助刮净。",
+      "display_text": "将面糊从塑料盒倒入金属烤盘，用刮刀辅助刮净。",
+      "availability_time": null,
+      "frame_path": null,
+      "frame_sha256": null,
+      "precision": "MODEL_APPROXIMATE_RANGE",
+      "access": "EVALUATOR_ONLY_REFERENCE"
+    },
+    {
+      "id": "SRC-R16",
+      "original_id": "SRC-R16",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/tasks/v2_candidates/task_candidates.json",
+          "json_pointer": "/evidence_registry/SRC-R16"
+        },
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/procedure.json",
+          "json_pointer": "/records/15"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "modality": "external_text",
+      "start_sec": 127.568,
+      "end_sec": 127.568,
+      "time_sec": 127.568,
+      "object_ids": [],
+      "event_ids": [],
+      "raw_text": "Okay then. We will proceed with only 1/4 cup of sugar.",
+      "display_text": "Okay then. We will proceed with only 1/4 cup of sugar.",
+      "availability_time": null,
+      "frame_path": null,
+      "frame_sha256": null,
+      "precision": "UNSPECIFIED_SINGLE_POINT_LABEL",
+      "access": "EVALUATOR_ONLY_REFERENCE"
+    },
+    {
+      "id": "H1-V-E049-02",
+      "original_id": "H1-V-E049-02",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/tasks/v2_candidates/task_candidates.json",
+          "json_pointer": "/evidence_registry/H1-V-E049-02"
+        },
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/evidence_index.json",
+          "json_pointer": "/records/90"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "modality": "video",
+      "start_sec": 567.2,
+      "end_sec": 579.2,
+      "time_sec": null,
+      "object_ids": [],
+      "event_ids": [],
+      "raw_text": "持模倾斜旋转，内壁油膜不可辨",
+      "display_text": "持模倾斜旋转，内壁油膜不可辨",
+      "availability_time": null,
+      "frame_path": null,
+      "frame_sha256": null,
+      "precision": "HISTORICAL_UNVERIFIED",
+      "access": "EVALUATOR_ONLY_REFERENCE"
+    },
+    {
+      "id": "SRC-R30",
+      "original_id": "SRC-R30",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/tasks/v2_candidates/task_candidates.json",
+          "json_pointer": "/evidence_registry/SRC-R30"
+        },
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/procedure.json",
+          "json_pointer": "/records/29"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "modality": "external_text",
+      "start_sec": 333.708,
+      "end_sec": 333.708,
+      "time_sec": 333.708,
+      "object_ids": [],
+      "event_ids": [],
+      "raw_text": "Let's run the microwave in 15-second bursts and check if the butter is melted at the end of 15 seconds.",
+      "display_text": "Let's run the microwave in 15-second bursts and check if the butter is melted at the end of 15 seconds.",
+      "availability_time": null,
+      "frame_path": null,
+      "frame_sha256": null,
+      "precision": "UNSPECIFIED_SINGLE_POINT_LABEL",
+      "access": "EVALUATOR_ONLY_REFERENCE"
+    },
+    {
+      "id": "SRC-R31",
+      "original_id": "SRC-R31",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/tasks/v2_candidates/task_candidates.json",
+          "json_pointer": "/evidence_registry/SRC-R31"
+        },
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/procedure.json",
+          "json_pointer": "/records/30"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "modality": "external_text",
+      "start_sec": 397.648,
+      "end_sec": 397.648,
+      "time_sec": 397.648,
+      "object_ids": [],
+      "event_ids": [],
+      "raw_text": "Hmm, the butter is not melted yet. Let's put the bowl back in the microwave for 15 more seconds.",
+      "display_text": "Hmm, the butter is not melted yet. Let's put the bowl back in the microwave for 15 more seconds.",
+      "availability_time": null,
+      "frame_path": null,
+      "frame_sha256": null,
+      "precision": "UNSPECIFIED_SINGLE_POINT_LABEL",
+      "access": "EVALUATOR_ONLY_REFERENCE"
+    },
+    {
+      "id": "V2-V17",
+      "original_id": "V2-V17",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/tasks/v2_candidates/task_candidates.json",
+          "json_pointer": "/evidence_registry/V2-V17"
+        },
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/evidence_index.json",
+          "json_pointer": "/records/16"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "modality": "video",
+      "start_sec": 390,
+      "end_sec": 395,
+      "time_sec": null,
+      "object_ids": [],
+      "event_ids": [],
+      "raw_text": "打开微波炉门，取出已部分融化的黄油容器。",
+      "display_text": "打开微波炉门，取出已部分融化的黄油容器。",
+      "availability_time": null,
+      "frame_path": null,
+      "frame_sha256": null,
+      "precision": "MODEL_APPROXIMATE_RANGE",
+      "access": "EVALUATOR_ONLY_REFERENCE"
+    },
+    {
+      "id": "V2-V18",
+      "original_id": "V2-V18",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/tasks/v2_candidates/task_candidates.json",
+          "json_pointer": "/evidence_registry/V2-V18"
+        },
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/evidence_index.json",
+          "json_pointer": "/records/17"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "modality": "video",
+      "start_sec": 405,
+      "end_sec": 410,
+      "time_sec": null,
+      "object_ids": [],
+      "event_ids": [],
+      "raw_text": "再次将黄油容器放入微波炉，设定时间后启动。",
+      "display_text": "再次将黄油容器放入微波炉，设定时间后启动。",
+      "availability_time": null,
+      "frame_path": null,
+      "frame_sha256": null,
+      "precision": "MODEL_APPROXIMATE_RANGE",
+      "access": "EVALUATOR_ONLY_REFERENCE"
+    },
+    {
+      "id": "LC-76-2",
+      "original_id": "LC-76-2",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/tasks/v2_candidates/task_candidates.json",
+          "json_pointer": "/evidence_registry/LC-76-2"
+        },
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/evidence_index.json",
+          "json_pointer": "/records/185"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "modality": "video",
+      "start_sec": 76.209467,
+      "end_sec": 76.209467,
+      "time_sec": 76.209467,
+      "object_ids": [],
+      "event_ids": [],
+      "raw_text": "Two visible yolks inside mixing container; one further egg is on the countertop. Does not prove total cracked count.",
+      "display_text": "Two visible yolks inside mixing container; one further egg is on the countertop. Does not prove total cracked count.",
+      "availability_time": null,
+      "frame_path": "golden_episode/GX010021/annotations/v2_video_model/runs/session2-full-video/local_visual_checks/frame-76.2.png",
+      "frame_sha256": "a465628d7247419d7bd34054e8535b968672893fa30e16afd7922e2d7665e5f5",
+      "precision": "VERIFIED_SINGLE_FRAME_PTS",
+      "access": "EVALUATOR_ONLY_REFERENCE"
+    },
+    {
+      "id": "LC-83-2",
+      "original_id": "LC-83-2",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/tasks/v2_candidates/task_candidates.json",
+          "json_pointer": "/evidence_registry/LC-83-2"
+        },
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/evidence_index.json",
+          "json_pointer": "/records/186"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "modality": "video",
+      "start_sec": 83.216467,
+      "end_sec": 83.216467,
+      "time_sec": 83.216467,
+      "object_ids": [],
+      "event_ids": [],
+      "raw_text": "Two yolks remain visible; a hand holds an egg near the countertop. Shell count/egg integrity and final destination remain uncertain.",
+      "display_text": "Two yolks remain visible; a hand holds an egg near the countertop. Shell count/egg integrity and final destination remain uncertain.",
+      "availability_time": null,
+      "frame_path": "golden_episode/GX010021/annotations/v2_video_model/runs/session2-full-video/local_visual_checks/frame-83.2.png",
+      "frame_sha256": "1cbecddef6aca18b8fa77d1614ebe1a6b97b1caeff3bcfbf635806471da62ef5",
+      "precision": "VERIFIED_SINGLE_FRAME_PTS",
+      "access": "EVALUATOR_ONLY_REFERENCE"
+    },
+    {
+      "id": "SRC-R10",
+      "original_id": "SRC-R10",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/tasks/v2_candidates/task_candidates.json",
+          "json_pointer": "/evidence_registry/SRC-R10"
+        },
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/procedure.json",
+          "json_pointer": "/records/9"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "modality": "external_text",
+      "start_sec": 79,
+      "end_sec": 79,
+      "time_sec": 79,
+      "object_ids": [],
+      "event_ids": [],
+      "raw_text": "You should add two eggs, not three.",
+      "display_text": "You should add two eggs, not three.",
+      "availability_time": null,
+      "frame_path": null,
+      "frame_sha256": null,
+      "precision": "UNSPECIFIED_SINGLE_POINT_LABEL",
+      "access": "EVALUATOR_ONLY_REFERENCE"
+    }
+  ]
+}

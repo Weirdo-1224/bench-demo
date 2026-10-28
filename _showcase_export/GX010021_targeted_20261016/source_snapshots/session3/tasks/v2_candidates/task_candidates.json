@@ -1,0 +1,3906 @@
+{
+  "schema_version": "gx010021-task-candidate-v0.1",
+  "benchmark_design_version": "V1.0",
+  "episode_id": "GX010021",
+  "created_date": "2026-10-11",
+  "timezone": "Asia/Shanghai",
+  "data_status": "CANDIDATE",
+  "human_review": "NOT_REVIEWED",
+  "media": {
+    "duration_sec": 696.929567,
+    "fps": 29.97002997002997,
+    "fps_rational": "30000/1001",
+    "width": 854,
+    "height": 480,
+    "has_audio": false,
+    "sha256": "fe4a11550bf2aea09a39ce1e72dba4633adc8c8b6a540e9894696e8b2ed1c8f9",
+    "size_bytes": 91608663,
+    "source_path": "golden_episode/GX010021/source/GX010021.MP4",
+    "full_decode_check": "PASS",
+    "time_basis": "original_mp4_seconds"
+  },
+  "design_source": "docs/Long_Horizon_Streaming_Agent_Benchmark_Overall_Design_v1.0 (1).md",
+  "source_manifest": [
+    {
+      "path": "docs/Long_Horizon_Streaming_Agent_Benchmark_Overall_Design_v1.0 (1).md",
+      "sha256": "260908d8bab250d53bc27b13da48e74ffa22f9d7aa24f88470396f0361007cb0"
+    },
+    {
+      "path": "golden_episode/GX010021/annotations/v2_video_model/annotation_manifest.json",
+      "sha256": "33aa4b935435c89f3e97cdda2b1e0b81d78572b018c08bcef517f28b76fd1a4c"
+    },
+    {
+      "path": "golden_episode/GX010021/annotations/v2_video_model/events.json",
+      "sha256": "f65beff9f71d5cc151ef15ffa228c6b2a136291174b87aa1b71c82178542a214"
+    },
+    {
+      "path": "golden_episode/GX010021/annotations/v2_video_model/objects.json",
+      "sha256": "9b971f2ed4060246f71363bef711a66ce5cb92fbeeeb02bd7236d56a5ffe855e"
+    },
+    {
+      "path": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+      "sha256": "2b3a2fac0e75670f5d9be598a4105bb545b7972cbed6eaff0cbe558cbd52cf0c"
+    },
+    {
+      "path": "golden_episode/GX010021/annotations/v2_video_model/procedure.json",
+      "sha256": "a82d0e18da871f80cba5d477be7aae75d52642a89beed2c778b336937e06d531"
+    },
+    {
+      "path": "golden_episode/GX010021/annotations/v2_video_model/anomaly_candidates.json",
+      "sha256": "53b1a5fcb9cac99adbea757f6c7626cc50262eea2b840958295dfee246d5ddf1"
+    },
+    {
+      "path": "golden_episode/GX010021/annotations/v2_video_model/evidence_index.json",
+      "sha256": "7c23a7dcb5983969e945fe0c85f5c30656cbb6c716180d0f71e6a59d109bd369"
+    },
+    {
+      "path": "golden_episode/GX010021/annotations/v2_video_model/full_video_report.md",
+      "sha256": "012f8b7d0bb614ef244af39ae41405a8e0272c286b85cb1489607bdab155ad2e"
+    },
+    {
+      "path": "golden_episode/GX010021/annotations/v2_video_model/crosscheck_report.md",
+      "sha256": "73986909d2f36b8d7d565171fdbf972d1f2dbd2a8d64c09acb9bdb1c28cb4dcd"
+    },
+    {
+      "path": "golden_episode/GX010021/annotations/v2_video_model/first_pass_diagnosis.md",
+      "sha256": "53d746fdf494565097f690de3d5da4a1c3008aa86b2b05e67e4bffd39c8bc284"
+    },
+    {
+      "path": "golden_episode/GX010021/tasks/v1_candidates/pilot_task_candidates.json",
+      "sha256": "58385dde24086f21404215449e644b90894ea8c226070af79122bed7f4c2705f"
+    },
+    {
+      "path": "golden_episode/GX010021/annotations/v1_candidate/events.json",
+      "sha256": "e4e69cab21f6ee78a2f3253c7491a06ba773663660fb386d52b3acd5573c4ce2"
+    },
+    {
+      "path": "golden_episode/GX010021/annotations/v1_candidate/objects.json",
+      "sha256": "6ab89d92d291f2dcd92d3eb821a2db4435eb2a84fa7e8effddd266d34b5fe42e"
+    },
+    {
+      "path": "golden_episode/GX010021/annotations/v2_video_model/global_analysis.json",
+      "sha256": "637ca967c5c8962a9700a8cc5dd8e457e74c481dd8ca6cf2ab9d3ff401d0f6bb"
+    },
+    {
+      "path": "golden_episode/GX010021/annotations/v2_video_model/runs/session2-full-video/seg-global/global_analysis.json",
+      "sha256": "5d9bc1b52cc35592dc079b8f0095c970f9a2361a31ec6eff1757ab21011c8b89"
+    },
+    {
+      "path": "golden_episode/GX010021/annotations/v2_video_model/runs/session2-full-video/seg-focused/global_analysis.json",
+      "sha256": "efd754988313427860d9d67aa006512ece2545982683128f28de742c1fe46244"
+    },
+    {
+      "path": "golden_episode/GX010021/source/annotations.json",
+      "sha256": "88183e371dac0948378b723aa4c2ca102a2597770ed518805d52f180cd780527"
+    },
+    {
+      "path": "golden_episode/GX010021/annotations/v2_video_model/runs/session2-full-video/local_visual_checks/manifest.json",
+      "sha256": "82fcc284eafbe74848aa15a41c404ec61407b74543c02314727b463b65bf25ab"
+    },
+    {
+      "path": "annotation_pipeline/session2_integration_decisions.json",
+      "sha256": "00bbeaf1a10718fa4c1bf4b6fa141ccd104f628cea27d48aa56b80fd16c213c0"
+    }
+  ],
+  "protocol": {
+    "benchmark_design_version": "V1.0",
+    "single_episode_no_reset": true,
+    "t1_read_only_snapshot": true,
+    "t2_isolated_branch_required": true,
+    "t3_no_per_event_query": true,
+    "private_package_not_agent_input": true,
+    "media_time_basis": "original_mp4_seconds",
+    "availability_time_basis": "runtime_release_clock_ms",
+    "wall_time_basis": "runtime_monotonic_or_declared_epoch_ms",
+    "clock_mapping_required": true,
+    "causal_replay_required": true,
+    "realtime_report_separate": true,
+    "window_sec": null,
+    "sampling_fps": null,
+    "probe_timeout_ms": null,
+    "history_budget": null,
+    "calibration_status": "TBD_DEV_CALIBRATION",
+    "guidance_release_schedule": null,
+    "feedback_release_schedule": null,
+    "main_g1_ready": false,
+    "video_only_diagnostic_separate_from_g1": true
+  },
+  "public_output_contracts": {
+    "state": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "episode_id": {
+          "const": "GX010021"
+        },
+        "output_type": {
+          "enum": [
+            "state_update",
+            "state_snapshot"
+          ]
+        },
+        "media_time": {
+          "type": "number",
+          "minimum": 0
+        },
+        "request_visible_media_cutoff": {
+          "type": "number",
+          "minimum": 0
+        },
+        "availability_time_ms": {
+          "type": "number",
+          "minimum": 0
+        },
+        "emission_wall_time_ms": {
+          "type": "number",
+          "minimum": 0
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "observation_id": {
+                "type": "string"
+              },
+              "start_time": {
+                "type": "number",
+                "minimum": 0
+              },
+              "end_time": {
+                "type": "number",
+                "minimum": 0
+              }
+            },
+            "required": [
+              "observation_id",
+              "start_time",
+              "end_time"
+            ]
+          },
+          "minItems": 0
+        },
+        "payload": {
+          "type": "object"
+        }
+      },
+      "required": [
+        "episode_id",
+        "output_type",
+        "media_time",
+        "request_visible_media_cutoff",
+        "availability_time_ms",
+        "emission_wall_time_ms",
+        "evidence_refs",
+        "payload"
+      ]
+    },
+    "probe": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "episode_id": {
+          "const": "GX010021"
+        },
+        "output_type": {
+          "const": "probe_answer"
+        },
+        "media_time": {
+          "type": "number",
+          "minimum": 0
+        },
+        "request_visible_media_cutoff": {
+          "type": "number",
+          "minimum": 0
+        },
+        "availability_time_ms": {
+          "type": "number",
+          "minimum": 0
+        },
+        "emission_wall_time_ms": {
+          "type": "number",
+          "minimum": 0
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "observation_id": {
+                "type": "string"
+              },
+              "start_time": {
+                "type": "number",
+                "minimum": 0
+              },
+              "end_time": {
+                "type": "number",
+                "minimum": 0
+              }
+            },
+            "required": [
+              "observation_id",
+              "start_time",
+              "end_time"
+            ]
+          },
+          "minItems": 0
+        },
+        "task_id": {
+          "type": "string"
+        },
+        "payload": {
+          "type": "object"
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "required": [
+        "episode_id",
+        "output_type",
+        "media_time",
+        "request_visible_media_cutoff",
+        "availability_time_ms",
+        "emission_wall_time_ms",
+        "evidence_refs",
+        "task_id",
+        "payload",
+        "confidence"
+      ]
+    },
+    "alarm": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "episode_id": {
+          "const": "GX010021"
+        },
+        "output_type": {
+          "const": "alarm"
+        },
+        "media_time": {
+          "type": "number",
+          "minimum": 0
+        },
+        "request_visible_media_cutoff": {
+          "type": "number",
+          "minimum": 0
+        },
+        "availability_time_ms": {
+          "type": "number",
+          "minimum": 0
+        },
+        "emission_wall_time_ms": {
+          "type": "number",
+          "minimum": 0
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "observation_id": {
+                "type": "string"
+              },
+              "start_time": {
+                "type": "number",
+                "minimum": 0
+              },
+              "end_time": {
+                "type": "number",
+                "minimum": 0
+              }
+            },
+            "required": [
+              "observation_id",
+              "start_time",
+              "end_time"
+            ]
+          },
+          "minItems": 0
+        },
+        "incident_id": {
+          "type": "string"
+        },
+        "decision": {
+          "enum": [
+            "raise",
+            "update",
+            "resolve"
+          ]
+        },
+        "category": {
+          "type": "string"
+        },
+        "message": {
+          "type": "string"
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "required": [
+        "episode_id",
+        "output_type",
+        "media_time",
+        "request_visible_media_cutoff",
+        "availability_time_ms",
+        "emission_wall_time_ms",
+        "evidence_refs",
+        "incident_id",
+        "decision",
+        "category",
+        "message",
+        "confidence"
+      ]
+    }
+  },
+  "evidence_registry": {
+    "H1-V-E027-01": {
+      "kind": "evidence",
+      "id": "H1-V-E027-01",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/evidence_index.json",
+      "json_pointer": "/records/59",
+      "access": "EVALUATOR_ONLY_REFERENCE",
+      "modality": "video",
+      "start_time": 199.2,
+      "end_time": 199.2,
+      "availability_time": null,
+      "effective_from": null,
+      "precision": "HISTORICAL_UNVERIFIED",
+      "description": "搅拌棒进入液面",
+      "source_type": "historical_candidate",
+      "frame_path": null,
+      "frame_sha256": null,
+      "semantic_status": "CANDIDATE"
+    },
+    "H1-V-E027-03": {
+      "kind": "evidence",
+      "id": "H1-V-E027-03",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/evidence_index.json",
+      "json_pointer": "/records/61",
+      "access": "EVALUATOR_ONLY_REFERENCE",
+      "modality": "video",
+      "start_time": 235.2,
+      "end_time": 235.2,
+      "availability_time": null,
+      "effective_from": null,
+      "precision": "HISTORICAL_UNVERIFIED",
+      "description": "搅拌棒提离",
+      "source_type": "historical_candidate",
+      "frame_path": null,
+      "frame_sha256": null,
+      "semantic_status": "CANDIDATE"
+    },
+    "H1-V-E028-01": {
+      "kind": "evidence",
+      "id": "H1-V-E028-01",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/evidence_index.json",
+      "json_pointer": "/records/62",
+      "access": "EVALUATOR_ONLY_REFERENCE",
+      "modality": "video",
+      "start_time": 236.2,
+      "end_time": 238.2,
+      "availability_time": null,
+      "effective_from": null,
+      "precision": "HISTORICAL_UNVERIFIED",
+      "description": "打蛋器置左侧台面",
+      "source_type": "historical_candidate",
+      "frame_path": null,
+      "frame_sha256": null,
+      "semantic_status": "CANDIDATE"
+    },
+    "LC-431-2": {
+      "kind": "evidence",
+      "id": "LC-431-2",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/evidence_index.json",
+      "json_pointer": "/records/187",
+      "access": "EVALUATOR_ONLY_REFERENCE",
+      "modality": "video",
+      "start_time": 431.2308,
+      "end_time": 431.2308,
+      "availability_time": null,
+      "effective_from": null,
+      "precision": "VERIFIED_SINGLE_FRAME_PTS",
+      "description": "Yellow liquid and a pale solid block coexist in the glass dish after second microwave removal.",
+      "source_type": "integration_candidate",
+      "frame_path": "golden_episode/GX010021/annotations/v2_video_model/runs/session2-full-video/local_visual_checks/frame-431.2.png",
+      "frame_sha256": "01d0924407c43b6787cfbcf09e12cf39db29975b7832b851dd4d1441c3222a42",
+      "semantic_status": "CANDIDATE"
+    },
+    "LC-445-2": {
+      "kind": "evidence",
+      "id": "LC-445-2",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/evidence_index.json",
+      "json_pointer": "/records/188",
+      "access": "EVALUATOR_ONLY_REFERENCE",
+      "modality": "video",
+      "start_time": 445.211433,
+      "end_time": 445.211433,
+      "availability_time": null,
+      "effective_from": null,
+      "precision": "VERIFIED_SINGLE_FRAME_PTS",
+      "description": "A black tool is inside the yellow liquid; pale solid material remains visible. This snapshot does not prove a full stir interval or final melting.",
+      "source_type": "integration_candidate",
+      "frame_path": "golden_episode/GX010021/annotations/v2_video_model/runs/session2-full-video/local_visual_checks/frame-445.2.png",
+      "frame_sha256": "5d339059ad2319c422d4bd704abecadfaef95b6e3ded8d71c26094f7c051d630",
+      "semantic_status": "CANDIDATE"
+    },
+    "LC-680-2": {
+      "kind": "evidence",
+      "id": "LC-680-2",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/evidence_index.json",
+      "json_pointer": "/records/191",
+      "access": "EVALUATOR_ONLY_REFERENCE",
+      "modality": "video",
+      "start_time": 680.212867,
+      "end_time": 680.212867,
+      "availability_time": null,
+      "effective_from": null,
+      "precision": "VERIFIED_SINGLE_FRAME_PTS",
+      "description": "Batter is in loaf pan; main mixing container retains thin residue and a black tool. No new lid-closing or tool-placement action can be inferred from this one image.",
+      "source_type": "integration_candidate",
+      "frame_path": "golden_episode/GX010021/annotations/v2_video_model/runs/session2-full-video/local_visual_checks/frame-680.2.png",
+      "frame_sha256": "82c5e98fab31057f00b8375ca3b2140f52a50bb133e34fb8a896ef8801f7a2c3",
+      "semantic_status": "CANDIDATE"
+    },
+    "H1-V-E051-02": {
+      "kind": "evidence",
+      "id": "H1-V-E051-02",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/evidence_index.json",
+      "json_pointer": "/records/93",
+      "access": "EVALUATOR_ONLY_REFERENCE",
+      "modality": "video",
+      "start_time": 603.2,
+      "end_time": 603.2,
+      "availability_time": null,
+      "effective_from": null,
+      "precision": "HISTORICAL_UNVERIFIED",
+      "description": "表面新增白粉堆",
+      "source_type": "historical_candidate",
+      "frame_path": null,
+      "frame_sha256": null,
+      "semantic_status": "CANDIDATE"
+    },
+    "H1-V-E052-02": {
+      "kind": "evidence",
+      "id": "H1-V-E052-02",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/evidence_index.json",
+      "json_pointer": "/records/95",
+      "access": "EVALUATOR_ONLY_REFERENCE",
+      "modality": "video",
+      "start_time": 630.2,
+      "end_time": 630.2,
+      "availability_time": null,
+      "effective_from": null,
+      "precision": "HISTORICAL_UNVERIFIED",
+      "description": "面糊表面光滑",
+      "source_type": "historical_candidate",
+      "frame_path": null,
+      "frame_sha256": null,
+      "semantic_status": "CANDIDATE"
+    },
+    "SRC-R18": {
+      "kind": "rule",
+      "id": "SRC-R18",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/procedure.json",
+      "json_pointer": "/records/17",
+      "access": "EVALUATOR_ONLY_REFERENCE",
+      "modality": "external_text",
+      "start_time": 134.748,
+      "end_time": 134.748,
+      "availability_time": null,
+      "effective_from": null,
+      "precision": "UNSPECIFIED_SINGLE_POINT_LABEL",
+      "description": "Now add half cup of milk and whisk the mixture.",
+      "source_type": "source_annotation_text",
+      "frame_path": null,
+      "frame_sha256": null,
+      "semantic_status": "CANDIDATE"
+    },
+    "H1-V-E022-01": {
+      "kind": "evidence",
+      "id": "H1-V-E022-01",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/evidence_index.json",
+      "json_pointer": "/records/53",
+      "access": "EVALUATOR_ONLY_REFERENCE",
+      "modality": "video",
+      "start_time": 153.2,
+      "end_time": 156.2,
+      "availability_time": null,
+      "effective_from": null,
+      "precision": "HISTORICAL_UNVERIFIED",
+      "description": "牛奶盒倒奶入杯，一次可见量取",
+      "source_type": "historical_candidate",
+      "frame_path": null,
+      "frame_sha256": null,
+      "semantic_status": "CANDIDATE"
+    },
+    "H1-V-E023-01": {
+      "kind": "evidence",
+      "id": "H1-V-E023-01",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/evidence_index.json",
+      "json_pointer": "/records/54",
+      "access": "EVALUATOR_ONLY_REFERENCE",
+      "modality": "video",
+      "start_time": 159.2,
+      "end_time": 161.2,
+      "availability_time": null,
+      "effective_from": null,
+      "precision": "HISTORICAL_UNVERIFIED",
+      "description": "杯中奶倾入容器，台面见白色液滴",
+      "source_type": "historical_candidate",
+      "frame_path": null,
+      "frame_sha256": null,
+      "semantic_status": "CANDIDATE"
+    },
+    "H1-V-E020-02": {
+      "kind": "evidence",
+      "id": "H1-V-E020-02",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/evidence_index.json",
+      "json_pointer": "/records/51",
+      "access": "EVALUATOR_ONLY_REFERENCE",
+      "modality": "video",
+      "start_time": 144.2,
+      "end_time": 144.2,
+      "availability_time": null,
+      "effective_from": null,
+      "precision": "HISTORICAL_UNVERIFIED",
+      "description": "杯柄标签 \"1/4 CUP\"",
+      "source_type": "historical_candidate",
+      "frame_path": null,
+      "frame_sha256": null,
+      "semantic_status": "CANDIDATE"
+    },
+    "SRC-R39": {
+      "kind": "rule",
+      "id": "SRC-R39",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/procedure.json",
+      "json_pointer": "/records/38",
+      "access": "EVALUATOR_ONLY_REFERENCE",
+      "modality": "external_text",
+      "start_time": 538.698,
+      "end_time": 538.698,
+      "availability_time": null,
+      "effective_from": null,
+      "precision": "UNSPECIFIED_SINGLE_POINT_LABEL",
+      "description": "Use a parchment paper to line the baking tray.",
+      "source_type": "source_annotation_text",
+      "frame_path": null,
+      "frame_sha256": null,
+      "semantic_status": "CANDIDATE"
+    },
+    "SRC-R40": {
+      "kind": "rule",
+      "id": "SRC-R40",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/procedure.json",
+      "json_pointer": "/records/39",
+      "access": "EVALUATOR_ONLY_REFERENCE",
+      "modality": "external_text",
+      "start_time": 544.398,
+      "end_time": 544.398,
+      "availability_time": null,
+      "effective_from": null,
+      "precision": "UNSPECIFIED_SINGLE_POINT_LABEL",
+      "description": "I don't have a parchment paper.",
+      "source_type": "source_annotation_text",
+      "frame_path": null,
+      "frame_sha256": null,
+      "semantic_status": "CANDIDATE"
+    },
+    "SRC-R41": {
+      "kind": "rule",
+      "id": "SRC-R41",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/procedure.json",
+      "json_pointer": "/records/40",
+      "access": "EVALUATOR_ONLY_REFERENCE",
+      "modality": "external_text",
+      "start_time": 546.378,
+      "end_time": 546.378,
+      "availability_time": null,
+      "effective_from": null,
+      "precision": "UNSPECIFIED_SINGLE_POINT_LABEL",
+      "description": "You can then use some of the leftover butter from the melt to line up the tray.",
+      "source_type": "source_annotation_text",
+      "frame_path": null,
+      "frame_sha256": null,
+      "semantic_status": "CANDIDATE"
+    },
+    "SRC-R42": {
+      "kind": "rule",
+      "id": "SRC-R42",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/procedure.json",
+      "json_pointer": "/records/41",
+      "access": "EVALUATOR_ONLY_REFERENCE",
+      "modality": "external_text",
+      "start_time": 552.478,
+      "end_time": 552.478,
+      "availability_time": null,
+      "effective_from": null,
+      "precision": "UNSPECIFIED_SINGLE_POINT_LABEL",
+      "description": "I don't have any leftover butter, should I use oil instead?",
+      "source_type": "source_annotation_text",
+      "frame_path": null,
+      "frame_sha256": null,
+      "semantic_status": "CANDIDATE"
+    },
+    "SRC-R43": {
+      "kind": "rule",
+      "id": "SRC-R43",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/procedure.json",
+      "json_pointer": "/records/42",
+      "access": "EVALUATOR_ONLY_REFERENCE",
+      "modality": "external_text",
+      "start_time": 556.368,
+      "end_time": 556.368,
+      "availability_time": null,
+      "effective_from": null,
+      "precision": "UNSPECIFIED_SINGLE_POINT_LABEL",
+      "description": "Yes, you can use oil.",
+      "source_type": "source_annotation_text",
+      "frame_path": null,
+      "frame_sha256": null,
+      "semantic_status": "CANDIDATE"
+    },
+    "H1-V-E049-01": {
+      "kind": "evidence",
+      "id": "H1-V-E049-01",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/evidence_index.json",
+      "json_pointer": "/records/89",
+      "access": "EVALUATOR_ONLY_REFERENCE",
+      "modality": "video",
+      "start_time": 560.2,
+      "end_time": 562.2,
+      "availability_time": null,
+      "effective_from": null,
+      "precision": "HISTORICAL_UNVERIFIED",
+      "description": "油流/油滴进入模底",
+      "source_type": "historical_candidate",
+      "frame_path": null,
+      "frame_sha256": null,
+      "semantic_status": "CANDIDATE"
+    },
+    "H1-V-E053-01": {
+      "kind": "evidence",
+      "id": "H1-V-E053-01",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/evidence_index.json",
+      "json_pointer": "/records/96",
+      "access": "EVALUATOR_ONLY_REFERENCE",
+      "modality": "video",
+      "start_time": 633.2,
+      "end_time": 641.2,
+      "availability_time": null,
+      "effective_from": null,
+      "precision": "HISTORICAL_UNVERIFIED",
+      "description": "混合容器面糊倾入烤模",
+      "source_type": "historical_candidate",
+      "frame_path": null,
+      "frame_sha256": null,
+      "semantic_status": "CANDIDATE"
+    },
+    "H1-V-E031-01": {
+      "kind": "evidence",
+      "id": "H1-V-E031-01",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/evidence_index.json",
+      "json_pointer": "/records/66",
+      "access": "EVALUATOR_ONLY_REFERENCE",
+      "modality": "video",
+      "start_time": 270.2,
+      "end_time": 281.2,
+      "availability_time": null,
+      "effective_from": null,
+      "precision": "HISTORICAL_UNVERIFIED",
+      "description": "开袋并向杯倒粉",
+      "source_type": "historical_candidate",
+      "frame_path": null,
+      "frame_sha256": null,
+      "semantic_status": "CANDIDATE"
+    },
+    "H1-V-E032-01": {
+      "kind": "evidence",
+      "id": "H1-V-E032-01",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/evidence_index.json",
+      "json_pointer": "/records/67",
+      "access": "EVALUATOR_ONLY_REFERENCE",
+      "modality": "video",
+      "start_time": 287.2,
+      "end_time": 291.2,
+      "availability_time": null,
+      "effective_from": null,
+      "precision": "HISTORICAL_UNVERIFIED",
+      "description": "量杯倒粉入混合容器，出现白色粉堆",
+      "source_type": "historical_candidate",
+      "frame_path": null,
+      "frame_sha256": null,
+      "semantic_status": "CANDIDATE"
+    },
+    "H1-V-E051-01": {
+      "kind": "evidence",
+      "id": "H1-V-E051-01",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/evidence_index.json",
+      "json_pointer": "/records/92",
+      "access": "EVALUATOR_ONLY_REFERENCE",
+      "modality": "video",
+      "start_time": 595.2,
+      "end_time": 602.2,
+      "availability_time": null,
+      "effective_from": null,
+      "precision": "HISTORICAL_UNVERIFIED",
+      "description": "袋直接向混合容器倒粉",
+      "source_type": "historical_candidate",
+      "frame_path": null,
+      "frame_sha256": null,
+      "semantic_status": "CANDIDATE"
+    },
+    "V2-V24": {
+      "kind": "evidence",
+      "id": "V2-V24",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/evidence_index.json",
+      "json_pointer": "/records/23",
+      "access": "EVALUATOR_ONLY_REFERENCE",
+      "modality": "video",
+      "start_time": 633,
+      "end_time": 678,
+      "availability_time": null,
+      "effective_from": null,
+      "precision": "MODEL_APPROXIMATE_RANGE",
+      "description": "将面糊从塑料盒倒入金属烤盘，用刮刀辅助刮净。",
+      "source_type": "video_model",
+      "frame_path": null,
+      "frame_sha256": null,
+      "semantic_status": "CANDIDATE"
+    },
+    "SRC-R16": {
+      "kind": "rule",
+      "id": "SRC-R16",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/procedure.json",
+      "json_pointer": "/records/15",
+      "access": "EVALUATOR_ONLY_REFERENCE",
+      "modality": "external_text",
+      "start_time": 127.568,
+      "end_time": 127.568,
+      "availability_time": null,
+      "effective_from": null,
+      "precision": "UNSPECIFIED_SINGLE_POINT_LABEL",
+      "description": "Okay then. We will proceed with only 1/4 cup of sugar.",
+      "source_type": "source_annotation_text",
+      "frame_path": null,
+      "frame_sha256": null,
+      "semantic_status": "CANDIDATE"
+    },
+    "H1-V-E049-02": {
+      "kind": "evidence",
+      "id": "H1-V-E049-02",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/evidence_index.json",
+      "json_pointer": "/records/90",
+      "access": "EVALUATOR_ONLY_REFERENCE",
+      "modality": "video",
+      "start_time": 567.2,
+      "end_time": 579.2,
+      "availability_time": null,
+      "effective_from": null,
+      "precision": "HISTORICAL_UNVERIFIED",
+      "description": "持模倾斜旋转，内壁油膜不可辨",
+      "source_type": "historical_candidate",
+      "frame_path": null,
+      "frame_sha256": null,
+      "semantic_status": "CANDIDATE"
+    },
+    "SRC-R30": {
+      "kind": "rule",
+      "id": "SRC-R30",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/procedure.json",
+      "json_pointer": "/records/29",
+      "access": "EVALUATOR_ONLY_REFERENCE",
+      "modality": "external_text",
+      "start_time": 333.708,
+      "end_time": 333.708,
+      "availability_time": null,
+      "effective_from": null,
+      "precision": "UNSPECIFIED_SINGLE_POINT_LABEL",
+      "description": "Let's run the microwave in 15-second bursts and check if the butter is melted at the end of 15 seconds.",
+      "source_type": "source_annotation_text",
+      "frame_path": null,
+      "frame_sha256": null,
+      "semantic_status": "CANDIDATE"
+    },
+    "SRC-R31": {
+      "kind": "rule",
+      "id": "SRC-R31",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/procedure.json",
+      "json_pointer": "/records/30",
+      "access": "EVALUATOR_ONLY_REFERENCE",
+      "modality": "external_text",
+      "start_time": 397.648,
+      "end_time": 397.648,
+      "availability_time": null,
+      "effective_from": null,
+      "precision": "UNSPECIFIED_SINGLE_POINT_LABEL",
+      "description": "Hmm, the butter is not melted yet. Let's put the bowl back in the microwave for 15 more seconds.",
+      "source_type": "source_annotation_text",
+      "frame_path": null,
+      "frame_sha256": null,
+      "semantic_status": "CANDIDATE"
+    },
+    "V2-V17": {
+      "kind": "evidence",
+      "id": "V2-V17",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/evidence_index.json",
+      "json_pointer": "/records/16",
+      "access": "EVALUATOR_ONLY_REFERENCE",
+      "modality": "video",
+      "start_time": 390,
+      "end_time": 395,
+      "availability_time": null,
+      "effective_from": null,
+      "precision": "MODEL_APPROXIMATE_RANGE",
+      "description": "打开微波炉门，取出已部分融化的黄油容器。",
+      "source_type": "video_model",
+      "frame_path": null,
+      "frame_sha256": null,
+      "semantic_status": "CANDIDATE"
+    },
+    "V2-V18": {
+      "kind": "evidence",
+      "id": "V2-V18",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/evidence_index.json",
+      "json_pointer": "/records/17",
+      "access": "EVALUATOR_ONLY_REFERENCE",
+      "modality": "video",
+      "start_time": 405,
+      "end_time": 410,
+      "availability_time": null,
+      "effective_from": null,
+      "precision": "MODEL_APPROXIMATE_RANGE",
+      "description": "再次将黄油容器放入微波炉，设定时间后启动。",
+      "source_type": "video_model",
+      "frame_path": null,
+      "frame_sha256": null,
+      "semantic_status": "CANDIDATE"
+    },
+    "LC-76-2": {
+      "kind": "evidence",
+      "id": "LC-76-2",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/evidence_index.json",
+      "json_pointer": "/records/185",
+      "access": "EVALUATOR_ONLY_REFERENCE",
+      "modality": "video",
+      "start_time": 76.209467,
+      "end_time": 76.209467,
+      "availability_time": null,
+      "effective_from": null,
+      "precision": "VERIFIED_SINGLE_FRAME_PTS",
+      "description": "Two visible yolks inside mixing container; one further egg is on the countertop. Does not prove total cracked count.",
+      "source_type": "integration_candidate",
+      "frame_path": "golden_episode/GX010021/annotations/v2_video_model/runs/session2-full-video/local_visual_checks/frame-76.2.png",
+      "frame_sha256": "a465628d7247419d7bd34054e8535b968672893fa30e16afd7922e2d7665e5f5",
+      "semantic_status": "CANDIDATE"
+    },
+    "LC-83-2": {
+      "kind": "evidence",
+      "id": "LC-83-2",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/evidence_index.json",
+      "json_pointer": "/records/186",
+      "access": "EVALUATOR_ONLY_REFERENCE",
+      "modality": "video",
+      "start_time": 83.216467,
+      "end_time": 83.216467,
+      "availability_time": null,
+      "effective_from": null,
+      "precision": "VERIFIED_SINGLE_FRAME_PTS",
+      "description": "Two yolks remain visible; a hand holds an egg near the countertop. Shell count/egg integrity and final destination remain uncertain.",
+      "source_type": "integration_candidate",
+      "frame_path": "golden_episode/GX010021/annotations/v2_video_model/runs/session2-full-video/local_visual_checks/frame-83.2.png",
+      "frame_sha256": "1cbecddef6aca18b8fa77d1614ebe1a6b97b1caeff3bcfbf635806471da62ef5",
+      "semantic_status": "CANDIDATE"
+    },
+    "SRC-R10": {
+      "kind": "rule",
+      "id": "SRC-R10",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/procedure.json",
+      "json_pointer": "/records/9",
+      "access": "EVALUATOR_ONLY_REFERENCE",
+      "modality": "external_text",
+      "start_time": 79,
+      "end_time": 79,
+      "availability_time": null,
+      "effective_from": null,
+      "precision": "UNSPECIFIED_SINGLE_POINT_LABEL",
+      "description": "You should add two eggs, not three.",
+      "source_type": "source_annotation_text",
+      "frame_path": null,
+      "frame_sha256": null,
+      "semantic_status": "CANDIDATE"
+    }
+  },
+  "tasks": [
+    {
+      "task_id": "GX010021-V2-T1-001",
+      "episode_id": "GX010021",
+      "track": "T1",
+      "subtask": "T1.1",
+      "title": "首轮搅拌的进行与动作段完成",
+      "status": "PILOT_CANDIDATE",
+      "maturity": {
+        "annotation_status": "CANDIDATE",
+        "human_review": "NOT_REVIEWED",
+        "semantic_truth_verified": false,
+        "gold_answer": null
+      },
+      "agent_public": {
+        "input": {
+          "mode": "CONTINUOUS_VIDEO_STATE",
+          "visibility_regime": "VIDEO_ONLY_DIAGNOSTIC",
+          "observations": "Runner observation IDs and media released so far; no local source file access",
+          "instruction_delivery": "DISABLED_PENDING_VERIFIED_RELEASE_SCHEDULE",
+          "question": null,
+          "question_delivery": "NONE",
+          "per_event_query": false,
+          "reference_access": false
+        },
+        "output_contract_id": "state",
+        "payload_schema": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "first_mixing_progress": {
+              "enum": [
+                "not_started",
+                "in_progress",
+                "completed",
+                "interrupted",
+                "cancelled",
+                "unknown",
+                "uncertain"
+              ]
+            }
+          },
+          "required": [
+            "first_mixing_progress"
+          ]
+        }
+      },
+      "evaluator_private": {
+        "trigger": {
+          "kind": "STATE_CHECKPOINT",
+          "checkpoint_times": [
+            200.3,
+            239.3
+          ],
+          "query_time": null,
+          "monitoring_interval": null,
+          "isolation_required": false,
+          "mutate_main_state": false
+        },
+        "candidate_answer": {
+          "checkpoints": [
+            {
+              "at": 200.3,
+              "first_mixing_progress": "in_progress"
+            },
+            {
+              "at": 239.3,
+              "first_mixing_progress": "completed"
+            }
+          ],
+          "completion_definition": "仅本轮搅拌动作段结束：已进入液面，随后提离并放置；不评价均匀程度或全部规范完成",
+          "cancelled": "NOT_ASSERTED"
+        },
+        "reference_items": [
+          {
+            "field": "first_mixing_progress",
+            "value": "in_progress",
+            "evidence_ids": [
+              "H1-V-E027-01"
+            ],
+            "observable_time": {
+              "earliest": 199.2,
+              "latest": 199.2,
+              "status": "CANDIDATE_OBSERVED_AT_NOT_FIRST_ONSET"
+            },
+            "note": "进入液面只支持开始，不支持输出均匀",
+            "evaluate_at_media_time": 200.3
+          },
+          {
+            "field": "first_mixing_progress",
+            "value": "completed",
+            "evidence_ids": [
+              "H1-V-E027-03",
+              "H1-V-E028-01"
+            ],
+            "observable_time": null,
+            "note": "完成充分时刻未核验；238.2为最后参考片段结束，不等于首次完成",
+            "evaluate_at_media_time": 239.3
+          }
+        ],
+        "required_evidence_sets": [
+          {
+            "set_id": "progress-begin",
+            "bindings": [
+              {
+                "evidence_id": "H1-V-E027-01",
+                "role": "搅拌棒进入液面"
+              }
+            ],
+            "validity": "CANDIDATE_MINIMAL_UNVERIFIED",
+            "necessity": [
+              "缺此观察无法确认开始"
+            ],
+            "applies_at_media_time": 200.3,
+            "covers_fields": [
+              "first_mixing_progress"
+            ]
+          },
+          {
+            "set_id": "progress-stop",
+            "bindings": [
+              {
+                "evidence_id": "H1-V-E027-01",
+                "role": "已开始"
+              },
+              {
+                "evidence_id": "H1-V-E027-03",
+                "role": "棒提离"
+              },
+              {
+                "evidence_id": "H1-V-E028-01",
+                "role": "打蛋器放置"
+              }
+            ],
+            "validity": "CANDIDATE_MINIMAL_UNVERIFIED",
+            "necessity": [
+              "进入液面确定本轮身份",
+              "提离和放置候选共同界定动作段结束"
+            ],
+            "applies_at_media_time": 239.3,
+            "covers_fields": [
+              "first_mixing_progress"
+            ]
+          }
+        ],
+        "record_refs": [
+          {
+            "kind": "step",
+            "id": "STEP-06",
+            "path": "golden_episode/GX010021/annotations/v2_video_model/procedure.json",
+            "json_pointer": "/observed_steps/5",
+            "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+          },
+          {
+            "kind": "event",
+            "id": "V2-E10",
+            "path": "golden_episode/GX010021/annotations/v2_video_model/events.json",
+            "json_pointer": "/records/23",
+            "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+          },
+          {
+            "kind": "event",
+            "id": "H1-E028",
+            "path": "golden_episode/GX010021/annotations/v2_video_model/events.json",
+            "json_pointer": "/records/24",
+            "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+          },
+          {
+            "kind": "object",
+            "id": "V2-O6",
+            "path": "golden_episode/GX010021/annotations/v2_video_model/objects.json",
+            "json_pointer": "/records/5",
+            "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+          }
+        ],
+        "reasoning": null,
+        "monitoring": null,
+        "scoring": {
+          "mode": "CANDIDATE_DIAGNOSTIC_ONLY",
+          "hard_score_eligible": false,
+          "metrics": [
+            "State Macro Accuracy",
+            "unknown/uncertain coverage"
+          ],
+          "fields": [
+            "first_mixing_progress"
+          ],
+          "required_conditions": [
+            "输入仅含已经公开的原媒体；不提供标注或参考答案",
+            "Runner必须记录实际availability_time并核查请求开始时可见截止点",
+            "候选分仅用于调试，Gold/主排行均关闭"
+          ],
+          "parameters": {
+            "delta_state": null,
+            "evidence_iou": null,
+            "alarm_tolerance": null,
+            "calibration_status": "TBD_DEV_CALIBRATION"
+          },
+          "unknown_policy": "unknown与uncertain单独记录，不能用未知推导未发生；候选unknown只表示证据局限，尚未完成可观察性裁决"
+        }
+      },
+      "assessment": {
+        "track_fit": "符合T1.1，读取主轨迹状态，不用问答触发",
+        "evidence_support": "起止锚点来自V2保留的历史视觉定位；模型止225与历史止235有边界分歧",
+        "objective_scoring": "两个检查点可候选枚举评分；没有真实首次可见完成时刻，Update Delay关闭",
+        "future_and_shortcut_audit": "200.3只用199.2锚点，不使用198–225整段模型定位；完成时239.3引用均已结束",
+        "ability_necessity": "第一检查点近期即可答；第二检查点要求维护已完成动作段，但不能证明长程可靠性",
+        "evidence_gaps": [
+          "G02"
+        ]
+      }
+    },
+    {
+      "task_id": "GX010021-V2-T1-002",
+      "episode_id": "GX010021",
+      "track": "T1",
+      "subtask": "T1.2",
+      "title": "玻璃容器内黄色材料的局部固液状态",
+      "status": "PILOT_CANDIDATE",
+      "maturity": {
+        "annotation_status": "CANDIDATE",
+        "human_review": "NOT_REVIEWED",
+        "semantic_truth_verified": false,
+        "gold_answer": null
+      },
+      "agent_public": {
+        "input": {
+          "mode": "CONTINUOUS_VIDEO_STATE",
+          "visibility_regime": "VIDEO_ONLY_DIAGNOSTIC",
+          "observations": "Runner observation IDs and media released so far; no local source file access",
+          "instruction_delivery": "DISABLED_PENDING_VERIFIED_RELEASE_SCHEDULE",
+          "question": null,
+          "question_delivery": "NONE",
+          "per_event_query": false,
+          "reference_access": false
+        },
+        "output_contract_id": "state",
+        "payload_schema": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "visible_phase": {
+              "enum": [
+                "solid",
+                "liquid",
+                "liquid_and_solid",
+                "unknown",
+                "uncertain"
+              ]
+            }
+          },
+          "required": [
+            "visible_phase"
+          ]
+        }
+      },
+      "evaluator_private": {
+        "trigger": {
+          "kind": "STATE_CHECKPOINT",
+          "checkpoint_times": [
+            431.2308,
+            445.211433
+          ],
+          "query_time": null,
+          "monitoring_interval": null,
+          "isolation_required": false,
+          "mutate_main_state": false
+        },
+        "candidate_answer": {
+          "checkpoints": [
+            {
+              "at": 431.2308,
+              "visible_phase": "liquid_and_solid"
+            },
+            {
+              "at": 445.211433,
+              "visible_phase": "liquid_and_solid"
+            }
+          ],
+          "solid_fraction": "unknown",
+          "final_phase_at_pour": "unknown"
+        },
+        "reference_items": [
+          {
+            "field": "visible_phase",
+            "value": "liquid_and_solid",
+            "evidence_ids": [
+              "LC-431-2"
+            ],
+            "observable_time": {
+              "earliest": 431.2308,
+              "latest": 431.2308,
+              "status": "CANDIDATE_OBSERVED_AT_NOT_FIRST_ONSET"
+            },
+            "note": "仅本帧有效",
+            "evaluate_at_media_time": 431.2308
+          },
+          {
+            "field": "visible_phase",
+            "value": "liquid_and_solid",
+            "evidence_ids": [
+              "LC-445-2"
+            ],
+            "observable_time": {
+              "earliest": 445.211433,
+              "latest": 445.211433,
+              "status": "CANDIDATE_OBSERVED_AT_NOT_FIRST_ONSET"
+            },
+            "note": "仅本帧有效",
+            "evaluate_at_media_time": 445.211433
+          }
+        ],
+        "required_evidence_sets": [
+          {
+            "set_id": "phase-first",
+            "bindings": [
+              {
+                "evidence_id": "LC-431-2",
+                "role": "第一次检查点固液共存"
+              }
+            ],
+            "validity": "CANDIDATE_MINIMAL_UNVERIFIED",
+            "necessity": [
+              "原帧支持局部相态"
+            ],
+            "applies_at_media_time": 431.2308,
+            "covers_fields": [
+              "visible_phase"
+            ]
+          },
+          {
+            "set_id": "phase-second",
+            "bindings": [
+              {
+                "evidence_id": "LC-445-2",
+                "role": "第二检查点仍见固态材料"
+              }
+            ],
+            "validity": "CANDIDATE_MINIMAL_UNVERIFIED",
+            "necessity": [
+              "不可由第一帧外推第二帧"
+            ],
+            "applies_at_media_time": 445.211433,
+            "covers_fields": [
+              "visible_phase"
+            ]
+          }
+        ],
+        "record_refs": [
+          {
+            "kind": "object",
+            "id": "V2-O9",
+            "path": "golden_episode/GX010021/annotations/v2_video_model/objects.json",
+            "json_pointer": "/records/8",
+            "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+          },
+          {
+            "kind": "state",
+            "id": "STATE-LC-431-2",
+            "path": "golden_episode/GX010021/annotations/v2_video_model/objects.json",
+            "json_pointer": "/states/133",
+            "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+          },
+          {
+            "kind": "state",
+            "id": "STATE-LC-445-2",
+            "path": "golden_episode/GX010021/annotations/v2_video_model/objects.json",
+            "json_pointer": "/states/134",
+            "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+          }
+        ],
+        "reasoning": null,
+        "monitoring": null,
+        "scoring": {
+          "mode": "CANDIDATE_DIAGNOSTIC_ONLY",
+          "hard_score_eligible": false,
+          "metrics": [
+            "Object State Macro Accuracy",
+            "unknown/uncertain coverage"
+          ],
+          "fields": [
+            "visible_phase"
+          ],
+          "required_conditions": [
+            "输入仅含已经公开的原媒体；不提供标注或参考答案",
+            "Runner必须记录实际availability_time并核查请求开始时可见截止点",
+            "候选分仅用于调试，Gold/主排行均关闭"
+          ],
+          "parameters": {
+            "delta_state": null,
+            "evidence_iou": null,
+            "alarm_tolerance": null,
+            "calibration_status": "TBD_DEV_CALIBRATION"
+          },
+          "unknown_policy": "unknown与uncertain单独记录，不能用未知推导未发生；候选unknown只表示证据局限，尚未完成可观察性裁决"
+        }
+      },
+      "assessment": {
+        "track_fit": "符合对象可观察属性跟踪",
+        "evidence_support": "两张已校验PTS的原帧；完全融化模型主张与之冲突，优先限定直接可见属性",
+        "objective_scoring": "visible_phase可按枚举候选评分，比例和最终相态不进入准确率分母",
+        "future_and_shortcut_audit": "不使用V2-V19的完全融化断言，也不以445秒帧评分431秒",
+        "ability_necessity": "近期视觉足以回答局部属性；用于调试未知处理，两个点不证明中间持续状态",
+        "evidence_gaps": [
+          "G01",
+          "G02"
+        ]
+      }
+    },
+    {
+      "task_id": "GX010021-V2-T1-003",
+      "episode_id": "GX010021",
+      "track": "T1",
+      "subtask": "T1.2",
+      "title": "入模后烤模内容与主容器残留",
+      "status": "PILOT_CANDIDATE",
+      "maturity": {
+        "annotation_status": "CANDIDATE",
+        "human_review": "NOT_REVIEWED",
+        "semantic_truth_verified": false,
+        "gold_answer": null
+      },
+      "agent_public": {
+        "input": {
+          "mode": "CONTINUOUS_VIDEO_STATE",
+          "visibility_regime": "VIDEO_ONLY_DIAGNOSTIC",
+          "observations": "Runner observation IDs and media released so far; no local source file access",
+          "instruction_delivery": "DISABLED_PENDING_VERIFIED_RELEASE_SCHEDULE",
+          "question": null,
+          "question_delivery": "NONE",
+          "per_event_query": false,
+          "reference_access": false
+        },
+        "output_contract_id": "state",
+        "payload_schema": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "pan_contents": {
+              "enum": [
+                "empty",
+                "batter_visible",
+                "other",
+                "unknown",
+                "uncertain"
+              ]
+            },
+            "main_container_residue": {
+              "enum": [
+                "visible",
+                "absent",
+                "unknown",
+                "uncertain"
+              ]
+            }
+          },
+          "required": [
+            "pan_contents",
+            "main_container_residue"
+          ]
+        }
+      },
+      "evaluator_private": {
+        "trigger": {
+          "kind": "STATE_CHECKPOINT",
+          "checkpoint_times": [
+            680.212867
+          ],
+          "query_time": null,
+          "monitoring_interval": null,
+          "isolation_required": false,
+          "mutate_main_state": false
+        },
+        "candidate_answer": {
+          "pan_contents": "batter_visible",
+          "main_container_residue": "visible",
+          "transferred_fraction": "unknown"
+        },
+        "reference_items": [
+          {
+            "field": "pan_contents",
+            "value": "batter_visible",
+            "evidence_ids": [
+              "LC-680-2"
+            ],
+            "observable_time": {
+              "earliest": 680.212867,
+              "latest": 680.212867,
+              "status": "CANDIDATE_OBSERVED_AT_NOT_FIRST_ONSET"
+            },
+            "note": "对象映射仅候选",
+            "evaluate_at_media_time": 680.212867
+          },
+          {
+            "field": "main_container_residue",
+            "value": "visible",
+            "evidence_ids": [
+              "LC-680-2"
+            ],
+            "observable_time": {
+              "earliest": 680.212867,
+              "latest": 680.212867,
+              "status": "CANDIDATE_OBSERVED_AT_NOT_FIRST_ONSET"
+            },
+            "note": "不得标空置或全部刮净",
+            "evaluate_at_media_time": 680.212867
+          }
+        ],
+        "required_evidence_sets": [
+          {
+            "set_id": "pan-residue",
+            "bindings": [
+              {
+                "evidence_id": "LC-680-2",
+                "role": "烤模面糊与主容器残留"
+              }
+            ],
+            "validity": "CANDIDATE_MINIMAL_UNVERIFIED",
+            "necessity": [
+              "同帧支持两个不同容器状态"
+            ],
+            "applies_at_media_time": 680.212867,
+            "covers_fields": [
+              "pan_contents",
+              "main_container_residue"
+            ]
+          }
+        ],
+        "record_refs": [
+          {
+            "kind": "object",
+            "id": "V2-O1",
+            "path": "golden_episode/GX010021/annotations/v2_video_model/objects.json",
+            "json_pointer": "/records/0",
+            "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+          },
+          {
+            "kind": "object",
+            "id": "V2-O10",
+            "path": "golden_episode/GX010021/annotations/v2_video_model/objects.json",
+            "json_pointer": "/records/9",
+            "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+          },
+          {
+            "kind": "state",
+            "id": "STATE-LC-680-2",
+            "path": "golden_episode/GX010021/annotations/v2_video_model/objects.json",
+            "json_pointer": "/states/137",
+            "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+          }
+        ],
+        "reasoning": null,
+        "monitoring": null,
+        "scoring": {
+          "mode": "CANDIDATE_DIAGNOSTIC_ONLY",
+          "hard_score_eligible": false,
+          "metrics": [
+            "Object State Macro Accuracy"
+          ],
+          "fields": [
+            "pan_contents",
+            "main_container_residue"
+          ],
+          "required_conditions": [
+            "输入仅含已经公开的原媒体；不提供标注或参考答案",
+            "Runner必须记录实际availability_time并核查请求开始时可见截止点",
+            "候选分仅用于调试，Gold/主排行均关闭"
+          ],
+          "parameters": {
+            "delta_state": null,
+            "evidence_iou": null,
+            "alarm_tolerance": null,
+            "calibration_status": "TBD_DEV_CALIBRATION"
+          },
+          "unknown_policy": "unknown与uncertain单独记录，不能用未知推导未发生；候选unknown只表示证据局限，尚未完成可观察性裁决"
+        }
+      },
+      "assessment": {
+        "track_fit": "符合对象内容状态，避免把刮净动作等同清空",
+        "evidence_support": "已有局部原帧直接候选支持面糊和残留",
+        "objective_scoring": "两个可见字段可枚举评分；实际转移比例不评分",
+        "future_and_shortcut_audit": "单帧不推断放工具/合盖事件，680秒不提前读取入炉后画面",
+        "ability_necessity": "近期可答，作为T1接口与对象区分调试；没有长程必要性主张",
+        "evidence_gaps": [
+          "G01"
+        ]
+      }
+    },
+    {
+      "task_id": "GX010021-V2-T1-004",
+      "episode_id": "GX010021",
+      "track": "T1",
+      "subtask": "T1.3",
+      "title": "晚期粉状表层到光滑表面的状态转移",
+      "status": "NEEDS_EVIDENCE",
+      "maturity": {
+        "annotation_status": "CANDIDATE",
+        "human_review": "NOT_REVIEWED",
+        "semantic_truth_verified": false,
+        "gold_answer": null
+      },
+      "agent_public": {
+        "input": {
+          "mode": "CONTINUOUS_VIDEO_STATE",
+          "visibility_regime": "VIDEO_ONLY_DIAGNOSTIC",
+          "observations": "Runner observation IDs and media released so far; no local source file access",
+          "instruction_delivery": "DISABLED_PENDING_VERIFIED_RELEASE_SCHEDULE",
+          "question": null,
+          "question_delivery": "NONE",
+          "per_event_query": false,
+          "reference_access": false
+        },
+        "output_contract_id": "state",
+        "payload_schema": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "surface_transition": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "before": {
+                  "type": "string"
+                },
+                "after": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "before",
+                "after"
+              ]
+            },
+            "transition_time": {
+              "anyOf": [
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "start_time": {
+                      "type": "number",
+                      "minimum": 0
+                    },
+                    "end_time": {
+                      "type": "number",
+                      "minimum": 0
+                    }
+                  },
+                  "required": [
+                    "start_time",
+                    "end_time"
+                  ]
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [
+            "surface_transition",
+            "transition_time"
+          ]
+        }
+      },
+      "evaluator_private": {
+        "trigger": {
+          "kind": "STATE_CHECKPOINT",
+          "checkpoint_times": [
+            630.2
+          ],
+          "query_time": null,
+          "monitoring_interval": null,
+          "isolation_required": false,
+          "mutate_main_state": false
+        },
+        "candidate_answer": {
+          "before": "powder_on_surface",
+          "after": "smooth_surface",
+          "transition_bracket": {
+            "earliest": 603.2,
+            "latest": 630.2
+          },
+          "first_observable_time": null,
+          "bracket_semantics": "由已有两种状态观察端点推导的粗包络，不是连续动作真值",
+          "surface_transition": {
+            "before": "powder_on_surface",
+            "after": "smooth_surface"
+          }
+        },
+        "reference_items": [
+          {
+            "field": "surface_transition",
+            "value": {
+              "before": "powder_on_surface",
+              "after": "smooth_surface"
+            },
+            "evidence_ids": [
+              "H1-V-E051-02",
+              "H1-V-E052-02"
+            ],
+            "observable_time": null,
+            "note": "精确时间与持续有效区间待定",
+            "evaluate_at_media_time": 630.2
+          }
+        ],
+        "required_evidence_sets": [
+          {
+            "set_id": "surface-transition",
+            "bindings": [
+              {
+                "evidence_id": "H1-V-E051-02",
+                "role": "603.2粉状表层"
+              },
+              {
+                "evidence_id": "H1-V-E052-02",
+                "role": "630.2光滑表面"
+              }
+            ],
+            "validity": "CANDIDATE_MINIMAL_UNVERIFIED",
+            "necessity": [
+              "两种状态端点必须共同保留；仅见搅拌器不能证明光滑"
+            ],
+            "applies_at_media_time": 630.2,
+            "covers_fields": [
+              "surface_transition"
+            ]
+          }
+        ],
+        "record_refs": [
+          {
+            "kind": "object",
+            "id": "V2-O1",
+            "path": "golden_episode/GX010021/annotations/v2_video_model/objects.json",
+            "json_pointer": "/records/0",
+            "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+          },
+          {
+            "kind": "event",
+            "id": "H1-E051",
+            "path": "golden_episode/GX010021/annotations/v2_video_model/events.json",
+            "json_pointer": "/records/49",
+            "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+          },
+          {
+            "kind": "event",
+            "id": "H1-E052",
+            "path": "golden_episode/GX010021/annotations/v2_video_model/events.json",
+            "json_pointer": "/records/50",
+            "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+          },
+          {
+            "kind": "state",
+            "id": "STATE-LC-599-2",
+            "path": "golden_episode/GX010021/annotations/v2_video_model/objects.json",
+            "json_pointer": "/states/135",
+            "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+          },
+          {
+            "kind": "state",
+            "id": "STATE-LC-610-2",
+            "path": "golden_episode/GX010021/annotations/v2_video_model/objects.json",
+            "json_pointer": "/states/136",
+            "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+          }
+        ],
+        "reasoning": null,
+        "monitoring": null,
+        "scoring": {
+          "mode": "DISABLED",
+          "hard_score_eligible": false,
+          "metrics": [
+            "Transition Precision/Recall/F1 (blocked)",
+            "Update Delay (blocked)"
+          ],
+          "fields": [
+            "surface_transition"
+          ],
+          "required_conditions": [
+            "输入仅含已经公开的原媒体；不提供标注或参考答案",
+            "Runner必须记录实际availability_time并核查请求开始时可见截止点",
+            "候选分仅用于调试，Gold/主排行均关闭"
+          ],
+          "parameters": {
+            "delta_state": null,
+            "evidence_iou": null,
+            "alarm_tolerance": null,
+            "calibration_status": "TBD_DEV_CALIBRATION"
+          },
+          "unknown_policy": "unknown与uncertain单独记录，不能用未知推导未发生；候选unknown只表示证据局限，尚未完成可观察性裁决"
+        }
+      },
+      "assessment": {
+        "track_fit": "符合T1.3，评测状态变化而非搅拌动作识别",
+        "evidence_support": "光滑终态只有历史报告；局部610.2096只支持棒在容器内",
+        "objective_scoring": "缺首次可观察变化、身份持续性和边界复核，转移F1/Delay不可硬算",
+        "future_and_shortcut_audit": "不将605–631搅拌段整段当转移时刻，不用610帧虚构光滑终态",
+        "ability_necessity": "需要前后状态记录；是否具长程稳定性不能由27秒包络判定",
+        "evidence_gaps": [
+          "G02",
+          "G03"
+        ]
+      }
+    },
+    {
+      "task_id": "GX010021-V2-T2-001",
+      "episode_id": "GX010021",
+      "track": "T2",
+      "subtask": "T2.1",
+      "title": "首轮搅拌时核查加奶前置要求",
+      "status": "NEEDS_EVIDENCE",
+      "maturity": {
+        "annotation_status": "CANDIDATE",
+        "human_review": "NOT_REVIEWED",
+        "semantic_truth_verified": false,
+        "gold_answer": null
+      },
+      "agent_public": {
+        "input": {
+          "mode": "ISOLATED_TIMED_PROBE",
+          "visibility_regime": "G1_BLOCKED_MISSING_GUIDANCE_TIMING",
+          "observations": "Runner observation IDs and media released so far; no local source file access",
+          "instruction_delivery": "DISABLED_PENDING_VERIFIED_RELEASE_SCHEDULE",
+          "question": "当前搅拌正在进行。此前关于加奶和搅拌的要求是否已经由实际操作满足？请区分进入容器与用量这两个条件，给出结论、历史证据和不能确定的部分。",
+          "question_delivery": "AT_PRIVATE_QUERY_TIME_ONLY",
+          "per_event_query": false,
+          "reference_access": false
+        },
+        "output_contract_id": "probe",
+        "payload_schema": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "decision": {
+              "enum": [
+                "satisfied",
+                "unsatisfied",
+                "unknown",
+                "uncertain"
+              ]
+            },
+            "milk_entered_container": {
+              "enum": [
+                "observed",
+                "not_observed",
+                "unknown",
+                "uncertain"
+              ]
+            },
+            "half_cup_satisfied": {
+              "enum": [
+                "satisfied",
+                "unsatisfied",
+                "unknown",
+                "uncertain"
+              ]
+            }
+          },
+          "required": [
+            "decision",
+            "milk_entered_container",
+            "half_cup_satisfied"
+          ]
+        }
+      },
+      "evaluator_private": {
+        "trigger": {
+          "kind": "TIMED_PROBE",
+          "checkpoint_times": [],
+          "query_time": 200.3,
+          "monitoring_interval": null,
+          "isolation_required": true,
+          "mutate_main_state": false
+        },
+        "candidate_answer": {
+          "decision": "unknown",
+          "milk_entered_container": "observed",
+          "half_cup_satisfied": "unknown",
+          "qualification": "不由单次量取或1/4 CUP标签断言不足半杯；不由加奶发生推导定量满足"
+        },
+        "reference_items": [
+          {
+            "field": "decision",
+            "value": "unknown",
+            "evidence_ids": [
+              "SRC-R18",
+              "H1-V-E022-01",
+              "H1-V-E023-01"
+            ],
+            "observable_time": null,
+            "note": "不是已证明的unknown真值",
+            "evaluate_at_media_time": 200.3
+          },
+          {
+            "field": "milk_entered_container",
+            "value": "observed",
+            "evidence_ids": [
+              "H1-V-E022-01",
+              "H1-V-E023-01"
+            ],
+            "observable_time": {
+              "earliest": 161.2,
+              "latest": 161.2,
+              "status": "CANDIDATE_OBSERVED_AT_NOT_FIRST_ONSET"
+            },
+            "note": "原片观察链待核验",
+            "evaluate_at_media_time": 200.3
+          }
+        ],
+        "required_evidence_sets": [
+          {
+            "set_id": "milk-precondition-and-volume-limit",
+            "bindings": [
+              {
+                "evidence_id": "SRC-R18",
+                "role": "半杯要求"
+              },
+              {
+                "evidence_id": "H1-V-E022-01",
+                "role": "实际量取"
+              },
+              {
+                "evidence_id": "H1-V-E023-01",
+                "role": "实际加入"
+              },
+              {
+                "evidence_id": "H1-V-E027-01",
+                "role": "当前开始锚点"
+              },
+              {
+                "evidence_id": "H1-V-E020-02",
+                "role": "早期1/4 CUP标签"
+              }
+            ],
+            "validity": "INSUFFICIENT",
+            "necessity": [
+              "规则定义当前加奶要求；盒杯和杯容器是两段材料传递",
+              "早期杯标签仅是容量推断风险，不是已证明必要证据；缺规格/物理同一/满杯次数",
+              "unknown结论尚未裁决，不能把缺标注当证据不足Gold"
+            ],
+            "applies_at_media_time": 200.3,
+            "covers_fields": [
+              "decision",
+              "milk_entered_container"
+            ]
+          }
+        ],
+        "record_refs": [
+          {
+            "kind": "step",
+            "id": "STEP-05",
+            "path": "golden_episode/GX010021/annotations/v2_video_model/procedure.json",
+            "json_pointer": "/observed_steps/4",
+            "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+          },
+          {
+            "kind": "step",
+            "id": "STEP-06",
+            "path": "golden_episode/GX010021/annotations/v2_video_model/procedure.json",
+            "json_pointer": "/observed_steps/5",
+            "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+          },
+          {
+            "kind": "event",
+            "id": "V2-E7",
+            "path": "golden_episode/GX010021/annotations/v2_video_model/events.json",
+            "json_pointer": "/records/18",
+            "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+          },
+          {
+            "kind": "event",
+            "id": "V2-E8",
+            "path": "golden_episode/GX010021/annotations/v2_video_model/events.json",
+            "json_pointer": "/records/19",
+            "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+          },
+          {
+            "kind": "relation",
+            "id": "PATH-03",
+            "path": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+            "json_pointer": "/records/16",
+            "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+          },
+          {
+            "kind": "relation",
+            "id": "PATH-04",
+            "path": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+            "json_pointer": "/records/17",
+            "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+          }
+        ],
+        "reasoning": {
+          "relation_refs": [
+            "PATH-03",
+            "PATH-04"
+          ],
+          "minimality_status": "UNTESTED",
+          "earliest_answerable_time": null,
+          "dependency_span_sec": null,
+          "required_history": [
+            "SRC-R18",
+            "H1-V-E022-01",
+            "H1-V-E023-01",
+            "H1-V-E027-01",
+            "H1-V-E020-02"
+          ],
+          "history_necessity": {
+            "status": "UNTESTED_HYPOTHESIS",
+            "hypothesis": "在搅拌画面中无法辨认早期盒杯转移和实际量取；移除量取历史应降低证据覆盖，但unknown可能成为默认捷径",
+            "recent_window_risks": [
+              "合法当前指令可能给出半杯目标，但不能证明实际半杯",
+              "单答unknown可能无需看视频",
+              "历史杯标签未被证明必要，不能计作必要跨度"
+            ],
+            "experiments_deferred_to_baseline": [
+              "Recent-only窗口扫描（窗口参数待Dev冻结）",
+              "No-video / Instruction-only",
+              "逐段移除必要证据，核查结论和证据覆盖是否同时下降"
+            ],
+            "no_positive_gap_assumed": true
+          },
+          "instruction_temporal_limit": true,
+          "source_label_span_sec": 65.552
+        },
+        "monitoring": null,
+        "scoring": {
+          "mode": "DISABLED",
+          "hard_score_eligible": false,
+          "metrics": [
+            "Answer Accuracy/Macro-F1 (blocked)",
+            "Evidence Grounding (blocked)"
+          ],
+          "fields": [
+            "decision",
+            "milk_entered_container"
+          ],
+          "required_conditions": [
+            "输入仅含已经公开的原媒体；不提供标注或参考答案",
+            "Runner必须记录实际availability_time并核查请求开始时可见截止点",
+            "候选分仅用于调试，Gold/主排行均关闭"
+          ],
+          "parameters": {
+            "delta_state": null,
+            "evidence_iou": null,
+            "alarm_tolerance": null,
+            "calibration_status": "TBD_DEV_CALIBRATION"
+          },
+          "unknown_policy": "unknown与uncertain单独记录，不能用未知推导未发生；候选unknown只表示证据局限，尚未完成可观察性裁决"
+        }
+      },
+      "assessment": {
+        "track_fit": "规范明文顺序可作为前置要求候选，不依赖模型时序关系",
+        "evidence_support": "视觉加奶链有候选；规则公开与容量/同一性缺失",
+        "objective_scoring": "可定义decision和事实字段，但暂不评分；unknown仍需可观察性裁决",
+        "future_and_shortcut_audit": "只用199.2开始锚点；近期搅拌外观无法确定奶量，题面也未给量值",
+        "ability_necessity": "奶是否加入可能只需单个转移证据；完整量值判断是否需要历史尚未证明",
+        "evidence_gaps": [
+          "G04",
+          "G05",
+          "G08"
+        ]
+      }
+    },
+    {
+      "task_id": "GX010021-V2-T2-002",
+      "episode_id": "GX010021",
+      "track": "T2",
+      "subtask": "T2.2",
+      "title": "入模时核查烤模处理指令的修订范围",
+      "status": "NEEDS_EVIDENCE",
+      "maturity": {
+        "annotation_status": "CANDIDATE",
+        "human_review": "NOT_REVIEWED",
+        "semantic_truth_verified": false,
+        "gold_answer": null
+      },
+      "agent_public": {
+        "input": {
+          "mode": "ISOLATED_TIMED_PROBE",
+          "visibility_regime": "G1_BLOCKED_MISSING_GUIDANCE_TIMING",
+          "observations": "Runner observation IDs and media released so far; no local source file access",
+          "instruction_delivery": "DISABLED_PENDING_VERIFIED_RELEASE_SCHEDULE",
+          "question": "当前面糊正在进入烤模。根据此前指导对话，本次烤模处理应遵循哪些有效要求？说明替代方案、适用对象与条件，并区分实际可见操作和无法确认的结果。",
+          "question_delivery": "AT_PRIVATE_QUERY_TIME_ONLY",
+          "per_event_query": false,
+          "reference_access": false
+        },
+        "output_contract_id": "probe",
+        "payload_schema": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "effective_rule": {
+              "type": "string"
+            },
+            "conditional_reference": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "choice": {
+                  "type": "string"
+                },
+                "scope": {
+                  "type": "string"
+                },
+                "conditions": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "minItems": 0
+                },
+                "inner_wall_coverage": {
+                  "type": "string"
+                },
+                "superseded_options": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "minItems": 0
+                }
+              },
+              "required": [
+                "choice",
+                "scope",
+                "conditions",
+                "superseded_options",
+                "inner_wall_coverage"
+              ]
+            }
+          },
+          "required": [
+            "effective_rule",
+            "conditional_reference"
+          ]
+        }
+      },
+      "evaluator_private": {
+        "trigger": {
+          "kind": "TIMED_PROBE",
+          "checkpoint_times": [],
+          "query_time": 641.3,
+          "monitoring_interval": null,
+          "isolation_required": true,
+          "mutate_main_state": false
+        },
+        "candidate_answer": {
+          "effective_rule": "unknown_until_release_verified",
+          "conditional_reference": {
+            "choice": "oil_permitted",
+            "scope": "this_pan_lining_only",
+            "conditions": [
+              "speaker_claim_no_parchment",
+              "speaker_claim_no_leftover_butter"
+            ],
+            "inner_wall_coverage": "unknown",
+            "superseded_options": [
+              "parchment_option",
+              "leftover_butter_option"
+            ]
+          }
+        },
+        "reference_items": [
+          {
+            "field": "conditional_reference.choice",
+            "value": "oil_permitted",
+            "evidence_ids": [
+              "SRC-R42",
+              "SRC-R43"
+            ],
+            "observable_time": null,
+            "note": "只在许可公开并已生效后成立",
+            "evaluate_at_media_time": 641.3
+          },
+          {
+            "field": "conditional_reference.scope",
+            "value": "this_pan_lining_only",
+            "evidence_ids": [
+              "SRC-R41",
+              "SRC-R42",
+              "SRC-R43"
+            ],
+            "observable_time": null,
+            "note": "不推广到面糊内材料替代",
+            "evaluate_at_media_time": 641.3
+          }
+        ],
+        "required_evidence_sets": [
+          {
+            "set_id": "pan-rule-context",
+            "bindings": [
+              {
+                "evidence_id": "SRC-R39",
+                "role": "原垫纸要求"
+              },
+              {
+                "evidence_id": "SRC-R40",
+                "role": "无纸自述条件"
+              },
+              {
+                "evidence_id": "SRC-R41",
+                "role": "剩余黄油方案及范围"
+              },
+              {
+                "evidence_id": "SRC-R42",
+                "role": "无剩余黄油自述及用油提议"
+              },
+              {
+                "evidence_id": "SRC-R43",
+                "role": "许可"
+              },
+              {
+                "evidence_id": "H1-V-E049-01",
+                "role": "模底液体观察"
+              },
+              {
+                "evidence_id": "H1-V-E053-01",
+                "role": "当前入模锚点"
+              }
+            ],
+            "validity": "INSUFFICIENT",
+            "necessity": [
+              "跨修订一致性需原规则和条件链；若只问油许可，R41/R42/R43可能已经足够"
+            ],
+            "applies_at_media_time": 641.3,
+            "covers_fields": [
+              "conditional_reference.choice",
+              "conditional_reference.scope"
+            ]
+          }
+        ],
+        "record_refs": [
+          {
+            "kind": "relation",
+            "id": "RULE-02",
+            "path": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+            "json_pointer": "/records/22",
+            "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+          },
+          {
+            "kind": "relation",
+            "id": "RULE-03",
+            "path": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+            "json_pointer": "/records/23",
+            "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+          },
+          {
+            "kind": "event",
+            "id": "V2-E24",
+            "path": "golden_episode/GX010021/annotations/v2_video_model/events.json",
+            "json_pointer": "/records/45",
+            "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+          },
+          {
+            "kind": "event",
+            "id": "V2-E26",
+            "path": "golden_episode/GX010021/annotations/v2_video_model/events.json",
+            "json_pointer": "/records/51",
+            "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+          },
+          {
+            "kind": "l5",
+            "id": "L5-06",
+            "path": "golden_episode/GX010021/annotations/v2_video_model/anomaly_candidates.json",
+            "json_pointer": "/records/5",
+            "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+          }
+        ],
+        "reasoning": {
+          "relation_refs": [
+            "RULE-02",
+            "RULE-03"
+          ],
+          "minimality_status": "UNTESTED",
+          "earliest_answerable_time": null,
+          "dependency_span_sec": null,
+          "required_history": [
+            "SRC-R39",
+            "SRC-R40",
+            "SRC-R41",
+            "SRC-R42",
+            "SRC-R43",
+            "H1-V-E049-01",
+            "H1-V-E053-01"
+          ],
+          "history_necessity": {
+            "status": "UNTESTED_HYPOTHESIS",
+            "hypothesis": "仅Yes句不能稳定消解对象用途；删R41/R42应损害范围/条件字段，保留当前有效完整规范可能消除此增益",
+            "recent_window_risks": [
+              "SRC-R43单句直接给油许可",
+              "近期窗口若覆盖538–556对话可能已含全部历史",
+              "完整当前规范可能重复范围条件"
+            ],
+            "experiments_deferred_to_baseline": [
+              "Recent-only窗口扫描（窗口参数待Dev冻结）",
+              "No-video / Instruction-only",
+              "逐段移除必要证据，核查结论和证据覆盖是否同时下降"
+            ],
+            "no_positive_gap_assumed": true
+          },
+          "instruction_temporal_limit": true,
+          "source_label_span_sec": 102.602
+        },
+        "monitoring": null,
+        "scoring": {
+          "mode": "DISABLED",
+          "hard_score_eligible": false,
+          "metrics": [
+            "Answer Accuracy/Macro-F1 (blocked)",
+            "Evidence Grounding (blocked)",
+            "Revision Consistency (blocked)"
+          ],
+          "fields": [
+            "conditional_reference.choice",
+            "conditional_reference.scope"
+          ],
+          "required_conditions": [
+            "输入仅含已经公开的原媒体；不提供标注或参考答案",
+            "Runner必须记录实际availability_time并核查请求开始时可见截止点",
+            "候选分仅用于调试，Gold/主排行均关闭"
+          ],
+          "parameters": {
+            "delta_state": null,
+            "evidence_iou": null,
+            "alarm_tolerance": null,
+            "calibration_status": "TBD_DEV_CALIBRATION"
+          },
+          "unknown_policy": "unknown与uncertain单独记录，不能用未知推导未发生；候选unknown只表示证据局限，尚未完成可观察性裁决"
+        }
+      },
+      "assessment": {
+        "track_fit": "符合规则覆盖和条件适用；没有临界时刻修订前后配对",
+        "evidence_support": "文本语境支持限定许可候选，原片不能验证说话时段",
+        "objective_scoring": "规则生效时间未定，641.3只是候选Probe时间；不能把条件答案当当时有效Gold",
+        "future_and_shortcut_audit": "当前锚点用633.2–641.2，排除633–678全段模型证据；全对话不在题面提供",
+        "ability_necessity": "若近期可见许可/当前规范已显式含范围，历史未必必要；须做当前指令/单句消融",
+        "evidence_gaps": [
+          "G04",
+          "G06",
+          "G08"
+        ]
+      }
+    },
+    {
+      "task_id": "GX010021-V2-T2-003",
+      "episode_id": "GX010021",
+      "track": "T2",
+      "subtask": "T2.3",
+      "title": "入模后奶和粉的材料传递证据整合",
+      "status": "PILOT_CANDIDATE",
+      "maturity": {
+        "annotation_status": "CANDIDATE",
+        "human_review": "NOT_REVIEWED",
+        "semantic_truth_verified": false,
+        "gold_answer": null
+      },
+      "agent_public": {
+        "input": {
+          "mode": "ISOLATED_TIMED_PROBE",
+          "visibility_regime": "VIDEO_ONLY_DIAGNOSTIC",
+          "observations": "Runner observation IDs and media released so far; no local source file access",
+          "instruction_delivery": "DISABLED_PENDING_VERIFIED_RELEASE_SCHEDULE",
+          "question": "观察当前烤模中的混合物。请根据此前实际可见操作，说明奶和粉如何进入混合过程、经由哪些容器，以及它们与当前烤模内容的候选联系。区分量取与真正入料，指出数量和身份不能确认的地方。",
+          "question_delivery": "AT_PRIVATE_QUERY_TIME_ONLY",
+          "per_event_query": false,
+          "reference_access": false
+        },
+        "output_contract_id": "probe",
+        "payload_schema": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "milk_route": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "milk_carton",
+                  "flour_bag",
+                  "sugar_bag",
+                  "measuring_utensil_observation",
+                  "glass_dish",
+                  "main_container",
+                  "baking_pan",
+                  "other",
+                  "unknown",
+                  "uncertain"
+                ]
+              },
+              "minItems": 2
+            },
+            "flour_routes": {
+              "type": "array",
+              "items": {
+                "type": "array",
+                "items": {
+                  "enum": [
+                    "milk_carton",
+                    "flour_bag",
+                    "sugar_bag",
+                    "measuring_utensil_observation",
+                    "glass_dish",
+                    "main_container",
+                    "baking_pan",
+                    "other",
+                    "unknown",
+                    "uncertain"
+                  ]
+                },
+                "minItems": 2
+              },
+              "minItems": 0
+            },
+            "downstream_route": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "milk_carton",
+                  "flour_bag",
+                  "sugar_bag",
+                  "measuring_utensil_observation",
+                  "glass_dish",
+                  "main_container",
+                  "baking_pan",
+                  "other",
+                  "unknown",
+                  "uncertain"
+                ]
+              },
+              "minItems": 2
+            },
+            "observed_flour_entry_segments": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "measuring_only_segment_counts_as_entry": {
+              "type": "boolean"
+            },
+            "physical_utensil_identity": {
+              "type": "string"
+            },
+            "material_continuity": {
+              "type": "string"
+            },
+            "total_volume": {
+              "type": "string"
+            },
+            "complete_transfer": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "milk_route",
+            "flour_routes",
+            "downstream_route",
+            "observed_flour_entry_segments",
+            "measuring_only_segment_counts_as_entry",
+            "physical_utensil_identity",
+            "material_continuity",
+            "total_volume",
+            "complete_transfer"
+          ]
+        }
+      },
+      "evaluator_private": {
+        "trigger": {
+          "kind": "TIMED_PROBE",
+          "checkpoint_times": [],
+          "query_time": 680.212867,
+          "monitoring_interval": null,
+          "isolation_required": true,
+          "mutate_main_state": false
+        },
+        "candidate_answer": {
+          "milk_route": [
+            "milk_carton",
+            "measuring_utensil_observation",
+            "main_container"
+          ],
+          "flour_routes": [
+            [
+              "flour_bag",
+              "measuring_utensil_observation",
+              "main_container"
+            ],
+            [
+              "flour_bag",
+              "main_container"
+            ]
+          ],
+          "downstream_route": [
+            "main_container",
+            "baking_pan"
+          ],
+          "observed_flour_entry_segments": 2,
+          "measuring_only_segment_counts_as_entry": false,
+          "physical_utensil_identity": "unknown",
+          "material_continuity": "candidate_not_verified",
+          "total_volume": "unknown",
+          "complete_transfer": "unknown"
+        },
+        "reference_items": [
+          {
+            "field": "milk_route",
+            "value": [
+              "milk_carton",
+              "measuring_utensil_observation",
+              "main_container"
+            ],
+            "evidence_ids": [
+              "H1-V-E022-01",
+              "H1-V-E023-01"
+            ],
+            "observable_time": {
+              "earliest": 161.2,
+              "latest": 161.2,
+              "status": "CANDIDATE_OBSERVED_AT_NOT_FIRST_ONSET"
+            },
+            "note": "量具观察组不等于同一物理杯",
+            "evaluate_at_media_time": 680.212867
+          },
+          {
+            "field": "flour_routes",
+            "value": [
+              [
+                "flour_bag",
+                "measuring_utensil_observation",
+                "main_container"
+              ],
+              [
+                "flour_bag",
+                "main_container"
+              ]
+            ],
+            "evidence_ids": [
+              "H1-V-E031-01",
+              "H1-V-E032-01",
+              "H1-V-E051-01"
+            ],
+            "observable_time": {
+              "earliest": 602.2,
+              "latest": 602.2,
+              "status": "CANDIDATE_OBSERVED_AT_NOT_FIRST_ONSET"
+            },
+            "note": "两段候选可见入料；不是全片次数真值",
+            "evaluate_at_media_time": 680.212867
+          },
+          {
+            "field": "downstream_route",
+            "value": [
+              "main_container",
+              "baking_pan"
+            ],
+            "evidence_ids": [
+              "V2-V24",
+              "LC-680-2"
+            ],
+            "observable_time": {
+              "earliest": 680.212867,
+              "latest": 680.212867,
+              "status": "CANDIDATE_OBSERVED_AT_NOT_FIRST_ONSET"
+            },
+            "note": "非全量转移证明",
+            "evaluate_at_media_time": 680.212867
+          }
+        ],
+        "required_evidence_sets": [
+          {
+            "set_id": "material-lineage",
+            "bindings": [
+              {
+                "evidence_id": "H1-V-E022-01",
+                "role": "奶盒到量具"
+              },
+              {
+                "evidence_id": "H1-V-E023-01",
+                "role": "奶从量具到主容器"
+              },
+              {
+                "evidence_id": "H1-V-E031-01",
+                "role": "粉袋到量具"
+              },
+              {
+                "evidence_id": "H1-V-E032-01",
+                "role": "粉从量具到主容器"
+              },
+              {
+                "evidence_id": "H1-V-E051-01",
+                "role": "晚期袋到主容器候选直接路径"
+              },
+              {
+                "evidence_id": "V2-V24",
+                "role": "主容器到烤模"
+              },
+              {
+                "evidence_id": "LC-680-2",
+                "role": "当前烤模内容锚点"
+              }
+            ],
+            "validity": "CANDIDATE_MINIMAL_UNVERIFIED",
+            "necessity": [
+              "移除盒杯段不能证明奶路径起点；移除粉量取或入料段无法区分两者；移除晚期段丢失另一条路径；移除主容器至烤模段不能把早期入料与当前内容候选连接"
+            ],
+            "applies_at_media_time": 680.212867,
+            "covers_fields": [
+              "milk_route",
+              "flour_routes",
+              "downstream_route"
+            ]
+          }
+        ],
+        "record_refs": [
+          {
+            "kind": "relation",
+            "id": "PATH-03",
+            "path": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+            "json_pointer": "/records/16",
+            "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+          },
+          {
+            "kind": "relation",
+            "id": "PATH-04",
+            "path": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+            "json_pointer": "/records/17",
+            "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+          },
+          {
+            "kind": "relation",
+            "id": "PATH-05",
+            "path": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+            "json_pointer": "/records/18",
+            "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+          },
+          {
+            "kind": "relation",
+            "id": "PATH-06",
+            "path": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+            "json_pointer": "/records/19",
+            "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+          },
+          {
+            "kind": "relation",
+            "id": "PATH-07",
+            "path": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+            "json_pointer": "/records/20",
+            "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+          },
+          {
+            "kind": "relation",
+            "id": "V2-R12",
+            "path": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+            "json_pointer": "/records/10",
+            "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+          },
+          {
+            "kind": "object",
+            "id": "V2-O1",
+            "path": "golden_episode/GX010021/annotations/v2_video_model/objects.json",
+            "json_pointer": "/records/0",
+            "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+          },
+          {
+            "kind": "object",
+            "id": "V2-O10",
+            "path": "golden_episode/GX010021/annotations/v2_video_model/objects.json",
+            "json_pointer": "/records/9",
+            "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+          },
+          {
+            "kind": "object",
+            "id": "V2-O13",
+            "path": "golden_episode/GX010021/annotations/v2_video_model/objects.json",
+            "json_pointer": "/records/12",
+            "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+          },
+          {
+            "kind": "event",
+            "id": "H1-E051",
+            "path": "golden_episode/GX010021/annotations/v2_video_model/events.json",
+            "json_pointer": "/records/49",
+            "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+          }
+        ],
+        "reasoning": {
+          "relation_refs": [
+            "PATH-03",
+            "PATH-04",
+            "PATH-05",
+            "PATH-06",
+            "PATH-07",
+            "V2-R12"
+          ],
+          "minimality_status": "UNTESTED",
+          "earliest_answerable_time": {
+            "earliest": 680.212867,
+            "latest": 680.212867,
+            "status": "CANDIDATE_SUFFICIENT_FOR_CURRENT_ANCHOR_NOT_VERIFIED_FIRST"
+          },
+          "dependency_span_sec": 527.012867,
+          "required_history": [
+            "H1-V-E022-01",
+            "H1-V-E023-01",
+            "H1-V-E031-01",
+            "H1-V-E032-01",
+            "H1-V-E051-01",
+            "V2-V24",
+            "LC-680-2"
+          ],
+          "history_necessity": {
+            "status": "UNTESTED_HYPOTHESIS",
+            "hypothesis": "保持680秒画面与题面相同，近期窗口不能直接恢复早期奶的两段转移和第一条粉路径；移除任一核心段应降低路径或证据覆盖，不预设答案准确率正差",
+            "recent_window_risks": [
+              "近窗足够长可含595秒直接补粉；此字段不能单独当长程证据",
+              "烹饪常识可猜奶/粉成分，不能作为Episode路径证据",
+              "候选连续身份缺失可能允许unknown统一作答"
+            ],
+            "experiments_deferred_to_baseline": [
+              "Recent-only窗口扫描（窗口参数待Dev冻结）",
+              "No-video / Instruction-only",
+              "逐段移除必要证据，核查结论和证据覆盖是否同时下降"
+            ],
+            "no_positive_gap_assumed": true
+          },
+          "instruction_temporal_limit": false,
+          "source_label_span_sec": 527.012867
+        },
+        "monitoring": null,
+        "scoring": {
+          "mode": "CANDIDATE_DIAGNOSTIC_ONLY",
+          "hard_score_eligible": false,
+          "metrics": [
+            "Candidate field agreement",
+            "Evidence Grounding diagnostic"
+          ],
+          "fields": [
+            "milk_route",
+            "flour_routes",
+            "downstream_route"
+          ],
+          "required_conditions": [
+            "输入仅含已经公开的原媒体；不提供标注或参考答案",
+            "Runner必须记录实际availability_time并核查请求开始时可见截止点",
+            "候选分仅用于调试，Gold/主排行均关闭"
+          ],
+          "parameters": {
+            "delta_state": null,
+            "evidence_iou": null,
+            "alarm_tolerance": null,
+            "calibration_status": "TBD_DEV_CALIBRATION"
+          },
+          "unknown_policy": "unknown与uncertain单独记录，不能用未知推导未发生；候选unknown只表示证据局限，尚未完成可观察性裁决"
+        }
+      },
+      "assessment": {
+        "track_fit": "符合T2.3跨阶段对象传递整合；不是必然依赖/仅回忆材料列表",
+        "evidence_support": "链节点均有既有V2或保留历史定位；晚期原帧只佐证阶段，完整路径与持续身份仍候选",
+        "objective_scoring": "可以调试结构化路径和证据覆盖；仅候选评分，不硬评分身份/数量/质量守恒",
+        "future_and_shortcut_audit": "问题不提示两条粉路径；680.212867之后的入炉证据不使用；不把V2-R9先后关系升级依赖",
+        "ability_necessity": "近期面糊外观通常不能还原153–291秒路径，是可检验假设；当前物品/菜谱常识仍可能猜材料，要同时看路线和证据",
+        "evidence_gaps": [
+          "G05",
+          "G07",
+          "G08"
+        ]
+      }
+    },
+    {
+      "task_id": "GX010021-V2-T2-004",
+      "episode_id": "GX010021",
+      "track": "T2",
+      "subtask": "T2.2",
+      "title": "只问当前糖量的修订单句回忆",
+      "status": "UNSUITABLE",
+      "maturity": {
+        "annotation_status": "CANDIDATE",
+        "human_review": "NOT_REVIEWED",
+        "semantic_truth_verified": false,
+        "gold_answer": null
+      },
+      "agent_public": {
+        "input": {
+          "mode": "ISOLATED_TIMED_PROBE",
+          "visibility_regime": "G1_BLOCKED_MISSING_GUIDANCE_TIMING",
+          "observations": "Runner observation IDs and media released so far; no local source file access",
+          "instruction_delivery": "DISABLED_PENDING_VERIFIED_RELEASE_SCHEDULE",
+          "question": "当前糖量目标是多少？",
+          "question_delivery": "AT_PRIVATE_QUERY_TIME_ONLY",
+          "per_event_query": false,
+          "reference_access": false
+        },
+        "output_contract_id": "probe",
+        "payload_schema": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "answer": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "answer"
+          ]
+        }
+      },
+      "evaluator_private": {
+        "trigger": {
+          "kind": "TIMED_PROBE",
+          "checkpoint_times": [],
+          "query_time": 200.3,
+          "monitoring_interval": null,
+          "isolation_required": true,
+          "mutate_main_state": false
+        },
+        "candidate_answer": null,
+        "reference_items": [],
+        "required_evidence_sets": [
+          {
+            "set_id": "single-sugar-rule",
+            "bindings": [
+              {
+                "evidence_id": "SRC-R16",
+                "role": "单句可回答当前目标"
+              }
+            ],
+            "validity": "INSUFFICIENT",
+            "necessity": [
+              "仅一个许可句即可答，无法体现多历史推理"
+            ],
+            "applies_at_media_time": 200.3,
+            "covers_fields": []
+          }
+        ],
+        "record_refs": [
+          {
+            "kind": "relation",
+            "id": "RULE-01",
+            "path": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+            "json_pointer": "/records/21",
+            "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+          }
+        ],
+        "reasoning": {
+          "relation_refs": [
+            "RULE-01"
+          ],
+          "minimality_status": "UNTESTED",
+          "earliest_answerable_time": null,
+          "dependency_span_sec": null,
+          "required_history": [
+            "SRC-R16"
+          ],
+          "history_necessity": {
+            "status": "REJECTED_SHORTCUT",
+            "hypothesis": "不成立：本定义是单句Recall，应重设计后另建任务",
+            "recent_window_risks": [
+              "SRC-R16直接说目标"
+            ],
+            "experiments_deferred_to_baseline": [
+              "Recent-only窗口扫描（窗口参数待Dev冻结）",
+              "No-video / Instruction-only",
+              "逐段移除必要证据，核查结论和证据覆盖是否同时下降"
+            ],
+            "no_positive_gap_assumed": true
+          },
+          "instruction_temporal_limit": true,
+          "source_label_span_sec": 72.732
+        },
+        "monitoring": null,
+        "scoring": {
+          "mode": "DISABLED",
+          "hard_score_eligible": false,
+          "metrics": [],
+          "fields": [],
+          "required_conditions": [
+            "输入仅含已经公开的原媒体；不提供标注或参考答案",
+            "Runner必须记录实际availability_time并核查请求开始时可见截止点",
+            "候选分仅用于调试，Gold/主排行均关闭"
+          ],
+          "parameters": {
+            "delta_state": null,
+            "evidence_iou": null,
+            "alarm_tolerance": null,
+            "calibration_status": "TBD_DEV_CALIBRATION"
+          },
+          "unknown_policy": "unknown与uncertain单独记录，不能用未知推导未发生；候选unknown只表示证据局限，尚未完成可观察性裁决"
+        }
+      },
+      "assessment": {
+        "track_fit": "单句规则Recall不满足T2核心多事实/规则关系要求",
+        "evidence_support": "文本有糖量修订候选，但实际用量及公开时间缺失",
+        "objective_scoring": "即使补公开时间也不能解决任务机制不足",
+        "future_and_shortcut_audit": "题目可由当前有效规则或单句直接作答",
+        "ability_necessity": "没有多证据历史必要性；列为剔除记录，不能为覆盖凑数",
+        "evidence_gaps": [
+          "G04",
+          "G08"
+        ]
+      }
+    },
+    {
+      "task_id": "GX010021-V2-T3-001",
+      "episode_id": "GX010021",
+      "track": "T3",
+      "subtask": "T3.1",
+      "title": "许可用油处理烤模的限定负例",
+      "status": "NEEDS_EVIDENCE",
+      "maturity": {
+        "annotation_status": "CANDIDATE",
+        "human_review": "NOT_REVIEWED",
+        "semantic_truth_verified": false,
+        "gold_answer": null
+      },
+      "agent_public": {
+        "input": {
+          "mode": "CONTINUOUS_AUTONOMOUS_MONITORING",
+          "visibility_regime": "G1_BLOCKED_MISSING_GUIDANCE_TIMING",
+          "observations": "Runner observation IDs and media released so far; no local source file access",
+          "instruction_delivery": "DISABLED_PENDING_VERIFIED_RELEASE_SCHEDULE",
+          "question": null,
+          "question_delivery": "NONE",
+          "per_event_query": false,
+          "reference_access": false
+        },
+        "output_contract_id": "alarm",
+        "payload_schema": null
+      },
+      "evaluator_private": {
+        "trigger": {
+          "kind": "CONTINUOUS_MONITORING",
+          "checkpoint_times": [],
+          "query_time": null,
+          "monitoring_interval": {
+            "start_time": 0,
+            "end_time": 696.929567
+          },
+          "isolation_required": false,
+          "mutate_main_state": false
+        },
+        "candidate_answer": {
+          "expected_behavior": "silence_for_scoped_permitted_substitution",
+          "scope": [
+            "missing_parchment_only",
+            "not_using_leftover_butter_only"
+          ],
+          "other_anomalies": "NOT_LABELED",
+          "inner_wall_coverage": "unknown"
+        },
+        "reference_items": [],
+        "required_evidence_sets": [
+          {
+            "set_id": "oil-negative",
+            "bindings": [
+              {
+                "evidence_id": "SRC-R39",
+                "role": "原垫纸要求"
+              },
+              {
+                "evidence_id": "SRC-R40",
+                "role": "无纸自述"
+              },
+              {
+                "evidence_id": "SRC-R41",
+                "role": "剩余黄油建议"
+              },
+              {
+                "evidence_id": "SRC-R42",
+                "role": "无黄油并提议油"
+              },
+              {
+                "evidence_id": "SRC-R43",
+                "role": "限定许可"
+              },
+              {
+                "evidence_id": "H1-V-E049-01",
+                "role": "模底油候选"
+              },
+              {
+                "evidence_id": "H1-V-E049-02",
+                "role": "倾转烤模候选"
+              }
+            ],
+            "validity": "INSUFFICIENT",
+            "necessity": [
+              "许可与语境决定错误材料/遗漏误报范围；不能由模底液体断言所有规范满足"
+            ],
+            "applies_at_media_time": null,
+            "covers_fields": []
+          }
+        ],
+        "record_refs": [
+          {
+            "kind": "l5",
+            "id": "L5-06",
+            "path": "golden_episode/GX010021/annotations/v2_video_model/anomaly_candidates.json",
+            "json_pointer": "/records/5",
+            "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+          },
+          {
+            "kind": "event",
+            "id": "V2-E24",
+            "path": "golden_episode/GX010021/annotations/v2_video_model/events.json",
+            "json_pointer": "/records/45",
+            "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+          },
+          {
+            "kind": "relation",
+            "id": "RULE-02",
+            "path": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+            "json_pointer": "/records/22",
+            "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+          },
+          {
+            "kind": "relation",
+            "id": "RULE-03",
+            "path": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+            "json_pointer": "/records/23",
+            "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+          }
+        ],
+        "reasoning": null,
+        "monitoring": {
+          "sample_role": "RULE_SCOPED_NEGATIVE_CANDIDATE",
+          "normal_intervals": [
+            {
+              "start_time": 560.2,
+              "end_time": 579.2,
+              "status": "CANDIDATE_SUBSET_OF_L5_06_NOT_NORMAL_FOR_ALL_CLASSES",
+              "evidence_ids": [
+                "H1-V-E049-01",
+                "H1-V-E049-02"
+              ]
+            }
+          ],
+          "error_events": [],
+          "scoped_categories": [
+            "missing_parchment_only",
+            "not_using_leftover_butter_only"
+          ],
+          "other_categories": "NOT_LABELED",
+          "whole_episode_normal": false,
+          "positive_error_count": 0,
+          "error_onset": null,
+          "detectable_from": null,
+          "deadline": null,
+          "feedback_given_at": null,
+          "resolved_at": null,
+          "alarm_ground_truth": false,
+          "feedback_partition": "UNAVAILABLE_RELEASE_TIMING",
+          "full_episode_effective_hours": null,
+          "available_metrics": [],
+          "unavailable_metrics": [
+            "Event Recall/F1",
+            "Timely Recall",
+            "Detection Delay",
+            "Recovery Tracking",
+            "whole-episode FA/h"
+          ],
+          "scoring_note": "不对所有报警算FP；同incident_id聚合raise/update/resolve，误报事件与持续时间分开。评分区间/类别私有，主执行不按窗口重置；无Gold正常分母。"
+        },
+        "scoring": {
+          "mode": "DISABLED",
+          "hard_score_eligible": false,
+          "metrics": [
+            "Rule-scoped false-alarm count (blocked)"
+          ],
+          "fields": [],
+          "required_conditions": [
+            "输入仅含已经公开的原媒体；不提供标注或参考答案",
+            "Runner必须记录实际availability_time并核查请求开始时可见截止点",
+            "候选分仅用于调试，Gold/主排行均关闭"
+          ],
+          "parameters": {
+            "delta_state": null,
+            "evidence_iou": null,
+            "alarm_tolerance": null,
+            "calibration_status": "TBD_DEV_CALIBRATION"
+          },
+          "unknown_policy": "unknown与uncertain单独记录，不能用未知推导未发生；候选unknown只表示证据局限，尚未完成可观察性裁决"
+        }
+      },
+      "assessment": {
+        "track_fit": "主形式为全Episode自主监测；负例只能检查限定误报，不能替代T3正例能力",
+        "evidence_support": "L5-06正常候选有文本许可与视觉定位，但公开时间缺失",
+        "objective_scoring": "限定负例定义已明确；当前不能开启候选报警评分或全片FA/h",
+        "future_and_shortcut_audit": "排除V2-E25所引未来V2-V24，不以Success当正常真值；不向Agent发负例窗口或silence答案",
+        "ability_necessity": "连续报警轨迹可审计误报；始终沉默系统也可通过负例，无法证明发现/及时/恢复",
+        "evidence_gaps": [
+          "G04",
+          "G06",
+          "G09"
+        ]
+      }
+    },
+    {
+      "task_id": "GX010021-V2-T3-002",
+      "episode_id": "GX010021",
+      "track": "T3",
+      "subtask": "T3.1",
+      "title": "分段黄油再加热的潜在正常负例",
+      "status": "NEEDS_EVIDENCE",
+      "maturity": {
+        "annotation_status": "CANDIDATE",
+        "human_review": "NOT_REVIEWED",
+        "semantic_truth_verified": false,
+        "gold_answer": null
+      },
+      "agent_public": {
+        "input": {
+          "mode": "CONTINUOUS_AUTONOMOUS_MONITORING",
+          "visibility_regime": "G1_BLOCKED_MISSING_GUIDANCE_TIMING",
+          "observations": "Runner observation IDs and media released so far; no local source file access",
+          "instruction_delivery": "DISABLED_PENDING_VERIFIED_RELEASE_SCHEDULE",
+          "question": null,
+          "question_delivery": "NONE",
+          "per_event_query": false,
+          "reference_access": false
+        },
+        "output_contract_id": "alarm",
+        "payload_schema": null
+      },
+      "evaluator_private": {
+        "trigger": {
+          "kind": "CONTINUOUS_MONITORING",
+          "checkpoint_times": [],
+          "query_time": null,
+          "monitoring_interval": {
+            "start_time": 0,
+            "end_time": 696.929567
+          },
+          "isolation_required": false,
+          "mutate_main_state": false
+        },
+        "candidate_answer": {
+          "expected_behavior": "do_not_label_reheat_alone_as_error",
+          "normal_interval": null,
+          "heating_duration": "unknown",
+          "recovery_event": "NOT_ASSERTED"
+        },
+        "reference_items": [],
+        "required_evidence_sets": [
+          {
+            "set_id": "reheat-negative",
+            "bindings": [
+              {
+                "evidence_id": "SRC-R30",
+                "role": "分段加热检查规范候选"
+              },
+              {
+                "evidence_id": "SRC-R31",
+                "role": "进一步加热反馈候选"
+              },
+              {
+                "evidence_id": "V2-V17",
+                "role": "取出部分融化材料"
+              },
+              {
+                "evidence_id": "V2-V18",
+                "role": "再加热操作"
+              }
+            ],
+            "validity": "INSUFFICIENT",
+            "necessity": [
+              "分段许可与检查语境决定再加热是否偏差；反馈已公开后不能计反馈前自主识别"
+            ],
+            "applies_at_media_time": null,
+            "covers_fields": []
+          }
+        ],
+        "record_refs": [
+          {
+            "kind": "l5",
+            "id": "L5-07",
+            "path": "golden_episode/GX010021/annotations/v2_video_model/anomaly_candidates.json",
+            "json_pointer": "/records/6",
+            "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+          },
+          {
+            "kind": "l5",
+            "id": "L5-04",
+            "path": "golden_episode/GX010021/annotations/v2_video_model/anomaly_candidates.json",
+            "json_pointer": "/records/3",
+            "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+          },
+          {
+            "kind": "event",
+            "id": "V2-E17",
+            "path": "golden_episode/GX010021/annotations/v2_video_model/events.json",
+            "json_pointer": "/records/35",
+            "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+          },
+          {
+            "kind": "event",
+            "id": "V2-E18",
+            "path": "golden_episode/GX010021/annotations/v2_video_model/events.json",
+            "json_pointer": "/records/36",
+            "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+          }
+        ],
+        "reasoning": null,
+        "monitoring": {
+          "sample_role": "NORMAL_FLOW_CANDIDATE_INTERVAL_MISSING",
+          "normal_intervals": [],
+          "error_events": [],
+          "scoped_categories": [
+            "reheat_alone_is_error"
+          ],
+          "other_categories": "NOT_LABELED",
+          "whole_episode_normal": false,
+          "positive_error_count": 0,
+          "error_onset": null,
+          "detectable_from": null,
+          "deadline": null,
+          "feedback_given_at": null,
+          "resolved_at": null,
+          "alarm_ground_truth": false,
+          "feedback_partition": "UNAVAILABLE_RELEASE_TIMING",
+          "full_episode_effective_hours": null,
+          "available_metrics": [],
+          "unavailable_metrics": [
+            "Event Recall/F1",
+            "Timely Recall",
+            "Detection Delay",
+            "Recovery Tracking",
+            "whole-episode FA/h"
+          ],
+          "scoring_note": "不对所有报警算FP；同incident_id聚合raise/update/resolve，误报事件与持续时间分开。评分区间/类别私有，主执行不按窗口重置；无Gold正常分母。"
+        },
+        "scoring": {
+          "mode": "DISABLED",
+          "hard_score_eligible": false,
+          "metrics": [
+            "Rule-scoped false-alarm count (blocked)"
+          ],
+          "fields": [],
+          "required_conditions": [
+            "输入仅含已经公开的原媒体；不提供标注或参考答案",
+            "Runner必须记录实际availability_time并核查请求开始时可见截止点",
+            "候选分仅用于调试，Gold/主排行均关闭"
+          ],
+          "parameters": {
+            "delta_state": null,
+            "evidence_iou": null,
+            "alarm_tolerance": null,
+            "calibration_status": "TBD_DEV_CALIBRATION"
+          },
+          "unknown_policy": "unknown与uncertain单独记录，不能用未知推导未发生；候选unknown只表示证据局限，尚未完成可观察性裁决"
+        }
+      },
+      "assessment": {
+        "track_fit": "全Episode持续监测的正常流程研究候选；非问答",
+        "evidence_support": "L5-07没有候选正常区间；V2定位只支持动作候选",
+        "objective_scoring": "无经核验正常窗口与规则时间，暂不评分；不硬填405–410正常真值",
+        "future_and_shortcut_audit": "SRC-R31是反馈身份，不能视作自主检测证据；不造15秒实际加热结论",
+        "ability_necessity": "可用于持续误报控制，无法测纠错恢复；需要额外正例",
+        "evidence_gaps": [
+          "G04",
+          "G09",
+          "G10"
+        ]
+      }
+    },
+    {
+      "task_id": "GX010021-V2-T3-003",
+      "episode_id": "GX010021",
+      "track": "T3",
+      "subtask": "T3.1",
+      "title": "把取蛋或反馈直接当三蛋入料错误",
+      "status": "UNSUITABLE",
+      "maturity": {
+        "annotation_status": "CANDIDATE",
+        "human_review": "NOT_REVIEWED",
+        "semantic_truth_verified": false,
+        "gold_answer": null
+      },
+      "agent_public": {
+        "input": {
+          "mode": "CONTINUOUS_AUTONOMOUS_MONITORING",
+          "visibility_regime": "G1_BLOCKED_MISSING_GUIDANCE_TIMING",
+          "observations": "Runner observation IDs and media released so far; no local source file access",
+          "instruction_delivery": "DISABLED_PENDING_VERIFIED_RELEASE_SCHEDULE",
+          "question": null,
+          "question_delivery": "NONE",
+          "per_event_query": false,
+          "reference_access": false
+        },
+        "output_contract_id": "alarm",
+        "payload_schema": null
+      },
+      "evaluator_private": {
+        "trigger": {
+          "kind": "CONTINUOUS_MONITORING",
+          "checkpoint_times": [],
+          "query_time": null,
+          "monitoring_interval": {
+            "start_time": 0,
+            "end_time": 696.929567
+          },
+          "isolation_required": false,
+          "mutate_main_state": false
+        },
+        "candidate_answer": null,
+        "reference_items": [],
+        "required_evidence_sets": [
+          {
+            "set_id": "egg-error-rejected",
+            "bindings": [
+              {
+                "evidence_id": "LC-76-2",
+                "role": "只见两个蛋黄"
+              },
+              {
+                "evidence_id": "LC-83-2",
+                "role": "手持蛋但完整性/去向未知"
+              },
+              {
+                "evidence_id": "SRC-R10",
+                "role": "反馈文本仅作审计背景"
+              }
+            ],
+            "validity": "INSUFFICIENT",
+            "necessity": [
+              "不能证明三枚加入，更不能导出错误检测时刻"
+            ],
+            "applies_at_media_time": null,
+            "covers_fields": []
+          }
+        ],
+        "record_refs": [
+          {
+            "kind": "l5",
+            "id": "L5-02",
+            "path": "golden_episode/GX010021/annotations/v2_video_model/anomaly_candidates.json",
+            "json_pointer": "/records/1",
+            "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+          },
+          {
+            "kind": "event",
+            "id": "V2-E2",
+            "path": "golden_episode/GX010021/annotations/v2_video_model/events.json",
+            "json_pointer": "/records/5",
+            "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+          },
+          {
+            "kind": "event",
+            "id": "V2-E4",
+            "path": "golden_episode/GX010021/annotations/v2_video_model/events.json",
+            "json_pointer": "/records/9",
+            "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+          }
+        ],
+        "reasoning": null,
+        "monitoring": {
+          "sample_role": "REJECTED_POSITIVE_EVENT_DEFINITION",
+          "normal_intervals": [],
+          "error_events": [],
+          "scoped_categories": [],
+          "other_categories": "NOT_LABELED",
+          "whole_episode_normal": false,
+          "positive_error_count": 0,
+          "error_onset": null,
+          "detectable_from": null,
+          "deadline": null,
+          "feedback_given_at": null,
+          "resolved_at": null,
+          "alarm_ground_truth": false,
+          "feedback_partition": "UNAVAILABLE_RELEASE_TIMING",
+          "full_episode_effective_hours": null,
+          "available_metrics": [],
+          "unavailable_metrics": [
+            "Event Recall/F1",
+            "Timely Recall",
+            "Detection Delay",
+            "Recovery Tracking",
+            "whole-episode FA/h"
+          ],
+          "scoring_note": "不对所有报警算FP；同incident_id聚合raise/update/resolve，误报事件与持续时间分开。评分区间/类别私有，主执行不按窗口重置；无Gold正常分母。"
+        },
+        "scoring": {
+          "mode": "DISABLED",
+          "hard_score_eligible": false,
+          "metrics": [
+            "Rule-scoped false-alarm count (blocked)"
+          ],
+          "fields": [],
+          "required_conditions": [
+            "输入仅含已经公开的原媒体；不提供标注或参考答案",
+            "Runner必须记录实际availability_time并核查请求开始时可见截止点",
+            "候选分仅用于调试，Gold/主排行均关闭"
+          ],
+          "parameters": {
+            "delta_state": null,
+            "evidence_iou": null,
+            "alarm_tolerance": null,
+            "calibration_status": "TBD_DEV_CALIBRATION"
+          },
+          "unknown_policy": "unknown与uncertain单独记录，不能用未知推导未发生；候选unknown只表示证据局限，尚未完成可观察性裁决"
+        }
+      },
+      "assessment": {
+        "track_fit": "形式可持续监测但原错误定义没有成立",
+        "evidence_support": "第三枚破损/入料与规范公开时间不明",
+        "objective_scoring": "没有可评分异常正例，候选答案为null",
+        "future_and_shortcut_audit": "反馈标签/模型三蛋主张不能成为error_onset或detectable_from",
+        "ability_necessity": "错误事实未成立，不能测检测能力",
+        "evidence_gaps": [
+          "G04",
+          "G09",
+          "G11"
+        ]
+      }
+    },
+    {
+      "task_id": "GX010021-V2-T3-004",
+      "episode_id": "GX010021",
+      "track": "T3",
+      "subtask": "T3.3",
+      "title": "把正常再加热当错误恢复与解除",
+      "status": "UNSUITABLE",
+      "maturity": {
+        "annotation_status": "CANDIDATE",
+        "human_review": "NOT_REVIEWED",
+        "semantic_truth_verified": false,
+        "gold_answer": null
+      },
+      "agent_public": {
+        "input": {
+          "mode": "CONTINUOUS_AUTONOMOUS_MONITORING",
+          "visibility_regime": "G1_BLOCKED_MISSING_GUIDANCE_TIMING",
+          "observations": "Runner observation IDs and media released so far; no local source file access",
+          "instruction_delivery": "DISABLED_PENDING_VERIFIED_RELEASE_SCHEDULE",
+          "question": null,
+          "question_delivery": "NONE",
+          "per_event_query": false,
+          "reference_access": false
+        },
+        "output_contract_id": "alarm",
+        "payload_schema": null
+      },
+      "evaluator_private": {
+        "trigger": {
+          "kind": "CONTINUOUS_MONITORING",
+          "checkpoint_times": [],
+          "query_time": null,
+          "monitoring_interval": {
+            "start_time": 0,
+            "end_time": 696.929567
+          },
+          "isolation_required": false,
+          "mutate_main_state": false
+        },
+        "candidate_answer": null,
+        "reference_items": [],
+        "required_evidence_sets": [
+          {
+            "set_id": "recovery-rejected",
+            "bindings": [
+              {
+                "evidence_id": "V2-V17",
+                "role": "部分融化取出"
+              },
+              {
+                "evidence_id": "V2-V18",
+                "role": "进一步加热"
+              },
+              {
+                "evidence_id": "LC-431-2",
+                "role": "后续仍有固块"
+              }
+            ],
+            "validity": "INSUFFICIENT",
+            "necessity": [
+              "只有过程变化，不能证明初始偏差或已恢复"
+            ],
+            "applies_at_media_time": null,
+            "covers_fields": []
+          }
+        ],
+        "record_refs": [
+          {
+            "kind": "l5",
+            "id": "L5-04",
+            "path": "golden_episode/GX010021/annotations/v2_video_model/anomaly_candidates.json",
+            "json_pointer": "/records/3",
+            "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+          },
+          {
+            "kind": "l5",
+            "id": "L5-07",
+            "path": "golden_episode/GX010021/annotations/v2_video_model/anomaly_candidates.json",
+            "json_pointer": "/records/6",
+            "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+          },
+          {
+            "kind": "event",
+            "id": "V2-E17",
+            "path": "golden_episode/GX010021/annotations/v2_video_model/events.json",
+            "json_pointer": "/records/35",
+            "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+          },
+          {
+            "kind": "event",
+            "id": "V2-E18",
+            "path": "golden_episode/GX010021/annotations/v2_video_model/events.json",
+            "json_pointer": "/records/36",
+            "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+          },
+          {
+            "kind": "state",
+            "id": "STATE-LC-431-2",
+            "path": "golden_episode/GX010021/annotations/v2_video_model/objects.json",
+            "json_pointer": "/states/133",
+            "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+          }
+        ],
+        "reasoning": null,
+        "monitoring": {
+          "sample_role": "REJECTED_RECOVERY_DEFINITION",
+          "normal_intervals": [],
+          "error_events": [],
+          "scoped_categories": [],
+          "other_categories": "NOT_LABELED",
+          "whole_episode_normal": false,
+          "positive_error_count": 0,
+          "error_onset": null,
+          "detectable_from": null,
+          "deadline": null,
+          "feedback_given_at": null,
+          "resolved_at": null,
+          "alarm_ground_truth": false,
+          "feedback_partition": "UNAVAILABLE_RELEASE_TIMING",
+          "full_episode_effective_hours": null,
+          "available_metrics": [],
+          "unavailable_metrics": [
+            "Event Recall/F1",
+            "Timely Recall",
+            "Detection Delay",
+            "Recovery Tracking",
+            "whole-episode FA/h"
+          ],
+          "scoring_note": "不对所有报警算FP；同incident_id聚合raise/update/resolve，误报事件与持续时间分开。评分区间/类别私有，主执行不按窗口重置；无Gold正常分母。"
+        },
+        "scoring": {
+          "mode": "DISABLED",
+          "hard_score_eligible": false,
+          "metrics": [
+            "Rule-scoped false-alarm count (blocked)"
+          ],
+          "fields": [],
+          "required_conditions": [
+            "输入仅含已经公开的原媒体；不提供标注或参考答案",
+            "Runner必须记录实际availability_time并核查请求开始时可见截止点",
+            "候选分仅用于调试，Gold/主排行均关闭"
+          ],
+          "parameters": {
+            "delta_state": null,
+            "evidence_iou": null,
+            "alarm_tolerance": null,
+            "calibration_status": "TBD_DEV_CALIBRATION"
+          },
+          "unknown_policy": "unknown与uncertain单独记录，不能用未知推导未发生；候选unknown只表示证据局限，尚未完成可观察性裁决"
+        }
+      },
+      "assessment": {
+        "track_fit": "有持续形式，但恢复要求已确认偏差和纠正；本定义不符合T3.3事实前提",
+        "evidence_support": "没有成立错误、纠正完成或后续第二错误",
+        "objective_scoring": "resolved_at保持null，不能评解除延迟",
+        "future_and_shortcut_audit": "不把再次加热或模型完全融化当恢复；不造deadline",
+        "ability_necessity": "继续观看正常加热不等于错误恢复能力",
+        "evidence_gaps": [
+          "G09",
+          "G10"
+        ]
+      }
+    }
+  ],
+  "evidence_gaps": [
+    {
+      "gap_id": "G01",
+      "title": "原帧局部候选尚未独立裁决",
+      "action": "复核所选原帧、可观察性、对象映射；unknown不自动Gold",
+      "priority": "P1",
+      "status": "OPEN",
+      "affected_task_ids": [
+        "GX010021-V2-T1-002",
+        "GX010021-V2-T1-003"
+      ]
+    },
+    {
+      "gap_id": "G02",
+      "title": "步骤/转移首次可观察边界与持续区间",
+      "action": "定向复核199–239及603–631秒，不重跑全片；冻结完成条件、取消条件、时间容差",
+      "priority": "P1",
+      "status": "OPEN",
+      "affected_task_ids": [
+        "GX010021-V2-T1-001",
+        "GX010021-V2-T1-002",
+        "GX010021-V2-T1-004"
+      ]
+    },
+    {
+      "gap_id": "G03",
+      "title": "晚期光滑终态与转移身份",
+      "action": "核查630.2附近终态、粉表面前态与同容器对应；610秒棒在容器内不能证明光滑",
+      "priority": "P1",
+      "status": "OPEN",
+      "affected_task_ids": [
+        "GX010021-V2-T1-004"
+      ]
+    },
+    {
+      "gap_id": "G04",
+      "title": "无音轨导致指令/反馈公开及生效时间未知",
+      "action": "取得原音频或可靠话语起止/送达证据；未取得前availability/effective_from均null；人工新设转写发布协议只能另建显式诊断条件",
+      "priority": "P0",
+      "status": "OPEN",
+      "affected_task_ids": [
+        "GX010021-V2-T2-001",
+        "GX010021-V2-T2-002",
+        "GX010021-V2-T2-004",
+        "GX010021-V2-T3-001",
+        "GX010021-V2-T3-002",
+        "GX010021-V2-T3-003"
+      ]
+    },
+    {
+      "gap_id": "G05",
+      "title": "容量及量具/容器跨阶段物理身份",
+      "action": "核验奶盒→量具→主容器；杯标签与实际杯是否一致、满杯次数及遮挡；不能推断体积",
+      "priority": "P1",
+      "status": "OPEN",
+      "affected_task_ids": [
+        "GX010021-V2-T2-001",
+        "GX010021-V2-T2-003"
+      ]
+    },
+    {
+      "gap_id": "G06",
+      "title": "烤模限定许可语境与实际结果",
+      "action": "核查垫纸→黄油→油的作用范围、条件自述与许可；内壁油膜未知，排除未来定位",
+      "priority": "P1",
+      "status": "OPEN",
+      "affected_task_ids": [
+        "GX010021-V2-T2-002",
+        "GX010021-V2-T3-001"
+      ]
+    },
+    {
+      "gap_id": "G07",
+      "title": "晚期粉路径和材料持续性",
+      "action": "定向核查270–292、595–604及633–680秒传递；原帧599仅阶段佐证，不证明整段倾倒或质量守恒",
+      "priority": "P1",
+      "status": "OPEN",
+      "affected_task_ids": [
+        "GX010021-V2-T2-003"
+      ]
+    },
+    {
+      "gap_id": "G08",
+      "title": "历史必要性与最小充分性未实测",
+      "action": "Baseline阶段做Recent-only/No-video/Instruction-only和逐段移除；不以跨度替代必要性，不预设正差",
+      "priority": "P1",
+      "status": "OPEN",
+      "affected_task_ids": [
+        "GX010021-V2-T2-001",
+        "GX010021-V2-T2-002",
+        "GX010021-V2-T2-003",
+        "GX010021-V2-T2-004"
+      ]
+    },
+    {
+      "gap_id": "G09",
+      "title": "可信异常正例与全类正常分母缺失",
+      "action": "补有已公开规范+可证偏差的自然Episode；保留正常长区间、多个错误；缺正例不报Recall/F1",
+      "priority": "P0",
+      "status": "OPEN",
+      "affected_task_ids": [
+        "GX010021-V2-T3-001",
+        "GX010021-V2-T3-002",
+        "GX010021-V2-T3-003",
+        "GX010021-V2-T3-004"
+      ]
+    },
+    {
+      "gap_id": "G10",
+      "title": "真实纠正和后续异常链缺失",
+      "action": "补成立错误→可见纠正→继续操作→后续错误链；核验resolved_at与解除证据；正常再加热不算恢复",
+      "priority": "P0",
+      "status": "OPEN",
+      "affected_task_ids": [
+        "GX010021-V2-T3-002",
+        "GX010021-V2-T3-004"
+      ]
+    },
+    {
+      "gap_id": "G11",
+      "title": "第三枚蛋的破损、入料和最终去向",
+      "action": "仅定向核查76–89秒若需要；拿取数与入料数分开，不凭两蛋黄否定第三枚操作",
+      "priority": "P2",
+      "status": "OPEN",
+      "affected_task_ids": [
+        "GX010021-V2-T3-003"
+      ]
+    }
+  ],
+  "statistics": {
+    "definition_count": 12,
+    "candidate_count": 9,
+    "by_track": {
+      "T1": 4,
+      "T2": 4,
+      "T3": 4
+    },
+    "by_status": {
+      "PILOT_CANDIDATE": 4,
+      "NEEDS_EVIDENCE": 5,
+      "UNSUITABLE": 3
+    },
+    "by_subtask": {
+      "T1.1": 1,
+      "T1.2": 2,
+      "T1.3": 1,
+      "T2.1": 1,
+      "T2.2": 2,
+      "T2.3": 1,
+      "T3.1": 3,
+      "T3.3": 1
+    },
+    "gold_count": 0,
+    "hard_scoring_count": 0,
+    "t3_positive_count": 0,
+    "by_track_candidates": {
+      "T1": 4,
+      "T2": 3,
+      "T3": 2
+    }
+  },
+  "deferred_coverage": [
+    {
+      "subtask": "T3.2",
+      "reason": "无可信异常与detectable_from；不能以反馈时间造检测或deadline"
+    },
+    {
+      "subtask": "T3.3",
+      "reason": "只有剔除的恢复定义，无成立偏差/纠正/后续异常链"
+    },
+    {
+      "subtask": "T2.4",
+      "reason": "V1.0默认不启用；本轮不扩展"
+    }
+  ],
+  "public_input_contracts": {
+    "initialize": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "episode_id": {
+          "const": "GX010021"
+        },
+        "modalities": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "video": {
+              "const": true
+            },
+            "audio": {
+              "const": false
+            }
+          },
+          "required": [
+            "video",
+            "audio"
+          ]
+        },
+        "replay_mode": {
+          "enum": [
+            "CAUSAL_REPLAY",
+            "REALTIME_REPLAY"
+          ]
+        },
+        "protocol_config": {
+          "type": "object"
+        },
+        "public_output_contracts": {
+          "type": "object"
+        }
+      },
+      "required": [
+        "episode_id",
+        "modalities",
+        "replay_mode",
+        "protocol_config",
+        "public_output_contracts"
+      ]
+    },
+    "observation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "episode_id": {
+          "const": "GX010021"
+        },
+        "observation_id": {
+          "type": "string"
+        },
+        "modality": {
+          "const": "video"
+        },
+        "media_interval": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "start_time": {
+              "type": "number",
+              "minimum": 0
+            },
+            "end_time": {
+              "type": "number",
+              "minimum": 0
+            }
+          },
+          "required": [
+            "start_time",
+            "end_time"
+          ]
+        },
+        "availability_time_ms": {
+          "type": "number",
+          "minimum": 0
+        },
+        "content_ref": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "episode_id",
+        "observation_id",
+        "modality",
+        "media_interval",
+        "availability_time_ms",
+        "content_ref"
+      ]
+    },
+    "probe": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "episode_id": {
+          "const": "GX010021"
+        },
+        "task_id": {
+          "type": "string"
+        },
+        "query_time": {
+          "type": "number",
+          "minimum": 0
+        },
+        "request_visible_media_cutoff": {
+          "type": "number",
+          "minimum": 0
+        },
+        "question": {
+          "type": "string"
+        },
+        "payload_schema": {
+          "type": "object"
+        },
+        "isolated": {
+          "const": true
+        }
+      },
+      "required": [
+        "episode_id",
+        "task_id",
+        "query_time",
+        "request_visible_media_cutoff",
+        "question",
+        "payload_schema",
+        "isolated"
+      ]
+    },
+    "instruction": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "episode_id": {
+          "const": "GX010021"
+        },
+        "instruction_id": {
+          "type": "string"
+        },
+        "role": {
+          "enum": [
+            "instruction",
+            "clarification",
+            "revision",
+            "feedback",
+            "dialogue_context"
+          ]
+        },
+        "text": {
+          "type": "string"
+        },
+        "source_media_interval": {
+          "anyOf": [
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "start_time": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "end_time": {
+                  "type": "number",
+                  "minimum": 0
+                }
+              },
+              "required": [
+                "start_time",
+                "end_time"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "availability_time_ms": {
+          "type": "number",
+          "minimum": 0
+        },
+        "effective_from_availability_time_ms": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "episode_id",
+        "instruction_id",
+        "role",
+        "text",
+        "source_media_interval",
+        "availability_time_ms",
+        "effective_from_availability_time_ms"
+      ]
+    }
+  }
+}

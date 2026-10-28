@@ -1,0 +1,9 @@
+﻿task_id,review_status,condition,execution_status,answer,expected_answer,correct,answerability_correct,ungrounded_certain,visible_evidence_supported,full_control_consistent,input_tokens,output_tokens,elapsed_sec,estimated_cost_cny,manual_review
+P01,PENDING,FULL,NOT_RUN,,,,,,,,,,,,PENDING
+P01,PENDING,CRITICAL_MASK,NOT_RUN,,,,,,,,,,,,PENDING
+P01,PENDING,CONTROL_MASK,NOT_RUN,,,,,,,,,,,,PENDING
+P01,PENDING,recent_only,NOT_RUN,,,,,,,,,,,,PENDING
+P02,PENDING,FULL,NOT_RUN,,,,,,,,,,,,PENDING
+P02,PENDING,CRITICAL_MASK,NOT_RUN,,,,,,,,,,,,PENDING
+P02,PENDING,CONTROL_MASK,NOT_RUN,,,,,,,,,,,,PENDING
+P02,PENDING,recent_only,NOT_RUN,,,,,,,,,,,,PENDING

@@ -1,0 +1,224 @@
+{
+  "episode_id": "GX010021",
+  "generated_date": "2026-10-16",
+  "ordering": [
+    "V1_ROUND_1",
+    "V1_ROUND_2",
+    "V1_ROUND_3",
+    "V1_ROUND_4",
+    "V1_INTEGRATION",
+    "V2_PASS_1_2",
+    "V2_INTEGRATION_CROSSCHECK",
+    "V2_LOCAL_FRAME_CHECK",
+    "SESSION3",
+    "SESSION4A"
+  ],
+  "stages": [
+    {
+      "id": "V1_ROUND_1",
+      "method": "候选事件与对象标注",
+      "inputs": [
+        {
+          "file": "golden_episode/GX010021/source/GX010021.MP4"
+        }
+      ],
+      "outputs": [
+        {
+          "file": "golden_episode/GX010021/annotation_reports/candidate_events_v1.md",
+          "heading": "事件标注结果"
+        }
+      ],
+      "status": "CANDIDATE"
+    },
+    {
+      "id": "V1_ROUND_2",
+      "method": "基于视觉证据的候选核验",
+      "inputs": [
+        {
+          "file": "golden_episode/GX010021/annotation_reports/candidate_events_v1.md"
+        }
+      ],
+      "outputs": [
+        {
+          "file": "golden_episode/GX010021/annotation_reports/verification_report.md"
+        }
+      ],
+      "status": "CANDIDATE_WITH_INTERNAL_INCONSISTENCIES"
+    },
+    {
+      "id": "V1_ROUND_3",
+      "method": "时间、统计、去重和证据级别一致性修订",
+      "inputs": [
+        {
+          "file": "golden_episode/GX010021/annotation_reports/verification_report.md"
+        }
+      ],
+      "outputs": [
+        {
+          "file": "golden_episode/GX010021/annotation_reports/consistency_revision.md"
+        }
+      ],
+      "status": "CANDIDATE_REVISED"
+    },
+    {
+      "id": "V1_ROUND_4",
+      "method": "与原始 annotations.json 辅助文本交叉核验",
+      "inputs": [
+        {
+          "file": "golden_episode/GX010021/source/annotations.json"
+        },
+        {
+          "file": "golden_episode/GX010021/annotation_reports/consistency_revision.md"
+        }
+      ],
+      "outputs": [
+        {
+          "file": "golden_episode/GX010021/annotation_reports/crosscheck_report.md"
+        }
+      ],
+      "status": "CANDIDATE_CROSSCHECKED"
+    },
+    {
+      "id": "V1_INTEGRATION",
+      "method": "程序结构化整合，保留不确定性和开放复核项",
+      "inputs": [
+        {
+          "file": "golden_episode/GX010021/annotation_reports/README.md"
+        }
+      ],
+      "outputs": [
+        {
+          "file": "golden_episode/GX010021/annotations/v1_candidate/events.json"
+        },
+        {
+          "file": "golden_episode/GX010021/annotations/v1_candidate/objects.json"
+        },
+        {
+          "file": "golden_episode/GX010021/annotations/v1_candidate/review_queue.json"
+        },
+        {
+          "file": "golden_episode/GX010021/annotations/v1_candidate/schema.json"
+        }
+      ],
+      "status": "CANDIDATE_NOT_REVIEWED"
+    },
+    {
+      "id": "V2_PASS_1_2",
+      "method": "两次独立全视频模型分析",
+      "inputs": [
+        {
+          "file": "golden_episode/GX010021/source/GX010021.MP4"
+        }
+      ],
+      "outputs": [
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/annotation_manifest.json",
+          "json_pointer": "/independent_passes"
+        },
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/full_video_report.md"
+        }
+      ],
+      "status": "MODEL_CANDIDATE"
+    },
+    {
+      "id": "V2_INTEGRATION_CROSSCHECK",
+      "method": "结构化、去重、V1/V2 对照；不等同于人工真值裁决",
+      "inputs": [
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/global_analysis.json"
+        },
+        {
+          "file": "golden_episode/GX010021/annotations/v1_candidate/events.json"
+        }
+      ],
+      "outputs": [
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/events.json"
+        },
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/objects.json"
+        },
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/procedure.json"
+        },
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/relations.json"
+        },
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/evidence_index.json"
+        },
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/anomaly_candidates.json"
+        },
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/crosscheck.json"
+        }
+      ],
+      "status": "CANDIDATE_NOT_REVIEWED"
+    },
+    {
+      "id": "V2_LOCAL_FRAME_CHECK",
+      "method": "8 张原帧 PTS 与局部语义检查",
+      "inputs": [
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/runs/session2-full-video/local_visual_checks/manifest.json"
+        }
+      ],
+      "outputs": [
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/runs/session2-full-video/local_visual_checks/pts_validation.json"
+        }
+      ],
+      "status": "VERIFIED_PTS_CANDIDATE_SEMANTICS"
+    },
+    {
+      "id": "SESSION3",
+      "method": "从现有候选证据实例化、筛选三 Track 任务",
+      "inputs": [
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/annotation_manifest.json"
+        }
+      ],
+      "outputs": [
+        {
+          "file": "golden_episode/GX010021/tasks/v2_candidates/task_candidates.json"
+        },
+        {
+          "file": "golden_episode/GX010021/tasks/v2_candidates/task_feasibility_report.md"
+        },
+        {
+          "file": "golden_episode/GX010021/tasks/v2_candidates/track_coverage_report.md"
+        },
+        {
+          "file": "golden_episode/GX010021/tasks/v2_candidates/evidence_gaps.md"
+        },
+        {
+          "file": "golden_episode/GX010021/tasks/v2_candidates/validation_report.json"
+        }
+      ],
+      "status": "12_DEFINITIONS_9_RETAINED_0_GOLD"
+    },
+    {
+      "id": "SESSION4A",
+      "method": "复用已有真实帧形成研究展示素材",
+      "inputs": [
+        {
+          "file": "golden_episode/GX010021/evidence/frames/index.json"
+        },
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/runs/session2-full-video/local_visual_checks/manifest.json"
+        }
+      ],
+      "outputs": [
+        {
+          "file": "golden_episode/GX010021/showcase/showcase_manifest.json"
+        },
+        {
+          "file": "golden_episode/GX010021/showcase/validation_report.json"
+        }
+      ],
+      "status": "12_EXISTING_FRAMES_NO_NEW_EXTRACTION"
+    }
+  ]
+}

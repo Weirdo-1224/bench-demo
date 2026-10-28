@@ -1,0 +1,45 @@
+{
+  "episode_id": "GX010021",
+  "task_id": "GX010021-V2-T1-002",
+  "status": "PILOT_CANDIDATE",
+  "annotation_version": "session2-v2.0-candidate",
+  "source_refs": [
+    {
+      "file": "golden_episode/GX010021/tasks/v2_candidates/task_candidates.json",
+      "json_pointer": "/tasks/1"
+    }
+  ],
+  "prior_state": null,
+  "checkpoints": [
+    {
+      "time_sec": 431.2308,
+      "visible_state": "liquid_and_solid",
+      "historical_state": null,
+      "unknowns": [
+        "solid_fraction",
+        "final_phase_at_pour",
+        "first_onset"
+      ],
+      "time_available_evidence_ids": [
+        "LC-431-2"
+      ],
+      "future_information_used": false
+    },
+    {
+      "time_sec": 445.211433,
+      "visible_state": "liquid_and_solid",
+      "historical_state": null,
+      "unknowns": [
+        "solid_fraction",
+        "final_phase_at_pour",
+        "first_onset"
+      ],
+      "time_available_evidence_ids": [
+        "LC-445-2"
+      ],
+      "future_information_used": false
+    }
+  ],
+  "transition_claim": null,
+  "causal_note": "445.211433s 的证据不得用于 431.2308s 检查点；两个快照也不证明中间持续状态。"
+}

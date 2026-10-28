@@ -1,0 +1,12 @@
+{"approved": 0, "pending": 2, "api_calls": 0, "semantic_validation": "HUMAN_ONLY"}
+test_approved_without_all_checks_cannot_promote (test_pilot.SafetyTests.test_approved_without_all_checks_cannot_promote) ... ok
+test_current_window_and_history_masks_are_separate (test_pilot.SafetyTests.test_current_window_and_history_masks_are_separate) ... ok
+test_fractional_query_never_includes_future_window (test_pilot.SafetyTests.test_fractional_query_never_includes_future_window) ... ok
+test_mask_membership_matches_critical_and_control (test_pilot.SafetyTests.test_mask_membership_matches_critical_and_control) ... ok
+test_pending_does_not_create_gold (test_pilot.SafetyTests.test_pending_does_not_create_gold) ... ok
+test_tampered_definition_rejected_before_promotion (test_pilot.SafetyTests.test_tampered_definition_rejected_before_promotion) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 1.723s
+
+OK

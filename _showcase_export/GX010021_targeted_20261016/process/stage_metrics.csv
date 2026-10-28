@@ -1,0 +1,29 @@
+﻿stage,metric,actual_count,count_semantics,historical_anchor,comparison
+V1_ROUND_1,events,56,candidate_events_v1.md E001-E056,56,MATCH
+V1_ROUND_1,baseline_objects,15,candidate_events_v1.md O01-O15,15,MATCH
+V1_INTEGRATION,event_records,56,events.json#/events,56,MATCH
+V1_INTEGRATION,object_records,22,objects.json#/objects; 15 baseline + 7 added references,22,MATCH
+V1_INTEGRATION,state_entries,115,objects.json#/statistics/state_entry_count,115,MATCH
+V1_INTEGRATION,open_review_items,14,review_queue.json#/statistics/open_count,14,HISTORICAL_PROMPT_ANCHOR_4_DIFFERS
+V2_MODEL,independent_passes,2,annotation_manifest.json#/independent_passes,2,MATCH
+V2_INTEGRATION,events,59,events.json#/records,59,MATCH
+V2_INTEGRATION,objects_or_observation_groups,28,objects.json#/records,28,MATCH
+V2_INTEGRATION,states,138,objects.json#/states = 15 model + 115 historical + 8 snapshot,38,MISMATCH_ANCHOR_USED_DIFFERENT_OR_OBSOLETE_SCOPE
+V2_INTEGRATION,model_states,15,annotation_manifest.json#/statistics/model_states,,SEPARATE_SCOPE
+V2_INTEGRATION,historical_state_claims,115,annotation_manifest.json#/statistics/historical_state_claims,,SEPARATE_SCOPE
+V2_INTEGRATION,snapshot_states,8,annotation_manifest.json#/statistics/snapshot_states,,SEPARATE_SCOPE
+V2_INTEGRATION,observed_steps,13,procedure.json#/observed_steps; source-text records separately=55,3,MISMATCH_ANCHOR
+V2_INTEGRATION,relations,24,relations.json#/records,4,MISMATCH_ANCHOR
+V2_INTEGRATION,evidence_locators,192,evidence_index.json#/records,92,MISMATCH_ANCHOR
+V2_INTEGRATION,L5_candidates,7,anomaly_candidates.json#/records,7,MATCH
+V2_CROSSCHECK,V1_ONLY,20,crosscheck.json#/category_counts/V1_ONLY,,CURRENT
+V2_CROSSCHECK,BOTH_OBSERVED,28,crosscheck.json#/category_counts/BOTH_OBSERVED,,CURRENT
+V2_CROSSCHECK,CONFLICT,8,crosscheck.json#/category_counts/CONFLICT,,CURRENT
+SESSION3,definitions,12,task_candidates.json#/tasks,12,MATCH
+SESSION3,retained_candidates,9,tasks where status != UNSUITABLE,9,MATCH
+SESSION3,excluded,3,tasks where status == UNSUITABLE,3,MATCH
+SESSION3,PILOT_CANDIDATE,4,exact source enum,4,MATCH
+SESSION3,NEEDS_EVIDENCE,5,exact source enum,5,MATCH
+SESSION3,UNSUITABLE,3,exact source enum,3,MATCH
+SESSION3,gold,0,task_candidates.json#/statistics/gold_count,0,MATCH
+SESSION4A,existing_frames,12,showcase_manifest.json#/asset_registry,12,MATCH

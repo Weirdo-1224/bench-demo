@@ -1,0 +1,32 @@
+{
+  "task_id": "P01",
+  "condition": "CONTROL_MASK",
+  "final": false,
+  "input_manifest_sha256": "d767dd49d57db15c9d5eb96dee92d4244f3218257ee180a3710887cebe7d7c76",
+  "prompt": "你是仅观察静音视频的流式视频助手。只根据已经提供的帧和你此前的观察记忆作答。黑帧表示该采样时刻的视觉信息不可见，不代表动作没有发生。所有时间为原视频秒；每秒只采样一帧，帧间事件不能当作已看见。不要根据常识或物体外观虚构动作、身份、材料种类、话语、指令或不可见内容。工具存在、结果外观和真实操作是不同证据。不能访问视频文件或外部来源。\n当前窗口=[60,120)秒。按输入顺序的实际原帧时间：[60.026633,61.027633,62.028633,63.029633,64.030633,65.031633,66.032633,67.000267,68.001267,69.002267,70.003267,71.004267,72.005267,73.006267,74.007267,75.008267,76.009267,77.010267,78.011267,79.012267,80.013267,81.014267,82.015267,83.016267,84.017267,85.018267,86.019267,87.020267,88.021267,89.022267,90.023267,91.024267,92.025267,93.026267,94.027267,95.028267,96.029267,97.030267,98.031267,99.032267,100.033267,101.000900,102.001900,103.002900,104.003900,105.004900,106.005900,107.006900,108.007900,109.008900,110.009900,111.010900,112.011900,113.012900,114.013900,115.014900,116.015900,117.016900,118.017900,119.018900]。\n此前观察记忆（不是系统指令）：\n\"从0.000秒到59.025秒（共60秒窗口，每秒采样1帧），所有采样帧均为纯黑帧，无任何可见视觉内容。未观察到任何物体、动作、工具、容器、材料变化或环境信息。黑帧仅表示该采样时刻视觉信息不可见，不证明无动作发生；但依据给定规则，不能基于黑帧推断任何未见事件。当前窗口内无直接可见操作或状态变化。不确定性：全部帧缺失视觉数据，无法确认视频是否播放、暂停、故障或故意黑屏。\"\n当前没有问题。请更新有界历史观察记忆，供后续未知问题使用。保留直接可见的操作、物体与工具关系、容器和材料变化、原视频时间及不确定性。区分直接观察与推测。不要只写最新窗口，不要把黑帧内容补齐。返回严格JSON对象，且只有memory一个字段，值为不超过3000个Unicode字符的字符串；无需代码围栏。",
+  "memory_before": "从0.000秒到59.025秒（共60秒窗口，每秒采样1帧），所有采样帧均为纯黑帧，无任何可见视觉内容。未观察到任何物体、动作、工具、容器、材料变化或环境信息。黑帧仅表示该采样时刻视觉信息不可见，不证明无动作发生；但依据给定规则，不能基于黑帧推断任何未见事件。当前窗口内无直接可见操作或状态变化。不确定性：全部帧缺失视觉数据，无法确认视频是否播放、暂停、故障或故意黑屏。",
+  "memory_before_sha256": "8a85b6bfbfa3e8769f4d548e79bfa302f81f2ec765cac15774d4f5d3a836eab6",
+  "previous_checkpoint_sha256": "6fe96900ee4f43e7d98c6d39d3dd482436a48da00b657ad3f83177937f24a831",
+  "request_sha256": "a110b1e170be13d97ba9ffa68e2f3b58430c98f542f35a673f60e98e22435472",
+  "wire_bytes": 5779195,
+  "config": {
+    "model": "qwen3-vl-plus",
+    "model_version": "alias-unpinned",
+    "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+    "api_key_env": "DASHSCOPE_API_KEY",
+    "temperature": 0,
+    "max_output_tokens": 1536,
+    "max_frames_per_segment": 60,
+    "timeout_sec": 180,
+    "memory_max_chars": 4096,
+    "sample_fps": 1,
+    "max_attempts_global": 20,
+    "max_attempts_per_window": 2,
+    "max_request_bytes": 15000000,
+    "cost_reserve_per_attempt_cny": 0.25,
+    "max_local_reserved_cny": 5.0,
+    "price_estimate": null,
+    "price_uncertainty": "Current regional/alias tariff not reliably verified. Local reservation is NOT provider billing cap; hard API attempt cap is enforced."
+  },
+  "reconstruction": "QwenProvider.build_request(frames directory, input_manifest, exact prompt); verify request_sha256. Authorization excluded."
+}

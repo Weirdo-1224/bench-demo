@@ -1,0 +1,31 @@
+{
+  "condition": "CONTROL_MASK",
+  "segment_id": "seg-0000",
+  "final": false,
+  "request_sha256": "02b7dcb62c81679d891b52c5897356684f5043a53746cb5ff49222b8efa97f31",
+  "previous_checkpoint_sha256": null,
+  "raw_response_ref": "experiments/icme2027_pilot/runs/p01-v1/CONTROL_MASK/seg-0000/attempt-000.response.json",
+  "raw_response_sha256": "c2b71c322b614e3c4db5c1863efa5715508c438d627fbdc271e4a61c2b3a1fa0",
+  "parsed": {
+    "memory": "从0.000秒到59.025秒（共60秒窗口，每秒采样1帧），所有采样帧均为纯黑帧，无任何可见视觉内容。未观察到任何物体、动作、工具、容器、材料变化或环境信息。黑帧仅表示该采样时刻视觉信息不可见，不证明无动作发生；但依据给定规则，不能基于黑帧推断任何未见事件。当前窗口内无直接可见操作或状态变化。不确定性：全部帧缺失视觉数据，无法确认视频是否播放、暂停、故障或故意黑屏。"
+  },
+  "metadata": {
+    "returned_model": "qwen3-vl-plus",
+    "usage": {
+      "prompt_tokens": 12983,
+      "completion_tokens": 140,
+      "total_tokens": 13123,
+      "completion_tokens_details": {
+        "text_tokens": 140
+      },
+      "prompt_tokens_details": {
+        "text_tokens": 831,
+        "video_tokens": 12152,
+        "cached_tokens": 0
+      }
+    },
+    "finish_reason": "stop",
+    "request_id": "chatcmpl-9a157c80-510b-9b02-978c-342080ce51bf"
+  },
+  "checkpoint_sha256": "6fe96900ee4f43e7d98c6d39d3dd482436a48da00b657ad3f83177937f24a831"
+}

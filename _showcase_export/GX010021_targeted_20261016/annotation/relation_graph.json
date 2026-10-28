@@ -1,0 +1,506 @@
+{
+  "episode_id": "GX010021",
+  "task_id": "GX010021-V2-T2-003",
+  "status": "CANDIDATE",
+  "annotation_version": "session2-v2.0-candidate",
+  "nodes": [
+    {
+      "id": "V2-O1",
+      "original_id": "V2-O1",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/objects.json",
+          "json_pointer": "/records/0"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "raw": {
+        "id": "V2-O1",
+        "annotation_status": "CANDIDATE",
+        "source_type": "video_model",
+        "source_refs": [
+          {
+            "source_id": "independent",
+            "json_pointer": "/objects/0"
+          },
+          {
+            "source_id": "v1_objects",
+            "json_pointer": "/objects/0"
+          }
+        ],
+        "evidence_refs": [
+          "V2-V4",
+          "V2-V6",
+          "V2-V7",
+          "V2-V9",
+          "V2-V10",
+          "V2-V12",
+          "V2-V14",
+          "V2-V21",
+          "V2-V22",
+          "V2-V24"
+        ],
+        "confirmation_status": "UNCONFIRMED",
+        "label": "透明方形塑料盒",
+        "appearance": "透明塑料材质，带盖，用于混合原料",
+        "identity_status": "uncertain",
+        "confidence": 0.98,
+        "uncertainties": [
+          "连续身份仅为候选；出画及遮挡期间不能断言状态持续。"
+        ],
+        "historical_object_ids": [
+          "O01"
+        ],
+        "model_identity_status": "candidate_continuous",
+        "identity_interpretation": "CANDIDATE_CORRESPONDENCE; disjoint sampled observations do not establish uninterrupted physical identity",
+        "occlusion_and_out_of_frame": "NOT_EXHAUSTIVELY_ANNOTATED",
+        "model_claim": {
+          "object_id": "O1",
+          "label": "透明方形塑料盒",
+          "appearance": "透明塑料材质，带盖，用于混合原料",
+          "identity_status": "candidate_continuous",
+          "evidence_refs": [
+            "V4",
+            "V6",
+            "V7",
+            "V9",
+            "V10",
+            "V12",
+            "V14",
+            "V21",
+            "V22",
+            "V24"
+          ],
+          "confidence": 0.98,
+          "uncertainties": [
+            "连续身份仅为候选；出画及遮挡期间不能断言状态持续。"
+          ]
+        }
+      }
+    },
+    {
+      "id": "V2-O10",
+      "original_id": "V2-O10",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/objects.json",
+          "json_pointer": "/records/9"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "raw": {
+        "id": "V2-O10",
+        "annotation_status": "CANDIDATE",
+        "source_type": "video_model",
+        "source_refs": [
+          {
+            "source_id": "independent",
+            "json_pointer": "/objects/9"
+          },
+          {
+            "source_id": "v1_objects",
+            "json_pointer": "/objects/11"
+          }
+        ],
+        "evidence_refs": [
+          "V2-V3",
+          "V2-V23",
+          "V2-V24",
+          "V2-V25"
+        ],
+        "confirmation_status": "UNCONFIRMED",
+        "label": "金属烤盘",
+        "appearance": "深灰色长方形金属烤模，带圆角",
+        "identity_status": "uncertain",
+        "confidence": 0.99,
+        "uncertainties": [
+          "连续身份仅为候选；出画及遮挡期间不能断言状态持续。"
+        ],
+        "historical_object_ids": [
+          "O12"
+        ],
+        "model_identity_status": "candidate_continuous",
+        "identity_interpretation": "CANDIDATE_CORRESPONDENCE; disjoint sampled observations do not establish uninterrupted physical identity",
+        "occlusion_and_out_of_frame": "NOT_EXHAUSTIVELY_ANNOTATED",
+        "model_claim": {
+          "object_id": "O10",
+          "label": "金属烤盘",
+          "appearance": "深灰色长方形金属烤模，带圆角",
+          "identity_status": "candidate_continuous",
+          "evidence_refs": [
+            "V3",
+            "V23",
+            "V24",
+            "V25"
+          ],
+          "confidence": 0.99,
+          "uncertainties": [
+            "连续身份仅为候选；出画及遮挡期间不能断言状态持续。"
+          ]
+        }
+      }
+    },
+    {
+      "id": "V2-O13",
+      "original_id": "V2-O13",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/objects.json",
+          "json_pointer": "/records/12"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "raw": {
+        "id": "V2-O13",
+        "annotation_status": "CANDIDATE",
+        "source_type": "video_model",
+        "source_refs": [
+          {
+            "source_id": "independent",
+            "json_pointer": "/objects/12"
+          },
+          {
+            "source_id": "v1_objects",
+            "json_pointer": "/objects/4"
+          }
+        ],
+        "evidence_refs": [
+          "V2-V8",
+          "V2-V9",
+          "V2-V10",
+          "V2-V14"
+        ],
+        "confirmation_status": "UNCONFIRMED",
+        "label": "黑色量勺",
+        "appearance": "黑色塑料量勺，带手柄，用于舀取糖/面粉",
+        "identity_status": "uncertain",
+        "confidence": 0.95,
+        "uncertainties": [
+          "连续身份仅为候选；出画及遮挡期间不能断言状态持续。",
+          "黑色量具/黑色搅动与刮糊工具不能凭相似外观强行确认同一件。"
+        ],
+        "historical_object_ids": [
+          "O05"
+        ],
+        "model_identity_status": "candidate_continuous",
+        "identity_interpretation": "CANDIDATE_CORRESPONDENCE; disjoint sampled observations do not establish uninterrupted physical identity",
+        "occlusion_and_out_of_frame": "NOT_EXHAUSTIVELY_ANNOTATED",
+        "model_claim": {
+          "object_id": "O13",
+          "label": "黑色量勺",
+          "appearance": "黑色塑料量勺，带手柄，用于舀取糖/面粉",
+          "identity_status": "candidate_continuous",
+          "evidence_refs": [
+            "V8",
+            "V9",
+            "V10",
+            "V14"
+          ],
+          "confidence": 0.95,
+          "uncertainties": [
+            "连续身份仅为候选；出画及遮挡期间不能断言状态持续。",
+            "黑色量具/黑色搅动与刮糊工具不能凭相似外观强行确认同一件。"
+          ]
+        }
+      }
+    },
+    {
+      "id": "V2-O5",
+      "original_id": "V2-O5",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/objects.json",
+          "json_pointer": "/records/4"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "raw": {
+        "id": "V2-O5",
+        "annotation_status": "CANDIDATE",
+        "source_type": "video_model",
+        "source_refs": [
+          {
+            "source_id": "independent",
+            "json_pointer": "/objects/4"
+          },
+          {
+            "source_id": "v1_objects",
+            "json_pointer": "/objects/5"
+          }
+        ],
+        "evidence_refs": [
+          "V2-V10",
+          "V2-V11"
+        ],
+        "confirmation_status": "UNCONFIRMED",
+        "label": "牛奶盒",
+        "appearance": "红蓝白三色纸盒，标有'Horizon Organic Whole Milk'",
+        "identity_status": "uncertain",
+        "confidence": 0.96,
+        "uncertainties": [
+          "连续身份仅为候选；出画及遮挡期间不能断言状态持续。",
+          "首轮Half & Half与专题Whole Milk标签描述不一致，产品名仅为模型候选。"
+        ],
+        "historical_object_ids": [
+          "O06"
+        ],
+        "model_identity_status": "candidate_continuous",
+        "identity_interpretation": "CANDIDATE_CORRESPONDENCE; disjoint sampled observations do not establish uninterrupted physical identity",
+        "occlusion_and_out_of_frame": "NOT_EXHAUSTIVELY_ANNOTATED",
+        "model_claim": {
+          "object_id": "O5",
+          "label": "牛奶盒",
+          "appearance": "红蓝白三色纸盒，标有'Horizon Organic Whole Milk'",
+          "identity_status": "candidate_continuous",
+          "evidence_refs": [
+            "V10",
+            "V11"
+          ],
+          "confidence": 0.96,
+          "uncertainties": [
+            "连续身份仅为候选；出画及遮挡期间不能断言状态持续。",
+            "首轮Half & Half与专题Whole Milk标签描述不一致，产品名仅为模型候选。"
+          ]
+        }
+      }
+    },
+    {
+      "id": "V2-O7",
+      "original_id": "V2-O7",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/objects.json",
+          "json_pointer": "/records/6"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "raw": {
+        "id": "V2-O7",
+        "annotation_status": "CANDIDATE",
+        "source_type": "video_model",
+        "source_refs": [
+          {
+            "source_id": "independent",
+            "json_pointer": "/objects/6"
+          },
+          {
+            "source_id": "v1_objects",
+            "json_pointer": "/objects/7"
+          }
+        ],
+        "evidence_refs": [
+          "V2-V13",
+          "V2-V14"
+        ],
+        "confirmation_status": "UNCONFIRMED",
+        "label": "面粉袋",
+        "appearance": "棕色牛皮纸袋，印有'All-Purpose Flour'",
+        "identity_status": "uncertain",
+        "confidence": 0.94,
+        "uncertainties": [
+          "品牌不可辨",
+          "连续身份仅为候选；出画及遮挡期间不能断言状态持续。"
+        ],
+        "historical_object_ids": [
+          "O08"
+        ],
+        "model_identity_status": "candidate_continuous",
+        "identity_interpretation": "CANDIDATE_CORRESPONDENCE; disjoint sampled observations do not establish uninterrupted physical identity",
+        "occlusion_and_out_of_frame": "NOT_EXHAUSTIVELY_ANNOTATED",
+        "model_claim": {
+          "object_id": "O7",
+          "label": "面粉袋",
+          "appearance": "棕色牛皮纸袋，印有'All-Purpose Flour'",
+          "identity_status": "candidate_continuous",
+          "evidence_refs": [
+            "V13",
+            "V14"
+          ],
+          "confidence": 0.94,
+          "uncertainties": [
+            "品牌不可辨",
+            "连续身份仅为候选；出画及遮挡期间不能断言状态持续。"
+          ]
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "PATH-03",
+      "original_id": "PATH-03",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+          "json_pointer": "/records/16"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "from_id": "V2-O5",
+      "to_id": "V2-O13",
+      "original_relation_type": "material_transferred_to",
+      "event_ids": [
+        "V2-E7"
+      ],
+      "evidence_ids": [
+        "H1-V-E022-01",
+        "H1-T-R18",
+        "H1-T-R19"
+      ],
+      "time_range_sec": null,
+      "confirmation_status": "UNCONFIRMED",
+      "uncertainties": [
+        "对象对应为候选；各阶段黑色量杯不得自动确认为同一只，实际材料体积未知。"
+      ]
+    },
+    {
+      "id": "PATH-04",
+      "original_id": "PATH-04",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+          "json_pointer": "/records/17"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "from_id": "V2-O13",
+      "to_id": "V2-O1",
+      "original_relation_type": "material_transferred_to",
+      "event_ids": [
+        "V2-E8"
+      ],
+      "evidence_ids": [
+        "H1-V-E023-01",
+        "H1-T-R18",
+        "H1-T-R19"
+      ],
+      "time_range_sec": null,
+      "confirmation_status": "UNCONFIRMED",
+      "uncertainties": [
+        "对象对应为候选；各阶段黑色量杯不得自动确认为同一只，实际材料体积未知。"
+      ]
+    },
+    {
+      "id": "PATH-05",
+      "original_id": "PATH-05",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+          "json_pointer": "/records/18"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "from_id": "V2-O7",
+      "to_id": "V2-O13",
+      "original_relation_type": "material_transferred_to",
+      "event_ids": [
+        "V2-E12"
+      ],
+      "evidence_ids": [
+        "H1-V-E031-01",
+        "H1-T-R26"
+      ],
+      "time_range_sec": null,
+      "confirmation_status": "UNCONFIRMED",
+      "uncertainties": [
+        "对象对应为候选；各阶段黑色量杯不得自动确认为同一只，实际材料体积未知。"
+      ]
+    },
+    {
+      "id": "PATH-06",
+      "original_id": "PATH-06",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+          "json_pointer": "/records/19"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "from_id": "V2-O13",
+      "to_id": "V2-O1",
+      "original_relation_type": "material_transferred_to",
+      "event_ids": [
+        "V2-E13"
+      ],
+      "evidence_ids": [
+        "H1-V-E032-01",
+        "H1-T-R26",
+        "H1-T-R27"
+      ],
+      "time_range_sec": null,
+      "confirmation_status": "UNCONFIRMED",
+      "uncertainties": [
+        "对象对应为候选；各阶段黑色量杯不得自动确认为同一只，实际材料体积未知。"
+      ]
+    },
+    {
+      "id": "PATH-07",
+      "original_id": "PATH-07",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+          "json_pointer": "/records/20"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "from_id": "V2-O7",
+      "to_id": "V2-O1",
+      "original_relation_type": "material_transferred_to",
+      "event_ids": [
+        "H1-E051"
+      ],
+      "evidence_ids": [
+        "H1-V-E051-01",
+        "H1-V-E051-02",
+        "H1-T-R46",
+        "H1-T-R47",
+        "H1-T-R48",
+        "H1-T-R49",
+        "H1-I-E051-02",
+        "LC-599-2"
+      ],
+      "time_range_sec": null,
+      "confirmation_status": "UNCONFIRMED",
+      "uncertainties": [
+        "对象对应为候选；各阶段黑色量杯不得自动确认为同一只，实际材料体积未知。"
+      ]
+    },
+    {
+      "id": "V2-R12",
+      "original_id": "V2-R12",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+          "json_pointer": "/records/10"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "from_id": "V2-O1",
+      "to_id": "V2-O10",
+      "original_relation_type": "material_transferred_to",
+      "event_ids": [
+        "V2-E26"
+      ],
+      "evidence_ids": [
+        "V2-V24"
+      ],
+      "time_range_sec": null,
+      "confirmation_status": "UNCONFIRMED",
+      "uncertainties": [
+        "关系仅为候选；不能由时序先后转换为必然前置依赖。"
+      ]
+    }
+  ],
+  "count_note": "6 条源关系；任务 required_evidence_sets 绑定 7 个证据定位。所有边均保留 CANDIDATE/UNCONFIRMED。"
+}

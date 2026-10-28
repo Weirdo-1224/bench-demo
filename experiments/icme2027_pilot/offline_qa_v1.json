@@ -1,0 +1,29 @@
+{
+  "stage": "OFFLINE_ONLY",
+  "api_calls": 0,
+  "tests_passed": 14,
+  "test_log": "offline_tests_v1.txt",
+  "checks": [
+    "same final current frames across four conditions",
+    "empty independent memory starts",
+    "historical prompts have no question or condition labels",
+    "critical action frames covered",
+    "66 critical and66 control frames black before request",
+    "future frames rejected",
+    "wrong-condition prefix rejected",
+    "request reconstruction identical",
+    "global cap persists over reservations"
+  ],
+  "gold_record_sha256": "c773cb7331e9c7ab57d28972619cb34a0d154e87378a903778e5f979186ee969",
+  "integrity": {
+    "protected_files": 201,
+    "all_hashes_match": true,
+    "checked_at": "2026-10-28T12:50:24+08:00"
+  },
+  "final_tests_passed": 16,
+  "final_test_log": "offline_tests_final_v1.txt",
+  "final_checks_added": [
+    "reject interval claiming unseen earlier history",
+    "reject interval spanning masked samples"
+  ]
+}

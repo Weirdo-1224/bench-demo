@@ -1,0 +1,1223 @@
+{
+  "episode_id": "GX010021",
+  "records": [
+    {
+      "id": "GX010021-V2-T1-001",
+      "original_id": "GX010021-V2-T1-001",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/tasks/v2_candidates/task_candidates.json",
+          "json_pointer": "/tasks/0"
+        }
+      ],
+      "status": "PILOT_CANDIDATE",
+      "annotation_version": "gx010021-task-candidate-v0.1",
+      "track": "T1",
+      "record_refs": [
+        {
+          "kind": "step",
+          "id": "STEP-06",
+          "path": "golden_episode/GX010021/annotations/v2_video_model/procedure.json",
+          "json_pointer": "/observed_steps/5",
+          "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+        },
+        {
+          "kind": "event",
+          "id": "V2-E10",
+          "path": "golden_episode/GX010021/annotations/v2_video_model/events.json",
+          "json_pointer": "/records/23",
+          "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+        },
+        {
+          "kind": "event",
+          "id": "H1-E028",
+          "path": "golden_episode/GX010021/annotations/v2_video_model/events.json",
+          "json_pointer": "/records/24",
+          "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+        },
+        {
+          "kind": "object",
+          "id": "V2-O6",
+          "path": "golden_episode/GX010021/annotations/v2_video_model/objects.json",
+          "json_pointer": "/records/5",
+          "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+        }
+      ],
+      "reference_items": [
+        {
+          "field": "first_mixing_progress",
+          "value": "in_progress",
+          "evidence_ids": [
+            "H1-V-E027-01"
+          ],
+          "observable_time": {
+            "earliest": 199.2,
+            "latest": 199.2,
+            "status": "CANDIDATE_OBSERVED_AT_NOT_FIRST_ONSET"
+          },
+          "note": "进入液面只支持开始，不支持输出均匀",
+          "evaluate_at_media_time": 200.3
+        },
+        {
+          "field": "first_mixing_progress",
+          "value": "completed",
+          "evidence_ids": [
+            "H1-V-E027-03",
+            "H1-V-E028-01"
+          ],
+          "observable_time": null,
+          "note": "完成充分时刻未核验；238.2为最后参考片段结束，不等于首次完成",
+          "evaluate_at_media_time": 239.3
+        }
+      ],
+      "required_evidence_sets": [
+        {
+          "set_id": "progress-begin",
+          "bindings": [
+            {
+              "evidence_id": "H1-V-E027-01",
+              "role": "搅拌棒进入液面"
+            }
+          ],
+          "validity": "CANDIDATE_MINIMAL_UNVERIFIED",
+          "necessity": [
+            "缺此观察无法确认开始"
+          ],
+          "applies_at_media_time": 200.3,
+          "covers_fields": [
+            "first_mixing_progress"
+          ]
+        },
+        {
+          "set_id": "progress-stop",
+          "bindings": [
+            {
+              "evidence_id": "H1-V-E027-01",
+              "role": "已开始"
+            },
+            {
+              "evidence_id": "H1-V-E027-03",
+              "role": "棒提离"
+            },
+            {
+              "evidence_id": "H1-V-E028-01",
+              "role": "打蛋器放置"
+            }
+          ],
+          "validity": "CANDIDATE_MINIMAL_UNVERIFIED",
+          "necessity": [
+            "进入液面确定本轮身份",
+            "提离和放置候选共同界定动作段结束"
+          ],
+          "applies_at_media_time": 239.3,
+          "covers_fields": [
+            "first_mixing_progress"
+          ]
+        }
+      ],
+      "evidence_gap_ids": [
+        "G02"
+      ]
+    },
+    {
+      "id": "GX010021-V2-T1-002",
+      "original_id": "GX010021-V2-T1-002",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/tasks/v2_candidates/task_candidates.json",
+          "json_pointer": "/tasks/1"
+        }
+      ],
+      "status": "PILOT_CANDIDATE",
+      "annotation_version": "gx010021-task-candidate-v0.1",
+      "track": "T1",
+      "record_refs": [
+        {
+          "kind": "object",
+          "id": "V2-O9",
+          "path": "golden_episode/GX010021/annotations/v2_video_model/objects.json",
+          "json_pointer": "/records/8",
+          "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+        },
+        {
+          "kind": "state",
+          "id": "STATE-LC-431-2",
+          "path": "golden_episode/GX010021/annotations/v2_video_model/objects.json",
+          "json_pointer": "/states/133",
+          "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+        },
+        {
+          "kind": "state",
+          "id": "STATE-LC-445-2",
+          "path": "golden_episode/GX010021/annotations/v2_video_model/objects.json",
+          "json_pointer": "/states/134",
+          "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+        }
+      ],
+      "reference_items": [
+        {
+          "field": "visible_phase",
+          "value": "liquid_and_solid",
+          "evidence_ids": [
+            "LC-431-2"
+          ],
+          "observable_time": {
+            "earliest": 431.2308,
+            "latest": 431.2308,
+            "status": "CANDIDATE_OBSERVED_AT_NOT_FIRST_ONSET"
+          },
+          "note": "仅本帧有效",
+          "evaluate_at_media_time": 431.2308
+        },
+        {
+          "field": "visible_phase",
+          "value": "liquid_and_solid",
+          "evidence_ids": [
+            "LC-445-2"
+          ],
+          "observable_time": {
+            "earliest": 445.211433,
+            "latest": 445.211433,
+            "status": "CANDIDATE_OBSERVED_AT_NOT_FIRST_ONSET"
+          },
+          "note": "仅本帧有效",
+          "evaluate_at_media_time": 445.211433
+        }
+      ],
+      "required_evidence_sets": [
+        {
+          "set_id": "phase-first",
+          "bindings": [
+            {
+              "evidence_id": "LC-431-2",
+              "role": "第一次检查点固液共存"
+            }
+          ],
+          "validity": "CANDIDATE_MINIMAL_UNVERIFIED",
+          "necessity": [
+            "原帧支持局部相态"
+          ],
+          "applies_at_media_time": 431.2308,
+          "covers_fields": [
+            "visible_phase"
+          ]
+        },
+        {
+          "set_id": "phase-second",
+          "bindings": [
+            {
+              "evidence_id": "LC-445-2",
+              "role": "第二检查点仍见固态材料"
+            }
+          ],
+          "validity": "CANDIDATE_MINIMAL_UNVERIFIED",
+          "necessity": [
+            "不可由第一帧外推第二帧"
+          ],
+          "applies_at_media_time": 445.211433,
+          "covers_fields": [
+            "visible_phase"
+          ]
+        }
+      ],
+      "evidence_gap_ids": [
+        "G01",
+        "G02"
+      ]
+    },
+    {
+      "id": "GX010021-V2-T1-003",
+      "original_id": "GX010021-V2-T1-003",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/tasks/v2_candidates/task_candidates.json",
+          "json_pointer": "/tasks/2"
+        }
+      ],
+      "status": "PILOT_CANDIDATE",
+      "annotation_version": "gx010021-task-candidate-v0.1",
+      "track": "T1",
+      "record_refs": [
+        {
+          "kind": "object",
+          "id": "V2-O1",
+          "path": "golden_episode/GX010021/annotations/v2_video_model/objects.json",
+          "json_pointer": "/records/0",
+          "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+        },
+        {
+          "kind": "object",
+          "id": "V2-O10",
+          "path": "golden_episode/GX010021/annotations/v2_video_model/objects.json",
+          "json_pointer": "/records/9",
+          "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+        },
+        {
+          "kind": "state",
+          "id": "STATE-LC-680-2",
+          "path": "golden_episode/GX010021/annotations/v2_video_model/objects.json",
+          "json_pointer": "/states/137",
+          "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+        }
+      ],
+      "reference_items": [
+        {
+          "field": "pan_contents",
+          "value": "batter_visible",
+          "evidence_ids": [
+            "LC-680-2"
+          ],
+          "observable_time": {
+            "earliest": 680.212867,
+            "latest": 680.212867,
+            "status": "CANDIDATE_OBSERVED_AT_NOT_FIRST_ONSET"
+          },
+          "note": "对象映射仅候选",
+          "evaluate_at_media_time": 680.212867
+        },
+        {
+          "field": "main_container_residue",
+          "value": "visible",
+          "evidence_ids": [
+            "LC-680-2"
+          ],
+          "observable_time": {
+            "earliest": 680.212867,
+            "latest": 680.212867,
+            "status": "CANDIDATE_OBSERVED_AT_NOT_FIRST_ONSET"
+          },
+          "note": "不得标空置或全部刮净",
+          "evaluate_at_media_time": 680.212867
+        }
+      ],
+      "required_evidence_sets": [
+        {
+          "set_id": "pan-residue",
+          "bindings": [
+            {
+              "evidence_id": "LC-680-2",
+              "role": "烤模面糊与主容器残留"
+            }
+          ],
+          "validity": "CANDIDATE_MINIMAL_UNVERIFIED",
+          "necessity": [
+            "同帧支持两个不同容器状态"
+          ],
+          "applies_at_media_time": 680.212867,
+          "covers_fields": [
+            "pan_contents",
+            "main_container_residue"
+          ]
+        }
+      ],
+      "evidence_gap_ids": [
+        "G01"
+      ]
+    },
+    {
+      "id": "GX010021-V2-T1-004",
+      "original_id": "GX010021-V2-T1-004",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/tasks/v2_candidates/task_candidates.json",
+          "json_pointer": "/tasks/3"
+        }
+      ],
+      "status": "NEEDS_EVIDENCE",
+      "annotation_version": "gx010021-task-candidate-v0.1",
+      "track": "T1",
+      "record_refs": [
+        {
+          "kind": "object",
+          "id": "V2-O1",
+          "path": "golden_episode/GX010021/annotations/v2_video_model/objects.json",
+          "json_pointer": "/records/0",
+          "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+        },
+        {
+          "kind": "event",
+          "id": "H1-E051",
+          "path": "golden_episode/GX010021/annotations/v2_video_model/events.json",
+          "json_pointer": "/records/49",
+          "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+        },
+        {
+          "kind": "event",
+          "id": "H1-E052",
+          "path": "golden_episode/GX010021/annotations/v2_video_model/events.json",
+          "json_pointer": "/records/50",
+          "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+        },
+        {
+          "kind": "state",
+          "id": "STATE-LC-599-2",
+          "path": "golden_episode/GX010021/annotations/v2_video_model/objects.json",
+          "json_pointer": "/states/135",
+          "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+        },
+        {
+          "kind": "state",
+          "id": "STATE-LC-610-2",
+          "path": "golden_episode/GX010021/annotations/v2_video_model/objects.json",
+          "json_pointer": "/states/136",
+          "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+        }
+      ],
+      "reference_items": [
+        {
+          "field": "surface_transition",
+          "value": {
+            "before": "powder_on_surface",
+            "after": "smooth_surface"
+          },
+          "evidence_ids": [
+            "H1-V-E051-02",
+            "H1-V-E052-02"
+          ],
+          "observable_time": null,
+          "note": "精确时间与持续有效区间待定",
+          "evaluate_at_media_time": 630.2
+        }
+      ],
+      "required_evidence_sets": [
+        {
+          "set_id": "surface-transition",
+          "bindings": [
+            {
+              "evidence_id": "H1-V-E051-02",
+              "role": "603.2粉状表层"
+            },
+            {
+              "evidence_id": "H1-V-E052-02",
+              "role": "630.2光滑表面"
+            }
+          ],
+          "validity": "CANDIDATE_MINIMAL_UNVERIFIED",
+          "necessity": [
+            "两种状态端点必须共同保留；仅见搅拌器不能证明光滑"
+          ],
+          "applies_at_media_time": 630.2,
+          "covers_fields": [
+            "surface_transition"
+          ]
+        }
+      ],
+      "evidence_gap_ids": [
+        "G02",
+        "G03"
+      ]
+    },
+    {
+      "id": "GX010021-V2-T2-001",
+      "original_id": "GX010021-V2-T2-001",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/tasks/v2_candidates/task_candidates.json",
+          "json_pointer": "/tasks/4"
+        }
+      ],
+      "status": "NEEDS_EVIDENCE",
+      "annotation_version": "gx010021-task-candidate-v0.1",
+      "track": "T2",
+      "record_refs": [
+        {
+          "kind": "step",
+          "id": "STEP-05",
+          "path": "golden_episode/GX010021/annotations/v2_video_model/procedure.json",
+          "json_pointer": "/observed_steps/4",
+          "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+        },
+        {
+          "kind": "step",
+          "id": "STEP-06",
+          "path": "golden_episode/GX010021/annotations/v2_video_model/procedure.json",
+          "json_pointer": "/observed_steps/5",
+          "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+        },
+        {
+          "kind": "event",
+          "id": "V2-E7",
+          "path": "golden_episode/GX010021/annotations/v2_video_model/events.json",
+          "json_pointer": "/records/18",
+          "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+        },
+        {
+          "kind": "event",
+          "id": "V2-E8",
+          "path": "golden_episode/GX010021/annotations/v2_video_model/events.json",
+          "json_pointer": "/records/19",
+          "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+        },
+        {
+          "kind": "relation",
+          "id": "PATH-03",
+          "path": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+          "json_pointer": "/records/16",
+          "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+        },
+        {
+          "kind": "relation",
+          "id": "PATH-04",
+          "path": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+          "json_pointer": "/records/17",
+          "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+        }
+      ],
+      "reference_items": [
+        {
+          "field": "decision",
+          "value": "unknown",
+          "evidence_ids": [
+            "SRC-R18",
+            "H1-V-E022-01",
+            "H1-V-E023-01"
+          ],
+          "observable_time": null,
+          "note": "不是已证明的unknown真值",
+          "evaluate_at_media_time": 200.3
+        },
+        {
+          "field": "milk_entered_container",
+          "value": "observed",
+          "evidence_ids": [
+            "H1-V-E022-01",
+            "H1-V-E023-01"
+          ],
+          "observable_time": {
+            "earliest": 161.2,
+            "latest": 161.2,
+            "status": "CANDIDATE_OBSERVED_AT_NOT_FIRST_ONSET"
+          },
+          "note": "原片观察链待核验",
+          "evaluate_at_media_time": 200.3
+        }
+      ],
+      "required_evidence_sets": [
+        {
+          "set_id": "milk-precondition-and-volume-limit",
+          "bindings": [
+            {
+              "evidence_id": "SRC-R18",
+              "role": "半杯要求"
+            },
+            {
+              "evidence_id": "H1-V-E022-01",
+              "role": "实际量取"
+            },
+            {
+              "evidence_id": "H1-V-E023-01",
+              "role": "实际加入"
+            },
+            {
+              "evidence_id": "H1-V-E027-01",
+              "role": "当前开始锚点"
+            },
+            {
+              "evidence_id": "H1-V-E020-02",
+              "role": "早期1/4 CUP标签"
+            }
+          ],
+          "validity": "INSUFFICIENT",
+          "necessity": [
+            "规则定义当前加奶要求；盒杯和杯容器是两段材料传递",
+            "早期杯标签仅是容量推断风险，不是已证明必要证据；缺规格/物理同一/满杯次数",
+            "unknown结论尚未裁决，不能把缺标注当证据不足Gold"
+          ],
+          "applies_at_media_time": 200.3,
+          "covers_fields": [
+            "decision",
+            "milk_entered_container"
+          ]
+        }
+      ],
+      "evidence_gap_ids": [
+        "G04",
+        "G05",
+        "G08"
+      ]
+    },
+    {
+      "id": "GX010021-V2-T2-002",
+      "original_id": "GX010021-V2-T2-002",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/tasks/v2_candidates/task_candidates.json",
+          "json_pointer": "/tasks/5"
+        }
+      ],
+      "status": "NEEDS_EVIDENCE",
+      "annotation_version": "gx010021-task-candidate-v0.1",
+      "track": "T2",
+      "record_refs": [
+        {
+          "kind": "relation",
+          "id": "RULE-02",
+          "path": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+          "json_pointer": "/records/22",
+          "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+        },
+        {
+          "kind": "relation",
+          "id": "RULE-03",
+          "path": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+          "json_pointer": "/records/23",
+          "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+        },
+        {
+          "kind": "event",
+          "id": "V2-E24",
+          "path": "golden_episode/GX010021/annotations/v2_video_model/events.json",
+          "json_pointer": "/records/45",
+          "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+        },
+        {
+          "kind": "event",
+          "id": "V2-E26",
+          "path": "golden_episode/GX010021/annotations/v2_video_model/events.json",
+          "json_pointer": "/records/51",
+          "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+        },
+        {
+          "kind": "l5",
+          "id": "L5-06",
+          "path": "golden_episode/GX010021/annotations/v2_video_model/anomaly_candidates.json",
+          "json_pointer": "/records/5",
+          "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+        }
+      ],
+      "reference_items": [
+        {
+          "field": "conditional_reference.choice",
+          "value": "oil_permitted",
+          "evidence_ids": [
+            "SRC-R42",
+            "SRC-R43"
+          ],
+          "observable_time": null,
+          "note": "只在许可公开并已生效后成立",
+          "evaluate_at_media_time": 641.3
+        },
+        {
+          "field": "conditional_reference.scope",
+          "value": "this_pan_lining_only",
+          "evidence_ids": [
+            "SRC-R41",
+            "SRC-R42",
+            "SRC-R43"
+          ],
+          "observable_time": null,
+          "note": "不推广到面糊内材料替代",
+          "evaluate_at_media_time": 641.3
+        }
+      ],
+      "required_evidence_sets": [
+        {
+          "set_id": "pan-rule-context",
+          "bindings": [
+            {
+              "evidence_id": "SRC-R39",
+              "role": "原垫纸要求"
+            },
+            {
+              "evidence_id": "SRC-R40",
+              "role": "无纸自述条件"
+            },
+            {
+              "evidence_id": "SRC-R41",
+              "role": "剩余黄油方案及范围"
+            },
+            {
+              "evidence_id": "SRC-R42",
+              "role": "无剩余黄油自述及用油提议"
+            },
+            {
+              "evidence_id": "SRC-R43",
+              "role": "许可"
+            },
+            {
+              "evidence_id": "H1-V-E049-01",
+              "role": "模底液体观察"
+            },
+            {
+              "evidence_id": "H1-V-E053-01",
+              "role": "当前入模锚点"
+            }
+          ],
+          "validity": "INSUFFICIENT",
+          "necessity": [
+            "跨修订一致性需原规则和条件链；若只问油许可，R41/R42/R43可能已经足够"
+          ],
+          "applies_at_media_time": 641.3,
+          "covers_fields": [
+            "conditional_reference.choice",
+            "conditional_reference.scope"
+          ]
+        }
+      ],
+      "evidence_gap_ids": [
+        "G04",
+        "G06",
+        "G08"
+      ]
+    },
+    {
+      "id": "GX010021-V2-T2-003",
+      "original_id": "GX010021-V2-T2-003",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/tasks/v2_candidates/task_candidates.json",
+          "json_pointer": "/tasks/6"
+        }
+      ],
+      "status": "PILOT_CANDIDATE",
+      "annotation_version": "gx010021-task-candidate-v0.1",
+      "track": "T2",
+      "record_refs": [
+        {
+          "kind": "relation",
+          "id": "PATH-03",
+          "path": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+          "json_pointer": "/records/16",
+          "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+        },
+        {
+          "kind": "relation",
+          "id": "PATH-04",
+          "path": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+          "json_pointer": "/records/17",
+          "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+        },
+        {
+          "kind": "relation",
+          "id": "PATH-05",
+          "path": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+          "json_pointer": "/records/18",
+          "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+        },
+        {
+          "kind": "relation",
+          "id": "PATH-06",
+          "path": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+          "json_pointer": "/records/19",
+          "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+        },
+        {
+          "kind": "relation",
+          "id": "PATH-07",
+          "path": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+          "json_pointer": "/records/20",
+          "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+        },
+        {
+          "kind": "relation",
+          "id": "V2-R12",
+          "path": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+          "json_pointer": "/records/10",
+          "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+        },
+        {
+          "kind": "object",
+          "id": "V2-O1",
+          "path": "golden_episode/GX010021/annotations/v2_video_model/objects.json",
+          "json_pointer": "/records/0",
+          "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+        },
+        {
+          "kind": "object",
+          "id": "V2-O10",
+          "path": "golden_episode/GX010021/annotations/v2_video_model/objects.json",
+          "json_pointer": "/records/9",
+          "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+        },
+        {
+          "kind": "object",
+          "id": "V2-O13",
+          "path": "golden_episode/GX010021/annotations/v2_video_model/objects.json",
+          "json_pointer": "/records/12",
+          "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+        },
+        {
+          "kind": "event",
+          "id": "H1-E051",
+          "path": "golden_episode/GX010021/annotations/v2_video_model/events.json",
+          "json_pointer": "/records/49",
+          "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+        }
+      ],
+      "reference_items": [
+        {
+          "field": "milk_route",
+          "value": [
+            "milk_carton",
+            "measuring_utensil_observation",
+            "main_container"
+          ],
+          "evidence_ids": [
+            "H1-V-E022-01",
+            "H1-V-E023-01"
+          ],
+          "observable_time": {
+            "earliest": 161.2,
+            "latest": 161.2,
+            "status": "CANDIDATE_OBSERVED_AT_NOT_FIRST_ONSET"
+          },
+          "note": "量具观察组不等于同一物理杯",
+          "evaluate_at_media_time": 680.212867
+        },
+        {
+          "field": "flour_routes",
+          "value": [
+            [
+              "flour_bag",
+              "measuring_utensil_observation",
+              "main_container"
+            ],
+            [
+              "flour_bag",
+              "main_container"
+            ]
+          ],
+          "evidence_ids": [
+            "H1-V-E031-01",
+            "H1-V-E032-01",
+            "H1-V-E051-01"
+          ],
+          "observable_time": {
+            "earliest": 602.2,
+            "latest": 602.2,
+            "status": "CANDIDATE_OBSERVED_AT_NOT_FIRST_ONSET"
+          },
+          "note": "两段候选可见入料；不是全片次数真值",
+          "evaluate_at_media_time": 680.212867
+        },
+        {
+          "field": "downstream_route",
+          "value": [
+            "main_container",
+            "baking_pan"
+          ],
+          "evidence_ids": [
+            "V2-V24",
+            "LC-680-2"
+          ],
+          "observable_time": {
+            "earliest": 680.212867,
+            "latest": 680.212867,
+            "status": "CANDIDATE_OBSERVED_AT_NOT_FIRST_ONSET"
+          },
+          "note": "非全量转移证明",
+          "evaluate_at_media_time": 680.212867
+        }
+      ],
+      "required_evidence_sets": [
+        {
+          "set_id": "material-lineage",
+          "bindings": [
+            {
+              "evidence_id": "H1-V-E022-01",
+              "role": "奶盒到量具"
+            },
+            {
+              "evidence_id": "H1-V-E023-01",
+              "role": "奶从量具到主容器"
+            },
+            {
+              "evidence_id": "H1-V-E031-01",
+              "role": "粉袋到量具"
+            },
+            {
+              "evidence_id": "H1-V-E032-01",
+              "role": "粉从量具到主容器"
+            },
+            {
+              "evidence_id": "H1-V-E051-01",
+              "role": "晚期袋到主容器候选直接路径"
+            },
+            {
+              "evidence_id": "V2-V24",
+              "role": "主容器到烤模"
+            },
+            {
+              "evidence_id": "LC-680-2",
+              "role": "当前烤模内容锚点"
+            }
+          ],
+          "validity": "CANDIDATE_MINIMAL_UNVERIFIED",
+          "necessity": [
+            "移除盒杯段不能证明奶路径起点；移除粉量取或入料段无法区分两者；移除晚期段丢失另一条路径；移除主容器至烤模段不能把早期入料与当前内容候选连接"
+          ],
+          "applies_at_media_time": 680.212867,
+          "covers_fields": [
+            "milk_route",
+            "flour_routes",
+            "downstream_route"
+          ]
+        }
+      ],
+      "evidence_gap_ids": [
+        "G05",
+        "G07",
+        "G08"
+      ]
+    },
+    {
+      "id": "GX010021-V2-T2-004",
+      "original_id": "GX010021-V2-T2-004",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/tasks/v2_candidates/task_candidates.json",
+          "json_pointer": "/tasks/7"
+        }
+      ],
+      "status": "UNSUITABLE",
+      "annotation_version": "gx010021-task-candidate-v0.1",
+      "track": "T2",
+      "record_refs": [
+        {
+          "kind": "relation",
+          "id": "RULE-01",
+          "path": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+          "json_pointer": "/records/21",
+          "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+        }
+      ],
+      "reference_items": [],
+      "required_evidence_sets": [
+        {
+          "set_id": "single-sugar-rule",
+          "bindings": [
+            {
+              "evidence_id": "SRC-R16",
+              "role": "单句可回答当前目标"
+            }
+          ],
+          "validity": "INSUFFICIENT",
+          "necessity": [
+            "仅一个许可句即可答，无法体现多历史推理"
+          ],
+          "applies_at_media_time": 200.3,
+          "covers_fields": []
+        }
+      ],
+      "evidence_gap_ids": [
+        "G04",
+        "G08"
+      ]
+    },
+    {
+      "id": "GX010021-V2-T3-001",
+      "original_id": "GX010021-V2-T3-001",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/tasks/v2_candidates/task_candidates.json",
+          "json_pointer": "/tasks/8"
+        }
+      ],
+      "status": "NEEDS_EVIDENCE",
+      "annotation_version": "gx010021-task-candidate-v0.1",
+      "track": "T3",
+      "record_refs": [
+        {
+          "kind": "l5",
+          "id": "L5-06",
+          "path": "golden_episode/GX010021/annotations/v2_video_model/anomaly_candidates.json",
+          "json_pointer": "/records/5",
+          "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+        },
+        {
+          "kind": "event",
+          "id": "V2-E24",
+          "path": "golden_episode/GX010021/annotations/v2_video_model/events.json",
+          "json_pointer": "/records/45",
+          "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+        },
+        {
+          "kind": "relation",
+          "id": "RULE-02",
+          "path": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+          "json_pointer": "/records/22",
+          "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+        },
+        {
+          "kind": "relation",
+          "id": "RULE-03",
+          "path": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+          "json_pointer": "/records/23",
+          "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+        }
+      ],
+      "reference_items": [],
+      "required_evidence_sets": [
+        {
+          "set_id": "oil-negative",
+          "bindings": [
+            {
+              "evidence_id": "SRC-R39",
+              "role": "原垫纸要求"
+            },
+            {
+              "evidence_id": "SRC-R40",
+              "role": "无纸自述"
+            },
+            {
+              "evidence_id": "SRC-R41",
+              "role": "剩余黄油建议"
+            },
+            {
+              "evidence_id": "SRC-R42",
+              "role": "无黄油并提议油"
+            },
+            {
+              "evidence_id": "SRC-R43",
+              "role": "限定许可"
+            },
+            {
+              "evidence_id": "H1-V-E049-01",
+              "role": "模底油候选"
+            },
+            {
+              "evidence_id": "H1-V-E049-02",
+              "role": "倾转烤模候选"
+            }
+          ],
+          "validity": "INSUFFICIENT",
+          "necessity": [
+            "许可与语境决定错误材料/遗漏误报范围；不能由模底液体断言所有规范满足"
+          ],
+          "applies_at_media_time": null,
+          "covers_fields": []
+        }
+      ],
+      "evidence_gap_ids": [
+        "G04",
+        "G06",
+        "G09"
+      ]
+    },
+    {
+      "id": "GX010021-V2-T3-002",
+      "original_id": "GX010021-V2-T3-002",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/tasks/v2_candidates/task_candidates.json",
+          "json_pointer": "/tasks/9"
+        }
+      ],
+      "status": "NEEDS_EVIDENCE",
+      "annotation_version": "gx010021-task-candidate-v0.1",
+      "track": "T3",
+      "record_refs": [
+        {
+          "kind": "l5",
+          "id": "L5-07",
+          "path": "golden_episode/GX010021/annotations/v2_video_model/anomaly_candidates.json",
+          "json_pointer": "/records/6",
+          "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+        },
+        {
+          "kind": "l5",
+          "id": "L5-04",
+          "path": "golden_episode/GX010021/annotations/v2_video_model/anomaly_candidates.json",
+          "json_pointer": "/records/3",
+          "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+        },
+        {
+          "kind": "event",
+          "id": "V2-E17",
+          "path": "golden_episode/GX010021/annotations/v2_video_model/events.json",
+          "json_pointer": "/records/35",
+          "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+        },
+        {
+          "kind": "event",
+          "id": "V2-E18",
+          "path": "golden_episode/GX010021/annotations/v2_video_model/events.json",
+          "json_pointer": "/records/36",
+          "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+        }
+      ],
+      "reference_items": [],
+      "required_evidence_sets": [
+        {
+          "set_id": "reheat-negative",
+          "bindings": [
+            {
+              "evidence_id": "SRC-R30",
+              "role": "分段加热检查规范候选"
+            },
+            {
+              "evidence_id": "SRC-R31",
+              "role": "进一步加热反馈候选"
+            },
+            {
+              "evidence_id": "V2-V17",
+              "role": "取出部分融化材料"
+            },
+            {
+              "evidence_id": "V2-V18",
+              "role": "再加热操作"
+            }
+          ],
+          "validity": "INSUFFICIENT",
+          "necessity": [
+            "分段许可与检查语境决定再加热是否偏差；反馈已公开后不能计反馈前自主识别"
+          ],
+          "applies_at_media_time": null,
+          "covers_fields": []
+        }
+      ],
+      "evidence_gap_ids": [
+        "G04",
+        "G09",
+        "G10"
+      ]
+    },
+    {
+      "id": "GX010021-V2-T3-003",
+      "original_id": "GX010021-V2-T3-003",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/tasks/v2_candidates/task_candidates.json",
+          "json_pointer": "/tasks/10"
+        }
+      ],
+      "status": "UNSUITABLE",
+      "annotation_version": "gx010021-task-candidate-v0.1",
+      "track": "T3",
+      "record_refs": [
+        {
+          "kind": "l5",
+          "id": "L5-02",
+          "path": "golden_episode/GX010021/annotations/v2_video_model/anomaly_candidates.json",
+          "json_pointer": "/records/1",
+          "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+        },
+        {
+          "kind": "event",
+          "id": "V2-E2",
+          "path": "golden_episode/GX010021/annotations/v2_video_model/events.json",
+          "json_pointer": "/records/5",
+          "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+        },
+        {
+          "kind": "event",
+          "id": "V2-E4",
+          "path": "golden_episode/GX010021/annotations/v2_video_model/events.json",
+          "json_pointer": "/records/9",
+          "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+        }
+      ],
+      "reference_items": [],
+      "required_evidence_sets": [
+        {
+          "set_id": "egg-error-rejected",
+          "bindings": [
+            {
+              "evidence_id": "LC-76-2",
+              "role": "只见两个蛋黄"
+            },
+            {
+              "evidence_id": "LC-83-2",
+              "role": "手持蛋但完整性/去向未知"
+            },
+            {
+              "evidence_id": "SRC-R10",
+              "role": "反馈文本仅作审计背景"
+            }
+          ],
+          "validity": "INSUFFICIENT",
+          "necessity": [
+            "不能证明三枚加入，更不能导出错误检测时刻"
+          ],
+          "applies_at_media_time": null,
+          "covers_fields": []
+        }
+      ],
+      "evidence_gap_ids": [
+        "G04",
+        "G09",
+        "G11"
+      ]
+    },
+    {
+      "id": "GX010021-V2-T3-004",
+      "original_id": "GX010021-V2-T3-004",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/tasks/v2_candidates/task_candidates.json",
+          "json_pointer": "/tasks/11"
+        }
+      ],
+      "status": "UNSUITABLE",
+      "annotation_version": "gx010021-task-candidate-v0.1",
+      "track": "T3",
+      "record_refs": [
+        {
+          "kind": "l5",
+          "id": "L5-04",
+          "path": "golden_episode/GX010021/annotations/v2_video_model/anomaly_candidates.json",
+          "json_pointer": "/records/3",
+          "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+        },
+        {
+          "kind": "l5",
+          "id": "L5-07",
+          "path": "golden_episode/GX010021/annotations/v2_video_model/anomaly_candidates.json",
+          "json_pointer": "/records/6",
+          "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+        },
+        {
+          "kind": "event",
+          "id": "V2-E17",
+          "path": "golden_episode/GX010021/annotations/v2_video_model/events.json",
+          "json_pointer": "/records/35",
+          "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+        },
+        {
+          "kind": "event",
+          "id": "V2-E18",
+          "path": "golden_episode/GX010021/annotations/v2_video_model/events.json",
+          "json_pointer": "/records/36",
+          "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+        },
+        {
+          "kind": "state",
+          "id": "STATE-LC-431-2",
+          "path": "golden_episode/GX010021/annotations/v2_video_model/objects.json",
+          "json_pointer": "/states/133",
+          "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+        }
+      ],
+      "reference_items": [],
+      "required_evidence_sets": [
+        {
+          "set_id": "recovery-rejected",
+          "bindings": [
+            {
+              "evidence_id": "V2-V17",
+              "role": "部分融化取出"
+            },
+            {
+              "evidence_id": "V2-V18",
+              "role": "进一步加热"
+            },
+            {
+              "evidence_id": "LC-431-2",
+              "role": "后续仍有固块"
+            }
+          ],
+          "validity": "INSUFFICIENT",
+          "necessity": [
+            "只有过程变化，不能证明初始偏差或已恢复"
+          ],
+          "applies_at_media_time": null,
+          "covers_fields": []
+        }
+      ],
+      "evidence_gap_ids": [
+        "G09",
+        "G10"
+      ]
+    }
+  ]
+}

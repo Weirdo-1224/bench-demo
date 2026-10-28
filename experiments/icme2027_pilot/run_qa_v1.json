@@ -1,0 +1,18 @@
+{
+  "created_at": "2026-10-28T13:11:43+08:00",
+  "type": "OFFLINE_REAL_TRACE_QA",
+  "all_attempts_reconstruct_exact_wire": 18,
+  "raw_http200": 18,
+  "truncated_responses_preserved": 2,
+  "unique_request_ids": 18,
+  "resume_reused_logical_requests": 16,
+  "resume_added_inference_attempts": 0,
+  "secret_scan_text_files": 171,
+  "secret_leaks": 0,
+  "original_integrity": {
+    "protected_files": 201,
+    "all_hashes_match": true,
+    "checked_at": "2026-10-28T13:11:43+08:00"
+  },
+  "conclusion": "Input replay and logs verified; model alias is unpinned, so new cloud inference is not guaranteed bitwise reproducible"
+}

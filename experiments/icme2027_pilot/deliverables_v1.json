@@ -1,0 +1,55 @@
+{
+  "files": [
+    {
+      "path": "D:\\Python_Project\\bench-demo\\experiments\\icme2027_pilot\\README.md",
+      "sha256": "80fa726484556444dce74e2dea273ec0cceef09b22ee567a71e0d293f0a85edc"
+    },
+    {
+      "path": "D:\\Python_Project\\bench-demo\\experiments\\icme2027_pilot\\experiment_protocol.md",
+      "sha256": "c56b5ea416665207702304e9014f5c82790f7568170f3f2ddc2596d3d90459a5"
+    },
+    {
+      "path": "D:\\Python_Project\\bench-demo\\experiments\\icme2027_pilot\\tasks_gold.jsonl",
+      "sha256": "4d7e26ae98fa4b63d0b001681db36968fc674471ea2752c37af359137ff5ca7d"
+    },
+    {
+      "path": "D:\\Python_Project\\bench-demo\\experiments\\icme2027_pilot\\review_decisions.jsonl",
+      "sha256": "b3f15408daf09e1e734957d2442b397e41787bd6b42857a3f4c4a743620b2b4d"
+    },
+    {
+      "path": "D:\\Python_Project\\bench-demo\\experiments\\icme2027_pilot\\p01_sample_verification_v1.json",
+      "sha256": "580e0b0b6a39d46fd028ac6167859c4863e71f9ea00f9f2cc7135318deea512f"
+    },
+    {
+      "path": "D:\\Python_Project\\bench-demo\\experiments\\icme2027_pilot\\mask_manifest_applied_v1.jsonl",
+      "sha256": "234e54b9bc1956f46250fb98b3a0fbd69606c34e11054dd43ef716d090fd069e"
+    },
+    {
+      "path": "D:\\Python_Project\\bench-demo\\experiments\\icme2027_pilot\\predictions.jsonl",
+      "sha256": "fbf43e0241ac588ad0f81cc793880aaade2516e0d6b5c1b1b51d3b79c249a9ec"
+    },
+    {
+      "path": "D:\\Python_Project\\bench-demo\\experiments\\icme2027_pilot\\results.csv",
+      "sha256": "365729e82d85abcc3013f4fb341b2f292c2d96b1b59d298feacd945b7b9237d7"
+    },
+    {
+      "path": "D:\\Python_Project\\bench-demo\\experiments\\icme2027_pilot\\summary.json",
+      "sha256": "93b631365aefbc83b2365b7f4325468cfdc0491d8d51927ba2ce34f10a78ce16"
+    },
+    {
+      "path": "D:\\Python_Project\\bench-demo\\experiments\\icme2027_pilot\\request_index_v1.jsonl",
+      "sha256": "ca92bc929920aa6ee42e76aff50e20f8028f0e78d4c7a6a0236a4059bc5b67b6"
+    },
+    {
+      "path": "D:\\Python_Project\\bench-demo\\experiments\\icme2027_pilot\\advisor_report_v1.md",
+      "sha256": "c7c3a9c7dc5522980d994868442ad169b02fdf82ffe1344afe276b4655716c84"
+    },
+    {
+      "path": "D:\\Python_Project\\bench-demo\\experiments\\icme2027_pilot\\figures\\p01_conditions_v1.png",
+      "sha256": "fb81d9d90f20788523661307d85ac1b252b72f67df9223f2d9797e5faae13ea0"
+    }
+  ],
+  "P01": "APPROVED_REAL_RUN_COMPLETE",
+  "P02": "PENDING",
+  "contains_simulated_predictions": false
+}

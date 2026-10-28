@@ -1,0 +1,15 @@
+{
+  "created_at": "2026-10-28T13:00:54+08:00",
+  "reason": "FULL seg-0003 two genuine HTTP200 responses finish_reason=length, no valid memory JSON; identical retry not useful",
+  "original_run_manifest_sha256": "aad57cd6c39d56df623a22a1957f646954735311dec31dc5e3264c3512d39b25",
+  "new_code_hashes": {
+    "experiments/icme2027_pilot/runtime.py": "29217c5b98c56c8b0081cc5ab2f93f132e56db41e8c16c310c09041bb30d91a9",
+    "experiments/icme2027_pilot/pilot.py": "52c269cf43417de627e701e9e91a9cfe1cded0e5ef34ea72c62f0a56ffb772a1",
+    "annotation_pipeline/providers/qwen.py": "6fece78d5306a77769d0f1f5b95d95b94e4771b42cfe7f261f171f73091fefbc"
+  },
+  "rule": "For any nonfinal condition/window after two length-truncated responses, allow one recovery using identical frames/prompt/memory with max_tokens4096; memory character bound4096 and final outputs1536 unchanged",
+  "global_hard_attempt_cap_unchanged": 20,
+  "selection_independent_of_answer": true,
+  "previous_attempts_counted": 16,
+  "all_previous_responses_retained": true
+}

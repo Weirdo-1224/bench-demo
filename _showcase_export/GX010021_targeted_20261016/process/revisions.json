@@ -1,0 +1,91 @@
+{
+  "episode_id": "GX010021",
+  "items": [
+    {
+      "id": "REV-001",
+      "before_quote": "E057（糖袋插入粉盖罐+盖回粉盖）",
+      "after_quote": "撤销，合并入 E054",
+      "changed_field": "event_identity/deduplication",
+      "reason": "与 E054 指向同一 680.2–683.2s 视觉序列，不构成独立事件。",
+      "source_before": {
+        "file": "golden_episode/GX010021/annotation_reports/consistency_revision.md",
+        "heading": "3. E057、E058 去重结论",
+        "line_range": "71-75"
+      },
+      "source_after": {
+        "file": "golden_episode/GX010021/annotation_reports/consistency_revision.md",
+        "heading": "3. E057、E058 去重结论",
+        "line_range": "71-75"
+      },
+      "video_interval_sec": [
+        680.2,
+        683.2
+      ],
+      "resolution_status": "RESOLVED_AS_DUPLICATE_NOT_GOLD"
+    },
+    {
+      "id": "REV-002",
+      "before_quote": "E058（空玻璃容器置灶台黑面）",
+      "after_quote": "撤销，作为 E044 的状态字段与 O10 状态链节点保留",
+      "changed_field": "event_vs_state",
+      "reason": "E044 已包含放置动作；E058 是其结果状态，重复计件。",
+      "source_before": {
+        "file": "golden_episode/GX010021/annotation_reports/consistency_revision.md",
+        "heading": "3. E057、E058 去重结论",
+        "line_range": "71-75"
+      },
+      "source_after": {
+        "file": "golden_episode/GX010021/annotation_reports/consistency_revision.md",
+        "heading": "3. E057、E058 去重结论",
+        "line_range": "71-75"
+      },
+      "video_interval_sec": null,
+      "resolution_status": "RESOLVED_AS_STATE_NOT_GOLD"
+    },
+    {
+      "id": "REV-003",
+      "before_quote": "量杯 1 次+直倒 2 次=共 3 次供粉",
+      "after_quote": "加入容器 2 次（量杯 1 次、袋直倒 1 次）",
+      "changed_field": "flour_entry_count",
+      "reason": "E031 是上游量取，不是独立入容器；原统计重复计算。",
+      "source_before": {
+        "file": "golden_episode/GX010021/annotation_reports/consistency_revision.md",
+        "heading": "4. 面粉加入次数",
+        "line_range": "81-86"
+      },
+      "source_after": {
+        "file": "golden_episode/GX010021/annotation_reports/consistency_revision.md",
+        "heading": "4. 面粉加入次数",
+        "line_range": "81-86"
+      },
+      "video_interval_sec": [
+        270.2,
+        603.2
+      ],
+      "resolution_status": "RESOLVED_COUNT_SCOPE_CANDIDATE"
+    },
+    {
+      "id": "REV-004",
+      "before_quote": "将开口糖袋收纳插入粉盖罐、盖回粉色罐盖",
+      "after_quote": "仅盖回粉色罐盖 680.2–683.2s；糖袋位于罐内记入 O04 状态，不认定本轮执行插入动作",
+      "changed_field": "E054.action_scope",
+      "reason": "更晚的 annotations 交叉核验不足以确认本轮插袋动作，只保留直接可见的盖罐。",
+      "source_before": {
+        "file": "golden_episode/GX010021/annotation_reports/consistency_revision.md",
+        "heading": "3. E057、E058 去重结论",
+        "line_range": "71-75"
+      },
+      "source_after": {
+        "file": "golden_episode/GX010021/annotation_reports/crosscheck_report.md",
+        "heading": "E. 对当前候选标注的修订建议",
+        "line_range": "103-112"
+      },
+      "video_interval_sec": [
+        680.2,
+        683.2
+      ],
+      "resolution_status": "RESOLVED_NARROWED_CANDIDATE"
+    }
+  ],
+  "note": "引文来自现有报告；均不表示人工 Gold 裁决。"
+}

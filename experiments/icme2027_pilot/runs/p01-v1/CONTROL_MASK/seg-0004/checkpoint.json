@@ -1,0 +1,39 @@
+{
+  "condition": "CONTROL_MASK",
+  "segment_id": "seg-0004",
+  "final": true,
+  "request_sha256": "d01ccfc26549573f9f33fed3a02ee4a5c493b050c7a0a7c151e5d17792ba1c81",
+  "previous_checkpoint_sha256": "df563cf849c094e43a1d1e4a1248f4348988814f1ddf7b47bd248b671bfa6e8b",
+  "raw_response_ref": "experiments/icme2027_pilot/runs/p01-v1/CONTROL_MASK/seg-0004/attempt-000.response.json",
+  "raw_response_sha256": "d474dea4addc177151b1977206b53ca0292a01e1d149f08c14766135877185bf",
+  "parsed": {
+    "answer": "YES",
+    "answerability": "ANSWERABLE",
+    "evidence_intervals_sec": [
+      [
+        180.013,
+        224.004
+      ]
+    ],
+    "reason": "在180.013–224.004秒区间内，视频明确显示操作者右手持白色手持电动搅拌器（带双金属打蛋头），将打蛋头插入透明塑料盒中并启动搅拌，混合液被快速搅动、产生气泡与漩涡，体积略增、质地蓬松；219–224秒将搅拌器放回台面左侧。此为直接可见的电动搅拌器使用行为。截至300秒，无证据表明该动作未发生或被撤销。"
+  },
+  "metadata": {
+    "returned_model": "qwen3-vl-plus",
+    "usage": {
+      "prompt_tokens": 14374,
+      "completion_tokens": 171,
+      "total_tokens": 14545,
+      "completion_tokens_details": {
+        "text_tokens": 171
+      },
+      "prompt_tokens_details": {
+        "text_tokens": 2222,
+        "video_tokens": 12152,
+        "cached_tokens": 10880
+      }
+    },
+    "finish_reason": "stop",
+    "request_id": "chatcmpl-4018cbdb-613e-9d32-aa40-4cf445bb5c57"
+  },
+  "checkpoint_sha256": "1d6965fb905e3bc96d45d81d665ca1037252525a9c1a37dadfcf260d77c1467a"
+}

@@ -1,0 +1,7 @@
+{
+  "request_sha256": "7d95094a5dd52c649b440c64397b40d92c74b6eb00a0279398d5fd9fe2e3ffca",
+  "window": "experiments/icme2027_pilot/runs/p01-v1/CRITICAL_MASK/seg-0004",
+  "started_at": "2026-10-28T12:55:03+08:00",
+  "reserved_cny": 0.25,
+  "local_allowance_not_billing_guarantee": true
+}

@@ -1,0 +1,1055 @@
+{
+  "$schema": "./schema.json",
+  "schema_version": "1.0",
+  "episode_id": "GX010021",
+  "artifact": "review_queue",
+  "data_status": "CANDIDATE",
+  "human_review": "NOT_REVIEWED",
+  "priority_policy": "采用第四轮D节明确的复核片段优先级；其未覆盖的问题沿用较早报告。记录各轮差异，优先级调整不改变字段不确定性。",
+  "review_items": [
+    {
+      "id": "RQ01",
+      "priority": "P0",
+      "status": "OPEN",
+      "title": "黄油固块与倾倒终态",
+      "question": "确认第二次取出后的固块比例、搅拌后是否消失、倒入混合容器时是否含固块。",
+      "time_ranges": [
+        {
+          "start_sec": 426,
+          "end_sec": 470.2,
+          "start_hms": "00:07:06.000",
+          "end_hms": "00:07:50.200"
+        }
+      ],
+      "event_ids": [
+        "E042",
+        "E043",
+        "E044"
+      ],
+      "object_ids": [
+        "O01",
+        "O09",
+        "O10",
+        "O11",
+        "O15",
+        "O16"
+      ],
+      "ego_mc_record_ids": [
+        "R31",
+        "R32",
+        "R42"
+      ],
+      "targets": [
+        {
+          "artifact": "events",
+          "record_id": "E042",
+          "field": "facts/solid_fraction"
+        },
+        {
+          "artifact": "events",
+          "record_id": "E043",
+          "field": "facts/butter_fully_melted_after_stirring"
+        },
+        {
+          "artifact": "events",
+          "record_id": "E044",
+          "field": "facts/solid_blocks_transferred"
+        },
+        {
+          "artifact": "events",
+          "record_id": "E044",
+          "field": "facts/exact_residue_or_mass_balance"
+        },
+        {
+          "artifact": "objects",
+          "record_id": "O09",
+          "field": "state_history/O09.S07"
+        },
+        {
+          "artifact": "objects",
+          "record_id": "O09",
+          "field": "state_history/O09.S09"
+        },
+        {
+          "artifact": "objects",
+          "record_id": "O09",
+          "field": "state_history/O09.S11"
+        },
+        {
+          "artifact": "objects",
+          "record_id": "O09",
+          "field": "state_history/O09.S12"
+        }
+      ],
+      "evidence_ids": [
+        "V-E042-01",
+        "V-E042-02",
+        "I-E042-02",
+        "T-R32",
+        "V-E043-01",
+        "V-E043-02",
+        "I-E043-02",
+        "V-E044-01",
+        "V-E044-02",
+        "I-E044-01",
+        "I-E044-02",
+        "T-R42",
+        "T-R31"
+      ],
+      "sources": [
+        {
+          "path": "annotation_reports/verification_report.md",
+          "section": "F/P0"
+        },
+        {
+          "path": "annotation_reports/consistency_revision.md",
+          "section": "7"
+        },
+        {
+          "path": "annotation_reports/crosscheck_report.md",
+          "section": "D/P0"
+        }
+      ],
+      "review_method": "人工查看连续视频/高清局部并记录裁决；若仍无证据则保留UNCERTAIN。",
+      "priority_notes": "优先采用第四轮D节明确片段清单；未覆盖问题沿用先前优先级，保留来源，不改变事实状态。"
+    },
+    {
+      "id": "RQ02",
+      "priority": "P0",
+      "status": "OPEN",
+      "title": "鸡蛋逐次计数与第三枚终态",
+      "question": "确认逐次取蛋次数、第三枚是否磕破或产生蛋壳、是否确实入盒。",
+      "time_ranges": [
+        {
+          "start_sec": 47,
+          "end_sec": 89,
+          "start_hms": "00:00:47.000",
+          "end_hms": "00:01:29.000"
+        }
+      ],
+      "event_ids": [
+        "E007",
+        "E012",
+        "E013"
+      ],
+      "object_ids": [
+        "O01",
+        "O02",
+        "O03",
+        "O15",
+        "O20"
+      ],
+      "ego_mc_record_ids": [
+        "R10",
+        "R11"
+      ],
+      "targets": [
+        {
+          "artifact": "events",
+          "record_id": "E007",
+          "field": "facts/taken_count"
+        },
+        {
+          "artifact": "events",
+          "record_id": "E012",
+          "field": "facts/third_egg_integrity"
+        },
+        {
+          "artifact": "events",
+          "record_id": "E012",
+          "field": "facts/third_shell_created"
+        },
+        {
+          "artifact": "events",
+          "record_id": "E013",
+          "field": "facts/returned_inside_carton"
+        },
+        {
+          "artifact": "objects",
+          "record_id": "O02",
+          "field": "state_history/O02.S01"
+        },
+        {
+          "artifact": "objects",
+          "record_id": "O02",
+          "field": "state_history/O02.S05"
+        },
+        {
+          "artifact": "objects",
+          "record_id": "O02",
+          "field": "state_history/O02.S06"
+        },
+        {
+          "artifact": "objects",
+          "record_id": "O03",
+          "field": "state_history/O03.S03"
+        },
+        {
+          "artifact": "objects",
+          "record_id": "O20",
+          "field": "state_history/O20.S03"
+        }
+      ],
+      "evidence_ids": [
+        "V-E007-01",
+        "V-E007-02",
+        "I-E007-01",
+        "T-R10",
+        "V-E012-01",
+        "V-E012-02",
+        "V-E012-03",
+        "I-E012-02",
+        "I-E012-03",
+        "V-E013-01",
+        "I-E013-01",
+        "T-R11"
+      ],
+      "sources": [
+        {
+          "path": "annotation_reports/consistency_revision.md",
+          "section": "7"
+        },
+        {
+          "path": "annotation_reports/crosscheck_report.md",
+          "section": "C/Q-02、D/P0"
+        }
+      ],
+      "review_method": "人工查看连续视频/高清局部并记录裁决；若仍无证据则保留UNCERTAIN。",
+      "priority_notes": "优先采用第四轮D节明确片段清单；未覆盖问题沿用先前优先级，保留来源，不改变事实状态。"
+    },
+    {
+      "id": "RQ03",
+      "priority": "P1",
+      "status": "OPEN",
+      "title": "烤模内壁油膜",
+      "question": "确认油是否覆盖内壁及其分布；倾斜旋转与Success评价均不足以证明油膜。",
+      "time_ranges": [
+        {
+          "start_sec": 560,
+          "end_sec": 581,
+          "start_hms": "00:09:20.000",
+          "end_hms": "00:09:41.000"
+        }
+      ],
+      "event_ids": [
+        "E049"
+      ],
+      "object_ids": [
+        "O12",
+        "O13"
+      ],
+      "ego_mc_record_ids": [
+        "R43",
+        "R45"
+      ],
+      "targets": [
+        {
+          "artifact": "events",
+          "record_id": "E049",
+          "field": "facts/inner_wall_oil_film"
+        },
+        {
+          "artifact": "objects",
+          "record_id": "O12",
+          "field": "state_history/O12.S02"
+        }
+      ],
+      "evidence_ids": [
+        "V-E049-01",
+        "V-E049-02",
+        "I-E049-01",
+        "T-R43",
+        "T-R45"
+      ],
+      "sources": [
+        {
+          "path": "annotation_reports/verification_report.md",
+          "section": "F/P0"
+        },
+        {
+          "path": "annotation_reports/consistency_revision.md",
+          "section": "7"
+        },
+        {
+          "path": "annotation_reports/crosscheck_report.md",
+          "section": "D/P1"
+        }
+      ],
+      "review_method": "人工查看连续视频/高清局部并记录裁决；若仍无证据则保留UNCERTAIN。",
+      "priority_notes": "第三轮/第二轮P0；第四轮D表降为P1，本整合采用第四轮P1，字段仍UNCERTAIN。"
+    },
+    {
+      "id": "RQ04",
+      "priority": "P1",
+      "status": "OPEN",
+      "title": "黑色工具与量杯物理同一性",
+      "question": "追踪搅黄油工具、刮糊工具和量杯，确认同一性及末期放置时点。",
+      "time_ranges": [
+        {
+          "start_sec": 434,
+          "end_sec": 460,
+          "start_hms": "00:07:14.000",
+          "end_hms": "00:07:40.000"
+        },
+        {
+          "start_sec": 645.2,
+          "end_sec": 685,
+          "start_hms": "00:10:45.200",
+          "end_hms": "00:11:25.000"
+        }
+      ],
+      "event_ids": [
+        "E043",
+        "E053",
+        "E054"
+      ],
+      "object_ids": [
+        "O01",
+        "O04",
+        "O09",
+        "O10",
+        "O12",
+        "O15",
+        "O16",
+        "O17",
+        "O18"
+      ],
+      "ego_mc_record_ids": [],
+      "targets": [
+        {
+          "artifact": "events",
+          "record_id": "E043",
+          "field": "facts/same_tool_as_E053_or_cups"
+        },
+        {
+          "artifact": "events",
+          "record_id": "E053",
+          "field": "facts/same_tool_as_E043_or_cups"
+        },
+        {
+          "artifact": "events",
+          "record_id": "E054",
+          "field": "facts/scraper_placed_during_event"
+        },
+        {
+          "artifact": "objects",
+          "record_id": "O16",
+          "field": "state_history/O16.S02"
+        },
+        {
+          "artifact": "objects",
+          "record_id": "O17",
+          "field": "state_history/O17.S02"
+        }
+      ],
+      "evidence_ids": [
+        "V-E043-01",
+        "V-E043-02",
+        "I-E043-01",
+        "V-E053-01",
+        "V-E053-02",
+        "I-E053-01",
+        "V-E054-01",
+        "V-E054-02",
+        "I-E054-02"
+      ],
+      "sources": [
+        {
+          "path": "annotation_reports/verification_report.md",
+          "section": "F/P1、D/O05"
+        }
+      ],
+      "review_method": "人工查看连续视频/高清局部并记录裁决；若仍无证据则保留UNCERTAIN。",
+      "priority_notes": "优先采用第四轮D节明确片段清单；未覆盖问题沿用先前优先级，保留来源，不改变事实状态。"
+    },
+    {
+      "id": "RQ05",
+      "priority": "P1",
+      "status": "OPEN",
+      "title": "牛奶量杯规格和实际量值",
+      "question": "确认实际使用杯是否为标签1/4 CUP的杯、规格与倒奶量；半杯指令/自述不能代替量值。",
+      "time_ranges": [
+        {
+          "start_sec": 139,
+          "end_sec": 165,
+          "start_hms": "00:02:19.000",
+          "end_hms": "00:02:45.000"
+        }
+      ],
+      "event_ids": [
+        "E020",
+        "E022",
+        "E023"
+      ],
+      "object_ids": [
+        "O01",
+        "O05",
+        "O06",
+        "O15"
+      ],
+      "ego_mc_record_ids": [
+        "R18",
+        "R19"
+      ],
+      "targets": [
+        {
+          "artifact": "events",
+          "record_id": "E020",
+          "field": "facts/same_cup_as_E015"
+        },
+        {
+          "artifact": "events",
+          "record_id": "E020",
+          "field": "facts/search_purpose"
+        },
+        {
+          "artifact": "events",
+          "record_id": "E022",
+          "field": "facts/milk_volume_cup"
+        },
+        {
+          "artifact": "events",
+          "record_id": "E023",
+          "field": "facts/milk_volume_cup"
+        },
+        {
+          "artifact": "objects",
+          "record_id": "O05",
+          "field": "state_history/O05.S11"
+        }
+      ],
+      "evidence_ids": [
+        "V-E020-01",
+        "V-E020-02",
+        "I-E020-02",
+        "T-R18",
+        "T-R19",
+        "V-E022-01",
+        "V-E023-01"
+      ],
+      "sources": [
+        {
+          "path": "annotation_reports/crosscheck_report.md",
+          "section": "C/Q-03、D/P1"
+        }
+      ],
+      "review_method": "人工查看连续视频/高清局部并记录裁决；若仍无证据则保留UNCERTAIN。",
+      "priority_notes": "优先采用第四轮D节明确片段清单；未覆盖问题沿用先前优先级，保留来源，不改变事实状态。"
+    },
+    {
+      "id": "RQ06",
+      "priority": "P1",
+      "status": "OPEN",
+      "title": "首次面粉量杯规格和实际量值",
+      "question": "确认杯规格与实际加粉量；R26一杯仅为文本线索。",
+      "time_ranges": [
+        {
+          "start_sec": 269,
+          "end_sec": 292,
+          "start_hms": "00:04:29.000",
+          "end_hms": "00:04:52.000"
+        }
+      ],
+      "event_ids": [
+        "E031",
+        "E032"
+      ],
+      "object_ids": [
+        "O01",
+        "O05",
+        "O08",
+        "O15"
+      ],
+      "ego_mc_record_ids": [
+        "R26"
+      ],
+      "targets": [
+        {
+          "artifact": "events",
+          "record_id": "E031",
+          "field": "facts/flour_volume_cup"
+        },
+        {
+          "artifact": "events",
+          "record_id": "E032",
+          "field": "facts/flour_volume_cup"
+        }
+      ],
+      "evidence_ids": [
+        "V-E031-01",
+        "T-R26",
+        "V-E032-01"
+      ],
+      "sources": [
+        {
+          "path": "annotation_reports/crosscheck_report.md",
+          "section": "C/Q-04、D/P1"
+        }
+      ],
+      "review_method": "人工查看连续视频/高清局部并记录裁决；若仍无证据则保留UNCERTAIN。",
+      "priority_notes": "优先采用第四轮D节明确片段清单；未覆盖问题沿用先前优先级，保留来源，不改变事实状态。"
+    },
+    {
+      "id": "RQ07",
+      "priority": "P2",
+      "status": "OPEN",
+      "title": "微波时长、显示与等待边界",
+      "question": "高清确认两次设定时长/显示；15秒线索不能等同实际运行时长；等待末界约±1s。",
+      "time_ranges": [
+        {
+          "start_sec": 344,
+          "end_sec": 374,
+          "start_hms": "00:05:44.000",
+          "end_hms": "00:06:14.000"
+        },
+        {
+          "start_sec": 408,
+          "end_sec": 426.2,
+          "start_hms": "00:06:48.000",
+          "end_hms": "00:07:06.200"
+        }
+      ],
+      "event_ids": [
+        "E037",
+        "E041"
+      ],
+      "object_ids": [
+        "O09",
+        "O10",
+        "O11"
+      ],
+      "ego_mc_record_ids": [
+        "R30",
+        "R31"
+      ],
+      "targets": [
+        {
+          "artifact": "events",
+          "record_id": "E037",
+          "field": "facts/heating_duration_sec"
+        },
+        {
+          "artifact": "events",
+          "record_id": "E037",
+          "field": "facts/panel_readings"
+        },
+        {
+          "artifact": "events",
+          "record_id": "E041",
+          "field": "facts/heating_duration_sec"
+        },
+        {
+          "artifact": "events",
+          "record_id": "E041",
+          "field": "facts/panel_readings"
+        },
+        {
+          "artifact": "events",
+          "record_id": "E041",
+          "field": "facts/waiting_end_sec"
+        },
+        {
+          "artifact": "objects",
+          "record_id": "O11",
+          "field": "state_history/O11.S03"
+        },
+        {
+          "artifact": "objects",
+          "record_id": "O11",
+          "field": "state_history/O11.S07"
+        }
+      ],
+      "evidence_ids": [
+        "V-E037-01",
+        "H-E037-01",
+        "T-R30",
+        "H-E037-02",
+        "V-E041-01",
+        "V-E041-02",
+        "T-R31",
+        "H-E041-02",
+        "I-E041-03"
+      ],
+      "sources": [
+        {
+          "path": "annotation_reports/consistency_revision.md",
+          "section": "1、5"
+        },
+        {
+          "path": "annotation_reports/crosscheck_report.md",
+          "section": "D/P2"
+        }
+      ],
+      "review_method": "人工查看连续视频/高清局部并记录裁决；若仍无证据则保留UNCERTAIN。",
+      "priority_notes": "优先采用第四轮D节明确片段清单；未覆盖问题沿用先前优先级，保留来源，不改变事实状态。"
+    },
+    {
+      "id": "RQ08",
+      "priority": "P2",
+      "status": "OPEN",
+      "title": "100语义与烤箱预热状态",
+      "question": "确认显示100的语义、按键与显示因果及实际温度/预热完成；350°F为原始文本线索。",
+      "time_ranges": [
+        {
+          "start_sec": 10,
+          "end_sec": 19,
+          "start_hms": "00:00:10.000",
+          "end_hms": "00:00:19.000"
+        },
+        {
+          "start_sec": 687,
+          "end_sec": 692,
+          "start_hms": "00:11:27.000",
+          "end_hms": "00:11:32.000"
+        }
+      ],
+      "event_ids": [
+        "E002",
+        "E003",
+        "E055"
+      ],
+      "object_ids": [
+        "O12",
+        "O14",
+        "O15"
+      ],
+      "ego_mc_record_ids": [
+        "R01",
+        "R02"
+      ],
+      "targets": [
+        {
+          "artifact": "events",
+          "record_id": "E002",
+          "field": "facts/display_semantics"
+        },
+        {
+          "artifact": "events",
+          "record_id": "E002",
+          "field": "facts/button_display_causality"
+        },
+        {
+          "artifact": "events",
+          "record_id": "E003",
+          "field": "facts/display_semantics"
+        },
+        {
+          "artifact": "events",
+          "record_id": "E055",
+          "field": "facts/oven_preheat_complete"
+        },
+        {
+          "artifact": "objects",
+          "record_id": "O14",
+          "field": "state_history/O14.S03"
+        },
+        {
+          "artifact": "objects",
+          "record_id": "O14",
+          "field": "state_history/O14.S05"
+        }
+      ],
+      "evidence_ids": [
+        "V-E002-01",
+        "V-E002-02",
+        "H-E002-02",
+        "T-R01",
+        "T-R02",
+        "I-E002-03",
+        "V-E003-01",
+        "H-E003-02",
+        "V-E055-01",
+        "H-E055-01"
+      ],
+      "sources": [
+        {
+          "path": "annotation_reports/crosscheck_report.md",
+          "section": "C/Q-06、D/P2"
+        }
+      ],
+      "review_method": "人工查看连续视频/高清局部并记录裁决；若仍无证据则保留UNCERTAIN。",
+      "priority_notes": "优先采用第四轮D节明确片段清单；未覆盖问题沿用先前优先级，保留来源，不改变事实状态。"
+    },
+    {
+      "id": "RQ09",
+      "priority": "P2",
+      "status": "OPEN",
+      "title": "糖袋整理与收纳动作发生时间",
+      "question": "确认整理/折口内容和收纳发生时点；680.2s袋已在罐内，E054不认定插入动作。",
+      "time_ranges": [
+        {
+          "start_sec": 133,
+          "end_sec": 138,
+          "start_hms": "00:02:13.000",
+          "end_hms": "00:02:18.000"
+        },
+        {
+          "start_sec": 680,
+          "end_sec": 685,
+          "start_hms": "00:11:20.000",
+          "end_hms": "00:11:25.000"
+        }
+      ],
+      "event_ids": [
+        "E019",
+        "E054"
+      ],
+      "object_ids": [
+        "O01",
+        "O04",
+        "O05",
+        "O17",
+        "O18"
+      ],
+      "ego_mc_record_ids": [],
+      "targets": [
+        {
+          "artifact": "events",
+          "record_id": "E019",
+          "field": "facts/sugar_bag_folded_or_inserted"
+        },
+        {
+          "artifact": "events",
+          "record_id": "E054",
+          "field": "facts/sugar_bag_inserted_during_event"
+        },
+        {
+          "artifact": "objects",
+          "record_id": "O04",
+          "field": "state_history/O04.S04"
+        },
+        {
+          "artifact": "objects",
+          "record_id": "O04",
+          "field": "state_history/O04.S06"
+        },
+        {
+          "artifact": "objects",
+          "record_id": "O18",
+          "field": "state_history/O18.S01"
+        }
+      ],
+      "evidence_ids": [
+        "V-E019-01",
+        "I-E019-01",
+        "V-E054-01",
+        "V-E054-02",
+        "I-E054-01",
+        "I-O18.S01"
+      ],
+      "sources": [
+        {
+          "path": "annotation_reports/verification_report.md",
+          "section": "F/P2"
+        },
+        {
+          "path": "annotation_reports/crosscheck_report.md",
+          "section": "E.5"
+        }
+      ],
+      "review_method": "人工查看连续视频/高清局部并记录裁决；若仍无证据则保留UNCERTAIN。",
+      "priority_notes": "优先采用第四轮D节明确片段清单；未覆盖问题沿用先前优先级，保留来源，不改变事实状态。"
+    },
+    {
+      "id": "RQ10",
+      "priority": "P2",
+      "status": "OPEN",
+      "title": "蛋盒盖是否曾扣合",
+      "question": "确认扶盖到离开之间是否短暂扣合；报告所述盖仍开启。",
+      "time_ranges": [
+        {
+          "start_sec": 53,
+          "end_sec": 55,
+          "start_hms": "00:00:53.000",
+          "end_hms": "00:00:55.000"
+        }
+      ],
+      "event_ids": [
+        "E008"
+      ],
+      "object_ids": [
+        "O20"
+      ],
+      "ego_mc_record_ids": [],
+      "targets": [
+        {
+          "artifact": "events",
+          "record_id": "E008",
+          "field": "facts/lid_latched"
+        },
+        {
+          "artifact": "objects",
+          "record_id": "O20",
+          "field": "state_history/O20.S02"
+        }
+      ],
+      "evidence_ids": [
+        "V-E008-01",
+        "I-E008-01"
+      ],
+      "sources": [
+        {
+          "path": "annotation_reports/verification_report.md",
+          "section": "F/P2"
+        }
+      ],
+      "review_method": "人工查看连续视频/高清局部并记录裁决；若仍无证据则保留UNCERTAIN。",
+      "priority_notes": "优先采用第四轮D节明确片段清单；未覆盖问题沿用先前优先级，保留来源，不改变事实状态。"
+    },
+    {
+      "id": "RQ11",
+      "priority": "P2",
+      "status": "OPEN",
+      "title": "白色纸盒身份与触碰意图",
+      "question": "仅短暂伸触部分可见，不能补造盒内材料或用途；若无法裁决继续未知。",
+      "time_ranges": [
+        {
+          "start_sec": 240,
+          "end_sec": 258,
+          "start_hms": "00:04:00.000",
+          "end_hms": "00:04:18.000"
+        }
+      ],
+      "event_ids": [
+        "E029"
+      ],
+      "object_ids": [
+        "O05",
+        "O22"
+      ],
+      "ego_mc_record_ids": [],
+      "targets": [
+        {
+          "artifact": "events",
+          "record_id": "E029",
+          "field": "facts/box_identity_and_intent"
+        },
+        {
+          "artifact": "objects",
+          "record_id": "O22",
+          "field": "state_history/O22.S01"
+        }
+      ],
+      "evidence_ids": [
+        "V-E029-01",
+        "V-E029-02",
+        "I-E029-01"
+      ],
+      "sources": [
+        {
+          "path": "annotation_reports/candidate_events_v1.md",
+          "section": "D"
+        }
+      ],
+      "review_method": "人工查看连续视频/高清局部并记录裁决；若仍无证据则保留UNCERTAIN。",
+      "priority_notes": "优先采用第四轮D节明确片段清单；未覆盖问题沿用先前优先级，保留来源，不改变事实状态。"
+    },
+    {
+      "id": "RQ12",
+      "priority": "P2",
+      "status": "OPEN",
+      "title": "是否存在遮挡的额外加粉",
+      "question": "当前仅计两次可见入混合容器；若有连续证据再修订，不能预先添加第三次。",
+      "time_ranges": [
+        {
+          "start_sec": 283,
+          "end_sec": 292,
+          "start_hms": "00:04:43.000",
+          "end_hms": "00:04:52.000"
+        },
+        {
+          "start_sec": 595,
+          "end_sec": 604,
+          "start_hms": "00:09:55.000",
+          "end_hms": "00:10:04.000"
+        }
+      ],
+      "event_ids": [
+        "E051"
+      ],
+      "object_ids": [
+        "O01",
+        "O08",
+        "O15"
+      ],
+      "ego_mc_record_ids": [
+        "R26",
+        "R49"
+      ],
+      "targets": [
+        {
+          "artifact": "events",
+          "record_id": "E051",
+          "field": "facts/additional_hidden_flour_addition"
+        },
+        {
+          "artifact": "events",
+          "record_id": "E051",
+          "field": "facts/supplement_intent"
+        }
+      ],
+      "evidence_ids": [
+        "V-E051-01",
+        "V-E051-02",
+        "I-E051-02",
+        "T-R49",
+        "T-R26"
+      ],
+      "sources": [
+        {
+          "path": "annotation_reports/consistency_revision.md",
+          "section": "4"
+        }
+      ],
+      "review_method": "人工查看连续视频/高清局部并记录裁决；若仍无证据则保留UNCERTAIN。",
+      "priority_notes": "优先采用第四轮D节明确片段清单；未覆盖问题沿用先前优先级，保留来源，不改变事实状态。"
+    },
+    {
+      "id": "RQ13",
+      "priority": "P2",
+      "status": "OPEN",
+      "title": "糖/黄油量值与品牌文字",
+      "question": "1/4杯糖、半杯黄油及品牌名均缺独立视觉读证；保存文本线索，不作已确认量值或品牌。",
+      "time_ranges": [
+        {
+          "start_sec": 107,
+          "end_sec": 132,
+          "start_hms": "00:01:47.000",
+          "end_hms": "00:02:12.000"
+        },
+        {
+          "start_sec": 303,
+          "end_sec": 319,
+          "start_hms": "00:05:03.000",
+          "end_hms": "00:05:19.000"
+        }
+      ],
+      "event_ids": [
+        "E016",
+        "E018",
+        "E034"
+      ],
+      "object_ids": [
+        "O01",
+        "O04",
+        "O05",
+        "O06",
+        "O08",
+        "O09",
+        "O15",
+        "O21"
+      ],
+      "ego_mc_record_ids": [
+        "R13",
+        "R14",
+        "R16",
+        "R28"
+      ],
+      "targets": [
+        {
+          "artifact": "events",
+          "record_id": "E016",
+          "field": "facts/sugar_volume_cup"
+        },
+        {
+          "artifact": "events",
+          "record_id": "E018",
+          "field": "facts/sugar_volume_cup"
+        },
+        {
+          "artifact": "events",
+          "record_id": "E034",
+          "field": "facts/butter_volume_cup"
+        },
+        {
+          "artifact": "objects",
+          "record_id": "O04",
+          "field": "facts/brand_and_product"
+        },
+        {
+          "artifact": "objects",
+          "record_id": "O06",
+          "field": "facts/brand"
+        },
+        {
+          "artifact": "objects",
+          "record_id": "O08",
+          "field": "facts/brand_and_product"
+        }
+      ],
+      "evidence_ids": [
+        "V-E016-01",
+        "T-R13",
+        "T-R14",
+        "T-R16",
+        "V-E018-01",
+        "V-E034-01",
+        "T-R28",
+        "H-O04-NAME",
+        "H-O06-NAME",
+        "H-O08-NAME"
+      ],
+      "sources": [
+        {
+          "path": "annotation_reports/README.md",
+          "section": "字段级证据来源"
+        },
+        {
+          "path": "annotation_reports/crosscheck_report.md",
+          "section": "F.1"
+        }
+      ],
+      "review_method": "人工查看连续视频/高清局部并记录裁决；若仍无证据则保留UNCERTAIN。",
+      "priority_notes": "优先采用第四轮D节明确片段清单；未覆盖问题沿用先前优先级，保留来源，不改变事实状态。"
+    },
+    {
+      "id": "RQ14",
+      "priority": "P2",
+      "status": "OPEN",
+      "title": "报告抽样覆盖和视频尾部缺口",
+      "question": "核实历史抽样实际数量/覆盖率；视频时长696.929567s，报告证据止696.2s，尾部约0.73s未被覆盖。",
+      "time_ranges": [
+        {
+          "start_sec": 696.2,
+          "end_sec": 696.929567,
+          "start_hms": "00:11:36.200",
+          "end_hms": "00:11:36.930"
+        }
+      ],
+      "event_ids": [
+        "E056"
+      ],
+      "object_ids": [],
+      "ego_mc_record_ids": [],
+      "targets": [
+        {
+          "artifact": "events",
+          "record_id": "video",
+          "field": "reported_evidence_range"
+        }
+      ],
+      "evidence_ids": [],
+      "sources": [
+        {
+          "path": "annotation_reports/consistency_revision.md",
+          "section": "0"
+        },
+        {
+          "path": "source/GX010021.MP4",
+          "section": "ffprobe metadata"
+        }
+      ],
+      "review_method": "人工核查抽样记录与原视频尾部；本次整合不解码帧、不扩写事件。",
+      "priority_notes": "元数据新发现；不声称实际帧覆盖完整。"
+    }
+  ],
+  "statistics": {
+    "review_item_count": 14,
+    "priority": {
+      "P0": 2,
+      "P1": 4,
+      "P2": 8
+    },
+    "open_count": 14
+  }
+}

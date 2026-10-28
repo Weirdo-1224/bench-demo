@@ -1,0 +1,48 @@
+{
+  "source_sha256": "fe4a11550bf2aea09a39ce1e72dba4633adc8c8b6a540e9894696e8b2ed1c8f9",
+  "source_interval_sec": [
+    0,
+    540.0
+  ],
+  "role": "critical_mask_history",
+  "mask_interval_sec": [
+    390.0,
+    462.0
+  ],
+  "purpose": "HUMAN_REVIEW_ONLY; agent will receive audited 1fps source frames",
+  "definition_sha256": "439e363da8d1d2028932938b8b84d9231cca9a1c116178e9a506af7478f5e2ca",
+  "path": "experiments/icme2027_pilot/clips/P02/critical_mask_history.mp4",
+  "sha256": "b6bc42f3cf821fc86a2b0f4a0c4f9f4418e3e4a2f52372c2cc14712f29be9ac2",
+  "duration_sec": 540.006133,
+  "frames": 16184,
+  "command": [
+    "ffmpeg",
+    "-hide_banner",
+    "-v",
+    "error",
+    "-nostdin",
+    "-n",
+    "-i",
+    "D:\\Python_Project\\bench-demo\\golden_episode\\GX010021\\source\\GX010021.MP4",
+    "-map",
+    "0:v:0",
+    "-an",
+    "-sn",
+    "-dn",
+    "-vf",
+    "trim=start=0:end=540.0,setpts=PTS-STARTPTS,drawbox=x=0:y=0:w=iw:h=ih:color=black:t=fill:enable='gte(t,390.0)*lt(t,462.0)'",
+    "-c:v",
+    "libx264",
+    "-preset",
+    "fast",
+    "-crf",
+    "20",
+    "-fps_mode",
+    "vfr",
+    "-movflags",
+    "+faststart",
+    "D:\\Python_Project\\bench-demo\\experiments\\icme2027_pilot\\clips\\P02\\critical_mask_history.mp4"
+  ],
+  "full_decode": "PASS",
+  "local_to_source": "source_sec approximately local_sec + 0; CFR boundary within one source frame"
+}

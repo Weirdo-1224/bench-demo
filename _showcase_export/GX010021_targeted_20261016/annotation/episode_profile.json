@@ -1,0 +1,28 @@
+{
+  "id": "GX010021",
+  "original_id": "GX010021",
+  "source_refs": [
+    {
+      "file": "golden_episode/GX010021/tasks/v2_candidates/task_candidates.json",
+      "json_pointer": "/media"
+    },
+    {
+      "file": "golden_episode/GX010021/annotations/v2_video_model/annotation_manifest.json",
+      "json_pointer": "/media"
+    }
+  ],
+  "status": "CANDIDATE",
+  "annotation_version": "session2-v2.0-candidate",
+  "duration_sec": 696.929567,
+  "width": 854,
+  "height": 480,
+  "fps": 29.97002997002997,
+  "fps_rational": "30000/1001",
+  "has_audio": false,
+  "task_background": "柔性程序型烘焙视频先导 Episode；非 SOP 违规识别专案",
+  "modality_limits": [
+    "原视频无音轨",
+    "原 annotations 文本不可自动视为在线 Agent 可用输入",
+    "局部帧不代表全片逐帧审定"
+  ]
+}

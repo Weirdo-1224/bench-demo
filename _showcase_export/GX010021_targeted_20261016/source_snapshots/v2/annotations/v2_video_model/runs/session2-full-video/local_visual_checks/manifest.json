@@ -1,0 +1,123 @@
+{
+  "annotation_status": "CANDIDATE",
+  "records": [
+    {
+      "id": "LC-15-2",
+      "requested_seek_time": 15.2,
+      "source_pts": 456456,
+      "source_time": 15.2152,
+      "time_base": "1/30000",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/runs/session2-full-video/local_visual_checks/frame-15.2.png",
+      "sha256": "f91de59068303290b11865cee8ac18f854aaf2e273c295befdf12542c183afd9",
+      "observation": "Display reads 100 in this image; does not determine temperature units, target temperature, or preheat completion.",
+      "annotation_status": "CANDIDATE",
+      "observer": "assistant_visual_inspection",
+      "scope": "SINGLE_SOURCE_FRAME_ONLY",
+      "source_sha256": "fe4a11550bf2aea09a39ce1e72dba4633adc8c8b6a540e9894696e8b2ed1c8f9"
+    },
+    {
+      "id": "LC-76-2",
+      "requested_seek_time": 76.2,
+      "source_pts": 2286284,
+      "source_time": 76.209467,
+      "time_base": "1/30000",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/runs/session2-full-video/local_visual_checks/frame-76.2.png",
+      "sha256": "a465628d7247419d7bd34054e8535b968672893fa30e16afd7922e2d7665e5f5",
+      "observation": "Two visible yolks inside mixing container; one further egg is on the countertop. Does not prove total cracked count.",
+      "annotation_status": "CANDIDATE",
+      "observer": "assistant_visual_inspection",
+      "scope": "SINGLE_SOURCE_FRAME_ONLY",
+      "source_sha256": "fe4a11550bf2aea09a39ce1e72dba4633adc8c8b6a540e9894696e8b2ed1c8f9"
+    },
+    {
+      "id": "LC-83-2",
+      "requested_seek_time": 83.2,
+      "source_pts": 2496494,
+      "source_time": 83.216467,
+      "time_base": "1/30000",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/runs/session2-full-video/local_visual_checks/frame-83.2.png",
+      "sha256": "1cbecddef6aca18b8fa77d1614ebe1a6b97b1caeff3bcfbf635806471da62ef5",
+      "observation": "Two yolks remain visible; a hand holds an egg near the countertop. Shell count/egg integrity and final destination remain uncertain.",
+      "annotation_status": "CANDIDATE",
+      "observer": "assistant_visual_inspection",
+      "scope": "SINGLE_SOURCE_FRAME_ONLY",
+      "source_sha256": "fe4a11550bf2aea09a39ce1e72dba4633adc8c8b6a540e9894696e8b2ed1c8f9"
+    },
+    {
+      "id": "LC-431-2",
+      "requested_seek_time": 431.2,
+      "source_pts": 12936924,
+      "source_time": 431.2308,
+      "time_base": "1/30000",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/runs/session2-full-video/local_visual_checks/frame-431.2.png",
+      "sha256": "01d0924407c43b6787cfbcf09e12cf39db29975b7832b851dd4d1441c3222a42",
+      "observation": "Yellow liquid and a pale solid block coexist in the glass dish after second microwave removal.",
+      "annotation_status": "CANDIDATE",
+      "observer": "assistant_visual_inspection",
+      "scope": "SINGLE_SOURCE_FRAME_ONLY",
+      "source_sha256": "fe4a11550bf2aea09a39ce1e72dba4633adc8c8b6a540e9894696e8b2ed1c8f9"
+    },
+    {
+      "id": "LC-445-2",
+      "requested_seek_time": 445.2,
+      "source_pts": 13356343,
+      "source_time": 445.211433,
+      "time_base": "1/30000",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/runs/session2-full-video/local_visual_checks/frame-445.2.png",
+      "sha256": "5d339059ad2319c422d4bd704abecadfaef95b6e3ded8d71c26094f7c051d630",
+      "observation": "A black tool is inside the yellow liquid; pale solid material remains visible. This snapshot does not prove a full stir interval or final melting.",
+      "annotation_status": "CANDIDATE",
+      "observer": "assistant_visual_inspection",
+      "scope": "SINGLE_SOURCE_FRAME_ONLY",
+      "source_sha256": "fe4a11550bf2aea09a39ce1e72dba4633adc8c8b6a540e9894696e8b2ed1c8f9"
+    },
+    {
+      "id": "LC-599-2",
+      "requested_seek_time": 599.2,
+      "source_pts": 17976959,
+      "source_time": 599.231967,
+      "time_base": "1/30000",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/runs/session2-full-video/local_visual_checks/frame-599.2.png",
+      "sha256": "b3cc7f4ce8ddcdfb502b400f69693a853648c7d8d3a2a7929cd5f0dc8fde68ab",
+      "observation": "Brown paper bag is tilted over main mixture container; powder-like pale material appears on the mixture. Exact quantity is unknown.",
+      "annotation_status": "CANDIDATE",
+      "observer": "assistant_visual_inspection",
+      "scope": "SINGLE_SOURCE_FRAME_ONLY",
+      "source_sha256": "fe4a11550bf2aea09a39ce1e72dba4633adc8c8b6a540e9894696e8b2ed1c8f9"
+    },
+    {
+      "id": "LC-610-2",
+      "requested_seek_time": 610.2,
+      "source_pts": 18306288,
+      "source_time": 610.2096,
+      "time_base": "1/30000",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/runs/session2-full-video/local_visual_checks/frame-610.2.png",
+      "sha256": "494a9228b74f2b521713eb05c54b639442e8ea23dc61dd647aaea999aebf664d",
+      "observation": "Mixer beaters are inside the main container during late mixing; output smoothness and precise start/stop remain unknown.",
+      "annotation_status": "CANDIDATE",
+      "observer": "assistant_visual_inspection",
+      "scope": "SINGLE_SOURCE_FRAME_ONLY",
+      "source_sha256": "fe4a11550bf2aea09a39ce1e72dba4633adc8c8b6a540e9894696e8b2ed1c8f9"
+    },
+    {
+      "id": "LC-680-2",
+      "requested_seek_time": 680.2,
+      "source_pts": 20406386,
+      "source_time": 680.212867,
+      "time_base": "1/30000",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/runs/session2-full-video/local_visual_checks/frame-680.2.png",
+      "sha256": "82c5e98fab31057f00b8375ca3b2140f52a50bb133e34fb8a896ef8801f7a2c3",
+      "observation": "Batter is in loaf pan; main mixing container retains thin residue and a black tool. No new lid-closing or tool-placement action can be inferred from this one image.",
+      "annotation_status": "CANDIDATE",
+      "observer": "assistant_visual_inspection",
+      "scope": "SINGLE_SOURCE_FRAME_ONLY",
+      "source_sha256": "fe4a11550bf2aea09a39ce1e72dba4633adc8c8b6a540e9894696e8b2ed1c8f9"
+    }
+  ],
+  "method": "FFmpeg input seek; first decoded frame at/after requested media time; PTS obtained by independent full ffprobe decode",
+  "limitations": [
+    "Eight targeted snapshots, not continuous clip review",
+    "No paid API calls used",
+    "No human review or Ground Truth promotion"
+  ]
+}

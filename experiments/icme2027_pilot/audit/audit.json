@@ -1,0 +1,101 @@
+{
+  "created_at": "2026-10-28T11:37:35+08:00",
+  "git_head": "d0db40fb7a7d7dd73edab546505b22b6d4b71eee",
+  "git_status_before": "?? _showcase_export/\n?? experiments/\n",
+  "assets": [
+    {
+      "path": "golden_episode/GX010021/source/GX010021.MP4",
+      "exists": true,
+      "sha256": "fe4a11550bf2aea09a39ce1e72dba4633adc8c8b6a540e9894696e8b2ed1c8f9"
+    },
+    {
+      "path": "golden_episode/GX010021/tasks/v1_candidates/pilot_task_candidates.json",
+      "exists": true,
+      "sha256": "58385dde24086f21404215449e644b90894ea8c226070af79122bed7f4c2705f"
+    },
+    {
+      "path": "golden_episode/GX010021/tasks/v2_candidates/task_candidates.json",
+      "exists": true,
+      "sha256": "716ee7c3b88e644a25f334096485b3bece0fc5cbf2119975f66e67794157b5e9"
+    },
+    {
+      "path": "golden_episode/GX010021/annotations/v2_video_model/annotation_manifest.json",
+      "exists": true,
+      "sha256": "33aa4b935435c89f3e97cdda2b1e0b81d78572b018c08bcef517f28b76fd1a4c"
+    },
+    {
+      "path": "golden_episode/GX010021/annotations/v2_video_model/full_video_report.md",
+      "exists": true,
+      "sha256": "012f8b7d0bb614ef244af39ae41405a8e0272c286b85cb1489607bdab155ad2e"
+    },
+    {
+      "path": "golden_episode/GX010021/annotations/v2_video_model/crosscheck_report.md",
+      "exists": true,
+      "sha256": "73986909d2f36b8d7d565171fdbf972d1f2dbd2a8d64c09acb9bdb1c28cb4dcd"
+    },
+    {
+      "path": "annotation_pipeline/providers/qwen.py",
+      "exists": true,
+      "sha256": "6fece78d5306a77769d0f1f5b95d95b94e4771b42cfe7f261f171f73091fefbc"
+    },
+    {
+      "path": "annotation_pipeline/providers/qwen_native.py",
+      "exists": true,
+      "sha256": "b8f932aeccf368ba74c1124fc9580b7be265baf6813cbe6b60e26c2fac892541"
+    },
+    {
+      "path": "annotation_pipeline/media.py",
+      "exists": true,
+      "sha256": "ad1780bfea92558993b1f91c5849f92a059fd8e7ffad22f49067753f02028256"
+    },
+    {
+      "path": "annotation_pipeline/common.py",
+      "exists": true,
+      "sha256": "a20b43ace2b1d59cc08e646a028a7222802f86e3205188277be426537ad28559"
+    }
+  ],
+  "credentials": {
+    "path": "annotation_pipeline/credentials.local.json",
+    "exists": true,
+    "loadable_key": true,
+    "network_verified": false
+  },
+  "task_sources": {
+    "v1": {
+      "total": 8,
+      "T1": 4,
+      "T3": 1,
+      "human_gold": 0
+    },
+    "v2": {
+      "total": 12,
+      "T1": 4,
+      "T3": 4,
+      "human_gold": 0
+    }
+  },
+  "python": "3.11.6 (tags/v3.11.6:8b6ee5b, Oct  2 2023, 14:57:12) [MSC v.1935 64 bit (AMD64)]",
+  "executables": {
+    "ffmpeg": "C:\\Users\\11929\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-9.0.1-full_build\\bin\\ffmpeg.EXE",
+    "ffprobe": "C:\\Users\\11929\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-9.0.1-full_build\\bin\\ffprobe.EXE"
+  },
+  "versions": {
+    "ffmpeg": "ffmpeg version 9.0.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers",
+    "ffprobe": "ffprobe version 9.0.1-full_build-www.gyan.dev Copyright (c) 2007-2026 the FFmpeg developers"
+  },
+  "dependencies": {
+    "requests": true,
+    "yaml": true,
+    "PIL": true,
+    "jsonschema": true
+  },
+  "api_calls_this_phase": 0,
+  "cost_estimate_this_phase_cny": 0,
+  "reusable": {
+    "frame_provider": "annotation_pipeline.providers.qwen.QwenProvider",
+    "native_provider": "annotation_pipeline.providers.qwen_native.QwenNativeProvider (not needed for exact-PTS frames)",
+    "frames": "annotation_pipeline.media.extract_frames / verify_frames / plan_segments",
+    "credentials": "annotation_pipeline.common.load_api_key",
+    "media": "annotation_pipeline.inspect_video.inspect_video"
+  }
+}

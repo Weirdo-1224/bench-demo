@@ -1,0 +1,39 @@
+{
+  "condition": "recent_only",
+  "segment_id": "seg-0004",
+  "final": true,
+  "request_sha256": "5c417aa4fb122a5ef484ecdd0cd85b5e494b403a662f723732b0885ebf977ff1",
+  "previous_checkpoint_sha256": null,
+  "raw_response_ref": "experiments/icme2027_pilot/runs/p01-v1/recent_only/seg-0004/attempt-000.response.json",
+  "raw_response_sha256": "d087e87ecb3a198e3b061f7626598a207d4c0afd22a33777bd2d7cde9aa732e7",
+  "parsed": {
+    "answer": "NO",
+    "answerability": "ANSWERABLE",
+    "evidence_intervals_sec": [
+      [
+        0.0,
+        299.032067
+      ]
+    ],
+    "reason": "从视频开始到第299秒，画面中可见一台白色手持电动搅拌器放置在台面左侧（例如0:00、0:15等帧），但从未被拿起或用于搅拌任何容器内的材料。所有操作仅涉及手动倾倒面粉（如0:34–0:42）和用勺子/量杯转移物料（如0:48–0:52），未见搅拌动作。因此，截至300秒，电动搅拌器未被使用。"
+  },
+  "metadata": {
+    "returned_model": "qwen3-vl-plus",
+    "usage": {
+      "prompt_tokens": 13153,
+      "completion_tokens": 161,
+      "total_tokens": 13314,
+      "completion_tokens_details": {
+        "text_tokens": 161
+      },
+      "prompt_tokens_details": {
+        "text_tokens": 1001,
+        "video_tokens": 12152,
+        "cached_tokens": 0
+      }
+    },
+    "finish_reason": "stop",
+    "request_id": "chatcmpl-3b3304c2-023a-919c-9569-035ceaccb137"
+  },
+  "checkpoint_sha256": "1ebdfedd1bbcd1a15f33dd5a045b07e37d2e3dcc9e99cdb8e4db9bb694908f19"
+}

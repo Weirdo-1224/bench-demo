@@ -1,0 +1,113 @@
+{
+  "passed": false,
+  "errors": [
+    "Input SHA256 changed: annotation_reports/README.md"
+  ],
+  "notes": [
+    "E002/V-E002-01: 结果/边界证据晚于秒级事件末界0.2s，保留原范围；不是新的事件。",
+    "E002/V-E002-02: 结果/边界证据晚于秒级事件末界1.2s，保留原范围；不是新的事件。",
+    "E006/V-E006-01: 结果/边界证据晚于秒级事件末界0.2s，保留原范围；不是新的事件。",
+    "E007/V-E007-02: 结果/边界证据晚于秒级事件末界0.2s，保留原范围；不是新的事件。",
+    "E009/V-E009-01: 结果/边界证据晚于秒级事件末界0.2s，保留原范围；不是新的事件。",
+    "E010/V-E010-02: 结果/边界证据晚于秒级事件末界0.2s，保留原范围；不是新的事件。",
+    "E011/V-E011-02: 结果/边界证据晚于秒级事件末界0.2s，保留原范围；不是新的事件。",
+    "E012/V-E012-02: 结果/边界证据晚于秒级事件末界0.2s，保留原范围；不是新的事件。",
+    "E013/V-E013-01: 结果/边界证据晚于秒级事件末界0.2s，保留原范围；不是新的事件。",
+    "E014/V-E014-01: 结果/边界证据晚于秒级事件末界0.2s，保留原范围；不是新的事件。",
+    "E020/V-E020-01: 结果/边界证据晚于秒级事件末界0.2s，保留原范围；不是新的事件。",
+    "E024/V-E024-01: 结果/边界证据晚于秒级事件末界0.2s，保留原范围；不是新的事件。",
+    "E027/V-E027-03: 结果/边界证据晚于秒级事件末界0.2s，保留原范围；不是新的事件。",
+    "E033/V-E033-01: 结果/边界证据晚于秒级事件末界0.2s，保留原范围；不是新的事件。",
+    "E035/V-E035-01: 结果/边界证据晚于秒级事件末界0.2s，保留原范围；不是新的事件。",
+    "E038/V-E038-01: 结果/边界证据晚于秒级事件末界0.2s，保留原范围；不是新的事件。",
+    "E044/V-E044-02: 结果/边界证据晚于秒级事件末界1.2s，保留原范围；不是新的事件。",
+    "E056/V-E056-01: 结果/边界证据晚于秒级事件末界0.2s，保留原范围；不是新的事件。",
+    "报告采样范围696.2s与文件元数据时长696.929567s不同，尾部缺口保留在RQ14。",
+    "事件重叠可由结果帧、停机子动作或近似边界造成；不强制把时间线切成互斥区间。"
+  ],
+  "checks": {
+    "schema": 3,
+    "unique_ids": 63,
+    "event_set": 3,
+    "time": 1240,
+    "provenance": 1150,
+    "references": 1684,
+    "evidence_types": 681,
+    "event_status": 112,
+    "uncertainty": 224,
+    "state_history": 252,
+    "review_queue": 165,
+    "critical_facts": 15,
+    "statistics": 11,
+    "input_integrity": 15
+  },
+  "check_count": 5618,
+  "negative_checks": [
+    {
+      "case": "out_of_video_time",
+      "rejected": true,
+      "first_error": "events$/events/0/time: out-of-range/inverted time 0.0–800"
+    },
+    {
+      "case": "duplicate_event_id",
+      "rejected": true,
+      "first_error": "Duplicate event ID"
+    },
+    {
+      "case": "dangling_object_reference",
+      "rejected": true,
+      "first_error": "E001: dangling object ID"
+    },
+    {
+      "case": "dangling_evidence_reference",
+      "rejected": true,
+      "first_error": "events$/events/0/facts/0: dangling evidence ID"
+    },
+    {
+      "case": "wrong_evidence_grade",
+      "rejected": true,
+      "first_error": "V-E001-01: kind/grade mismatch"
+    },
+    {
+      "case": "invalid_event_status",
+      "rejected": true,
+      "first_error": "events: Schema violation: events/0/verification/current_claim_status: 'GOLD' is not one of ['REPORTED_SUPPORTED', 'CORRECTED_CANDIDATE', 'UNCERTAIN']"
+    },
+    {
+      "case": "E042_current_claim_inherits_contradicted",
+      "rejected": true,
+      "first_error": "events: Schema violation: events/41/verification/current_claim_status: 'CONTRADICTED' is not one of ['REPORTED_SUPPORTED', 'CORRECTED_CANDIDATE', 'UNCERTAIN']"
+    },
+    {
+      "case": "restore_E057",
+      "rejected": true,
+      "first_error": "events: Schema violation: events: array length 57 exceeds maximum 56"
+    },
+    {
+      "case": "V2_egg_count_promoted",
+      "rejected": true,
+      "first_error": "E007/taken_count: V2/T promoted to supported"
+    },
+    {
+      "case": "oil_film_promoted",
+      "rejected": true,
+      "first_error": "E049/inner_wall_oil_film: V2/T promoted to supported"
+    },
+    {
+      "case": "E054_insertion_action_added",
+      "rejected": true,
+      "first_error": "E054 must only retain the lid-closing action"
+    },
+    {
+      "case": "original_candidate_changed",
+      "rejected": true,
+      "first_error": "E001: structured original candidate changed"
+    },
+    {
+      "case": "uncertainty_review_item_removed",
+      "rejected": true,
+      "first_error": "E042/solid_fraction: uncertainty missing from review queue"
+    }
+  ],
+  "negative_checks_passed": true
+}

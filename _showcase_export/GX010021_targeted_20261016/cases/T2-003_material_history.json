@@ -1,0 +1,1095 @@
+{
+  "id": "GX010021-V2-T2-003",
+  "original_id": "GX010021-V2-T2-003",
+  "source_refs": [
+    {
+      "file": "golden_episode/GX010021/tasks/v2_candidates/task_candidates.json",
+      "json_pointer": "/tasks/6"
+    }
+  ],
+  "status": "PILOT_CANDIDATE",
+  "annotation_version": "gx010021-task-candidate-v0.1",
+  "original_task_id": "GX010021-V2-T2-003",
+  "case_kind": "long_horizon_material_history",
+  "title": "入模后奶和粉的材料传递证据整合",
+  "track": "T2",
+  "subtask": "T2.3",
+  "raw_text": "观察当前烤模中的混合物。请根据此前实际可见操作，说明奶和粉如何进入混合过程、经由哪些容器，以及它们与当前烤模内容的候选联系。区分量取与真正入料，指出数量和身份不能确认的地方。",
+  "display_text": "入模后奶和粉的材料传递证据整合",
+  "trigger": {
+    "kind": "TIMED_PROBE",
+    "checkpoint_times": [],
+    "query_time": 680.212867,
+    "monitoring_interval": null,
+    "isolation_required": true,
+    "mutate_main_state": false
+  },
+  "output_format": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "milk_route": {
+        "type": "array",
+        "items": {
+          "enum": [
+            "milk_carton",
+            "flour_bag",
+            "sugar_bag",
+            "measuring_utensil_observation",
+            "glass_dish",
+            "main_container",
+            "baking_pan",
+            "other",
+            "unknown",
+            "uncertain"
+          ]
+        },
+        "minItems": 2
+      },
+      "flour_routes": {
+        "type": "array",
+        "items": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "milk_carton",
+              "flour_bag",
+              "sugar_bag",
+              "measuring_utensil_observation",
+              "glass_dish",
+              "main_container",
+              "baking_pan",
+              "other",
+              "unknown",
+              "uncertain"
+            ]
+          },
+          "minItems": 2
+        },
+        "minItems": 0
+      },
+      "downstream_route": {
+        "type": "array",
+        "items": {
+          "enum": [
+            "milk_carton",
+            "flour_bag",
+            "sugar_bag",
+            "measuring_utensil_observation",
+            "glass_dish",
+            "main_container",
+            "baking_pan",
+            "other",
+            "unknown",
+            "uncertain"
+          ]
+        },
+        "minItems": 2
+      },
+      "observed_flour_entry_segments": {
+        "anyOf": [
+          {
+            "type": "integer",
+            "minimum": 0
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "measuring_only_segment_counts_as_entry": {
+        "type": "boolean"
+      },
+      "physical_utensil_identity": {
+        "type": "string"
+      },
+      "material_continuity": {
+        "type": "string"
+      },
+      "total_volume": {
+        "type": "string"
+      },
+      "complete_transfer": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "milk_route",
+      "flour_routes",
+      "downstream_route",
+      "observed_flour_entry_segments",
+      "measuring_only_segment_counts_as_entry",
+      "physical_utensil_identity",
+      "material_continuity",
+      "total_volume",
+      "complete_transfer"
+    ]
+  },
+  "candidate_gt": {
+    "milk_route": [
+      "milk_carton",
+      "measuring_utensil_observation",
+      "main_container"
+    ],
+    "flour_routes": [
+      [
+        "flour_bag",
+        "measuring_utensil_observation",
+        "main_container"
+      ],
+      [
+        "flour_bag",
+        "main_container"
+      ]
+    ],
+    "downstream_route": [
+      "main_container",
+      "baking_pan"
+    ],
+    "observed_flour_entry_segments": 2,
+    "measuring_only_segment_counts_as_entry": false,
+    "physical_utensil_identity": "unknown",
+    "material_continuity": "candidate_not_verified",
+    "total_volume": "unknown",
+    "complete_transfer": "unknown"
+  },
+  "adjudicated_gt": null,
+  "reason_for_status": {
+    "track_fit": "符合T2.3跨阶段对象传递整合；不是必然依赖/仅回忆材料列表",
+    "evidence_support": "链节点均有既有V2或保留历史定位；晚期原帧只佐证阶段，完整路径与持续身份仍候选",
+    "objective_scoring": "可以调试结构化路径和证据覆盖；仅候选评分，不硬评分身份/数量/质量守恒",
+    "future_and_shortcut_audit": "问题不提示两条粉路径；680.212867之后的入炉证据不使用；不把V2-R9先后关系升级依赖",
+    "ability_necessity": "近期面糊外观通常不能还原153–291秒路径，是可检验假设；当前物品/菜谱常识仍可能猜材料，要同时看路线和证据",
+    "evidence_gaps": [
+      "G05",
+      "G07",
+      "G08"
+    ]
+  },
+  "evidence_chain": [
+    {
+      "set_id": "material-lineage",
+      "bindings": [
+        {
+          "evidence_id": "H1-V-E022-01",
+          "role": "奶盒到量具"
+        },
+        {
+          "evidence_id": "H1-V-E023-01",
+          "role": "奶从量具到主容器"
+        },
+        {
+          "evidence_id": "H1-V-E031-01",
+          "role": "粉袋到量具"
+        },
+        {
+          "evidence_id": "H1-V-E032-01",
+          "role": "粉从量具到主容器"
+        },
+        {
+          "evidence_id": "H1-V-E051-01",
+          "role": "晚期袋到主容器候选直接路径"
+        },
+        {
+          "evidence_id": "V2-V24",
+          "role": "主容器到烤模"
+        },
+        {
+          "evidence_id": "LC-680-2",
+          "role": "当前烤模内容锚点"
+        }
+      ],
+      "validity": "CANDIDATE_MINIMAL_UNVERIFIED",
+      "necessity": [
+        "移除盒杯段不能证明奶路径起点；移除粉量取或入料段无法区分两者；移除晚期段丢失另一条路径；移除主容器至烤模段不能把早期入料与当前内容候选连接"
+      ],
+      "applies_at_media_time": 680.212867,
+      "covers_fields": [
+        "milk_route",
+        "flour_routes",
+        "downstream_route"
+      ]
+    }
+  ],
+  "reference_items": [
+    {
+      "field": "milk_route",
+      "value": [
+        "milk_carton",
+        "measuring_utensil_observation",
+        "main_container"
+      ],
+      "evidence_ids": [
+        "H1-V-E022-01",
+        "H1-V-E023-01"
+      ],
+      "observable_time": {
+        "earliest": 161.2,
+        "latest": 161.2,
+        "status": "CANDIDATE_OBSERVED_AT_NOT_FIRST_ONSET"
+      },
+      "note": "量具观察组不等于同一物理杯",
+      "evaluate_at_media_time": 680.212867
+    },
+    {
+      "field": "flour_routes",
+      "value": [
+        [
+          "flour_bag",
+          "measuring_utensil_observation",
+          "main_container"
+        ],
+        [
+          "flour_bag",
+          "main_container"
+        ]
+      ],
+      "evidence_ids": [
+        "H1-V-E031-01",
+        "H1-V-E032-01",
+        "H1-V-E051-01"
+      ],
+      "observable_time": {
+        "earliest": 602.2,
+        "latest": 602.2,
+        "status": "CANDIDATE_OBSERVED_AT_NOT_FIRST_ONSET"
+      },
+      "note": "两段候选可见入料；不是全片次数真值",
+      "evaluate_at_media_time": 680.212867
+    },
+    {
+      "field": "downstream_route",
+      "value": [
+        "main_container",
+        "baking_pan"
+      ],
+      "evidence_ids": [
+        "V2-V24",
+        "LC-680-2"
+      ],
+      "observable_time": {
+        "earliest": 680.212867,
+        "latest": 680.212867,
+        "status": "CANDIDATE_OBSERVED_AT_NOT_FIRST_ONSET"
+      },
+      "note": "非全量转移证明",
+      "evaluate_at_media_time": 680.212867
+    }
+  ],
+  "record_refs": [
+    {
+      "kind": "relation",
+      "id": "PATH-03",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+      "json_pointer": "/records/16",
+      "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+    },
+    {
+      "kind": "relation",
+      "id": "PATH-04",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+      "json_pointer": "/records/17",
+      "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+    },
+    {
+      "kind": "relation",
+      "id": "PATH-05",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+      "json_pointer": "/records/18",
+      "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+    },
+    {
+      "kind": "relation",
+      "id": "PATH-06",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+      "json_pointer": "/records/19",
+      "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+    },
+    {
+      "kind": "relation",
+      "id": "PATH-07",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+      "json_pointer": "/records/20",
+      "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+    },
+    {
+      "kind": "relation",
+      "id": "V2-R12",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+      "json_pointer": "/records/10",
+      "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+    },
+    {
+      "kind": "object",
+      "id": "V2-O1",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/objects.json",
+      "json_pointer": "/records/0",
+      "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+    },
+    {
+      "kind": "object",
+      "id": "V2-O10",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/objects.json",
+      "json_pointer": "/records/9",
+      "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+    },
+    {
+      "kind": "object",
+      "id": "V2-O13",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/objects.json",
+      "json_pointer": "/records/12",
+      "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+    },
+    {
+      "kind": "event",
+      "id": "H1-E051",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/events.json",
+      "json_pointer": "/records/49",
+      "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+    }
+  ],
+  "media_frames": [
+    {
+      "id": "K002",
+      "original_id": "K002",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/showcase/showcase_manifest.json",
+          "json_pointer": "/asset_registry/0"
+        }
+      ],
+      "status": "UNCONFIRMED",
+      "annotation_version": "session4a-showcase-v1",
+      "source_path": "D:\\Python_Project\\bench-demo\\golden_episode\\GX010021\\evidence\\frames\\K002_153.219733.png",
+      "packaged_path": "media/frames/K002_153.219733.png",
+      "sha256": "36af6f4fa88fcbde935f3125e539a8825e2aa122d881cb490858a412a62961df",
+      "original_video_time_sec": 153.21973333333332,
+      "time_sec": 153.21973333333332,
+      "source_pts": 4596592,
+      "time_base": "1/30000",
+      "requested_seek_time_sec": 153.2,
+      "task_ids": [
+        "GX010021-V2-T2-003"
+      ],
+      "evidence_ids": [
+        "H1-V-E022-01"
+      ],
+      "event_ids": [
+        "V2-E7"
+      ],
+      "newly_extracted_for_showcase": false,
+      "transformation": "BYTE_IDENTICAL_COPY",
+      "display_text": "奶盒与黑色量具处于量取阶段；不等于奶已进入主容器。",
+      "raw_text": null
+    },
+    {
+      "id": "K004",
+      "original_id": "K004",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/showcase/showcase_manifest.json",
+          "json_pointer": "/asset_registry/1"
+        }
+      ],
+      "status": "UNCONFIRMED",
+      "annotation_version": "session4a-showcase-v1",
+      "source_path": "D:\\Python_Project\\bench-demo\\golden_episode\\GX010021\\evidence\\frames\\K004_159.225733.png",
+      "packaged_path": "media/frames/K004_159.225733.png",
+      "sha256": "be813e91f9b6d946c118de126e4484807addf5b0933600bd35c4096c9423e7f8",
+      "original_video_time_sec": 159.22573333333332,
+      "time_sec": 159.22573333333332,
+      "source_pts": 4776772,
+      "time_base": "1/30000",
+      "requested_seek_time_sec": 159.2,
+      "task_ids": [
+        "GX010021-V2-T2-003"
+      ],
+      "evidence_ids": [
+        "H1-V-E023-01"
+      ],
+      "event_ids": [
+        "V2-E8"
+      ],
+      "newly_extracted_for_showcase": false,
+      "transformation": "BYTE_IDENTICAL_COPY",
+      "display_text": "量具在主容器上方倾斜，展示奶入主容器的候选阶段。",
+      "raw_text": null
+    },
+    {
+      "id": "K013",
+      "original_id": "K013",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/showcase/showcase_manifest.json",
+          "json_pointer": "/asset_registry/2"
+        }
+      ],
+      "status": "UNCONFIRMED",
+      "annotation_version": "session4a-showcase-v1",
+      "source_path": "D:\\Python_Project\\bench-demo\\golden_episode\\GX010021\\evidence\\frames\\K013_281.214267.png",
+      "packaged_path": "media/frames/K013_281.214267.png",
+      "sha256": "71ba3a4978ca2984347f6a3515b48e0e8e19a957803df5755fda5588ca7af52e",
+      "original_video_time_sec": 281.2142666666667,
+      "time_sec": 281.2142666666667,
+      "source_pts": 8436428,
+      "time_base": "1/30000",
+      "requested_seek_time_sec": 281.2,
+      "task_ids": [
+        "GX010021-V2-T2-003"
+      ],
+      "evidence_ids": [
+        "H1-V-E031-01"
+      ],
+      "event_ids": [
+        "V2-E12"
+      ],
+      "newly_extracted_for_showcase": false,
+      "transformation": "BYTE_IDENTICAL_COPY",
+      "display_text": "量具内可见白色粉状物；这张图展示量取，不展示粉已入主容器。",
+      "raw_text": null
+    },
+    {
+      "id": "K015",
+      "original_id": "K015",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/showcase/showcase_manifest.json",
+          "json_pointer": "/asset_registry/3"
+        }
+      ],
+      "status": "UNCONFIRMED",
+      "annotation_version": "session4a-showcase-v1",
+      "source_path": "D:\\Python_Project\\bench-demo\\golden_episode\\GX010021\\evidence\\frames\\K015_291.224267.png",
+      "packaged_path": "media/frames/K015_291.224267.png",
+      "sha256": "65ca6f02f992bf8d8d15e90075075bfe7fa9d2a0d64156b8bffcd138b27bdb02",
+      "original_video_time_sec": 291.22426666666667,
+      "time_sec": 291.22426666666667,
+      "source_pts": 8736728,
+      "time_base": "1/30000",
+      "requested_seek_time_sec": 291.2,
+      "task_ids": [
+        "GX010021-V2-T2-003"
+      ],
+      "evidence_ids": [
+        "H1-V-E032-01"
+      ],
+      "event_ids": [
+        "V2-E13"
+      ],
+      "newly_extracted_for_showcase": false,
+      "transformation": "BYTE_IDENTICAL_COPY",
+      "display_text": "主容器表面可见白色粉层、量具在其上方；单帧不证明整段倾倒。",
+      "raw_text": null
+    },
+    {
+      "id": "LC-599-2",
+      "original_id": "LC-599-2",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/showcase/showcase_manifest.json",
+          "json_pointer": "/asset_registry/8"
+        }
+      ],
+      "status": "UNCONFIRMED",
+      "annotation_version": "session4a-showcase-v1",
+      "source_path": "D:\\Python_Project\\bench-demo\\golden_episode\\GX010021\\annotations\\v2_video_model\\runs\\session2-full-video\\local_visual_checks\\frame-599.2.png",
+      "packaged_path": "media/frames/LC-599-2_frame-599.2.png",
+      "sha256": "b3cc7f4ce8ddcdfb502b400f69693a853648c7d8d3a2a7929cd5f0dc8fde68ab",
+      "original_video_time_sec": 599.231967,
+      "time_sec": 599.231967,
+      "source_pts": 17976959,
+      "time_base": "1/30000",
+      "requested_seek_time_sec": 599.2,
+      "task_ids": [
+        "GX010021-V2-T2-003"
+      ],
+      "evidence_ids": [
+        "H1-V-E051-01",
+        "LC-599-2"
+      ],
+      "event_ids": [
+        "H1-E051"
+      ],
+      "newly_extracted_for_showcase": false,
+      "transformation": "BYTE_IDENTICAL_COPY",
+      "display_text": "纸袋在主容器上方倾斜、表面可见浅色粉状物；对应后段补粉候选。",
+      "raw_text": "Brown paper bag is tilted over main mixture container; powder-like pale material appears on the mixture. Exact quantity is unknown."
+    },
+    {
+      "id": "K025",
+      "original_id": "K025",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/showcase/showcase_manifest.json",
+          "json_pointer": "/asset_registry/10"
+        }
+      ],
+      "status": "UNCONFIRMED",
+      "annotation_version": "session4a-showcase-v1",
+      "source_path": "D:\\Python_Project\\bench-demo\\golden_episode\\GX010021\\evidence\\frames\\K025_645.211233.png",
+      "packaged_path": "media/frames/K025_645.211233.png",
+      "sha256": "fb70cb11042635c97bc4517dce18540fc68c6fa01e681ef48700d7b611b95d63",
+      "original_video_time_sec": 645.2112333333333,
+      "time_sec": 645.2112333333333,
+      "source_pts": 19356337,
+      "time_base": "1/30000",
+      "requested_seek_time_sec": 645.2,
+      "task_ids": [
+        "GX010021-V2-T2-003"
+      ],
+      "evidence_ids": [
+        "V2-V24"
+      ],
+      "event_ids": [
+        "V2-E26",
+        "V2-E27"
+      ],
+      "newly_extracted_for_showcase": false,
+      "transformation": "BYTE_IDENTICAL_COPY",
+      "display_text": "主容器倾斜，混合物向烤模转移；不证明全部材料转移完毕。",
+      "raw_text": null
+    },
+    {
+      "id": "LC-680-2",
+      "original_id": "LC-680-2",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/showcase/showcase_manifest.json",
+          "json_pointer": "/asset_registry/11"
+        }
+      ],
+      "status": "UNCONFIRMED",
+      "annotation_version": "session4a-showcase-v1",
+      "source_path": "D:\\Python_Project\\bench-demo\\golden_episode\\GX010021\\annotations\\v2_video_model\\runs\\session2-full-video\\local_visual_checks\\frame-680.2.png",
+      "packaged_path": "media/frames/LC-680-2_frame-680.2.png",
+      "sha256": "82c5e98fab31057f00b8375ca3b2140f52a50bb133e34fb8a896ef8801f7a2c3",
+      "original_video_time_sec": 680.212867,
+      "time_sec": 680.212867,
+      "source_pts": 20406386,
+      "time_base": "1/30000",
+      "requested_seek_time_sec": 680.2,
+      "task_ids": [
+        "GX010021-V2-T2-003"
+      ],
+      "evidence_ids": [
+        "LC-680-2"
+      ],
+      "event_ids": [],
+      "newly_extracted_for_showcase": false,
+      "transformation": "BYTE_IDENTICAL_COPY",
+      "display_text": "烤模已有面糊，主容器仍见残留与黑色工具；这是末段 Probe 的原帧锚点。",
+      "raw_text": "Batter is in loaf pan; main mixing container retains thin residue and a black tool. No new lid-closing or tool-placement action can be inferred from this one image."
+    }
+  ],
+  "missing_fields": [],
+  "evidence_chain_count": 7,
+  "relation_edge_count": 6,
+  "early_evidence_start_sec": 153.2,
+  "query_time_sec": 680.212867,
+  "history_span_sec": 527.012867,
+  "nodes": [
+    {
+      "id": "V2-O1",
+      "original_id": "V2-O1",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/objects.json",
+          "json_pointer": "/records/0"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "raw": {
+        "id": "V2-O1",
+        "annotation_status": "CANDIDATE",
+        "source_type": "video_model",
+        "source_refs": [
+          {
+            "source_id": "independent",
+            "json_pointer": "/objects/0"
+          },
+          {
+            "source_id": "v1_objects",
+            "json_pointer": "/objects/0"
+          }
+        ],
+        "evidence_refs": [
+          "V2-V4",
+          "V2-V6",
+          "V2-V7",
+          "V2-V9",
+          "V2-V10",
+          "V2-V12",
+          "V2-V14",
+          "V2-V21",
+          "V2-V22",
+          "V2-V24"
+        ],
+        "confirmation_status": "UNCONFIRMED",
+        "label": "透明方形塑料盒",
+        "appearance": "透明塑料材质，带盖，用于混合原料",
+        "identity_status": "uncertain",
+        "confidence": 0.98,
+        "uncertainties": [
+          "连续身份仅为候选；出画及遮挡期间不能断言状态持续。"
+        ],
+        "historical_object_ids": [
+          "O01"
+        ],
+        "model_identity_status": "candidate_continuous",
+        "identity_interpretation": "CANDIDATE_CORRESPONDENCE; disjoint sampled observations do not establish uninterrupted physical identity",
+        "occlusion_and_out_of_frame": "NOT_EXHAUSTIVELY_ANNOTATED",
+        "model_claim": {
+          "object_id": "O1",
+          "label": "透明方形塑料盒",
+          "appearance": "透明塑料材质，带盖，用于混合原料",
+          "identity_status": "candidate_continuous",
+          "evidence_refs": [
+            "V4",
+            "V6",
+            "V7",
+            "V9",
+            "V10",
+            "V12",
+            "V14",
+            "V21",
+            "V22",
+            "V24"
+          ],
+          "confidence": 0.98,
+          "uncertainties": [
+            "连续身份仅为候选；出画及遮挡期间不能断言状态持续。"
+          ]
+        }
+      }
+    },
+    {
+      "id": "V2-O10",
+      "original_id": "V2-O10",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/objects.json",
+          "json_pointer": "/records/9"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "raw": {
+        "id": "V2-O10",
+        "annotation_status": "CANDIDATE",
+        "source_type": "video_model",
+        "source_refs": [
+          {
+            "source_id": "independent",
+            "json_pointer": "/objects/9"
+          },
+          {
+            "source_id": "v1_objects",
+            "json_pointer": "/objects/11"
+          }
+        ],
+        "evidence_refs": [
+          "V2-V3",
+          "V2-V23",
+          "V2-V24",
+          "V2-V25"
+        ],
+        "confirmation_status": "UNCONFIRMED",
+        "label": "金属烤盘",
+        "appearance": "深灰色长方形金属烤模，带圆角",
+        "identity_status": "uncertain",
+        "confidence": 0.99,
+        "uncertainties": [
+          "连续身份仅为候选；出画及遮挡期间不能断言状态持续。"
+        ],
+        "historical_object_ids": [
+          "O12"
+        ],
+        "model_identity_status": "candidate_continuous",
+        "identity_interpretation": "CANDIDATE_CORRESPONDENCE; disjoint sampled observations do not establish uninterrupted physical identity",
+        "occlusion_and_out_of_frame": "NOT_EXHAUSTIVELY_ANNOTATED",
+        "model_claim": {
+          "object_id": "O10",
+          "label": "金属烤盘",
+          "appearance": "深灰色长方形金属烤模，带圆角",
+          "identity_status": "candidate_continuous",
+          "evidence_refs": [
+            "V3",
+            "V23",
+            "V24",
+            "V25"
+          ],
+          "confidence": 0.99,
+          "uncertainties": [
+            "连续身份仅为候选；出画及遮挡期间不能断言状态持续。"
+          ]
+        }
+      }
+    },
+    {
+      "id": "V2-O13",
+      "original_id": "V2-O13",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/objects.json",
+          "json_pointer": "/records/12"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "raw": {
+        "id": "V2-O13",
+        "annotation_status": "CANDIDATE",
+        "source_type": "video_model",
+        "source_refs": [
+          {
+            "source_id": "independent",
+            "json_pointer": "/objects/12"
+          },
+          {
+            "source_id": "v1_objects",
+            "json_pointer": "/objects/4"
+          }
+        ],
+        "evidence_refs": [
+          "V2-V8",
+          "V2-V9",
+          "V2-V10",
+          "V2-V14"
+        ],
+        "confirmation_status": "UNCONFIRMED",
+        "label": "黑色量勺",
+        "appearance": "黑色塑料量勺，带手柄，用于舀取糖/面粉",
+        "identity_status": "uncertain",
+        "confidence": 0.95,
+        "uncertainties": [
+          "连续身份仅为候选；出画及遮挡期间不能断言状态持续。",
+          "黑色量具/黑色搅动与刮糊工具不能凭相似外观强行确认同一件。"
+        ],
+        "historical_object_ids": [
+          "O05"
+        ],
+        "model_identity_status": "candidate_continuous",
+        "identity_interpretation": "CANDIDATE_CORRESPONDENCE; disjoint sampled observations do not establish uninterrupted physical identity",
+        "occlusion_and_out_of_frame": "NOT_EXHAUSTIVELY_ANNOTATED",
+        "model_claim": {
+          "object_id": "O13",
+          "label": "黑色量勺",
+          "appearance": "黑色塑料量勺，带手柄，用于舀取糖/面粉",
+          "identity_status": "candidate_continuous",
+          "evidence_refs": [
+            "V8",
+            "V9",
+            "V10",
+            "V14"
+          ],
+          "confidence": 0.95,
+          "uncertainties": [
+            "连续身份仅为候选；出画及遮挡期间不能断言状态持续。",
+            "黑色量具/黑色搅动与刮糊工具不能凭相似外观强行确认同一件。"
+          ]
+        }
+      }
+    },
+    {
+      "id": "V2-O5",
+      "original_id": "V2-O5",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/objects.json",
+          "json_pointer": "/records/4"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "raw": {
+        "id": "V2-O5",
+        "annotation_status": "CANDIDATE",
+        "source_type": "video_model",
+        "source_refs": [
+          {
+            "source_id": "independent",
+            "json_pointer": "/objects/4"
+          },
+          {
+            "source_id": "v1_objects",
+            "json_pointer": "/objects/5"
+          }
+        ],
+        "evidence_refs": [
+          "V2-V10",
+          "V2-V11"
+        ],
+        "confirmation_status": "UNCONFIRMED",
+        "label": "牛奶盒",
+        "appearance": "红蓝白三色纸盒，标有'Horizon Organic Whole Milk'",
+        "identity_status": "uncertain",
+        "confidence": 0.96,
+        "uncertainties": [
+          "连续身份仅为候选；出画及遮挡期间不能断言状态持续。",
+          "首轮Half & Half与专题Whole Milk标签描述不一致，产品名仅为模型候选。"
+        ],
+        "historical_object_ids": [
+          "O06"
+        ],
+        "model_identity_status": "candidate_continuous",
+        "identity_interpretation": "CANDIDATE_CORRESPONDENCE; disjoint sampled observations do not establish uninterrupted physical identity",
+        "occlusion_and_out_of_frame": "NOT_EXHAUSTIVELY_ANNOTATED",
+        "model_claim": {
+          "object_id": "O5",
+          "label": "牛奶盒",
+          "appearance": "红蓝白三色纸盒，标有'Horizon Organic Whole Milk'",
+          "identity_status": "candidate_continuous",
+          "evidence_refs": [
+            "V10",
+            "V11"
+          ],
+          "confidence": 0.96,
+          "uncertainties": [
+            "连续身份仅为候选；出画及遮挡期间不能断言状态持续。",
+            "首轮Half & Half与专题Whole Milk标签描述不一致，产品名仅为模型候选。"
+          ]
+        }
+      }
+    },
+    {
+      "id": "V2-O7",
+      "original_id": "V2-O7",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/objects.json",
+          "json_pointer": "/records/6"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "raw": {
+        "id": "V2-O7",
+        "annotation_status": "CANDIDATE",
+        "source_type": "video_model",
+        "source_refs": [
+          {
+            "source_id": "independent",
+            "json_pointer": "/objects/6"
+          },
+          {
+            "source_id": "v1_objects",
+            "json_pointer": "/objects/7"
+          }
+        ],
+        "evidence_refs": [
+          "V2-V13",
+          "V2-V14"
+        ],
+        "confirmation_status": "UNCONFIRMED",
+        "label": "面粉袋",
+        "appearance": "棕色牛皮纸袋，印有'All-Purpose Flour'",
+        "identity_status": "uncertain",
+        "confidence": 0.94,
+        "uncertainties": [
+          "品牌不可辨",
+          "连续身份仅为候选；出画及遮挡期间不能断言状态持续。"
+        ],
+        "historical_object_ids": [
+          "O08"
+        ],
+        "model_identity_status": "candidate_continuous",
+        "identity_interpretation": "CANDIDATE_CORRESPONDENCE; disjoint sampled observations do not establish uninterrupted physical identity",
+        "occlusion_and_out_of_frame": "NOT_EXHAUSTIVELY_ANNOTATED",
+        "model_claim": {
+          "object_id": "O7",
+          "label": "面粉袋",
+          "appearance": "棕色牛皮纸袋，印有'All-Purpose Flour'",
+          "identity_status": "candidate_continuous",
+          "evidence_refs": [
+            "V13",
+            "V14"
+          ],
+          "confidence": 0.94,
+          "uncertainties": [
+            "品牌不可辨",
+            "连续身份仅为候选；出画及遮挡期间不能断言状态持续。"
+          ]
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "PATH-03",
+      "original_id": "PATH-03",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+          "json_pointer": "/records/16"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "from_id": "V2-O5",
+      "to_id": "V2-O13",
+      "original_relation_type": "material_transferred_to",
+      "event_ids": [
+        "V2-E7"
+      ],
+      "evidence_ids": [
+        "H1-V-E022-01",
+        "H1-T-R18",
+        "H1-T-R19"
+      ],
+      "time_range_sec": null,
+      "confirmation_status": "UNCONFIRMED",
+      "uncertainties": [
+        "对象对应为候选；各阶段黑色量杯不得自动确认为同一只，实际材料体积未知。"
+      ]
+    },
+    {
+      "id": "PATH-04",
+      "original_id": "PATH-04",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+          "json_pointer": "/records/17"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "from_id": "V2-O13",
+      "to_id": "V2-O1",
+      "original_relation_type": "material_transferred_to",
+      "event_ids": [
+        "V2-E8"
+      ],
+      "evidence_ids": [
+        "H1-V-E023-01",
+        "H1-T-R18",
+        "H1-T-R19"
+      ],
+      "time_range_sec": null,
+      "confirmation_status": "UNCONFIRMED",
+      "uncertainties": [
+        "对象对应为候选；各阶段黑色量杯不得自动确认为同一只，实际材料体积未知。"
+      ]
+    },
+    {
+      "id": "PATH-05",
+      "original_id": "PATH-05",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+          "json_pointer": "/records/18"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "from_id": "V2-O7",
+      "to_id": "V2-O13",
+      "original_relation_type": "material_transferred_to",
+      "event_ids": [
+        "V2-E12"
+      ],
+      "evidence_ids": [
+        "H1-V-E031-01",
+        "H1-T-R26"
+      ],
+      "time_range_sec": null,
+      "confirmation_status": "UNCONFIRMED",
+      "uncertainties": [
+        "对象对应为候选；各阶段黑色量杯不得自动确认为同一只，实际材料体积未知。"
+      ]
+    },
+    {
+      "id": "PATH-06",
+      "original_id": "PATH-06",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+          "json_pointer": "/records/19"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "from_id": "V2-O13",
+      "to_id": "V2-O1",
+      "original_relation_type": "material_transferred_to",
+      "event_ids": [
+        "V2-E13"
+      ],
+      "evidence_ids": [
+        "H1-V-E032-01",
+        "H1-T-R26",
+        "H1-T-R27"
+      ],
+      "time_range_sec": null,
+      "confirmation_status": "UNCONFIRMED",
+      "uncertainties": [
+        "对象对应为候选；各阶段黑色量杯不得自动确认为同一只，实际材料体积未知。"
+      ]
+    },
+    {
+      "id": "PATH-07",
+      "original_id": "PATH-07",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+          "json_pointer": "/records/20"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "from_id": "V2-O7",
+      "to_id": "V2-O1",
+      "original_relation_type": "material_transferred_to",
+      "event_ids": [
+        "H1-E051"
+      ],
+      "evidence_ids": [
+        "H1-V-E051-01",
+        "H1-V-E051-02",
+        "H1-T-R46",
+        "H1-T-R47",
+        "H1-T-R48",
+        "H1-T-R49",
+        "H1-I-E051-02",
+        "LC-599-2"
+      ],
+      "time_range_sec": null,
+      "confirmation_status": "UNCONFIRMED",
+      "uncertainties": [
+        "对象对应为候选；各阶段黑色量杯不得自动确认为同一只，实际材料体积未知。"
+      ]
+    },
+    {
+      "id": "V2-R12",
+      "original_id": "V2-R12",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/annotations/v2_video_model/relations.json",
+          "json_pointer": "/records/10"
+        }
+      ],
+      "status": "CANDIDATE",
+      "annotation_version": "session2-v2.0-candidate",
+      "from_id": "V2-O1",
+      "to_id": "V2-O10",
+      "original_relation_type": "material_transferred_to",
+      "event_ids": [
+        "V2-E26"
+      ],
+      "evidence_ids": [
+        "V2-V24"
+      ],
+      "time_range_sec": null,
+      "confirmation_status": "UNCONFIRMED",
+      "uncertainties": [
+        "关系仅为候选；不能由时序先后转换为必然前置依赖。"
+      ]
+    }
+  ],
+  "history_necessity_status": "untested",
+  "shortcut_risks": [
+    "题干/Schema 可能泄露路线候选",
+    "当前画面或常识可能提供捷径",
+    "未做遮蔽与反事实移除实验"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "condition": "CRITICAL_MASK",
+  "segment_id": "seg-0003",
+  "final": false,
+  "request_sha256": "7a3874e5cf636dd48b064195c43ba438bb156c39d9923258c11fe87b59cf3718",
+  "previous_checkpoint_sha256": "6e4d18ef3c327381bd701d3627100cf1253e075d90a4a1c6608c18bdb46aa38f",
+  "raw_response_ref": "experiments/icme2027_pilot/runs/p01-v1/CRITICAL_MASK/seg-0003/attempt-000.response.json",
+  "raw_response_sha256": "cfa9c6ff25d0e55e2a137c37c688ccb78a37ee4b4c540fd076f08888d5f65422",
+  "parsed": {
+    "memory": "0.0–2.0s: Overhead view of cluttered kitchen counter with stainless pots, red onions, white bowls, loaf pan, hand mixer, bubly box, knife block, spray bottle, etc. Person’s hands enter frame holding a clear square plastic container and an egg. 2.0–6.0s: First egg cracked into container; yolk and white visible, shell discarded right. 6.0–9.0s: Second egg cracked into same container; now two yolks. 9.0–13.0s: Third egg cracked (three yolks). 13.0–17.0s: Fourth egg cracked (four yolks). 17.0–22.0s: Fifth egg cracked (five yolks); sixth egg held but not yet cracked. 22.0–25.0s: Sixth egg cracked (six yolks), then person places egg down and reaches toward stove area; at 25.0s, container clearly shows only 2 yolks—indicating either container was swapped or contents reset, unobserved. 26.0–28.0s: Person walks to stove, opens Kirkland 18-count egg carton, removes two eggs, returns. 29.0s–30.0s: Back at counter; container has exactly 2 yolks (consistent with new/switched container and 2 eggs cracked post-reset). 31.0–34.0s: Hands idle; no action. 35.0s: Reaches for pink-lidded jar, then grabs blue bag labeled 'FAIR TRADE ORGANIC CANE SUGAR'. 36.0–39.0s: Holds sugar bag, places white bowl nearby. 40.0–43.0s: Picks up black 1/4 cup measuring cup, inspects markings. 44.0–46.0s: Places cup down, adjusts bowl position. 47.0–52.0s: Holds measuring cup in left hand, pours brown sugar from bag into cup until full (~1/4 cup); at 52.0s, filled cup is held over container with 2 eggs—no pouring yet. 53.0s: Person lifts carton of Horizon Organic milk (red/blue box) into view, then moves it out of frame. 54.0–58.0s: Black frames; no visual data. Directly observed: 2 eggs in container, 1/4 cup brown sugar measured and held above, milk carton briefly handled. Uncertainty: Container change from 6 to 2 yolks between 22s–25s is unobserved; no mixing, heating, or additional cracking occurred in this window. [Current window 180–240s]: All frames are black (no visual data). No new observable actions, objects, or state changes in this interval."
+  },
+  "metadata": {
+    "returned_model": "qwen3-vl-plus",
+    "usage": {
+      "prompt_tokens": 13662,
+      "completion_tokens": 649,
+      "total_tokens": 14311,
+      "completion_tokens_details": {
+        "text_tokens": 649
+      },
+      "prompt_tokens_details": {
+        "text_tokens": 1510,
+        "video_tokens": 12152,
+        "cached_tokens": 0
+      }
+    },
+    "finish_reason": "stop",
+    "request_id": "chatcmpl-781c1d3d-20c7-983c-80d9-a256a3fefe7c"
+  },
+  "checkpoint_sha256": "61c7aa1ae8f99947fceb49804810f2634f3e533adacb2b15bb2b9cf6983cb3ab"
+}

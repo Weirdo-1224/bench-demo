@@ -1,0 +1,94 @@
+{
+  "created_at": "2026-10-28T11:46:55+08:00",
+  "type": "OFFLINE_PROGRAM_QA",
+  "api_calls": 0,
+  "safety_tests": {
+    "passed": 6,
+    "log": "program_test_report.txt"
+  },
+  "black_review_video_checks": [
+    {
+      "task_id": "P01",
+      "file": "experiments/icme2027_pilot/clips/P01/critical_mask_history.mp4",
+      "check": "FULL_IMAGE_YUV_EXTREMA",
+      "sampled_output_frames_checked": 66,
+      "result": "PASS",
+      "extrema": {
+        "YMIN": [
+          16.0,
+          16.0
+        ],
+        "YMAX": [
+          16.0,
+          16.0
+        ],
+        "UMIN": [
+          127.0,
+          128.0
+        ],
+        "UMAX": [
+          128.0,
+          128.0
+        ],
+        "VMIN": [
+          128.0,
+          128.0
+        ],
+        "VMAX": [
+          128.0,
+          128.0
+        ]
+      },
+      "tolerance": "Y exactly 16; U/V 128 +/- 1 (8-bit H264 cut rounding)",
+      "scope": "Human review MP4 only; no masked API input constructed in phase 1"
+    },
+    {
+      "task_id": "P02",
+      "file": "experiments/icme2027_pilot/clips/P02/critical_mask_history.mp4",
+      "check": "FULL_IMAGE_YUV_EXTREMA",
+      "sampled_output_frames_checked": 72,
+      "result": "PASS",
+      "extrema": {
+        "YMIN": [
+          16.0,
+          16.0
+        ],
+        "YMAX": [
+          16.0,
+          16.0
+        ],
+        "UMIN": [
+          127.0,
+          128.0
+        ],
+        "UMAX": [
+          128.0,
+          129.0
+        ],
+        "VMIN": [
+          128.0,
+          128.0
+        ],
+        "VMAX": [
+          128.0,
+          129.0
+        ]
+      },
+      "tolerance": "Y exactly 16; U/V 128 +/- 1 (8-bit H264 cut rounding)",
+      "scope": "Human review MP4 only; no masked API input constructed in phase 1"
+    }
+  ],
+  "resolved_program_check_issue": "Initial exact-chroma check rejected one U=127 sample in P01; luminance was exactly black at 16. Allow documented +/-1 chroma rounding for lossy review MP4. Real API masks will use independently verified black JPEG replacements.",
+  "secret_scan": {
+    "key_available_for_comparison": true,
+    "files_checked": 53,
+    "leaks_found": 0,
+    "secret_logged": false
+  },
+  "original_integrity": {
+    "protected_files": 201,
+    "all_hashes_match": true,
+    "checked_at": "2026-10-28T11:47:04+08:00"
+  },
+  "human_review": "PENDING; these checks do not establish semantic truth or historical necessity"
+}

@@ -1,0 +1,22 @@
+{"approved": 0, "pending": 2, "api_calls": 0, "semantic_validation": "HUMAN_ONLY"}
+test_approved_without_all_checks_cannot_promote (test_pilot.SafetyTests.test_approved_without_all_checks_cannot_promote) ... ok
+test_current_window_and_history_masks_are_separate (test_pilot.SafetyTests.test_current_window_and_history_masks_are_separate) ... ok
+test_fractional_query_never_includes_future_window (test_pilot.SafetyTests.test_fractional_query_never_includes_future_window) ... ok
+test_mask_membership_matches_critical_and_control (test_pilot.SafetyTests.test_mask_membership_matches_critical_and_control) ... ok
+test_pending_does_not_create_gold (test_pilot.SafetyTests.test_pending_does_not_create_gold) ... ok
+test_tampered_definition_rejected_before_promotion (test_pilot.SafetyTests.test_tampered_definition_rejected_before_promotion) ... ok
+test_all_conditions_start_with_empty_memory_and_no_question_in_history (test_runtime.RuntimeSafety.test_all_conditions_start_with_empty_memory_and_no_question_in_history) ... ok
+test_broad_citation_cannot_claim_unseen_early_history (test_runtime.RuntimeSafety.test_broad_citation_cannot_claim_unseen_early_history) ... ok
+test_citation_spanning_mask_not_counted_fully_visible (test_runtime.RuntimeSafety.test_citation_spanning_mask_not_counted_fully_visible) ... ok
+test_critical_and_control_mask_complete_and_equal (test_runtime.RuntimeSafety.test_critical_and_control_mask_complete_and_equal) ... ok
+test_final_question_is_identical_and_current_frames_unchanged (test_runtime.RuntimeSafety.test_final_question_is_identical_and_current_frames_unchanged) ... ok
+test_future_frame_and_wrong_mask_rejected (test_runtime.RuntimeSafety.test_future_frame_and_wrong_mask_rejected) ... ok
+test_gold_is_fact_yes_but_unknown_policy_is_not_model_input (test_runtime.RuntimeSafety.test_gold_is_fact_yes_but_unknown_policy_is_not_model_input) ... ok
+test_memory_bound_and_nonfinite_intervals_rejected (test_runtime.RuntimeSafety.test_memory_bound_and_nonfinite_intervals_rejected) ... ok
+test_request_cap_survives_resumes (test_runtime.RuntimeSafety.test_request_cap_survives_resumes) ... ok
+test_wire_reconstruction_and_cross_condition_cache_rejection (test_runtime.RuntimeSafety.test_wire_reconstruction_and_cross_condition_cache_rejection) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 9.812s
+
+OK

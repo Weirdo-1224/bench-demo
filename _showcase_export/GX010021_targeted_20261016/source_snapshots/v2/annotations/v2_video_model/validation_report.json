@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "annotation_status": "CANDIDATE",
+  "semantic_truth_verified": false,
+  "independent": {
+    "status": "PASS",
+    "checks": [
+      "schema",
+      "unique_ids",
+      "media_times",
+      "references",
+      "transition_times",
+      "evidence_availability"
+    ],
+    "semantic_truth_verified": false,
+    "counts": {
+      "stages": 4,
+      "events": 45,
+      "objects": 20,
+      "states": 15,
+      "relations": 15,
+      "evidence": 25
+    }
+  },
+  "entity_count": 324,
+  "evidence_count": 192,
+  "checks": [
+    "documented_normalization_of_raw_output",
+    "source_and_artifact_hashes",
+    "maturity",
+    "time_bounds",
+    "all_entity_and_source_pointers",
+    "state_transition_times",
+    "no_future_evidence",
+    "normative_observation_separation",
+    "no_unconfirmed_alarm_truth",
+    "complete_V1_comparison",
+    "temporal_relation_order",
+    "acyclic_dependency_and_rule_graph"
+  ]
+}

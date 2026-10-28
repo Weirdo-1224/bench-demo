@@ -15,6 +15,11 @@ __pycache__/
 # Derived evidence media (regenerate with evidence/prepare_evidence.py from the local video)
 golden_episode/*/evidence/clips/
 
+# Experiment derived media — frame dumps extractable from the local source video
+experiments/*/inputs/
+experiments/*/review_frames/
+experiments/*/runs/**/frames/
+
 # Deliverable bundles (archived copies live under archive/)
 *.zip
 

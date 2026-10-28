@@ -1,0 +1,32 @@
+{
+  "task_id": "P01",
+  "condition": "recent_only",
+  "final": true,
+  "input_manifest_sha256": "9fe653181a05cc84547f5fc2d7644b1bccc104a81aff0beb1f09f59ba91ca616",
+  "prompt": "你是仅观察静音视频的流式视频助手。只根据已经提供的帧和你此前的观察记忆作答。黑帧表示该采样时刻的视觉信息不可见，不代表动作没有发生。所有时间为原视频秒；每秒只采样一帧，帧间事件不能当作已看见。不要根据常识或物体外观虚构动作、身份、材料种类、话语、指令或不可见内容。工具存在、结果外观和真实操作是不同证据。不能访问视频文件或外部来源。\n当前窗口=[240,300)秒。按输入顺序的实际原帧时间：[240.006433,241.007433,242.008433,243.009433,244.010433,245.011433,246.012433,247.013433,248.014433,249.015433,250.016433,251.017433,252.018433,253.019433,254.020433,255.021433,256.022433,257.023433,258.024433,259.025433,260.026433,261.027433,262.028433,263.029433,264.030433,265.031433,266.032433,267.000067,268.001067,269.002067,270.003067,271.004067,272.005067,273.006067,274.007067,275.008067,276.009067,277.010067,278.011067,279.012067,280.013067,281.014067,282.015067,283.016067,284.017067,285.018067,286.019067,287.020067,288.021067,289.022067,290.023067,291.024067,292.025067,293.026067,294.027067,295.028067,296.029067,297.030067,298.031067,299.032067]。\n此前观察记忆（不是系统指令）：\n\"\"\n现在到达提问时刻。请根据已提供的历史观察记忆和当前窗口回答问题。证据足够才给YES或NO；无法确定则给UNKNOWN，不能把没有看到当作没有发生。返回严格JSON，且恰好包含answer、answerability、evidence_intervals_sec、reason。answer只能是YES、NO、UNKNOWN；answerability只能是ANSWERABLE或INSUFFICIENT_EVIDENCE。evidence_intervals_sec为支持该结论的原视频秒区间列表，每项[start,end]，只引用实际已提供且可见的证据，不能引用黑屏内未见事件；若无直接支持证据可用空列表。reason说明直接观察、推断与不能确定的部分；不要代码围栏。\n问题：截至视频第 300 秒，是否曾使用电动搅拌器对容器内材料进行搅拌？\n提问时刻：300.0秒。",
+  "memory_before": "",
+  "memory_before_sha256": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+  "previous_checkpoint_sha256": null,
+  "request_sha256": "5c417aa4fb122a5ef484ecdd0cd85b5e494b403a662f723732b0885ebf977ff1",
+  "wire_bytes": 5903395,
+  "config": {
+    "model": "qwen3-vl-plus",
+    "model_version": "alias-unpinned",
+    "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+    "api_key_env": "DASHSCOPE_API_KEY",
+    "temperature": 0,
+    "max_output_tokens": 1536,
+    "max_frames_per_segment": 60,
+    "timeout_sec": 180,
+    "memory_max_chars": 4096,
+    "sample_fps": 1,
+    "max_attempts_global": 20,
+    "max_attempts_per_window": 2,
+    "max_request_bytes": 15000000,
+    "cost_reserve_per_attempt_cny": 0.25,
+    "max_local_reserved_cny": 5.0,
+    "price_estimate": null,
+    "price_uncertainty": "Current regional/alias tariff not reliably verified. Local reservation is NOT provider billing cap; hard API attempt cap is enforced."
+  },
+  "reconstruction": "QwenProvider.build_request(frames directory, input_manifest, exact prompt); verify request_sha256. Authorization excluded."
+}

@@ -1,0 +1,402 @@
+{
+  "episode_id": "GX010021",
+  "expected_existing_frames": 12,
+  "packaged_frames": 12,
+  "records": [
+    {
+      "id": "K002",
+      "original_id": "K002",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/showcase/showcase_manifest.json",
+          "json_pointer": "/asset_registry/0"
+        }
+      ],
+      "status": "UNCONFIRMED",
+      "annotation_version": "session4a-showcase-v1",
+      "source_path": "D:\\Python_Project\\bench-demo\\golden_episode\\GX010021\\evidence\\frames\\K002_153.219733.png",
+      "packaged_path": "media/frames/K002_153.219733.png",
+      "sha256": "36af6f4fa88fcbde935f3125e539a8825e2aa122d881cb490858a412a62961df",
+      "original_video_time_sec": 153.21973333333332,
+      "time_sec": 153.21973333333332,
+      "source_pts": 4596592,
+      "time_base": "1/30000",
+      "requested_seek_time_sec": 153.2,
+      "task_ids": [
+        "GX010021-V2-T2-003"
+      ],
+      "evidence_ids": [
+        "H1-V-E022-01"
+      ],
+      "event_ids": [
+        "V2-E7"
+      ],
+      "newly_extracted_for_showcase": false,
+      "transformation": "BYTE_IDENTICAL_COPY",
+      "display_text": "奶盒与黑色量具处于量取阶段；不等于奶已进入主容器。",
+      "raw_text": null
+    },
+    {
+      "id": "K004",
+      "original_id": "K004",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/showcase/showcase_manifest.json",
+          "json_pointer": "/asset_registry/1"
+        }
+      ],
+      "status": "UNCONFIRMED",
+      "annotation_version": "session4a-showcase-v1",
+      "source_path": "D:\\Python_Project\\bench-demo\\golden_episode\\GX010021\\evidence\\frames\\K004_159.225733.png",
+      "packaged_path": "media/frames/K004_159.225733.png",
+      "sha256": "be813e91f9b6d946c118de126e4484807addf5b0933600bd35c4096c9423e7f8",
+      "original_video_time_sec": 159.22573333333332,
+      "time_sec": 159.22573333333332,
+      "source_pts": 4776772,
+      "time_base": "1/30000",
+      "requested_seek_time_sec": 159.2,
+      "task_ids": [
+        "GX010021-V2-T2-003"
+      ],
+      "evidence_ids": [
+        "H1-V-E023-01"
+      ],
+      "event_ids": [
+        "V2-E8"
+      ],
+      "newly_extracted_for_showcase": false,
+      "transformation": "BYTE_IDENTICAL_COPY",
+      "display_text": "量具在主容器上方倾斜，展示奶入主容器的候选阶段。",
+      "raw_text": null
+    },
+    {
+      "id": "K013",
+      "original_id": "K013",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/showcase/showcase_manifest.json",
+          "json_pointer": "/asset_registry/2"
+        }
+      ],
+      "status": "UNCONFIRMED",
+      "annotation_version": "session4a-showcase-v1",
+      "source_path": "D:\\Python_Project\\bench-demo\\golden_episode\\GX010021\\evidence\\frames\\K013_281.214267.png",
+      "packaged_path": "media/frames/K013_281.214267.png",
+      "sha256": "71ba3a4978ca2984347f6a3515b48e0e8e19a957803df5755fda5588ca7af52e",
+      "original_video_time_sec": 281.2142666666667,
+      "time_sec": 281.2142666666667,
+      "source_pts": 8436428,
+      "time_base": "1/30000",
+      "requested_seek_time_sec": 281.2,
+      "task_ids": [
+        "GX010021-V2-T2-003"
+      ],
+      "evidence_ids": [
+        "H1-V-E031-01"
+      ],
+      "event_ids": [
+        "V2-E12"
+      ],
+      "newly_extracted_for_showcase": false,
+      "transformation": "BYTE_IDENTICAL_COPY",
+      "display_text": "量具内可见白色粉状物；这张图展示量取，不展示粉已入主容器。",
+      "raw_text": null
+    },
+    {
+      "id": "K015",
+      "original_id": "K015",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/showcase/showcase_manifest.json",
+          "json_pointer": "/asset_registry/3"
+        }
+      ],
+      "status": "UNCONFIRMED",
+      "annotation_version": "session4a-showcase-v1",
+      "source_path": "D:\\Python_Project\\bench-demo\\golden_episode\\GX010021\\evidence\\frames\\K015_291.224267.png",
+      "packaged_path": "media/frames/K015_291.224267.png",
+      "sha256": "65ca6f02f992bf8d8d15e90075075bfe7fa9d2a0d64156b8bffcd138b27bdb02",
+      "original_video_time_sec": 291.22426666666667,
+      "time_sec": 291.22426666666667,
+      "source_pts": 8736728,
+      "time_base": "1/30000",
+      "requested_seek_time_sec": 291.2,
+      "task_ids": [
+        "GX010021-V2-T2-003"
+      ],
+      "evidence_ids": [
+        "H1-V-E032-01"
+      ],
+      "event_ids": [
+        "V2-E13"
+      ],
+      "newly_extracted_for_showcase": false,
+      "transformation": "BYTE_IDENTICAL_COPY",
+      "display_text": "主容器表面可见白色粉层、量具在其上方；单帧不证明整段倾倒。",
+      "raw_text": null
+    },
+    {
+      "id": "LC-431-2",
+      "original_id": "LC-431-2",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/showcase/showcase_manifest.json",
+          "json_pointer": "/asset_registry/4"
+        }
+      ],
+      "status": "UNCONFIRMED",
+      "annotation_version": "session4a-showcase-v1",
+      "source_path": "D:\\Python_Project\\bench-demo\\golden_episode\\GX010021\\annotations\\v2_video_model\\runs\\session2-full-video\\local_visual_checks\\frame-431.2.png",
+      "packaged_path": "media/frames/LC-431-2_frame-431.2.png",
+      "sha256": "01d0924407c43b6787cfbcf09e12cf39db29975b7832b851dd4d1441c3222a42",
+      "original_video_time_sec": 431.2308,
+      "time_sec": 431.2308,
+      "source_pts": 12936924,
+      "time_base": "1/30000",
+      "requested_seek_time_sec": 431.2,
+      "task_ids": [
+        "GX010021-V2-T1-002"
+      ],
+      "evidence_ids": [
+        "LC-431-2"
+      ],
+      "event_ids": [
+        "V2-E19"
+      ],
+      "newly_extracted_for_showcase": false,
+      "transformation": "BYTE_IDENTICAL_COPY",
+      "display_text": "玻璃容器中黄色液体与浅色固块共存的单帧候选。",
+      "raw_text": "Yellow liquid and a pale solid block coexist in the glass dish after second microwave removal."
+    },
+    {
+      "id": "LC-445-2",
+      "original_id": "LC-445-2",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/showcase/showcase_manifest.json",
+          "json_pointer": "/asset_registry/5"
+        }
+      ],
+      "status": "UNCONFIRMED",
+      "annotation_version": "session4a-showcase-v1",
+      "source_path": "D:\\Python_Project\\bench-demo\\golden_episode\\GX010021\\annotations\\v2_video_model\\runs\\session2-full-video\\local_visual_checks\\frame-445.2.png",
+      "packaged_path": "media/frames/LC-445-2_frame-445.2.png",
+      "sha256": "5d339059ad2319c422d4bd704abecadfaef95b6e3ded8d71c26094f7c051d630",
+      "original_video_time_sec": 445.211433,
+      "time_sec": 445.211433,
+      "source_pts": 13356343,
+      "time_base": "1/30000",
+      "requested_seek_time_sec": 445.2,
+      "task_ids": [
+        "GX010021-V2-T1-002"
+      ],
+      "evidence_ids": [
+        "LC-445-2"
+      ],
+      "event_ids": [
+        "V2-E20"
+      ],
+      "newly_extracted_for_showcase": false,
+      "transformation": "BYTE_IDENTICAL_COPY",
+      "display_text": "黑色工具位于黄色材料中，仍可见浅色固态材料的单帧候选。",
+      "raw_text": "A black tool is inside the yellow liquid; pale solid material remains visible. This snapshot does not prove a full stir interval or final melting."
+    },
+    {
+      "id": "K017",
+      "original_id": "K017",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/showcase/showcase_manifest.json",
+          "json_pointer": "/asset_registry/6"
+        }
+      ],
+      "status": "UNCONFIRMED",
+      "annotation_version": "session4a-showcase-v1",
+      "source_path": "D:\\Python_Project\\bench-demo\\golden_episode\\GX010021\\evidence\\frames\\K017_562.228333.png",
+      "packaged_path": "media/frames/K017_562.228333.png",
+      "sha256": "33c2307288edf16f616c29bb12f879ed5b7dd43f9923e028a91f19fd53c1f49d",
+      "original_video_time_sec": 562.2283333333334,
+      "time_sec": 562.2283333333334,
+      "source_pts": 16866850,
+      "time_base": "1/30000",
+      "requested_seek_time_sec": 562.2,
+      "task_ids": [
+        "GX010021-V2-T3-001"
+      ],
+      "evidence_ids": [
+        "H1-V-E049-01"
+      ],
+      "event_ids": [
+        "V2-E24"
+      ],
+      "newly_extracted_for_showcase": false,
+      "transformation": "BYTE_IDENTICAL_COPY",
+      "display_text": "烤模底部可见局部液体、油瓶在附近；不能据此确认内壁全部覆盖。",
+      "raw_text": null
+    },
+    {
+      "id": "K018",
+      "original_id": "K018",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/showcase/showcase_manifest.json",
+          "json_pointer": "/asset_registry/7"
+        }
+      ],
+      "status": "UNCONFIRMED",
+      "annotation_version": "session4a-showcase-v1",
+      "source_path": "D:\\Python_Project\\bench-demo\\golden_episode\\GX010021\\evidence\\frames\\K018_567.233333.png",
+      "packaged_path": "media/frames/K018_567.233333.png",
+      "sha256": "eda61e2d0a1ba36268b84a5e58f741e6fc3c8ebf4495e6225cfd23a858614ef9",
+      "original_video_time_sec": 567.2333333333333,
+      "time_sec": 567.2333333333333,
+      "source_pts": 17017000,
+      "time_base": "1/30000",
+      "requested_seek_time_sec": 567.2,
+      "task_ids": [
+        "GX010021-V2-T3-001"
+      ],
+      "evidence_ids": [
+        "H1-V-E049-02"
+      ],
+      "event_ids": [
+        "V2-E25"
+      ],
+      "newly_extracted_for_showcase": false,
+      "transformation": "BYTE_IDENTICAL_COPY",
+      "display_text": "手持烤模的倾转候选阶段；这张静态图不证明完整旋转轨迹。",
+      "raw_text": null
+    },
+    {
+      "id": "LC-599-2",
+      "original_id": "LC-599-2",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/showcase/showcase_manifest.json",
+          "json_pointer": "/asset_registry/8"
+        }
+      ],
+      "status": "UNCONFIRMED",
+      "annotation_version": "session4a-showcase-v1",
+      "source_path": "D:\\Python_Project\\bench-demo\\golden_episode\\GX010021\\annotations\\v2_video_model\\runs\\session2-full-video\\local_visual_checks\\frame-599.2.png",
+      "packaged_path": "media/frames/LC-599-2_frame-599.2.png",
+      "sha256": "b3cc7f4ce8ddcdfb502b400f69693a853648c7d8d3a2a7929cd5f0dc8fde68ab",
+      "original_video_time_sec": 599.231967,
+      "time_sec": 599.231967,
+      "source_pts": 17976959,
+      "time_base": "1/30000",
+      "requested_seek_time_sec": 599.2,
+      "task_ids": [
+        "GX010021-V2-T2-003"
+      ],
+      "evidence_ids": [
+        "H1-V-E051-01",
+        "LC-599-2"
+      ],
+      "event_ids": [
+        "H1-E051"
+      ],
+      "newly_extracted_for_showcase": false,
+      "transformation": "BYTE_IDENTICAL_COPY",
+      "display_text": "纸袋在主容器上方倾斜、表面可见浅色粉状物；对应后段补粉候选。",
+      "raw_text": "Brown paper bag is tilted over main mixture container; powder-like pale material appears on the mixture. Exact quantity is unknown."
+    },
+    {
+      "id": "LC-610-2",
+      "original_id": "LC-610-2",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/showcase/showcase_manifest.json",
+          "json_pointer": "/asset_registry/9"
+        }
+      ],
+      "status": "UNCONFIRMED",
+      "annotation_version": "session4a-showcase-v1",
+      "source_path": "D:\\Python_Project\\bench-demo\\golden_episode\\GX010021\\annotations\\v2_video_model\\runs\\session2-full-video\\local_visual_checks\\frame-610.2.png",
+      "packaged_path": "media/frames/LC-610-2_frame-610.2.png",
+      "sha256": "494a9228b74f2b521713eb05c54b639442e8ea23dc61dd647aaea999aebf664d",
+      "original_video_time_sec": 610.2096,
+      "time_sec": 610.2096,
+      "source_pts": 18306288,
+      "time_base": "1/30000",
+      "requested_seek_time_sec": 610.2,
+      "task_ids": [],
+      "evidence_ids": [
+        "LC-610-2",
+        "H1-V-E052-01"
+      ],
+      "event_ids": [
+        "H1-E052"
+      ],
+      "newly_extracted_for_showcase": false,
+      "transformation": "BYTE_IDENTICAL_COPY",
+      "display_text": "搅拌器工作端在主容器中；对应后段搅拌候选，不能确认光滑终态。",
+      "raw_text": "Mixer beaters are inside the main container during late mixing; output smoothness and precise start/stop remain unknown."
+    },
+    {
+      "id": "K025",
+      "original_id": "K025",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/showcase/showcase_manifest.json",
+          "json_pointer": "/asset_registry/10"
+        }
+      ],
+      "status": "UNCONFIRMED",
+      "annotation_version": "session4a-showcase-v1",
+      "source_path": "D:\\Python_Project\\bench-demo\\golden_episode\\GX010021\\evidence\\frames\\K025_645.211233.png",
+      "packaged_path": "media/frames/K025_645.211233.png",
+      "sha256": "fb70cb11042635c97bc4517dce18540fc68c6fa01e681ef48700d7b611b95d63",
+      "original_video_time_sec": 645.2112333333333,
+      "time_sec": 645.2112333333333,
+      "source_pts": 19356337,
+      "time_base": "1/30000",
+      "requested_seek_time_sec": 645.2,
+      "task_ids": [
+        "GX010021-V2-T2-003"
+      ],
+      "evidence_ids": [
+        "V2-V24"
+      ],
+      "event_ids": [
+        "V2-E26",
+        "V2-E27"
+      ],
+      "newly_extracted_for_showcase": false,
+      "transformation": "BYTE_IDENTICAL_COPY",
+      "display_text": "主容器倾斜，混合物向烤模转移；不证明全部材料转移完毕。",
+      "raw_text": null
+    },
+    {
+      "id": "LC-680-2",
+      "original_id": "LC-680-2",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/showcase/showcase_manifest.json",
+          "json_pointer": "/asset_registry/11"
+        }
+      ],
+      "status": "UNCONFIRMED",
+      "annotation_version": "session4a-showcase-v1",
+      "source_path": "D:\\Python_Project\\bench-demo\\golden_episode\\GX010021\\annotations\\v2_video_model\\runs\\session2-full-video\\local_visual_checks\\frame-680.2.png",
+      "packaged_path": "media/frames/LC-680-2_frame-680.2.png",
+      "sha256": "82c5e98fab31057f00b8375ca3b2140f52a50bb133e34fb8a896ef8801f7a2c3",
+      "original_video_time_sec": 680.212867,
+      "time_sec": 680.212867,
+      "source_pts": 20406386,
+      "time_base": "1/30000",
+      "requested_seek_time_sec": 680.2,
+      "task_ids": [
+        "GX010021-V2-T2-003"
+      ],
+      "evidence_ids": [
+        "LC-680-2"
+      ],
+      "event_ids": [],
+      "newly_extracted_for_showcase": false,
+      "transformation": "BYTE_IDENTICAL_COPY",
+      "display_text": "烤模已有面糊，主容器仍见残留与黑色工具；这是末段 Probe 的原帧锚点。",
+      "raw_text": "Batter is in loaf pan; main mixing container retains thin residue and a black tool. No new lid-closing or tool-placement action can be inferred from this one image."
+    }
+  ]
+}

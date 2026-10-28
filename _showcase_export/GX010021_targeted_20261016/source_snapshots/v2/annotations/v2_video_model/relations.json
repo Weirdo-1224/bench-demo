@@ -1,0 +1,976 @@
+{
+  "annotation_status": "CANDIDATE",
+  "records": [
+    {
+      "id": "V2-R1",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/relations/0"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V6",
+        "V2-V7"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "type": "material_transferred_to",
+      "from_id": "V2-O3",
+      "to_id": "V2-O1",
+      "event_ids": [
+        "V2-E3",
+        "V2-E4"
+      ],
+      "confidence": 0.99,
+      "uncertainties": [
+        "关系仅为候选；不能由时序先后转换为必然前置依赖。"
+      ],
+      "basis": "MODEL_VISUAL_CHAIN_CANDIDATE",
+      "model_claim": {
+        "relation_id": "R1",
+        "type": "material_transferred_to",
+        "from_id": "O3",
+        "to_id": "O1",
+        "event_ids": [
+          "E3",
+          "E4"
+        ],
+        "evidence_refs": [
+          "V6",
+          "V7"
+        ],
+        "confidence": 0.99,
+        "uncertainties": [
+          "关系仅为候选；不能由时序先后转换为必然前置依赖。"
+        ]
+      },
+      "evidence_available_from": null
+    },
+    {
+      "id": "V2-R2",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/relations/1"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V9"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "type": "material_transferred_to",
+      "from_id": "V2-O4",
+      "to_id": "V2-O1",
+      "event_ids": [
+        "V2-E6"
+      ],
+      "confidence": 0.98,
+      "uncertainties": [
+        "关系仅为候选；不能由时序先后转换为必然前置依赖。"
+      ],
+      "basis": "MODEL_VISUAL_CHAIN_CANDIDATE",
+      "model_claim": {
+        "relation_id": "R2",
+        "type": "material_transferred_to",
+        "from_id": "O4",
+        "to_id": "O1",
+        "event_ids": [
+          "E6"
+        ],
+        "evidence_refs": [
+          "V9"
+        ],
+        "confidence": 0.98,
+        "uncertainties": [
+          "关系仅为候选；不能由时序先后转换为必然前置依赖。"
+        ]
+      },
+      "evidence_available_from": null
+    },
+    {
+      "id": "V2-R3",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/relations/2"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V10"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "type": "material_transferred_to",
+      "from_id": "V2-O5",
+      "to_id": "V2-O1",
+      "event_ids": [
+        "V2-E8"
+      ],
+      "confidence": 0.97,
+      "uncertainties": [
+        "关系仅为候选；不能由时序先后转换为必然前置依赖。"
+      ],
+      "basis": "MODEL_VISUAL_CHAIN_CANDIDATE",
+      "model_claim": {
+        "relation_id": "R3",
+        "type": "material_transferred_to",
+        "from_id": "O5",
+        "to_id": "O1",
+        "event_ids": [
+          "E8"
+        ],
+        "evidence_refs": [
+          "V10"
+        ],
+        "confidence": 0.97,
+        "uncertainties": [
+          "关系仅为候选；不能由时序先后转换为必然前置依赖。"
+        ]
+      },
+      "evidence_available_from": null
+    },
+    {
+      "id": "V2-R4",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/relations/3"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V14"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "type": "material_transferred_to",
+      "from_id": "V2-O7",
+      "to_id": "V2-O1",
+      "event_ids": [
+        "V2-E13"
+      ],
+      "confidence": 0.96,
+      "uncertainties": [
+        "关系仅为候选；不能由时序先后转换为必然前置依赖。"
+      ],
+      "basis": "MODEL_VISUAL_CHAIN_CANDIDATE",
+      "model_claim": {
+        "relation_id": "R4",
+        "type": "material_transferred_to",
+        "from_id": "O7",
+        "to_id": "O1",
+        "event_ids": [
+          "E13"
+        ],
+        "evidence_refs": [
+          "V14"
+        ],
+        "confidence": 0.96,
+        "uncertainties": [
+          "关系仅为候选；不能由时序先后转换为必然前置依赖。"
+        ]
+      },
+      "evidence_available_from": null
+    },
+    {
+      "id": "V2-R5",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/relations/4"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V21"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "type": "material_transferred_to",
+      "from_id": "V2-O9",
+      "to_id": "V2-O1",
+      "event_ids": [
+        "V2-E21"
+      ],
+      "confidence": 0.99,
+      "uncertainties": [
+        "关系仅为候选；不能由时序先后转换为必然前置依赖。"
+      ],
+      "basis": "MODEL_VISUAL_CHAIN_CANDIDATE",
+      "model_claim": {
+        "relation_id": "R5",
+        "type": "material_transferred_to",
+        "from_id": "O9",
+        "to_id": "O1",
+        "event_ids": [
+          "E21"
+        ],
+        "evidence_refs": [
+          "V21"
+        ],
+        "confidence": 0.99,
+        "uncertainties": [
+          "关系仅为候选；不能由时序先后转换为必然前置依赖。"
+        ]
+      },
+      "evidence_available_from": null
+    },
+    {
+      "id": "V2-R6",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/relations/5"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V12",
+        "V2-V22"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "type": "uses_output_of",
+      "from_id": "V2-E10",
+      "to_id": "V2-E22",
+      "event_ids": [
+        "V2-E10",
+        "V2-E22"
+      ],
+      "confidence": 0.95,
+      "uncertainties": [
+        "中间加入面粉和黄油，非直接连续",
+        "关系仅为候选；不能由时序先后转换为必然前置依赖。",
+        "跨阶段材料连续性为推断，不声称遮挡期间完整身份跟踪。"
+      ],
+      "basis": "MODEL_VISUAL_CHAIN_CANDIDATE",
+      "model_claim": {
+        "relation_id": "R6",
+        "type": "uses_output_of",
+        "from_id": "E10",
+        "to_id": "E22",
+        "event_ids": [
+          "E10",
+          "E22"
+        ],
+        "evidence_refs": [
+          "V12",
+          "V22"
+        ],
+        "confidence": 0.95,
+        "uncertainties": [
+          "中间加入面粉和黄油，非直接连续",
+          "关系仅为候选；不能由时序先后转换为必然前置依赖。",
+          "跨阶段材料连续性为推断，不声称遮挡期间完整身份跟踪。"
+        ]
+      },
+      "evidence_available_from": null,
+      "observability": "inference"
+    },
+    {
+      "id": "V2-R7",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/relations/6"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V16",
+        "V2-V17"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "type": "temporal_precedes",
+      "from_id": "V2-E16",
+      "to_id": "V2-E17",
+      "event_ids": [
+        "V2-E16",
+        "V2-E17"
+      ],
+      "confidence": 0.99,
+      "uncertainties": [
+        "关系仅为候选；不能由时序先后转换为必然前置依赖。"
+      ],
+      "basis": "MODEL_VISUAL_CHAIN_CANDIDATE",
+      "model_claim": {
+        "relation_id": "R7",
+        "type": "temporal_precedes",
+        "from_id": "E16",
+        "to_id": "E17",
+        "event_ids": [
+          "E16",
+          "E17"
+        ],
+        "evidence_refs": [
+          "V16",
+          "V17"
+        ],
+        "confidence": 0.99,
+        "uncertainties": [
+          "关系仅为候选；不能由时序先后转换为必然前置依赖。"
+        ]
+      },
+      "evidence_available_from": null
+    },
+    {
+      "id": "V2-R8",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/relations/7"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V17",
+        "V2-V18"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "type": "temporal_precedes",
+      "from_id": "V2-E17",
+      "to_id": "V2-E18",
+      "event_ids": [
+        "V2-E17",
+        "V2-E18"
+      ],
+      "confidence": 0.99,
+      "uncertainties": [
+        "关系仅为候选；不能由时序先后转换为必然前置依赖。"
+      ],
+      "basis": "MODEL_VISUAL_CHAIN_CANDIDATE",
+      "model_claim": {
+        "relation_id": "R8",
+        "type": "temporal_precedes",
+        "from_id": "E17",
+        "to_id": "E18",
+        "event_ids": [
+          "E17",
+          "E18"
+        ],
+        "evidence_refs": [
+          "V17",
+          "V18"
+        ],
+        "confidence": 0.99,
+        "uncertainties": [
+          "关系仅为候选；不能由时序先后转换为必然前置依赖。"
+        ]
+      },
+      "evidence_available_from": null
+    },
+    {
+      "id": "V2-R9",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/relations/8"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V24",
+        "V2-V25"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "type": "temporal_precedes",
+      "from_id": "V2-E26",
+      "to_id": "V2-E29",
+      "event_ids": [
+        "V2-E26",
+        "V2-E29"
+      ],
+      "confidence": 0.99,
+      "uncertainties": [
+        "关系仅为候选；不能由时序先后转换为必然前置依赖。"
+      ],
+      "basis": "MODEL_VISUAL_CHAIN_CANDIDATE",
+      "model_claim": {
+        "relation_id": "R9",
+        "type": "temporal_precedes",
+        "from_id": "E26",
+        "to_id": "E29",
+        "event_ids": [
+          "E26",
+          "E29"
+        ],
+        "evidence_refs": [
+          "V24",
+          "V25"
+        ],
+        "confidence": 0.99,
+        "uncertainties": [
+          "关系仅为候选；不能由时序先后转换为必然前置依赖。"
+        ]
+      },
+      "evidence_available_from": null
+    },
+    {
+      "id": "V2-R11",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/relations/10"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V23"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "type": "material_transferred_to",
+      "from_id": "V2-O15",
+      "to_id": "V2-O10",
+      "event_ids": [
+        "V2-E24"
+      ],
+      "confidence": 0.97,
+      "uncertainties": [
+        "内容物未确认",
+        "关系仅为候选；不能由时序先后转换为必然前置依赖。"
+      ],
+      "basis": "MODEL_VISUAL_CHAIN_CANDIDATE",
+      "model_claim": {
+        "relation_id": "R11",
+        "type": "material_transferred_to",
+        "from_id": "O15",
+        "to_id": "O10",
+        "event_ids": [
+          "E24"
+        ],
+        "evidence_refs": [
+          "V23"
+        ],
+        "confidence": 0.97,
+        "uncertainties": [
+          "内容物未确认",
+          "关系仅为候选；不能由时序先后转换为必然前置依赖。"
+        ]
+      },
+      "evidence_available_from": null
+    },
+    {
+      "id": "V2-R12",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/relations/11"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V24"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "type": "material_transferred_to",
+      "from_id": "V2-O1",
+      "to_id": "V2-O10",
+      "event_ids": [
+        "V2-E26"
+      ],
+      "confidence": 0.99,
+      "uncertainties": [
+        "关系仅为候选；不能由时序先后转换为必然前置依赖。"
+      ],
+      "basis": "MODEL_VISUAL_CHAIN_CANDIDATE",
+      "model_claim": {
+        "relation_id": "R12",
+        "type": "material_transferred_to",
+        "from_id": "O1",
+        "to_id": "O10",
+        "event_ids": [
+          "E26"
+        ],
+        "evidence_refs": [
+          "V24"
+        ],
+        "confidence": 0.99,
+        "uncertainties": [
+          "关系仅为候选；不能由时序先后转换为必然前置依赖。"
+        ]
+      },
+      "evidence_available_from": null
+    },
+    {
+      "id": "V2-R13",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/relations/12"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V22",
+        "V2-V24"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "type": "temporal_precedes",
+      "from_id": "V2-E22",
+      "to_id": "V2-E26",
+      "event_ids": [
+        "V2-E22",
+        "V2-E26"
+      ],
+      "confidence": 0.98,
+      "uncertainties": [
+        "关系仅为候选；不能由时序先后转换为必然前置依赖。"
+      ],
+      "basis": "MODEL_VISUAL_CHAIN_CANDIDATE",
+      "model_claim": {
+        "relation_id": "R13",
+        "type": "temporal_precedes",
+        "from_id": "E22",
+        "to_id": "E26",
+        "event_ids": [
+          "E22",
+          "E26"
+        ],
+        "evidence_refs": [
+          "V22",
+          "V24"
+        ],
+        "confidence": 0.98,
+        "uncertainties": [
+          "关系仅为候选；不能由时序先后转换为必然前置依赖。"
+        ]
+      },
+      "evidence_available_from": null
+    },
+    {
+      "id": "V2-R14",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/relations/13"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V19",
+        "V2-V21"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "type": "uses_output_of",
+      "from_id": "V2-E19",
+      "to_id": "V2-E21",
+      "event_ids": [
+        "V2-E19",
+        "V2-E21"
+      ],
+      "confidence": 0.99,
+      "uncertainties": [
+        "关系仅为候选；不能由时序先后转换为必然前置依赖。",
+        "跨阶段材料连续性为推断，不声称遮挡期间完整身份跟踪。"
+      ],
+      "basis": "MODEL_VISUAL_CHAIN_CANDIDATE",
+      "model_claim": {
+        "relation_id": "R14",
+        "type": "uses_output_of",
+        "from_id": "E19",
+        "to_id": "E21",
+        "event_ids": [
+          "E19",
+          "E21"
+        ],
+        "evidence_refs": [
+          "V19",
+          "V21"
+        ],
+        "confidence": 0.99,
+        "uncertainties": [
+          "关系仅为候选；不能由时序先后转换为必然前置依赖。",
+          "跨阶段材料连续性为推断，不声称遮挡期间完整身份跟踪。"
+        ]
+      },
+      "evidence_available_from": null,
+      "observability": "inference"
+    },
+    {
+      "id": "V2-R15",
+      "annotation_status": "CANDIDATE",
+      "source_type": "video_model",
+      "source_refs": [
+        {
+          "source_id": "independent",
+          "json_pointer": "/relations/14"
+        }
+      ],
+      "evidence_refs": [
+        "V2-V21",
+        "V2-V22"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "type": "temporal_precedes",
+      "from_id": "V2-E21",
+      "to_id": "V2-E22",
+      "event_ids": [
+        "V2-E21",
+        "V2-E22"
+      ],
+      "confidence": 0.99,
+      "uncertainties": [
+        "关系仅为候选；不能由时序先后转换为必然前置依赖。"
+      ],
+      "basis": "MODEL_VISUAL_CHAIN_CANDIDATE",
+      "model_claim": {
+        "relation_id": "R15",
+        "type": "temporal_precedes",
+        "from_id": "E21",
+        "to_id": "E22",
+        "event_ids": [
+          "E21",
+          "E22"
+        ],
+        "evidence_refs": [
+          "V21",
+          "V22"
+        ],
+        "confidence": 0.99,
+        "uncertainties": [
+          "关系仅为候选；不能由时序先后转换为必然前置依赖。"
+        ]
+      },
+      "evidence_available_from": null
+    },
+    {
+      "id": "PATH-01",
+      "annotation_status": "CANDIDATE",
+      "source_type": "integration_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/15"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E016-01",
+        "H1-T-R13",
+        "H1-T-R14",
+        "H1-T-R16"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "type": "material_transferred_to",
+      "from_id": "V2-O4",
+      "to_id": "V2-O13",
+      "event_ids": [
+        "V2-E5"
+      ],
+      "basis": "HISTORICAL_VISUAL_CANDIDATE_WITH_SOURCE_POINTER",
+      "material_identity": "CANDIDATE",
+      "evidence_available_from": null,
+      "uncertainties": [
+        "对象对应为候选；各阶段黑色量杯不得自动确认为同一只，实际材料体积未知。"
+      ]
+    },
+    {
+      "id": "PATH-02",
+      "annotation_status": "CANDIDATE",
+      "source_type": "integration_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/17"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E018-01",
+        "H1-T-R13",
+        "H1-T-R14",
+        "H1-T-R15",
+        "H1-T-R16",
+        "H1-T-R17"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "type": "material_transferred_to",
+      "from_id": "V2-O13",
+      "to_id": "V2-O1",
+      "event_ids": [
+        "V2-E6"
+      ],
+      "basis": "HISTORICAL_VISUAL_CANDIDATE_WITH_SOURCE_POINTER",
+      "material_identity": "CANDIDATE",
+      "evidence_available_from": null,
+      "uncertainties": [
+        "对象对应为候选；各阶段黑色量杯不得自动确认为同一只，实际材料体积未知。"
+      ]
+    },
+    {
+      "id": "PATH-03",
+      "annotation_status": "CANDIDATE",
+      "source_type": "integration_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/21"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E022-01",
+        "H1-T-R18",
+        "H1-T-R19"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "type": "material_transferred_to",
+      "from_id": "V2-O5",
+      "to_id": "V2-O13",
+      "event_ids": [
+        "V2-E7"
+      ],
+      "basis": "HISTORICAL_VISUAL_CANDIDATE_WITH_SOURCE_POINTER",
+      "material_identity": "CANDIDATE",
+      "evidence_available_from": null,
+      "uncertainties": [
+        "对象对应为候选；各阶段黑色量杯不得自动确认为同一只，实际材料体积未知。"
+      ]
+    },
+    {
+      "id": "PATH-04",
+      "annotation_status": "CANDIDATE",
+      "source_type": "integration_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/22"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E023-01",
+        "H1-T-R18",
+        "H1-T-R19"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "type": "material_transferred_to",
+      "from_id": "V2-O13",
+      "to_id": "V2-O1",
+      "event_ids": [
+        "V2-E8"
+      ],
+      "basis": "HISTORICAL_VISUAL_CANDIDATE_WITH_SOURCE_POINTER",
+      "material_identity": "CANDIDATE",
+      "evidence_available_from": null,
+      "uncertainties": [
+        "对象对应为候选；各阶段黑色量杯不得自动确认为同一只，实际材料体积未知。"
+      ]
+    },
+    {
+      "id": "PATH-05",
+      "annotation_status": "CANDIDATE",
+      "source_type": "integration_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/30"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E031-01",
+        "H1-T-R26"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "type": "material_transferred_to",
+      "from_id": "V2-O7",
+      "to_id": "V2-O13",
+      "event_ids": [
+        "V2-E12"
+      ],
+      "basis": "HISTORICAL_VISUAL_CANDIDATE_WITH_SOURCE_POINTER",
+      "material_identity": "CANDIDATE",
+      "evidence_available_from": null,
+      "uncertainties": [
+        "对象对应为候选；各阶段黑色量杯不得自动确认为同一只，实际材料体积未知。"
+      ]
+    },
+    {
+      "id": "PATH-06",
+      "annotation_status": "CANDIDATE",
+      "source_type": "integration_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/31"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E032-01",
+        "H1-T-R26",
+        "H1-T-R27"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "type": "material_transferred_to",
+      "from_id": "V2-O13",
+      "to_id": "V2-O1",
+      "event_ids": [
+        "V2-E13"
+      ],
+      "basis": "HISTORICAL_VISUAL_CANDIDATE_WITH_SOURCE_POINTER",
+      "material_identity": "CANDIDATE",
+      "evidence_available_from": null,
+      "uncertainties": [
+        "对象对应为候选；各阶段黑色量杯不得自动确认为同一只，实际材料体积未知。"
+      ]
+    },
+    {
+      "id": "PATH-07",
+      "annotation_status": "CANDIDATE",
+      "source_type": "integration_candidate",
+      "source_refs": [
+        {
+          "source_id": "v1_events",
+          "json_pointer": "/events/50"
+        }
+      ],
+      "evidence_refs": [
+        "H1-V-E051-01",
+        "H1-V-E051-02",
+        "H1-T-R46",
+        "H1-T-R47",
+        "H1-T-R48",
+        "H1-T-R49",
+        "H1-I-E051-02",
+        "LC-599-2"
+      ],
+      "confirmation_status": "UNCONFIRMED",
+      "type": "material_transferred_to",
+      "from_id": "V2-O7",
+      "to_id": "V2-O1",
+      "event_ids": [
+        "H1-E051"
+      ],
+      "basis": "HISTORICAL_VISUAL_CANDIDATE_WITH_SOURCE_POINTER",
+      "material_identity": "CANDIDATE",
+      "evidence_available_from": null,
+      "uncertainties": [
+        "对象对应为候选；各阶段黑色量杯不得自动确认为同一只，实际材料体积未知。"
+      ]
+    },
+    {
+      "id": "RULE-01",
+      "annotation_status": "CANDIDATE",
+      "source_type": "source_annotation_text",
+      "source_refs": [
+        {
+          "source_id": "source_text",
+          "json_pointer": "/texts/12"
+        },
+        {
+          "source_id": "source_text",
+          "json_pointer": "/texts/13"
+        },
+        {
+          "source_id": "source_text",
+          "json_pointer": "/texts/14"
+        },
+        {
+          "source_id": "source_text",
+          "json_pointer": "/texts/15"
+        }
+      ],
+      "evidence_refs": [],
+      "confirmation_status": "UNCONFIRMED",
+      "type": "rule_supersedes",
+      "from_id": "SRC-R13",
+      "to_id": "SRC-R16",
+      "event_ids": [],
+      "basis": "EXPLICIT_TEXT_AND_DIALOGUE_CONTEXT_CANDIDATE",
+      "scope": "sugar amount in this dialogue",
+      "condition": "Explicit proceed-with-quarter-cup wording; source time is not release time",
+      "effective_from": null,
+      "evidence_available_from": null,
+      "applicability": "UNCONFIRMED_ONLINE_TIMING",
+      "uncertainties": [
+        "替代关系为限定语境候选；标签本身不证明替代，公开/生效时间仍未知。"
+      ]
+    },
+    {
+      "id": "RULE-02",
+      "annotation_status": "CANDIDATE",
+      "source_type": "source_annotation_text",
+      "source_refs": [
+        {
+          "source_id": "source_text",
+          "json_pointer": "/texts/37"
+        },
+        {
+          "source_id": "source_text",
+          "json_pointer": "/texts/38"
+        },
+        {
+          "source_id": "source_text",
+          "json_pointer": "/texts/39"
+        },
+        {
+          "source_id": "source_text",
+          "json_pointer": "/texts/40"
+        }
+      ],
+      "evidence_refs": [],
+      "confirmation_status": "UNCONFIRMED",
+      "type": "rule_supersedes",
+      "from_id": "SRC-R39",
+      "to_id": "SRC-R41",
+      "event_ids": [],
+      "basis": "EXPLICIT_TEXT_AND_DIALOGUE_CONTEXT_CANDIDATE",
+      "scope": "lining this baking pan",
+      "condition": "No parchment paper is a speaker claim, not an inventory measurement",
+      "effective_from": null,
+      "evidence_available_from": null,
+      "applicability": "UNCONFIRMED_ONLINE_TIMING",
+      "uncertainties": [
+        "替代关系为限定语境候选；标签本身不证明替代，公开/生效时间仍未知。"
+      ]
+    },
+    {
+      "id": "RULE-03",
+      "annotation_status": "CANDIDATE",
+      "source_type": "source_annotation_text",
+      "source_refs": [
+        {
+          "source_id": "source_text",
+          "json_pointer": "/texts/39"
+        },
+        {
+          "source_id": "source_text",
+          "json_pointer": "/texts/40"
+        },
+        {
+          "source_id": "source_text",
+          "json_pointer": "/texts/41"
+        },
+        {
+          "source_id": "source_text",
+          "json_pointer": "/texts/42"
+        }
+      ],
+      "evidence_refs": [],
+      "confirmation_status": "UNCONFIRMED",
+      "type": "rule_supersedes",
+      "from_id": "SRC-R41",
+      "to_id": "SRC-R43",
+      "event_ids": [],
+      "basis": "EXPLICIT_TEXT_AND_DIALOGUE_CONTEXT_CANDIDATE",
+      "scope": "lining this baking pan only",
+      "condition": "Oil permission applies to this pan context; no general recipe substitution",
+      "effective_from": null,
+      "evidence_available_from": null,
+      "applicability": "UNCONFIRMED_ONLINE_TIMING",
+      "uncertainties": [
+        "替代关系为限定语境候选；标签本身不证明替代，公开/生效时间仍未知。"
+      ]
+    }
+  ],
+  "edge_direction": "from source/output/earlier rule to destination/consumer/later rule",
+  "mandatory_dependencies_confirmed": 0
+}

@@ -1,0 +1,12 @@
+{
+  "episode_id": "GX010021",
+  "source_absolute_path": "D:\\Python_Project\\bench-demo\\golden_episode\\GX010021\\source\\GX010021.MP4",
+  "source_relative_path": "golden_episode/GX010021/source/GX010021.MP4",
+  "sha256": "fe4a11550bf2aea09a39ce1e72dba4633adc8c8b6a540e9894696e8b2ed1c8f9",
+  "size_bytes": 91608663,
+  "size_mib": 87.364829,
+  "packaged": false,
+  "packaged_path": null,
+  "reason_if_not_packaged": "source video exceeds 80 MiB; no copy and no re-encode",
+  "supplement_method": "从 source_absolute_path 按 sha256 核验后放置为 media/GX010021.MP4；前端应通过配置注入播放路径，不把离线帧当 Runner 在线输入。"
+}

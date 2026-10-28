@@ -1,0 +1,304 @@
+{
+  "episode_id": "GX010021",
+  "version": "session2-v2.0-candidate",
+  "annotation_status": "CANDIDATE",
+  "date": "2026-10-10",
+  "timezone": "Asia/Shanghai",
+  "human_review": "NOT_REVIEWED",
+  "semantic_truth_verified": false,
+  "media": {
+    "duration_sec": 696.929567,
+    "fps": 29.97002997002997,
+    "fps_rational": "30000/1001",
+    "width": 854,
+    "height": 480,
+    "has_audio": false,
+    "sha256": "fe4a11550bf2aea09a39ce1e72dba4633adc8c8b6a540e9894696e8b2ed1c8f9",
+    "size_bytes": 91608663,
+    "source_path": "golden_episode/GX010021/source/GX010021.MP4",
+    "full_decode_check": "PASS",
+    "time_basis": "original_mp4_seconds"
+  },
+  "model": {
+    "requested": "qwen3-vl-plus",
+    "version": "alias-unpinned",
+    "returned_model": null,
+    "returned_model_note": "Native response contains no model field; requested alias does not pin weights",
+    "prompt_version": "full-video-observation-v0.1",
+    "sample_fps": 1,
+    "max_pixels": 100352,
+    "max_output_tokens": 14000,
+    "input_mode": "native_original_video_file",
+    "sample_pts_known": false
+  },
+  "independent_raw_response_ref": "golden_episode/GX010021/annotations/v2_video_model/runs/session2-full-video/seg-focused/attempt-000.response.json",
+  "normalization_report_ref": "golden_episode/GX010021/annotations/v2_video_model/runs/session2-full-video/normalization_report.json",
+  "independent_passes": [
+    {
+      "pass_id": "global",
+      "raw_candidate": "golden_episode/GX010021/annotations/v2_video_model/runs/session2-full-video/seg-global/global_analysis.json",
+      "request_ref": "golden_episode/GX010021/annotations/v2_video_model/runs/session2-full-video/seg-global/request.json",
+      "response_ref": "golden_episode/GX010021/annotations/v2_video_model/runs/session2-full-video/seg-global/attempt-000.response.json",
+      "request_sha256": "b8f46852ee620f4055be24f6989e544567872384a28f9805f114befec0191e09",
+      "raw_response_sha256": "de0a912ad5bd1eebf5be9c24ad851be65bd5d91f744fa4b9aa5988eafe54d662"
+    },
+    {
+      "pass_id": "focused",
+      "raw_candidate": "golden_episode/GX010021/annotations/v2_video_model/runs/session2-full-video/seg-focused/global_analysis.json",
+      "request_ref": "golden_episode/GX010021/annotations/v2_video_model/runs/session2-full-video/seg-focused/request.json",
+      "response_ref": "golden_episode/GX010021/annotations/v2_video_model/runs/session2-full-video/seg-focused/attempt-000.response.json",
+      "request_sha256": "4e1808c95b02b2ec5067cb15fee4e73102fb6708faa030fb269ee68d839a9d91",
+      "raw_response_sha256": "58bad4c86f4ec8cc7b786f250e753d39a80e199f2440001292401e5d5af86e16"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "independent",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/global_analysis.json",
+      "sha256": "637ca967c5c8962a9700a8cc5dd8e457e74c481dd8ca6cf2ab9d3ff401d0f6bb"
+    },
+    {
+      "source_id": "first_raw_candidate",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/runs/session2-full-video/seg-global/global_analysis.json",
+      "sha256": "5d9bc1b52cc35592dc079b8f0095c970f9a2361a31ec6eff1757ab21011c8b89"
+    },
+    {
+      "source_id": "focused_raw_candidate",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/runs/session2-full-video/seg-focused/global_analysis.json",
+      "sha256": "efd754988313427860d9d67aa006512ece2545982683128f28de742c1fe46244"
+    },
+    {
+      "source_id": "v1_events",
+      "path": "golden_episode/GX010021/annotations/v1_candidate/events.json",
+      "sha256": "e4e69cab21f6ee78a2f3253c7491a06ba773663660fb386d52b3acd5573c4ce2"
+    },
+    {
+      "source_id": "v1_objects",
+      "path": "golden_episode/GX010021/annotations/v1_candidate/objects.json",
+      "sha256": "6ab89d92d291f2dcd92d3eb821a2db4435eb2a84fa7e8effddd266d34b5fe42e"
+    },
+    {
+      "source_id": "source_text",
+      "path": "golden_episode/GX010021/source/annotations.json",
+      "sha256": "88183e371dac0948378b723aa4c2ca102a2597770ed518805d52f180cd780527"
+    },
+    {
+      "source_id": "local_checks",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/runs/session2-full-video/local_visual_checks/manifest.json",
+      "sha256": "82fcc284eafbe74848aa15a41c404ec61407b74543c02314727b463b65bf25ab"
+    },
+    {
+      "source_id": "decisions",
+      "path": "annotation_pipeline/session2_integration_decisions.json",
+      "sha256": "00bbeaf1a10718fa4c1bf4b6fa141ccd104f628cea27d48aa56b80fd16c213c0"
+    }
+  ],
+  "usage": {
+    "attempts_reserved": 2,
+    "completed_responses": 2,
+    "reserved_cost": 0.9,
+    "currency": "CNY",
+    "input_tokens_reported": 67610,
+    "output_tokens_reported": 23378,
+    "estimated_cost": 0.452085,
+    "usage_complete": true,
+    "actual_billed_cost": null,
+    "price_source": "https://help.aliyun.com/zh/model-studio/qwen3-vl-plus",
+    "calls": [
+      {
+        "path": "seg-focused/attempt-000.response.json",
+        "status_code": 200,
+        "elapsed_sec": 197.0,
+        "usage": {
+          "input_tokens": 33948,
+          "input_tokens_details": {
+            "text_tokens": 2278,
+            "video_tokens": 31670
+          },
+          "output_tokens": 13163,
+          "output_tokens_details": {
+            "text_tokens": 13163
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 33152
+          },
+          "total_tokens": 47111,
+          "video_tokens": 31670
+        },
+        "transport_operations": [
+          {
+            "operation": "temporary_upload_policy",
+            "http_status": 200
+          },
+          {
+            "operation": "private_video_upload",
+            "http_status": 200,
+            "bytes": 91608663,
+            "acl": "private"
+          },
+          {
+            "operation": "model_inference",
+            "http_status": 200
+          }
+        ]
+      },
+      {
+        "path": "seg-global/attempt-000.response.json",
+        "status_code": 200,
+        "elapsed_sec": 150.45300000000861,
+        "usage": {
+          "input_tokens": 33662,
+          "input_tokens_details": {
+            "text_tokens": 1992,
+            "video_tokens": 31670
+          },
+          "output_tokens": 10215,
+          "output_tokens_details": {
+            "text_tokens": 10215
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 43877,
+          "video_tokens": 31670
+        },
+        "transport_operations": [
+          {
+            "operation": "temporary_upload_policy",
+            "http_status": 200
+          },
+          {
+            "operation": "private_video_upload",
+            "http_status": 200,
+            "bytes": 91608663,
+            "acl": "private"
+          },
+          {
+            "operation": "model_inference",
+            "http_status": 200
+          }
+        ]
+      }
+    ],
+    "estimation_note": "Beijing price tiers, no cache/free-quota discount; actual billed cost unknown"
+  },
+  "statistics": {
+    "independent_model_records": 45,
+    "deduplicated_model_records": 39,
+    "unified_event_candidates": 59,
+    "historical_only_events": 20,
+    "objects_or_observation_groups": 28,
+    "model_states": 15,
+    "historical_state_claims": 115,
+    "snapshot_states": 8,
+    "unified_states": 138,
+    "source_text_records": 55,
+    "observed_step_candidates": 13,
+    "relations": 24,
+    "evidence_locators": 192,
+    "L5_candidates": 7,
+    "confirmed_errors": 0,
+    "gold_records": 0,
+    "crosscheck_categories": {
+      "V1_ONLY": 20,
+      "BOTH_OBSERVED": 28,
+      "CONFLICT": 8
+    }
+  },
+  "artifacts": [
+    {
+      "path": "global_analysis.json",
+      "sha256": "637ca967c5c8962a9700a8cc5dd8e457e74c481dd8ca6cf2ab9d3ff401d0f6bb"
+    },
+    {
+      "path": "evidence_index.json",
+      "sha256": "7c23a7dcb5983969e945fe0c85f5c30656cbb6c716180d0f71e6a59d109bd369"
+    },
+    {
+      "path": "events.json",
+      "sha256": "f65beff9f71d5cc151ef15ffa228c6b2a136291174b87aa1b71c82178542a214"
+    },
+    {
+      "path": "objects.json",
+      "sha256": "9b971f2ed4060246f71363bef711a66ce5cb92fbeeeb02bd7236d56a5ffe855e"
+    },
+    {
+      "path": "procedure.json",
+      "sha256": "a82d0e18da871f80cba5d477be7aae75d52642a89beed2c778b336937e06d531"
+    },
+    {
+      "path": "relations.json",
+      "sha256": "2b3a2fac0e75670f5d9be598a4105bb545b7972cbed6eaff0cbe558cbd52cf0c"
+    },
+    {
+      "path": "anomaly_candidates.json",
+      "sha256": "53b1a5fcb9cac99adbea757f6c7626cc50262eea2b840958295dfee246d5ddf1"
+    },
+    {
+      "path": "crosscheck.json",
+      "sha256": "73dd06e4f981a75ec029437d7835916c5d94ae374d50c7d6ab8c544d474da8ae"
+    },
+    {
+      "path": "README.md",
+      "sha256": "9d24f555e2b1acca5ad72515953603619dda89a02d21c85bb2fe46a19aa47ba9"
+    },
+    {
+      "path": "full_video_report.md",
+      "sha256": "012f8b7d0bb614ef244af39ae41405a8e0272c286b85cb1489607bdab155ad2e"
+    },
+    {
+      "path": "first_pass_diagnosis.md",
+      "sha256": "53d746fdf494565097f690de3d5da4a1c3008aa86b2b05e67e4bffd39c8bc284"
+    },
+    {
+      "path": "crosscheck_report.md",
+      "sha256": "73986909d2f36b8d7d565171fdbf972d1f2dbd2a8d64c09acb9bdb1c28cb4dcd"
+    },
+    {
+      "path": "validation_report.json",
+      "sha256": "8137b2fcfe994db1b7fdde14f5ea5e39db0f9aa6a81143fd2bb342f2bad96803"
+    },
+    {
+      "path": "integrity_report.json",
+      "sha256": "e72ea45a10f0a6a759bfe5945830e9d9ea7bd040887b6c9d123bcf40557c8c36"
+    },
+    {
+      "path": "test_report.json",
+      "sha256": "2a838927bc8e036478f07531bb2ac2dca1a5fb3240267e9e3077e1b629830f31"
+    }
+  ],
+  "layers": {
+    "L0": "native media/source tracing",
+    "L1": "55 source text records with unknown availability; 3 scoped revision candidates",
+    "L2": "deduplicated full-video candidates plus explicitly sourced historical omissions",
+    "L3": "event-driven candidate states, unknown continuous validity, 8 actual-frame snapshots",
+    "L4": "material/temporal/output links plus scoped text revision candidates",
+    "L5": "unconfirmed feedback/deviation and scoped normal candidates; zero alarm truth"
+  },
+  "track_support": {
+    "T1": "partial; key actions/object changes available, exact boundaries and identity unresolved",
+    "T2": "partial; material transfer and rule-context chains available, history necessity/effective times unresolved",
+    "T3": "limited; no confirmed positive error, onset/detectability/recovery truth"
+  },
+  "budget_stop": "2/2 inference attempts, 0.90/1.00 CNY reserved; no third live call",
+  "scope": "annotations only; no task generation, Runner, Evaluator, Baseline or other episode",
+  "coverage": {
+    "complete_original_mp4_submitted": true,
+    "global_start_middle_end_described": true,
+    "exact_server_frames_known": false,
+    "model_evidence_interval_union_sec": 290.0,
+    "model_evidence_locator_fraction": 0.4161109152655594,
+    "last_model_evidence_end_sec": 692.0,
+    "detail_coverage_complete": false,
+    "metric_note": "Locator interval fraction is not frame coverage, recall or verified truth coverage"
+  },
+  "processing": {
+    "initial_raw_candidate_validation_failures": 2,
+    "http_failures": 0,
+    "retries": 0,
+    "structural_repairs_in_focused": 11,
+    "semantic_truth_verified": false
+  },
+  "integration_code_sha256": "6f7a1a95b308ece94ab4b23f53ac8981c4d234931b69d54dd85de313ff842d87",
+  "validation_code_sha256": "9e83f8023cd77ddb0d2bb8754715bd45b7f82ccb9625fb483a319793a2b18452"
+}

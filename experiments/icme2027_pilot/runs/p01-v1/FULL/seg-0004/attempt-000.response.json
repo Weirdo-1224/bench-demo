@@ -1,0 +1,11 @@
+{
+  "request_sha256": "37cb72a28b8521948aacd2eb77627fd4566d38dcf937a4352c350f04df1549f2",
+  "started_at": "2026-10-28T13:02:16+08:00",
+  "ledger_ref": "experiments/icme2027_pilot/request_ledger/attempt-0017.start.json",
+  "http_status": 200,
+  "body": "{\"choices\":[{\"message\":{\"content\":\"{\\n  \\\"answer\\\": \\\"YES\\\",\\n  \\\"answerability\\\": \\\"ANSWERABLE\\\",\\n  \\\"evidence_intervals_sec\\\": [[68.0, 84.0]],\\n  \\\"reason\\\": \\\"在68.0–72.0秒，右手按压开关启动电动打蛋器，搅拌头高速旋转，开始搅打盒中混合液；72.0–84.0秒持续搅打，混合液变浅黄、起泡并最终呈均匀乳浊状。此过程明确显示电动搅拌器已用于搅拌容器（透明塑料盒）内的材料。该事件发生在300秒前，且有直接视觉证据支持。\\\"\\n}\",\"reasoning_content\":\"\",\"role\":\"assistant\"},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null}],\"object\":\"chat.completion\",\"usage\":{\"prompt_tokens\":15544,\"completion_tokens\":145,\"total_tokens\":15689,\"completion_tokens_details\":{\"text_tokens\":145},\"prompt_tokens_details\":{\"text_tokens\":3392,\"video_tokens\":12152,\"cached_tokens\":9728}},\"created\":1793163754,\"system_fingerprint\":null,\"model\":\"qwen3-vl-plus\",\"id\":\"chatcmpl-db7c6058-f3da-98fc-9b7c-be626304a450\"}",
+  "transport_error": null,
+  "credential_redactions": 0,
+  "completed_at": "2026-10-28T13:02:32+08:00",
+  "elapsed_sec": 15.5
+}

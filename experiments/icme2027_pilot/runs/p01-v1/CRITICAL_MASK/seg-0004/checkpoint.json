@@ -1,0 +1,39 @@
+{
+  "condition": "CRITICAL_MASK",
+  "segment_id": "seg-0004",
+  "final": true,
+  "request_sha256": "7d95094a5dd52c649b440c64397b40d92c74b6eb00a0279398d5fd9fe2e3ffca",
+  "previous_checkpoint_sha256": "61c7aa1ae8f99947fceb49804810f2634f3e533adacb2b15bb2b9cf6983cb3ab",
+  "raw_response_ref": "experiments/icme2027_pilot/runs/p01-v1/CRITICAL_MASK/seg-0004/attempt-000.response.json",
+  "raw_response_sha256": "77a7d69114bceec1a8432e4a809a060d2f7fd7859cacc0c72098c72c26ccc169",
+  "parsed": {
+    "answer": "NO",
+    "answerability": "ANSWERABLE",
+    "evidence_intervals_sec": [
+      [
+        0.0,
+        58.0
+      ]
+    ],
+    "reason": "A white electric hand mixer is visible on the counter throughout the observed frames (0.0–58.0s), but it is never picked up or used. The person only cracks eggs into the container, measures brown sugar, and handles milk—no stirring or mixing action with the hand mixer occurs in any visible frame. Since all frames up to 58.0s are the only ones with visual data, and no later frames (including the black frames from 180–240s and 240–300s) show any use of the mixer, we can conclude it was not used by 300s."
+  },
+  "metadata": {
+    "returned_model": "qwen3-vl-plus",
+    "usage": {
+      "prompt_tokens": 13794,
+      "completion_tokens": 179,
+      "total_tokens": 13973,
+      "completion_tokens_details": {
+        "text_tokens": 179
+      },
+      "prompt_tokens_details": {
+        "text_tokens": 1642,
+        "video_tokens": 12152,
+        "cached_tokens": 0
+      }
+    },
+    "finish_reason": "stop",
+    "request_id": "chatcmpl-5cb014a8-036f-9a49-a64f-15ed451489a7"
+  },
+  "checkpoint_sha256": "1cfe6f01e57f77694890678ce631e1a0532c08dd877586825001d5728fcfd7ed"
+}

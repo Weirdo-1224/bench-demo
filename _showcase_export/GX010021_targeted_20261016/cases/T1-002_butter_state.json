@@ -1,0 +1,271 @@
+{
+  "id": "GX010021-V2-T1-002",
+  "original_id": "GX010021-V2-T1-002",
+  "source_refs": [
+    {
+      "file": "golden_episode/GX010021/tasks/v2_candidates/task_candidates.json",
+      "json_pointer": "/tasks/1"
+    }
+  ],
+  "status": "PILOT_CANDIDATE",
+  "annotation_version": "gx010021-task-candidate-v0.1",
+  "original_task_id": "GX010021-V2-T1-002",
+  "case_kind": "dual_checkpoint_state",
+  "title": "玻璃容器内黄色材料的局部固液状态",
+  "track": "T1",
+  "subtask": "T1.2",
+  "raw_text": null,
+  "display_text": "玻璃容器内黄色材料的局部固液状态",
+  "trigger": {
+    "kind": "STATE_CHECKPOINT",
+    "checkpoint_times": [
+      431.2308,
+      445.211433
+    ],
+    "query_time": null,
+    "monitoring_interval": null,
+    "isolation_required": false,
+    "mutate_main_state": false
+  },
+  "output_format": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "visible_phase": {
+        "enum": [
+          "solid",
+          "liquid",
+          "liquid_and_solid",
+          "unknown",
+          "uncertain"
+        ]
+      }
+    },
+    "required": [
+      "visible_phase"
+    ]
+  },
+  "candidate_gt": {
+    "checkpoints": [
+      {
+        "at": 431.2308,
+        "visible_phase": "liquid_and_solid"
+      },
+      {
+        "at": 445.211433,
+        "visible_phase": "liquid_and_solid"
+      }
+    ],
+    "solid_fraction": "unknown",
+    "final_phase_at_pour": "unknown"
+  },
+  "adjudicated_gt": null,
+  "reason_for_status": {
+    "track_fit": "符合对象可观察属性跟踪",
+    "evidence_support": "两张已校验PTS的原帧；完全融化模型主张与之冲突，优先限定直接可见属性",
+    "objective_scoring": "visible_phase可按枚举候选评分，比例和最终相态不进入准确率分母",
+    "future_and_shortcut_audit": "不使用V2-V19的完全融化断言，也不以445秒帧评分431秒",
+    "ability_necessity": "近期视觉足以回答局部属性；用于调试未知处理，两个点不证明中间持续状态",
+    "evidence_gaps": [
+      "G01",
+      "G02"
+    ]
+  },
+  "evidence_chain": [
+    {
+      "set_id": "phase-first",
+      "bindings": [
+        {
+          "evidence_id": "LC-431-2",
+          "role": "第一次检查点固液共存"
+        }
+      ],
+      "validity": "CANDIDATE_MINIMAL_UNVERIFIED",
+      "necessity": [
+        "原帧支持局部相态"
+      ],
+      "applies_at_media_time": 431.2308,
+      "covers_fields": [
+        "visible_phase"
+      ]
+    },
+    {
+      "set_id": "phase-second",
+      "bindings": [
+        {
+          "evidence_id": "LC-445-2",
+          "role": "第二检查点仍见固态材料"
+        }
+      ],
+      "validity": "CANDIDATE_MINIMAL_UNVERIFIED",
+      "necessity": [
+        "不可由第一帧外推第二帧"
+      ],
+      "applies_at_media_time": 445.211433,
+      "covers_fields": [
+        "visible_phase"
+      ]
+    }
+  ],
+  "reference_items": [
+    {
+      "field": "visible_phase",
+      "value": "liquid_and_solid",
+      "evidence_ids": [
+        "LC-431-2"
+      ],
+      "observable_time": {
+        "earliest": 431.2308,
+        "latest": 431.2308,
+        "status": "CANDIDATE_OBSERVED_AT_NOT_FIRST_ONSET"
+      },
+      "note": "仅本帧有效",
+      "evaluate_at_media_time": 431.2308
+    },
+    {
+      "field": "visible_phase",
+      "value": "liquid_and_solid",
+      "evidence_ids": [
+        "LC-445-2"
+      ],
+      "observable_time": {
+        "earliest": 445.211433,
+        "latest": 445.211433,
+        "status": "CANDIDATE_OBSERVED_AT_NOT_FIRST_ONSET"
+      },
+      "note": "仅本帧有效",
+      "evaluate_at_media_time": 445.211433
+    }
+  ],
+  "record_refs": [
+    {
+      "kind": "object",
+      "id": "V2-O9",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/objects.json",
+      "json_pointer": "/records/8",
+      "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+    },
+    {
+      "kind": "state",
+      "id": "STATE-LC-431-2",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/objects.json",
+      "json_pointer": "/states/133",
+      "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+    },
+    {
+      "kind": "state",
+      "id": "STATE-LC-445-2",
+      "path": "golden_episode/GX010021/annotations/v2_video_model/objects.json",
+      "json_pointer": "/states/134",
+      "access": "EVALUATOR_ONLY_CONTEXT_NOT_ONLINE_EVIDENCE"
+    }
+  ],
+  "media_frames": [
+    {
+      "id": "LC-431-2",
+      "original_id": "LC-431-2",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/showcase/showcase_manifest.json",
+          "json_pointer": "/asset_registry/4"
+        }
+      ],
+      "status": "UNCONFIRMED",
+      "annotation_version": "session4a-showcase-v1",
+      "source_path": "D:\\Python_Project\\bench-demo\\golden_episode\\GX010021\\annotations\\v2_video_model\\runs\\session2-full-video\\local_visual_checks\\frame-431.2.png",
+      "packaged_path": "media/frames/LC-431-2_frame-431.2.png",
+      "sha256": "01d0924407c43b6787cfbcf09e12cf39db29975b7832b851dd4d1441c3222a42",
+      "original_video_time_sec": 431.2308,
+      "time_sec": 431.2308,
+      "source_pts": 12936924,
+      "time_base": "1/30000",
+      "requested_seek_time_sec": 431.2,
+      "task_ids": [
+        "GX010021-V2-T1-002"
+      ],
+      "evidence_ids": [
+        "LC-431-2"
+      ],
+      "event_ids": [
+        "V2-E19"
+      ],
+      "newly_extracted_for_showcase": false,
+      "transformation": "BYTE_IDENTICAL_COPY",
+      "display_text": "玻璃容器中黄色液体与浅色固块共存的单帧候选。",
+      "raw_text": "Yellow liquid and a pale solid block coexist in the glass dish after second microwave removal."
+    },
+    {
+      "id": "LC-445-2",
+      "original_id": "LC-445-2",
+      "source_refs": [
+        {
+          "file": "golden_episode/GX010021/showcase/showcase_manifest.json",
+          "json_pointer": "/asset_registry/5"
+        }
+      ],
+      "status": "UNCONFIRMED",
+      "annotation_version": "session4a-showcase-v1",
+      "source_path": "D:\\Python_Project\\bench-demo\\golden_episode\\GX010021\\annotations\\v2_video_model\\runs\\session2-full-video\\local_visual_checks\\frame-445.2.png",
+      "packaged_path": "media/frames/LC-445-2_frame-445.2.png",
+      "sha256": "5d339059ad2319c422d4bd704abecadfaef95b6e3ded8d71c26094f7c051d630",
+      "original_video_time_sec": 445.211433,
+      "time_sec": 445.211433,
+      "source_pts": 13356343,
+      "time_base": "1/30000",
+      "requested_seek_time_sec": 445.2,
+      "task_ids": [
+        "GX010021-V2-T1-002"
+      ],
+      "evidence_ids": [
+        "LC-445-2"
+      ],
+      "event_ids": [
+        "V2-E20"
+      ],
+      "newly_extracted_for_showcase": false,
+      "transformation": "BYTE_IDENTICAL_COPY",
+      "display_text": "黑色工具位于黄色材料中，仍可见浅色固态材料的单帧候选。",
+      "raw_text": "A black tool is inside the yellow liquid; pale solid material remains visible. This snapshot does not prove a full stir interval or final melting."
+    }
+  ],
+  "missing_fields": [],
+  "checkpoints": [
+    {
+      "time_sec": 431.2308,
+      "visible_state": "liquid_and_solid",
+      "historical_state": null,
+      "unknowns": [
+        "solid_fraction",
+        "final_phase_at_pour",
+        "first_onset"
+      ],
+      "time_available_evidence_ids": [
+        "LC-431-2"
+      ],
+      "future_information_used": false
+    },
+    {
+      "time_sec": 445.211433,
+      "visible_state": "liquid_and_solid",
+      "historical_state": null,
+      "unknowns": [
+        "solid_fraction",
+        "final_phase_at_pour",
+        "first_onset"
+      ],
+      "time_available_evidence_ids": [
+        "LC-445-2"
+      ],
+      "future_information_used": false
+    }
+  ],
+  "prior_state": null,
+  "state_at_t1": "liquid_and_solid",
+  "state_at_t2": "liquid_and_solid",
+  "future_leakage_check": {
+    "t1_time_sec": 431.2308,
+    "forbidden_future_frame_time_sec": 445.211433,
+    "result": "PASS_IN_EXPORT_STRUCTURE",
+    "runtime_release_schedule": "NOT_ESTABLISHED"
+  }
+}
